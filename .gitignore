@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+archive
+.venv-tomotopy
+model_archive
+models
+model_results
+journal
+glove
+data_results
+# dataset
+dataset/*
+!dataset/.gitkeep
+wordcloud/*
+eda/wordcloud/*/periodic/
+
+.ipynb_checkpoints
+other
