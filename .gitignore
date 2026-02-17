@@ -31,7 +31,16 @@ src/bertopic/tunning/hdbscan_*/*
 !src/bertopic/tunning/hdbscan_*/**/.gitkeep
 
 src/bertopic/tunning/kmeans_*/*
-!src/bertopic/tunning/kmeans_*/**/.gitkeep
+!src/bertopic/tunning/kmeans_/**/.gitkeep
+
+src/dtm/tunning/cs/*
+src/dtm/tunning/math/*
+src/dtm/tunning/physics/*
+
+src/lda/tunning/cs/*
+src/lda/tunning/math/*
+src/lda/tunning/physics/*
+
 
 src/top2vec/transformer/*
 !src/top2vec/transformer/**/.gitkeep
