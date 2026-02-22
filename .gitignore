@@ -24,11 +24,11 @@ src/bertopic/embedding/*
 !src/bertopic/embedding/**/.gitkeep
 
 #results
-src/bertopic/transformer/*
-!src/bertopic/transformer/**/.gitkeep
+src/bertopic/modeling/*
+!src/bertopic/modeling/**/.gitkeep
 
-src/bertopic/tunning/hdbscan_*/*
-!src/bertopic/tunning/hdbscan_*/**/.gitkeep
+src/bertopic/tunning/hdbscan/*
+!src/bertopic/tunning/hdbscan/**/.gitkeep
 
 src/bertopic/tunning/kmeans_*/*
 !src/bertopic/tunning/kmeans_/**/.gitkeep
@@ -48,8 +48,14 @@ src/top2vec/transformer/*
 src/top2vec/tunning/sentence_transformers_*/*
 !src/top2vec/tunning/sentence_transformers_*/**/.gitkeep
 
+
 #csv
 !src/**/*.csv
+
+#ipynb
+!src/**/*.ipynb
+
+journal
 
 .ipynb_checkpoints
 other
