@@ -8,55 +8,27 @@ wheels/
 
 # Virtual environments
 .venv
-archive
 .venv-tomotopy
 
-# dataset
-dataset/*
-!dataset/.gitkeep
-wordcloud/*
-eda/wordcloud/*/periodic/
+# Data (large CSVs)
+data/*
+!data/.gitkeep
+
+# Embeddings (large mmap files)
+embedding/*
+!embedding/**/.gitkeep
+
+# Saved models (large binary files)
+models/*
+!models/**/.gitkeep
 
 
-#embedding
-
-src/bertopic/embedding/*
-!src/bertopic/embedding/**/.gitkeep
-
-#results
-src/bertopic/modeling/*
-!src/bertopic/modeling/**/.gitkeep
-
-src/bertopic/tunning/hdbscan/*
-!src/bertopic/tunning/hdbscan/**/.gitkeep
-
-src/bertopic/tunning/kmeans_*/*
-!src/bertopic/tunning/kmeans_/**/.gitkeep
-
-src/dtm/tunning/cs/*
-src/dtm/tunning/math/*
-src/dtm/tunning/physics/*
-
-src/lda/tunning/cs/*
-src/lda/tunning/math/*
-src/lda/tunning/physics/*
-
-
-src/top2vec/transformer/*
-!src/top2vec/transformer/**/.gitkeep
-
-src/top2vec/tunning/sentence_transformers_*/*
-!src/top2vec/tunning/sentence_transformers_*/**/.gitkeep
-
-
-#csv
-!src/**/*.csv
-
-#ipynb
-!src/**/*.ipynb
-
-journal
-
+# Misc
+notebooks/eda/wordcloud/*
+!notebooks/eda/wordcloud/**/wordcloud.png
 .ipynb_checkpoints
+archive
+journal
 other
 bin
+notes.txt

@@ -1,2 +1,0 @@
-1. Belum dilaukan tunning diversity
-2. Menggunakan RBO karena mengghindari bias jumlah dapa unique words diversity
