@@ -1,0 +1,4 @@
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+math,2010,2011,11,2,"[11, 117]","[1.0, 0.6]","ricci, metrics, hler, curvature, einstein, metric, manifolds, manifold, riemannian, flow"
+math,2013,2014,69,2,"[69, 88]","[0.8, 0.6]","hecke, modules, lusztig, quantum, algebra, algebras, mathfrak, specht, sl, affine"
+math,2018,2019,11,2,"[11, 117]","[0.9, 0.5]","ricci, metrics, hler, curvature, metric, manifolds, einstein, manifold, riemannian, solitons"

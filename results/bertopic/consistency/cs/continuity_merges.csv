@@ -1,0 +1,10 @@
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+cs,2012,2013,170,2,"[170, 237]","[0.6, 0.5]","vehicular, vanet, aomdv, vehicles, vehicle, mobility, hoc, vanets, ad, 11p"
+cs,2015,2016,153,2,"[153, 247]","[0.6, 0.5]","clustering, clusters, means, cluster, ward, clusterings, kk, ldps, algorithm, density"
+cs,2016,2017,56,2,"[56, 256]","[0.9, 0.5]","recovery, ell, signal, sparse, sensing, compressive, measurements, compressed, signals, minimization"
+cs,2018,2019,155,2,"[155, 241]","[0.5, 0.6]","iot, home, devices, internet, smart, security, attacks, traffic, things, ip"
+cs,2019,2020,8,2,"[8, 18]","[1.0, 0.6]","adversarial, attacks, attack, robustness, perturbations, examples, defense, robust, box, against"
+cs,2019,2020,12,2,"[12, 187]","[0.7, 0.6]","driving, autonomous, traffic, vehicles, vehicle, trajectory, prediction, safety, lane, scenarios"
+cs,2021,2022,41,2,"[41, 227]","[0.8, 0.5]","privacy, dp, private, differentially, differential, utility, synthetic, clipping, data, mechanism"
+cs,2021,2022,67,2,"[67, 257]","[0.9, 0.7]","games, nash, equilibria, game, equilibrium, player, players, payoff, stackelberg, strategies"
+cs,2022,2023,8,2,"[8, 18]","[1.0, 0.5]","adversarial, robustness, attacks, attack, examples, perturbations, robust, transferability, against, defense"

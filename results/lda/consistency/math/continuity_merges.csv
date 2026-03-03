@@ -1,0 +1,6 @@
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+math,2017,2018,31,3,"[31, 37, 46]","[0.7, 0.5, 0.5]","mathbb, mathcal, frac, leq, geq, infty, sum, vec, ldots, dots"
+math,2019,2020,31,4,"[31, 34, 37, 46]","[0.7, 0.5, 0.5, 0.5]","mathbb, frac, infty, leq, mathcal, ldots, geq, nn, left, right"
+math,2020,2021,31,3,"[23, 31, 46]","[0.5, 0.7, 0.5]","mathbb, frac, geq, leq, dots, ldots, infty, mathcal, cdots, times"
+math,2021,2022,31,2,"[31, 37]","[0.8, 0.5]","mathbb, frac, mathcal, leq, text, dots, geq, cdots, infty, le"
+math,2023,2024,34,2,"[31, 34]","[0.7, 0.6]","mathbb, frac, vert, mathcal, langle, leq, infty, right, left, mathrm"

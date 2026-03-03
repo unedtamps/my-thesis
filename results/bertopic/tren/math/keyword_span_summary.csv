@@ -1,0 +1,4 @@
+subject,category,n_keywords,avg_span,max_span,min_span,avg_coverage_pct,n_never_captured,n_full_span
+math,emerging,20,17.95,26,1,76.35,0,3
+math,stable,20,8.95,25,0,40.39,6,0
+math,decaying,20,21.6,26,4,88.84,0,14
