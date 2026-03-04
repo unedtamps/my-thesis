@@ -6,37 +6,24 @@ A thesis research project comparing four topic modeling methods (LDA, Top2Vec, D
 
 ```mermaid
 graph TD
-    A["📄 Raw Data<br/><i>arXiv 2000–2025</i>"] --> B["⚙️ Preprocessing"]
+    A["Raw Data<br/><i>arXiv 2000–2025</i>"] --> B["Preprocessing"]
 
-    B --> C["📦 BOW<br/><i>v1.csv — tokenized</i>"]
-    B --> D["📦 EMB<br/><i>v2.csv — raw text</i>"]
+    B --> C["BOW<br/><i>v1.csv — tokenized</i>"]
+    B --> D["EMB<br/><i>v1.csv — raw text</i>"]
 
-    C --> E["🟠 LDA<br/><i>Gensim</i>"]
-    C --> F["🟠 DTM<br/><i>tomotopy</i>"]
-    D --> G["🟣 Top2Vec"]
-    D --> H["🟣 BERTopic"]
+    C --> E["LDA<br/><i>Gensim</i>"]
+    C --> F["DTM<br/><i>tomotopy</i>"]
+    D --> G["Top2Vec"]
+    D --> H["BERTopic"]
 
     E & F & G & H --> S1
 
     subgraph Scenarios [" "]
-        S1["🔧 Skenario 1: Tuning<br/><i>Coherence · IRBO · Topic Quality</i>"]
-        S1 --> S2["📊 Skenario 2: Evolution<br/><i>Prevalence · c-TF-IDF · Trends</i>"]
-        S2 --> S3["🔗 Skenario 3: Consistency<br/><i>TTD · Continuity Rate</i>"]
-        S3 --> S4["📈 Skenario 4: SPAN Tren<br/><i>TF-IDF Ground Truth · SPAN</i>"]
+        S1["Skenario 1: Tuning<br/><i>Coherence · IRBO · Topic Quality</i>"]
+        S1 --> S2["Skenario 2: Evolution<br/><i>A: Prevalence · Trends | B: TTC · TTS · TTQ</i>"]
+        S2 --> S3["Skenario 3: Consistency<br/><i>TTD · Continuity Rate</i>"]
+        S3 --> S4["Skenario 4: SPAN Tren<br/><i>TF-IDF Ground Truth · SPAN</i>"]
     end
-
-    style A fill:#1a73e8,color:#fff,stroke:none
-    style B fill:#0d9488,color:#fff,stroke:none
-    style C fill:#16a34a,color:#fff,stroke:none
-    style D fill:#16a34a,color:#fff,stroke:none
-    style E fill:#ea580c,color:#fff,stroke:none
-    style F fill:#ea580c,color:#fff,stroke:none
-    style G fill:#7c3aed,color:#fff,stroke:none
-    style H fill:#7c3aed,color:#fff,stroke:none
-    style S1 fill:#e0f2fe,stroke:#0284c7
-    style S2 fill:#e0f2fe,stroke:#0284c7
-    style S3 fill:#e0f2fe,stroke:#0284c7
-    style S4 fill:#e0f2fe,stroke:#0284c7
 ```
 
 ## Project Structure
@@ -45,7 +32,7 @@ graph TD
 ├── data/
 │   ├── preprocess/{subject}/         # Preprocessed data per subject (cs, math, physics)
 │   │   ├── bow/v1.csv                # Bag-of-words (tokenized) — for LDA, DTM
-│   │   └── emb/v2.csv                # Raw text — for Top2Vec, BERTopic
+│   │   └── emb/v1.csv                # Raw text — for Top2Vec, BERTopic
 │   └── raw/                          # Raw dataset files
 │
 ├── embedding/{subject}/              # Pre-computed sentence embeddings
@@ -60,8 +47,10 @@ graph TD
 │   └── models/{model}/               # Per-model experiment notebooks
 │       ├── tuning/                   # Skenario 1: Hyperparameter tuning
 │       │   └── tuning.ipynb
-│       ├── temporal/                 # Skenario 2: Temporal topic analysis
+│       ├── temporal/                 # Skenario 2A: Temporal topic analysis
 │       │   └── temporal_topics.ipynb #   Prevalence, c-TF-IDF, trends (linregress)
+│       ├── evolution/                # Skenario 2B: Evolution quality
+│       │   └── topic_evolution.ipynb #   TTC, TTS, TTQ per transition
 │       ├── consistency/              # Skenario 3: Structural consistency
 │       │   ├── topic_term_drift.ipynb#   TTD: endpoint, trajectory, YoY drift
 │       │   └── continuity_rate.ipynb #   Continuity: stable/merge/disappear/new
@@ -70,17 +59,21 @@ graph TD
 │
 ├── results/{model}/                  # Output CSVs per model
 │   ├── tuning/{subject}/             # Tuning results
-│   ├── temporal/{subject}/           # Temporal analysis results
+│   ├── temporal/{subject}/           # Skenario 2A results
 │   │   ├── topic_word_evolution.csv  #   Topic words per year
 │   │   ├── per_year_metrics.csv      #   Coherence, diversity per year
 │   │   └── topic_trends.csv          #   Growing/stable/declining topics
-│   ├── consistency/{subject}/        # Structural consistency results
+│   ├── evolution/{subject}/          # Skenario 2B results
+│   │   ├── topic_evolution_metrics.csv#  TTC, TTS, TTQ per topic per transition
+│   │   ├── transition_summary.csv   #   Avg TTC/TTS/TTQ per transition
+│   │   └── evolution_summary.csv    #   Overall summary
+│   ├── consistency/{subject}/        # Skenario 3 results
 │   │   ├── ttd_endpoint.csv          #   First→last year drift
 │   │   ├── ttd_yoy_avg.csv           #   Year-over-year drift
 │   │   ├── continuity_transitions.csv#   Per-topic continuity classification
 │   │   ├── continuity_merges.csv     #   Merge group details
 │   │   └── continuity_new_topics.csv #   Newly emerged topics
-│   └── tren/{subject}/               # Keyword trend results
+│   └── tren/{subject}/               # Skenario 4 results
 │       ├── ground_truth_keywords.csv #   TF-IDF classified keywords
 │       ├── keyword_span.csv          #   SPAN per keyword
 │       └── keyword_span_summary.csv  #   Aggregated SPAN stats
@@ -100,7 +93,8 @@ graph TD
 | Scenario | Folder | Description |
 |----------|--------|-------------|
 | **1. Tuning** | `tuning/` | Hyperparameter optimization (coherence, IRBO, topic quality) |
-| **2. Temporal** | `temporal/` | Topic prevalence, c-TF-IDF evolution, trend detection (linregress) |
+| **2A. Temporal** | `temporal/` | Prevalence, c-TF-IDF word evolution, trend detection (linregress) |
+| **2B. Evolution** | `evolution/` | TTC (cross-time coherence), TTS (term stability), TTQ (combined) |
 | **3. Consistency** | `consistency/` | Topic Term Drift (TTD) + Continuity Rate (best-match) |
 | **4. Keyword Trends** | `tren/` | TF-IDF ground truth keywords + SPAN analysis |
 
