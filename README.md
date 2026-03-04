@@ -18,11 +18,48 @@ graph TD
 
     E & F & G & H --> S1
 
-    subgraph Scenarios [" "]
-        S1["Skenario 1: Tuning<br/><i>Coherence · IRBO · Topic Quality</i>"]
-        S1 --> S2["Skenario 2: Evolution<br/><i>A: Prevalence · Trends | B: TTC · TTS · TTQ</i>"]
-        S2 --> S3["Skenario 3: Consistency<br/><i>TTD · Continuity Rate</i>"]
-        S3 --> S4["Skenario 4: SPAN Tren<br/><i>TF-IDF Ground Truth · SPAN</i>"]
+    subgraph S1g ["Skenario 1: Tuning"]
+        S1["Grid Search Hyperparameters"]
+        S1 --> S1a["Coherence C_v"]
+        S1 --> S1b["Diversity IRBO"]
+        S1a & S1b --> S1c["Topic Quality = Harmonic Mean"]
+        S1c --> S1d["Select Best Model per Subject"]
+    end
+
+    S1d --> S2
+
+    subgraph S2g ["Skenario 2: Temporal Evolution"]
+        S2["2A: Temporal Analysis"]
+        S2 --> S2a["Topic Prevalence per Year"]
+        S2 --> S2b["c-TF-IDF Word Evolution"]
+        S2 --> S2c["Trend Detection — linregress"]
+        S2c --> S2d["Growing / Stable / Declining"]
+
+        S2 --> S2e["2B: Evolution Quality"]
+        S2e --> S2f["TTC — Cross-time Coherence"]
+        S2e --> S2g2["TTS — Term Stability"]
+        S2f & S2g2 --> S2h["TTQ = TTC × TTS"]
+    end
+
+    S2d & S2h --> S3
+
+    subgraph S3g ["Skenario 3: Structural Consistency"]
+        S3["Topic Term Drift — TTD"]
+        S3 --> S3a["Endpoint: first vs last year"]
+        S3 --> S3b["Trajectory: drift from baseline"]
+        S3 --> S3c["YoY: consecutive year drift"]
+
+        S3 --> S3d["Continuity Rate"]
+        S3d --> S3e["Stable / Merge / Disappear / New"]
+    end
+
+    S3e --> S4
+
+    subgraph S4g ["Skenario 4: Keyword Trend Evaluation"]
+        S4["TF-IDF per Year — Ground Truth"]
+        S4 --> S4a["Classify: Emerging / Stable / Decaying"]
+        S4a --> S4b["SPAN: Longest consecutive years<br/>keyword appears in topics"]
+        S4b --> S4c["Compare model keyword capture"]
     end
 ```
 
