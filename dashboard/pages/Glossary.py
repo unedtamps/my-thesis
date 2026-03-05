@@ -1,0 +1,162 @@
+import streamlit as st
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+st.set_page_config(page_title="Glossary", page_icon="📖", layout="wide")
+st.title("📖 Glossary")
+st.markdown("Technical terms used across this dashboard. Click the **page link** to jump to the relevant scenario.")
+
+st.divider()
+
+GLOSSARY = {
+    # Skenario 1
+    "Coherence (C_v)": {
+        "definition": "Measures how semantically related the top words in a topic are. Higher C_v means the topic words make more sense together. Computed using sliding window, word co-occurrence, and cosine similarity.",
+        "formula": "C_v = aggregation of NPMI-based similarities over word pairs",
+        "range": "0 to 1 (higher = better)",
+        "page": "Skenario 1: Tuning",
+        "page_link": "/1_Tuning",
+    },
+    "IRBO (Inverted Rank-Biased Overlap)": {
+        "definition": "Measures topic diversity — how different topics are from each other. High IRBO means topics have distinct vocabularies with minimal overlap.",
+        "formula": "IRBO = 1 - RBO(topic_i, topic_j) averaged over all pairs",
+        "range": "0 to 1 (higher = more diverse)",
+        "page": "Skenario 1: Tuning",
+        "page_link": "/1_Tuning",
+    },
+    "Topic Quality": {
+        "definition": "Combined metric balancing coherence and diversity. Uses harmonic mean to ensure both must be high for the combined score to be high.",
+        "formula": "TQ = 2 × (Coherence × IRBO) / (Coherence + IRBO)",
+        "range": "0 to 1 (higher = better)",
+        "page": "Skenario 1: Tuning",
+        "page_link": "/1_Tuning",
+    },
+
+    # Skenario 2
+    "Topic Prevalence": {
+        "definition": "Proportion of documents assigned to a topic per year. Shows how popular/dominant a topic is over time.",
+        "formula": "Prevalence(t, y) = docs_in_topic_t_year_y / total_docs_year_y",
+        "range": "0 to 1",
+        "page": "Skenario 2: Evolution",
+        "page_link": "/2_Evolution",
+    },
+    "c-TF-IDF": {
+        "definition": "Class-based TF-IDF. Extracts representative words per topic per year by treating all documents in a topic-year as one document and computing TF-IDF.",
+        "formula": "c-TF-IDF(w, c) = tf(w, c) × log(1 + A / tf(w, total))",
+        "range": "≥ 0",
+        "page": "Skenario 2: Evolution",
+        "page_link": "/2_Evolution",
+    },
+    "Slope (linregress)": {
+        "definition": "Linear regression slope of topic prevalence over years. Positive = growing topic, negative = declining. Uses all years, not just endpoints.",
+        "formula": "prevalence = intercept + slope × year (via scipy.stats.linregress)",
+        "range": "Any real number",
+        "page": "Skenario 2: Evolution",
+        "page_link": "/2_Evolution",
+    },
+    "TTC (Topic Transition Coherence)": {
+        "definition": "Cross-time coherence: evaluates whether a topic's words at time t are still coherent against the corpus at time t+1. High TTC means the topic remains meaningful.",
+        "formula": "TTC = C_v(words_at_t, corpus_at_t+1)",
+        "range": "0 to 1 (higher = better)",
+        "page": "Skenario 2: Evolution",
+        "page_link": "/2_Evolution",
+    },
+    "TTS (Topic Term Stability)": {
+        "definition": "Cosine similarity of topic word vectors between consecutive years. High TTS means the topic vocabulary is stable over time.",
+        "formula": "TTS = cosine_sim(word_vector_t, word_vector_t+1)",
+        "range": "0 to 1 (higher = more stable)",
+        "page": "Skenario 2: Evolution",
+        "page_link": "/2_Evolution",
+    },
+    "TTQ (Topic Transition Quality)": {
+        "definition": "Combined evolution quality metric. A topic must be both coherent (TTC) and stable (TTS) to score high.",
+        "formula": "TTQ = TTC × TTS",
+        "range": "0 to 1 (higher = better)",
+        "page": "Skenario 2: Evolution",
+        "page_link": "/2_Evolution",
+    },
+
+    # Skenario 3
+    "TTD (Topic Term Drift)": {
+        "definition": "Measures how much a topic's vocabulary has changed over time. Uses binary cosine distance between topic word sets at two time points.",
+        "formula": "TTD = 1 - cosine_sim(binary_word_vector_t1, binary_word_vector_t2)",
+        "range": "0 to 1 (0 = identical, 1 = completely different)",
+        "page": "Skenario 3: Consistency",
+        "page_link": "/3_Consistency",
+    },
+    "YoY Drift": {
+        "definition": "Year-over-Year drift: TTD computed between consecutive years only (e.g., 2015→2016). Shows short-term vocabulary changes.",
+        "formula": "YoY_drift(t) = TTD(words_t, words_t+1)",
+        "range": "0 to 1",
+        "page": "Skenario 3: Consistency",
+        "page_link": "/3_Consistency",
+    },
+    "Trajectory Drift": {
+        "definition": "TTD computed from the baseline (first year) to each subsequent year. Shows cumulative vocabulary shift over time.",
+        "formula": "Trajectory(t) = TTD(words_first_year, words_t)",
+        "range": "0 to 1",
+        "page": "Skenario 3: Consistency",
+        "page_link": "/3_Consistency",
+    },
+    "Continuity Rate": {
+        "definition": "Classifies how topics transition between consecutive years using best-match cosine similarity.",
+        "formula": "Each topic at t → best match at t+1. Categories: Stable (1:1), Merge (many:1), Disappear (no match), New (unmatched at t+1)",
+        "range": "Categorical",
+        "page": "Skenario 3: Consistency",
+        "page_link": "/3_Consistency",
+    },
+
+    # Skenario 4
+    "SPAN": {
+        "definition": "Longest consecutive sequence of years a keyword appears in any topic's top words. Measures how well a model retains important keywords.",
+        "formula": "SPAN(k) = max length of consecutive 1s in presence vector of keyword k",
+        "range": "0 to total_years (higher = better retention)",
+        "page": "Skenario 4: Keyword Trends",
+        "page_link": "/4_Keyword_Trends",
+    },
+    "Emerging Keywords": {
+        "definition": "Words with strong positive TF-IDF slope — low importance early (2000–2010) but growing significance in later years (2015–2025).",
+        "formula": "Classified by highest positive linregress slope of TF-IDF over years",
+        "range": "Top-K by slope",
+        "page": "Skenario 4: Keyword Trends",
+        "page_link": "/4_Keyword_Trends",
+    },
+    "Stable Keywords": {
+        "definition": "Words with near-zero slope and high average TF-IDF — consistently important across all years.",
+        "formula": "Ranked by: avg_tfidf / (1 + |slope| × 10000)",
+        "range": "Top-K by stability score",
+        "page": "Skenario 4: Keyword Trends",
+        "page_link": "/4_Keyword_Trends",
+    },
+    "Decaying Keywords": {
+        "definition": "Words with strong negative TF-IDF slope — high importance early but declining significance in later years.",
+        "formula": "Classified by most negative linregress slope",
+        "range": "Top-K by slope",
+        "page": "Skenario 4: Keyword Trends",
+        "page_link": "/4_Keyword_Trends",
+    },
+}
+
+# Group by scenario
+scenarios = {}
+for term, info in GLOSSARY.items():
+    page = info["page"]
+    if page not in scenarios:
+        scenarios[page] = []
+    scenarios[page].append((term, info))
+
+# Render
+for scenario, terms in scenarios.items():
+    st.subheader(scenario)
+    for term, info in terms:
+        with st.expander(f"**{term}**"):
+            st.markdown(info["definition"])
+            st.code(info["formula"], language=None)
+            col1, col2 = st.columns(2)
+            with col1:
+                st.caption(f"Range: {info['range']}")
+            with col2:
+                st.page_link(f"pages{info['page_link']}.py", label=f"→ Go to {info['page']}", icon="🔗")
+    st.divider()
