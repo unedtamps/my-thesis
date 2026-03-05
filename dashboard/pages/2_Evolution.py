@@ -130,92 +130,103 @@ with tab2:
 
 with tab3:
     st.subheader("Interactive Topic Explorer")
-    st.caption("Select a model and topic to view its prevalence trend and word evolution over time.")
+    st.caption("Each model is collapsible with its own search and topic selector.")
 
-    explorer_model = st.selectbox(
-        "Model", selected_models,
-        format_func=lambda x: MODEL_LABELS[x],
-        key="explorer_model",
-    )
+    for m in selected_models:
+        label = MODEL_LABELS[m]
+        m_prev = load_csv(m, "temporal", subject, "topic_prevalence.csv")
+        m_trends = load_csv(m, "temporal", subject, "topic_trends.csv")
+        m_words = load_csv(m, "temporal", subject, "topic_word_evolution.csv")
 
-    # Load topic data
-    prev_df = load_csv(explorer_model, "temporal", subject, "topic_prevalence.csv")
-    word_df = load_csv(explorer_model, "temporal", subject, "topic_word_evolution.csv")
-    trends_df = load_csv(explorer_model, "temporal", subject, "topic_trends.csv")
+        if m_prev is None or len(m_prev) == 0:
+            continue
 
-    if prev_df is not None and len(prev_df) > 0:
-        topic_ids = sorted(prev_df["topic_id"].unique())
+        with st.expander(f"📊 {label}", expanded=(m == selected_models[0])):
+            topic_ids = sorted(m_prev["topic_id"].unique())
 
-        # Build topic labels with trend + top words
-        topic_labels = {}
-        for tid in topic_ids:
-            label = f"Topic {tid}"
-            if trends_df is not None and len(trends_df) > 0:
-                t_row = trends_df[trends_df["topic_id"] == tid]
-                if len(t_row) > 0:
-                    trend = t_row.iloc[0].get("trend", "")
-                    words = t_row.iloc[0].get("top_words", "")
-                    icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend, "")
-                    label = f"{icon} Topic {tid}: {words[:60]}"
-            topic_labels[tid] = label
+            # Build labels
+            t_labels = {}
+            t_words = {}
+            for tid in topic_ids:
+                lbl = f"Topic {tid}"
+                words = ""
+                if m_trends is not None and len(m_trends) > 0:
+                    t_row = m_trends[m_trends["topic_id"] == tid]
+                    if len(t_row) > 0:
+                        trend = t_row.iloc[0].get("trend", "")
+                        words = str(t_row.iloc[0].get("top_words", ""))
+                        icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend, "")
+                        lbl = f"{icon} T{tid}: {words[:55]}"
+                t_labels[tid] = lbl
+                t_words[tid] = words
 
-        selected_topic = st.selectbox(
-            "Topic",
-            topic_ids,
-            format_func=lambda x: topic_labels.get(x, f"Topic {x}"),
-            key="explorer_topic",
-        )
-
-        # --- Prevalence Chart ---
-        topic_prev = prev_df[prev_df["topic_id"] == selected_topic].sort_values("year")
-        if len(topic_prev) > 0:
-            # Get trend info
-            trend_info = ""
-            if trends_df is not None and len(trends_df) > 0:
-                t_row = trends_df[trends_df["topic_id"] == selected_topic]
-                if len(t_row) > 0:
-                    tr = t_row.iloc[0]
-                    trend_info = f"**{tr.get('trend', '')}** — slope: {tr.get('slope', 0):.6f}, R²: {tr.get('r_squared', 0):.4f}"
-
-            col_chart, col_info = st.columns([3, 1])
-            with col_chart:
-                fig = px.area(
-                    topic_prev, x="year", y="proportion",
-                    title=f"Topic {selected_topic} — Prevalence Over Time",
-                    labels={"proportion": "Proportion of docs", "year": "Year"},
-                )
-                color = colors.get(MODEL_LABELS[explorer_model], "#3b82f6")
-                # Convert hex to rgba for fill transparency
-                r, g, b = int(color[1:3], 16), int(color[3:5], 16), int(color[5:7], 16)
-                fig.update_traces(
-                    line_color=color,
-                    fillcolor=f"rgba({r},{g},{b},0.2)",
-                )
-                fig.update_layout(height=350)
-                st.plotly_chart(fig, use_container_width=True)
-
-            with col_info:
-                st.markdown("#### Stats")
-                if trend_info:
-                    st.markdown(trend_info)
-                st.metric("Total Docs", int(topic_prev["doc_count"].sum()))
-                st.metric("Peak Year", int(topic_prev.loc[topic_prev["proportion"].idxmax(), "year"]))
-                st.metric("Years Active", len(topic_prev[topic_prev["doc_count"] > 0]))
-
-        # --- Word Evolution Table ---
-        st.markdown("#### Word Evolution Over Time")
-        if word_df is not None and len(word_df) > 0:
-            topic_words = word_df[word_df["topic_id"] == selected_topic].sort_values("year")
-            if len(topic_words) > 0:
-                display_words = topic_words[["year", "top_words"]].copy()
-                display_words.columns = ["Year", "Top Words"]
-                st.dataframe(display_words.reset_index(drop=True), use_container_width=True, height=400)
+            # Per-model search
+            search = st.text_input("🔍 Search", placeholder="e.g. neural, quantum...", key=f"search_{m}")
+            if search:
+                filtered = [t for t in topic_ids if search.lower() in t_words[t].lower()]
+                if not filtered:
+                    st.warning(f"No match — showing all")
+                    filtered = topic_ids
             else:
-                st.info("No word evolution data for this topic.")
-        else:
-            st.info("No word evolution data available.")
-    else:
-        st.info("No topic prevalence data available.")
+                filtered = topic_ids
+
+            # Per-model topic multi-select
+            picks = st.multiselect(
+                "Topics", filtered,
+                default=filtered[:2] if len(filtered) >= 2 else filtered[:1],
+                format_func=lambda x: t_labels.get(x, f"Topic {x}"),
+                key=f"topics_{m}",
+            )
+
+            if not picks:
+                st.info("Select at least one topic.")
+                continue
+
+            # Chart with selected topics
+            fig = go.Figure()
+            for i, tid in enumerate(picks):
+                tp = m_prev[m_prev["topic_id"] == tid].sort_values("year")
+                if len(tp) > 0:
+                    fig.add_trace(go.Scatter(
+                        x=tp["year"], y=tp["proportion"],
+                        name=f"T{tid}",
+                        mode="lines+markers",
+                        line=dict(width=2),
+                        marker=dict(size=4),
+                    ))
+            fig.update_layout(
+                title=f"{label} — Topic Prevalence",
+                xaxis_title="Year", yaxis_title="Proportion",
+                height=380, legend=dict(orientation="h", y=-0.15),
+                hovermode="x unified",
+            )
+            st.plotly_chart(fig, use_container_width=True)
+
+            # Topic detail expanders
+            for tid in picks:
+                trend_tag = ""
+                if m_trends is not None and len(m_trends) > 0:
+                    t_row = m_trends[m_trends["topic_id"] == tid]
+                    if len(t_row) > 0:
+                        trend_tag = t_row.iloc[0].get("trend", "")
+                icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend_tag, "")
+
+                with st.expander(f"{icon} Topic {tid} details"):
+                    if m_trends is not None and len(m_trends) > 0:
+                        t_row = m_trends[m_trends["topic_id"] == tid]
+                        if len(t_row) > 0:
+                            tr = t_row.iloc[0]
+                            c1, c2, c3 = st.columns(3)
+                            c1.metric("Trend", f"{icon} {tr.get('trend', 'N/A')}")
+                            c2.metric("Slope", f"{tr.get('slope', 0):.6f}")
+                            c3.metric("R²", f"{tr.get('r_squared', 0):.4f}")
+
+                    if m_words is not None and len(m_words) > 0:
+                        tw = m_words[m_words["topic_id"] == tid].sort_values("year")
+                        if len(tw) > 0:
+                            display = tw[["year", "top_words"]].copy()
+                            display.columns = ["Year", "Top Words"]
+                            st.dataframe(display.reset_index(drop=True), use_container_width=True, height=250)
 # 2B: Evolution Quality
 # ============================================================
 st.header("2B: Evolution Quality (TTC · TTS · TTQ)")

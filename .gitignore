@@ -9,6 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .venv-tomotopy
+.venv-dash
 
 # Data (large CSVs)
 data/*
