@@ -37,7 +37,7 @@ st.header("2A: Temporal Analysis")
 st.divider()
 
 # --- Per-year coherence + IRBO ---
-tab1, tab2, tab3 = st.tabs(["Coherence & Diversity", "Topic Trends", "Topic Explorer"])
+tab1, tab2 = st.tabs(["Coherence & Diversity", "Topic Trends"])
 
 with tab1:
     pym = load_all_models("temporal", subject, "per_year_metrics.csv")
@@ -128,106 +128,8 @@ with tab2:
                         .reset_index(drop=True), use_container_width=True
                     )
 
-with tab3:
-    st.subheader("Interactive Topic Explorer")
-    st.caption("Each model is collapsible with its own search and topic selector.")
+st.info("💡 For per-topic deep-dives (prevalence, drift, continuity), visit the **[Topic Explorer](/5_Topic_Explorer)** page.")
 
-    for m in selected_models:
-        label = MODEL_LABELS[m]
-        m_prev = load_csv(m, "temporal", subject, "topic_prevalence.csv")
-        m_trends = load_csv(m, "temporal", subject, "topic_trends.csv")
-        m_words = load_csv(m, "temporal", subject, "topic_word_evolution.csv")
-
-        if m_prev is None or len(m_prev) == 0:
-            continue
-
-        with st.expander(f"📊 {label}", expanded=(m == selected_models[0])):
-            topic_ids = sorted(m_prev["topic_id"].unique())
-
-            # Build labels
-            t_labels = {}
-            t_words = {}
-            for tid in topic_ids:
-                lbl = f"Topic {tid}"
-                words = ""
-                if m_trends is not None and len(m_trends) > 0:
-                    t_row = m_trends[m_trends["topic_id"] == tid]
-                    if len(t_row) > 0:
-                        trend = t_row.iloc[0].get("trend", "")
-                        words = str(t_row.iloc[0].get("top_words", ""))
-                        icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend, "")
-                        lbl = f"{icon} T{tid}: {words[:55]}"
-                t_labels[tid] = lbl
-                t_words[tid] = words
-
-            # Per-model search
-            search = st.text_input("🔍 Search", placeholder="e.g. neural, quantum...", key=f"search_{m}")
-            if search:
-                filtered = [t for t in topic_ids if search.lower() in t_words[t].lower()]
-                if not filtered:
-                    st.warning(f"No match — showing all")
-                    filtered = topic_ids
-            else:
-                filtered = topic_ids
-
-            # Per-model topic multi-select
-            picks = st.multiselect(
-                "Topics", filtered,
-                default=filtered[:2] if len(filtered) >= 2 else filtered[:1],
-                format_func=lambda x: t_labels.get(x, f"Topic {x}"),
-                key=f"topics_{m}",
-            )
-
-            if not picks:
-                st.info("Select at least one topic.")
-                continue
-
-            # Chart with selected topics
-            fig = go.Figure()
-            for i, tid in enumerate(picks):
-                tp = m_prev[m_prev["topic_id"] == tid].sort_values("year")
-                if len(tp) > 0:
-                    fig.add_trace(go.Scatter(
-                        x=tp["year"], y=tp["proportion"],
-                        name=f"T{tid}",
-                        mode="lines+markers",
-                        line=dict(width=2),
-                        marker=dict(size=4),
-                    ))
-            fig.update_layout(
-                title=f"{label} — Topic Prevalence",
-                xaxis_title="Year", yaxis_title="Proportion",
-                height=380, legend=dict(orientation="h", y=-0.15),
-                hovermode="x unified",
-            )
-            st.plotly_chart(fig, use_container_width=True)
-
-            # Topic detail expanders
-            for tid in picks:
-                trend_tag = ""
-                if m_trends is not None and len(m_trends) > 0:
-                    t_row = m_trends[m_trends["topic_id"] == tid]
-                    if len(t_row) > 0:
-                        trend_tag = t_row.iloc[0].get("trend", "")
-                icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend_tag, "")
-
-                with st.expander(f"{icon} Topic {tid} details"):
-                    if m_trends is not None and len(m_trends) > 0:
-                        t_row = m_trends[m_trends["topic_id"] == tid]
-                        if len(t_row) > 0:
-                            tr = t_row.iloc[0]
-                            c1, c2, c3 = st.columns(3)
-                            c1.metric("Trend", f"{icon} {tr.get('trend', 'N/A')}")
-                            c2.metric("Slope", f"{tr.get('slope', 0):.6f}")
-                            c3.metric("R²", f"{tr.get('r_squared', 0):.4f}")
-
-                    if m_words is not None and len(m_words) > 0:
-                        tw = m_words[m_words["topic_id"] == tid].sort_values("year")
-                        if len(tw) > 0:
-                            display = tw[["year", "top_words"]].copy()
-                            display.columns = ["Year", "Top Words"]
-                            st.dataframe(display.reset_index(drop=True), use_container_width=True, height=250)
-# 2B: Evolution Quality
 # ============================================================
 st.header("2B: Evolution Quality (TTC · TTS · TTQ)")
 st.divider()
