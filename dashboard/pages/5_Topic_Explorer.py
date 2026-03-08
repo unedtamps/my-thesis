@@ -17,8 +17,10 @@ st.markdown("""
 Deep-dive into individual topics across all scenarios.
 Select a model, search or pick topics, and explore their **evolution**, **consistency**, and **continuity** in one place.
 
-*See [Glossary](/Glossary) for detailed definitions.*
-""")
+"""
+)
+st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
+
 
 subject, selected_models = setup_sidebar()
 colors = model_color_map()
@@ -48,25 +50,41 @@ for m in selected_models:
     with st.expander(f"📊 {label}", expanded=(m == selected_models[0])):
         topic_ids = sorted(prev_df["topic_id"].unique())
 
-        # Build labels
+        # Build labels + search index from ALL years' words
         t_labels = {}
-        t_words = {}
+        t_all_words = {}  # all words across all years for search
+        t_word_by_year = {}  # {tid: {year: words}} for hover
         for tid in topic_ids:
             lbl = f"Topic {tid}"
-            words = ""
+            # Collect words across all years from word evolution
+            all_words_set = set()
+            year_words = {}
+            if word_df is not None and len(word_df) > 0:
+                tw = word_df[word_df["topic_id"] == tid]
+                for _, wr in tw.iterrows():
+                    w = str(wr.get("top_words", ""))
+                    year_words[wr["year"]] = w
+                    all_words_set.update(w.replace(",", " ").split())
+
+            # Also add trend summary words
+            trend = ""
+            summary_words = ""
             if trends_df is not None and len(trends_df) > 0:
                 t_row = trends_df[trends_df["topic_id"] == tid]
                 if len(t_row) > 0:
                     trend = t_row.iloc[0].get("trend", "")
-                    words = str(t_row.iloc[0].get("top_words", ""))
+                    summary_words = str(t_row.iloc[0].get("top_words", ""))
+                    all_words_set.update(summary_words.replace(",", " ").split())
                     icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend, "")
-                    lbl = f"{icon} T{tid}: {words[:55]}"
-            t_labels[tid] = lbl
-            t_words[tid] = words
+                    lbl = f"{icon} T{tid}: {summary_words[:55]}"
 
-        # Filter by global search
+            t_labels[tid] = lbl
+            t_all_words[tid] = " ".join(all_words_set).lower()
+            t_word_by_year[tid] = year_words
+
+        # Filter by global search (searches across ALL years' words)
         if search:
-            filtered = [t for t in topic_ids if search.lower() in t_words[t].lower()]
+            filtered = [t for t in topic_ids if search.lower() in t_all_words[t]]
             if not filtered:
                 st.caption(f"No topics match '{search}' in {label}")
                 continue
@@ -96,20 +114,36 @@ for m in selected_models:
 
         # ── TAB 1: Evolution ──
         with t_evo:
-            # Prevalence chart
+            # Prevalence chart with per-year word hover
             fig = go.Figure()
             for tid in picks:
                 tp = prev_df[prev_df["topic_id"] == tid].sort_values("year")
                 if len(tp) > 0:
+                    # Build hover text with year-specific words
+                    hover_words = []
+                    for _, row in tp.iterrows():
+                        yr = row["year"]
+                        w = t_word_by_year.get(tid, {}).get(yr, "")
+                        if len(w) > 80:
+                            w = w[:80] + "..."
+                        hover_words.append(w)
+
                     fig.add_trace(go.Scatter(
                         x=tp["year"], y=tp["proportion"],
                         name=f"T{tid}", mode="lines+markers",
                         line=dict(width=2), marker=dict(size=4),
+                        customdata=list(zip(hover_words, tp["doc_count"].tolist())),
+                        hovertemplate=(
+                            "<b>T%{x}</b> — %{y:.4f}<br>"
+                            "Docs: %{customdata[1]}<br>"
+                            "Words: %{customdata[0]}"
+                            "<extra>T" + str(tid) + "</extra>"
+                        ),
                     ))
             fig.update_layout(
                 title=f"{label} — Topic Prevalence",
                 xaxis_title="Year", yaxis_title="Proportion",
-                height=380, hovermode="x unified",
+                height=380, hovermode="x",
                 legend=dict(orientation="h", y=-0.15),
             )
             st.plotly_chart(fig, use_container_width=True)

@@ -11,8 +11,8 @@ from utils.data_loader import (
     load_csv, load_all_models, setup_sidebar, model_color_map,
 )
 
-st.set_page_config(page_title="Skenario 2: Evolution", page_icon="📊", layout="wide")
-st.title("📊 Skenario 2: Temporal Evolution")
+st.set_page_config(page_title="Scenario 2: Evolution", page_icon="📊", layout="wide")
+st.title("📊 Scenario 2: Temporal Evolution")
 st.markdown("""
 Analyzes how topics change over the 25-year timeline (2000–2025).
 
@@ -24,8 +24,10 @@ and identifies growing/stable/declining topics via linear regression slope.
 - **TTS** — term stability (cosine similarity of vocabulary *t* → *t+1*)
 - **TTQ** — combined quality (TTC × TTS)
 
-*See [Glossary](/Glossary) for detailed definitions.*
-""")
+"""
+)
+st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
+
 
 subject, selected_models = setup_sidebar()
 colors = model_color_map()

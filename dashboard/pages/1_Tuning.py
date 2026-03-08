@@ -11,8 +11,8 @@ from utils.data_loader import (
     load_tuning, setup_sidebar, model_color_map,
 )
 
-st.set_page_config(page_title="Skenario 1: Tuning", page_icon="🔧", layout="wide")
-st.title("🔧 Skenario 1: Hyperparameter Tuning")
+st.set_page_config(page_title="Scenario 1: Tuning", page_icon="🔧", layout="wide")
+st.title("🔧 Scenario 1: Hyperparameter Tuning")
 st.markdown("""
 Grid search over hyperparameters to find the best model configuration per subject.
 Each configuration is scored by three metrics:
@@ -21,8 +21,10 @@ Each configuration is scored by three metrics:
 - **Topic Quality** — harmonic mean of coherence and IRBO
 
 The best model balances both coherence and diversity.
-*See [Glossary](/Glossary) for detailed definitions.*
-""")
+"""
+)
+st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
+
 
 subject, selected_models = setup_sidebar()
 colors = model_color_map()

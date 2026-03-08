@@ -11,8 +11,8 @@ from utils.data_loader import (
     load_csv, load_all_models, setup_sidebar, model_color_map,
 )
 
-st.set_page_config(page_title="Skenario 3: Consistency", page_icon="🔗", layout="wide")
-st.title("🔗 Skenario 3: Structural Consistency")
+st.set_page_config(page_title="Scenario 3: Consistency", page_icon="🔗", layout="wide")
+st.title("🔗 Scenario 3: Structural Consistency")
 st.markdown("""
 Evaluates how structurally stable topics remain over time.
 
@@ -27,8 +27,10 @@ Evaluates how structurally stable topics remain over time.
 - *Disappear*: topic has no match
 - *New*: topic appears without predecessor
 
-*See [Glossary](/Glossary) for detailed definitions.*
-""")
+"""
+)
+st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
+
 
 subject, selected_models = setup_sidebar()
 colors = model_color_map()

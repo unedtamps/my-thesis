@@ -12,8 +12,8 @@ from utils.data_loader import (
     load_csv, load_all_models, setup_sidebar, model_color_map,
 )
 
-st.set_page_config(page_title="Skenario 4: Keyword Trends", page_icon="📈", layout="wide")
-st.title("📈 Skenario 4: Keyword Trend Evaluation")
+st.set_page_config(page_title="Scenario 4: Keyword Trends", page_icon="📈", layout="wide")
+st.title("📈 Scenario 4: Keyword Trend Evaluation")
 st.markdown("""
 Validates whether models capture statistically popular keywords and retain them over time.
 
@@ -25,8 +25,10 @@ Validates whether models capture statistically popular keywords and retain them 
 **SPAN** — longest consecutive years a keyword appears in a model's topic words.
 A good model should have high SPAN for stable keywords and capture emerging trends early.
 
-*See [Glossary](/Glossary) for detailed definitions.*
-""")
+"""
+)
+st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
+
 
 subject, selected_models = setup_sidebar()
 colors = model_color_map()
