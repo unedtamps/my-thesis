@@ -18,7 +18,7 @@ graph TD
 
     E & F & G & H --> S1
 
-    subgraph S1g ["Skenario 1: Tuning"]
+    subgraph S1g ["Scenario 1: Tuning"]
         S1["Grid Search Hyperparameters"]
         S1 --> S1a["Coherence C_v"]
         S1 --> S1b["Diversity IRBO"]
@@ -28,7 +28,7 @@ graph TD
 
     S1d --> S2
 
-    subgraph S2g ["Skenario 2: Temporal Evolution"]
+    subgraph S2g ["Scenario 2: Temporal Evolution"]
         S2["2A: Temporal Analysis"]
         S2 --> S2a["Topic Prevalence per Year"]
         S2 --> S2b["c-TF-IDF Word Evolution"]
@@ -43,7 +43,7 @@ graph TD
 
     S2d & S2h --> S3
 
-    subgraph S3g ["Skenario 3: Structural Consistency"]
+    subgraph S3g ["Scenario 3: Structural Consistency"]
         S3["Topic Term Drift — TTD"]
         S3 --> S3a["Endpoint: first vs last year"]
         S3 --> S3b["Trajectory: drift from baseline"]
@@ -55,7 +55,7 @@ graph TD
 
     S3e --> S4
 
-    subgraph S4g ["Skenario 4: Keyword Trend Evaluation"]
+    subgraph S4g ["Scenario 4: Keyword Trend Evaluation"]
         S4["TF-IDF per Year — Ground Truth"]
         S4 --> S4a["Classify: Emerging / Stable / Decaying"]
         S4a --> S4b["SPAN: Longest consecutive years<br/>keyword appears in topics"]
@@ -82,35 +82,35 @@ graph TD
 │   ├── eda/                          # Exploratory Data Analysis & wordclouds
 │   ├── preprocessing/                # Data preprocessing notebooks
 │   └── models/{model}/               # Per-model experiment notebooks
-│       ├── tuning/                   # Skenario 1: Hyperparameter tuning
+│       ├── tuning/                   # Scenario 1: Hyperparameter tuning
 │       │   └── tuning.ipynb
-│       ├── temporal/                 # Skenario 2A: Temporal topic analysis
+│       ├── temporal/                 # Scenario 2A: Temporal topic analysis
 │       │   └── temporal_topics.ipynb #   Prevalence, c-TF-IDF, trends (linregress)
-│       ├── evolution/                # Skenario 2B: Evolution quality
+│       ├── evolution/                # Scenario 2B: Evolution quality
 │       │   └── topic_evolution.ipynb #   TTC, TTS, TTQ per transition
-│       ├── consistency/              # Skenario 3: Structural consistency
+│       ├── consistency/              # Scenario 3: Structural consistency
 │       │   ├── topic_term_drift.ipynb#   TTD: endpoint, trajectory, YoY drift
 │       │   └── continuity_rate.ipynb #   Continuity: stable/merge/disappear/new
-│       └── tren/                     # Skenario 4: Keyword trend evaluation
+│       └── tren/                     # Scenario 4: Keyword trend evaluation
 │           └── keyword_trend.ipynb   #   TF-IDF ground truth + SPAN analysis
 │
 ├── results/{model}/                  # Output CSVs per model
 │   ├── tuning/{subject}/             # Tuning results
-│   ├── temporal/{subject}/           # Skenario 2A results
+│   ├── temporal/{subject}/           # Scenario 2A results
 │   │   ├── topic_word_evolution.csv  #   Topic words per year
 │   │   ├── per_year_metrics.csv      #   Coherence, diversity per year
 │   │   └── topic_trends.csv          #   Growing/stable/declining topics
-│   ├── evolution/{subject}/          # Skenario 2B results
+│   ├── evolution/{subject}/          # Scenario 2B results
 │   │   ├── topic_evolution_metrics.csv#  TTC, TTS, TTQ per topic per transition
 │   │   ├── transition_summary.csv   #   Avg TTC/TTS/TTQ per transition
 │   │   └── evolution_summary.csv    #   Overall summary
-│   ├── consistency/{subject}/        # Skenario 3 results
+│   ├── consistency/{subject}/        # Scenario 3 results
 │   │   ├── ttd_endpoint.csv          #   First→last year drift
 │   │   ├── ttd_yoy_avg.csv           #   Year-over-year drift
 │   │   ├── continuity_transitions.csv#   Per-topic continuity classification
 │   │   ├── continuity_merges.csv     #   Merge group details
 │   │   └── continuity_new_topics.csv #   Newly emerged topics
-│   └── tren/{subject}/               # Skenario 4 results
+│   └── tren/{subject}/               # Scenario 4 results
 │       ├── ground_truth_keywords.csv #   TF-IDF classified keywords
 │       ├── keyword_span.csv          #   SPAN per keyword
 │       └── keyword_span_summary.csv  #   Aggregated SPAN stats

@@ -176,3 +176,117 @@ with tab_heatmap:
                 st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("No heatmap data available.")
+
+st.divider()
+
+# ============================================================
+# Category Matching Analysis
+# ============================================================
+st.header("Category Matching (Model vs Ground Truth)")
+st.caption(
+    "Does the model's keyword trend (slope of topic count over years) "
+    "match the ground truth category? A higher match % means the model "
+    "better captures the true trend direction."
+)
+
+tab_acc, tab_kw = st.tabs(["Accuracy Comparison", "Per-Keyword Detail"])
+
+with tab_acc:
+    # Load summaries for all models
+    summary_frames = []
+    for m in selected_models:
+        s_df = load_csv(m, "tren", subject, "keyword_category_match_summary.csv")
+        if s_df is not None and len(s_df) > 0:
+            s_df["model"] = MODEL_LABELS[m]
+            summary_frames.append(s_df)
+
+    if summary_frames:
+        all_s = pd.concat(summary_frames, ignore_index=True)
+
+        # Overall accuracy comparison
+        overall = all_s[all_s["gt_category"] == "OVERALL"]
+        if len(overall) > 0:
+            fig = px.bar(
+                overall, x="model", y="accuracy_pct", color="model",
+                color_discrete_map=colors,
+                title="Overall Category Match Accuracy",
+                labels={"accuracy_pct": "Accuracy %", "model": ""},
+                text="accuracy_pct",
+            )
+            fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
+            fig.update_layout(height=400, showlegend=False, yaxis_range=[0, 100])
+            st.plotly_chart(fig, use_container_width=True)
+
+        # Per-category breakdown
+        per_cat = all_s[all_s["gt_category"] != "OVERALL"]
+        if len(per_cat) > 0:
+            fig = px.bar(
+                per_cat, x="gt_category", y="accuracy_pct", color="model",
+                barmode="group", color_discrete_map=colors,
+                title="Accuracy per Category",
+                labels={"accuracy_pct": "Accuracy %", "gt_category": "Ground Truth Category"},
+                text="accuracy_pct",
+            )
+            fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
+            fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15), yaxis_range=[0, 100])
+            st.plotly_chart(fig, use_container_width=True)
+
+        # Metrics row
+        st.subheader("Match Counts")
+        cols = st.columns(len(selected_models))
+        for i, m in enumerate(selected_models):
+            with cols[i]:
+                o = overall[overall["model"] == MODEL_LABELS[m]]
+                if len(o) > 0:
+                    row = o.iloc[0]
+                    st.metric(
+                        MODEL_LABELS[m],
+                        f"{row['accuracy_pct']:.1f}%",
+                        f"{int(row['n_matched'])}/{int(row['n_keywords'])} keywords",
+                    )
+    else:
+        st.info("No category match data. Run `scripts/keyword_category_match.py` first.")
+
+with tab_kw:
+    model_kw = st.selectbox(
+        "Select model",
+        selected_models, format_func=lambda x: MODEL_LABELS[x],
+        key="cat_match_model",
+    )
+    match_df = load_csv(model_kw, "tren", subject, "keyword_category_match.csv")
+    if match_df is not None and len(match_df) > 0:
+        cat_filter_m = st.selectbox(
+            "Filter category", ["all", "emerging", "stable", "decaying"],
+            key="cat_match_filter",
+        )
+        show_filter = st.radio(
+            "Show", ["All", "Matches only", "Mismatches only"],
+            horizontal=True, key="cat_match_show",
+        )
+        view = match_df.copy()
+        if cat_filter_m != "all":
+            view = view[view["gt_category"] == cat_filter_m]
+        if show_filter == "Matches only":
+            view = view[view["match"] == True]
+        elif show_filter == "Mismatches only":
+            view = view[view["match"] == False]
+
+        # Color-code match column
+        display_cols = ["word", "gt_category", "model_category", "match",
+                        "model_slope", "model_p_value", "model_r_squared",
+                        "span", "coverage_pct"]
+        available = [c for c in display_cols if c in view.columns]
+        st.dataframe(
+            view[available].sort_values(["gt_category", "match"]).reset_index(drop=True),
+            use_container_width=True,
+            column_config={
+                "match": st.column_config.CheckboxColumn("Match?"),
+                "model_slope": st.column_config.NumberColumn("Model Slope", format="%.6f"),
+                "model_p_value": st.column_config.NumberColumn("p-value", format="%.4f"),
+                "model_r_squared": st.column_config.NumberColumn("R²", format="%.4f"),
+                "coverage_pct": st.column_config.NumberColumn("Coverage %", format="%.1f"),
+            },
+        )
+    else:
+        st.info("No category match data. Run `scripts/keyword_category_match.py` first.")
+

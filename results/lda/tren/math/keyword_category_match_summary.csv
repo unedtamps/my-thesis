@@ -1,0 +1,5 @@
+subject,model,gt_category,n_keywords,n_matched,accuracy_pct
+math,lda,emerging,20,14,70.0
+math,lda,stable,20,13,65.0
+math,lda,decaying,20,9,45.0
+math,lda,OVERALL,60,36,60.0

@@ -1,0 +1,5 @@
+subject,model,gt_category,n_keywords,n_matched,accuracy_pct
+math,bertopic,emerging,20,20,100.0
+math,bertopic,stable,20,11,55.0
+math,bertopic,decaying,20,2,10.0
+math,bertopic,OVERALL,60,33,55.0

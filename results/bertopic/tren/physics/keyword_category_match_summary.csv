@@ -1,0 +1,5 @@
+subject,model,gt_category,n_keywords,n_matched,accuracy_pct
+physics,bertopic,emerging,20,17,85.0
+physics,bertopic,stable,20,7,35.0
+physics,bertopic,decaying,20,0,0.0
+physics,bertopic,OVERALL,60,24,40.0

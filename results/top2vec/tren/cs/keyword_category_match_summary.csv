@@ -1,0 +1,5 @@
+subject,model,gt_category,n_keywords,n_matched,accuracy_pct
+cs,top2vec,emerging,20,18,90.0
+cs,top2vec,stable,20,10,50.0
+cs,top2vec,decaying,20,4,20.0
+cs,top2vec,OVERALL,60,32,53.3

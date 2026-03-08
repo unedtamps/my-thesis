@@ -1,0 +1,5 @@
+subject,model,gt_category,n_keywords,n_matched,accuracy_pct
+physics,lda,emerging,20,11,55.0
+physics,lda,stable,20,12,60.0
+physics,lda,decaying,20,3,15.0
+physics,lda,OVERALL,60,26,43.3
