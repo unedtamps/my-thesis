@@ -1,5 +1,0 @@
-subject,model,gt_category,n_keywords,n_matched,accuracy_pct
-cs,bertopic,emerging,20,17,85.0
-cs,bertopic,stable,20,12,60.0
-cs,bertopic,decaying,20,2,10.0
-cs,bertopic,OVERALL,60,31,51.7

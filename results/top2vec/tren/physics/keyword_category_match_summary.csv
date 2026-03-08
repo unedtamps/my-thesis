@@ -1,5 +1,0 @@
-subject,model,gt_category,n_keywords,n_matched,accuracy_pct
-physics,top2vec,emerging,20,17,85.0
-physics,top2vec,stable,20,8,40.0
-physics,top2vec,decaying,20,4,20.0
-physics,top2vec,OVERALL,60,29,48.3

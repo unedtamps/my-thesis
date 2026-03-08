@@ -1,5 +1,0 @@
-subject,model,gt_category,n_keywords,n_matched,accuracy_pct
-cs,dtm,emerging,20,18,90.0
-cs,dtm,stable,20,13,65.0
-cs,dtm,decaying,20,16,80.0
-cs,dtm,OVERALL,60,47,78.3

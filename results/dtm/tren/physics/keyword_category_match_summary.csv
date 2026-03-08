@@ -1,5 +1,0 @@
-subject,model,gt_category,n_keywords,n_matched,accuracy_pct
-physics,dtm,emerging,20,13,65.0
-physics,dtm,stable,20,11,55.0
-physics,dtm,decaying,20,7,35.0
-physics,dtm,OVERALL,60,31,51.7
