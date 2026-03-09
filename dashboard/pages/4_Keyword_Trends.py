@@ -36,146 +36,135 @@ colors = model_color_map()
 st.divider()
 
 # ============================================================
-# Ground Truth Keywords
+# Trend Category SPAN (TF-IDF)
 # ============================================================
-st.header("Ground Truth Keywords (TF-IDF)")
+st.header("Trend Category SPAN (TF-IDF)")
+st.markdown("""
+Evaluate model performance against **specific trend categories** determined by TF-IDF slope over the corpus.
+For each subject, we identify 90 ground-truth keywords:
+- 📈 **30 Emerging**: growing importance over time (highest positive slope)
+- 🔒 **30 Stable**: consistently important (near-zero slope + high avg TF-IDF)
+- 📉 **30 Decaying**: declining importance (highest negative slope)
 
-# Ground truth is the same for models sharing the same data source
-# Just pick the first available
-gt = None
-for m in selected_models:
-    gt = load_csv(m, "tren", subject, "ground_truth_keywords.csv")
-    if gt is not None and len(gt) > 0:
-        break
+Models are evaluated using the paper's frequency-weighted formula onto these specific 90 keywords.
+""")
 
-if gt is not None and len(gt) > 0:
-    tab_em, tab_st, tab_dc = st.tabs(["Emerging", "Stable", "Decaying"])
+def load_shared_csv(target_subject, filename):
+    from utils.data_loader import RESULTS_DIR
+    path = RESULTS_DIR / "shared" / "tren" / target_subject / filename
+    if path.exists() and path.stat().st_size > 10:
+        return pd.read_csv(path)
+    return None
 
-    for tab, cat in [(tab_em, "emerging"), (tab_st, "stable"), (tab_dc, "decaying")]:
-        with tab:
-            cat_df = gt[gt["category"] == cat]
-            if len(cat_df) > 0:
-                st.dataframe(
-                    cat_df[["word", "slope", "r_squared", "early_avg", "late_avg", "first_year", "n_present"]]
-                    .reset_index(drop=True),
-                    use_container_width=True,
-                )
-else:
-    st.info("No ground truth keywords available.")
+tc_sum_df = load_shared_csv(subject, "trend_category_span_summary.csv")
+tc_df = load_shared_csv(subject, "trend_category_span.csv")
 
-st.divider()
+if tc_sum_df is not None and tc_df is not None:
+    tab_tc_sum, tab_tc_em, tab_tc_st, tab_tc_dc, tab_tc_hm = st.tabs(
+        ["Summary", "📈 Emerging", "🔒 Stable", "📉 Decaying", "Presence Heatmap"]
+    )
 
-# ============================================================
-# SPAN Comparison
-# ============================================================
-st.header("SPAN Analysis")
-
-tab_summary, tab_detail, tab_heatmap = st.tabs(["Summary", "Per-Keyword", "Presence Heatmap"])
-
-with tab_summary:
-    span_all = load_all_models("tren", subject, "keyword_span_summary.csv")
-    if len(span_all) > 0:
-        span_f = span_all[span_all["model"].isin([MODEL_LABELS[m] for m in selected_models])]
-
+    with tab_tc_sum:
+        tc_f = tc_sum_df[tc_sum_df["model"].isin([MODEL_LABELS[m] for m in selected_models])]
+        
+        # Overall comparison
+        st.subheader("Overall Performance (90 Keywords)")
+        tc_all = tc_f[tc_f["category"] == "all"]
         col1, col2 = st.columns(2)
         with col1:
             fig = px.bar(
-                span_f, x="category", y="avg_span", color="model",
-                barmode="group", color_discrete_map=colors,
-                title="Average SPAN per Category",
-                labels={"avg_span": "Avg SPAN (years)", "category": ""},
+                tc_all, x="model", y="avg_span_paper", color="model", color_discrete_map=colors,
+                title="avg-SPAN (Paper Formula)", text_auto=".4f"
             )
-            fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+            fig.update_layout(height=400, showlegend=False)
             st.plotly_chart(fig, use_container_width=True)
-
         with col2:
             fig = px.bar(
-                span_f, x="category", y="avg_coverage_pct", color="model",
-                barmode="group", color_discrete_map=colors,
-                title="Average Coverage %",
-                labels={"avg_coverage_pct": "Coverage %", "category": ""},
+                tc_all, x="model", y="n_captured", color="model", color_discrete_map=colors,
+                title="Keywords Captured (out of 90)"
             )
-            fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+            fig.update_layout(height=400, showlegend=False, yaxis_range=[0, 95])
             st.plotly_chart(fig, use_container_width=True)
-
-        # Never captured
-        fig = px.bar(
-            span_f, x="category", y="n_never_captured", color="model",
-            barmode="group", color_discrete_map=colors,
-            title="Keywords Never Captured (SPAN = 0)",
-            labels={"n_never_captured": "Count", "category": ""},
+            
+        # By category
+        st.subheader("Performance by Category")
+        tc_cat = tc_f[tc_f["category"] != "all"]
+        fig_cat = px.bar(
+            tc_cat, x="category", y="avg_span_paper", color="model", barmode="group",
+            color_discrete_map=colors, title="avg-SPAN (Paper) by Trend Category",
+            labels={"avg_span_paper": "avg-SPAN (paper)", "category": "Category"}
         )
-        fig.update_layout(height=350, legend=dict(orientation="h", y=-0.15))
-        st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.info("No SPAN summary data available.")
-
-with tab_detail:
-    model_select = st.selectbox(
-        "Select model for detail view",
-        selected_models, format_func=lambda x: MODEL_LABELS[x],
-        key="span_detail_model",
-    )
-    span_df = load_csv(model_select, "tren", subject, "keyword_span.csv")
-    if span_df is not None and len(span_df) > 0:
-        cat_filter = st.selectbox("Category", ["all", "emerging", "stable", "decaying"], key="span_cat")
-        if cat_filter != "all":
-            span_df = span_df[span_df["category"] == cat_filter]
-
-        display_cols = ["word", "category", "span", "total_years_present", "coverage_pct",
-                        "total_topic_hits", "avg_topics_when_present", "presence"]
-        available = [c for c in display_cols if c in span_df.columns]
+        st.plotly_chart(fig_cat, use_container_width=True)
+        
         st.dataframe(
-            span_df[available].sort_values("span", ascending=False).reset_index(drop=True),
+            tc_f[["model", "category", "n_captured", "capture_pct", "avg_span_paper", "avg_span_simple"]].reset_index(drop=True),
             use_container_width=True,
+            column_config={
+                "model": "Model", "category": "Category", "n_captured": "Captured",
+                "capture_pct": st.column_config.NumberColumn("Captured (%)", format="%.1f%%"),
+                "avg_span_paper": st.column_config.NumberColumn("avg-SPAN (paper)", format="%.6f"),
+                "avg_span_simple": st.column_config.NumberColumn("avg-SPAN (simple)", format="%.2f")
+            }
         )
 
-with tab_heatmap:
-    model_hm = st.selectbox(
-        "Select model for heatmap",
-        selected_models, format_func=lambda x: MODEL_LABELS[x],
-        key="heatmap_model",
-    )
-    span_hm = load_csv(model_hm, "tren", subject, "keyword_span.csv")
-    if span_hm is not None and len(span_hm) > 0:
-        cat_hm = st.selectbox("Category", ["emerging", "stable", "decaying"], key="hm_cat")
-        cat_data = span_hm[span_hm["category"] == cat_hm].copy()
+    def render_category_tab(cat_name):
+        cat_df = tc_df[tc_df["category"] == cat_name]
+        span_cols = ["word", "v_hat"]
+        for m in selected_models:
+            if f"span_{MODEL_LABELS[m]}" in cat_df.columns:
+                span_cols.append(f"span_{MODEL_LABELS[m]}")
+                
+        st.dataframe(
+            cat_df[span_cols].sort_values("v_hat", ascending=False).reset_index(drop=True),
+            use_container_width=True,
+            column_config={
+                "word": "Keyword", "v_hat": "v̂ₖ (corpus freq)",
+                **{f"span_{MODEL_LABELS[m]}": f"SPAN ({MODEL_LABELS[m]})" for m in selected_models}
+            }
+        )
 
-        if len(cat_data) > 0 and "topic_counts_per_year" in cat_data.columns:
-            # Parse topic counts array
-            import ast
-            rows_parsed = []
-            for _, r in cat_data.iterrows():
+    with tab_tc_em:
+        render_category_tab("emerging")
+    with tab_tc_st:
+        render_category_tab("stable")
+    with tab_tc_dc:
+        render_category_tab("decaying")
+
+    with tab_tc_hm:
+        import ast as _ast
+        col_m, col_c = st.columns(2)
+        model_hm = col_m.selectbox("Select model for heatmap", selected_models, format_func=lambda x: MODEL_LABELS[x], key="tc_hm_mod")
+        cat_hm = col_c.selectbox("Select category", ["emerging", "stable", "decaying"], key="tc_hm_cat")
+        
+        lbl = MODEL_LABELS[model_hm]
+        trend_col = f"trend_{lbl}"
+        span_col  = f"span_{lbl}"
+        
+        hm_df = tc_df[(tc_df["category"] == cat_hm) & (tc_df[span_col] > 0)]
+        if len(hm_df) > 0 and trend_col in hm_df.columns:
+            rows_hm = []
+            for _, r in hm_df.nlargest(30, span_col).iterrows():
                 try:
-                    counts = ast.literal_eval(r["topic_counts_per_year"])
-                    rows_parsed.append({"word": r["word"], "counts": counts})
+                    trend = _ast.literal_eval(r[trend_col])
+                    rows_hm.append({"word": r["word"], "trend": trend, "span": r[span_col]})
                 except:
                     pass
-
-            if rows_parsed:
-                # Determine years from the length
-                n_years = len(rows_parsed[0]["counts"])
-                years = list(range(2000, 2000 + n_years))
-
-                matrix = []
-                words_list = []
-                for rp in rows_parsed:
-                    matrix.append(rp["counts"])
-                    words_list.append(rp["word"])
-
-                matrix_np = np.array(matrix)
-
-                fig = px.imshow(
-                    matrix_np, x=[str(y) for y in years], y=words_list,
-                    color_continuous_scale="YlOrRd",
-                    title=f"{MODEL_LABELS[model_hm]}: {cat_hm.title()} Keywords — Topics per Year",
-                    labels={"color": "# Topics"},
-                    aspect="auto",
-                )
-                fig.update_layout(height=max(400, len(words_list) * 25))
+            if rows_hm:
+                n_years = len(rows_hm[0]["trend"])
+                years = list(range(2000, 2000+n_years))
+                matrix = [r["trend"] for r in rows_hm]
+                words = [f"{r['word']} (S={r['span']})" for r in rows_hm]
+                fig = px.imshow(np.array(matrix), x=[str(y) for y in years], y=words, aspect="auto", 
+                                color_continuous_scale=[[0, "#1e1e2e"], [1, "#22c55e"]],
+                                title=f"Keyword-Trend: {lbl} — {cat_hm.title()} (Max 30 Words)",
+                                labels={"color": "Present"})
+                fig.update_layout(height=max(400, len(words)*28))
+                fig.update_coloraxes(showscale=False)
                 st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("No heatmap data available.")
+else:
+    st.info("No Trend Category SPAN data available. Run `trend_category_span.py` first.")
 
 st.divider()
 

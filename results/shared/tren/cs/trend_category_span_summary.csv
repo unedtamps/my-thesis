@@ -1,0 +1,17 @@
+model,category,n_keywords,n_captured,capture_pct,avg_span_paper,avg_span_simple
+DTM,all,90,89,98.9,0.00068999,13.5618
+DTM,emerging,30,30,100.0,0.00045997,10.7
+DTM,stable,30,30,100.0,0.00076053,16.4333
+DTM,decaying,30,29,96.7,0.00085497,13.5517
+LDA,all,90,80,88.9,0.00059363,9.6
+LDA,emerging,30,25,83.3,0.00047544,10.48
+LDA,stable,30,29,96.7,0.000388,7.8966
+LDA,decaying,30,26,86.7,0.00093662,10.6538
+Top2Vec,all,90,84,93.3,0.00073527,11.2619
+Top2Vec,emerging,30,24,80.0,0.00063533,13.5
+Top2Vec,stable,30,30,100.0,0.00048033,9.7
+Top2Vec,decaying,30,30,100.0,0.00107017,11.0333
+BERTopic,all,90,83,92.2,0.00080955,11.2651
+BERTopic,emerging,30,24,80.0,0.00051792,10.4583
+BERTopic,stable,30,29,96.7,0.00055248,10.6897
+BERTopic,decaying,30,30,100.0,0.00129137,12.4667
