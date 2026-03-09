@@ -1,0 +1,5 @@
+model,n_keywords,avg_span_paper,avg_span_simple,sum_s_dict,max_span,n_captured,n_full_span
+DTM,50,0.000536,16.5,0.026798,26,50,11
+LDA,50,0.00027,9.04,0.013524,26,47,2
+Top2Vec,50,0.000328,10.78,0.016423,26,47,3
+BERTopic,50,0.000302,9.62,0.015092,26,45,1

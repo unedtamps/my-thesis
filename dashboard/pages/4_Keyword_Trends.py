@@ -312,3 +312,138 @@ with tab_paper_top:
             st.plotly_chart(fig, use_container_width=True)
     else:
         st.info("No keyword-trend data available.")
+
+st.divider()
+
+# ============================================================
+# Shared Keyword SPAN — Cross-Model Comparison (Paper Table 6)
+# ============================================================
+st.header("Shared Keyword SPAN — Cross-Model Comparison")
+st.markdown("""
+Like Table 6 and Figure 4 in the paper: the **same** top-50 corpus keywords are evaluated
+against **all** models, enabling a direct apple-to-apple SPAN comparison.
+""")
+
+# Load shared data helper
+def load_shared_csv(subject, filename):
+    from utils.data_loader import RESULTS_DIR
+    path = RESULTS_DIR / "shared" / "tren" / subject / filename
+    if path.exists() and path.stat().st_size > 10:
+        return pd.read_csv(path)
+    return None
+
+tab_shared_summary, tab_shared_table, tab_shared_trend = st.tabs(
+    ["avg-SPAN Comparison", "Per-Keyword Table (Table 6)", "Keyword-Trend (Figure 4)"]
+)
+
+with tab_shared_summary:
+    shared_summary = load_shared_csv(subject, "shared_keyword_span_summary.csv")
+    if shared_summary is not None and len(shared_summary) > 0:
+        shared_f = shared_summary[shared_summary["model"].isin(
+            [MODEL_LABELS[m] for m in selected_models]
+        )]
+
+        col1, col2 = st.columns(2)
+        with col1:
+            fig = px.bar(
+                shared_f, x="model", y="avg_span_paper", color="model",
+                color_discrete_map=colors,
+                title="avg-SPAN — Paper Formula: (1/N) × Σ (Sₖ/v̂ₖ)",
+                labels={"avg_span_paper": "avg-SPAN (paper)", "model": ""},
+            )
+            fig.update_layout(height=400, showlegend=False)
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            fig = px.bar(
+                shared_f, x="model", y="avg_span_simple", color="model",
+                color_discrete_map=colors,
+                title="avg-SPAN — Simple Mean (years)",
+                labels={"avg_span_simple": "avg SPAN (years)", "model": ""},
+            )
+            fig.update_layout(height=400, showlegend=False)
+            st.plotly_chart(fig, use_container_width=True)
+
+        st.dataframe(
+            shared_f[["model", "n_keywords", "avg_span_paper", "avg_span_simple",
+                       "n_captured", "n_full_span"]].reset_index(drop=True),
+            use_container_width=True,
+            column_config={
+                "model": "Model",
+                "n_keywords": "Shared Keywords",
+                "avg_span_paper": st.column_config.NumberColumn("avg-SPAN (paper)", format="%.6f"),
+                "avg_span_simple": st.column_config.NumberColumn("avg-SPAN (simple)", format="%.2f"),
+                "n_captured": "Captured",
+                "n_full_span": "Full SPAN",
+            },
+        )
+    else:
+        st.info("No shared keyword data. Run `notebooks/models/shared_keyword_span.py` first.")
+
+with tab_shared_table:
+    shared_df = load_shared_csv(subject, "shared_keyword_span.csv")
+    if shared_df is not None and len(shared_df) > 0:
+        # Build side-by-side SPAN table (like paper Table 6)
+        span_cols = ["word", "v_hat"]
+        for m in selected_models:
+            lbl = MODEL_LABELS[m]
+            if f"span_{lbl}" in shared_df.columns:
+                span_cols.append(f"span_{lbl}")
+
+        sort_col = st.selectbox("Sort by", ["v_hat"] + [f"span_{MODEL_LABELS[m]}" for m in selected_models],
+                                key="shared_sort", format_func=lambda x: x.replace("span_", "SPAN ").replace("v_hat", "Corpus freq (v̂ₖ)"))
+
+        st.dataframe(
+            shared_df[span_cols].sort_values(sort_col, ascending=False).reset_index(drop=True),
+            use_container_width=True,
+            column_config={
+                "word": "Keyword",
+                "v_hat": "v̂ₖ (corpus freq)",
+                **{f"span_{MODEL_LABELS[m]}": f"SPAN ({MODEL_LABELS[m]})" for m in selected_models},
+            },
+        )
+    else:
+        st.info("No shared keyword data available.")
+
+with tab_shared_trend:
+    shared_df2 = load_shared_csv(subject, "shared_keyword_span.csv")
+    if shared_df2 is not None and len(shared_df2) > 0:
+        import ast as _ast
+        model_trend = st.selectbox(
+            "Select model for keyword-trend",
+            selected_models, format_func=lambda x: MODEL_LABELS[x],
+            key="shared_trend_model",
+        )
+        n_kw = st.slider("Number of keywords", 10, 50, 20, key="shared_n_kw")
+        lbl = MODEL_LABELS[model_trend]
+        trend_col = f"trend_{lbl}"
+        span_col = f"span_{lbl}"
+
+        if trend_col in shared_df2.columns:
+            top_kw = shared_df2.nlargest(n_kw, span_col)
+            rows_hm = []
+            for _, r in top_kw.iterrows():
+                try:
+                    trend = _ast.literal_eval(r[trend_col])
+                    rows_hm.append({"word": r["word"], "trend": trend, "span": r[span_col]})
+                except:
+                    pass
+
+            if rows_hm:
+                n_years = len(rows_hm[0]["trend"])
+                years = list(range(2000, 2000 + n_years))
+                matrix = [row["trend"] for row in rows_hm]
+                words = [f"{row['word']} (S={row['span']})" for row in rows_hm]
+
+                fig = px.imshow(
+                    np.array(matrix), x=[str(y) for y in years], y=words,
+                    color_continuous_scale=[[0, "#1e1e2e"], [1, "#22c55e"]],
+                    title=f"Keyword-Trend: {lbl} — Top {n_kw} Shared Keywords by SPAN",
+                    labels={"color": "Present"},
+                    aspect="auto",
+                )
+                fig.update_layout(height=max(400, len(words) * 28))
+                fig.update_coloraxes(showscale=False)
+                st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("No keyword-trend data available.")
