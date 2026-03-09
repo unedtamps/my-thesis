@@ -366,14 +366,15 @@ with tab_shared_summary:
 
         st.dataframe(
             shared_f[["model", "n_keywords", "avg_span_paper", "avg_span_simple",
-                       "n_captured", "n_full_span"]].reset_index(drop=True),
+                       "n_captured", "capture_pct", "n_full_span"]].reset_index(drop=True),
             use_container_width=True,
             column_config={
                 "model": "Model",
-                "n_keywords": "Shared Keywords",
+                "n_keywords": "Total Candidates",
                 "avg_span_paper": st.column_config.NumberColumn("avg-SPAN (paper)", format="%.6f"),
                 "avg_span_simple": st.column_config.NumberColumn("avg-SPAN (simple)", format="%.2f"),
                 "n_captured": "Captured",
+                "capture_pct": st.column_config.NumberColumn("Captured (%)", format="%.1f%%"),
                 "n_full_span": "Full SPAN",
             },
         )
@@ -390,11 +391,21 @@ with tab_shared_table:
             if f"span_{lbl}" in shared_df.columns:
                 span_cols.append(f"span_{lbl}")
 
-        sort_col = st.selectbox("Sort by", ["v_hat"] + [f"span_{MODEL_LABELS[m]}" for m in selected_models],
-                                key="shared_sort", format_func=lambda x: x.replace("span_", "SPAN ").replace("v_hat", "Corpus freq (v̂ₖ)"))
+        st.markdown(f"**Total Intersection Keywords:** {len(shared_df):,} terms")
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            sort_col = st.selectbox("Sort by", ["v_hat"] + [f"span_{MODEL_LABELS[m]}" for m in selected_models],
+                                    key="shared_sort", format_func=lambda x: x.replace("span_", "SPAN ").replace("v_hat", "Corpus freq (v̂ₖ)"))
+        with col2:
+            limit_rows = st.selectbox("Show top N rows", [50, 100, 500, 1000, "All"], key="shared_limit")
+
+        df_show = shared_df[span_cols].sort_values(sort_col, ascending=False).reset_index(drop=True)
+        if limit_rows != "All":
+            df_show = df_show.head(limit_rows)
 
         st.dataframe(
-            shared_df[span_cols].sort_values(sort_col, ascending=False).reset_index(drop=True),
+            df_show,
             use_container_width=True,
             column_config={
                 "word": "Keyword",

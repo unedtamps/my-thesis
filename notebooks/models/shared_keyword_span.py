@@ -80,26 +80,44 @@ for subject in LIST_SUBJECT:
     print(f"Shared Keyword SPAN: {subject.upper()}")
     print(f"{'='*70}")
 
-    # 1. Select shared keywords: top-N by corpus frequency
-    corpus_freq = compute_corpus_word_freq(subject)
-    top_keywords = sorted(corpus_freq.items(), key=lambda x: -x[1])[:TOP_N]
-    shared_keywords = [w for w, _ in top_keywords]
-    print(f"  Top {TOP_N} corpus keywords selected")
-
-    # 2. Load all models
+    # 1. Collect all terms discovered by each model
     model_data = {}
+    model_terms = defaultdict(set)
     for model in MODELS:
         tw, years = load_topic_words_by_year(model, subject)
         model_data[model] = (tw, years)
+        for year_words in tw.values():
+            for words_in_topic in year_words:
+                model_terms[model].update(words_in_topic)
+                
+    # 2. Find keywords that appear in at least 2 models
+    term_counts = defaultdict(int)
+    for model, terms in model_terms.items():
+        for term in terms:
+            term_counts[term] += 1
+            
+    shared_candidate_terms = {term for term, count in term_counts.items() if count >= 2}
+    print(f"  Terms captured by >= 2 models: {len(shared_candidate_terms)}")
+
+    # 3. Select top-N from these candidates by corpus frequency
+    corpus_freq = compute_corpus_word_freq(subject)
+    
+    # Sort candidate terms by their corpus frequency
+    candidate_freqs = [(w, corpus_freq.get(w, 0)) for w in shared_candidate_terms]
+    candidate_freqs.sort(key=lambda x: -x[1])
+    
+    shared_keywords = [w for w, _ in candidate_freqs]  # Take ALL intersection terms
+    total_shared = len(shared_keywords)
+    print(f"  All {total_shared} terms selected from these candidates")
 
     # Use DTM years as reference (all should be same)
     ref_years = model_data["dtm"][1]
     print(f"  Years: {ref_years[0]}–{ref_years[-1]} ({len(ref_years)} years)")
 
-    # 3. Compute SPAN for each keyword × each model
+    # 4. Compute SPAN for each keyword × each model
     rows = []
     for word in shared_keywords:
-        v_hat = corpus_freq[word]
+        v_hat = corpus_freq.get(word, 0)
         row = {"word": word, "v_hat": v_hat}
 
         for model in MODELS:
@@ -120,21 +138,32 @@ for subject in LIST_SUBJECT:
     out_dir.mkdir(parents=True, exist_ok=True)
     result_df.to_csv(out_dir / "shared_keyword_span.csv", index=False)
 
-    # 4. Summary: avg-SPAN per model using SAME keyword set
-    #    Paper formula: avg-SPAN = (1/N) × Σ (Sₖ / v̂ₖ)
+    # 5. Summary: avg-SPAN per model using SAME FULL keyword set
+    #    Paper formula: avg-SPAN = (1/N_captured) × Σ (Sₖ / v̂ₖ) for words the model found
     summary_rows = []
     for model in MODELS:
         label = MODEL_LABELS[model]
         spans = result_df[f"span_{label}"]
         s_dicts = result_df[f"s_dict_{label}"]
+        
+        n_captured = int((spans > 0).sum())
+        # Only average over the words this model actually captured (S > 0)
+        # to see its true retention quality on the words it finds, 
+        # avoiding heavy penalization from the thousands of words it might miss.
+        captured_mask = spans > 0
+        
+        avg_span_paper = s_dicts[captured_mask].mean() if n_captured > 0 else 0.0
+        avg_span_simple = spans[captured_mask].mean() if n_captured > 0 else 0.0
+
         summary_rows.append({
             "model": label,
-            "n_keywords": TOP_N,
-            "avg_span_paper": round(s_dicts.mean(), 6),   # paper: mean of Sₖ/v̂ₖ
-            "avg_span_simple": round(spans.mean(), 4),     # simple mean of SPAN
+            "n_keywords": total_shared,
+            "n_captured": n_captured,
+            "capture_pct": round(n_captured / total_shared * 100, 2),
+            "avg_span_paper": round(avg_span_paper, 8),   
+            "avg_span_simple": round(avg_span_simple, 4),     
             "sum_s_dict": round(s_dicts.sum(), 6),
             "max_span": int(spans.max()),
-            "n_captured": int((spans > 0).sum()),
             "n_full_span": int((spans == len(ref_years)).sum()),
         })
 
@@ -142,11 +171,11 @@ for subject in LIST_SUBJECT:
     summary_df.to_csv(out_dir / "shared_keyword_span_summary.csv", index=False)
 
     # Print results
-    print(f"\n  {'Model':<10s} {'avg-SPAN(paper)':>16s} {'avg-SPAN(simple)':>17s} {'Captured':>9s} {'Full':>5s}")
-    print(f"  {'-'*62}")
+    print(f"\n  {'Model':<10s} {'avg-SPAN(paper)':>16s} {'avg-SPAN(simple)':>16s} {'Captured':>12s} {'Full':>5s}")
+    print(f"  {'-'*65}")
     for _, s in summary_df.iterrows():
-        print(f"  {s['model']:<10s} {s['avg_span_paper']:>16.6f} {s['avg_span_simple']:>17.4f} "
-              f"{s['n_captured']:>5d}/{TOP_N} {s['n_full_span']:>5d}")
+        print(f"  {s['model']:<10s} {s['avg_span_paper']:>16.8f} {s['avg_span_simple']:>16.4f} "
+              f"{s['n_captured']:>5d} ({s['capture_pct']:>5.1f}%) {s['n_full_span']:>5d}")
 
     # Top-10 keywords with cross-model comparison
     print(f"\n  Top 10 keywords (by corpus freq):")

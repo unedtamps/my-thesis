@@ -1,5 +1,5 @@
-model,n_keywords,avg_span_paper,avg_span_simple,sum_s_dict,max_span,n_captured,n_full_span
-DTM,50,0.000808,22.6,0.040386,26,50,28
-LDA,50,0.000548,14.96,0.027384,26,44,13
-Top2Vec,50,0.000542,14.78,0.027111,26,47,19
-BERTopic,50,0.000539,14.46,0.026958,26,47,13
+model,n_keywords,n_captured,capture_pct,avg_span_paper,avg_span_simple,sum_s_dict,max_span,n_full_span
+DTM,8557,265,3.1,0.00056141,8.4453,0.148773,26,26
+LDA,8557,3286,38.4,0.12108897,2.1662,397.898343,26,25
+Top2Vec,8557,8387,98.01,0.13501211,2.2614,1132.346578,26,63
+BERTopic,8557,7753,90.6,0.16920926,2.985,1311.879397,26,84
