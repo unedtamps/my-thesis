@@ -1,0 +1,2 @@
+subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
+cs,Top2Vec,14628,0.152685,1.6981,2233.468938,8020056,2612

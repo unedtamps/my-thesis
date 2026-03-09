@@ -1,0 +1,2504 @@
+Deep Temporal-Recurrent-Replicated-Softmax for
+Topical Trends over Time
+Pankaj Gupta1,2 , Subburam Rajaram1 , Hinrich Schütze2 , Bernt Andrassy1
+1
+Corporate Technology, Machine-Intelligence (MIC-DE), Siemens AG Munich, Germany
+2
+CIS, University of Munich (LMU) Munich, Germany
+{pankaj.gupta, subburam.rajaram, bernt.andrassy}@siemens.com
+pankaj.gupta@campus.lmu.de | inquiries@cislmu.org
+
+arXiv:1711.05626v2 [cs.CL] 1 May 2018
+
+Abstract
+Dynamic topic modeling facilitates the identification of topical trends over time in temporal collections of unstructured documents.
+We introduce a novel unsupervised neural dynamic topic model named as Recurrent Neural
+Network-Replicated Softmax Model (RNNRSM), where the discovered topics at each
+time influence the topic discovery in the subsequent time steps. We account for the temporal ordering of documents by explicitly modeling a joint distribution of latent topical dependencies over time, using distributional estimators with temporal recurrent connections.
+Applying RNN-RSM to 19 years of articles
+on NLP research, we demonstrate that compared to state-of-the art topic models, RNNRSM shows better generalization, topic interpretation, evolution and trends. We also introduce a metric (named as SPAN) to quantify the
+capability of dynamic topic model to capture
+word evolution in topics over time.
+
+1
+
+Introduction
+
+Topic Detection and Tracking (Allan et al., 1998)
+is an important area of natural language processing to find topically related ideas that evolve over
+time in a sequence of text collections and exhibit
+temporal relationships. The temporal aspects of
+these collections can present valuable insight into
+the topical structure of the collections and can be
+quantified by modeling the dynamics of the underlying topics discovered over time.
+Problem Statement: We aim to generate temporal topical trends or automatic overview timelines of topics for a time sequence collection of
+documents. This involves the following three tasks
+in dynamic topic analysis: (1) Topic Structure Detection (TSD): Identifying main topics in the document collection. (2) Topic Evolution Detection
+(TED): Detecting the emergence of a new topic
+
+Language Model
+Distributional Semantics
+Word Vectors
+Linear Model
+Rule Set
+1996
+
+Neural Language Model
+Word Embedding
+Semantic Representation
+Distributional models
+Neural Network
+
+h(0)
+
+...
+
+h(t-1)
+
+h(t)
+
+V(t-1)
+
+V(t)
+
+2014
+
+RSM
+
+(t-1)
+
+RSM
+
+...
+
+h(T)
+V(T)
+
+(t)
+
+(T)
+
+RSM
+
+Figure 1: (Left): Word Usage over time for Topic
+(Word Representation) in scholarly articles. (Right):
+RSM-based dynamic topic model with explicit temporal topic dependence
+
+and recognizing how it grows or decays over time
+(Allan, 2002). (3) Temporal Topic Characterization (TTC): Identifying the characteristics for each
+of the main topics in order to track the words’ usage (keyword trends) for a topic over time i.e. topical trend analysis for word evolution (Fig 1, Left).
+Probabilistic static topic models, such as Latent Dirichlet Allocation (LDA) (Blei et al., 2003)
+and its variants (Wang and McCallum, 2006; Hall
+et al., 2008; Gollapalli and Li, 2015) have been
+investigated to examine the emergence of topics from historical documents. Another variant known as Replicated Softmax (RSM) (Hinton
+and Salakhutdinov, 2009) has demonstrated better generalization in log-probability and retrieval,
+compared to LDA. Prior works (Iwata et al., 2010;
+Pruteanu-Malinici et al., 2010; Saha and Sindhwani, 2012; Schein et al., 2016) have investigated
+Bayesian modeling of topics in time-stamped documents. Particularly, Blei and Lafferty (2006)
+developed a LDA based dynamic topic model
+(DTM) to capture the evolution of topics in a time
+sequence collection of documents; however they
+do not capture explicitly the topic popularity and
+usage of specific terms over time. We propose a
+family of probabilistic time series models with distributional estimators to explicitly model the dynamics of the underlying topics, introducing temporal latent topic dependencies (Fig 1, Right).
+To model temporal dependencies in high dimen-
+
+Latent Topics
+
+Latent Topics
+
+h
+
+h
+
+w1
+w1w1
+
+w2
+
+w
+w2 2
+
+w1
+
+RSM
+
+h(1)
+
+w2
+
+Wuh
+
+bh(2)
+Wvh
+
+bv(1)
+V
+
+Vn
+Observed Softmax Visibles
+
+RNN
+u(0)
+
+Multinomial Visible
+
+Wuv
+Wuu
+
+...
+
+h(2)
+
+bh(1)
+
+(1)
+
+Wvh
+
+bv(2)
+V
+
+Wvu
+
+h(T)
+bh(T)
+
+(2)
+
+...
+
+V
+
+Wvu
+
+u(1)
+
+Wuu
+
+Wvh
+
+bv(T)
+
+(T)
+
+Wvu
+
+u(2)
+
+...
+
+u(T)
+
+k=1 1
+
+0
+
+1
+
+2
+
+6
+
+7
+
+46
+
+379
+
+487
+
+k=2 0
+
+1
+
+0
+
+1
+
+0
+
+0
+
+... 18
+
+106
+
+319
+
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+.
+
+vn(1)
+
+vn(2)
+
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+.
+
+.
+.
+.
+
+k=K 0
+
+0
+
+0
+
+0
+
+w1
+
+w2
+
+w3
+
+vn
+
+vn(T)
+
+Figure 2: (Left): RSM for a document Vn of Dn =3 words (w). The bottom layer represents the softmax visible
+units, that share the same set of weights connected to binary hidden units h. (Middle): Interpretation of RSM
+in which Dn softmax units with identical weights are replaced by a single multinomial unit, sampled Dn times.
+(Right): Graphical structure of 2-layered RNN-RSM, unfolded in time. Single and double headed arrows represent
+b (t) and h(t) are binary visible and hidden
+deterministic and stochastic-symmetric connections, respectively. V
+layers of RSM for a document collection at time, t. u is RNN hidden layer. k: dictionary index for a word w
+
+sional sequences, such as polyphonic music, the
+temporal stack of RBMs (Smolensky, 1986; Hinton, 2002) has been investigated to model complex distributions. The Temporal RBM (Taylor
+et al., 2007; Sutskever and Hinton, 2007), Recurrent Temporal RBM (RTRBM) (Sutskever et al.,
+2009) and RNN-RBM (Boulanger-Lewandowski
+et al., 2012) show success in modeling the temporal dependencies in such symbolic sequences.
+In addition, RNNs (Gupta et al., 2015a; Vu et al.,
+2016a,b; Gupta et al., 2016) have been recognized
+for sentence modeling in natural language tasks.
+We aspire to build neural dynamic topic model
+called RNN-RSM to model document collections
+over time and learn temporal topic correlations.
+We consider RSM for TSD and introduce the
+explicit latent topical dependencies for TED and
+TTC tasks. Fig 1 illustrates our motivation, where
+b (t) at
+temporal ordering in document collection V
+each time step t, is modeled by conditioning the
+latent topic h(t) on the sequence history of latent
+topics h(0) , ..., h(t−1) , accumulated with temporal
+lag. Each RSM discovers latent topics, where the
+introduction of a bias term in each RSM via the
+time-feedback latent topic dependencies enables
+to explicitly model topic evolution and specific
+topic term usage over time. The temporal connections and RSM biases allow to convey topical information and model relation among the words, in
+order to deeply analyze the dynamics of the underlying topics. We demonstrate the applicability
+of proposed RNN-RSM by analyzing 19 years of
+scientific articles from NLP research.
+
+The contributions in this work are:
+(1) Introduce an unsupervised neural dynamic
+topic model based on recurrent neural network
+and RSMs, named as RNN-RSM to explicitly
+model discovered latent topics (evolution) and
+word relations (topic characterization) over time.
+(2) Demonstrate better generalization (logprobability and time stamp prediction), topic
+interpretation (coherence), evolution and characterization, compared to the state-of-the-art.
+(3) It is the first work in dynamic topic modeling
+using undirected stochastic graphical models and
+deterministic recurrent neural network to model
+collections of different-sized documents over
+time, within the generative and neural network
+framework. The code and data are available at
+https://github.com/pgcool/RNN-RSM.
+
+2
+
+The RNN-RSM model
+
+RSM (Fig 2, Left) models are a family of differentsized Restricted Boltzmann Machines (RBMs)
+(Gehler et al., 2006; Xing et al., 2005; Gupta
+et al., 2015b,c) that models word counts by sharing
+the same parameters with multinomial distribution
+over the observable i.e. it can be interpreted as a
+single multinomial unit (Fig 2, Middle) sampled as
+many times as the document size. This facilitates
+in dealing with the documents of different lengths.
+The proposed RNN-RSM model (Fig 2, Right)
+is a sequence of conditional RSMs1 such that at
+any time step t, the RSM’s bias parameters bv (t)
+1
+N
+b
+Notations: U={U
+U:2D-Matrix;
+n }n=1 ;
+U/l:Upper/lower-case; Scalars in unbold
+
+l:vector;
+
+and bh (t) depend on the output of a deterministic RNN with hidden layer u(t−1) in the previous
+time step, t−1. Similar to RNN-RBM (BoulangerLewandowski et al., 2012), we constrain RNN hidden units (u(t) ) to convey temporal information,
+while RSM hidden units (h(t) ) to model conditional distributions. Therefore, parameters (bv (t) ,
+bh (t) ) are time-dependent on the sequence history
+at time t (via a series of conditional RSMs) deb (τ ) , u(τ ) |τ < t}, that captures
+noted by Θ(t) ≡ {V
+temporal dependencies. The RNN-RSM is defined
+by its joint probability distribution:
+b H) = P ({V
+b (t) , h(t) }Tt=1 ) =
+P (V,
+
+T
+Y
+
+b (t) , h(t) |Θ(t) )
+P (V
+
+t=1
+
+b = [V
+b (1) , ...V
+b (T ) ] and H = [h(1) , ...h(T ) ].
+where V
+(t)
+F
+Each h ∈ {0, 1} be a binary stochastic hidden
+b (t) = {Vn(t) }N (t)
+topic vector with size F and V
+n=1
+be a collection of N documents at time step t. Let
+(t)
+(t)
+Vn be a K × Dn observed binary matrix of the
+(t)
+nth document in the collection where, Dn is the
+document size and K is the dictionary size over
+all the time steps. The conditional distribution (for
+each unit in hidden or visible) in each RSM at time
+step, is given by softmax and logistic functions:
+(t)
+
+PF
+
+exp(bv,i k,(t) + j=1 hn,j Wijk )
+k,(t)
+(t)
+P (vn,i = 1|hn
+) = PK
+P
+(t)
+q
+q,(t)
++ F
+q=1 exp(bv,i
+j=1 hn,j Wij )
+(t)
+
+Dn
+(t)
+(t)
+P (hn,j = 1|Vn(t) ) = σ(bh,j +
+
+K
+XX
+
+k,(t)
+
+vn,i Wijk )
+
+i=1 k=1
+(t)
+(t)
+= 1|Vn ) are
+and P (hn,j
+=
+where
+conditional distributions for ith visible vn,i and j th
+hidden unit hn,j for the nth document at t. Wijk is
+a symmetric interaction term between i that takes
+k,(t)
+(t)
+on value k and j. vn
+is sampled Dn times
+with identical weights connected to binary hidden units, resulting in multinomial visibles, therefore the name Replicated Softmax. The conditionals across layers are factorized as: P (Vn(t) |h(t)
+n ) =
+QDn(t)
+Q
+(t)
+(t)
+(t)
+(t)
+(t)
+(t)
+P
+(v
+|h
+)
+;
+P
+(h
+|V
+)
+=
+P
+(h
+|V
+n
+n
+n ).
+n,i n
+n,j
+i=1
+j
+Since biases of RSM depend on the output of
+RNN at previous time steps, that allows to propagate the estimated gradient at each RSM backward
+through time (BPTT). The RSM biases and RNN
+hidden state u(t) at each time step t are given byk,(t)
+P (vn,i
+
+(t)
+1|hn )
+
+bv (t) = bv +Wuv u(t−1)
+
+(1)
+
+bh (t) = bh +Wuh u(t−1)
+(t)
+
+u
+
+(t−1)
+
+= tanh(bu + Wuu u
+
++ Wvu
+
+(t)
+N
+X
+
+n=1
+
+Algorithm 1 Training RNN-RSM with BPTT
+b
+Input:
+Observed
+visibles,
+V
+=
+b (0) , V
+b (1) , ..., V
+b (t) , ..., V
+b (T ) }
+{V
+RNN-RSM Parameters: θ = {Wuh , Wvh , Wuv ,
+Wvu , Wuu , bv , bu , bh , bv (t) , bh (t) , u(0) }
+1: Propagate u(t) in RNN portion of the graph using eq 2.
+2: Compute bv (t) and bh (t) using eq 1.
+3: Generate negatives V(t)∗ using k-step Gibbs sampling.
+4: Estimate the gradient of the cost C w.r.t. parameters of
+RSM Wvh , bv (t) and bh (t) using eq 5.
+5: Compute gradients (eq 6) w.r.t. RNN connections (Wuh ,
+Wuv , Wuu , Wvu , u0 ) and biases (bv , bh , bu ).
+6: Goto step 1 until stopping criteria (early stopping or
+maximum iterations reached)
+
+where Wuv , Wuh and Wvu are weights connecting RNN and RSM portions (Figure 2). bu
+is the bias of u and Wuu is the weight between
+(t)
+RNN hidden units. v̂n is a vector of v̂nk (denotes the count for the k th word in nth document).
+PN (t) (t)
+n=1 v̂n refers to the sum of observed vectors
+across documents at time step t where each document is represented as(t)
+D
+n
+X
+k,(t)
+k,(t)
+=
+v̂n(t) = [{v̂nk,(t) }K
+vn,i (3)
+k=1 ] and v̂n
+i=1
+k,(t)
+
+where vn,i =1 if visible unit i takes on k th value.
+In each RSM, a separate RBM is created for
+each document in the collection at time step t with
+(t)
+(t)
+Dn softmax units, where Dn is the count of
+words in the nth document. Consider a document
+(t)
+(t)
+(t)
+of Dn words, the energy of the state {Vn , hn }
+at time step, t is given byE(Vn(t) , h(t)
+n ) =−
+
+(2)
+
+(t)
+
+hn,j Wjk v̂nk,(t)
+
+j=1 k=1
+
+−
+
+K
+X
+
+v̂nk,(t) bkv − Dn(t)
+
+k=1
+
+F
+X
+
+(t)
+
+bh,j hn,j
+
+j=1
+
+Observe that the bias terms on hidden units are
+scaled up by document length to allow hidden
+units to stabilize when dealing with different-sized
+documents. The corresponding energy-probability
+relation in the energy-based model isP (Vn(t) ) =
+
+1 X
+(t)
+Zn
+
+exp(−E(Vn(t) , h(t)
+n ))
+
+(4)
+
+(t)
+hn
+
+P
+P
+(t)
+(t)
+(t)
+where Zn = V(t) h(t) exp(−E(Vn , hn ))
+n
+n
+is the normalization constant. The lower bound on
+the log likelihood of the data takes the form:
+ln P (Vn(t) ) ≥
+
+v̂n(t) )
+
+F
+X K
+X
+
+X
+
+(t)
+(t)
+(t)
+Q(h(t)
+n |Vn ) ln P (Vn , hn ) + H(Q)
+
+h(t)
+(t)
+(t)
+(t)
+= ln P (Vn(t) ) − KL[Q(h(t)
+n |Vn )||P (hn |Vn )]
+
+Year
+ACL
+EMNLP
+ACL+EMNLP
+
+1996
+58
+15
+73
+
+1997
+73
+24
+97
+
+1998
+250
+15
+265
+
+1999
+83
+36
+119
+
+2000
+79
+29
+108
+
+2001
+70
+21
+91
+
+2002
+177
+42
+219
+
+2003
+112
+29
+141
+
+2004
+134
+58
+192
+
+2005
+134
+28
+162
+
+2006
+307
+75
+382
+
+2007
+204
+132
+336
+
+2008
+214
+115
+329
+
+2009
+243
+164
+407
+
+2010
+270
+125
+395
+
+2011
+349
+149
+498
+
+2012
+227
+140
+367
+
+2013
+398
+206
+604
+
+Total
+3713
+1756
+5469
+
+2014
+331
+228
+559
+
+Table 1: Number of papers from ACL and EMNLP conferences over the years
+
+where H(·) is the entropy and Q is the approximating posterior. Similar to Deep Belief Networks
+(Hinton et al., 2006), adding an extra layer improves lower bound on the log probability of data,
+we introduce the extra layer via RSM biases that
+propagates the prior via RNN connections. The
+dependence analogy follows(t)
+
+(t)
+
+(t)
+
+(t)
+
+defined in eq. 4. The free energy F(Vn ) is re(t)
+(t)
+lated to normalized probability of Vn as P (Vn )
+(t)
+
+(t)
+
+≡ exp−F(Vn ) /Zn and as followsF(Vn(t) ) = −
+
+K
+F
+X
+X
+v̂nk,(t) bkv −
+log(1+
+j=1
+
+k=1
+
+exp(Dn(t) bh,j +
+
+(t)
+
+E(Vn , hn ) ∝ b 1(t) and E(Vn , hn ) ∝ b 1(t)
+v
+
+(t)
+
+ln P (Vn ) ∝
+
+1
+(t) (t)
+E(Vn ,hn )
+
+h
+
+(t)
+
+b n ) ∝ ln P ({V
+b nτ }τ <t )
+; ln P (V
+
+Observe that the prior is seen as the deterministic hidden representation of latent topics and injected into each hidden state of RSMs, that enables
+the likelihood of the data to model complex temporal densities i.e. heteroscedasticity in document
+collections ( b
+V) and temporal topics (H).
+Gradient Approximations:
+RNNP The cost in
+P
+b (t) )
+RSM is: C = Tt=1 Ct ≡ Tt=1 − ln P (V
+Due to intractable Z, the gradient of cost at
+time step t w.r.t. (with respect to) RSM parameters are approximated by k-step Contrastive Divergence (CD) (Hinton, 2002). The gradient of the
+negative log-likelihood of a document collection
+(t)
+(t)
+{Vn }N
+n=1 w.r.t. RSM parameter Wvh ,
+(t)
+
+N
+(t)
+1 X ∂(− ln P (Vn ))
+∂Wvh
+N (t) n=1
+(t)
+
+(t)
+∂F(Vn )
+
+= EPdata [
+] − EPmodel [
+]
+∂W
+∂W
+|
+{z vh }
+|
+{z vh }
+data-dependent expectation
+
+model’s expectation
+
+(t)
+
+N
+(t)
+(t)∗
+1 X ∂F(Vn ) ∂F(Vn )
+≃ (t)
+−
+∂Wvh
+N n=1 ∂Wvh
+
+The second term is estimated by negative sam(t)∗
+ples Vn obtained from k-step Gibbs chain
+(t)
+b (t) , h(t) ) =
+starting at Vn samples. Pdata (V
+b (t) )Pdata (V
+b (t) ) and Pdata (V
+b (t) ) =
+P (h(t) |V
+P
+(t)
+(t)
+N
+1
+b (t) − Vn ) is the empirical distriδ(V
+n
+N (t)
+bution on the observable.
+
+v̂nk,(t) Wjk ))
+
+k=1
+
+Gradient approximations w.r.t. RSM parameters,
+∂Ct
+∂bv (t)
+
+≃
+
+v̂n(t)∗ − v̂n(t)
+
+n=1
+
+N (t)
+
+∂Ct
+∂bh
+
+(t)
+N
+X
+
+≃
+(t)
+
+X
+
+σ(Wvh v̂n(t)∗ − Dn(t) bh (t) )
+
+n=1
+
+−σ(Wvh v̂n(t) − Dn(t) bh (t) )
+T N (t)
+
+XX
+∂Ct
+≃
+σ(Wvh v̂n(t)∗ − Dn(t) bh (t) )
+∂Wvh
+
+t=1 n=1
+v̂n(t)∗T − σ(Wvh v̂n(t) − Dn(t) bh (t) )v̂n(t)T
+
+(5)
+The estimated gradients w.r.t. RSM biases are
+back-propagated via hidden-to-bias parameters
+(eq 1) to compute gradients w.r.t. RNN connections (Wuh , Wuv , Wvu and Wuu ) and biases
+(bh , bv and bu ).
+T
+
+N
+(t)
+(t)
+1 X ∂F(Vn ) ∂(− ln Zn )
+= (t)
+−
+∂Wvh
+N n=1 ∂Wvh
+(t)
+∂F(Vn )
+
+K
+X
+
+(t)∗
+(t)
+Pmodel (Vn , hn ) is
+
+X ∂Ct
+∂C
+=
+u(t−1)T
+∂Wuh
+∂bh (t)
+∂C
+=
+∂Wuv
+
+t=1
+T
+X
+
+∂Ct
+
+t=1 ∂bv
+
+(t)
+
+u(t−1)T
+
+T
+
+N (t)
+
+t=1
+T
+X
+
+n=1
+T
+X
+
+X ∂Ct
+X
+∂C
+(t)
+(t)
+=
+u
+(1
+−
+u
+)
+v̂n(t)T
+∂Wvu
+∂u(t)
+∂C
+=
+∂bh
+
+∂Ct
+
+t=1 ∂bh
+T
+X
+
+∂C
+=
+∂bu
+
+(t)
+
+and
+
+∂C
+=
+∂bv
+
+∂Ct
+
+t=1 ∂bv
+
+(t)
+
+∂Ct (t)
+u (1 − u(t) )
+(t)
+∂u
+t=1
+T
+
+X ∂Ct
+∂C
+=
+u(t) (1 − u(t) )u(t−1)T
+∂Wuu
+∂u(t)
+t=1
+
+(6)
+
+Parameter
+epochs
+CD iterations
+learning rate
+hidden size
+
+Value(s)
+1000
+15
+0.1, 0.03, 0.001
+20, 30, 50
+
+Optimal
+1000
+15
+0.001
+30
+
+Table 2: Hyperparameters for RNN-RSM model
+
+For the single-layer RNN-RSM, the BPTT recurrence relation for 0 ≤ t < T is given by∂Ct
+∂Ct+1
+= Wuu (t+1) u(t+1) (1 − u(t+1) )
+(t)
+∂u
+∂u
+∂Ct+1
+∂Ct+1
++Wuh
++ Wuv
+(t+1)
+∂bh
+∂bv (t+1)
+∂CT
+where u(0) being a parameter and ∂u
+(T ) = 0.
+See Training RNN-RSM with BPTT in Algo 1.
+
+3
+
+Evaluation
+
+3.1
+
+Dataset and Experimental Setup
+
+We use the processed dataset (Gollapalli and Li,
+2015), consisting of EMNLP and ACL conference
+papers from the year 1996 through 2014 (Table 1).
+We combine papers for each year from the two
+venues to prepare the document collections over
+time. We use ExpandRank (Wan and Xiao, 2008)
+to extract top 100 keyphrases for each paper, including unigrams and bigrams. We split the bigrams to unigrams to create a dictionary of all unigrams and bigrams. The dictionary size (K) and
+word count are 3390 and 5.19 M, respectively.
+We evaluate RNN-RSM against static (RSM,
+LDA) and dynamic (DTM) topics models for topic
+and keyword evolution in NLP research over time.
+Individual 19 different RSM and LDA models are
+trained for each year, while DTM2 and RNNRSM are trained over the years with 19 time steps,
+where paper collections for a year is input at each
+time step. RNN-RSM is initialized with RSM
+(Wvh , bv , bh ) trained for the year 2014.
+We use perplexity to choose the number of topics (=30). See Table 2 for hyperparameters.
+3.2
+
+Generalization in Dynamic Topic Models
+
+Perplexity: We compute the perplexity on unobb (t) ) at each time step as
+served documents (V
+PN (t)
+(t) 
+
+1
+(t)
+n=1 log P (Vn )
+b
+PPL(V , t) = exp − (t)
+PN (t) (t)
+N
+n=1 Dn
+2
+
+https://radimrehurek.com/gensim/models/dtmmodel.html
+
+model
+
+metric
+SumPPL
+
+Err
+
+mean-COH
+
+median-COH
+
+TTD
+
+DTM
+
+10.9
+
+8.10
+
+0.1514
+
+0.1379
+
+0.084
+
+RNN-RSM
+
+3.8
+
+7.58
+
+0.1620
+
+0.1552
+
+0.268
+
+Table 3: State-of-the-art Comparison: Generalization
+(PPL and Err), Topic Interpretation (COH) and Evolution (TTD) in DTM and RNN-RSM models
+
+where t is the time step. N (t) is the number of
+b (t) ) at time t. Better
+documents in a collection (V
+models have lower perplexity values, suggesting
+less uncertainties about the documents. For heldout documents, we take 10 documents from each
+time step i.e. total 190 documents and compute
+perplexity for 30 topics. Fig 3d shows the comparison of perplexity values for unobserved documents from DTM and RNN-RSM at each time
+step. The SumPPL (Table 3) is the sum of PPL
+values for the held-out sets of each time step.
+Document Time Stamp Prediction: To further assess the dynamic topics models, we split
+the document collections at each time step into
+80-20% train-test, resulting in 1067 held-out documents. We predict the time stamp (dating) of a
+document by finding the most likely (with the lowest perplexity) location over the time line. See the
+mean absolute error (Err) in year for the held-out
+in Table 3. Note, we do not use the time stamp as
+observables during training.
+3.3
+
+TSD, TED: Topic Evolution over Time
+
+Topic Detection: To extract topics from each
+b (t) |hj = 1) by
+RSM, we compute posterior P (V
+activating a hidden unit and deactivating the rest
+in a hidden layer. We extract the top 20 terms
+for every 30 topic set from 1996-2014, resulting
+in |Q|max = 19 × 30 × 20 possible topic terms.
+Topic Popularity: To determine topic popularity, we selected three popular topics (Sentiment
+Analysis, Word Vector and Dependency Parsing)
+in NLP research and create a set3 of key-terms
+(including unigrams and bigrams) for each topic.
+We compute cosine similarity of the key-terms defined for each selected topic and topics discovered
+by the topic models over the years. We consider
+the discovered topic that is the most similar to the
+key-terms in the target topic and plot the similarity values in Figure 3a, 3b and 3b. Observe
+that RNN-RSM shows better topic evolution for
+the three emerging topics. LDA and RSM show
+3
+
+topic-terms to be released with code
+
+(a) Topic: Sentiment Analysis
+
+(b) Topic: Word Vector
+
+0.2
+
+2000
+2005
+Starting Year
+
+(i) RSM
+
+2010
+
+0.8
+
+0.8
+
+0.4
+2000
+2005
+2010
+2014
+
+0.4
+2000
+2005
+2010
+2014
+
+0.2
+0
+
+1996
+
+2000
+2005
+Starting Year
+
+2010
+
+(j) LDA
+
+96
+97
+98
+99
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+4
+-1
+
+-1
+0
+05
+
+Years
+
+(h) DTM Adj Topic Sim
+
+0.8
+
+0.6
+
+00
+-0
+5
+
+4
+
+96
+-0
+0
+
+0.1
+
+1
+
+0.6
+
+Sentiment Analysis
+Word Vector
+Dependency Parsing
+
+0.2
+
+10
+
+Cosine Similarity
+
+0.4
+
+1
+
+0
+1996
+
+0.5
+
+1
+
+0.2
+
+0
+
+Years
+
+0.6
+
+0.3
+
+Cosine Similarity
+
+0.4
+
+Cosine Similarity
+
+Cosine Similarity
+
+0.6
+
+Sentiment Analysis
+Word Vector
+Dependency Parsing
+
+0.7
+
+(f) COH (median) Over Time (g) RNN-RSM Adj Topic Sim
+
+1
+0.8
+
+0.5
+
+Years
+
+2000
+2005
+2010
+2014
+
+0.7
+0.6
+
+Years
+
+(e) COH (mean) Over Time
+
+0.8
+
+0.8
+
+-1
+
+14
+
+1
+0.9
+
+10
+
+14.5
+
+Years
+
+0.9
+
+05
+-1
+0
+
+15
+
+0
+
+1
+RNN-RSM
+DTM
+
+05
+
+15.5
+
+0.2
+
+(c) Topic: Dependency Parsing (d) Perplexity on Unobserved
+
+Cosine Similarity
+
+16
+
+0.4
+
+Years
+
+96
+
+17
+16.5
+
+18
+17.5
+17
+16.5
+16
+15.5
+15
+14.5
+14
+13.5
+13
+12.5
+12
+
+0.2
+
+0
+
+96
+97
+98
+99
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+
+RNN-RSM
+DTM
+
+COH (median) of topics: COH × 10−2
+
+Years
+
+18
+
+0.3
+
+0.6
+
+0.1
+
+Years
+
+17.5
+
+0.4
+
+0
+
+96
+97
+98
+99
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+
+0
+
+RNN-RSM
+DTM
+
+0.8
+Perplexity (PPL)
+
+0.2
+0.1
+
+96
+97
+98
+99
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+
+COH (mean) of topics: COH × 10−2
+
+0.3
+
+0.5
+
+-0
+
+0.1
+
+0.4
+
+0.6
+
+96
+97
+98
+99
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+
+0.2
+
+0.5
+
+RNN-RSM
+RSM
+LDA
+DTM
+
+0.7
+
+00
+-
+
+0.3
+
+0.6
+
+Cosine Similarity
+
+0.4
+
+0
+
+RNN-RSM
+RSM
+LDA
+DTM
+
+0.7
+
+Cosine Similarity
+
+0.5
+
+RNN-RSM
+RSM
+LDA
+DTM
+
+96
+97
+98
+99
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+
+0.6
+
+Cosine Similarity
+
+Cosine Similarity
+
+0.7
+
+0.6
+0.4
+2000
+2005
+2010
+2014
+
+0.2
+0
+
+1996
+
+2000
+2005
+Starting Year
+
+(k) DTM
+
+2010
+
+1996
+
+2000
+2005
+Starting Year
+
+2010
+
+(l) RNN-RSM
+
+Figure 3: (a, b, c): Topic popularity by LDA, RSM, DTM and RNN-RSM over time (d): Perplexity on the
+unobserved document collections over time (e, f): Mean and Median Topic Coherence (g, h): Topic Evolution
+(i,j,k,l): Topic focus change over time. Adj- Adjacent; Sim- Similarity
+
+topical locality in Figure 3c attributed to no correlation in topic dynamics over time, while in Figure 3b, DTM does not capture evolution of topic
+Word Vector.
+Topic Drift (Focus Change): To compute the
+topic focus change over the years, we first split
+the time period 1996-2014 into five parts:{1996,
+2000, 2005, 2010, 2014}. The cosine similarity
+scores are computed between the topic sets discovered in a particular year and the years preceding it in the above set, for example the similarity scores between the topic-terms in (1996,
+2000), (1996, 2005), (1996, 2010) and (1996,
+2014), respectively. Figure 3i, 3j, 3k and 3l
+demonstrate that RNN-RSM shows higher convergence in topic focus over the years, compared to
+LDA and RSM. In RNN-RSM, the topic similarity is gradually increased over time, however not
+in DTM. The higher similarities in the topic sets
+indicate that new/existing topics and words do not
+appear/disappear over time.
+We compute topic-term drift (T T D) to show
+
+the changing topics from initial to final year, as
+0
+
+T T D = 1.0 − cosineSimilarity(Q(t) , Q(t ) )
+where Q is the set of all topic-terms for time step
+t. Table 3 shows that T T D (where t=1996 and
+t0 =2014) are 0.268 and 0.084 for RNN-RSM and
+DTM, respectively. It suggests that the higher
+number of new topic-terms evolved in RNN-RSM,
+compared to DTM. Qualitatively, the Table 4
+shows the topics observed with the highest and
+lowest cosine drifts in DTM and RNN-RSM.
+In Figure 3g and 3h, we also illustrate the temporal evolution (drift) in the selected topics by
+computing cosine similarity on their adjacent topic
+vectors over time. The topic vectors are selected
+similarly as in computing topic popularity. We observe better TED in RNN-RSM than DTM for the
+three emerging topics in NLP research. For instance, for the selected topic Word Vector, the red
+line in DTM (Fig 3h) shows no drift (for x-axis
+00-05, 05-10 and 10-14), suggesting the topicterms in the adjacent years are similar and does
+not evolve.
+
+Drift
+
+Model (year)
+
+Topic Terms
+document, retrieval, query, documents, information, search, information retrieval, queries, terms,
+words, system, results, performance, method, approach
+document, query, search, documents, queries, information, retrieval, method, results,
+information retrieval, research, terms, other, approach, knowledge
+semantic, lexical, structure, syntactic, argument, frame, example, lexicon, information, approach,
+source, function, figure, verbs, semantic representation
+semantic, argument, frame, sentence, syntactic, semantic parsing, structure, semantic role,
+example, role labeling, language, learning, logical form, system, lexicon
+
+DTM (1996)
+0.20
+DTM (2014)
+DTM (1996)
+0.53
+DTM (2014)
+RNN-RSM (1996)
+0.20
+RNN-RSM (2014)
+RNN-RSM (1996)
+0.53
+RNN-RSM (2014)
+
+reordering, statistical machine, translation model, translations, arabic, word align, translation probability, word alignment,
+translation system, source word, ibm model, source sentence, english translation, target language, word segmentation
+reordering, statistical machine, translation model, translations, arabic, word align, translation probability, word alignment,
+translation system, source word, reordering model, bleu score, smt system, english translation, target language
+input, inference, semantic representation, distributional models, logical forms, space model, clustering algorithm, space models,
+similar word, frequent word, meaning representation, lexical acquisition, new algorithm, same context, multiple words
+input, inference, word vector, word vectors, vector representation, semantic representation, distributional models, semantic space,
+space model, semantic parser, vector representations, neural language, logical forms, cosine similarity, clustering algorithm
+
+Table 4: Topics (top 15 words) with the highest and lowest drifts (cosine) observed in DTM and RNN-RSM
+
+3.4
+
+Topic Interpretability
+
+Beyond perplexities, we also compute topic coherence (Chang et al., 2009; Newman et al., 2009;
+Das et al., 2015) to determine the meaningful
+topics captured. We use the coherence measure proposed by Aletras and Stevenson (2013)
+that retrieves co-occurrence counts for the set of
+topic words using Wikipedia as a reference corpus to identify context features (window=5) for
+each topic word. Relatedness between topic words
+and context features is measured using normalized
+pointwise mutual information (NPMI), resulting
+in a single vector for every topic word. The coherence (COH) score is computed as the arithmetic
+mean of the cosine similarities between all word
+pairs. Higher scores imply more coherent topics.
+We use Palmetto4 library to estimate coherence.
+Quantitative: We compute mean and median coherence scores for each time step using the corresponding topics, as shown in Fig 3e and 3f. Table 3 shows mean-COH and median-COH scores,
+computed by mean and median of scores from
+Fig 3e and 3f, respectively. Observe that RNNRSM captures topics with higher coherence.
+Qualitative: Table 5 shows topics (top-10 words)
+with the highest and lowest coherence scores.
+3.5
+
+TTC: Trending Keywords over time
+
+We demonstrate the capability of RNN-RSM to
+capture word evolution (usage) in topics over
+time. We define: keyword-trend and SPAN. The
+keyword-trend is the appearance/disappearance of
+the keyword in topic-terms detected over time,
+while SPAN is the length of the longest sequence
+of the keyword appearance in its keyword trend.
+4
+
+github.com/earthquakesan/palmetto-py
+
+DTM (2001)
+semantic
+frame
+argument
+syntactic
+structure
+lexical
+example
+information
+annotation
+lexicon
+COH: 0.268
+
+RNN-RSM (2001)
+words
+models
+grammar
+trees
+dependency parsing
+parsers
+dependency trees
+parsing
+parse trees
+dependency parse
+0.284
+
+DTM (2012)
+discourse
+relation
+relations
+structure
+sentence
+class
+lexical
+argument
+corpus
+other
+0.064
+
+RNN-RSM (1997)
+parse
+cluster
+clustering
+results
+query
+pos tag
+queries
+retrieval
+coreference
+logical form
+0.071
+
+Table 5: Topics with the highest and lowest coherence
+(t)
+
+5
+T
+b model = {Q
+Let Q
+model }t=1 be a set of sets of
+topic-terms discovered by the model (LDA, RSM,
+DTM and RNN-RSM) over different time steps.
+b model be the topic-terms at time step
+Let Q(t) ∈ Q
+t. The keyword-trend for a keyword k is a timeordered sequence of 0s and 1s, as
+b = [find(k, Q(t) )]T
+trendk (Q)
+t=1
+(
+1 if k ∈ Q(t)
+where; find(k, Q(t) ) =
+(7)
+0 otherwise
+
+And the SPAN (Sk ) for the kth keyword is
+Sk ( b
+Q) = length longestOnesSeq(trendk ( b
+Q)
+We compute keyword-trend and SPAN for each
+term from the set of some popular terms. We define average-SPAN for all the topic-terms appearing in the topics discovered over the years,
+b =
+avg-SPAN(Q)
+=
+5
+
+1
+|| b
+Q||
+
+1
+b
+||Q||
+
+X
+{k|Q(t) ∈ b
+Q∧k∈Q(t) }
+
+X
+{k|Q(t) ∈ b
+Q∧k∈Q(t) }
+
+a set by bold and set of sets by d
+bold
+
+Sk ( b
+Q)
+k
+v̂
+
+Skdict ( b
+Q)
+
+RNN-RSM
+
+DTM
+
+RSM
+
+LDA
+
+4000
+
+relation extraction
+word embedding
+neural language
+machine translation
+language model
+
+3500
+
+Textual
+Entailment
+Key-term frequency
+
+3000
+
+Sentiment
+Analysis
+LDA
+model
+
+2500
+2000
+1500
+1000
+500
+
+Dependency
+Parsing
+
+0
+
+Latent
+Semantics
+
+96
+
+97
+
+98
+
+99
+
+00
+
+01
+
+02
+
+03
+
+04
+
+05 06
+Years
+
+07
+
+08
+
+09
+
+10
+
+11
+
+12
+
+13
+
+14
+
+Figure 5: Key-term frequency in the input over years
+
+Relation
+Extraction
+Word
+Embedding
+Neural
+Language
+
+Machine
+Translation
+
+Language
+Model
+
+Graphical
+Model
+
+Rule-set
+
+Term
+
+vˆk
+
+Textual entailment
+Sentiment analysis
+Lda model
+Dependency parsing
+Latent semantic
+Relation extraction
+Word embedding
+Neural language
+Machine translation
+Language model
+Graphical model
+Rule set
+Seed words
+b
+avg-SPAN(Q)
+
+918
+1543
+392
+3409
+974
+1734
+534
+121
+11741
+11768
+680
+589
+396
+
+b model ||
+||Q
+
+Sk
+
+LDA
+Skdict
+
+Sk
+
+RSM
+Skdict
+
+Sk
+
+DTM
+Skdict
+
+0
+6
+1
+9
+1
+4
+1
+0
+11
+13
+0
+1
+1
+
+.000
+.004
+.003
+.003
+.001
+.002
+.002
+.000
+.001
+.001
+.000
+.0017
+.0025
+
+1
+3
+1
+5
+2
+1
+1
+3
+7
+3
+1
+4
+1
+
+.001
+.002
+.002
+.001
+.002
+.001
+.002
+.025
+.001
+.000
+.001
+.0068
+.0025
+
+0
+5
+0
+11
+0
+9
+0
+0
+19
+19
+0
+0
+0
+
+.000
+.0032
+.000
+.0032
+.000
+.0052
+.000
+.000
+.0016
+.0016
+.000
+.000
+.000
+
+.002
+926
+
+.007
+2274
+
+.003
+335
+
+RNN-RSM
+Sk Skdict
+11
+11
+8
+18
+18
+12
+5
+5
+19
+19
+11
+2
+4
+
+.011
+0.007
+.020
+.005
+.018
+.007
+.009
+.041
+.002
+.002
+.016
+.0034
+.0101
+.018
+731
+
+Table 6: SPAN (Sk ) for selected terms, avg-SPAN and
+set || b
+Q|| by LDA, RSM, DTM and RNN-RSM
+
+Seed
+words
+
+96 97 98 99 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14
+
+Figure 4: Keyword-trend by RNN-RSM, DTM, RSM,
+LDA. Bar: Keyword presence in topics for the year
+
+b = |{k|Q(t) ∈ Q
+b ∧ k ∈ Q(t) }|
+where ||Q||
+is
+count of unique topic-terms and vˆk =
+PTthe P
+Dt
+k
+th
+t=1
+j=1 vj,t denotes the count of k keyword.
+In Figure 4, the keyword-trends indicate emergence (appearance/disappearance) of the selected
+popular terms in topics discovered in ACL and
+EMNLP papers over time. Observe that RNNRSM captures longer SPANs for popular keywords and better word usage in NLP research. For
+example: Word Embedding is one of the top keywords, appeared locally (Figure 5) in the recent
+years. RNN-RSM detects it in the topics from
+2010 to 2014, however DTM does not. Similarly,
+for Neural Language. However, Machine Translation and Language Model are globally appeared
+in the input document collections over time and
+captured in the topics by RNN-RSM and DTM.
+We also show keywords (Rule-set and Seed Words)
+that disappeared in topics over time.
+Higher SPAN suggests that the model is capable in capturing trending keywords. Table 6 shows
+corresponding comparison of SPANs for the 13
+
+selected keywords. The SPAN Sk for each keyword is computed from Figure 4. Observe that
+b DT M < ||Q||
+b RN N −RSM suggests new topics
+||Q||
+and words emerged over time in RNN-RSM, while
+higher SPAN values in RNN-RSM suggest better
+trends. Figure 6 shows how the word usage, captured by DTM and RNN-RSM for the topic Word
+Vector, changes over 19 years in NLP research.
+RNN-RSM captures popular terms Word Embedding and Word Representation emerged in it.
+
+4
+
+Discussion: RNN-RSM vs DTM
+
+Architecture: RNN-RSM treats document’s
+stream as high dimensional sequences over time
+and models the complex conditional probability
+distribution i.e. heteroscedasticity in document
+collections and topics over time by a temporal
+stack of RSMs (undirected graphical model), conditioned on time-feedback connections using RNN
+(Rumelhart et al., 1985). It has two hidden layers: h (stochastic binary) to capture topical information, while u (deterministic) to convey temporal information via BPTT that models the topic
+dependence at a time step t on all the previous
+steps τ < t. In contrast, DTM is built upon
+
+Model
+Language Model
+Words
+Language
+Probability
+
+Model
+Language Model
+Words
+Language
+Probability
+
+Model
+Language Model
+Words
+Language
+Probability
+
+Model
+Language Model
+Words
+Language
+Neural Network
+
+1996
+
+2000
+
+2005
+
+2014
+
+Neural Network
+Language Models
+Word Representation
+Linear Model
+Rule Set
+
+Neural Network
+Language Models
+Supervised Approach
+Linear Model
+Rule Set
+
+Neural Network
+Language Models
+Word Representation
+Joint Model
+Word Representations
+
+Neural Network
+Language Models
+Word Embedding
+Word Embeddings
+Word Representation
+
+1996
+
+2000
+
+2005
+
+2014
+
+(a) DTM
+
+(b) RNN-RSM
+
+Figure 6: Word usage for emerging topic Word Vector
+over time, captured by DTM and RNN-RSM
+
+LDA (directed model), where Dirichlet distribution on words is not amenable to sequential modeling, therefore its natural parameters (topic and
+topic proportion distributions) for each topic are
+chained, instead of latent topics that results in intractable inference in topic detection and chaining.
+Topic Dynamics: The introduction of explicit
+connection in latent topics in RNN-RSM allow
+new topics and words for the underlying topics to
+appear or disappear over time by the dynamics of
+topic correlations. As discussed, the distinction of
+h and u permits the latent topic h(t) to capture new
+topics, that may not be captured by h(t−1) .
+DTM assumes a fixed number of global topics
+and models their distribution over time. However,
+there is no such assumption in RNN-RSM. We
+fixed the topic count in RNN-RSM at each time
+step, since Wvh is fixed over time and RSM biases turn off/on terms in each topic. However,
+this is fundamentally different for DTM. E.g. a
+unique label be assigned to each of the 30 topics at any time steps t and t0 . DTM follows
+the sets of topic labels: {T opicLabels(t) }30
+k=1 =
+0 ) 30
+(t
+{T opicLabels }k=1 , due to eq (1) in Blei and
+Lafferty (2006) (discussed in section 5) that limits
+DTM to capture new (or local) topics or words appeared over time. It corresponds to the keywordtrends (section 3.5).
+Optimization: The RNN-RSM is based on
+Gibbs sampling and BPTT for inference while
+DTM employs complex variational methods, since
+applying Gibbs sampling is difficult due to the
+nonconjugacy of the Gaussian and multinomial
+distributions. Thus, easier learning in RNN-RSM.
+For all models, approximations are solely used
+to compute the likelihood, either using variational approaches or contrastive divergence; perplexity was then computed based on the approximated likelihood. More specifically, we use variational approximations to compute the likelihood
+
+for DTM (Blei and Lafferty, 2006). For RSM and
+RNN-RSM, the respective likelihoods are approximated using the standard Contrastive Divergence
+(CD). While there are substantial differences between variational approaches and CD, and thus in
+the manner the likelihood for different models is
+estimated - both approximations work well for the
+respective family of models in terms of approximating the true likelihood. Consequently, perplexities computed based on these approximated likelihoods are indeed comparable.
+
+5
+
+Conclusion and Future Work
+
+We have proposed a neural temporal topic model
+which we name as RNN-RSM, based on probabilistic undirected graphical topic model RSM
+with time-feedback connections via deterministic RNN, to capture temporal relationships in historical documents. The model is the first of its
+kind that learns topic dynamics in collections of
+different-sized documents over time, within the
+generative and neural network framework. The experimental results have demonstrated that RNNRSM shows better generalization (perplexity and
+time stamp prediction), topic interpretation (coherence) and evolution (popularity and drift) in
+scientific articles over time. We also introduced
+SPAN to illustrate topic characterization.
+In future work, we forsee to investigate learning
+dynamics in variable number of topics over time.
+It would also be an interesting direction to investigate the effect of the skewness in the distribution of papers over all years. Further, we see a potential application of the proposed model in learning the time-aware i.e. dynamic word embeddings
+(Aitchison, 2001; Basile et al., 2014; Bamler and
+Mandt, 2017; Rudolph and Blei, 2018; Yao et al.,
+2018) in order to capture language evolution over
+time, instead of document topics.
+
+Acknowledgments
+We thank Sujatha Das Gollapalli for providing
+us with the data sets used in the experiments.
+We express appreciation for our colleagues Florian Buettner, Mark Buckley, Stefan Langer, Ulli
+Waltinger and Usama Yaseen, and anonymous reviewers for their in-depth review comments. This
+research was supported by Bundeswirtschaftsministerium (bmwi.de), grant 01MD15010A (Smart
+Data Web) at Siemens AG- CT Machine Intelligence, Munich Germany.
+
+References
+Jean Aitchison. 2001. Language change: progress or
+decay?. Cambridge University Press.
+Nikolaos Aletras and Mark Stevenson. 2013. Evaluating topic coherence using distributional semantics.
+In Proceedings of the 10th International Conference
+on Computational Semantics (IWCS). Potsdam, Germany, pages 13–22.
+James Allan. 2002. Introduction to topic detection and
+tracking. In Topic detection and tracking, Springer,
+pages 1–16.
+James Allan, Jaime G Carbonell, George Doddington,
+Jonathan Yamron, and Yiming Yang. 1998. Topic
+detection and tracking pilot study final report. In
+Proceedings of the DARPA Broadcast News Transcription and Understanding Workshop. Virginia,
+US, pages 194–218.
+Robert Bamler and Stephan Mandt. 2017. Dynamic
+word embeddings. In Proceedings of the 34th International Conference on Machine Learning. Sydney,
+Australia, pages 380–389.
+Pierpaolo Basile, Annalina Caputo, and Giovanni Semeraro. 2014. Analysing word meaning over time
+by exploiting temporal random indexing. In Proceedings of the 1st Italian Conference on Computational Linguistics (CLiC-it). Pisa University Press,
+Pisa, Italy.
+David M. Blei and John D. Lafferty. 2006. Dynamic
+topic models. In Proceedings of the 23rd International Conference on Machine Learning. Association for Computing Machinery, Pittsburgh, Pennsylvania USA, pages 113–120.
+David M. Blei, Andrew Y. Ng, and Michael I. Jordan.
+2003. Latent dirichlet allocation. Proceedings of
+Machine Learning Research 3(Jan):993–1022.
+Nicolas Boulanger-Lewandowski, Yoshua Bengio, and
+Pascal Vincent. 2012. Modeling temporal dependencies in high-dimensional sequences: Application
+to polyphonic music generation and transcription. In
+Proceedings of the 29th International Conference on
+Machine Learning. Edinburgh, Scotland UK.
+Jonathan Chang, Sean Gerrish, Chong Wang, Jordan L.
+Boyd-Graber, and David M. Blei. 2009. Reading tea
+leaves: How humans interpret topic models. In Advances in Neural Information Processing Systems.
+Curran Associates, Inc., Vancouver, Canada, pages
+288–296.
+Rajarshi Das, Manzil Zaheer, and Chris Dyer. 2015.
+Gaussian lda for topic models with word embeddings. In Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics
+and the 7th International Joint Conference on Natural Language Processing. Association for Computational Linguistics, Beijing, China, volume 1, pages
+795–804.
+
+Peter V. Gehler, Alex D. Holub, and Max Welling.
+2006. The rate adapting poisson model for information retrieval and object recognition. In Proceedings of the 23rd International Conference on Machine Learning. Association for Computing Machinery, Pittsburgh, Pennsylvania USA, pages 337–344.
+Sujatha Das Gollapalli and Xiaoli Li. 2015. Emnlp versus acl: Analyzing nlp research over time. In Proceedings of the Conference on Empirical Methods
+in Natural Language Processing. Association for
+Computational Linguistics, Lisbon, Portugal, pages
+2002–2006.
+Pankaj Gupta, Thomas Runkler, Heike Adel, Bernt
+Andrassy, Hans-Georg Zimmermann, and Hinrich
+Schütze. 2015a. Deep learning methods for the extraction of relations in natural language text. Technical report, Technical University of Munich, Germany.
+Pankaj Gupta, Thomas Runkler, and Bernt Andrassy.
+2015b. Keyword learning for classifying requirements in tender documents. Technical report, Technical University of Munich, Germany.
+Pankaj Gupta, Hinrich Schütze, and Bernt Andrassy.
+2016. Table filling multi-task recurrent neural network for joint entity and relation extraction. In Proceedings of COLING 2016, the 26th International
+Conference on Computational Linguistics: Technical Papers. Osaka, Japan, pages 2537–2547.
+Pankaj Gupta, Udhayaraj Sivalingam, Sebastian
+Pölsterl, and Nassir Navab. 2015c. Identifying patients with diabetes using discriminative restricted
+boltzmann machines. Technical report, Technical
+University of Munich, Germany.
+David Hall, Daniel Jurafsky, and Christopher D. Manning. 2008. Studying the history of ideas using topic
+models. In Proceedings of the conference on Empirical Methods in Natural Language Processing. Association for Computational Linguistics, Honolulu,
+Hawaii, pages 363–371.
+Geoffrey Hinton and Ruslan Salakhutdinov. 2009.
+Replicated softmax: an undirected topic model. In
+Advances in Neural Information Processing Systems
+22. Curran Associates, Inc., Vancouver, Canada,
+pages 1607–1614.
+Geoffrey E. Hinton. 2002. Training products of experts
+by minimizing contrastive divergence. Neural Computation 14(8):1771–1800.
+Geoffrey E. Hinton, Simon Osindero, and Yee-Whye
+Teh. 2006. A fast learning algorithm for deep belief
+nets. Neural Computation 18(7):1527–1554.
+Tomoharu Iwata, Takeshi Yamada, Yasushi Sakurai, and Naonori Ueda. 2010. Online multiscale
+dynamic topic models. In Proceedings of the
+16th ACM SIGKDD International Conference on
+Knowledge Discovery and Data Mining. Association for Computing Machinery, Washington DC,
+USA, pages 663–672.
+
+David Newman, Sarvnaz Karimi, and Lawrence Cavedon. 2009. External evaluation of topic models.
+In Proceedings of the 14th Australasian Document
+Computing Symposium. Citeseer, Sydney, Australia.
+Iulian Pruteanu-Malinici, Lu Ren, John Paisley, Eric
+Wang, and Lawrence Carin. 2010. Hierarchical
+bayesian modeling of topics in time-stamped documents. IEEE transactions on pattern analysis and
+machine intelligence 32(6):996–1011.
+Maja Rudolph and David Blei. 2018.
+Dynamic
+bernoulli embeddings for language evolution. In
+Proceedings of the 27th International Conference on
+World Wide Web Companion. Lyon, France.
+David E. Rumelhart, Geoffrey E. Hinton, and Ronald J.
+Williams. 1985. Learning internal representations
+by error propagation. Technical report, California
+Univ San Diego La Jolla Inst for Cognitive Science.
+Ankan Saha and Vikas Sindhwani. 2012. Learning
+evolving and emerging topics in social media: a dynamic nmf approach with temporal regularization.
+In Proceedings of the 5th ACM International Conference on Web Search and Data Mining. Association for Computing Machinery, Seattle, Washington
+USA, pages 693–702.
+Aaron Schein, Hanna Wallach, and Mingyuan Zhou.
+2016. Poisson-gamma dynamical systems. In Advances in Neural Information Processing Systems
+29, Curran Associates, Inc., Barcelona, Spain, pages
+5005–5013.
+Paul Smolensky. 1986. Information processing in dynamical systems: Foundations of harmony theory.
+Technical report, Colorado University at Boulder
+Department of Computer Science.
+Ilya Sutskever and Geoffrey Hinton. 2007. Learning multilevel distributed representations for highdimensional sequences. In Proceedings of the 11th
+International Conference on Artificial Intelligence
+and Statistics. San Juan, Puerto Rico, pages 548–
+555.
+Ilya Sutskever, Geoffrey E. Hinton, and Graham W.
+Taylor. 2009. The recurrent temporal restricted
+boltzmann machine. In Advances in Neural Information Processing Systems 22. Curran Associates,
+Inc., Vancouver, Canada, pages 1601–1608.
+Graham W. Taylor, Geoffrey E. Hinton, and Sam T.
+Roweis. 2007. Modeling human motion using binary latent variables. In Advances in Neural Information Processing Systems 20. Curran Associates,
+Inc., Vancouver, Canada, pages 1345–1352.
+Ngoc Thang Vu, Heike Adel, Pankaj Gupta, and Hinrich Schütze. 2016a. Combining recurrent and convolutional neural networks for relation classification. In Proceedings of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. Association
+for Computational Linguistics, San Diego, California USA, pages 534–539.
+
+Ngoc Thang Vu, Pankaj Gupta, Heike Adel, and
+Hinrich Schütze. 2016b. Bi-directional recurrent
+neural network with ranking loss for spoken language understanding. In Proceedings of the Acoustics, Speech and Signal Processing (ICASSP). IEEE,
+Shanghai, China, pages 6060–6064.
+Xiaojun Wan and Jianguo Xiao. 2008. Single document keyphrase extraction using neighborhood
+knowledge. In Proceedings of the 23rd National
+Conference on Artificial Intelligence. Chicago, Illinois USA, volume 8, pages 855–860.
+Xuerui Wang and Andrew McCallum. 2006. Topics
+over time: a non-markov continuous-time model of
+topical trends. In Proceedings of the 12th ACM
+SIGKDD International Conference on Knowledge
+Discovery and Data Mining. Association for Computing Machinery, Philadelphia, Pennsylvania USA,
+pages 424–433.
+Eric P. Xing, Rong Yan, and Alexander G. Hauptmann. 2005. Mining associated text and images
+with dual-wing harmoniums. In Proceedings of the
+21st Conference on Uncertainty in Artificial Intelligence. AUAI Press, Edinburgh, Scotland UK.
+Zijun Yao, Yifan Sun, Weicong Ding, Nikhil Rao, and
+Hui Xiong. 2018. Dynamic word embeddings for
+evolving semantic discovery. In Proceedings of the
+11th ACM International Conference on Web Search
+and Data Mining (WSDM). Association for Computing Machinery, Los Angeles, California USA, pages
+673–681.
+
+

@@ -176,3 +176,139 @@ with tab_heatmap:
                 st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("No heatmap data available.")
+
+st.divider()
+
+# ============================================================
+# Paper-Faithful avg-SPAN (Gupta et al., 2018)
+# ============================================================
+st.header("Paper-Faithful avg-SPAN (Gupta et al., 2018)")
+st.markdown("""
+Following the SPAN metric from *Deep Temporal-Recurrent-Replicated-Softmax for Topical Trends over Time*
+([arXiv:1711.05626v2](https://arxiv.org/abs/1711.05626)):
+
+- **keyword-trend** — binary presence/absence of a word in **any** discovered topic per year
+- **SPAN (Sₖ)** — longest consecutive years the keyword appears
+- **v̂ₖ** — total count of keyword across all topics and years
+- **Sₖᵈⁱᶜᵗ = Sₖ / v̂ₖ** — frequency-normalized SPAN
+- **avg-SPAN = (1/||Q̂||) × Σ Sₖᵈⁱᶜᵗ** — averaged over **all** unique topic-terms
+
+Higher avg-SPAN → model better captures trending keywords over time.
+""")
+
+tab_paper_summary, tab_paper_detail, tab_paper_top = st.tabs(
+    ["Model Comparison", "Per-Term Detail", "Top SPAN Terms"]
+)
+
+with tab_paper_summary:
+    paper_all = load_all_models("tren", subject, "keyword_span_paper_summary.csv")
+    if len(paper_all) > 0:
+        paper_f = paper_all[paper_all["model"].isin([MODEL_LABELS[m] for m in selected_models])]
+
+        col1, col2 = st.columns(2)
+        with col1:
+            fig = px.bar(
+                paper_f, x="model", y="avg_span_paper", color="model",
+                color_discrete_map=colors,
+                title="avg-SPAN (Paper Formula, Frequency-Weighted)",
+                labels={"avg_span_paper": "avg-SPAN", "model": ""},
+            )
+            fig.update_layout(height=400, showlegend=False)
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            fig = px.bar(
+                paper_f, x="model", y="avg_span_simple", color="model",
+                color_discrete_map=colors,
+                title="avg-SPAN (Simple Mean)",
+                labels={"avg_span_simple": "avg-SPAN (simple)", "model": ""},
+            )
+            fig.update_layout(height=400, showlegend=False)
+            st.plotly_chart(fig, use_container_width=True)
+
+        # Summary metrics table
+        display_cols_paper = ["model", "total_unique_terms", "avg_span_paper",
+                              "avg_span_simple", "total_corpus_freq",
+                              "terms_not_in_corpus"]
+        available_paper = [c for c in display_cols_paper if c in paper_f.columns]
+        st.dataframe(
+            paper_f[available_paper].reset_index(drop=True),
+            use_container_width=True,
+            column_config={
+                "model": "Model",
+                "total_unique_terms": "||Q̂|| (unique terms)",
+                "avg_span_paper": st.column_config.NumberColumn("avg-SPAN (paper)", format="%.6f"),
+                "avg_span_simple": st.column_config.NumberColumn("avg-SPAN (simple)", format="%.4f"),
+                "total_corpus_freq": "Σv̂ₖ (corpus freq)",
+                "terms_not_in_corpus": "Terms not in corpus",
+            },
+        )
+    else:
+        st.info("No paper-faithful SPAN data. Run the updated keyword_trend notebooks first.")
+
+with tab_paper_detail:
+    model_paper = st.selectbox(
+        "Select model", selected_models,
+        format_func=lambda x: MODEL_LABELS[x],
+        key="paper_detail_model",
+    )
+    paper_df = load_csv(model_paper, "tren", subject, "keyword_span_paper.csv")
+    if paper_df is not None and len(paper_df) > 0:
+        sort_by = st.selectbox("Sort by", ["span", "v_hat", "s_dict", "word"], key="paper_sort")
+        asc = sort_by == "word"
+        display_cols_d = ["word", "span", "v_hat", "s_dict", "years_present", "coverage_pct"]
+        available_d = [c for c in display_cols_d if c in paper_df.columns]
+        st.dataframe(
+            paper_df[available_d].sort_values(sort_by, ascending=asc).head(100).reset_index(drop=True),
+            use_container_width=True,
+            column_config={
+                "word": "Keyword",
+                "span": "SPAN (Sₖ)",
+                "v_hat": "v̂ₖ (frequency)",
+                "s_dict": st.column_config.NumberColumn("Sₖᵈⁱᶜᵗ", format="%.4f"),
+                "years_present": "Years Present",
+                "coverage_pct": st.column_config.NumberColumn("Coverage %", format="%.1f%%"),
+            },
+        )
+        st.caption(f"Showing top 100 of {len(paper_df)} terms")
+    else:
+        st.info("No per-term data available.")
+
+with tab_paper_top:
+    model_top = st.selectbox(
+        "Select model", selected_models,
+        format_func=lambda x: MODEL_LABELS[x],
+        key="paper_top_model",
+    )
+    paper_top_df = load_csv(model_top, "tren", subject, "keyword_span_paper.csv")
+    if paper_top_df is not None and len(paper_top_df) > 0 and "keyword_trend" in paper_top_df.columns:
+        import ast
+        n_top = st.slider("Number of top keywords", 10, 50, 20, key="paper_top_n")
+        top_terms = paper_top_df.nlargest(n_top, "span")
+
+        rows_hm = []
+        for _, r in top_terms.iterrows():
+            try:
+                trend = ast.literal_eval(r["keyword_trend"])
+                rows_hm.append({"word": r["word"], "trend": trend, "span": r["span"]})
+            except:
+                pass
+
+        if rows_hm:
+            n_years = len(rows_hm[0]["trend"])
+            years = list(range(2000, 2000 + n_years))
+            matrix = [row["trend"] for row in rows_hm]
+            words = [f"{row['word']} (S={row['span']})" for row in rows_hm]
+
+            fig = px.imshow(
+                np.array(matrix), x=[str(y) for y in years], y=words,
+                color_continuous_scale=[[0, "#1e1e2e"], [1, "#22c55e"]],
+                title=f"{MODEL_LABELS[model_top]}: Keyword-Trend (Top {n_top} by SPAN)",
+                labels={"color": "Present"},
+                aspect="auto",
+            )
+            fig.update_layout(height=max(400, len(words) * 28))
+            fig.update_coloraxes(showscale=False)
+            st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("No keyword-trend data available.")
