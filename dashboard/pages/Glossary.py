@@ -70,7 +70,7 @@ GLOSSARY = {
         "page": "Scenario 2: Evolution",
         "page_link": "/2_Evolution",
     },
-    "TTQ (Topic Transition Quality)": {
+    "Topic Transitions Quality (TTQ)": {
         "definition": "Combined evolution quality metric. A topic must be both coherent (TTC) and stable (TTS) to score high.",
         "formula": "TTQ = TTC × TTS",
         "range": "0 to 1 (higher = better)",
@@ -109,6 +109,27 @@ GLOSSARY = {
     },
 
     # Scenario 4
+    "avg-SPAN (Paper Formula)": {
+        "definition": "Averaged SPAN over all unique topic-terms discovered by the model. Each keyword's SPAN is normalized by its total corpus frequency (v̂ₖ) to reward models that capture rare but persistently growing terms.",
+        "formula": "avg-SPAN = (1/||Q̂||) × Σ (Sₖ / v̂ₖ)",
+        "range": "≥ 0 (higher = better)",
+        "page": "Scenario 4: Keyword Trends",
+        "page_link": "/4_Keyword_Trends",
+    },
+    "Shared Keyword SPAN": {
+        "definition": "Apple-to-apple cross-model comparison evaluating the same pool of intersection keywords. Keywords are selected if they are captured by at least 2 different models.",
+        "formula": "avg-SPAN over the shared keyword pool",
+        "range": "≥ 0 (higher = better)",
+        "page": "Scenario 4: Keyword Trends",
+        "page_link": "/4_Keyword_Trends",
+    },
+    "Trend Category SPAN": {
+        "definition": "Model evaluation against exactly 90 ground-truth keywords categorized by TF-IDF linear regression slope.",
+        "formula": "avg-SPAN evaluated precisely on 30 Emerging, 30 Stable, and 30 Decaying keywords",
+        "range": "≥ 0 (higher = better)",
+        "page": "Scenario 4: Keyword Trends",
+        "page_link": "/4_Keyword_Trends",
+    },
     "SPAN": {
         "definition": "Longest consecutive sequence of years a keyword appears in any topic's top words. Measures how well a model retains important keywords.",
         "formula": "SPAN(k) = max length of consecutive 1s in presence vector of keyword k",
@@ -119,21 +140,21 @@ GLOSSARY = {
     "Emerging Keywords": {
         "definition": "Words with strong positive TF-IDF slope — low importance early (2000–2010) but growing significance in later years (2015–2025).",
         "formula": "Classified by highest positive linregress slope of TF-IDF over years",
-        "range": "Top-K by slope",
+        "range": "Top 30 by slope",
         "page": "Scenario 4: Keyword Trends",
         "page_link": "/4_Keyword_Trends",
     },
     "Stable Keywords": {
         "definition": "Words with near-zero slope and high average TF-IDF — consistently important across all years.",
         "formula": "Ranked by: avg_tfidf / (1 + |slope| × 10000)",
-        "range": "Top-K by stability score",
+        "range": "Top 30 by stability score",
         "page": "Scenario 4: Keyword Trends",
         "page_link": "/4_Keyword_Trends",
     },
     "Decaying Keywords": {
         "definition": "Words with strong negative TF-IDF slope — high importance early but declining significance in later years.",
         "formula": "Classified by most negative linregress slope",
-        "range": "Top-K by slope",
+        "range": "Top 30 by slope",
         "page": "Scenario 4: Keyword Trends",
         "page_link": "/4_Keyword_Trends",
     },
