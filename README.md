@@ -26,40 +26,51 @@ graph TD
         S1c --> S1d["Select Best Model per Subject"]
     end
 
-    S1d --> S2
+    S1d --> S1_Out(( ))
+    S1_Out --> S2_A
+    S1_Out --> S2_B
 
     subgraph S2g ["Scenario 2: Temporal Evolution"]
-        S2["2A: Temporal Analysis"]
-        S2 --> S2a["Topic Prevalence per Year"]
-        S2 --> S2b["c-TF-IDF Word Evolution"]
-        S2 --> S2c["Trend Detection — linregress"]
+        S2_A["2A: Temporal Analysis"]
+        S2_A --> S2a["Topic Prevalence per Year"]
+        S2_A --> S2b["c-TF-IDF Word Evolution"]
+        S2_A --> S2c["Trend Detection — linregress"]
         S2c --> S2d["Growing / Stable / Declining"]
 
-        S2 --> S2e["2B: Evolution Quality"]
-        S2e --> S2f["TTC — Cross-time Coherence"]
-        S2e --> S2g2["TTS — Term Stability"]
+        S2_B["2B: Evolution Quality"]
+        S2_B --> S2f["TTC — Cross-time Coherence"]
+        S2_B --> S2g2["TTS — Term Stability"]
         S2f & S2g2 --> S2h["TTQ = TTC × TTS"]
     end
 
-    S2d & S2h --> S3
+    S2d & S2h --> S2_Out(( ))
+    S2_Out --> S3_A
+    S2_Out --> S3_B
 
     subgraph S3g ["Scenario 3: Structural Consistency"]
-        S3["Topic Term Drift — TTD"]
-        S3 --> S3a["Endpoint: first vs last year"]
-        S3 --> S3b["Trajectory: drift from baseline"]
-        S3 --> S3c["YoY: consecutive year drift"]
+        S3_A["Topic Term Drift (TTD)"]
+        S3_A --> S3a["Endpoint: first vs last year"]
+        S3_A --> S3b["Trajectory: drift from baseline"]
+        S3_A --> S3c["YoY: consecutive year drift"]
 
-        S3 --> S3d["Continuity Rate"]
-        S3d --> S3e["Stable / Merge / Disappear / New"]
+        S3_B["Continuity Rate"]
+        S3_B --> S3e["Stable / Merge / Disappear / New"]
     end
 
-    S3e --> S4
+    S3a & S3b & S3c & S3e --> S3_Out(( ))
+    S3_Out --> S4_A
+    S3_Out --> S4_B
+    S3_Out --> S4_C
 
     subgraph S4g ["Scenario 4: Keyword Trend Evaluation"]
-        S4["TF-IDF per Year — Ground Truth"]
-        S4 --> S4a["Classify: Emerging / Stable / Decaying"]
-        S4a --> S4b["SPAN: Longest consecutive years<br/>keyword appears in topics"]
-        S4b --> S4c["Compare model keyword capture"]
+        S4_A["1. Paper-Faithful avg-SPAN"]
+        S4_A --> S4a["Model vocabulary SPAN<br/>normalized by corpus v̂ₖ"]
+
+        S4_B["2. Shared Keyword SPAN"]
+        S4_B --> S4b["Cross-model comparison<br/>on intersection pool"]
+
+        S4_C["3. Trend Category SPAN"]
+        S4_C --> S4c["90 TF-IDF Ground Truth<br/>(Emerging, Stable, Decaying)"]
     end
 ```
 
