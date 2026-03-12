@@ -25,12 +25,23 @@ st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definiti
 subject, selected_models = setup_sidebar()
 colors = model_color_map()
 
-# ── Global search ──
-search = st.text_input(
-    "🔍 Search topics by keyword",
-    placeholder="e.g. neural, quantum, graph...",
-    key="explorer_search",
-)
+# ── Global search and filters ──
+col_s, col_f = st.columns([2, 1])
+with col_s:
+    search = st.text_input(
+        "🔍 Search topics by keyword",
+        placeholder="e.g. neural, quantum, graph...",
+        key="explorer_search",
+    )
+with col_f:
+    category_filter = st.multiselect(
+        "🏷️ Filter by Category",
+        options=["GROWING", "STABLE", "DECLINING"],
+        format_func=lambda x: {"GROWING": "📈 Emerging", "STABLE": "🔒 Stable", "DECLINING": "📉 Decaying"}.get(x, x),
+        default=[],
+        key="explorer_category",
+        help="Leave empty to show all."
+    )
 
 for m in selected_models:
     label = MODEL_LABELS[m]
@@ -54,6 +65,7 @@ for m in selected_models:
         t_labels = {}
         t_all_words = {}  # all words across all years for search
         t_word_by_year = {}  # {tid: {year: words}} for hover
+        t_categories = {}
         for tid in topic_ids:
             lbl = f"Topic {tid}"
             # Collect words across all years from word evolution
@@ -81,16 +93,22 @@ for m in selected_models:
             t_labels[tid] = lbl
             t_all_words[tid] = " ".join(all_words_set).lower()
             t_word_by_year[tid] = year_words
+            t_categories[tid] = trend
 
-        # Filter by global search (searches across ALL years' words)
+        # Filter by global search and category
+        filtered = topic_ids
         if search:
-            filtered = [t for t in topic_ids if search.lower() in t_all_words[t]]
-            if not filtered:
-                st.caption(f"No topics match '{search}' in {label}")
-                continue
-            st.caption(f"{len(filtered)} topics match '{search}'")
-        else:
-            filtered = topic_ids
+            filtered = [t for t in filtered if search.lower() in t_all_words[t]]
+        if category_filter:
+            filtered = [t for t in filtered if t_categories.get(t, "") in category_filter]
+            
+        if not filtered:
+            if search or category_filter:
+                st.caption(f"No topics match your filters in {label}")
+            continue
+        
+        if search or category_filter:
+            st.caption(f"{len(filtered)} topics match your filters")
 
         picks = st.multiselect(
             "Topics", filtered,
