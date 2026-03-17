@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 
-MODELS = ["lda", "top2vec", "dtm", "bertopic"]
-MODEL_LABELS = {"lda": "LDA", "top2vec": "Top2Vec", "dtm": "DTM", "bertopic": "BERTopic"}
+MODELS = ["lda", "top2vec", "dtm", "bertopic", "topicGpt"]
+MODEL_LABELS = {"lda": "LDA", "top2vec": "Top2Vec", "dtm": "DTM", "bertopic": "BERTopic", "topicGpt": "TopicGPT"}
 SUBJECTS = ["cs", "math", "physics"]
 SUBJECT_LABELS = {"cs": "Computer Science", "math": "Mathematics", "physics": "Physics"}
 
@@ -45,6 +45,7 @@ def load_tuning(model: str, subject: str) -> pd.DataFrame | None:
             RESULTS_DIR / "bertopic" / "tuning" / "hdbscan" / "quality_results.csv",
             RESULTS_DIR / "bertopic" / "tuning" / "kmeans" / "quality_results.csv",
         ],
+        "topicGpt": [RESULTS_DIR / "topicGpt" / "tunning" / subject / "tuning_results.csv"],
     }
 
     paths = search_paths.get(model, [])
@@ -69,6 +70,8 @@ def load_tuning(model: str, subject: str) -> pd.DataFrame | None:
         rename["coherence"] = "coherence_cv"
     if "irbo_aggregated" in df.columns and "irbo_mean" not in df.columns:
         rename["irbo_aggregated"] = "irbo_mean"
+    if "irbo" in df.columns and "irbo_mean" not in df.columns:
+        rename["irbo"] = "irbo_mean"
     if "k" in df.columns and "num_topics" not in df.columns:
         rename["k"] = "num_topics"
     if "n_topics" in df.columns and "num_topics" not in df.columns:
@@ -114,4 +117,5 @@ def model_color_map():
         "Top2Vec": "#8b5cf6",
         "DTM": "#f59e0b",
         "BERTopic": "#3b82f6",
+        "TopicGPT": "#10b981",
     }

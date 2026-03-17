@@ -1,0 +1,2 @@
+subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
+math,TopicGPT,4298,0.099423,1.7718,427.320942,3815586,843

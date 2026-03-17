@@ -21,7 +21,7 @@ st.set_page_config(
 # --- Header ---
 st.title("📊 Topic Modeling Dashboard")
 st.markdown(
-    "Comparing **LDA**, **Top2Vec**, **DTM**, and **BERTopic** on arXiv papers (2000–2025)"
+    "Comparing **LDA**, **Top2Vec**, **DTM**, **BERTopic**, and **TopicGPT** on arXiv papers (2000–2025)"
 )
 
 subject, selected_models = setup_sidebar()

@@ -22,8 +22,8 @@ DATA_DIR = BASE / "data" / "preprocess"
 RESULTS_DIR = BASE / "results"
 
 LIST_SUBJECT = ["cs", "math", "physics"]
-MODELS = ["dtm", "lda", "top2vec", "bertopic"]
-MODEL_LABELS = {"dtm": "DTM", "lda": "LDA", "top2vec": "Top2Vec", "bertopic": "BERTopic"}
+MODELS = ["dtm", "lda", "top2vec", "bertopic", "topicGpt"]
+MODEL_LABELS = {"dtm": "DTM", "lda": "LDA", "top2vec": "Top2Vec", "bertopic": "BERTopic", "topicGpt": "TopicGPT"}
 
 TOP_N = 50  # number of shared keywords to evaluate
 
