@@ -27,6 +27,8 @@ dependencies = [
     "einops>=0.8.2",
     "peft>=0.18.1",
     "adapters>=1.2.0",
+    "aiohttp>=3.13.3",
+    "json5>=0.13.0",
 ]
 [tool.uv.extra-build-dependencies]
 tomotopy = ["numpy"]
