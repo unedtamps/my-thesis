@@ -54,6 +54,15 @@ for m in selected_models:
     ttd_endpoint = load_csv(m, "consistency", subject, "topic_term_drift.csv")
     ttd_traj = load_csv(m, "consistency", subject, "ttd_trajectory.csv")
     cont_trans = load_csv(m, "consistency", subject, "continuity_transitions.csv")
+    labels_df = load_csv(m, "temporal", subject, "topic_labels.csv")
+    yearly_desc_df = load_csv(m, "temporal", subject, "topic_yearly_descriptions.csv")
+
+    # Build label & description lookup from topic_labels.csv
+    topic_label_map = {}
+    topic_desc_map = {}
+    if labels_df is not None and len(labels_df) > 0:
+        topic_label_map = dict(zip(labels_df["topic_id"], labels_df["label"]))
+        topic_desc_map = dict(zip(labels_df["topic_id"], labels_df["enriched_description"]))
 
     if prev_df is None or len(prev_df) == 0:
         continue
@@ -67,6 +76,8 @@ for m in selected_models:
         t_word_by_year = {}  # {tid: {year: words}} for hover
         t_categories = {}
         for tid in topic_ids:
+            # Use LLM-generated label if available, else fallback
+            real_label = topic_label_map.get(tid, "")
             lbl = f"Topic {tid}"
             # Collect words across all years from word evolution
             all_words_set = set()
@@ -76,7 +87,14 @@ for m in selected_models:
                 for _, wr in tw.iterrows():
                     w = str(wr.get("top_words", ""))
                     year_words[wr["year"]] = w
-                    all_words_set.update(w.replace(",", " ").split())
+                    all_words_set.update(w.lower().replace(",", " ").split())
+
+            # Also add label and enriched description to search index
+            if real_label:
+                all_words_set.update(real_label.lower().replace("-", " ").replace("&", " ").split())
+            enrich_desc = str(topic_desc_map.get(tid, "")).lower()
+            if enrich_desc and enrich_desc != "nan":
+                all_words_set.update(enrich_desc.replace(",", " ").replace(".", " ").split())
 
             # Also add trend summary words
             trend = ""
@@ -88,17 +106,27 @@ for m in selected_models:
                     summary_words = str(t_row.iloc[0].get("top_words", ""))
                     all_words_set.update(summary_words.replace(",", " ").split())
                     icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend, "")
-                    lbl = f"{icon} T{tid}: {summary_words[:55]}"
+                    if real_label:
+                        lbl = f"{icon} T{tid}: {real_label}"
+                    else:
+                        lbl = f"{icon} T{tid}: {summary_words[:55]}"
+            elif real_label:
+                lbl = f"T{tid}: {real_label}"
 
             t_labels[tid] = lbl
             t_all_words[tid] = " ".join(all_words_set).lower()
             t_word_by_year[tid] = year_words
             t_categories[tid] = trend
 
-        # Filter by global search and category
+        # Filter by global search (token-based: any token match counts)
         filtered = topic_ids
         if search:
-            filtered = [t for t in filtered if search.lower() in t_all_words[t]]
+            tokens = [tok.strip().lower() for tok in search.replace(",", " ").split() if tok.strip()]
+            if tokens:
+                filtered = [
+                    t for t in filtered
+                    if any(tok in t_all_words[t] for tok in tokens)
+                ]
         if category_filter:
             filtered = [t for t in filtered if t_categories.get(t, "") in category_filter]
             
@@ -174,8 +202,14 @@ for m in selected_models:
                     if len(t_row) > 0:
                         trend_tag = t_row.iloc[0].get("trend", "")
                 icon = {"GROWING": "📈", "DECLINING": "📉", "STABLE": "🔒"}.get(trend_tag, "")
+                evo_label = topic_label_map.get(tid, f"Topic {tid}")
 
-                with st.expander(f"{icon} Topic {tid} — evolution details"):
+                with st.expander(f"{icon} Topic {tid}: {evo_label} — evolution details"):
+                    # Enriched description
+                    tid_desc = topic_desc_map.get(tid, "")
+                    if tid_desc and str(tid_desc) != "nan":
+                        st.info(tid_desc)
+
                     # Stats
                     if trends_df is not None and len(trends_df) > 0:
                         t_row = trends_df[trends_df["topic_id"] == tid]
@@ -186,13 +220,19 @@ for m in selected_models:
                             c2.metric("Slope", f"{tr.get('slope', 0):.6f}")
                             c3.metric("R²", f"{tr.get('r_squared', 0):.4f}")
 
-                    # Word evolution
+                    # Word evolution + yearly descriptions merged
                     if word_df is not None and len(word_df) > 0:
                         tw = word_df[word_df["topic_id"] == tid].sort_values("year")
                         if len(tw) > 0:
                             display = tw[["year", "top_words"]].copy()
                             display.columns = ["Year", "Top Words"]
-                            st.dataframe(display.reset_index(drop=True), use_container_width=True, height=250)
+                            # Merge yearly descriptions if available
+                            if yearly_desc_df is not None and len(yearly_desc_df) > 0:
+                                yd = yearly_desc_df[yearly_desc_df["topic_id"] == tid][["year", "yearly_description"]].copy()
+                                yd.columns = ["Year", "Description"]
+                                display = display.merge(yd, on="Year", how="left")
+                                display["Description"] = display["Description"].fillna("")
+                            st.dataframe(display.reset_index(drop=True), use_container_width=True, height=300)
 
         # ── TAB 2: Term Drift ──
         with t_consist:
