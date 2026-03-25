@@ -1,0 +1,9 @@
+services:
+  thesis-app:
+    container_name: my-thesis
+    image: unedotamps/my-thesis
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./results/:/app/results
