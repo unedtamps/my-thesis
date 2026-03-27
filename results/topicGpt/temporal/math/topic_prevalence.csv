@@ -1,386 +1,386 @@
 subject,year,topic_id,topic_label,doc_count,total_docs_year,proportion
-math,2000,0,Mirror symmetry cohomology,12,247,0.048583
-math,2000,1,Polynomial norm bounds,4,247,0.016194
-math,2000,2,Yangian deformations,7,247,0.02834
-math,2000,3,Multiplier ideals,6,247,0.024291
-math,2000,4,Foliation theory,5,247,0.020243
-math,2000,5,Clifford-algebra group theory,10,247,0.040486
-math,2000,6,Hahn-Banach extensions,3,247,0.012146
-math,2000,7,Quantum affine representations,11,247,0.044534
-math,2000,8,Local cohomology monomial ideals,5,247,0.020243
-math,2000,9,Pattern-avoiding permutations,2,247,0.008097
-math,2000,10,Spectral amplitude relations,4,247,0.016194
-math,2000,11,Quantum superalgebra structures,11,247,0.044534
-math,2000,12,Geometric group theory equivalence,4,247,0.016194
-math,2000,13,Knot move invariants,5,247,0.020243
-math,2000,14,Fano variety bounds,9,247,0.036437
-math,2000,15,Representability failure,1,247,0.004049
-math,2000,16,Toric modular forms,4,247,0.016194
-math,2000,17,Projective Galois group endomorphisms,7,247,0.02834
-math,2000,18,Algebraic Hodge motives,4,247,0.016194
-math,2000,19,Double plane structures,9,247,0.036437
-math,2000,20,Random walk aging limits,0,247,0.0
-math,2000,21,Random packing asymptotics,2,247,0.008097
-math,2000,22,Einstein-Kähler metrics,6,247,0.024291
-math,2000,23,Super Lie identity theorems,2,247,0.008097
-math,2000,24,Fibre-space Hodge cohomology vanishing,11,247,0.044534
-math,2000,25,Lamination geodesic convergence,1,247,0.004049
-math,2000,26,Random heap dynamics,3,247,0.012146
-math,2000,27,Noncommutative crepant resolutions,2,247,0.008097
-math,2000,28,Numerical PDE error analysis,0,247,0.0
-math,2000,29,Prime divisor asymptotics,0,247,0.0
-math,2000,30,Fragmentation-coalescent processes,0,247,0.0
-math,2000,31,Mirror symmetry i-functions,6,247,0.024291
-math,2000,32,Siegel uniformity conjecture,6,247,0.024291
-math,2000,33,Group embedding dimension bounds,1,247,0.004049
-math,2000,34,Convex cone optimization,0,247,0.0
-math,2000,35,Galois cohomology obstructions,1,247,0.004049
-math,2000,36,Non-symplectic group actions,14,247,0.05668
-math,2000,37,Hodge-Frobenius manifolds,15,247,0.060729
-math,2000,38,Signed domination complexity,1,247,0.004049
-math,2000,39,Reduced Khovanov homology,7,247,0.02834
-math,2000,40,Contact manifold fillings,4,247,0.016194
-math,2000,41,Martingale measure augmentation,1,247,0.004049
-math,2000,42,Multizeta q-values,2,247,0.008097
-math,2000,43,Pro pp group commensurability,3,247,0.012146
-math,2000,44,n-ary bihom algebras,2,247,0.008097
-math,2000,45,Non-smooth proximal gradient analysis,0,247,0.0
-math,2000,46,Nonlocal diffusion regularity,0,247,0.0
-math,2000,47,Extended hypergeometric functions,5,247,0.020243
-math,2000,48,Quadratic Gorenstein ideals,3,247,0.012146
-math,2000,49,Moduli sheaf operator theory,3,247,0.012146
-math,2000,50,Singular Plateau Douglas Problem,2,247,0.008097
-math,2000,51,Exponential family mirror descent,0,247,0.0
-math,2000,52,Heavy-tail renewal mixing times,0,247,0.0
-math,2000,53,Perfect divisibility graphs,0,247,0.0
-math,2000,54,Operator regression acceleration,0,247,0.0
-math,2000,55,Hardy space fractional operators,2,247,0.008097
-math,2000,56,Hive-spectrum large deviations,5,247,0.020243
-math,2000,57,Decentralized consensus topologies,0,247,0.0
-math,2000,58,Fano threefold geometry,4,247,0.016194
-math,2000,59,Fractional Maximal Operators,0,247,0.0
-math,2000,60,Complete intersection foliations,6,247,0.024291
-math,2000,61,Physics-informed synthetic data generation,0,247,0.0
-math,2000,62,Operadic Kan extensions,4,247,0.016194
-math,2001,0,Mirror symmetry cohomology,8,266,0.030075
-math,2001,1,Polynomial norm bounds,3,266,0.011278
-math,2001,2,Yangian deformations,8,266,0.030075
-math,2001,3,Multiplier ideals,9,266,0.033835
-math,2001,4,Foliation theory,3,266,0.011278
-math,2001,5,Clifford-algebra group theory,15,266,0.056391
-math,2001,6,Hahn-Banach extensions,3,266,0.011278
-math,2001,7,Quantum affine representations,6,266,0.022556
-math,2001,8,Local cohomology monomial ideals,3,266,0.011278
-math,2001,9,Pattern-avoiding permutations,5,266,0.018797
-math,2001,10,Spectral amplitude relations,7,266,0.026316
-math,2001,11,Quantum superalgebra structures,4,266,0.015038
-math,2001,12,Geometric group theory equivalence,8,266,0.030075
-math,2001,13,Knot move invariants,14,266,0.052632
-math,2001,14,Fano variety bounds,3,266,0.011278
-math,2001,15,Representability failure,1,266,0.003759
-math,2001,16,Toric modular forms,5,266,0.018797
-math,2001,17,Projective Galois group endomorphisms,6,266,0.022556
-math,2001,18,Algebraic Hodge motives,5,266,0.018797
-math,2001,19,Double plane structures,15,266,0.056391
-math,2001,20,Random walk aging limits,3,266,0.011278
-math,2001,21,Random packing asymptotics,3,266,0.011278
-math,2001,22,Einstein-Kähler metrics,9,266,0.033835
-math,2001,23,Super Lie identity theorems,7,266,0.026316
-math,2001,24,Fibre-space Hodge cohomology vanishing,8,266,0.030075
-math,2001,25,Lamination geodesic convergence,1,266,0.003759
-math,2001,26,Random heap dynamics,2,266,0.007519
-math,2001,27,Noncommutative crepant resolutions,3,266,0.011278
-math,2001,28,Numerical PDE error analysis,1,266,0.003759
-math,2001,29,Prime divisor asymptotics,0,266,0.0
-math,2001,30,Fragmentation-coalescent processes,1,266,0.003759
-math,2001,31,Mirror symmetry i-functions,3,266,0.011278
-math,2001,32,Siegel uniformity conjecture,2,266,0.007519
-math,2001,33,Group embedding dimension bounds,1,266,0.003759
-math,2001,34,Convex cone optimization,0,266,0.0
-math,2001,35,Galois cohomology obstructions,10,266,0.037594
-math,2001,36,Non-symplectic group actions,13,266,0.048872
-math,2001,37,Hodge-Frobenius manifolds,10,266,0.037594
-math,2001,38,Signed domination complexity,2,266,0.007519
-math,2001,39,Reduced Khovanov homology,2,266,0.007519
-math,2001,40,Contact manifold fillings,5,266,0.018797
-math,2001,41,Martingale measure augmentation,0,266,0.0
-math,2001,42,Multizeta q-values,3,266,0.011278
-math,2001,43,Pro pp group commensurability,4,266,0.015038
-math,2001,44,n-ary bihom algebras,4,266,0.015038
-math,2001,45,Non-smooth proximal gradient analysis,0,266,0.0
-math,2001,46,Nonlocal diffusion regularity,0,266,0.0
-math,2001,47,Extended hypergeometric functions,5,266,0.018797
-math,2001,48,Quadratic Gorenstein ideals,8,266,0.030075
-math,2001,49,Moduli sheaf operator theory,5,266,0.018797
-math,2001,50,Singular Plateau Douglas Problem,1,266,0.003759
-math,2001,51,Exponential family mirror descent,0,266,0.0
-math,2001,52,Heavy-tail renewal mixing times,0,266,0.0
-math,2001,53,Perfect divisibility graphs,0,266,0.0
-math,2001,54,Operator regression acceleration,0,266,0.0
-math,2001,55,Hardy space fractional operators,0,266,0.0
-math,2001,56,Hive-spectrum large deviations,0,266,0.0
-math,2001,57,Decentralized consensus topologies,0,266,0.0
-math,2001,58,Fano threefold geometry,8,266,0.030075
-math,2001,59,Fractional Maximal Operators,0,266,0.0
-math,2001,60,Complete intersection foliations,9,266,0.033835
-math,2001,61,Physics-informed synthetic data generation,0,266,0.0
-math,2001,62,Operadic Kan extensions,2,266,0.007519
-math,2002,0,Mirror symmetry cohomology,7,282,0.024823
-math,2002,1,Polynomial norm bounds,5,282,0.01773
-math,2002,2,Yangian deformations,9,282,0.031915
-math,2002,3,Multiplier ideals,4,282,0.014184
-math,2002,4,Foliation theory,4,282,0.014184
-math,2002,5,Clifford-algebra group theory,7,282,0.024823
-math,2002,6,Hahn-Banach extensions,5,282,0.01773
-math,2002,7,Quantum affine representations,13,282,0.046099
-math,2002,8,Local cohomology monomial ideals,8,282,0.028369
-math,2002,9,Pattern-avoiding permutations,9,282,0.031915
-math,2002,10,Spectral amplitude relations,5,282,0.01773
-math,2002,11,Quantum superalgebra structures,9,282,0.031915
-math,2002,12,Geometric group theory equivalence,7,282,0.024823
-math,2002,13,Knot move invariants,4,282,0.014184
-math,2002,14,Fano variety bounds,6,282,0.021277
-math,2002,15,Representability failure,1,282,0.003546
-math,2002,16,Toric modular forms,10,282,0.035461
-math,2002,17,Projective Galois group endomorphisms,9,282,0.031915
-math,2002,18,Algebraic Hodge motives,1,282,0.003546
-math,2002,19,Double plane structures,9,282,0.031915
-math,2002,20,Random walk aging limits,2,282,0.007092
-math,2002,21,Random packing asymptotics,1,282,0.003546
-math,2002,22,Einstein-Kähler metrics,8,282,0.028369
-math,2002,23,Super Lie identity theorems,7,282,0.024823
-math,2002,24,Fibre-space Hodge cohomology vanishing,11,282,0.039007
-math,2002,25,Lamination geodesic convergence,2,282,0.007092
-math,2002,26,Random heap dynamics,1,282,0.003546
-math,2002,27,Noncommutative crepant resolutions,5,282,0.01773
-math,2002,28,Numerical PDE error analysis,0,282,0.0
-math,2002,29,Prime divisor asymptotics,1,282,0.003546
-math,2002,30,Fragmentation-coalescent processes,1,282,0.003546
-math,2002,31,Mirror symmetry i-functions,5,282,0.01773
-math,2002,32,Siegel uniformity conjecture,3,282,0.010638
-math,2002,33,Group embedding dimension bounds,0,282,0.0
-math,2002,34,Convex cone optimization,0,282,0.0
-math,2002,35,Galois cohomology obstructions,4,282,0.014184
-math,2002,36,Non-symplectic group actions,18,282,0.06383
-math,2002,37,Hodge-Frobenius manifolds,7,282,0.024823
-math,2002,38,Signed domination complexity,3,282,0.010638
-math,2002,39,Reduced Khovanov homology,7,282,0.024823
-math,2002,40,Contact manifold fillings,3,282,0.010638
-math,2002,41,Martingale measure augmentation,1,282,0.003546
-math,2002,42,Multizeta q-values,3,282,0.010638
-math,2002,43,Pro pp group commensurability,3,282,0.010638
-math,2002,44,n-ary bihom algebras,2,282,0.007092
-math,2002,45,Non-smooth proximal gradient analysis,0,282,0.0
-math,2002,46,Nonlocal diffusion regularity,0,282,0.0
-math,2002,47,Extended hypergeometric functions,2,282,0.007092
-math,2002,48,Quadratic Gorenstein ideals,9,282,0.031915
-math,2002,49,Moduli sheaf operator theory,5,282,0.01773
-math,2002,50,Singular Plateau Douglas Problem,6,282,0.021277
-math,2002,51,Exponential family mirror descent,0,282,0.0
-math,2002,52,Heavy-tail renewal mixing times,0,282,0.0
-math,2002,53,Perfect divisibility graphs,1,282,0.003546
-math,2002,54,Operator regression acceleration,0,282,0.0
-math,2002,55,Hardy space fractional operators,1,282,0.003546
-math,2002,56,Hive-spectrum large deviations,2,282,0.007092
-math,2002,57,Decentralized consensus topologies,0,282,0.0
-math,2002,58,Fano threefold geometry,6,282,0.021277
-math,2002,59,Fractional Maximal Operators,1,282,0.003546
-math,2002,60,Complete intersection foliations,13,282,0.046099
-math,2002,61,Physics-informed synthetic data generation,0,282,0.0
-math,2002,62,Operadic Kan extensions,6,282,0.021277
-math,2003,0,Mirror symmetry cohomology,8,319,0.025078
-math,2003,1,Polynomial norm bounds,5,319,0.015674
-math,2003,2,Yangian deformations,6,319,0.018809
-math,2003,3,Multiplier ideals,9,319,0.028213
-math,2003,4,Foliation theory,5,319,0.015674
-math,2003,5,Clifford-algebra group theory,6,319,0.018809
-math,2003,6,Hahn-Banach extensions,7,319,0.021944
-math,2003,7,Quantum affine representations,13,319,0.040752
-math,2003,8,Local cohomology monomial ideals,8,319,0.025078
-math,2003,9,Pattern-avoiding permutations,5,319,0.015674
-math,2003,10,Spectral amplitude relations,9,319,0.028213
-math,2003,11,Quantum superalgebra structures,6,319,0.018809
-math,2003,12,Geometric group theory equivalence,9,319,0.028213
-math,2003,13,Knot move invariants,6,319,0.018809
-math,2003,14,Fano variety bounds,3,319,0.009404
-math,2003,15,Representability failure,1,319,0.003135
-math,2003,16,Toric modular forms,4,319,0.012539
-math,2003,17,Projective Galois group endomorphisms,5,319,0.015674
-math,2003,18,Algebraic Hodge motives,3,319,0.009404
-math,2003,19,Double plane structures,7,319,0.021944
-math,2003,20,Random walk aging limits,0,319,0.0
-math,2003,21,Random packing asymptotics,1,319,0.003135
-math,2003,22,Einstein-Kähler metrics,16,319,0.050157
-math,2003,23,Super Lie identity theorems,4,319,0.012539
-math,2003,24,Fibre-space Hodge cohomology vanishing,11,319,0.034483
-math,2003,25,Lamination geodesic convergence,4,319,0.012539
-math,2003,26,Random heap dynamics,3,319,0.009404
-math,2003,27,Noncommutative crepant resolutions,9,319,0.028213
-math,2003,28,Numerical PDE error analysis,0,319,0.0
-math,2003,29,Prime divisor asymptotics,3,319,0.009404
-math,2003,30,Fragmentation-coalescent processes,0,319,0.0
-math,2003,31,Mirror symmetry i-functions,4,319,0.012539
-math,2003,32,Siegel uniformity conjecture,1,319,0.003135
-math,2003,33,Group embedding dimension bounds,2,319,0.00627
-math,2003,34,Convex cone optimization,0,319,0.0
-math,2003,35,Galois cohomology obstructions,5,319,0.015674
-math,2003,36,Non-symplectic group actions,16,319,0.050157
-math,2003,37,Hodge-Frobenius manifolds,18,319,0.056426
-math,2003,38,Signed domination complexity,0,319,0.0
-math,2003,39,Reduced Khovanov homology,4,319,0.012539
-math,2003,40,Contact manifold fillings,7,319,0.021944
-math,2003,41,Martingale measure augmentation,1,319,0.003135
-math,2003,42,Multizeta q-values,3,319,0.009404
-math,2003,43,Pro pp group commensurability,4,319,0.012539
-math,2003,44,n-ary bihom algebras,3,319,0.009404
-math,2003,45,Non-smooth proximal gradient analysis,0,319,0.0
-math,2003,46,Nonlocal diffusion regularity,1,319,0.003135
-math,2003,47,Extended hypergeometric functions,8,319,0.025078
-math,2003,48,Quadratic Gorenstein ideals,9,319,0.028213
-math,2003,49,Moduli sheaf operator theory,8,319,0.025078
-math,2003,50,Singular Plateau Douglas Problem,4,319,0.012539
-math,2003,51,Exponential family mirror descent,0,319,0.0
-math,2003,52,Heavy-tail renewal mixing times,2,319,0.00627
-math,2003,53,Perfect divisibility graphs,5,319,0.015674
-math,2003,54,Operator regression acceleration,0,319,0.0
-math,2003,55,Hardy space fractional operators,2,319,0.00627
-math,2003,56,Hive-spectrum large deviations,6,319,0.018809
-math,2003,57,Decentralized consensus topologies,0,319,0.0
-math,2003,58,Fano threefold geometry,9,319,0.028213
-math,2003,59,Fractional Maximal Operators,0,319,0.0
-math,2003,60,Complete intersection foliations,11,319,0.034483
-math,2003,61,Physics-informed synthetic data generation,0,319,0.0
-math,2003,62,Operadic Kan extensions,10,319,0.031348
-math,2004,0,Mirror symmetry cohomology,8,392,0.020408
-math,2004,1,Polynomial norm bounds,2,392,0.005102
-math,2004,2,Yangian deformations,7,392,0.017857
-math,2004,3,Multiplier ideals,4,392,0.010204
-math,2004,4,Foliation theory,8,392,0.020408
-math,2004,5,Clifford-algebra group theory,11,392,0.028061
-math,2004,6,Hahn-Banach extensions,5,392,0.012755
-math,2004,7,Quantum affine representations,11,392,0.028061
-math,2004,8,Local cohomology monomial ideals,6,392,0.015306
-math,2004,9,Pattern-avoiding permutations,6,392,0.015306
-math,2004,10,Spectral amplitude relations,10,392,0.02551
-math,2004,11,Quantum superalgebra structures,4,392,0.010204
-math,2004,12,Geometric group theory equivalence,12,392,0.030612
-math,2004,13,Knot move invariants,9,392,0.022959
-math,2004,14,Fano variety bounds,6,392,0.015306
-math,2004,15,Representability failure,4,392,0.010204
-math,2004,16,Toric modular forms,9,392,0.022959
-math,2004,17,Projective Galois group endomorphisms,15,392,0.038265
-math,2004,18,Algebraic Hodge motives,5,392,0.012755
-math,2004,19,Double plane structures,17,392,0.043367
-math,2004,20,Random walk aging limits,2,392,0.005102
-math,2004,21,Random packing asymptotics,5,392,0.012755
-math,2004,22,Einstein-Kähler metrics,17,392,0.043367
-math,2004,23,Super Lie identity theorems,3,392,0.007653
-math,2004,24,Fibre-space Hodge cohomology vanishing,9,392,0.022959
-math,2004,25,Lamination geodesic convergence,6,392,0.015306
-math,2004,26,Random heap dynamics,4,392,0.010204
-math,2004,27,Noncommutative crepant resolutions,13,392,0.033163
-math,2004,28,Numerical PDE error analysis,1,392,0.002551
-math,2004,29,Prime divisor asymptotics,6,392,0.015306
-math,2004,30,Fragmentation-coalescent processes,6,392,0.015306
-math,2004,31,Mirror symmetry i-functions,1,392,0.002551
-math,2004,32,Siegel uniformity conjecture,7,392,0.017857
-math,2004,33,Group embedding dimension bounds,1,392,0.002551
-math,2004,34,Convex cone optimization,0,392,0.0
-math,2004,35,Galois cohomology obstructions,7,392,0.017857
-math,2004,36,Non-symplectic group actions,17,392,0.043367
-math,2004,37,Hodge-Frobenius manifolds,11,392,0.028061
-math,2004,38,Signed domination complexity,2,392,0.005102
-math,2004,39,Reduced Khovanov homology,12,392,0.030612
-math,2004,40,Contact manifold fillings,11,392,0.028061
-math,2004,41,Martingale measure augmentation,3,392,0.007653
-math,2004,42,Multizeta q-values,7,392,0.017857
-math,2004,43,Pro pp group commensurability,6,392,0.015306
-math,2004,44,n-ary bihom algebras,9,392,0.022959
-math,2004,45,Non-smooth proximal gradient analysis,0,392,0.0
-math,2004,46,Nonlocal diffusion regularity,0,392,0.0
-math,2004,47,Extended hypergeometric functions,11,392,0.028061
-math,2004,48,Quadratic Gorenstein ideals,4,392,0.010204
-math,2004,49,Moduli sheaf operator theory,16,392,0.040816
-math,2004,50,Singular Plateau Douglas Problem,6,392,0.015306
-math,2004,51,Exponential family mirror descent,0,392,0.0
-math,2004,52,Heavy-tail renewal mixing times,0,392,0.0
-math,2004,53,Perfect divisibility graphs,3,392,0.007653
-math,2004,54,Operator regression acceleration,0,392,0.0
-math,2004,55,Hardy space fractional operators,2,392,0.005102
-math,2004,56,Hive-spectrum large deviations,5,392,0.012755
-math,2004,57,Decentralized consensus topologies,0,392,0.0
-math,2004,58,Fano threefold geometry,3,392,0.007653
-math,2004,59,Fractional Maximal Operators,2,392,0.005102
-math,2004,60,Complete intersection foliations,11,392,0.028061
-math,2004,61,Physics-informed synthetic data generation,0,392,0.0
-math,2004,62,Operadic Kan extensions,4,392,0.010204
-math,2005,0,Mirror symmetry cohomology,12,440,0.027273
-math,2005,1,Polynomial norm bounds,2,440,0.004545
-math,2005,2,Yangian deformations,5,440,0.011364
-math,2005,3,Multiplier ideals,11,440,0.025
-math,2005,4,Foliation theory,7,440,0.015909
-math,2005,5,Clifford-algebra group theory,7,440,0.015909
-math,2005,6,Hahn-Banach extensions,6,440,0.013636
-math,2005,7,Quantum affine representations,4,440,0.009091
-math,2005,8,Local cohomology monomial ideals,4,440,0.009091
-math,2005,9,Pattern-avoiding permutations,15,440,0.034091
-math,2005,10,Spectral amplitude relations,13,440,0.029545
-math,2005,11,Quantum superalgebra structures,9,440,0.020455
-math,2005,12,Geometric group theory equivalence,18,440,0.040909
-math,2005,13,Knot move invariants,9,440,0.020455
-math,2005,14,Fano variety bounds,8,440,0.018182
-math,2005,15,Representability failure,5,440,0.011364
-math,2005,16,Toric modular forms,8,440,0.018182
-math,2005,17,Projective Galois group endomorphisms,14,440,0.031818
-math,2005,18,Algebraic Hodge motives,3,440,0.006818
-math,2005,19,Double plane structures,22,440,0.05
-math,2005,20,Random walk aging limits,2,440,0.004545
-math,2005,21,Random packing asymptotics,8,440,0.018182
-math,2005,22,Einstein-Kähler metrics,12,440,0.027273
-math,2005,23,Super Lie identity theorems,16,440,0.036364
-math,2005,24,Fibre-space Hodge cohomology vanishing,10,440,0.022727
-math,2005,25,Lamination geodesic convergence,9,440,0.020455
-math,2005,26,Random heap dynamics,2,440,0.004545
-math,2005,27,Noncommutative crepant resolutions,13,440,0.029545
-math,2005,28,Numerical PDE error analysis,1,440,0.002273
-math,2005,29,Prime divisor asymptotics,5,440,0.011364
-math,2005,30,Fragmentation-coalescent processes,12,440,0.027273
-math,2005,31,Mirror symmetry i-functions,7,440,0.015909
-math,2005,32,Siegel uniformity conjecture,4,440,0.009091
-math,2005,33,Group embedding dimension bounds,5,440,0.011364
-math,2005,34,Convex cone optimization,1,440,0.002273
-math,2005,35,Galois cohomology obstructions,3,440,0.006818
-math,2005,36,Non-symplectic group actions,17,440,0.038636
-math,2005,37,Hodge-Frobenius manifolds,13,440,0.029545
-math,2005,38,Signed domination complexity,0,440,0.0
-math,2005,39,Reduced Khovanov homology,10,440,0.022727
-math,2005,40,Contact manifold fillings,8,440,0.018182
-math,2005,41,Martingale measure augmentation,6,440,0.013636
-math,2005,42,Multizeta q-values,8,440,0.018182
-math,2005,43,Pro pp group commensurability,9,440,0.020455
-math,2005,44,n-ary bihom algebras,5,440,0.011364
-math,2005,45,Non-smooth proximal gradient analysis,0,440,0.0
-math,2005,46,Nonlocal diffusion regularity,4,440,0.009091
-math,2005,47,Extended hypergeometric functions,2,440,0.004545
-math,2005,48,Quadratic Gorenstein ideals,11,440,0.025
-math,2005,49,Moduli sheaf operator theory,8,440,0.018182
-math,2005,50,Singular Plateau Douglas Problem,5,440,0.011364
-math,2005,51,Exponential family mirror descent,0,440,0.0
-math,2005,52,Heavy-tail renewal mixing times,6,440,0.013636
-math,2005,53,Perfect divisibility graphs,5,440,0.011364
-math,2005,54,Operator regression acceleration,0,440,0.0
-math,2005,55,Hardy space fractional operators,2,440,0.004545
-math,2005,56,Hive-spectrum large deviations,8,440,0.018182
-math,2005,57,Decentralized consensus topologies,0,440,0.0
-math,2005,58,Fano threefold geometry,7,440,0.015909
-math,2005,59,Fractional Maximal Operators,3,440,0.006818
-math,2005,60,Complete intersection foliations,9,440,0.020455
-math,2005,61,Physics-informed synthetic data generation,0,440,0.0
-math,2005,62,Operadic Kan extensions,2,440,0.004545
-math,2006,0,Mirror symmetry cohomology,15,531,0.028249
+math,2000,0,Mirror symmetry cohomology,11,246,0.044715
+math,2000,1,Polynomial norm bounds,4,246,0.01626
+math,2000,2,Yangian deformations,7,246,0.028455
+math,2000,3,Multiplier ideals,6,246,0.02439
+math,2000,4,Foliation theory,5,246,0.020325
+math,2000,5,Clifford-algebra group theory,10,246,0.04065
+math,2000,6,Hahn-Banach extensions,3,246,0.012195
+math,2000,7,Quantum affine representations,11,246,0.044715
+math,2000,8,Local cohomology monomial ideals,5,246,0.020325
+math,2000,9,Pattern-avoiding permutations,2,246,0.00813
+math,2000,10,Spectral amplitude relations,4,246,0.01626
+math,2000,11,Quantum superalgebra structures,11,246,0.044715
+math,2000,12,Geometric group theory equivalence,4,246,0.01626
+math,2000,13,Knot move invariants,5,246,0.020325
+math,2000,14,Fano variety bounds,9,246,0.036585
+math,2000,15,Representability failure,1,246,0.004065
+math,2000,16,Mirror symmetry invariants,2,246,0.00813
+math,2000,17,Toric modular forms,5,246,0.020325
+math,2000,18,Projective Galois group endomorphisms,7,246,0.028455
+math,2000,19,Double plane structures,9,246,0.036585
+math,2000,20,Random walk aging limits,0,246,0.0
+math,2000,21,Random packing asymptotics,2,246,0.00813
+math,2000,22,Einstein-Kähler metrics,6,246,0.02439
+math,2000,23,Super Lie identity theorems,2,246,0.00813
+math,2000,24,Fibre-space Hodge cohomology vanishing,11,246,0.044715
+math,2000,25,Lamination geodesic convergence,1,246,0.004065
+math,2000,26,Random heap dynamics,3,246,0.012195
+math,2000,27,Noncommutative crepant resolutions,2,246,0.00813
+math,2000,28,Numerical PDE error analysis,0,246,0.0
+math,2000,29,Prime divisor asymptotics,0,246,0.0
+math,2000,30,Fragmentation-coalescent processes,0,246,0.0
+math,2000,31,Mirror symmetry i-functions,6,246,0.02439
+math,2000,32,Siegel uniformity conjecture,6,246,0.02439
+math,2000,33,Group embedding dimension bounds,1,246,0.004065
+math,2000,34,Convex cone optimization,0,246,0.0
+math,2000,35,Galois cohomology obstructions,1,246,0.004065
+math,2000,36,Non-symplectic group actions,14,246,0.056911
+math,2000,37,Hodge-Frobenius manifolds,15,246,0.060976
+math,2000,38,Signed domination complexity,1,246,0.004065
+math,2000,39,Reduced Khovanov homology,7,246,0.028455
+math,2000,40,Contact manifold fillings,4,246,0.01626
+math,2000,41,Martingale measure augmentation,1,246,0.004065
+math,2000,42,Multizeta q-values,2,246,0.00813
+math,2000,43,Pro pp group commensurability,3,246,0.012195
+math,2000,44,n-ary bihom algebras,2,246,0.00813
+math,2000,45,Non-smooth proximal gradient analysis,0,246,0.0
+math,2000,46,Nonlocal diffusion regularity,0,246,0.0
+math,2000,47,Extended hypergeometric functions,4,246,0.01626
+math,2000,48,Quadratic Gorenstein ideals,3,246,0.012195
+math,2000,49,Moduli sheaf operator theory,3,246,0.012195
+math,2000,50,Singular Plateau Douglas Problem,2,246,0.00813
+math,2000,51,Exponential family mirror descent,0,246,0.0
+math,2000,52,Heavy-tail renewal mixing times,0,246,0.0
+math,2000,53,Perfect divisibility graphs,0,246,0.0
+math,2000,54,Operator regression acceleration,0,246,0.0
+math,2000,55,Hardy space fractional operators,2,246,0.00813
+math,2000,56,Hive-spectrum large deviations,5,246,0.020325
+math,2000,57,Decentralized consensus topologies,0,246,0.0
+math,2000,58,Fano threefold geometry,4,246,0.01626
+math,2000,59,Fractional Maximal Operators,0,246,0.0
+math,2000,60,Complete intersection foliations,8,246,0.03252
+math,2000,61,Physics-informed synthetic data generation,0,246,0.0
+math,2000,62,Operadic Kan extensions,4,246,0.01626
+math,2001,0,Mirror symmetry cohomology,6,272,0.022059
+math,2001,1,Polynomial norm bounds,3,272,0.011029
+math,2001,2,Yangian deformations,8,272,0.029412
+math,2001,3,Multiplier ideals,9,272,0.033088
+math,2001,4,Foliation theory,3,272,0.011029
+math,2001,5,Clifford-algebra group theory,15,272,0.055147
+math,2001,6,Hahn-Banach extensions,3,272,0.011029
+math,2001,7,Quantum affine representations,6,272,0.022059
+math,2001,8,Local cohomology monomial ideals,3,272,0.011029
+math,2001,9,Pattern-avoiding permutations,5,272,0.018382
+math,2001,10,Spectral amplitude relations,7,272,0.025735
+math,2001,11,Quantum superalgebra structures,4,272,0.014706
+math,2001,12,Geometric group theory equivalence,8,272,0.029412
+math,2001,13,Knot move invariants,14,272,0.051471
+math,2001,14,Fano variety bounds,3,272,0.011029
+math,2001,15,Representability failure,1,272,0.003676
+math,2001,16,Mirror symmetry invariants,6,272,0.022059
+math,2001,17,Toric modular forms,5,272,0.018382
+math,2001,18,Projective Galois group endomorphisms,6,272,0.022059
+math,2001,19,Double plane structures,16,272,0.058824
+math,2001,20,Random walk aging limits,3,272,0.011029
+math,2001,21,Random packing asymptotics,3,272,0.011029
+math,2001,22,Einstein-Kähler metrics,9,272,0.033088
+math,2001,23,Super Lie identity theorems,7,272,0.025735
+math,2001,24,Fibre-space Hodge cohomology vanishing,8,272,0.029412
+math,2001,25,Lamination geodesic convergence,1,272,0.003676
+math,2001,26,Random heap dynamics,2,272,0.007353
+math,2001,27,Noncommutative crepant resolutions,3,272,0.011029
+math,2001,28,Numerical PDE error analysis,1,272,0.003676
+math,2001,29,Prime divisor asymptotics,0,272,0.0
+math,2001,30,Fragmentation-coalescent processes,1,272,0.003676
+math,2001,31,Mirror symmetry i-functions,4,272,0.014706
+math,2001,32,Siegel uniformity conjecture,3,272,0.011029
+math,2001,33,Group embedding dimension bounds,1,272,0.003676
+math,2001,34,Convex cone optimization,0,272,0.0
+math,2001,35,Galois cohomology obstructions,11,272,0.040441
+math,2001,36,Non-symplectic group actions,13,272,0.047794
+math,2001,37,Hodge-Frobenius manifolds,10,272,0.036765
+math,2001,38,Signed domination complexity,2,272,0.007353
+math,2001,39,Reduced Khovanov homology,2,272,0.007353
+math,2001,40,Contact manifold fillings,5,272,0.018382
+math,2001,41,Martingale measure augmentation,0,272,0.0
+math,2001,42,Multizeta q-values,3,272,0.011029
+math,2001,43,Pro pp group commensurability,4,272,0.014706
+math,2001,44,n-ary bihom algebras,4,272,0.014706
+math,2001,45,Non-smooth proximal gradient analysis,0,272,0.0
+math,2001,46,Nonlocal diffusion regularity,0,272,0.0
+math,2001,47,Extended hypergeometric functions,5,272,0.018382
+math,2001,48,Quadratic Gorenstein ideals,8,272,0.029412
+math,2001,49,Moduli sheaf operator theory,7,272,0.025735
+math,2001,50,Singular Plateau Douglas Problem,1,272,0.003676
+math,2001,51,Exponential family mirror descent,0,272,0.0
+math,2001,52,Heavy-tail renewal mixing times,0,272,0.0
+math,2001,53,Perfect divisibility graphs,0,272,0.0
+math,2001,54,Operator regression acceleration,0,272,0.0
+math,2001,55,Hardy space fractional operators,0,272,0.0
+math,2001,56,Hive-spectrum large deviations,0,272,0.0
+math,2001,57,Decentralized consensus topologies,0,272,0.0
+math,2001,58,Fano threefold geometry,8,272,0.029412
+math,2001,59,Fractional Maximal Operators,0,272,0.0
+math,2001,60,Complete intersection foliations,10,272,0.036765
+math,2001,61,Physics-informed synthetic data generation,0,272,0.0
+math,2001,62,Operadic Kan extensions,2,272,0.007353
+math,2002,0,Mirror symmetry cohomology,7,290,0.024138
+math,2002,1,Polynomial norm bounds,5,290,0.017241
+math,2002,2,Yangian deformations,9,290,0.031034
+math,2002,3,Multiplier ideals,4,290,0.013793
+math,2002,4,Foliation theory,4,290,0.013793
+math,2002,5,Clifford-algebra group theory,7,290,0.024138
+math,2002,6,Hahn-Banach extensions,5,290,0.017241
+math,2002,7,Quantum affine representations,13,290,0.044828
+math,2002,8,Local cohomology monomial ideals,8,290,0.027586
+math,2002,9,Pattern-avoiding permutations,9,290,0.031034
+math,2002,10,Spectral amplitude relations,5,290,0.017241
+math,2002,11,Quantum superalgebra structures,9,290,0.031034
+math,2002,12,Geometric group theory equivalence,7,290,0.024138
+math,2002,13,Knot move invariants,4,290,0.013793
+math,2002,14,Fano variety bounds,7,290,0.024138
+math,2002,15,Representability failure,1,290,0.003448
+math,2002,16,Mirror symmetry invariants,5,290,0.017241
+math,2002,17,Toric modular forms,10,290,0.034483
+math,2002,18,Projective Galois group endomorphisms,9,290,0.031034
+math,2002,19,Double plane structures,11,290,0.037931
+math,2002,20,Random walk aging limits,2,290,0.006897
+math,2002,21,Random packing asymptotics,1,290,0.003448
+math,2002,22,Einstein-Kähler metrics,8,290,0.027586
+math,2002,23,Super Lie identity theorems,7,290,0.024138
+math,2002,24,Fibre-space Hodge cohomology vanishing,11,290,0.037931
+math,2002,25,Lamination geodesic convergence,2,290,0.006897
+math,2002,26,Random heap dynamics,1,290,0.003448
+math,2002,27,Noncommutative crepant resolutions,5,290,0.017241
+math,2002,28,Numerical PDE error analysis,0,290,0.0
+math,2002,29,Prime divisor asymptotics,1,290,0.003448
+math,2002,30,Fragmentation-coalescent processes,1,290,0.003448
+math,2002,31,Mirror symmetry i-functions,5,290,0.017241
+math,2002,32,Siegel uniformity conjecture,3,290,0.010345
+math,2002,33,Group embedding dimension bounds,0,290,0.0
+math,2002,34,Convex cone optimization,0,290,0.0
+math,2002,35,Galois cohomology obstructions,5,290,0.017241
+math,2002,36,Non-symplectic group actions,18,290,0.062069
+math,2002,37,Hodge-Frobenius manifolds,7,290,0.024138
+math,2002,38,Signed domination complexity,3,290,0.010345
+math,2002,39,Reduced Khovanov homology,7,290,0.024138
+math,2002,40,Contact manifold fillings,3,290,0.010345
+math,2002,41,Martingale measure augmentation,1,290,0.003448
+math,2002,42,Multizeta q-values,3,290,0.010345
+math,2002,43,Pro pp group commensurability,3,290,0.010345
+math,2002,44,n-ary bihom algebras,2,290,0.006897
+math,2002,45,Non-smooth proximal gradient analysis,0,290,0.0
+math,2002,46,Nonlocal diffusion regularity,0,290,0.0
+math,2002,47,Extended hypergeometric functions,2,290,0.006897
+math,2002,48,Quadratic Gorenstein ideals,9,290,0.031034
+math,2002,49,Moduli sheaf operator theory,5,290,0.017241
+math,2002,50,Singular Plateau Douglas Problem,6,290,0.02069
+math,2002,51,Exponential family mirror descent,0,290,0.0
+math,2002,52,Heavy-tail renewal mixing times,0,290,0.0
+math,2002,53,Perfect divisibility graphs,1,290,0.003448
+math,2002,54,Operator regression acceleration,0,290,0.0
+math,2002,55,Hardy space fractional operators,1,290,0.003448
+math,2002,56,Hive-spectrum large deviations,2,290,0.006897
+math,2002,57,Decentralized consensus topologies,0,290,0.0
+math,2002,58,Fano threefold geometry,6,290,0.02069
+math,2002,59,Fractional Maximal Operators,1,290,0.003448
+math,2002,60,Complete intersection foliations,13,290,0.044828
+math,2002,61,Physics-informed synthetic data generation,0,290,0.0
+math,2002,62,Operadic Kan extensions,6,290,0.02069
+math,2003,0,Mirror symmetry cohomology,7,326,0.021472
+math,2003,1,Polynomial norm bounds,5,326,0.015337
+math,2003,2,Yangian deformations,6,326,0.018405
+math,2003,3,Multiplier ideals,9,326,0.027607
+math,2003,4,Foliation theory,5,326,0.015337
+math,2003,5,Clifford-algebra group theory,5,326,0.015337
+math,2003,6,Hahn-Banach extensions,7,326,0.021472
+math,2003,7,Quantum affine representations,13,326,0.039877
+math,2003,8,Local cohomology monomial ideals,8,326,0.02454
+math,2003,9,Pattern-avoiding permutations,5,326,0.015337
+math,2003,10,Spectral amplitude relations,9,326,0.027607
+math,2003,11,Quantum superalgebra structures,6,326,0.018405
+math,2003,12,Geometric group theory equivalence,9,326,0.027607
+math,2003,13,Knot move invariants,6,326,0.018405
+math,2003,14,Fano variety bounds,3,326,0.009202
+math,2003,15,Representability failure,1,326,0.003067
+math,2003,16,Mirror symmetry invariants,11,326,0.033742
+math,2003,17,Toric modular forms,4,326,0.01227
+math,2003,18,Projective Galois group endomorphisms,5,326,0.015337
+math,2003,19,Double plane structures,7,326,0.021472
+math,2003,20,Random walk aging limits,0,326,0.0
+math,2003,21,Random packing asymptotics,1,326,0.003067
+math,2003,22,Einstein-Kähler metrics,16,326,0.04908
+math,2003,23,Super Lie identity theorems,4,326,0.01227
+math,2003,24,Fibre-space Hodge cohomology vanishing,11,326,0.033742
+math,2003,25,Lamination geodesic convergence,4,326,0.01227
+math,2003,26,Random heap dynamics,3,326,0.009202
+math,2003,27,Noncommutative crepant resolutions,9,326,0.027607
+math,2003,28,Numerical PDE error analysis,0,326,0.0
+math,2003,29,Prime divisor asymptotics,3,326,0.009202
+math,2003,30,Fragmentation-coalescent processes,0,326,0.0
+math,2003,31,Mirror symmetry i-functions,4,326,0.01227
+math,2003,32,Siegel uniformity conjecture,1,326,0.003067
+math,2003,33,Group embedding dimension bounds,2,326,0.006135
+math,2003,34,Convex cone optimization,0,326,0.0
+math,2003,35,Galois cohomology obstructions,5,326,0.015337
+math,2003,36,Non-symplectic group actions,16,326,0.04908
+math,2003,37,Hodge-Frobenius manifolds,18,326,0.055215
+math,2003,38,Signed domination complexity,0,326,0.0
+math,2003,39,Reduced Khovanov homology,4,326,0.01227
+math,2003,40,Contact manifold fillings,7,326,0.021472
+math,2003,41,Martingale measure augmentation,1,326,0.003067
+math,2003,42,Multizeta q-values,3,326,0.009202
+math,2003,43,Pro pp group commensurability,4,326,0.01227
+math,2003,44,n-ary bihom algebras,3,326,0.009202
+math,2003,45,Non-smooth proximal gradient analysis,0,326,0.0
+math,2003,46,Nonlocal diffusion regularity,1,326,0.003067
+math,2003,47,Extended hypergeometric functions,8,326,0.02454
+math,2003,48,Quadratic Gorenstein ideals,9,326,0.027607
+math,2003,49,Moduli sheaf operator theory,8,326,0.02454
+math,2003,50,Singular Plateau Douglas Problem,4,326,0.01227
+math,2003,51,Exponential family mirror descent,0,326,0.0
+math,2003,52,Heavy-tail renewal mixing times,2,326,0.006135
+math,2003,53,Perfect divisibility graphs,5,326,0.015337
+math,2003,54,Operator regression acceleration,0,326,0.0
+math,2003,55,Hardy space fractional operators,2,326,0.006135
+math,2003,56,Hive-spectrum large deviations,6,326,0.018405
+math,2003,57,Decentralized consensus topologies,0,326,0.0
+math,2003,58,Fano threefold geometry,9,326,0.027607
+math,2003,59,Fractional Maximal Operators,0,326,0.0
+math,2003,60,Complete intersection foliations,12,326,0.03681
+math,2003,61,Physics-informed synthetic data generation,0,326,0.0
+math,2003,62,Operadic Kan extensions,10,326,0.030675
+math,2004,0,Mirror symmetry cohomology,7,393,0.017812
+math,2004,1,Polynomial norm bounds,2,393,0.005089
+math,2004,2,Yangian deformations,7,393,0.017812
+math,2004,3,Multiplier ideals,4,393,0.010178
+math,2004,4,Foliation theory,8,393,0.020356
+math,2004,5,Clifford-algebra group theory,11,393,0.02799
+math,2004,6,Hahn-Banach extensions,5,393,0.012723
+math,2004,7,Quantum affine representations,11,393,0.02799
+math,2004,8,Local cohomology monomial ideals,6,393,0.015267
+math,2004,9,Pattern-avoiding permutations,6,393,0.015267
+math,2004,10,Spectral amplitude relations,10,393,0.025445
+math,2004,11,Quantum superalgebra structures,4,393,0.010178
+math,2004,12,Geometric group theory equivalence,12,393,0.030534
+math,2004,13,Knot move invariants,9,393,0.022901
+math,2004,14,Fano variety bounds,6,393,0.015267
+math,2004,15,Representability failure,4,393,0.010178
+math,2004,16,Mirror symmetry invariants,4,393,0.010178
+math,2004,17,Toric modular forms,9,393,0.022901
+math,2004,18,Projective Galois group endomorphisms,15,393,0.038168
+math,2004,19,Double plane structures,18,393,0.045802
+math,2004,20,Random walk aging limits,2,393,0.005089
+math,2004,21,Random packing asymptotics,5,393,0.012723
+math,2004,22,Einstein-Kähler metrics,17,393,0.043257
+math,2004,23,Super Lie identity theorems,3,393,0.007634
+math,2004,24,Fibre-space Hodge cohomology vanishing,9,393,0.022901
+math,2004,25,Lamination geodesic convergence,6,393,0.015267
+math,2004,26,Random heap dynamics,4,393,0.010178
+math,2004,27,Noncommutative crepant resolutions,13,393,0.033079
+math,2004,28,Numerical PDE error analysis,1,393,0.002545
+math,2004,29,Prime divisor asymptotics,6,393,0.015267
+math,2004,30,Fragmentation-coalescent processes,6,393,0.015267
+math,2004,31,Mirror symmetry i-functions,1,393,0.002545
+math,2004,32,Siegel uniformity conjecture,7,393,0.017812
+math,2004,33,Group embedding dimension bounds,1,393,0.002545
+math,2004,34,Convex cone optimization,0,393,0.0
+math,2004,35,Galois cohomology obstructions,7,393,0.017812
+math,2004,36,Non-symplectic group actions,17,393,0.043257
+math,2004,37,Hodge-Frobenius manifolds,12,393,0.030534
+math,2004,38,Signed domination complexity,2,393,0.005089
+math,2004,39,Reduced Khovanov homology,12,393,0.030534
+math,2004,40,Contact manifold fillings,11,393,0.02799
+math,2004,41,Martingale measure augmentation,3,393,0.007634
+math,2004,42,Multizeta q-values,7,393,0.017812
+math,2004,43,Pro pp group commensurability,6,393,0.015267
+math,2004,44,n-ary bihom algebras,9,393,0.022901
+math,2004,45,Non-smooth proximal gradient analysis,0,393,0.0
+math,2004,46,Nonlocal diffusion regularity,0,393,0.0
+math,2004,47,Extended hypergeometric functions,11,393,0.02799
+math,2004,48,Quadratic Gorenstein ideals,4,393,0.010178
+math,2004,49,Moduli sheaf operator theory,17,393,0.043257
+math,2004,50,Singular Plateau Douglas Problem,6,393,0.015267
+math,2004,51,Exponential family mirror descent,0,393,0.0
+math,2004,52,Heavy-tail renewal mixing times,0,393,0.0
+math,2004,53,Perfect divisibility graphs,3,393,0.007634
+math,2004,54,Operator regression acceleration,0,393,0.0
+math,2004,55,Hardy space fractional operators,2,393,0.005089
+math,2004,56,Hive-spectrum large deviations,5,393,0.012723
+math,2004,57,Decentralized consensus topologies,0,393,0.0
+math,2004,58,Fano threefold geometry,3,393,0.007634
+math,2004,59,Fractional Maximal Operators,2,393,0.005089
+math,2004,60,Complete intersection foliations,11,393,0.02799
+math,2004,61,Physics-informed synthetic data generation,0,393,0.0
+math,2004,62,Operadic Kan extensions,4,393,0.010178
+math,2005,0,Mirror symmetry cohomology,12,443,0.027088
+math,2005,1,Polynomial norm bounds,2,443,0.004515
+math,2005,2,Yangian deformations,5,443,0.011287
+math,2005,3,Multiplier ideals,11,443,0.024831
+math,2005,4,Foliation theory,7,443,0.015801
+math,2005,5,Clifford-algebra group theory,7,443,0.015801
+math,2005,6,Hahn-Banach extensions,6,443,0.013544
+math,2005,7,Quantum affine representations,4,443,0.009029
+math,2005,8,Local cohomology monomial ideals,4,443,0.009029
+math,2005,9,Pattern-avoiding permutations,15,443,0.03386
+math,2005,10,Spectral amplitude relations,13,443,0.029345
+math,2005,11,Quantum superalgebra structures,8,443,0.018059
+math,2005,12,Geometric group theory equivalence,18,443,0.040632
+math,2005,13,Knot move invariants,9,443,0.020316
+math,2005,14,Fano variety bounds,8,443,0.018059
+math,2005,15,Representability failure,5,443,0.011287
+math,2005,16,Mirror symmetry invariants,4,443,0.009029
+math,2005,17,Toric modular forms,8,443,0.018059
+math,2005,18,Projective Galois group endomorphisms,14,443,0.031603
+math,2005,19,Double plane structures,23,443,0.051919
+math,2005,20,Random walk aging limits,2,443,0.004515
+math,2005,21,Random packing asymptotics,8,443,0.018059
+math,2005,22,Einstein-Kähler metrics,12,443,0.027088
+math,2005,23,Super Lie identity theorems,16,443,0.036117
+math,2005,24,Fibre-space Hodge cohomology vanishing,11,443,0.024831
+math,2005,25,Lamination geodesic convergence,9,443,0.020316
+math,2005,26,Random heap dynamics,2,443,0.004515
+math,2005,27,Noncommutative crepant resolutions,13,443,0.029345
+math,2005,28,Numerical PDE error analysis,1,443,0.002257
+math,2005,29,Prime divisor asymptotics,5,443,0.011287
+math,2005,30,Fragmentation-coalescent processes,12,443,0.027088
+math,2005,31,Mirror symmetry i-functions,6,443,0.013544
+math,2005,32,Siegel uniformity conjecture,4,443,0.009029
+math,2005,33,Group embedding dimension bounds,5,443,0.011287
+math,2005,34,Convex cone optimization,1,443,0.002257
+math,2005,35,Galois cohomology obstructions,3,443,0.006772
+math,2005,36,Non-symplectic group actions,17,443,0.038375
+math,2005,37,Hodge-Frobenius manifolds,14,443,0.031603
+math,2005,38,Signed domination complexity,0,443,0.0
+math,2005,39,Reduced Khovanov homology,10,443,0.022573
+math,2005,40,Contact manifold fillings,8,443,0.018059
+math,2005,41,Martingale measure augmentation,6,443,0.013544
+math,2005,42,Multizeta q-values,8,443,0.018059
+math,2005,43,Pro pp group commensurability,9,443,0.020316
+math,2005,44,n-ary bihom algebras,5,443,0.011287
+math,2005,45,Non-smooth proximal gradient analysis,0,443,0.0
+math,2005,46,Nonlocal diffusion regularity,4,443,0.009029
+math,2005,47,Extended hypergeometric functions,2,443,0.004515
+math,2005,48,Quadratic Gorenstein ideals,11,443,0.024831
+math,2005,49,Moduli sheaf operator theory,9,443,0.020316
+math,2005,50,Singular Plateau Douglas Problem,5,443,0.011287
+math,2005,51,Exponential family mirror descent,0,443,0.0
+math,2005,52,Heavy-tail renewal mixing times,6,443,0.013544
+math,2005,53,Perfect divisibility graphs,5,443,0.011287
+math,2005,54,Operator regression acceleration,0,443,0.0
+math,2005,55,Hardy space fractional operators,2,443,0.004515
+math,2005,56,Hive-spectrum large deviations,8,443,0.018059
+math,2005,57,Decentralized consensus topologies,0,443,0.0
+math,2005,58,Fano threefold geometry,7,443,0.015801
+math,2005,59,Fractional Maximal Operators,3,443,0.006772
+math,2005,60,Complete intersection foliations,9,443,0.020316
+math,2005,61,Physics-informed synthetic data generation,0,443,0.0
+math,2005,62,Operadic Kan extensions,2,443,0.004515
+math,2006,0,Mirror symmetry cohomology,14,531,0.026365
 math,2006,1,Polynomial norm bounds,3,531,0.00565
-math,2006,2,Yangian deformations,4,531,0.007533
-math,2006,3,Multiplier ideals,10,531,0.018832
+math,2006,2,Yangian deformations,3,531,0.00565
+math,2006,3,Multiplier ideals,11,531,0.020716
 math,2006,4,Foliation theory,9,531,0.016949
 math,2006,5,Clifford-algebra group theory,14,531,0.026365
 math,2006,6,Hahn-Banach extensions,8,531,0.015066
@@ -388,20 +388,20 @@ math,2006,7,Quantum affine representations,13,531,0.024482
 math,2006,8,Local cohomology monomial ideals,11,531,0.020716
 math,2006,9,Pattern-avoiding permutations,12,531,0.022599
 math,2006,10,Spectral amplitude relations,10,531,0.018832
-math,2006,11,Quantum superalgebra structures,5,531,0.009416
+math,2006,11,Quantum superalgebra structures,4,531,0.007533
 math,2006,12,Geometric group theory equivalence,16,531,0.030132
 math,2006,13,Knot move invariants,11,531,0.020716
 math,2006,14,Fano variety bounds,7,531,0.013183
 math,2006,15,Representability failure,7,531,0.013183
-math,2006,16,Toric modular forms,12,531,0.022599
-math,2006,17,Projective Galois group endomorphisms,9,531,0.016949
-math,2006,18,Algebraic Hodge motives,9,531,0.016949
+math,2006,16,Mirror symmetry invariants,7,531,0.013183
+math,2006,17,Toric modular forms,12,531,0.022599
+math,2006,18,Projective Galois group endomorphisms,9,531,0.016949
 math,2006,19,Double plane structures,15,531,0.028249
 math,2006,20,Random walk aging limits,5,531,0.009416
 math,2006,21,Random packing asymptotics,8,531,0.015066
 math,2006,22,Einstein-Kähler metrics,15,531,0.028249
 math,2006,23,Super Lie identity theorems,8,531,0.015066
-math,2006,24,Fibre-space Hodge cohomology vanishing,7,531,0.013183
+math,2006,24,Fibre-space Hodge cohomology vanishing,10,531,0.018832
 math,2006,25,Lamination geodesic convergence,11,531,0.020716
 math,2006,26,Random heap dynamics,12,531,0.022599
 math,2006,27,Noncommutative crepant resolutions,18,531,0.033898
@@ -414,7 +414,7 @@ math,2006,33,Group embedding dimension bounds,13,531,0.024482
 math,2006,34,Convex cone optimization,0,531,0.0
 math,2006,35,Galois cohomology obstructions,12,531,0.022599
 math,2006,36,Non-symplectic group actions,22,531,0.041431
-math,2006,37,Hodge-Frobenius manifolds,15,531,0.028249
+math,2006,37,Hodge-Frobenius manifolds,17,531,0.032015
 math,2006,38,Signed domination complexity,4,531,0.007533
 math,2006,39,Reduced Khovanov homology,15,531,0.028249
 math,2006,40,Contact manifold fillings,8,531,0.015066
@@ -426,7 +426,7 @@ math,2006,45,Non-smooth proximal gradient analysis,0,531,0.0
 math,2006,46,Nonlocal diffusion regularity,2,531,0.003766
 math,2006,47,Extended hypergeometric functions,6,531,0.011299
 math,2006,48,Quadratic Gorenstein ideals,10,531,0.018832
-math,2006,49,Moduli sheaf operator theory,19,531,0.035782
+math,2006,49,Moduli sheaf operator theory,18,531,0.033898
 math,2006,50,Singular Plateau Douglas Problem,2,531,0.003766
 math,2006,51,Exponential family mirror descent,0,531,0.0
 math,2006,52,Heavy-tail renewal mixing times,3,531,0.00565
@@ -435,12 +435,12 @@ math,2006,54,Operator regression acceleration,0,531,0.0
 math,2006,55,Hardy space fractional operators,0,531,0.0
 math,2006,56,Hive-spectrum large deviations,9,531,0.016949
 math,2006,57,Decentralized consensus topologies,1,531,0.001883
-math,2006,58,Fano threefold geometry,9,531,0.016949
+math,2006,58,Fano threefold geometry,8,531,0.015066
 math,2006,59,Fractional Maximal Operators,4,531,0.007533
-math,2006,60,Complete intersection foliations,20,531,0.037665
+math,2006,60,Complete intersection foliations,21,531,0.039548
 math,2006,61,Physics-informed synthetic data generation,0,531,0.0
 math,2006,62,Operadic Kan extensions,10,531,0.018832
-math,2007,0,Mirror symmetry cohomology,16,617,0.025932
+math,2007,0,Mirror symmetry cohomology,14,617,0.02269
 math,2007,1,Polynomial norm bounds,8,617,0.012966
 math,2007,2,Yangian deformations,13,617,0.02107
 math,2007,3,Multiplier ideals,8,617,0.012966
@@ -456,17 +456,17 @@ math,2007,12,Geometric group theory equivalence,17,617,0.027553
 math,2007,13,Knot move invariants,26,617,0.042139
 math,2007,14,Fano variety bounds,7,617,0.011345
 math,2007,15,Representability failure,7,617,0.011345
-math,2007,16,Toric modular forms,12,617,0.019449
-math,2007,17,Projective Galois group endomorphisms,14,617,0.02269
-math,2007,18,Algebraic Hodge motives,10,617,0.016207
-math,2007,19,Double plane structures,24,617,0.038898
+math,2007,16,Mirror symmetry invariants,7,617,0.011345
+math,2007,17,Toric modular forms,12,617,0.019449
+math,2007,18,Projective Galois group endomorphisms,14,617,0.02269
+math,2007,19,Double plane structures,25,617,0.040519
 math,2007,20,Random walk aging limits,6,617,0.009724
 math,2007,21,Random packing asymptotics,13,617,0.02107
 math,2007,22,Einstein-Kähler metrics,21,617,0.034036
 math,2007,23,Super Lie identity theorems,9,617,0.014587
-math,2007,24,Fibre-space Hodge cohomology vanishing,6,617,0.009724
+math,2007,24,Fibre-space Hodge cohomology vanishing,9,617,0.014587
 math,2007,25,Lamination geodesic convergence,11,617,0.017828
-math,2007,26,Random heap dynamics,4,617,0.006483
+math,2007,26,Random heap dynamics,5,617,0.008104
 math,2007,27,Noncommutative crepant resolutions,18,617,0.029173
 math,2007,28,Numerical PDE error analysis,1,617,0.001621
 math,2007,29,Prime divisor asymptotics,10,617,0.016207
@@ -489,7 +489,7 @@ math,2007,45,Non-smooth proximal gradient analysis,0,617,0.0
 math,2007,46,Nonlocal diffusion regularity,4,617,0.006483
 math,2007,47,Extended hypergeometric functions,13,617,0.02107
 math,2007,48,Quadratic Gorenstein ideals,12,617,0.019449
-math,2007,49,Moduli sheaf operator theory,16,617,0.025932
+math,2007,49,Moduli sheaf operator theory,15,617,0.024311
 math,2007,50,Singular Plateau Douglas Problem,3,617,0.004862
 math,2007,51,Exponential family mirror descent,2,617,0.003241
 math,2007,52,Heavy-tail renewal mixing times,6,617,0.009724
@@ -498,1142 +498,1142 @@ math,2007,54,Operator regression acceleration,0,617,0.0
 math,2007,55,Hardy space fractional operators,2,617,0.003241
 math,2007,56,Hive-spectrum large deviations,10,617,0.016207
 math,2007,57,Decentralized consensus topologies,1,617,0.001621
-math,2007,58,Fano threefold geometry,14,617,0.02269
+math,2007,58,Fano threefold geometry,15,617,0.024311
 math,2007,59,Fractional Maximal Operators,4,617,0.006483
 math,2007,60,Complete intersection foliations,12,617,0.019449
 math,2007,61,Physics-informed synthetic data generation,0,617,0.0
 math,2007,62,Operadic Kan extensions,3,617,0.004862
-math,2008,0,Mirror symmetry cohomology,21,638,0.032915
-math,2008,1,Polynomial norm bounds,9,638,0.014107
-math,2008,2,Yangian deformations,4,638,0.00627
-math,2008,3,Multiplier ideals,12,638,0.018809
-math,2008,4,Foliation theory,10,638,0.015674
-math,2008,5,Clifford-algebra group theory,17,638,0.026646
-math,2008,6,Hahn-Banach extensions,8,638,0.012539
-math,2008,7,Quantum affine representations,12,638,0.018809
-math,2008,8,Local cohomology monomial ideals,11,638,0.017241
-math,2008,9,Pattern-avoiding permutations,13,638,0.020376
-math,2008,10,Spectral amplitude relations,13,638,0.020376
-math,2008,11,Quantum superalgebra structures,8,638,0.012539
-math,2008,12,Geometric group theory equivalence,22,638,0.034483
-math,2008,13,Knot move invariants,18,638,0.028213
-math,2008,14,Fano variety bounds,5,638,0.007837
-math,2008,15,Representability failure,6,638,0.009404
-math,2008,16,Toric modular forms,9,638,0.014107
-math,2008,17,Projective Galois group endomorphisms,25,638,0.039185
-math,2008,18,Algebraic Hodge motives,8,638,0.012539
-math,2008,19,Double plane structures,21,638,0.032915
-math,2008,20,Random walk aging limits,5,638,0.007837
-math,2008,21,Random packing asymptotics,9,638,0.014107
-math,2008,22,Einstein-Kähler metrics,24,638,0.037618
-math,2008,23,Super Lie identity theorems,11,638,0.017241
-math,2008,24,Fibre-space Hodge cohomology vanishing,14,638,0.021944
-math,2008,25,Lamination geodesic convergence,8,638,0.012539
-math,2008,26,Random heap dynamics,10,638,0.015674
-math,2008,27,Noncommutative crepant resolutions,16,638,0.025078
-math,2008,28,Numerical PDE error analysis,1,638,0.001567
-math,2008,29,Prime divisor asymptotics,9,638,0.014107
-math,2008,30,Fragmentation-coalescent processes,9,638,0.014107
-math,2008,31,Mirror symmetry i-functions,8,638,0.012539
-math,2008,32,Siegel uniformity conjecture,9,638,0.014107
-math,2008,33,Group embedding dimension bounds,10,638,0.015674
-math,2008,34,Convex cone optimization,3,638,0.004702
-math,2008,35,Galois cohomology obstructions,7,638,0.010972
-math,2008,36,Non-symplectic group actions,27,638,0.04232
-math,2008,37,Hodge-Frobenius manifolds,13,638,0.020376
-math,2008,38,Signed domination complexity,6,638,0.009404
-math,2008,39,Reduced Khovanov homology,7,638,0.010972
-math,2008,40,Contact manifold fillings,3,638,0.004702
-math,2008,41,Martingale measure augmentation,14,638,0.021944
-math,2008,42,Multizeta q-values,11,638,0.017241
-math,2008,43,Pro pp group commensurability,9,638,0.014107
-math,2008,44,n-ary bihom algebras,6,638,0.009404
-math,2008,45,Non-smooth proximal gradient analysis,1,638,0.001567
-math,2008,46,Nonlocal diffusion regularity,4,638,0.00627
-math,2008,47,Extended hypergeometric functions,13,638,0.020376
-math,2008,48,Quadratic Gorenstein ideals,12,638,0.018809
-math,2008,49,Moduli sheaf operator theory,15,638,0.023511
-math,2008,50,Singular Plateau Douglas Problem,8,638,0.012539
-math,2008,51,Exponential family mirror descent,3,638,0.004702
-math,2008,52,Heavy-tail renewal mixing times,4,638,0.00627
-math,2008,53,Perfect divisibility graphs,12,638,0.018809
-math,2008,54,Operator regression acceleration,0,638,0.0
-math,2008,55,Hardy space fractional operators,6,638,0.009404
-math,2008,56,Hive-spectrum large deviations,12,638,0.018809
-math,2008,57,Decentralized consensus topologies,4,638,0.00627
-math,2008,58,Fano threefold geometry,11,638,0.017241
-math,2008,59,Fractional Maximal Operators,5,638,0.007837
-math,2008,60,Complete intersection foliations,19,638,0.029781
-math,2008,61,Physics-informed synthetic data generation,0,638,0.0
-math,2008,62,Operadic Kan extensions,8,638,0.012539
-math,2009,0,Mirror symmetry cohomology,17,682,0.024927
-math,2009,1,Polynomial norm bounds,6,682,0.008798
-math,2009,2,Yangian deformations,7,682,0.010264
-math,2009,3,Multiplier ideals,11,682,0.016129
-math,2009,4,Foliation theory,14,682,0.020528
-math,2009,5,Clifford-algebra group theory,13,682,0.019062
-math,2009,6,Hahn-Banach extensions,11,682,0.016129
-math,2009,7,Quantum affine representations,23,682,0.033724
-math,2009,8,Local cohomology monomial ideals,15,682,0.021994
-math,2009,9,Pattern-avoiding permutations,13,682,0.019062
-math,2009,10,Spectral amplitude relations,16,682,0.02346
-math,2009,11,Quantum superalgebra structures,9,682,0.013196
-math,2009,12,Geometric group theory equivalence,27,682,0.039589
-math,2009,13,Knot move invariants,20,682,0.029326
-math,2009,14,Fano variety bounds,9,682,0.013196
-math,2009,15,Representability failure,10,682,0.014663
-math,2009,16,Toric modular forms,10,682,0.014663
-math,2009,17,Projective Galois group endomorphisms,14,682,0.020528
-math,2009,18,Algebraic Hodge motives,5,682,0.007331
-math,2009,19,Double plane structures,28,682,0.041056
-math,2009,20,Random walk aging limits,3,682,0.004399
-math,2009,21,Random packing asymptotics,8,682,0.01173
-math,2009,22,Einstein-Kähler metrics,24,682,0.035191
-math,2009,23,Super Lie identity theorems,9,682,0.013196
-math,2009,24,Fibre-space Hodge cohomology vanishing,15,682,0.021994
-math,2009,25,Lamination geodesic convergence,8,682,0.01173
-math,2009,26,Random heap dynamics,7,682,0.010264
-math,2009,27,Noncommutative crepant resolutions,12,682,0.017595
-math,2009,28,Numerical PDE error analysis,2,682,0.002933
-math,2009,29,Prime divisor asymptotics,4,682,0.005865
-math,2009,30,Fragmentation-coalescent processes,9,682,0.013196
-math,2009,31,Mirror symmetry i-functions,7,682,0.010264
-math,2009,32,Siegel uniformity conjecture,16,682,0.02346
-math,2009,33,Group embedding dimension bounds,3,682,0.004399
-math,2009,34,Convex cone optimization,2,682,0.002933
-math,2009,35,Galois cohomology obstructions,10,682,0.014663
-math,2009,36,Non-symplectic group actions,20,682,0.029326
-math,2009,37,Hodge-Frobenius manifolds,15,682,0.021994
-math,2009,38,Signed domination complexity,6,682,0.008798
-math,2009,39,Reduced Khovanov homology,14,682,0.020528
-math,2009,40,Contact manifold fillings,13,682,0.019062
-math,2009,41,Martingale measure augmentation,9,682,0.013196
-math,2009,42,Multizeta q-values,12,682,0.017595
-math,2009,43,Pro pp group commensurability,18,682,0.026393
-math,2009,44,n-ary bihom algebras,9,682,0.013196
-math,2009,45,Non-smooth proximal gradient analysis,0,682,0.0
-math,2009,46,Nonlocal diffusion regularity,6,682,0.008798
-math,2009,47,Extended hypergeometric functions,11,682,0.016129
-math,2009,48,Quadratic Gorenstein ideals,9,682,0.013196
-math,2009,49,Moduli sheaf operator theory,19,682,0.027859
-math,2009,50,Singular Plateau Douglas Problem,18,682,0.026393
-math,2009,51,Exponential family mirror descent,2,682,0.002933
-math,2009,52,Heavy-tail renewal mixing times,5,682,0.007331
-math,2009,53,Perfect divisibility graphs,16,682,0.02346
-math,2009,54,Operator regression acceleration,0,682,0.0
-math,2009,55,Hardy space fractional operators,5,682,0.007331
-math,2009,56,Hive-spectrum large deviations,12,682,0.017595
-math,2009,57,Decentralized consensus topologies,0,682,0.0
-math,2009,58,Fano threefold geometry,6,682,0.008798
-math,2009,59,Fractional Maximal Operators,14,682,0.020528
-math,2009,60,Complete intersection foliations,16,682,0.02346
-math,2009,61,Physics-informed synthetic data generation,0,682,0.0
-math,2009,62,Operadic Kan extensions,10,682,0.014663
-math,2010,0,Mirror symmetry cohomology,15,828,0.018116
-math,2010,1,Polynomial norm bounds,18,828,0.021739
-math,2010,2,Yangian deformations,13,828,0.0157
-math,2010,3,Multiplier ideals,15,828,0.018116
-math,2010,4,Foliation theory,11,828,0.013285
-math,2010,5,Clifford-algebra group theory,17,828,0.020531
-math,2010,6,Hahn-Banach extensions,15,828,0.018116
-math,2010,7,Quantum affine representations,20,828,0.024155
-math,2010,8,Local cohomology monomial ideals,14,828,0.016908
-math,2010,9,Pattern-avoiding permutations,14,828,0.016908
-math,2010,10,Spectral amplitude relations,15,828,0.018116
-math,2010,11,Quantum superalgebra structures,8,828,0.009662
-math,2010,12,Geometric group theory equivalence,30,828,0.036232
-math,2010,13,Knot move invariants,13,828,0.0157
-math,2010,14,Fano variety bounds,7,828,0.008454
-math,2010,15,Representability failure,7,828,0.008454
-math,2010,16,Toric modular forms,14,828,0.016908
-math,2010,17,Projective Galois group endomorphisms,27,828,0.032609
-math,2010,18,Algebraic Hodge motives,7,828,0.008454
-math,2010,19,Double plane structures,31,828,0.03744
-math,2010,20,Random walk aging limits,13,828,0.0157
-math,2010,21,Random packing asymptotics,14,828,0.016908
-math,2010,22,Einstein-Kähler metrics,20,828,0.024155
-math,2010,23,Super Lie identity theorems,19,828,0.022947
-math,2010,24,Fibre-space Hodge cohomology vanishing,25,828,0.030193
-math,2010,25,Lamination geodesic convergence,13,828,0.0157
-math,2010,26,Random heap dynamics,16,828,0.019324
-math,2010,27,Noncommutative crepant resolutions,17,828,0.020531
-math,2010,28,Numerical PDE error analysis,4,828,0.004831
-math,2010,29,Prime divisor asymptotics,6,828,0.007246
-math,2010,30,Fragmentation-coalescent processes,7,828,0.008454
-math,2010,31,Mirror symmetry i-functions,7,828,0.008454
-math,2010,32,Siegel uniformity conjecture,14,828,0.016908
-math,2010,33,Group embedding dimension bounds,9,828,0.01087
-math,2010,34,Convex cone optimization,3,828,0.003623
-math,2010,35,Galois cohomology obstructions,13,828,0.0157
-math,2010,36,Non-symplectic group actions,22,828,0.02657
-math,2010,37,Hodge-Frobenius manifolds,18,828,0.021739
-math,2010,38,Signed domination complexity,3,828,0.003623
-math,2010,39,Reduced Khovanov homology,12,828,0.014493
-math,2010,40,Contact manifold fillings,14,828,0.016908
-math,2010,41,Martingale measure augmentation,17,828,0.020531
-math,2010,42,Multizeta q-values,10,828,0.012077
-math,2010,43,Pro pp group commensurability,9,828,0.01087
-math,2010,44,n-ary bihom algebras,9,828,0.01087
-math,2010,45,Non-smooth proximal gradient analysis,1,828,0.001208
-math,2010,46,Nonlocal diffusion regularity,3,828,0.003623
-math,2010,47,Extended hypergeometric functions,13,828,0.0157
-math,2010,48,Quadratic Gorenstein ideals,20,828,0.024155
-math,2010,49,Moduli sheaf operator theory,11,828,0.013285
-math,2010,50,Singular Plateau Douglas Problem,13,828,0.0157
-math,2010,51,Exponential family mirror descent,3,828,0.003623
-math,2010,52,Heavy-tail renewal mixing times,8,828,0.009662
-math,2010,53,Perfect divisibility graphs,22,828,0.02657
-math,2010,54,Operator regression acceleration,0,828,0.0
-math,2010,55,Hardy space fractional operators,4,828,0.004831
-math,2010,56,Hive-spectrum large deviations,24,828,0.028986
-math,2010,57,Decentralized consensus topologies,4,828,0.004831
-math,2010,58,Fano threefold geometry,10,828,0.012077
-math,2010,59,Fractional Maximal Operators,18,828,0.021739
-math,2010,60,Complete intersection foliations,30,828,0.036232
-math,2010,61,Physics-informed synthetic data generation,0,828,0.0
-math,2010,62,Operadic Kan extensions,19,828,0.022947
-math,2011,0,Mirror symmetry cohomology,14,913,0.015334
-math,2011,1,Polynomial norm bounds,28,913,0.030668
-math,2011,2,Yangian deformations,8,913,0.008762
-math,2011,3,Multiplier ideals,18,913,0.019715
-math,2011,4,Foliation theory,12,913,0.013143
-math,2011,5,Clifford-algebra group theory,23,913,0.025192
-math,2011,6,Hahn-Banach extensions,13,913,0.014239
-math,2011,7,Quantum affine representations,11,913,0.012048
-math,2011,8,Local cohomology monomial ideals,9,913,0.009858
-math,2011,9,Pattern-avoiding permutations,14,913,0.015334
-math,2011,10,Spectral amplitude relations,15,913,0.016429
-math,2011,11,Quantum superalgebra structures,17,913,0.01862
-math,2011,12,Geometric group theory equivalence,31,913,0.033954
-math,2011,13,Knot move invariants,18,913,0.019715
-math,2011,14,Fano variety bounds,9,913,0.009858
-math,2011,15,Representability failure,9,913,0.009858
-math,2011,16,Toric modular forms,13,913,0.014239
-math,2011,17,Projective Galois group endomorphisms,24,913,0.026287
-math,2011,18,Algebraic Hodge motives,11,913,0.012048
-math,2011,19,Double plane structures,30,913,0.032859
-math,2011,20,Random walk aging limits,6,913,0.006572
-math,2011,21,Random packing asymptotics,15,913,0.016429
-math,2011,22,Einstein-Kähler metrics,23,913,0.025192
-math,2011,23,Super Lie identity theorems,9,913,0.009858
-math,2011,24,Fibre-space Hodge cohomology vanishing,22,913,0.024096
-math,2011,25,Lamination geodesic convergence,10,913,0.010953
-math,2011,26,Random heap dynamics,7,913,0.007667
-math,2011,27,Noncommutative crepant resolutions,21,913,0.023001
-math,2011,28,Numerical PDE error analysis,6,913,0.006572
-math,2011,29,Prime divisor asymptotics,11,913,0.012048
-math,2011,30,Fragmentation-coalescent processes,10,913,0.010953
-math,2011,31,Mirror symmetry i-functions,10,913,0.010953
-math,2011,32,Siegel uniformity conjecture,16,913,0.017525
-math,2011,33,Group embedding dimension bounds,8,913,0.008762
-math,2011,34,Convex cone optimization,8,913,0.008762
-math,2011,35,Galois cohomology obstructions,17,913,0.01862
-math,2011,36,Non-symplectic group actions,25,913,0.027382
-math,2011,37,Hodge-Frobenius manifolds,14,913,0.015334
-math,2011,38,Signed domination complexity,19,913,0.020811
-math,2011,39,Reduced Khovanov homology,19,913,0.020811
-math,2011,40,Contact manifold fillings,10,913,0.010953
-math,2011,41,Martingale measure augmentation,15,913,0.016429
-math,2011,42,Multizeta q-values,13,913,0.014239
-math,2011,43,Pro pp group commensurability,31,913,0.033954
-math,2011,44,n-ary bihom algebras,3,913,0.003286
-math,2011,45,Non-smooth proximal gradient analysis,1,913,0.001095
-math,2011,46,Nonlocal diffusion regularity,18,913,0.019715
-math,2011,47,Extended hypergeometric functions,17,913,0.01862
-math,2011,48,Quadratic Gorenstein ideals,19,913,0.020811
-math,2011,49,Moduli sheaf operator theory,17,913,0.01862
-math,2011,50,Singular Plateau Douglas Problem,13,913,0.014239
-math,2011,51,Exponential family mirror descent,3,913,0.003286
-math,2011,52,Heavy-tail renewal mixing times,7,913,0.007667
-math,2011,53,Perfect divisibility graphs,22,913,0.024096
-math,2011,54,Operator regression acceleration,2,913,0.002191
-math,2011,55,Hardy space fractional operators,14,913,0.015334
-math,2011,56,Hive-spectrum large deviations,27,913,0.029573
-math,2011,57,Decentralized consensus topologies,5,913,0.005476
-math,2011,58,Fano threefold geometry,18,913,0.019715
-math,2011,59,Fractional Maximal Operators,18,913,0.019715
-math,2011,60,Complete intersection foliations,17,913,0.01862
-math,2011,61,Physics-informed synthetic data generation,0,913,0.0
-math,2011,62,Operadic Kan extensions,20,913,0.021906
-math,2012,0,Mirror symmetry cohomology,23,1014,0.022682
-math,2012,1,Polynomial norm bounds,13,1014,0.012821
-math,2012,2,Yangian deformations,8,1014,0.00789
-math,2012,3,Multiplier ideals,11,1014,0.010848
-math,2012,4,Foliation theory,14,1014,0.013807
-math,2012,5,Clifford-algebra group theory,20,1014,0.019724
-math,2012,6,Hahn-Banach extensions,13,1014,0.012821
-math,2012,7,Quantum affine representations,9,1014,0.008876
-math,2012,8,Local cohomology monomial ideals,20,1014,0.019724
-math,2012,9,Pattern-avoiding permutations,20,1014,0.019724
-math,2012,10,Spectral amplitude relations,29,1014,0.0286
-math,2012,11,Quantum superalgebra structures,12,1014,0.011834
-math,2012,12,Geometric group theory equivalence,29,1014,0.0286
-math,2012,13,Knot move invariants,19,1014,0.018738
-math,2012,14,Fano variety bounds,7,1014,0.006903
-math,2012,15,Representability failure,14,1014,0.013807
-math,2012,16,Toric modular forms,21,1014,0.02071
-math,2012,17,Projective Galois group endomorphisms,18,1014,0.017751
-math,2012,18,Algebraic Hodge motives,8,1014,0.00789
-math,2012,19,Double plane structures,17,1014,0.016765
-math,2012,20,Random walk aging limits,5,1014,0.004931
-math,2012,21,Random packing asymptotics,26,1014,0.025641
-math,2012,22,Einstein-Kähler metrics,20,1014,0.019724
-math,2012,23,Super Lie identity theorems,17,1014,0.016765
-math,2012,24,Fibre-space Hodge cohomology vanishing,19,1014,0.018738
-math,2012,25,Lamination geodesic convergence,9,1014,0.008876
-math,2012,26,Random heap dynamics,8,1014,0.00789
-math,2012,27,Noncommutative crepant resolutions,21,1014,0.02071
-math,2012,28,Numerical PDE error analysis,13,1014,0.012821
-math,2012,29,Prime divisor asymptotics,13,1014,0.012821
-math,2012,30,Fragmentation-coalescent processes,17,1014,0.016765
-math,2012,31,Mirror symmetry i-functions,12,1014,0.011834
-math,2012,32,Siegel uniformity conjecture,20,1014,0.019724
-math,2012,33,Group embedding dimension bounds,10,1014,0.009862
-math,2012,34,Convex cone optimization,13,1014,0.012821
-math,2012,35,Galois cohomology obstructions,15,1014,0.014793
-math,2012,36,Non-symplectic group actions,20,1014,0.019724
-math,2012,37,Hodge-Frobenius manifolds,23,1014,0.022682
-math,2012,38,Signed domination complexity,19,1014,0.018738
-math,2012,39,Reduced Khovanov homology,22,1014,0.021696
-math,2012,40,Contact manifold fillings,16,1014,0.015779
-math,2012,41,Martingale measure augmentation,37,1014,0.036489
-math,2012,42,Multizeta q-values,13,1014,0.012821
-math,2012,43,Pro pp group commensurability,20,1014,0.019724
-math,2012,44,n-ary bihom algebras,12,1014,0.011834
-math,2012,45,Non-smooth proximal gradient analysis,4,1014,0.003945
-math,2012,46,Nonlocal diffusion regularity,18,1014,0.017751
-math,2012,47,Extended hypergeometric functions,13,1014,0.012821
-math,2012,48,Quadratic Gorenstein ideals,10,1014,0.009862
-math,2012,49,Moduli sheaf operator theory,23,1014,0.022682
-math,2012,50,Singular Plateau Douglas Problem,20,1014,0.019724
-math,2012,51,Exponential family mirror descent,3,1014,0.002959
-math,2012,52,Heavy-tail renewal mixing times,12,1014,0.011834
-math,2012,53,Perfect divisibility graphs,30,1014,0.029586
-math,2012,54,Operator regression acceleration,7,1014,0.006903
-math,2012,55,Hardy space fractional operators,13,1014,0.012821
-math,2012,56,Hive-spectrum large deviations,32,1014,0.031558
-math,2012,57,Decentralized consensus topologies,6,1014,0.005917
-math,2012,58,Fano threefold geometry,10,1014,0.009862
-math,2012,59,Fractional Maximal Operators,24,1014,0.023669
-math,2012,60,Complete intersection foliations,27,1014,0.026627
-math,2012,61,Physics-informed synthetic data generation,0,1014,0.0
-math,2012,62,Operadic Kan extensions,17,1014,0.016765
-math,2013,0,Mirror symmetry cohomology,20,1190,0.016807
-math,2013,1,Polynomial norm bounds,17,1190,0.014286
-math,2013,2,Yangian deformations,8,1190,0.006723
-math,2013,3,Multiplier ideals,21,1190,0.017647
-math,2013,4,Foliation theory,22,1190,0.018487
-math,2013,5,Clifford-algebra group theory,16,1190,0.013445
-math,2013,6,Hahn-Banach extensions,30,1190,0.02521
-math,2013,7,Quantum affine representations,11,1190,0.009244
-math,2013,8,Local cohomology monomial ideals,24,1190,0.020168
-math,2013,9,Pattern-avoiding permutations,23,1190,0.019328
-math,2013,10,Spectral amplitude relations,20,1190,0.016807
-math,2013,11,Quantum superalgebra structures,11,1190,0.009244
-math,2013,12,Geometric group theory equivalence,40,1190,0.033613
-math,2013,13,Knot move invariants,24,1190,0.020168
-math,2013,14,Fano variety bounds,4,1190,0.003361
-math,2013,15,Representability failure,8,1190,0.006723
-math,2013,16,Toric modular forms,24,1190,0.020168
-math,2013,17,Projective Galois group endomorphisms,30,1190,0.02521
-math,2013,18,Algebraic Hodge motives,13,1190,0.010924
-math,2013,19,Double plane structures,40,1190,0.033613
-math,2013,20,Random walk aging limits,9,1190,0.007563
-math,2013,21,Random packing asymptotics,21,1190,0.017647
-math,2013,22,Einstein-Kähler metrics,34,1190,0.028571
-math,2013,23,Super Lie identity theorems,17,1190,0.014286
-math,2013,24,Fibre-space Hodge cohomology vanishing,20,1190,0.016807
-math,2013,25,Lamination geodesic convergence,9,1190,0.007563
-math,2013,26,Random heap dynamics,15,1190,0.012605
-math,2013,27,Noncommutative crepant resolutions,36,1190,0.030252
-math,2013,28,Numerical PDE error analysis,11,1190,0.009244
-math,2013,29,Prime divisor asymptotics,13,1190,0.010924
-math,2013,30,Fragmentation-coalescent processes,15,1190,0.012605
-math,2013,31,Mirror symmetry i-functions,10,1190,0.008403
-math,2013,32,Siegel uniformity conjecture,23,1190,0.019328
-math,2013,33,Group embedding dimension bounds,15,1190,0.012605
-math,2013,34,Convex cone optimization,15,1190,0.012605
-math,2013,35,Galois cohomology obstructions,10,1190,0.008403
-math,2013,36,Non-symplectic group actions,26,1190,0.021849
-math,2013,37,Hodge-Frobenius manifolds,23,1190,0.019328
-math,2013,38,Signed domination complexity,29,1190,0.02437
-math,2013,39,Reduced Khovanov homology,20,1190,0.016807
-math,2013,40,Contact manifold fillings,14,1190,0.011765
-math,2013,41,Martingale measure augmentation,26,1190,0.021849
-math,2013,42,Multizeta q-values,24,1190,0.020168
-math,2013,43,Pro pp group commensurability,21,1190,0.017647
-math,2013,44,n-ary bihom algebras,14,1190,0.011765
-math,2013,45,Non-smooth proximal gradient analysis,9,1190,0.007563
-math,2013,46,Nonlocal diffusion regularity,21,1190,0.017647
-math,2013,47,Extended hypergeometric functions,16,1190,0.013445
-math,2013,48,Quadratic Gorenstein ideals,24,1190,0.020168
-math,2013,49,Moduli sheaf operator theory,15,1190,0.012605
-math,2013,50,Singular Plateau Douglas Problem,21,1190,0.017647
-math,2013,51,Exponential family mirror descent,6,1190,0.005042
-math,2013,52,Heavy-tail renewal mixing times,17,1190,0.014286
-math,2013,53,Perfect divisibility graphs,63,1190,0.052941
-math,2013,54,Operator regression acceleration,7,1190,0.005882
-math,2013,55,Hardy space fractional operators,8,1190,0.006723
-math,2013,56,Hive-spectrum large deviations,26,1190,0.021849
-math,2013,57,Decentralized consensus topologies,7,1190,0.005882
-math,2013,58,Fano threefold geometry,13,1190,0.010924
-math,2013,59,Fractional Maximal Operators,24,1190,0.020168
-math,2013,60,Complete intersection foliations,22,1190,0.018487
-math,2013,61,Physics-informed synthetic data generation,0,1190,0.0
-math,2013,62,Operadic Kan extensions,15,1190,0.012605
-math,2014,0,Mirror symmetry cohomology,26,1240,0.020968
-math,2014,1,Polynomial norm bounds,22,1240,0.017742
-math,2014,2,Yangian deformations,16,1240,0.012903
-math,2014,3,Multiplier ideals,14,1240,0.01129
-math,2014,4,Foliation theory,20,1240,0.016129
-math,2014,5,Clifford-algebra group theory,27,1240,0.021774
-math,2014,6,Hahn-Banach extensions,13,1240,0.010484
-math,2014,7,Quantum affine representations,27,1240,0.021774
-math,2014,8,Local cohomology monomial ideals,20,1240,0.016129
-math,2014,9,Pattern-avoiding permutations,36,1240,0.029032
-math,2014,10,Spectral amplitude relations,29,1240,0.023387
-math,2014,11,Quantum superalgebra structures,21,1240,0.016935
-math,2014,12,Geometric group theory equivalence,37,1240,0.029839
-math,2014,13,Knot move invariants,17,1240,0.01371
-math,2014,14,Fano variety bounds,15,1240,0.012097
-math,2014,15,Representability failure,16,1240,0.012903
-math,2014,16,Toric modular forms,17,1240,0.01371
-math,2014,17,Projective Galois group endomorphisms,25,1240,0.020161
-math,2014,18,Algebraic Hodge motives,10,1240,0.008065
-math,2014,19,Double plane structures,36,1240,0.029032
-math,2014,20,Random walk aging limits,15,1240,0.012097
-math,2014,21,Random packing asymptotics,14,1240,0.01129
-math,2014,22,Einstein-Kähler metrics,41,1240,0.033065
-math,2014,23,Super Lie identity theorems,10,1240,0.008065
-math,2014,24,Fibre-space Hodge cohomology vanishing,16,1240,0.012903
-math,2014,25,Lamination geodesic convergence,13,1240,0.010484
-math,2014,26,Random heap dynamics,22,1240,0.017742
-math,2014,27,Noncommutative crepant resolutions,23,1240,0.018548
-math,2014,28,Numerical PDE error analysis,15,1240,0.012097
-math,2014,29,Prime divisor asymptotics,18,1240,0.014516
-math,2014,30,Fragmentation-coalescent processes,8,1240,0.006452
-math,2014,31,Mirror symmetry i-functions,14,1240,0.01129
-math,2014,32,Siegel uniformity conjecture,17,1240,0.01371
-math,2014,33,Group embedding dimension bounds,16,1240,0.012903
-math,2014,34,Convex cone optimization,17,1240,0.01371
-math,2014,35,Galois cohomology obstructions,22,1240,0.017742
-math,2014,36,Non-symplectic group actions,26,1240,0.020968
-math,2014,37,Hodge-Frobenius manifolds,25,1240,0.020161
-math,2014,38,Signed domination complexity,23,1240,0.018548
-math,2014,39,Reduced Khovanov homology,19,1240,0.015323
-math,2014,40,Contact manifold fillings,15,1240,0.012097
-math,2014,41,Martingale measure augmentation,23,1240,0.018548
-math,2014,42,Multizeta q-values,6,1240,0.004839
-math,2014,43,Pro pp group commensurability,28,1240,0.022581
-math,2014,44,n-ary bihom algebras,12,1240,0.009677
-math,2014,45,Non-smooth proximal gradient analysis,14,1240,0.01129
-math,2014,46,Nonlocal diffusion regularity,17,1240,0.01371
-math,2014,47,Extended hypergeometric functions,24,1240,0.019355
-math,2014,48,Quadratic Gorenstein ideals,22,1240,0.017742
-math,2014,49,Moduli sheaf operator theory,16,1240,0.012903
-math,2014,50,Singular Plateau Douglas Problem,17,1240,0.01371
-math,2014,51,Exponential family mirror descent,7,1240,0.005645
-math,2014,52,Heavy-tail renewal mixing times,17,1240,0.01371
-math,2014,53,Perfect divisibility graphs,56,1240,0.045161
-math,2014,54,Operator regression acceleration,11,1240,0.008871
-math,2014,55,Hardy space fractional operators,12,1240,0.009677
-math,2014,56,Hive-spectrum large deviations,34,1240,0.027419
-math,2014,57,Decentralized consensus topologies,5,1240,0.004032
-math,2014,58,Fano threefold geometry,9,1240,0.007258
-math,2014,59,Fractional Maximal Operators,22,1240,0.017742
-math,2014,60,Complete intersection foliations,28,1240,0.022581
-math,2014,61,Physics-informed synthetic data generation,0,1240,0.0
-math,2014,62,Operadic Kan extensions,27,1240,0.021774
-math,2015,0,Mirror symmetry cohomology,18,1393,0.012922
-math,2015,1,Polynomial norm bounds,31,1393,0.022254
-math,2015,2,Yangian deformations,7,1393,0.005025
-math,2015,3,Multiplier ideals,21,1393,0.015075
-math,2015,4,Foliation theory,17,1393,0.012204
-math,2015,5,Clifford-algebra group theory,24,1393,0.017229
-math,2015,6,Hahn-Banach extensions,21,1393,0.015075
-math,2015,7,Quantum affine representations,14,1393,0.01005
-math,2015,8,Local cohomology monomial ideals,13,1393,0.009332
-math,2015,9,Pattern-avoiding permutations,39,1393,0.027997
-math,2015,10,Spectral amplitude relations,30,1393,0.021536
-math,2015,11,Quantum superalgebra structures,17,1393,0.012204
-math,2015,12,Geometric group theory equivalence,29,1393,0.020818
-math,2015,13,Knot move invariants,30,1393,0.021536
-math,2015,14,Fano variety bounds,14,1393,0.01005
-math,2015,15,Representability failure,12,1393,0.008615
-math,2015,16,Toric modular forms,21,1393,0.015075
-math,2015,17,Projective Galois group endomorphisms,35,1393,0.025126
-math,2015,18,Algebraic Hodge motives,8,1393,0.005743
-math,2015,19,Double plane structures,47,1393,0.03374
-math,2015,20,Random walk aging limits,13,1393,0.009332
-math,2015,21,Random packing asymptotics,22,1393,0.015793
-math,2015,22,Einstein-Kähler metrics,27,1393,0.019383
-math,2015,23,Super Lie identity theorems,14,1393,0.01005
-math,2015,24,Fibre-space Hodge cohomology vanishing,23,1393,0.016511
-math,2015,25,Lamination geodesic convergence,18,1393,0.012922
-math,2015,26,Random heap dynamics,16,1393,0.011486
-math,2015,27,Noncommutative crepant resolutions,28,1393,0.020101
-math,2015,28,Numerical PDE error analysis,27,1393,0.019383
-math,2015,29,Prime divisor asymptotics,20,1393,0.014358
-math,2015,30,Fragmentation-coalescent processes,22,1393,0.015793
-math,2015,31,Mirror symmetry i-functions,20,1393,0.014358
-math,2015,32,Siegel uniformity conjecture,26,1393,0.018665
-math,2015,33,Group embedding dimension bounds,16,1393,0.011486
-math,2015,34,Convex cone optimization,23,1393,0.016511
-math,2015,35,Galois cohomology obstructions,18,1393,0.012922
-math,2015,36,Non-symplectic group actions,43,1393,0.030869
-math,2015,37,Hodge-Frobenius manifolds,22,1393,0.015793
-math,2015,38,Signed domination complexity,28,1393,0.020101
-math,2015,39,Reduced Khovanov homology,15,1393,0.010768
-math,2015,40,Contact manifold fillings,11,1393,0.007897
-math,2015,41,Martingale measure augmentation,36,1393,0.025844
-math,2015,42,Multizeta q-values,15,1393,0.010768
-math,2015,43,Pro pp group commensurability,32,1393,0.022972
-math,2015,44,n-ary bihom algebras,17,1393,0.012204
-math,2015,45,Non-smooth proximal gradient analysis,9,1393,0.006461
-math,2015,46,Nonlocal diffusion regularity,22,1393,0.015793
-math,2015,47,Extended hypergeometric functions,22,1393,0.015793
-math,2015,48,Quadratic Gorenstein ideals,10,1393,0.007179
-math,2015,49,Moduli sheaf operator theory,25,1393,0.017947
-math,2015,50,Singular Plateau Douglas Problem,19,1393,0.01364
-math,2015,51,Exponential family mirror descent,7,1393,0.005025
-math,2015,52,Heavy-tail renewal mixing times,17,1393,0.012204
-math,2015,53,Perfect divisibility graphs,65,1393,0.046662
-math,2015,54,Operator regression acceleration,16,1393,0.011486
-math,2015,55,Hardy space fractional operators,15,1393,0.010768
-math,2015,56,Hive-spectrum large deviations,48,1393,0.034458
-math,2015,57,Decentralized consensus topologies,11,1393,0.007897
-math,2015,58,Fano threefold geometry,21,1393,0.015075
-math,2015,59,Fractional Maximal Operators,26,1393,0.018665
-math,2015,60,Complete intersection foliations,28,1393,0.020101
-math,2015,61,Physics-informed synthetic data generation,0,1393,0.0
-math,2015,62,Operadic Kan extensions,32,1393,0.022972
-math,2016,0,Mirror symmetry cohomology,14,1468,0.009537
-math,2016,1,Polynomial norm bounds,28,1468,0.019074
-math,2016,2,Yangian deformations,20,1468,0.013624
-math,2016,3,Multiplier ideals,22,1468,0.014986
-math,2016,4,Foliation theory,12,1468,0.008174
-math,2016,5,Clifford-algebra group theory,37,1468,0.025204
-math,2016,6,Hahn-Banach extensions,19,1468,0.012943
-math,2016,7,Quantum affine representations,25,1468,0.01703
-math,2016,8,Local cohomology monomial ideals,22,1468,0.014986
-math,2016,9,Pattern-avoiding permutations,27,1468,0.018392
-math,2016,10,Spectral amplitude relations,24,1468,0.016349
-math,2016,11,Quantum superalgebra structures,15,1468,0.010218
-math,2016,12,Geometric group theory equivalence,40,1468,0.027248
-math,2016,13,Knot move invariants,21,1468,0.014305
-math,2016,14,Fano variety bounds,12,1468,0.008174
-math,2016,15,Representability failure,14,1468,0.009537
-math,2016,16,Toric modular forms,31,1468,0.021117
-math,2016,17,Projective Galois group endomorphisms,30,1468,0.020436
-math,2016,18,Algebraic Hodge motives,20,1468,0.013624
-math,2016,19,Double plane structures,49,1468,0.033379
-math,2016,20,Random walk aging limits,14,1468,0.009537
-math,2016,21,Random packing asymptotics,15,1468,0.010218
-math,2016,22,Einstein-Kähler metrics,29,1468,0.019755
-math,2016,23,Super Lie identity theorems,20,1468,0.013624
-math,2016,24,Fibre-space Hodge cohomology vanishing,30,1468,0.020436
-math,2016,25,Lamination geodesic convergence,10,1468,0.006812
-math,2016,26,Random heap dynamics,17,1468,0.01158
-math,2016,27,Noncommutative crepant resolutions,36,1468,0.024523
-math,2016,28,Numerical PDE error analysis,20,1468,0.013624
-math,2016,29,Prime divisor asymptotics,11,1468,0.007493
-math,2016,30,Fragmentation-coalescent processes,20,1468,0.013624
-math,2016,31,Mirror symmetry i-functions,13,1468,0.008856
-math,2016,32,Siegel uniformity conjecture,31,1468,0.021117
-math,2016,33,Group embedding dimension bounds,21,1468,0.014305
-math,2016,34,Convex cone optimization,25,1468,0.01703
-math,2016,35,Galois cohomology obstructions,20,1468,0.013624
-math,2016,36,Non-symplectic group actions,31,1468,0.021117
-math,2016,37,Hodge-Frobenius manifolds,19,1468,0.012943
-math,2016,38,Signed domination complexity,39,1468,0.026567
-math,2016,39,Reduced Khovanov homology,16,1468,0.010899
-math,2016,40,Contact manifold fillings,15,1468,0.010218
-math,2016,41,Martingale measure augmentation,20,1468,0.013624
-math,2016,42,Multizeta q-values,27,1468,0.018392
-math,2016,43,Pro pp group commensurability,26,1468,0.017711
-math,2016,44,n-ary bihom algebras,10,1468,0.006812
-math,2016,45,Non-smooth proximal gradient analysis,27,1468,0.018392
-math,2016,46,Nonlocal diffusion regularity,24,1468,0.016349
-math,2016,47,Extended hypergeometric functions,27,1468,0.018392
-math,2016,48,Quadratic Gorenstein ideals,21,1468,0.014305
-math,2016,49,Moduli sheaf operator theory,28,1468,0.019074
-math,2016,50,Singular Plateau Douglas Problem,32,1468,0.021798
-math,2016,51,Exponential family mirror descent,14,1468,0.009537
-math,2016,52,Heavy-tail renewal mixing times,17,1468,0.01158
-math,2016,53,Perfect divisibility graphs,80,1468,0.054496
-math,2016,54,Operator regression acceleration,11,1468,0.007493
-math,2016,55,Hardy space fractional operators,13,1468,0.008856
-math,2016,56,Hive-spectrum large deviations,26,1468,0.017711
-math,2016,57,Decentralized consensus topologies,13,1468,0.008856
-math,2016,58,Fano threefold geometry,16,1468,0.010899
-math,2016,59,Fractional Maximal Operators,34,1468,0.023161
-math,2016,60,Complete intersection foliations,43,1468,0.029292
-math,2016,61,Physics-informed synthetic data generation,0,1468,0.0
-math,2016,62,Operadic Kan extensions,25,1468,0.01703
-math,2017,0,Mirror symmetry cohomology,20,1596,0.012531
-math,2017,1,Polynomial norm bounds,24,1596,0.015038
-math,2017,2,Yangian deformations,12,1596,0.007519
-math,2017,3,Multiplier ideals,18,1596,0.011278
-math,2017,4,Foliation theory,20,1596,0.012531
-math,2017,5,Clifford-algebra group theory,19,1596,0.011905
-math,2017,6,Hahn-Banach extensions,20,1596,0.012531
-math,2017,7,Quantum affine representations,19,1596,0.011905
-math,2017,8,Local cohomology monomial ideals,25,1596,0.015664
-math,2017,9,Pattern-avoiding permutations,36,1596,0.022556
-math,2017,10,Spectral amplitude relations,39,1596,0.024436
-math,2017,11,Quantum superalgebra structures,19,1596,0.011905
-math,2017,12,Geometric group theory equivalence,36,1596,0.022556
-math,2017,13,Knot move invariants,28,1596,0.017544
-math,2017,14,Fano variety bounds,21,1596,0.013158
-math,2017,15,Representability failure,12,1596,0.007519
-math,2017,16,Toric modular forms,21,1596,0.013158
-math,2017,17,Projective Galois group endomorphisms,36,1596,0.022556
-math,2017,18,Algebraic Hodge motives,9,1596,0.005639
-math,2017,19,Double plane structures,44,1596,0.027569
-math,2017,20,Random walk aging limits,22,1596,0.013784
-math,2017,21,Random packing asymptotics,34,1596,0.021303
-math,2017,22,Einstein-Kähler metrics,33,1596,0.020677
-math,2017,23,Super Lie identity theorems,16,1596,0.010025
-math,2017,24,Fibre-space Hodge cohomology vanishing,31,1596,0.019424
-math,2017,25,Lamination geodesic convergence,26,1596,0.016291
-math,2017,26,Random heap dynamics,19,1596,0.011905
-math,2017,27,Noncommutative crepant resolutions,45,1596,0.028195
-math,2017,28,Numerical PDE error analysis,24,1596,0.015038
-math,2017,29,Prime divisor asymptotics,25,1596,0.015664
-math,2017,30,Fragmentation-coalescent processes,14,1596,0.008772
-math,2017,31,Mirror symmetry i-functions,13,1596,0.008145
-math,2017,32,Siegel uniformity conjecture,30,1596,0.018797
-math,2017,33,Group embedding dimension bounds,14,1596,0.008772
-math,2017,34,Convex cone optimization,28,1596,0.017544
-math,2017,35,Galois cohomology obstructions,13,1596,0.008145
-math,2017,36,Non-symplectic group actions,30,1596,0.018797
-math,2017,37,Hodge-Frobenius manifolds,21,1596,0.013158
-math,2017,38,Signed domination complexity,38,1596,0.02381
-math,2017,39,Reduced Khovanov homology,18,1596,0.011278
-math,2017,40,Contact manifold fillings,24,1596,0.015038
-math,2017,41,Martingale measure augmentation,28,1596,0.017544
-math,2017,42,Multizeta q-values,13,1596,0.008145
-math,2017,43,Pro pp group commensurability,40,1596,0.025063
-math,2017,44,n-ary bihom algebras,23,1596,0.014411
-math,2017,45,Non-smooth proximal gradient analysis,39,1596,0.024436
-math,2017,46,Nonlocal diffusion regularity,22,1596,0.013784
-math,2017,47,Extended hypergeometric functions,18,1596,0.011278
-math,2017,48,Quadratic Gorenstein ideals,19,1596,0.011905
-math,2017,49,Moduli sheaf operator theory,20,1596,0.012531
-math,2017,50,Singular Plateau Douglas Problem,36,1596,0.022556
-math,2017,51,Exponential family mirror descent,15,1596,0.009398
-math,2017,52,Heavy-tail renewal mixing times,23,1596,0.014411
-math,2017,53,Perfect divisibility graphs,77,1596,0.048246
-math,2017,54,Operator regression acceleration,26,1596,0.016291
-math,2017,55,Hardy space fractional operators,22,1596,0.013784
-math,2017,56,Hive-spectrum large deviations,37,1596,0.023183
-math,2017,57,Decentralized consensus topologies,18,1596,0.011278
-math,2017,58,Fano threefold geometry,19,1596,0.011905
-math,2017,59,Fractional Maximal Operators,34,1596,0.021303
-math,2017,60,Complete intersection foliations,30,1596,0.018797
-math,2017,61,Physics-informed synthetic data generation,8,1596,0.005013
-math,2017,62,Operadic Kan extensions,33,1596,0.020677
-math,2018,0,Mirror symmetry cohomology,26,1667,0.015597
-math,2018,1,Polynomial norm bounds,32,1667,0.019196
-math,2018,2,Yangian deformations,17,1667,0.010198
-math,2018,3,Multiplier ideals,19,1667,0.011398
-math,2018,4,Foliation theory,16,1667,0.009598
-math,2018,5,Clifford-algebra group theory,31,1667,0.018596
-math,2018,6,Hahn-Banach extensions,29,1667,0.017397
-math,2018,7,Quantum affine representations,18,1667,0.010798
-math,2018,8,Local cohomology monomial ideals,20,1667,0.011998
-math,2018,9,Pattern-avoiding permutations,42,1667,0.025195
-math,2018,10,Spectral amplitude relations,18,1667,0.010798
-math,2018,11,Quantum superalgebra structures,25,1667,0.014997
-math,2018,12,Geometric group theory equivalence,49,1667,0.029394
-math,2018,13,Knot move invariants,27,1667,0.016197
-math,2018,14,Fano variety bounds,22,1667,0.013197
-math,2018,15,Representability failure,12,1667,0.007199
-math,2018,16,Toric modular forms,32,1667,0.019196
-math,2018,17,Projective Galois group endomorphisms,46,1667,0.027594
-math,2018,18,Algebraic Hodge motives,12,1667,0.007199
-math,2018,19,Double plane structures,37,1667,0.022196
-math,2018,20,Random walk aging limits,20,1667,0.011998
-math,2018,21,Random packing asymptotics,19,1667,0.011398
-math,2018,22,Einstein-Kähler metrics,35,1667,0.020996
-math,2018,23,Super Lie identity theorems,16,1667,0.009598
-math,2018,24,Fibre-space Hodge cohomology vanishing,35,1667,0.020996
-math,2018,25,Lamination geodesic convergence,23,1667,0.013797
-math,2018,26,Random heap dynamics,18,1667,0.010798
-math,2018,27,Noncommutative crepant resolutions,30,1667,0.017996
-math,2018,28,Numerical PDE error analysis,33,1667,0.019796
-math,2018,29,Prime divisor asymptotics,21,1667,0.012597
-math,2018,30,Fragmentation-coalescent processes,13,1667,0.007798
-math,2018,31,Mirror symmetry i-functions,20,1667,0.011998
-math,2018,32,Siegel uniformity conjecture,22,1667,0.013197
-math,2018,33,Group embedding dimension bounds,10,1667,0.005999
-math,2018,34,Convex cone optimization,49,1667,0.029394
-math,2018,35,Galois cohomology obstructions,20,1667,0.011998
-math,2018,36,Non-symplectic group actions,29,1667,0.017397
-math,2018,37,Hodge-Frobenius manifolds,23,1667,0.013797
-math,2018,38,Signed domination complexity,51,1667,0.030594
-math,2018,39,Reduced Khovanov homology,23,1667,0.013797
-math,2018,40,Contact manifold fillings,12,1667,0.007199
-math,2018,41,Martingale measure augmentation,28,1667,0.016797
-math,2018,42,Multizeta q-values,17,1667,0.010198
-math,2018,43,Pro pp group commensurability,33,1667,0.019796
-math,2018,44,n-ary bihom algebras,15,1667,0.008998
-math,2018,45,Non-smooth proximal gradient analysis,40,1667,0.023995
-math,2018,46,Nonlocal diffusion regularity,31,1667,0.018596
-math,2018,47,Extended hypergeometric functions,32,1667,0.019196
-math,2018,48,Quadratic Gorenstein ideals,19,1667,0.011398
-math,2018,49,Moduli sheaf operator theory,21,1667,0.012597
-math,2018,50,Singular Plateau Douglas Problem,29,1667,0.017397
-math,2018,51,Exponential family mirror descent,20,1667,0.011998
-math,2018,52,Heavy-tail renewal mixing times,15,1667,0.008998
-math,2018,53,Perfect divisibility graphs,89,1667,0.053389
-math,2018,54,Operator regression acceleration,26,1667,0.015597
-math,2018,55,Hardy space fractional operators,21,1667,0.012597
-math,2018,56,Hive-spectrum large deviations,32,1667,0.019196
-math,2018,57,Decentralized consensus topologies,27,1667,0.016197
-math,2018,58,Fano threefold geometry,14,1667,0.008398
-math,2018,59,Fractional Maximal Operators,46,1667,0.027594
-math,2018,60,Complete intersection foliations,31,1667,0.018596
-math,2018,61,Physics-informed synthetic data generation,3,1667,0.0018
-math,2018,62,Operadic Kan extensions,26,1667,0.015597
-math,2019,0,Mirror symmetry cohomology,28,1789,0.015651
-math,2019,1,Polynomial norm bounds,35,1789,0.019564
-math,2019,2,Yangian deformations,18,1789,0.010061
-math,2019,3,Multiplier ideals,21,1789,0.011738
-math,2019,4,Foliation theory,15,1789,0.008385
-math,2019,5,Clifford-algebra group theory,30,1789,0.016769
-math,2019,6,Hahn-Banach extensions,25,1789,0.013974
-math,2019,7,Quantum affine representations,22,1789,0.012297
-math,2019,8,Local cohomology monomial ideals,20,1789,0.011179
-math,2019,9,Pattern-avoiding permutations,44,1789,0.024595
-math,2019,10,Spectral amplitude relations,29,1789,0.01621
-math,2019,11,Quantum superalgebra structures,21,1789,0.011738
-math,2019,12,Geometric group theory equivalence,57,1789,0.031861
-math,2019,13,Knot move invariants,19,1789,0.01062
-math,2019,14,Fano variety bounds,19,1789,0.01062
-math,2019,15,Representability failure,17,1789,0.009503
-math,2019,16,Toric modular forms,27,1789,0.015092
-math,2019,17,Projective Galois group endomorphisms,42,1789,0.023477
-math,2019,18,Algebraic Hodge motives,20,1789,0.011179
-math,2019,19,Double plane structures,40,1789,0.022359
-math,2019,20,Random walk aging limits,24,1789,0.013415
-math,2019,21,Random packing asymptotics,30,1789,0.016769
-math,2019,22,Einstein-Kähler metrics,27,1789,0.015092
-math,2019,23,Super Lie identity theorems,25,1789,0.013974
-math,2019,24,Fibre-space Hodge cohomology vanishing,29,1789,0.01621
-math,2019,25,Lamination geodesic convergence,9,1789,0.005031
-math,2019,26,Random heap dynamics,22,1789,0.012297
-math,2019,27,Noncommutative crepant resolutions,36,1789,0.020123
-math,2019,28,Numerical PDE error analysis,48,1789,0.026831
-math,2019,29,Prime divisor asymptotics,20,1789,0.011179
-math,2019,30,Fragmentation-coalescent processes,18,1789,0.010061
-math,2019,31,Mirror symmetry i-functions,17,1789,0.009503
-math,2019,32,Siegel uniformity conjecture,27,1789,0.015092
-math,2019,33,Group embedding dimension bounds,13,1789,0.007267
-math,2019,34,Convex cone optimization,45,1789,0.025154
-math,2019,35,Galois cohomology obstructions,21,1789,0.011738
-math,2019,36,Non-symplectic group actions,31,1789,0.017328
-math,2019,37,Hodge-Frobenius manifolds,26,1789,0.014533
-math,2019,38,Signed domination complexity,46,1789,0.025713
-math,2019,39,Reduced Khovanov homology,20,1789,0.011179
-math,2019,40,Contact manifold fillings,14,1789,0.007826
-math,2019,41,Martingale measure augmentation,32,1789,0.017887
-math,2019,42,Multizeta q-values,18,1789,0.010061
-math,2019,43,Pro pp group commensurability,32,1789,0.017887
-math,2019,44,n-ary bihom algebras,14,1789,0.007826
-math,2019,45,Non-smooth proximal gradient analysis,64,1789,0.035774
-math,2019,46,Nonlocal diffusion regularity,32,1789,0.017887
-math,2019,47,Extended hypergeometric functions,32,1789,0.017887
-math,2019,48,Quadratic Gorenstein ideals,28,1789,0.015651
-math,2019,49,Moduli sheaf operator theory,20,1789,0.011179
-math,2019,50,Singular Plateau Douglas Problem,31,1789,0.017328
-math,2019,51,Exponential family mirror descent,22,1789,0.012297
-math,2019,52,Heavy-tail renewal mixing times,14,1789,0.007826
-math,2019,53,Perfect divisibility graphs,76,1789,0.042482
-math,2019,54,Operator regression acceleration,56,1789,0.031302
-math,2019,55,Hardy space fractional operators,20,1789,0.011179
-math,2019,56,Hive-spectrum large deviations,33,1789,0.018446
-math,2019,57,Decentralized consensus topologies,30,1789,0.016769
-math,2019,58,Fano threefold geometry,26,1789,0.014533
-math,2019,59,Fractional Maximal Operators,35,1789,0.019564
-math,2019,60,Complete intersection foliations,32,1789,0.017887
-math,2019,61,Physics-informed synthetic data generation,12,1789,0.006708
-math,2019,62,Operadic Kan extensions,33,1789,0.018446
-math,2020,0,Mirror symmetry cohomology,34,1937,0.017553
-math,2020,1,Polynomial norm bounds,41,1937,0.021167
-math,2020,2,Yangian deformations,24,1937,0.01239
-math,2020,3,Multiplier ideals,21,1937,0.010842
-math,2020,4,Foliation theory,22,1937,0.011358
-math,2020,5,Clifford-algebra group theory,22,1937,0.011358
-math,2020,6,Hahn-Banach extensions,19,1937,0.009809
-math,2020,7,Quantum affine representations,23,1937,0.011874
-math,2020,8,Local cohomology monomial ideals,19,1937,0.009809
-math,2020,9,Pattern-avoiding permutations,44,1937,0.022716
-math,2020,10,Spectral amplitude relations,27,1937,0.013939
-math,2020,11,Quantum superalgebra structures,19,1937,0.009809
-math,2020,12,Geometric group theory equivalence,41,1937,0.021167
-math,2020,13,Knot move invariants,43,1937,0.022199
-math,2020,14,Fano variety bounds,16,1937,0.00826
-math,2020,15,Representability failure,31,1937,0.016004
-math,2020,16,Toric modular forms,33,1937,0.017037
-math,2020,17,Projective Galois group endomorphisms,38,1937,0.019618
-math,2020,18,Algebraic Hodge motives,24,1937,0.01239
-math,2020,19,Double plane structures,50,1937,0.025813
-math,2020,20,Random walk aging limits,21,1937,0.010842
-math,2020,21,Random packing asymptotics,41,1937,0.021167
-math,2020,22,Einstein-Kähler metrics,32,1937,0.01652
-math,2020,23,Super Lie identity theorems,21,1937,0.010842
-math,2020,24,Fibre-space Hodge cohomology vanishing,32,1937,0.01652
-math,2020,25,Lamination geodesic convergence,13,1937,0.006711
-math,2020,26,Random heap dynamics,20,1937,0.010325
-math,2020,27,Noncommutative crepant resolutions,22,1937,0.011358
-math,2020,28,Numerical PDE error analysis,46,1937,0.023748
-math,2020,29,Prime divisor asymptotics,17,1937,0.008776
-math,2020,30,Fragmentation-coalescent processes,21,1937,0.010842
-math,2020,31,Mirror symmetry i-functions,20,1937,0.010325
-math,2020,32,Siegel uniformity conjecture,34,1937,0.017553
-math,2020,33,Group embedding dimension bounds,14,1937,0.007228
-math,2020,34,Convex cone optimization,55,1937,0.028394
-math,2020,35,Galois cohomology obstructions,17,1937,0.008776
-math,2020,36,Non-symplectic group actions,34,1937,0.017553
-math,2020,37,Hodge-Frobenius manifolds,31,1937,0.016004
-math,2020,38,Signed domination complexity,46,1937,0.023748
-math,2020,39,Reduced Khovanov homology,13,1937,0.006711
-math,2020,40,Contact manifold fillings,22,1937,0.011358
-math,2020,41,Martingale measure augmentation,20,1937,0.010325
-math,2020,42,Multizeta q-values,25,1937,0.012907
-math,2020,43,Pro pp group commensurability,45,1937,0.023232
-math,2020,44,n-ary bihom algebras,29,1937,0.014972
-math,2020,45,Non-smooth proximal gradient analysis,71,1937,0.036655
-math,2020,46,Nonlocal diffusion regularity,40,1937,0.02065
-math,2020,47,Extended hypergeometric functions,27,1937,0.013939
-math,2020,48,Quadratic Gorenstein ideals,25,1937,0.012907
-math,2020,49,Moduli sheaf operator theory,23,1937,0.011874
-math,2020,50,Singular Plateau Douglas Problem,33,1937,0.017037
-math,2020,51,Exponential family mirror descent,38,1937,0.019618
-math,2020,52,Heavy-tail renewal mixing times,27,1937,0.013939
-math,2020,53,Perfect divisibility graphs,71,1937,0.036655
-math,2020,54,Operator regression acceleration,51,1937,0.026329
-math,2020,55,Hardy space fractional operators,19,1937,0.009809
-math,2020,56,Hive-spectrum large deviations,36,1937,0.018585
-math,2020,57,Decentralized consensus topologies,30,1937,0.015488
-math,2020,58,Fano threefold geometry,30,1937,0.015488
-math,2020,59,Fractional Maximal Operators,39,1937,0.020134
-math,2020,60,Complete intersection foliations,22,1937,0.011358
-math,2020,61,Physics-informed synthetic data generation,34,1937,0.017553
-math,2020,62,Operadic Kan extensions,39,1937,0.020134
-math,2021,0,Mirror symmetry cohomology,32,1986,0.016113
-math,2021,1,Polynomial norm bounds,38,1986,0.019134
-math,2021,2,Yangian deformations,15,1986,0.007553
-math,2021,3,Multiplier ideals,13,1986,0.006546
-math,2021,4,Foliation theory,20,1986,0.01007
-math,2021,5,Clifford-algebra group theory,25,1986,0.012588
-math,2021,6,Hahn-Banach extensions,15,1986,0.007553
-math,2021,7,Quantum affine representations,20,1986,0.01007
-math,2021,8,Local cohomology monomial ideals,22,1986,0.011078
-math,2021,9,Pattern-avoiding permutations,41,1986,0.020645
-math,2021,10,Spectral amplitude relations,32,1986,0.016113
-math,2021,11,Quantum superalgebra structures,27,1986,0.013595
-math,2021,12,Geometric group theory equivalence,51,1986,0.02568
-math,2021,13,Knot move invariants,27,1986,0.013595
-math,2021,14,Fano variety bounds,19,1986,0.009567
-math,2021,15,Representability failure,27,1986,0.013595
-math,2021,16,Toric modular forms,32,1986,0.016113
-math,2021,17,Projective Galois group endomorphisms,40,1986,0.020141
-math,2021,18,Algebraic Hodge motives,15,1986,0.007553
-math,2021,19,Double plane structures,54,1986,0.02719
-math,2021,20,Random walk aging limits,19,1986,0.009567
-math,2021,21,Random packing asymptotics,27,1986,0.013595
-math,2021,22,Einstein-Kähler metrics,39,1986,0.019637
-math,2021,23,Super Lie identity theorems,17,1986,0.00856
-math,2021,24,Fibre-space Hodge cohomology vanishing,27,1986,0.013595
-math,2021,25,Lamination geodesic convergence,18,1986,0.009063
-math,2021,26,Random heap dynamics,22,1986,0.011078
-math,2021,27,Noncommutative crepant resolutions,30,1986,0.015106
-math,2021,28,Numerical PDE error analysis,39,1986,0.019637
-math,2021,29,Prime divisor asymptotics,12,1986,0.006042
-math,2021,30,Fragmentation-coalescent processes,32,1986,0.016113
-math,2021,31,Mirror symmetry i-functions,16,1986,0.008056
-math,2021,32,Siegel uniformity conjecture,29,1986,0.014602
-math,2021,33,Group embedding dimension bounds,25,1986,0.012588
-math,2021,34,Convex cone optimization,49,1986,0.024673
-math,2021,35,Galois cohomology obstructions,26,1986,0.013092
-math,2021,36,Non-symplectic group actions,28,1986,0.014099
-math,2021,37,Hodge-Frobenius manifolds,31,1986,0.015609
-math,2021,38,Signed domination complexity,42,1986,0.021148
-math,2021,39,Reduced Khovanov homology,27,1986,0.013595
-math,2021,40,Contact manifold fillings,21,1986,0.010574
-math,2021,41,Martingale measure augmentation,38,1986,0.019134
-math,2021,42,Multizeta q-values,18,1986,0.009063
-math,2021,43,Pro pp group commensurability,30,1986,0.015106
-math,2021,44,n-ary bihom algebras,22,1986,0.011078
-math,2021,45,Non-smooth proximal gradient analysis,75,1986,0.037764
-math,2021,46,Nonlocal diffusion regularity,54,1986,0.02719
-math,2021,47,Extended hypergeometric functions,29,1986,0.014602
-math,2021,48,Quadratic Gorenstein ideals,18,1986,0.009063
-math,2021,49,Moduli sheaf operator theory,38,1986,0.019134
-math,2021,50,Singular Plateau Douglas Problem,32,1986,0.016113
-math,2021,51,Exponential family mirror descent,29,1986,0.014602
-math,2021,52,Heavy-tail renewal mixing times,21,1986,0.010574
-math,2021,53,Perfect divisibility graphs,99,1986,0.049849
-math,2021,54,Operator regression acceleration,64,1986,0.032226
-math,2021,55,Hardy space fractional operators,16,1986,0.008056
-math,2021,56,Hive-spectrum large deviations,34,1986,0.01712
-math,2021,57,Decentralized consensus topologies,39,1986,0.019637
-math,2021,58,Fano threefold geometry,21,1986,0.010574
-math,2021,59,Fractional Maximal Operators,49,1986,0.024673
-math,2021,60,Complete intersection foliations,31,1986,0.015609
-math,2021,61,Physics-informed synthetic data generation,43,1986,0.021652
-math,2021,62,Operadic Kan extensions,45,1986,0.022659
-math,2022,0,Mirror symmetry cohomology,39,2036,0.019155
-math,2022,1,Polynomial norm bounds,35,2036,0.017191
-math,2022,2,Yangian deformations,28,2036,0.013752
-math,2022,3,Multiplier ideals,25,2036,0.012279
-math,2022,4,Foliation theory,29,2036,0.014244
-math,2022,5,Clifford-algebra group theory,34,2036,0.016699
-math,2022,6,Hahn-Banach extensions,24,2036,0.011788
-math,2022,7,Quantum affine representations,23,2036,0.011297
-math,2022,8,Local cohomology monomial ideals,24,2036,0.011788
-math,2022,9,Pattern-avoiding permutations,56,2036,0.027505
-math,2022,10,Spectral amplitude relations,24,2036,0.011788
-math,2022,11,Quantum superalgebra structures,25,2036,0.012279
-math,2022,12,Geometric group theory equivalence,36,2036,0.017682
-math,2022,13,Knot move invariants,21,2036,0.010314
-math,2022,14,Fano variety bounds,24,2036,0.011788
-math,2022,15,Representability failure,10,2036,0.004912
-math,2022,16,Toric modular forms,38,2036,0.018664
-math,2022,17,Projective Galois group endomorphisms,35,2036,0.017191
-math,2022,18,Algebraic Hodge motives,13,2036,0.006385
-math,2022,19,Double plane structures,58,2036,0.028487
-math,2022,20,Random walk aging limits,14,2036,0.006876
-math,2022,21,Random packing asymptotics,33,2036,0.016208
-math,2022,22,Einstein-Kähler metrics,30,2036,0.014735
-math,2022,23,Super Lie identity theorems,18,2036,0.008841
-math,2022,24,Fibre-space Hodge cohomology vanishing,38,2036,0.018664
-math,2022,25,Lamination geodesic convergence,14,2036,0.006876
-math,2022,26,Random heap dynamics,21,2036,0.010314
-math,2022,27,Noncommutative crepant resolutions,30,2036,0.014735
-math,2022,28,Numerical PDE error analysis,46,2036,0.022593
-math,2022,29,Prime divisor asymptotics,19,2036,0.009332
-math,2022,30,Fragmentation-coalescent processes,18,2036,0.008841
-math,2022,31,Mirror symmetry i-functions,18,2036,0.008841
-math,2022,32,Siegel uniformity conjecture,32,2036,0.015717
-math,2022,33,Group embedding dimension bounds,20,2036,0.009823
-math,2022,34,Convex cone optimization,45,2036,0.022102
-math,2022,35,Galois cohomology obstructions,21,2036,0.010314
-math,2022,36,Non-symplectic group actions,39,2036,0.019155
-math,2022,37,Hodge-Frobenius manifolds,22,2036,0.010806
-math,2022,38,Signed domination complexity,27,2036,0.013261
-math,2022,39,Reduced Khovanov homology,19,2036,0.009332
-math,2022,40,Contact manifold fillings,24,2036,0.011788
-math,2022,41,Martingale measure augmentation,34,2036,0.016699
-math,2022,42,Multizeta q-values,23,2036,0.011297
-math,2022,43,Pro pp group commensurability,44,2036,0.021611
-math,2022,44,n-ary bihom algebras,25,2036,0.012279
-math,2022,45,Non-smooth proximal gradient analysis,91,2036,0.044695
-math,2022,46,Nonlocal diffusion regularity,38,2036,0.018664
-math,2022,47,Extended hypergeometric functions,28,2036,0.013752
-math,2022,48,Quadratic Gorenstein ideals,19,2036,0.009332
-math,2022,49,Moduli sheaf operator theory,31,2036,0.015226
-math,2022,50,Singular Plateau Douglas Problem,28,2036,0.013752
-math,2022,51,Exponential family mirror descent,32,2036,0.015717
-math,2022,52,Heavy-tail renewal mixing times,17,2036,0.00835
-math,2022,53,Perfect divisibility graphs,111,2036,0.054519
-math,2022,54,Operator regression acceleration,68,2036,0.033399
-math,2022,55,Hardy space fractional operators,18,2036,0.008841
-math,2022,56,Hive-spectrum large deviations,47,2036,0.023084
-math,2022,57,Decentralized consensus topologies,40,2036,0.019646
-math,2022,58,Fano threefold geometry,19,2036,0.009332
-math,2022,59,Fractional Maximal Operators,38,2036,0.018664
-math,2022,60,Complete intersection foliations,33,2036,0.016208
-math,2022,61,Physics-informed synthetic data generation,63,2036,0.030943
-math,2022,62,Operadic Kan extensions,40,2036,0.019646
-math,2023,0,Mirror symmetry cohomology,38,2177,0.017455
-math,2023,1,Polynomial norm bounds,38,2177,0.017455
-math,2023,2,Yangian deformations,19,2177,0.008728
-math,2023,3,Multiplier ideals,24,2177,0.011024
-math,2023,4,Foliation theory,22,2177,0.010106
-math,2023,5,Clifford-algebra group theory,28,2177,0.012862
-math,2023,6,Hahn-Banach extensions,12,2177,0.005512
-math,2023,7,Quantum affine representations,23,2177,0.010565
-math,2023,8,Local cohomology monomial ideals,23,2177,0.010565
-math,2023,9,Pattern-avoiding permutations,48,2177,0.022049
-math,2023,10,Spectral amplitude relations,23,2177,0.010565
-math,2023,11,Quantum superalgebra structures,39,2177,0.017915
-math,2023,12,Geometric group theory equivalence,57,2177,0.026183
-math,2023,13,Knot move invariants,28,2177,0.012862
-math,2023,14,Fano variety bounds,22,2177,0.010106
-math,2023,15,Representability failure,24,2177,0.011024
-math,2023,16,Toric modular forms,32,2177,0.014699
-math,2023,17,Projective Galois group endomorphisms,43,2177,0.019752
-math,2023,18,Algebraic Hodge motives,19,2177,0.008728
-math,2023,19,Double plane structures,63,2177,0.028939
-math,2023,20,Random walk aging limits,17,2177,0.007809
-math,2023,21,Random packing asymptotics,24,2177,0.011024
-math,2023,22,Einstein-Kähler metrics,33,2177,0.015158
-math,2023,23,Super Lie identity theorems,24,2177,0.011024
-math,2023,24,Fibre-space Hodge cohomology vanishing,16,2177,0.00735
-math,2023,25,Lamination geodesic convergence,21,2177,0.009646
-math,2023,26,Random heap dynamics,23,2177,0.010565
-math,2023,27,Noncommutative crepant resolutions,48,2177,0.022049
-math,2023,28,Numerical PDE error analysis,41,2177,0.018833
-math,2023,29,Prime divisor asymptotics,30,2177,0.01378
-math,2023,30,Fragmentation-coalescent processes,18,2177,0.008268
-math,2023,31,Mirror symmetry i-functions,15,2177,0.00689
-math,2023,32,Siegel uniformity conjecture,30,2177,0.01378
-math,2023,33,Group embedding dimension bounds,18,2177,0.008268
-math,2023,34,Convex cone optimization,56,2177,0.025723
-math,2023,35,Galois cohomology obstructions,31,2177,0.01424
-math,2023,36,Non-symplectic group actions,31,2177,0.01424
-math,2023,37,Hodge-Frobenius manifolds,39,2177,0.017915
-math,2023,38,Signed domination complexity,54,2177,0.024805
-math,2023,39,Reduced Khovanov homology,11,2177,0.005053
-math,2023,40,Contact manifold fillings,21,2177,0.009646
-math,2023,41,Martingale measure augmentation,26,2177,0.011943
-math,2023,42,Multizeta q-values,22,2177,0.010106
-math,2023,43,Pro pp group commensurability,36,2177,0.016537
-math,2023,44,n-ary bihom algebras,16,2177,0.00735
-math,2023,45,Non-smooth proximal gradient analysis,95,2177,0.043638
-math,2023,46,Nonlocal diffusion regularity,50,2177,0.022967
-math,2023,47,Extended hypergeometric functions,20,2177,0.009187
-math,2023,48,Quadratic Gorenstein ideals,17,2177,0.007809
-math,2023,49,Moduli sheaf operator theory,37,2177,0.016996
-math,2023,50,Singular Plateau Douglas Problem,36,2177,0.016537
-math,2023,51,Exponential family mirror descent,37,2177,0.016996
-math,2023,52,Heavy-tail renewal mixing times,15,2177,0.00689
-math,2023,53,Perfect divisibility graphs,116,2177,0.053284
-math,2023,54,Operator regression acceleration,64,2177,0.029398
-math,2023,55,Hardy space fractional operators,25,2177,0.011484
-math,2023,56,Hive-spectrum large deviations,39,2177,0.017915
-math,2023,57,Decentralized consensus topologies,37,2177,0.016996
-math,2023,58,Fano threefold geometry,25,2177,0.011484
-math,2023,59,Fractional Maximal Operators,39,2177,0.017915
-math,2023,60,Complete intersection foliations,46,2177,0.02113
-math,2023,61,Physics-informed synthetic data generation,93,2177,0.042719
-math,2023,62,Operadic Kan extensions,60,2177,0.027561
-math,2024,0,Mirror symmetry cohomology,46,2649,0.017365
-math,2024,1,Polynomial norm bounds,54,2649,0.020385
-math,2024,2,Yangian deformations,27,2649,0.010193
-math,2024,3,Multiplier ideals,31,2649,0.011703
-math,2024,4,Foliation theory,38,2649,0.014345
-math,2024,5,Clifford-algebra group theory,36,2649,0.01359
-math,2024,6,Hahn-Banach extensions,25,2649,0.009438
-math,2024,7,Quantum affine representations,32,2649,0.01208
-math,2024,8,Local cohomology monomial ideals,30,2649,0.011325
-math,2024,9,Pattern-avoiding permutations,57,2649,0.021518
-math,2024,10,Spectral amplitude relations,27,2649,0.010193
-math,2024,11,Quantum superalgebra structures,22,2649,0.008305
-math,2024,12,Geometric group theory equivalence,62,2649,0.023405
-math,2024,13,Knot move invariants,37,2649,0.013968
-math,2024,14,Fano variety bounds,29,2649,0.010948
-math,2024,15,Representability failure,26,2649,0.009815
-math,2024,16,Toric modular forms,32,2649,0.01208
-math,2024,17,Projective Galois group endomorphisms,60,2649,0.02265
-math,2024,18,Algebraic Hodge motives,19,2649,0.007173
-math,2024,19,Double plane structures,75,2649,0.028313
-math,2024,20,Random walk aging limits,36,2649,0.01359
-math,2024,21,Random packing asymptotics,30,2649,0.011325
-math,2024,22,Einstein-Kähler metrics,45,2649,0.016988
-math,2024,23,Super Lie identity theorems,29,2649,0.010948
-math,2024,24,Fibre-space Hodge cohomology vanishing,40,2649,0.0151
-math,2024,25,Lamination geodesic convergence,25,2649,0.009438
-math,2024,26,Random heap dynamics,28,2649,0.01057
-math,2024,27,Noncommutative crepant resolutions,36,2649,0.01359
-math,2024,28,Numerical PDE error analysis,63,2649,0.023783
-math,2024,29,Prime divisor asymptotics,42,2649,0.015855
-math,2024,30,Fragmentation-coalescent processes,20,2649,0.00755
-math,2024,31,Mirror symmetry i-functions,29,2649,0.010948
-math,2024,32,Siegel uniformity conjecture,40,2649,0.0151
-math,2024,33,Group embedding dimension bounds,25,2649,0.009438
-math,2024,34,Convex cone optimization,52,2649,0.01963
-math,2024,35,Galois cohomology obstructions,29,2649,0.010948
-math,2024,36,Non-symplectic group actions,38,2649,0.014345
-math,2024,37,Hodge-Frobenius manifolds,26,2649,0.009815
-math,2024,38,Signed domination complexity,64,2649,0.02416
-math,2024,39,Reduced Khovanov homology,27,2649,0.010193
-math,2024,40,Contact manifold fillings,27,2649,0.010193
-math,2024,41,Martingale measure augmentation,33,2649,0.012458
-math,2024,42,Multizeta q-values,21,2649,0.007928
-math,2024,43,Pro pp group commensurability,39,2649,0.014723
-math,2024,44,n-ary bihom algebras,19,2649,0.007173
-math,2024,45,Non-smooth proximal gradient analysis,98,2649,0.036995
-math,2024,46,Nonlocal diffusion regularity,50,2649,0.018875
-math,2024,47,Extended hypergeometric functions,35,2649,0.013213
-math,2024,48,Quadratic Gorenstein ideals,29,2649,0.010948
-math,2024,49,Moduli sheaf operator theory,28,2649,0.01057
-math,2024,50,Singular Plateau Douglas Problem,36,2649,0.01359
-math,2024,51,Exponential family mirror descent,59,2649,0.022273
-math,2024,52,Heavy-tail renewal mixing times,29,2649,0.010948
-math,2024,53,Perfect divisibility graphs,126,2649,0.047565
-math,2024,54,Operator regression acceleration,72,2649,0.02718
-math,2024,55,Hardy space fractional operators,23,2649,0.008683
-math,2024,56,Hive-spectrum large deviations,54,2649,0.020385
-math,2024,57,Decentralized consensus topologies,37,2649,0.013968
-math,2024,58,Fano threefold geometry,34,2649,0.012835
-math,2024,59,Fractional Maximal Operators,58,2649,0.021895
-math,2024,60,Complete intersection foliations,40,2649,0.0151
-math,2024,61,Physics-informed synthetic data generation,139,2649,0.052473
-math,2024,62,Operadic Kan extensions,74,2649,0.027935
-math,2025,0,Mirror symmetry cohomology,57,3473,0.016412
-math,2025,1,Polynomial norm bounds,86,3473,0.024762
-math,2025,2,Yangian deformations,35,3473,0.010078
-math,2025,3,Multiplier ideals,43,3473,0.012381
-math,2025,4,Foliation theory,38,3473,0.010942
-math,2025,5,Clifford-algebra group theory,57,3473,0.016412
-math,2025,6,Hahn-Banach extensions,25,3473,0.007198
-math,2025,7,Quantum affine representations,37,3473,0.010654
-math,2025,8,Local cohomology monomial ideals,34,3473,0.00979
-math,2025,9,Pattern-avoiding permutations,78,3473,0.022459
-math,2025,10,Spectral amplitude relations,44,3473,0.012669
-math,2025,11,Quantum superalgebra structures,41,3473,0.011805
-math,2025,12,Geometric group theory equivalence,84,3473,0.024187
-math,2025,13,Knot move invariants,39,3473,0.011229
-math,2025,14,Fano variety bounds,33,3473,0.009502
-math,2025,15,Representability failure,48,3473,0.013821
-math,2025,16,Toric modular forms,52,3473,0.014973
-math,2025,17,Projective Galois group endomorphisms,67,3473,0.019292
-math,2025,18,Algebraic Hodge motives,43,3473,0.012381
-math,2025,19,Double plane structures,87,3473,0.02505
-math,2025,20,Random walk aging limits,45,3473,0.012957
-math,2025,21,Random packing asymptotics,26,3473,0.007486
-math,2025,22,Einstein-Kähler metrics,55,3473,0.015836
-math,2025,23,Super Lie identity theorems,35,3473,0.010078
-math,2025,24,Fibre-space Hodge cohomology vanishing,65,3473,0.018716
-math,2025,25,Lamination geodesic convergence,26,3473,0.007486
-math,2025,26,Random heap dynamics,36,3473,0.010366
-math,2025,27,Noncommutative crepant resolutions,60,3473,0.017276
-math,2025,28,Numerical PDE error analysis,85,3473,0.024475
-math,2025,29,Prime divisor asymptotics,35,3473,0.010078
-math,2025,30,Fragmentation-coalescent processes,34,3473,0.00979
-math,2025,31,Mirror symmetry i-functions,33,3473,0.009502
-math,2025,32,Siegel uniformity conjecture,59,3473,0.016988
-math,2025,33,Group embedding dimension bounds,40,3473,0.011517
-math,2025,34,Convex cone optimization,98,3473,0.028218
-math,2025,35,Galois cohomology obstructions,31,3473,0.008926
-math,2025,36,Non-symplectic group actions,47,3473,0.013533
-math,2025,37,Hodge-Frobenius manifolds,51,3473,0.014685
-math,2025,38,Signed domination complexity,95,3473,0.027354
-math,2025,39,Reduced Khovanov homology,48,3473,0.013821
-math,2025,40,Contact manifold fillings,38,3473,0.010942
-math,2025,41,Martingale measure augmentation,26,3473,0.007486
-math,2025,42,Multizeta q-values,18,3473,0.005183
-math,2025,43,Pro pp group commensurability,55,3473,0.015836
-math,2025,44,n-ary bihom algebras,24,3473,0.00691
-math,2025,45,Non-smooth proximal gradient analysis,138,3473,0.039735
-math,2025,46,Nonlocal diffusion regularity,75,3473,0.021595
-math,2025,47,Extended hypergeometric functions,37,3473,0.010654
-math,2025,48,Quadratic Gorenstein ideals,42,3473,0.012093
-math,2025,49,Moduli sheaf operator theory,44,3473,0.012669
-math,2025,50,Singular Plateau Douglas Problem,33,3473,0.009502
-math,2025,51,Exponential family mirror descent,74,3473,0.021307
-math,2025,52,Heavy-tail renewal mixing times,24,3473,0.00691
-math,2025,53,Perfect divisibility graphs,173,3473,0.049813
-math,2025,54,Operator regression acceleration,127,3473,0.036568
-math,2025,55,Hardy space fractional operators,36,3473,0.010366
-math,2025,56,Hive-spectrum large deviations,61,3473,0.017564
-math,2025,57,Decentralized consensus topologies,49,3473,0.014109
-math,2025,58,Fano threefold geometry,43,3473,0.012381
-math,2025,59,Fractional Maximal Operators,53,3473,0.015261
-math,2025,60,Complete intersection foliations,65,3473,0.018716
-math,2025,61,Physics-informed synthetic data generation,128,3473,0.036856
-math,2025,62,Operadic Kan extensions,78,3473,0.022459
+math,2008,0,Mirror symmetry cohomology,22,642,0.034268
+math,2008,1,Polynomial norm bounds,9,642,0.014019
+math,2008,2,Yangian deformations,4,642,0.006231
+math,2008,3,Multiplier ideals,12,642,0.018692
+math,2008,4,Foliation theory,10,642,0.015576
+math,2008,5,Clifford-algebra group theory,17,642,0.02648
+math,2008,6,Hahn-Banach extensions,8,642,0.012461
+math,2008,7,Quantum affine representations,12,642,0.018692
+math,2008,8,Local cohomology monomial ideals,11,642,0.017134
+math,2008,9,Pattern-avoiding permutations,13,642,0.020249
+math,2008,10,Spectral amplitude relations,13,642,0.020249
+math,2008,11,Quantum superalgebra structures,8,642,0.012461
+math,2008,12,Geometric group theory equivalence,22,642,0.034268
+math,2008,13,Knot move invariants,18,642,0.028037
+math,2008,14,Fano variety bounds,5,642,0.007788
+math,2008,15,Representability failure,6,642,0.009346
+math,2008,16,Mirror symmetry invariants,7,642,0.010903
+math,2008,17,Toric modular forms,9,642,0.014019
+math,2008,18,Projective Galois group endomorphisms,25,642,0.038941
+math,2008,19,Double plane structures,21,642,0.03271
+math,2008,20,Random walk aging limits,5,642,0.007788
+math,2008,21,Random packing asymptotics,9,642,0.014019
+math,2008,22,Einstein-Kähler metrics,24,642,0.037383
+math,2008,23,Super Lie identity theorems,11,642,0.017134
+math,2008,24,Fibre-space Hodge cohomology vanishing,15,642,0.023364
+math,2008,25,Lamination geodesic convergence,8,642,0.012461
+math,2008,26,Random heap dynamics,10,642,0.015576
+math,2008,27,Noncommutative crepant resolutions,16,642,0.024922
+math,2008,28,Numerical PDE error analysis,1,642,0.001558
+math,2008,29,Prime divisor asymptotics,9,642,0.014019
+math,2008,30,Fragmentation-coalescent processes,9,642,0.014019
+math,2008,31,Mirror symmetry i-functions,8,642,0.012461
+math,2008,32,Siegel uniformity conjecture,9,642,0.014019
+math,2008,33,Group embedding dimension bounds,10,642,0.015576
+math,2008,34,Convex cone optimization,3,642,0.004673
+math,2008,35,Galois cohomology obstructions,8,642,0.012461
+math,2008,36,Non-symplectic group actions,27,642,0.042056
+math,2008,37,Hodge-Frobenius manifolds,13,642,0.020249
+math,2008,38,Signed domination complexity,6,642,0.009346
+math,2008,39,Reduced Khovanov homology,7,642,0.010903
+math,2008,40,Contact manifold fillings,3,642,0.004673
+math,2008,41,Martingale measure augmentation,14,642,0.021807
+math,2008,42,Multizeta q-values,10,642,0.015576
+math,2008,43,Pro pp group commensurability,9,642,0.014019
+math,2008,44,n-ary bihom algebras,6,642,0.009346
+math,2008,45,Non-smooth proximal gradient analysis,1,642,0.001558
+math,2008,46,Nonlocal diffusion regularity,4,642,0.006231
+math,2008,47,Extended hypergeometric functions,13,642,0.020249
+math,2008,48,Quadratic Gorenstein ideals,12,642,0.018692
+math,2008,49,Moduli sheaf operator theory,15,642,0.023364
+math,2008,50,Singular Plateau Douglas Problem,8,642,0.012461
+math,2008,51,Exponential family mirror descent,3,642,0.004673
+math,2008,52,Heavy-tail renewal mixing times,4,642,0.006231
+math,2008,53,Perfect divisibility graphs,12,642,0.018692
+math,2008,54,Operator regression acceleration,0,642,0.0
+math,2008,55,Hardy space fractional operators,6,642,0.009346
+math,2008,56,Hive-spectrum large deviations,12,642,0.018692
+math,2008,57,Decentralized consensus topologies,4,642,0.006231
+math,2008,58,Fano threefold geometry,11,642,0.017134
+math,2008,59,Fractional Maximal Operators,5,642,0.007788
+math,2008,60,Complete intersection foliations,22,642,0.034268
+math,2008,61,Physics-informed synthetic data generation,0,642,0.0
+math,2008,62,Operadic Kan extensions,8,642,0.012461
+math,2009,0,Mirror symmetry cohomology,17,689,0.024673
+math,2009,1,Polynomial norm bounds,6,689,0.008708
+math,2009,2,Yangian deformations,7,689,0.01016
+math,2009,3,Multiplier ideals,11,689,0.015965
+math,2009,4,Foliation theory,14,689,0.020319
+math,2009,5,Clifford-algebra group theory,13,689,0.018868
+math,2009,6,Hahn-Banach extensions,11,689,0.015965
+math,2009,7,Quantum affine representations,23,689,0.033382
+math,2009,8,Local cohomology monomial ideals,15,689,0.021771
+math,2009,9,Pattern-avoiding permutations,13,689,0.018868
+math,2009,10,Spectral amplitude relations,16,689,0.023222
+math,2009,11,Quantum superalgebra structures,9,689,0.013062
+math,2009,12,Geometric group theory equivalence,27,689,0.039187
+math,2009,13,Knot move invariants,20,689,0.029028
+math,2009,14,Fano variety bounds,9,689,0.013062
+math,2009,15,Representability failure,10,689,0.014514
+math,2009,16,Mirror symmetry invariants,10,689,0.014514
+math,2009,17,Toric modular forms,10,689,0.014514
+math,2009,18,Projective Galois group endomorphisms,14,689,0.020319
+math,2009,19,Double plane structures,29,689,0.04209
+math,2009,20,Random walk aging limits,3,689,0.004354
+math,2009,21,Random packing asymptotics,8,689,0.011611
+math,2009,22,Einstein-Kähler metrics,24,689,0.034833
+math,2009,23,Super Lie identity theorems,9,689,0.013062
+math,2009,24,Fibre-space Hodge cohomology vanishing,16,689,0.023222
+math,2009,25,Lamination geodesic convergence,8,689,0.011611
+math,2009,26,Random heap dynamics,7,689,0.01016
+math,2009,27,Noncommutative crepant resolutions,12,689,0.017417
+math,2009,28,Numerical PDE error analysis,2,689,0.002903
+math,2009,29,Prime divisor asymptotics,4,689,0.005806
+math,2009,30,Fragmentation-coalescent processes,9,689,0.013062
+math,2009,31,Mirror symmetry i-functions,7,689,0.01016
+math,2009,32,Siegel uniformity conjecture,16,689,0.023222
+math,2009,33,Group embedding dimension bounds,3,689,0.004354
+math,2009,34,Convex cone optimization,2,689,0.002903
+math,2009,35,Galois cohomology obstructions,10,689,0.014514
+math,2009,36,Non-symplectic group actions,20,689,0.029028
+math,2009,37,Hodge-Frobenius manifolds,15,689,0.021771
+math,2009,38,Signed domination complexity,6,689,0.008708
+math,2009,39,Reduced Khovanov homology,14,689,0.020319
+math,2009,40,Contact manifold fillings,13,689,0.018868
+math,2009,41,Martingale measure augmentation,9,689,0.013062
+math,2009,42,Multizeta q-values,12,689,0.017417
+math,2009,43,Pro pp group commensurability,18,689,0.026125
+math,2009,44,n-ary bihom algebras,9,689,0.013062
+math,2009,45,Non-smooth proximal gradient analysis,0,689,0.0
+math,2009,46,Nonlocal diffusion regularity,6,689,0.008708
+math,2009,47,Extended hypergeometric functions,11,689,0.015965
+math,2009,48,Quadratic Gorenstein ideals,9,689,0.013062
+math,2009,49,Moduli sheaf operator theory,19,689,0.027576
+math,2009,50,Singular Plateau Douglas Problem,17,689,0.024673
+math,2009,51,Exponential family mirror descent,2,689,0.002903
+math,2009,52,Heavy-tail renewal mixing times,5,689,0.007257
+math,2009,53,Perfect divisibility graphs,16,689,0.023222
+math,2009,54,Operator regression acceleration,0,689,0.0
+math,2009,55,Hardy space fractional operators,5,689,0.007257
+math,2009,56,Hive-spectrum large deviations,12,689,0.017417
+math,2009,57,Decentralized consensus topologies,0,689,0.0
+math,2009,58,Fano threefold geometry,6,689,0.008708
+math,2009,59,Fractional Maximal Operators,14,689,0.020319
+math,2009,60,Complete intersection foliations,17,689,0.024673
+math,2009,61,Physics-informed synthetic data generation,0,689,0.0
+math,2009,62,Operadic Kan extensions,10,689,0.014514
+math,2010,0,Mirror symmetry cohomology,12,831,0.01444
+math,2010,1,Polynomial norm bounds,18,831,0.021661
+math,2010,2,Yangian deformations,13,831,0.015644
+math,2010,3,Multiplier ideals,15,831,0.018051
+math,2010,4,Foliation theory,11,831,0.013237
+math,2010,5,Clifford-algebra group theory,17,831,0.020457
+math,2010,6,Hahn-Banach extensions,15,831,0.018051
+math,2010,7,Quantum affine representations,20,831,0.024067
+math,2010,8,Local cohomology monomial ideals,14,831,0.016847
+math,2010,9,Pattern-avoiding permutations,14,831,0.016847
+math,2010,10,Spectral amplitude relations,15,831,0.018051
+math,2010,11,Quantum superalgebra structures,8,831,0.009627
+math,2010,12,Geometric group theory equivalence,30,831,0.036101
+math,2010,13,Knot move invariants,13,831,0.015644
+math,2010,14,Fano variety bounds,8,831,0.009627
+math,2010,15,Representability failure,7,831,0.008424
+math,2010,16,Mirror symmetry invariants,7,831,0.008424
+math,2010,17,Toric modular forms,13,831,0.015644
+math,2010,18,Projective Galois group endomorphisms,28,831,0.033694
+math,2010,19,Double plane structures,31,831,0.037304
+math,2010,20,Random walk aging limits,13,831,0.015644
+math,2010,21,Random packing asymptotics,14,831,0.016847
+math,2010,22,Einstein-Kähler metrics,20,831,0.024067
+math,2010,23,Super Lie identity theorems,19,831,0.022864
+math,2010,24,Fibre-space Hodge cohomology vanishing,26,831,0.031288
+math,2010,25,Lamination geodesic convergence,13,831,0.015644
+math,2010,26,Random heap dynamics,16,831,0.019254
+math,2010,27,Noncommutative crepant resolutions,17,831,0.020457
+math,2010,28,Numerical PDE error analysis,4,831,0.004813
+math,2010,29,Prime divisor asymptotics,6,831,0.00722
+math,2010,30,Fragmentation-coalescent processes,7,831,0.008424
+math,2010,31,Mirror symmetry i-functions,7,831,0.008424
+math,2010,32,Siegel uniformity conjecture,14,831,0.016847
+math,2010,33,Group embedding dimension bounds,9,831,0.01083
+math,2010,34,Convex cone optimization,3,831,0.00361
+math,2010,35,Galois cohomology obstructions,13,831,0.015644
+math,2010,36,Non-symplectic group actions,22,831,0.026474
+math,2010,37,Hodge-Frobenius manifolds,20,831,0.024067
+math,2010,38,Signed domination complexity,3,831,0.00361
+math,2010,39,Reduced Khovanov homology,12,831,0.01444
+math,2010,40,Contact manifold fillings,14,831,0.016847
+math,2010,41,Martingale measure augmentation,17,831,0.020457
+math,2010,42,Multizeta q-values,10,831,0.012034
+math,2010,43,Pro pp group commensurability,9,831,0.01083
+math,2010,44,n-ary bihom algebras,9,831,0.01083
+math,2010,45,Non-smooth proximal gradient analysis,1,831,0.001203
+math,2010,46,Nonlocal diffusion regularity,3,831,0.00361
+math,2010,47,Extended hypergeometric functions,13,831,0.015644
+math,2010,48,Quadratic Gorenstein ideals,20,831,0.024067
+math,2010,49,Moduli sheaf operator theory,11,831,0.013237
+math,2010,50,Singular Plateau Douglas Problem,13,831,0.015644
+math,2010,51,Exponential family mirror descent,3,831,0.00361
+math,2010,52,Heavy-tail renewal mixing times,8,831,0.009627
+math,2010,53,Perfect divisibility graphs,22,831,0.026474
+math,2010,54,Operator regression acceleration,0,831,0.0
+math,2010,55,Hardy space fractional operators,4,831,0.004813
+math,2010,56,Hive-spectrum large deviations,24,831,0.028881
+math,2010,57,Decentralized consensus topologies,4,831,0.004813
+math,2010,58,Fano threefold geometry,10,831,0.012034
+math,2010,59,Fractional Maximal Operators,18,831,0.021661
+math,2010,60,Complete intersection foliations,32,831,0.038508
+math,2010,61,Physics-informed synthetic data generation,0,831,0.0
+math,2010,62,Operadic Kan extensions,19,831,0.022864
+math,2011,0,Mirror symmetry cohomology,12,908,0.013216
+math,2011,1,Polynomial norm bounds,28,908,0.030837
+math,2011,2,Yangian deformations,8,908,0.008811
+math,2011,3,Multiplier ideals,18,908,0.019824
+math,2011,4,Foliation theory,12,908,0.013216
+math,2011,5,Clifford-algebra group theory,23,908,0.02533
+math,2011,6,Hahn-Banach extensions,13,908,0.014317
+math,2011,7,Quantum affine representations,11,908,0.012115
+math,2011,8,Local cohomology monomial ideals,9,908,0.009912
+math,2011,9,Pattern-avoiding permutations,14,908,0.015419
+math,2011,10,Spectral amplitude relations,15,908,0.01652
+math,2011,11,Quantum superalgebra structures,17,908,0.018722
+math,2011,12,Geometric group theory equivalence,31,908,0.034141
+math,2011,13,Knot move invariants,18,908,0.019824
+math,2011,14,Fano variety bounds,9,908,0.009912
+math,2011,15,Representability failure,9,908,0.009912
+math,2011,16,Mirror symmetry invariants,7,908,0.007709
+math,2011,17,Toric modular forms,13,908,0.014317
+math,2011,18,Projective Galois group endomorphisms,24,908,0.026432
+math,2011,19,Double plane structures,30,908,0.03304
+math,2011,20,Random walk aging limits,6,908,0.006608
+math,2011,21,Random packing asymptotics,15,908,0.01652
+math,2011,22,Einstein-Kähler metrics,23,908,0.02533
+math,2011,23,Super Lie identity theorems,9,908,0.009912
+math,2011,24,Fibre-space Hodge cohomology vanishing,24,908,0.026432
+math,2011,25,Lamination geodesic convergence,10,908,0.011013
+math,2011,26,Random heap dynamics,7,908,0.007709
+math,2011,27,Noncommutative crepant resolutions,21,908,0.023128
+math,2011,28,Numerical PDE error analysis,6,908,0.006608
+math,2011,29,Prime divisor asymptotics,11,908,0.012115
+math,2011,30,Fragmentation-coalescent processes,10,908,0.011013
+math,2011,31,Mirror symmetry i-functions,10,908,0.011013
+math,2011,32,Siegel uniformity conjecture,16,908,0.017621
+math,2011,33,Group embedding dimension bounds,8,908,0.008811
+math,2011,34,Convex cone optimization,8,908,0.008811
+math,2011,35,Galois cohomology obstructions,17,908,0.018722
+math,2011,36,Non-symplectic group actions,25,908,0.027533
+math,2011,37,Hodge-Frobenius manifolds,13,908,0.014317
+math,2011,38,Signed domination complexity,19,908,0.020925
+math,2011,39,Reduced Khovanov homology,19,908,0.020925
+math,2011,40,Contact manifold fillings,10,908,0.011013
+math,2011,41,Martingale measure augmentation,15,908,0.01652
+math,2011,42,Multizeta q-values,13,908,0.014317
+math,2011,43,Pro pp group commensurability,31,908,0.034141
+math,2011,44,n-ary bihom algebras,3,908,0.003304
+math,2011,45,Non-smooth proximal gradient analysis,1,908,0.001101
+math,2011,46,Nonlocal diffusion regularity,18,908,0.019824
+math,2011,47,Extended hypergeometric functions,17,908,0.018722
+math,2011,48,Quadratic Gorenstein ideals,19,908,0.020925
+math,2011,49,Moduli sheaf operator theory,17,908,0.018722
+math,2011,50,Singular Plateau Douglas Problem,13,908,0.014317
+math,2011,51,Exponential family mirror descent,3,908,0.003304
+math,2011,52,Heavy-tail renewal mixing times,7,908,0.007709
+math,2011,53,Perfect divisibility graphs,22,908,0.024229
+math,2011,54,Operator regression acceleration,2,908,0.002203
+math,2011,55,Hardy space fractional operators,14,908,0.015419
+math,2011,56,Hive-spectrum large deviations,27,908,0.029736
+math,2011,57,Decentralized consensus topologies,5,908,0.005507
+math,2011,58,Fano threefold geometry,18,908,0.019824
+math,2011,59,Fractional Maximal Operators,17,908,0.018722
+math,2011,60,Complete intersection foliations,18,908,0.019824
+math,2011,61,Physics-informed synthetic data generation,0,908,0.0
+math,2011,62,Operadic Kan extensions,20,908,0.022026
+math,2012,0,Mirror symmetry cohomology,20,1025,0.019512
+math,2012,1,Polynomial norm bounds,13,1025,0.012683
+math,2012,2,Yangian deformations,8,1025,0.007805
+math,2012,3,Multiplier ideals,11,1025,0.010732
+math,2012,4,Foliation theory,14,1025,0.013659
+math,2012,5,Clifford-algebra group theory,20,1025,0.019512
+math,2012,6,Hahn-Banach extensions,13,1025,0.012683
+math,2012,7,Quantum affine representations,9,1025,0.00878
+math,2012,8,Local cohomology monomial ideals,20,1025,0.019512
+math,2012,9,Pattern-avoiding permutations,20,1025,0.019512
+math,2012,10,Spectral amplitude relations,29,1025,0.028293
+math,2012,11,Quantum superalgebra structures,11,1025,0.010732
+math,2012,12,Geometric group theory equivalence,29,1025,0.028293
+math,2012,13,Knot move invariants,19,1025,0.018537
+math,2012,14,Fano variety bounds,8,1025,0.007805
+math,2012,15,Representability failure,14,1025,0.013659
+math,2012,16,Mirror symmetry invariants,19,1025,0.018537
+math,2012,17,Toric modular forms,21,1025,0.020488
+math,2012,18,Projective Galois group endomorphisms,18,1025,0.017561
+math,2012,19,Double plane structures,18,1025,0.017561
+math,2012,20,Random walk aging limits,5,1025,0.004878
+math,2012,21,Random packing asymptotics,26,1025,0.025366
+math,2012,22,Einstein-Kähler metrics,20,1025,0.019512
+math,2012,23,Super Lie identity theorems,17,1025,0.016585
+math,2012,24,Fibre-space Hodge cohomology vanishing,20,1025,0.019512
+math,2012,25,Lamination geodesic convergence,9,1025,0.00878
+math,2012,26,Random heap dynamics,8,1025,0.007805
+math,2012,27,Noncommutative crepant resolutions,21,1025,0.020488
+math,2012,28,Numerical PDE error analysis,13,1025,0.012683
+math,2012,29,Prime divisor asymptotics,13,1025,0.012683
+math,2012,30,Fragmentation-coalescent processes,17,1025,0.016585
+math,2012,31,Mirror symmetry i-functions,12,1025,0.011707
+math,2012,32,Siegel uniformity conjecture,20,1025,0.019512
+math,2012,33,Group embedding dimension bounds,10,1025,0.009756
+math,2012,34,Convex cone optimization,13,1025,0.012683
+math,2012,35,Galois cohomology obstructions,14,1025,0.013659
+math,2012,36,Non-symplectic group actions,20,1025,0.019512
+math,2012,37,Hodge-Frobenius manifolds,23,1025,0.022439
+math,2012,38,Signed domination complexity,19,1025,0.018537
+math,2012,39,Reduced Khovanov homology,22,1025,0.021463
+math,2012,40,Contact manifold fillings,16,1025,0.01561
+math,2012,41,Martingale measure augmentation,37,1025,0.036098
+math,2012,42,Multizeta q-values,13,1025,0.012683
+math,2012,43,Pro pp group commensurability,20,1025,0.019512
+math,2012,44,n-ary bihom algebras,12,1025,0.011707
+math,2012,45,Non-smooth proximal gradient analysis,4,1025,0.003902
+math,2012,46,Nonlocal diffusion regularity,18,1025,0.017561
+math,2012,47,Extended hypergeometric functions,13,1025,0.012683
+math,2012,48,Quadratic Gorenstein ideals,10,1025,0.009756
+math,2012,49,Moduli sheaf operator theory,23,1025,0.022439
+math,2012,50,Singular Plateau Douglas Problem,19,1025,0.018537
+math,2012,51,Exponential family mirror descent,3,1025,0.002927
+math,2012,52,Heavy-tail renewal mixing times,13,1025,0.012683
+math,2012,53,Perfect divisibility graphs,30,1025,0.029268
+math,2012,54,Operator regression acceleration,7,1025,0.006829
+math,2012,55,Hardy space fractional operators,13,1025,0.012683
+math,2012,56,Hive-spectrum large deviations,32,1025,0.03122
+math,2012,57,Decentralized consensus topologies,6,1025,0.005854
+math,2012,58,Fano threefold geometry,10,1025,0.009756
+math,2012,59,Fractional Maximal Operators,24,1025,0.023415
+math,2012,60,Complete intersection foliations,29,1025,0.028293
+math,2012,61,Physics-informed synthetic data generation,0,1025,0.0
+math,2012,62,Operadic Kan extensions,17,1025,0.016585
+math,2013,0,Mirror symmetry cohomology,20,1193,0.016764
+math,2013,1,Polynomial norm bounds,17,1193,0.01425
+math,2013,2,Yangian deformations,8,1193,0.006706
+math,2013,3,Multiplier ideals,20,1193,0.016764
+math,2013,4,Foliation theory,22,1193,0.018441
+math,2013,5,Clifford-algebra group theory,16,1193,0.013412
+math,2013,6,Hahn-Banach extensions,30,1193,0.025147
+math,2013,7,Quantum affine representations,11,1193,0.00922
+math,2013,8,Local cohomology monomial ideals,24,1193,0.020117
+math,2013,9,Pattern-avoiding permutations,23,1193,0.019279
+math,2013,10,Spectral amplitude relations,20,1193,0.016764
+math,2013,11,Quantum superalgebra structures,11,1193,0.00922
+math,2013,12,Geometric group theory equivalence,40,1193,0.033529
+math,2013,13,Knot move invariants,24,1193,0.020117
+math,2013,14,Fano variety bounds,5,1193,0.004191
+math,2013,15,Representability failure,8,1193,0.006706
+math,2013,16,Mirror symmetry invariants,10,1193,0.008382
+math,2013,17,Toric modular forms,24,1193,0.020117
+math,2013,18,Projective Galois group endomorphisms,30,1193,0.025147
+math,2013,19,Double plane structures,40,1193,0.033529
+math,2013,20,Random walk aging limits,9,1193,0.007544
+math,2013,21,Random packing asymptotics,21,1193,0.017603
+math,2013,22,Einstein-Kähler metrics,34,1193,0.0285
+math,2013,23,Super Lie identity theorems,17,1193,0.01425
+math,2013,24,Fibre-space Hodge cohomology vanishing,24,1193,0.020117
+math,2013,25,Lamination geodesic convergence,9,1193,0.007544
+math,2013,26,Random heap dynamics,15,1193,0.012573
+math,2013,27,Noncommutative crepant resolutions,36,1193,0.030176
+math,2013,28,Numerical PDE error analysis,11,1193,0.00922
+math,2013,29,Prime divisor asymptotics,13,1193,0.010897
+math,2013,30,Fragmentation-coalescent processes,16,1193,0.013412
+math,2013,31,Mirror symmetry i-functions,11,1193,0.00922
+math,2013,32,Siegel uniformity conjecture,23,1193,0.019279
+math,2013,33,Group embedding dimension bounds,15,1193,0.012573
+math,2013,34,Convex cone optimization,15,1193,0.012573
+math,2013,35,Galois cohomology obstructions,10,1193,0.008382
+math,2013,36,Non-symplectic group actions,26,1193,0.021794
+math,2013,37,Hodge-Frobenius manifolds,23,1193,0.019279
+math,2013,38,Signed domination complexity,29,1193,0.024308
+math,2013,39,Reduced Khovanov homology,20,1193,0.016764
+math,2013,40,Contact manifold fillings,14,1193,0.011735
+math,2013,41,Martingale measure augmentation,26,1193,0.021794
+math,2013,42,Multizeta q-values,24,1193,0.020117
+math,2013,43,Pro pp group commensurability,21,1193,0.017603
+math,2013,44,n-ary bihom algebras,14,1193,0.011735
+math,2013,45,Non-smooth proximal gradient analysis,9,1193,0.007544
+math,2013,46,Nonlocal diffusion regularity,21,1193,0.017603
+math,2013,47,Extended hypergeometric functions,16,1193,0.013412
+math,2013,48,Quadratic Gorenstein ideals,24,1193,0.020117
+math,2013,49,Moduli sheaf operator theory,15,1193,0.012573
+math,2013,50,Singular Plateau Douglas Problem,20,1193,0.016764
+math,2013,51,Exponential family mirror descent,6,1193,0.005029
+math,2013,52,Heavy-tail renewal mixing times,17,1193,0.01425
+math,2013,53,Perfect divisibility graphs,63,1193,0.052808
+math,2013,54,Operator regression acceleration,7,1193,0.005868
+math,2013,55,Hardy space fractional operators,8,1193,0.006706
+math,2013,56,Hive-spectrum large deviations,26,1193,0.021794
+math,2013,57,Decentralized consensus topologies,7,1193,0.005868
+math,2013,58,Fano threefold geometry,13,1193,0.010897
+math,2013,59,Fractional Maximal Operators,24,1193,0.020117
+math,2013,60,Complete intersection foliations,23,1193,0.019279
+math,2013,61,Physics-informed synthetic data generation,0,1193,0.0
+math,2013,62,Operadic Kan extensions,15,1193,0.012573
+math,2014,0,Mirror symmetry cohomology,23,1243,0.018504
+math,2014,1,Polynomial norm bounds,21,1243,0.016895
+math,2014,2,Yangian deformations,16,1243,0.012872
+math,2014,3,Multiplier ideals,12,1243,0.009654
+math,2014,4,Foliation theory,20,1243,0.01609
+math,2014,5,Clifford-algebra group theory,26,1243,0.020917
+math,2014,6,Hahn-Banach extensions,13,1243,0.010459
+math,2014,7,Quantum affine representations,27,1243,0.021722
+math,2014,8,Local cohomology monomial ideals,20,1243,0.01609
+math,2014,9,Pattern-avoiding permutations,36,1243,0.028962
+math,2014,10,Spectral amplitude relations,29,1243,0.023331
+math,2014,11,Quantum superalgebra structures,20,1243,0.01609
+math,2014,12,Geometric group theory equivalence,37,1243,0.029767
+math,2014,13,Knot move invariants,17,1243,0.013677
+math,2014,14,Fano variety bounds,14,1243,0.011263
+math,2014,15,Representability failure,16,1243,0.012872
+math,2014,16,Mirror symmetry invariants,16,1243,0.012872
+math,2014,17,Toric modular forms,17,1243,0.013677
+math,2014,18,Projective Galois group endomorphisms,25,1243,0.020113
+math,2014,19,Double plane structures,38,1243,0.030571
+math,2014,20,Random walk aging limits,15,1243,0.012068
+math,2014,21,Random packing asymptotics,14,1243,0.011263
+math,2014,22,Einstein-Kähler metrics,41,1243,0.032985
+math,2014,23,Super Lie identity theorems,10,1243,0.008045
+math,2014,24,Fibre-space Hodge cohomology vanishing,16,1243,0.012872
+math,2014,25,Lamination geodesic convergence,13,1243,0.010459
+math,2014,26,Random heap dynamics,23,1243,0.018504
+math,2014,27,Noncommutative crepant resolutions,23,1243,0.018504
+math,2014,28,Numerical PDE error analysis,15,1243,0.012068
+math,2014,29,Prime divisor asymptotics,18,1243,0.014481
+math,2014,30,Fragmentation-coalescent processes,8,1243,0.006436
+math,2014,31,Mirror symmetry i-functions,13,1243,0.010459
+math,2014,32,Siegel uniformity conjecture,17,1243,0.013677
+math,2014,33,Group embedding dimension bounds,16,1243,0.012872
+math,2014,34,Convex cone optimization,17,1243,0.013677
+math,2014,35,Galois cohomology obstructions,22,1243,0.017699
+math,2014,36,Non-symplectic group actions,26,1243,0.020917
+math,2014,37,Hodge-Frobenius manifolds,26,1243,0.020917
+math,2014,38,Signed domination complexity,23,1243,0.018504
+math,2014,39,Reduced Khovanov homology,19,1243,0.015286
+math,2014,40,Contact manifold fillings,15,1243,0.012068
+math,2014,41,Martingale measure augmentation,23,1243,0.018504
+math,2014,42,Multizeta q-values,6,1243,0.004827
+math,2014,43,Pro pp group commensurability,28,1243,0.022526
+math,2014,44,n-ary bihom algebras,12,1243,0.009654
+math,2014,45,Non-smooth proximal gradient analysis,14,1243,0.011263
+math,2014,46,Nonlocal diffusion regularity,17,1243,0.013677
+math,2014,47,Extended hypergeometric functions,24,1243,0.019308
+math,2014,48,Quadratic Gorenstein ideals,23,1243,0.018504
+math,2014,49,Moduli sheaf operator theory,16,1243,0.012872
+math,2014,50,Singular Plateau Douglas Problem,17,1243,0.013677
+math,2014,51,Exponential family mirror descent,7,1243,0.005632
+math,2014,52,Heavy-tail renewal mixing times,17,1243,0.013677
+math,2014,53,Perfect divisibility graphs,56,1243,0.045052
+math,2014,54,Operator regression acceleration,11,1243,0.00885
+math,2014,55,Hardy space fractional operators,12,1243,0.009654
+math,2014,56,Hive-spectrum large deviations,34,1243,0.027353
+math,2014,57,Decentralized consensus topologies,5,1243,0.004023
+math,2014,58,Fano threefold geometry,10,1243,0.008045
+math,2014,59,Fractional Maximal Operators,22,1243,0.017699
+math,2014,60,Complete intersection foliations,29,1243,0.023331
+math,2014,61,Physics-informed synthetic data generation,0,1243,0.0
+math,2014,62,Operadic Kan extensions,27,1243,0.021722
+math,2015,0,Mirror symmetry cohomology,18,1403,0.01283
+math,2015,1,Polynomial norm bounds,31,1403,0.022096
+math,2015,2,Yangian deformations,7,1403,0.004989
+math,2015,3,Multiplier ideals,21,1403,0.014968
+math,2015,4,Foliation theory,17,1403,0.012117
+math,2015,5,Clifford-algebra group theory,23,1403,0.016393
+math,2015,6,Hahn-Banach extensions,21,1403,0.014968
+math,2015,7,Quantum affine representations,14,1403,0.009979
+math,2015,8,Local cohomology monomial ideals,13,1403,0.009266
+math,2015,9,Pattern-avoiding permutations,39,1403,0.027798
+math,2015,10,Spectral amplitude relations,30,1403,0.021383
+math,2015,11,Quantum superalgebra structures,16,1403,0.011404
+math,2015,12,Geometric group theory equivalence,29,1403,0.02067
+math,2015,13,Knot move invariants,30,1403,0.021383
+math,2015,14,Fano variety bounds,13,1403,0.009266
+math,2015,15,Representability failure,11,1403,0.00784
+math,2015,16,Mirror symmetry invariants,19,1403,0.013542
+math,2015,17,Toric modular forms,21,1403,0.014968
+math,2015,18,Projective Galois group endomorphisms,35,1403,0.024947
+math,2015,19,Double plane structures,48,1403,0.034212
+math,2015,20,Random walk aging limits,13,1403,0.009266
+math,2015,21,Random packing asymptotics,22,1403,0.015681
+math,2015,22,Einstein-Kähler metrics,27,1403,0.019244
+math,2015,23,Super Lie identity theorems,14,1403,0.009979
+math,2015,24,Fibre-space Hodge cohomology vanishing,24,1403,0.017106
+math,2015,25,Lamination geodesic convergence,18,1403,0.01283
+math,2015,26,Random heap dynamics,16,1403,0.011404
+math,2015,27,Noncommutative crepant resolutions,28,1403,0.019957
+math,2015,28,Numerical PDE error analysis,27,1403,0.019244
+math,2015,29,Prime divisor asymptotics,20,1403,0.014255
+math,2015,30,Fragmentation-coalescent processes,23,1403,0.016393
+math,2015,31,Mirror symmetry i-functions,19,1403,0.013542
+math,2015,32,Siegel uniformity conjecture,26,1403,0.018532
+math,2015,33,Group embedding dimension bounds,16,1403,0.011404
+math,2015,34,Convex cone optimization,23,1403,0.016393
+math,2015,35,Galois cohomology obstructions,18,1403,0.01283
+math,2015,36,Non-symplectic group actions,43,1403,0.030649
+math,2015,37,Hodge-Frobenius manifolds,22,1403,0.015681
+math,2015,38,Signed domination complexity,28,1403,0.019957
+math,2015,39,Reduced Khovanov homology,15,1403,0.010691
+math,2015,40,Contact manifold fillings,11,1403,0.00784
+math,2015,41,Martingale measure augmentation,36,1403,0.025659
+math,2015,42,Multizeta q-values,15,1403,0.010691
+math,2015,43,Pro pp group commensurability,32,1403,0.022808
+math,2015,44,n-ary bihom algebras,17,1403,0.012117
+math,2015,45,Non-smooth proximal gradient analysis,9,1403,0.006415
+math,2015,46,Nonlocal diffusion regularity,22,1403,0.015681
+math,2015,47,Extended hypergeometric functions,22,1403,0.015681
+math,2015,48,Quadratic Gorenstein ideals,10,1403,0.007128
+math,2015,49,Moduli sheaf operator theory,25,1403,0.017819
+math,2015,50,Singular Plateau Douglas Problem,19,1403,0.013542
+math,2015,51,Exponential family mirror descent,7,1403,0.004989
+math,2015,52,Heavy-tail renewal mixing times,17,1403,0.012117
+math,2015,53,Perfect divisibility graphs,65,1403,0.046329
+math,2015,54,Operator regression acceleration,16,1403,0.011404
+math,2015,55,Hardy space fractional operators,15,1403,0.010691
+math,2015,56,Hive-spectrum large deviations,47,1403,0.0335
+math,2015,57,Decentralized consensus topologies,11,1403,0.00784
+math,2015,58,Fano threefold geometry,22,1403,0.015681
+math,2015,59,Fractional Maximal Operators,26,1403,0.018532
+math,2015,60,Complete intersection foliations,29,1403,0.02067
+math,2015,61,Physics-informed synthetic data generation,0,1403,0.0
+math,2015,62,Operadic Kan extensions,32,1403,0.022808
+math,2016,0,Mirror symmetry cohomology,15,1462,0.01026
+math,2016,1,Polynomial norm bounds,28,1462,0.019152
+math,2016,2,Yangian deformations,20,1462,0.01368
+math,2016,3,Multiplier ideals,21,1462,0.014364
+math,2016,4,Foliation theory,12,1462,0.008208
+math,2016,5,Clifford-algebra group theory,34,1462,0.023256
+math,2016,6,Hahn-Banach extensions,19,1462,0.012996
+math,2016,7,Quantum affine representations,25,1462,0.0171
+math,2016,8,Local cohomology monomial ideals,22,1462,0.015048
+math,2016,9,Pattern-avoiding permutations,27,1462,0.018468
+math,2016,10,Spectral amplitude relations,24,1462,0.016416
+math,2016,11,Quantum superalgebra structures,13,1462,0.008892
+math,2016,12,Geometric group theory equivalence,40,1462,0.02736
+math,2016,13,Knot move invariants,21,1462,0.014364
+math,2016,14,Fano variety bounds,13,1462,0.008892
+math,2016,15,Representability failure,14,1462,0.009576
+math,2016,16,Mirror symmetry invariants,15,1462,0.01026
+math,2016,17,Toric modular forms,34,1462,0.023256
+math,2016,18,Projective Galois group endomorphisms,30,1462,0.02052
+math,2016,19,Double plane structures,51,1462,0.034884
+math,2016,20,Random walk aging limits,14,1462,0.009576
+math,2016,21,Random packing asymptotics,15,1462,0.01026
+math,2016,22,Einstein-Kähler metrics,29,1462,0.019836
+math,2016,23,Super Lie identity theorems,20,1462,0.01368
+math,2016,24,Fibre-space Hodge cohomology vanishing,31,1462,0.021204
+math,2016,25,Lamination geodesic convergence,10,1462,0.00684
+math,2016,26,Random heap dynamics,17,1462,0.011628
+math,2016,27,Noncommutative crepant resolutions,36,1462,0.024624
+math,2016,28,Numerical PDE error analysis,20,1462,0.01368
+math,2016,29,Prime divisor asymptotics,11,1462,0.007524
+math,2016,30,Fragmentation-coalescent processes,20,1462,0.01368
+math,2016,31,Mirror symmetry i-functions,13,1462,0.008892
+math,2016,32,Siegel uniformity conjecture,31,1462,0.021204
+math,2016,33,Group embedding dimension bounds,20,1462,0.01368
+math,2016,34,Convex cone optimization,25,1462,0.0171
+math,2016,35,Galois cohomology obstructions,20,1462,0.01368
+math,2016,36,Non-symplectic group actions,31,1462,0.021204
+math,2016,37,Hodge-Frobenius manifolds,18,1462,0.012312
+math,2016,38,Signed domination complexity,39,1462,0.026676
+math,2016,39,Reduced Khovanov homology,16,1462,0.010944
+math,2016,40,Contact manifold fillings,15,1462,0.01026
+math,2016,41,Martingale measure augmentation,20,1462,0.01368
+math,2016,42,Multizeta q-values,27,1462,0.018468
+math,2016,43,Pro pp group commensurability,26,1462,0.017784
+math,2016,44,n-ary bihom algebras,10,1462,0.00684
+math,2016,45,Non-smooth proximal gradient analysis,27,1462,0.018468
+math,2016,46,Nonlocal diffusion regularity,24,1462,0.016416
+math,2016,47,Extended hypergeometric functions,27,1462,0.018468
+math,2016,48,Quadratic Gorenstein ideals,21,1462,0.014364
+math,2016,49,Moduli sheaf operator theory,28,1462,0.019152
+math,2016,50,Singular Plateau Douglas Problem,31,1462,0.021204
+math,2016,51,Exponential family mirror descent,14,1462,0.009576
+math,2016,52,Heavy-tail renewal mixing times,18,1462,0.012312
+math,2016,53,Perfect divisibility graphs,80,1462,0.05472
+math,2016,54,Operator regression acceleration,11,1462,0.007524
+math,2016,55,Hardy space fractional operators,13,1462,0.008892
+math,2016,56,Hive-spectrum large deviations,26,1462,0.017784
+math,2016,57,Decentralized consensus topologies,13,1462,0.008892
+math,2016,58,Fano threefold geometry,16,1462,0.010944
+math,2016,59,Fractional Maximal Operators,34,1462,0.023256
+math,2016,60,Complete intersection foliations,43,1462,0.029412
+math,2016,61,Physics-informed synthetic data generation,0,1462,0.0
+math,2016,62,Operadic Kan extensions,24,1462,0.016416
+math,2017,0,Mirror symmetry cohomology,20,1602,0.012484
+math,2017,1,Polynomial norm bounds,22,1602,0.013733
+math,2017,2,Yangian deformations,11,1602,0.006866
+math,2017,3,Multiplier ideals,18,1602,0.011236
+math,2017,4,Foliation theory,20,1602,0.012484
+math,2017,5,Clifford-algebra group theory,18,1602,0.011236
+math,2017,6,Hahn-Banach extensions,20,1602,0.012484
+math,2017,7,Quantum affine representations,19,1602,0.01186
+math,2017,8,Local cohomology monomial ideals,25,1602,0.015605
+math,2017,9,Pattern-avoiding permutations,36,1602,0.022472
+math,2017,10,Spectral amplitude relations,39,1602,0.024345
+math,2017,11,Quantum superalgebra structures,19,1602,0.01186
+math,2017,12,Geometric group theory equivalence,36,1602,0.022472
+math,2017,13,Knot move invariants,28,1602,0.017478
+math,2017,14,Fano variety bounds,21,1602,0.013109
+math,2017,15,Representability failure,12,1602,0.007491
+math,2017,16,Mirror symmetry invariants,16,1602,0.009988
+math,2017,17,Toric modular forms,19,1602,0.01186
+math,2017,18,Projective Galois group endomorphisms,36,1602,0.022472
+math,2017,19,Double plane structures,43,1602,0.026841
+math,2017,20,Random walk aging limits,22,1602,0.013733
+math,2017,21,Random packing asymptotics,34,1602,0.021223
+math,2017,22,Einstein-Kähler metrics,33,1602,0.020599
+math,2017,23,Super Lie identity theorems,16,1602,0.009988
+math,2017,24,Fibre-space Hodge cohomology vanishing,32,1602,0.019975
+math,2017,25,Lamination geodesic convergence,26,1602,0.01623
+math,2017,26,Random heap dynamics,19,1602,0.01186
+math,2017,27,Noncommutative crepant resolutions,45,1602,0.02809
+math,2017,28,Numerical PDE error analysis,24,1602,0.014981
+math,2017,29,Prime divisor asymptotics,25,1602,0.015605
+math,2017,30,Fragmentation-coalescent processes,14,1602,0.008739
+math,2017,31,Mirror symmetry i-functions,12,1602,0.007491
+math,2017,32,Siegel uniformity conjecture,31,1602,0.019351
+math,2017,33,Group embedding dimension bounds,13,1602,0.008115
+math,2017,34,Convex cone optimization,28,1602,0.017478
+math,2017,35,Galois cohomology obstructions,13,1602,0.008115
+math,2017,36,Non-symplectic group actions,30,1602,0.018727
+math,2017,37,Hodge-Frobenius manifolds,25,1602,0.015605
+math,2017,38,Signed domination complexity,38,1602,0.02372
+math,2017,39,Reduced Khovanov homology,18,1602,0.011236
+math,2017,40,Contact manifold fillings,24,1602,0.014981
+math,2017,41,Martingale measure augmentation,28,1602,0.017478
+math,2017,42,Multizeta q-values,13,1602,0.008115
+math,2017,43,Pro pp group commensurability,40,1602,0.024969
+math,2017,44,n-ary bihom algebras,23,1602,0.014357
+math,2017,45,Non-smooth proximal gradient analysis,39,1602,0.024345
+math,2017,46,Nonlocal diffusion regularity,22,1602,0.013733
+math,2017,47,Extended hypergeometric functions,18,1602,0.011236
+math,2017,48,Quadratic Gorenstein ideals,21,1602,0.013109
+math,2017,49,Moduli sheaf operator theory,21,1602,0.013109
+math,2017,50,Singular Plateau Douglas Problem,36,1602,0.022472
+math,2017,51,Exponential family mirror descent,14,1602,0.008739
+math,2017,52,Heavy-tail renewal mixing times,24,1602,0.014981
+math,2017,53,Perfect divisibility graphs,77,1602,0.048065
+math,2017,54,Operator regression acceleration,26,1602,0.01623
+math,2017,55,Hardy space fractional operators,22,1602,0.013733
+math,2017,56,Hive-spectrum large deviations,36,1602,0.022472
+math,2017,57,Decentralized consensus topologies,18,1602,0.011236
+math,2017,58,Fano threefold geometry,19,1602,0.01186
+math,2017,59,Fractional Maximal Operators,33,1602,0.020599
+math,2017,60,Complete intersection foliations,31,1602,0.019351
+math,2017,61,Physics-informed synthetic data generation,8,1602,0.004994
+math,2017,62,Operadic Kan extensions,33,1602,0.020599
+math,2018,0,Mirror symmetry cohomology,21,1664,0.01262
+math,2018,1,Polynomial norm bounds,32,1664,0.019231
+math,2018,2,Yangian deformations,16,1664,0.009615
+math,2018,3,Multiplier ideals,19,1664,0.011418
+math,2018,4,Foliation theory,16,1664,0.009615
+math,2018,5,Clifford-algebra group theory,31,1664,0.01863
+math,2018,6,Hahn-Banach extensions,29,1664,0.017428
+math,2018,7,Quantum affine representations,18,1664,0.010817
+math,2018,8,Local cohomology monomial ideals,20,1664,0.012019
+math,2018,9,Pattern-avoiding permutations,42,1664,0.02524
+math,2018,10,Spectral amplitude relations,18,1664,0.010817
+math,2018,11,Quantum superalgebra structures,24,1664,0.014423
+math,2018,12,Geometric group theory equivalence,49,1664,0.029447
+math,2018,13,Knot move invariants,27,1664,0.016226
+math,2018,14,Fano variety bounds,22,1664,0.013221
+math,2018,15,Representability failure,12,1664,0.007212
+math,2018,16,Mirror symmetry invariants,22,1664,0.013221
+math,2018,17,Toric modular forms,32,1664,0.019231
+math,2018,18,Projective Galois group endomorphisms,46,1664,0.027644
+math,2018,19,Double plane structures,38,1664,0.022837
+math,2018,20,Random walk aging limits,20,1664,0.012019
+math,2018,21,Random packing asymptotics,19,1664,0.011418
+math,2018,22,Einstein-Kähler metrics,35,1664,0.021034
+math,2018,23,Super Lie identity theorems,16,1664,0.009615
+math,2018,24,Fibre-space Hodge cohomology vanishing,34,1664,0.020433
+math,2018,25,Lamination geodesic convergence,23,1664,0.013822
+math,2018,26,Random heap dynamics,18,1664,0.010817
+math,2018,27,Noncommutative crepant resolutions,30,1664,0.018029
+math,2018,28,Numerical PDE error analysis,33,1664,0.019832
+math,2018,29,Prime divisor asymptotics,21,1664,0.01262
+math,2018,30,Fragmentation-coalescent processes,13,1664,0.007812
+math,2018,31,Mirror symmetry i-functions,19,1664,0.011418
+math,2018,32,Siegel uniformity conjecture,22,1664,0.013221
+math,2018,33,Group embedding dimension bounds,10,1664,0.00601
+math,2018,34,Convex cone optimization,49,1664,0.029447
+math,2018,35,Galois cohomology obstructions,21,1664,0.01262
+math,2018,36,Non-symplectic group actions,29,1664,0.017428
+math,2018,37,Hodge-Frobenius manifolds,24,1664,0.014423
+math,2018,38,Signed domination complexity,51,1664,0.030649
+math,2018,39,Reduced Khovanov homology,23,1664,0.013822
+math,2018,40,Contact manifold fillings,12,1664,0.007212
+math,2018,41,Martingale measure augmentation,28,1664,0.016827
+math,2018,42,Multizeta q-values,17,1664,0.010216
+math,2018,43,Pro pp group commensurability,33,1664,0.019832
+math,2018,44,n-ary bihom algebras,14,1664,0.008413
+math,2018,45,Non-smooth proximal gradient analysis,40,1664,0.024038
+math,2018,46,Nonlocal diffusion regularity,31,1664,0.01863
+math,2018,47,Extended hypergeometric functions,32,1664,0.019231
+math,2018,48,Quadratic Gorenstein ideals,19,1664,0.011418
+math,2018,49,Moduli sheaf operator theory,20,1664,0.012019
+math,2018,50,Singular Plateau Douglas Problem,29,1664,0.017428
+math,2018,51,Exponential family mirror descent,20,1664,0.012019
+math,2018,52,Heavy-tail renewal mixing times,15,1664,0.009014
+math,2018,53,Perfect divisibility graphs,89,1664,0.053486
+math,2018,54,Operator regression acceleration,26,1664,0.015625
+math,2018,55,Hardy space fractional operators,21,1664,0.01262
+math,2018,56,Hive-spectrum large deviations,30,1664,0.018029
+math,2018,57,Decentralized consensus topologies,27,1664,0.016226
+math,2018,58,Fano threefold geometry,14,1664,0.008413
+math,2018,59,Fractional Maximal Operators,43,1664,0.025841
+math,2018,60,Complete intersection foliations,31,1664,0.01863
+math,2018,61,Physics-informed synthetic data generation,3,1664,0.001803
+math,2018,62,Operadic Kan extensions,26,1664,0.015625
+math,2019,0,Mirror symmetry cohomology,27,1784,0.015135
+math,2019,1,Polynomial norm bounds,33,1784,0.018498
+math,2019,2,Yangian deformations,17,1784,0.009529
+math,2019,3,Multiplier ideals,21,1784,0.011771
+math,2019,4,Foliation theory,15,1784,0.008408
+math,2019,5,Clifford-algebra group theory,30,1784,0.016816
+math,2019,6,Hahn-Banach extensions,25,1784,0.014013
+math,2019,7,Quantum affine representations,22,1784,0.012332
+math,2019,8,Local cohomology monomial ideals,20,1784,0.011211
+math,2019,9,Pattern-avoiding permutations,44,1784,0.024664
+math,2019,10,Spectral amplitude relations,29,1784,0.016256
+math,2019,11,Quantum superalgebra structures,20,1784,0.011211
+math,2019,12,Geometric group theory equivalence,57,1784,0.031951
+math,2019,13,Knot move invariants,19,1784,0.01065
+math,2019,14,Fano variety bounds,19,1784,0.01065
+math,2019,15,Representability failure,17,1784,0.009529
+math,2019,16,Mirror symmetry invariants,18,1784,0.01009
+math,2019,17,Toric modular forms,26,1784,0.014574
+math,2019,18,Projective Galois group endomorphisms,42,1784,0.023543
+math,2019,19,Double plane structures,42,1784,0.023543
+math,2019,20,Random walk aging limits,23,1784,0.012892
+math,2019,21,Random packing asymptotics,30,1784,0.016816
+math,2019,22,Einstein-Kähler metrics,27,1784,0.015135
+math,2019,23,Super Lie identity theorems,25,1784,0.014013
+math,2019,24,Fibre-space Hodge cohomology vanishing,31,1784,0.017377
+math,2019,25,Lamination geodesic convergence,9,1784,0.005045
+math,2019,26,Random heap dynamics,22,1784,0.012332
+math,2019,27,Noncommutative crepant resolutions,36,1784,0.020179
+math,2019,28,Numerical PDE error analysis,48,1784,0.026906
+math,2019,29,Prime divisor asymptotics,20,1784,0.011211
+math,2019,30,Fragmentation-coalescent processes,18,1784,0.01009
+math,2019,31,Mirror symmetry i-functions,16,1784,0.008969
+math,2019,32,Siegel uniformity conjecture,27,1784,0.015135
+math,2019,33,Group embedding dimension bounds,13,1784,0.007287
+math,2019,34,Convex cone optimization,45,1784,0.025224
+math,2019,35,Galois cohomology obstructions,22,1784,0.012332
+math,2019,36,Non-symplectic group actions,31,1784,0.017377
+math,2019,37,Hodge-Frobenius manifolds,25,1784,0.014013
+math,2019,38,Signed domination complexity,46,1784,0.025785
+math,2019,39,Reduced Khovanov homology,20,1784,0.011211
+math,2019,40,Contact manifold fillings,14,1784,0.007848
+math,2019,41,Martingale measure augmentation,32,1784,0.017937
+math,2019,42,Multizeta q-values,18,1784,0.01009
+math,2019,43,Pro pp group commensurability,32,1784,0.017937
+math,2019,44,n-ary bihom algebras,14,1784,0.007848
+math,2019,45,Non-smooth proximal gradient analysis,64,1784,0.035874
+math,2019,46,Nonlocal diffusion regularity,31,1784,0.017377
+math,2019,47,Extended hypergeometric functions,32,1784,0.017937
+math,2019,48,Quadratic Gorenstein ideals,28,1784,0.015695
+math,2019,49,Moduli sheaf operator theory,21,1784,0.011771
+math,2019,50,Singular Plateau Douglas Problem,31,1784,0.017377
+math,2019,51,Exponential family mirror descent,22,1784,0.012332
+math,2019,52,Heavy-tail renewal mixing times,14,1784,0.007848
+math,2019,53,Perfect divisibility graphs,76,1784,0.042601
+math,2019,54,Operator regression acceleration,56,1784,0.03139
+math,2019,55,Hardy space fractional operators,20,1784,0.011211
+math,2019,56,Hive-spectrum large deviations,33,1784,0.018498
+math,2019,57,Decentralized consensus topologies,30,1784,0.016816
+math,2019,58,Fano threefold geometry,26,1784,0.014574
+math,2019,59,Fractional Maximal Operators,34,1784,0.019058
+math,2019,60,Complete intersection foliations,34,1784,0.019058
+math,2019,61,Physics-informed synthetic data generation,12,1784,0.006726
+math,2019,62,Operadic Kan extensions,33,1784,0.018498
+math,2020,0,Mirror symmetry cohomology,31,1928,0.016079
+math,2020,1,Polynomial norm bounds,40,1928,0.020747
+math,2020,2,Yangian deformations,22,1928,0.011411
+math,2020,3,Multiplier ideals,21,1928,0.010892
+math,2020,4,Foliation theory,22,1928,0.011411
+math,2020,5,Clifford-algebra group theory,22,1928,0.011411
+math,2020,6,Hahn-Banach extensions,19,1928,0.009855
+math,2020,7,Quantum affine representations,23,1928,0.011929
+math,2020,8,Local cohomology monomial ideals,19,1928,0.009855
+math,2020,9,Pattern-avoiding permutations,43,1928,0.022303
+math,2020,10,Spectral amplitude relations,27,1928,0.014004
+math,2020,11,Quantum superalgebra structures,19,1928,0.009855
+math,2020,12,Geometric group theory equivalence,41,1928,0.021266
+math,2020,13,Knot move invariants,43,1928,0.022303
+math,2020,14,Fano variety bounds,17,1928,0.008817
+math,2020,15,Representability failure,31,1928,0.016079
+math,2020,16,Mirror symmetry invariants,19,1928,0.009855
+math,2020,17,Toric modular forms,32,1928,0.016598
+math,2020,18,Projective Galois group endomorphisms,37,1928,0.019191
+math,2020,19,Double plane structures,50,1928,0.025934
+math,2020,20,Random walk aging limits,21,1928,0.010892
+math,2020,21,Random packing asymptotics,41,1928,0.021266
+math,2020,22,Einstein-Kähler metrics,32,1928,0.016598
+math,2020,23,Super Lie identity theorems,21,1928,0.010892
+math,2020,24,Fibre-space Hodge cohomology vanishing,37,1928,0.019191
+math,2020,25,Lamination geodesic convergence,13,1928,0.006743
+math,2020,26,Random heap dynamics,20,1928,0.010373
+math,2020,27,Noncommutative crepant resolutions,22,1928,0.011411
+math,2020,28,Numerical PDE error analysis,46,1928,0.023859
+math,2020,29,Prime divisor asymptotics,17,1928,0.008817
+math,2020,30,Fragmentation-coalescent processes,21,1928,0.010892
+math,2020,31,Mirror symmetry i-functions,20,1928,0.010373
+math,2020,32,Siegel uniformity conjecture,34,1928,0.017635
+math,2020,33,Group embedding dimension bounds,14,1928,0.007261
+math,2020,34,Convex cone optimization,55,1928,0.028527
+math,2020,35,Galois cohomology obstructions,17,1928,0.008817
+math,2020,36,Non-symplectic group actions,34,1928,0.017635
+math,2020,37,Hodge-Frobenius manifolds,32,1928,0.016598
+math,2020,38,Signed domination complexity,46,1928,0.023859
+math,2020,39,Reduced Khovanov homology,13,1928,0.006743
+math,2020,40,Contact manifold fillings,22,1928,0.011411
+math,2020,41,Martingale measure augmentation,20,1928,0.010373
+math,2020,42,Multizeta q-values,25,1928,0.012967
+math,2020,43,Pro pp group commensurability,45,1928,0.02334
+math,2020,44,n-ary bihom algebras,29,1928,0.015041
+math,2020,45,Non-smooth proximal gradient analysis,71,1928,0.036826
+math,2020,46,Nonlocal diffusion regularity,40,1928,0.020747
+math,2020,47,Extended hypergeometric functions,27,1928,0.014004
+math,2020,48,Quadratic Gorenstein ideals,25,1928,0.012967
+math,2020,49,Moduli sheaf operator theory,21,1928,0.010892
+math,2020,50,Singular Plateau Douglas Problem,33,1928,0.017116
+math,2020,51,Exponential family mirror descent,38,1928,0.01971
+math,2020,52,Heavy-tail renewal mixing times,27,1928,0.014004
+math,2020,53,Perfect divisibility graphs,71,1928,0.036826
+math,2020,54,Operator regression acceleration,51,1928,0.026452
+math,2020,55,Hardy space fractional operators,19,1928,0.009855
+math,2020,56,Hive-spectrum large deviations,36,1928,0.018672
+math,2020,57,Decentralized consensus topologies,30,1928,0.01556
+math,2020,58,Fano threefold geometry,29,1928,0.015041
+math,2020,59,Fractional Maximal Operators,39,1928,0.020228
+math,2020,60,Complete intersection foliations,23,1928,0.011929
+math,2020,61,Physics-informed synthetic data generation,34,1928,0.017635
+math,2020,62,Operadic Kan extensions,39,1928,0.020228
+math,2021,0,Mirror symmetry cohomology,30,1980,0.015152
+math,2021,1,Polynomial norm bounds,38,1980,0.019192
+math,2021,2,Yangian deformations,14,1980,0.007071
+math,2021,3,Multiplier ideals,13,1980,0.006566
+math,2021,4,Foliation theory,20,1980,0.010101
+math,2021,5,Clifford-algebra group theory,25,1980,0.012626
+math,2021,6,Hahn-Banach extensions,15,1980,0.007576
+math,2021,7,Quantum affine representations,20,1980,0.010101
+math,2021,8,Local cohomology monomial ideals,23,1980,0.011616
+math,2021,9,Pattern-avoiding permutations,41,1980,0.020707
+math,2021,10,Spectral amplitude relations,32,1980,0.016162
+math,2021,11,Quantum superalgebra structures,26,1980,0.013131
+math,2021,12,Geometric group theory equivalence,51,1980,0.025758
+math,2021,13,Knot move invariants,27,1980,0.013636
+math,2021,14,Fano variety bounds,18,1980,0.009091
+math,2021,15,Representability failure,27,1980,0.013636
+math,2021,16,Mirror symmetry invariants,17,1980,0.008586
+math,2021,17,Toric modular forms,32,1980,0.016162
+math,2021,18,Projective Galois group endomorphisms,40,1980,0.020202
+math,2021,19,Double plane structures,53,1980,0.026768
+math,2021,20,Random walk aging limits,19,1980,0.009596
+math,2021,21,Random packing asymptotics,27,1980,0.013636
+math,2021,22,Einstein-Kähler metrics,39,1980,0.019697
+math,2021,23,Super Lie identity theorems,17,1980,0.008586
+math,2021,24,Fibre-space Hodge cohomology vanishing,27,1980,0.013636
+math,2021,25,Lamination geodesic convergence,18,1980,0.009091
+math,2021,26,Random heap dynamics,22,1980,0.011111
+math,2021,27,Noncommutative crepant resolutions,30,1980,0.015152
+math,2021,28,Numerical PDE error analysis,39,1980,0.019697
+math,2021,29,Prime divisor asymptotics,12,1980,0.006061
+math,2021,30,Fragmentation-coalescent processes,32,1980,0.016162
+math,2021,31,Mirror symmetry i-functions,16,1980,0.008081
+math,2021,32,Siegel uniformity conjecture,29,1980,0.014646
+math,2021,33,Group embedding dimension bounds,25,1980,0.012626
+math,2021,34,Convex cone optimization,49,1980,0.024747
+math,2021,35,Galois cohomology obstructions,26,1980,0.013131
+math,2021,36,Non-symplectic group actions,28,1980,0.014141
+math,2021,37,Hodge-Frobenius manifolds,32,1980,0.016162
+math,2021,38,Signed domination complexity,42,1980,0.021212
+math,2021,39,Reduced Khovanov homology,27,1980,0.013636
+math,2021,40,Contact manifold fillings,21,1980,0.010606
+math,2021,41,Martingale measure augmentation,38,1980,0.019192
+math,2021,42,Multizeta q-values,18,1980,0.009091
+math,2021,43,Pro pp group commensurability,30,1980,0.015152
+math,2021,44,n-ary bihom algebras,22,1980,0.011111
+math,2021,45,Non-smooth proximal gradient analysis,75,1980,0.037879
+math,2021,46,Nonlocal diffusion regularity,53,1980,0.026768
+math,2021,47,Extended hypergeometric functions,29,1980,0.014646
+math,2021,48,Quadratic Gorenstein ideals,18,1980,0.009091
+math,2021,49,Moduli sheaf operator theory,37,1980,0.018687
+math,2021,50,Singular Plateau Douglas Problem,32,1980,0.016162
+math,2021,51,Exponential family mirror descent,29,1980,0.014646
+math,2021,52,Heavy-tail renewal mixing times,21,1980,0.010606
+math,2021,53,Perfect divisibility graphs,99,1980,0.05
+math,2021,54,Operator regression acceleration,64,1980,0.032323
+math,2021,55,Hardy space fractional operators,16,1980,0.008081
+math,2021,56,Hive-spectrum large deviations,33,1980,0.016667
+math,2021,57,Decentralized consensus topologies,39,1980,0.019697
+math,2021,58,Fano threefold geometry,21,1980,0.010606
+math,2021,59,Fractional Maximal Operators,48,1980,0.024242
+math,2021,60,Complete intersection foliations,31,1980,0.015657
+math,2021,61,Physics-informed synthetic data generation,43,1980,0.021717
+math,2021,62,Operadic Kan extensions,45,1980,0.022727
+math,2022,0,Mirror symmetry cohomology,38,2034,0.018682
+math,2022,1,Polynomial norm bounds,34,2034,0.016716
+math,2022,2,Yangian deformations,27,2034,0.013274
+math,2022,3,Multiplier ideals,26,2034,0.012783
+math,2022,4,Foliation theory,29,2034,0.014258
+math,2022,5,Clifford-algebra group theory,32,2034,0.015733
+math,2022,6,Hahn-Banach extensions,24,2034,0.011799
+math,2022,7,Quantum affine representations,23,2034,0.011308
+math,2022,8,Local cohomology monomial ideals,24,2034,0.011799
+math,2022,9,Pattern-avoiding permutations,56,2034,0.027532
+math,2022,10,Spectral amplitude relations,24,2034,0.011799
+math,2022,11,Quantum superalgebra structures,24,2034,0.011799
+math,2022,12,Geometric group theory equivalence,36,2034,0.017699
+math,2022,13,Knot move invariants,21,2034,0.010324
+math,2022,14,Fano variety bounds,24,2034,0.011799
+math,2022,15,Representability failure,10,2034,0.004916
+math,2022,16,Mirror symmetry invariants,17,2034,0.008358
+math,2022,17,Toric modular forms,38,2034,0.018682
+math,2022,18,Projective Galois group endomorphisms,35,2034,0.017207
+math,2022,19,Double plane structures,58,2034,0.028515
+math,2022,20,Random walk aging limits,14,2034,0.006883
+math,2022,21,Random packing asymptotics,33,2034,0.016224
+math,2022,22,Einstein-Kähler metrics,30,2034,0.014749
+math,2022,23,Super Lie identity theorems,18,2034,0.00885
+math,2022,24,Fibre-space Hodge cohomology vanishing,38,2034,0.018682
+math,2022,25,Lamination geodesic convergence,14,2034,0.006883
+math,2022,26,Random heap dynamics,21,2034,0.010324
+math,2022,27,Noncommutative crepant resolutions,30,2034,0.014749
+math,2022,28,Numerical PDE error analysis,46,2034,0.022616
+math,2022,29,Prime divisor asymptotics,19,2034,0.009341
+math,2022,30,Fragmentation-coalescent processes,18,2034,0.00885
+math,2022,31,Mirror symmetry i-functions,18,2034,0.00885
+math,2022,32,Siegel uniformity conjecture,32,2034,0.015733
+math,2022,33,Group embedding dimension bounds,20,2034,0.009833
+math,2022,34,Convex cone optimization,45,2034,0.022124
+math,2022,35,Galois cohomology obstructions,21,2034,0.010324
+math,2022,36,Non-symplectic group actions,39,2034,0.019174
+math,2022,37,Hodge-Frobenius manifolds,22,2034,0.010816
+math,2022,38,Signed domination complexity,27,2034,0.013274
+math,2022,39,Reduced Khovanov homology,19,2034,0.009341
+math,2022,40,Contact manifold fillings,24,2034,0.011799
+math,2022,41,Martingale measure augmentation,34,2034,0.016716
+math,2022,42,Multizeta q-values,23,2034,0.011308
+math,2022,43,Pro pp group commensurability,44,2034,0.021632
+math,2022,44,n-ary bihom algebras,25,2034,0.012291
+math,2022,45,Non-smooth proximal gradient analysis,91,2034,0.044739
+math,2022,46,Nonlocal diffusion regularity,38,2034,0.018682
+math,2022,47,Extended hypergeometric functions,28,2034,0.013766
+math,2022,48,Quadratic Gorenstein ideals,19,2034,0.009341
+math,2022,49,Moduli sheaf operator theory,30,2034,0.014749
+math,2022,50,Singular Plateau Douglas Problem,28,2034,0.013766
+math,2022,51,Exponential family mirror descent,32,2034,0.015733
+math,2022,52,Heavy-tail renewal mixing times,17,2034,0.008358
+math,2022,53,Perfect divisibility graphs,111,2034,0.054572
+math,2022,54,Operator regression acceleration,68,2034,0.033432
+math,2022,55,Hardy space fractional operators,19,2034,0.009341
+math,2022,56,Hive-spectrum large deviations,46,2034,0.022616
+math,2022,57,Decentralized consensus topologies,40,2034,0.019666
+math,2022,58,Fano threefold geometry,19,2034,0.009341
+math,2022,59,Fractional Maximal Operators,37,2034,0.018191
+math,2022,60,Complete intersection foliations,34,2034,0.016716
+math,2022,61,Physics-informed synthetic data generation,63,2034,0.030973
+math,2022,62,Operadic Kan extensions,40,2034,0.019666
+math,2023,0,Mirror symmetry cohomology,35,2183,0.016033
+math,2023,1,Polynomial norm bounds,38,2183,0.017407
+math,2023,2,Yangian deformations,16,2183,0.007329
+math,2023,3,Multiplier ideals,23,2183,0.010536
+math,2023,4,Foliation theory,22,2183,0.010078
+math,2023,5,Clifford-algebra group theory,27,2183,0.012368
+math,2023,6,Hahn-Banach extensions,12,2183,0.005497
+math,2023,7,Quantum affine representations,22,2183,0.010078
+math,2023,8,Local cohomology monomial ideals,23,2183,0.010536
+math,2023,9,Pattern-avoiding permutations,48,2183,0.021988
+math,2023,10,Spectral amplitude relations,22,2183,0.010078
+math,2023,11,Quantum superalgebra structures,37,2183,0.016949
+math,2023,12,Geometric group theory equivalence,57,2183,0.026111
+math,2023,13,Knot move invariants,28,2183,0.012826
+math,2023,14,Fano variety bounds,22,2183,0.010078
+math,2023,15,Representability failure,24,2183,0.010994
+math,2023,16,Mirror symmetry invariants,28,2183,0.012826
+math,2023,17,Toric modular forms,32,2183,0.014659
+math,2023,18,Projective Galois group endomorphisms,42,2183,0.01924
+math,2023,19,Double plane structures,66,2183,0.030234
+math,2023,20,Random walk aging limits,17,2183,0.007787
+math,2023,21,Random packing asymptotics,24,2183,0.010994
+math,2023,22,Einstein-Kähler metrics,33,2183,0.015117
+math,2023,23,Super Lie identity theorems,24,2183,0.010994
+math,2023,24,Fibre-space Hodge cohomology vanishing,17,2183,0.007787
+math,2023,25,Lamination geodesic convergence,21,2183,0.00962
+math,2023,26,Random heap dynamics,23,2183,0.010536
+math,2023,27,Noncommutative crepant resolutions,48,2183,0.021988
+math,2023,28,Numerical PDE error analysis,41,2183,0.018781
+math,2023,29,Prime divisor asymptotics,30,2183,0.013743
+math,2023,30,Fragmentation-coalescent processes,18,2183,0.008246
+math,2023,31,Mirror symmetry i-functions,14,2183,0.006413
+math,2023,32,Siegel uniformity conjecture,30,2183,0.013743
+math,2023,33,Group embedding dimension bounds,18,2183,0.008246
+math,2023,34,Convex cone optimization,56,2183,0.025653
+math,2023,35,Galois cohomology obstructions,32,2183,0.014659
+math,2023,36,Non-symplectic group actions,31,2183,0.014201
+math,2023,37,Hodge-Frobenius manifolds,41,2183,0.018781
+math,2023,38,Signed domination complexity,54,2183,0.024737
+math,2023,39,Reduced Khovanov homology,11,2183,0.005039
+math,2023,40,Contact manifold fillings,21,2183,0.00962
+math,2023,41,Martingale measure augmentation,26,2183,0.01191
+math,2023,42,Multizeta q-values,22,2183,0.010078
+math,2023,43,Pro pp group commensurability,36,2183,0.016491
+math,2023,44,n-ary bihom algebras,16,2183,0.007329
+math,2023,45,Non-smooth proximal gradient analysis,95,2183,0.043518
+math,2023,46,Nonlocal diffusion regularity,50,2183,0.022904
+math,2023,47,Extended hypergeometric functions,20,2183,0.009162
+math,2023,48,Quadratic Gorenstein ideals,16,2183,0.007329
+math,2023,49,Moduli sheaf operator theory,37,2183,0.016949
+math,2023,50,Singular Plateau Douglas Problem,36,2183,0.016491
+math,2023,51,Exponential family mirror descent,37,2183,0.016949
+math,2023,52,Heavy-tail renewal mixing times,15,2183,0.006871
+math,2023,53,Perfect divisibility graphs,116,2183,0.053138
+math,2023,54,Operator regression acceleration,64,2183,0.029317
+math,2023,55,Hardy space fractional operators,25,2183,0.011452
+math,2023,56,Hive-spectrum large deviations,39,2183,0.017865
+math,2023,57,Decentralized consensus topologies,37,2183,0.016949
+math,2023,58,Fano threefold geometry,27,2183,0.012368
+math,2023,59,Fractional Maximal Operators,39,2183,0.017865
+math,2023,60,Complete intersection foliations,49,2183,0.022446
+math,2023,61,Physics-informed synthetic data generation,93,2183,0.042602
+math,2023,62,Operadic Kan extensions,60,2183,0.027485
+math,2024,0,Mirror symmetry cohomology,46,2652,0.017345
+math,2024,1,Polynomial norm bounds,54,2652,0.020362
+math,2024,2,Yangian deformations,26,2652,0.009804
+math,2024,3,Multiplier ideals,31,2652,0.011689
+math,2024,4,Foliation theory,38,2652,0.014329
+math,2024,5,Clifford-algebra group theory,35,2652,0.013198
+math,2024,6,Hahn-Banach extensions,25,2652,0.009427
+math,2024,7,Quantum affine representations,31,2652,0.011689
+math,2024,8,Local cohomology monomial ideals,29,2652,0.010935
+math,2024,9,Pattern-avoiding permutations,57,2652,0.021493
+math,2024,10,Spectral amplitude relations,27,2652,0.010181
+math,2024,11,Quantum superalgebra structures,21,2652,0.007919
+math,2024,12,Geometric group theory equivalence,61,2652,0.023002
+math,2024,13,Knot move invariants,37,2652,0.013952
+math,2024,14,Fano variety bounds,30,2652,0.011312
+math,2024,15,Representability failure,26,2652,0.009804
+math,2024,16,Mirror symmetry invariants,20,2652,0.007541
+math,2024,17,Toric modular forms,32,2652,0.012066
+math,2024,18,Projective Galois group endomorphisms,59,2652,0.022247
+math,2024,19,Double plane structures,78,2652,0.029412
+math,2024,20,Random walk aging limits,36,2652,0.013575
+math,2024,21,Random packing asymptotics,30,2652,0.011312
+math,2024,22,Einstein-Kähler metrics,45,2652,0.016968
+math,2024,23,Super Lie identity theorems,29,2652,0.010935
+math,2024,24,Fibre-space Hodge cohomology vanishing,43,2652,0.016214
+math,2024,25,Lamination geodesic convergence,25,2652,0.009427
+math,2024,26,Random heap dynamics,30,2652,0.011312
+math,2024,27,Noncommutative crepant resolutions,36,2652,0.013575
+math,2024,28,Numerical PDE error analysis,63,2652,0.023756
+math,2024,29,Prime divisor asymptotics,42,2652,0.015837
+math,2024,30,Fragmentation-coalescent processes,21,2652,0.007919
+math,2024,31,Mirror symmetry i-functions,28,2652,0.010558
+math,2024,32,Siegel uniformity conjecture,40,2652,0.015083
+math,2024,33,Group embedding dimension bounds,25,2652,0.009427
+math,2024,34,Convex cone optimization,52,2652,0.019608
+math,2024,35,Galois cohomology obstructions,30,2652,0.011312
+math,2024,36,Non-symplectic group actions,38,2652,0.014329
+math,2024,37,Hodge-Frobenius manifolds,26,2652,0.009804
+math,2024,38,Signed domination complexity,64,2652,0.024133
+math,2024,39,Reduced Khovanov homology,27,2652,0.010181
+math,2024,40,Contact manifold fillings,27,2652,0.010181
+math,2024,41,Martingale measure augmentation,33,2652,0.012443
+math,2024,42,Multizeta q-values,19,2652,0.007164
+math,2024,43,Pro pp group commensurability,39,2652,0.014706
+math,2024,44,n-ary bihom algebras,19,2652,0.007164
+math,2024,45,Non-smooth proximal gradient analysis,98,2652,0.036953
+math,2024,46,Nonlocal diffusion regularity,50,2652,0.018854
+math,2024,47,Extended hypergeometric functions,33,2652,0.012443
+math,2024,48,Quadratic Gorenstein ideals,29,2652,0.010935
+math,2024,49,Moduli sheaf operator theory,28,2652,0.010558
+math,2024,50,Singular Plateau Douglas Problem,36,2652,0.013575
+math,2024,51,Exponential family mirror descent,59,2652,0.022247
+math,2024,52,Heavy-tail renewal mixing times,29,2652,0.010935
+math,2024,53,Perfect divisibility graphs,126,2652,0.047511
+math,2024,54,Operator regression acceleration,72,2652,0.027149
+math,2024,55,Hardy space fractional operators,23,2652,0.008673
+math,2024,56,Hive-spectrum large deviations,54,2652,0.020362
+math,2024,57,Decentralized consensus topologies,37,2652,0.013952
+math,2024,58,Fano threefold geometry,34,2652,0.012821
+math,2024,59,Fractional Maximal Operators,57,2652,0.021493
+math,2024,60,Complete intersection foliations,44,2652,0.016591
+math,2024,61,Physics-informed synthetic data generation,139,2652,0.052413
+math,2024,62,Operadic Kan extensions,74,2652,0.027903
+math,2025,0,Mirror symmetry cohomology,56,3470,0.016138
+math,2025,1,Polynomial norm bounds,85,3470,0.024496
+math,2025,2,Yangian deformations,33,3470,0.00951
+math,2025,3,Multiplier ideals,43,3470,0.012392
+math,2025,4,Foliation theory,38,3470,0.010951
+math,2025,5,Clifford-algebra group theory,55,3470,0.01585
+math,2025,6,Hahn-Banach extensions,25,3470,0.007205
+math,2025,7,Quantum affine representations,37,3470,0.010663
+math,2025,8,Local cohomology monomial ideals,34,3470,0.009798
+math,2025,9,Pattern-avoiding permutations,78,3470,0.022478
+math,2025,10,Spectral amplitude relations,43,3470,0.012392
+math,2025,11,Quantum superalgebra structures,36,3470,0.010375
+math,2025,12,Geometric group theory equivalence,84,3470,0.024207
+math,2025,13,Knot move invariants,39,3470,0.011239
+math,2025,14,Fano variety bounds,34,3470,0.009798
+math,2025,15,Representability failure,48,3470,0.013833
+math,2025,16,Mirror symmetry invariants,35,3470,0.010086
+math,2025,17,Toric modular forms,54,3470,0.015562
+math,2025,18,Projective Galois group endomorphisms,67,3470,0.019308
+math,2025,19,Double plane structures,87,3470,0.025072
+math,2025,20,Random walk aging limits,45,3470,0.012968
+math,2025,21,Random packing asymptotics,26,3470,0.007493
+math,2025,22,Einstein-Kähler metrics,55,3470,0.01585
+math,2025,23,Super Lie identity theorems,35,3470,0.010086
+math,2025,24,Fibre-space Hodge cohomology vanishing,68,3470,0.019597
+math,2025,25,Lamination geodesic convergence,26,3470,0.007493
+math,2025,26,Random heap dynamics,36,3470,0.010375
+math,2025,27,Noncommutative crepant resolutions,60,3470,0.017291
+math,2025,28,Numerical PDE error analysis,85,3470,0.024496
+math,2025,29,Prime divisor asymptotics,35,3470,0.010086
+math,2025,30,Fragmentation-coalescent processes,35,3470,0.010086
+math,2025,31,Mirror symmetry i-functions,33,3470,0.00951
+math,2025,32,Siegel uniformity conjecture,60,3470,0.017291
+math,2025,33,Group embedding dimension bounds,40,3470,0.011527
+math,2025,34,Convex cone optimization,98,3470,0.028242
+math,2025,35,Galois cohomology obstructions,31,3470,0.008934
+math,2025,36,Non-symplectic group actions,47,3470,0.013545
+math,2025,37,Hodge-Frobenius manifolds,54,3470,0.015562
+math,2025,38,Signed domination complexity,95,3470,0.027378
+math,2025,39,Reduced Khovanov homology,48,3470,0.013833
+math,2025,40,Contact manifold fillings,38,3470,0.010951
+math,2025,41,Martingale measure augmentation,26,3470,0.007493
+math,2025,42,Multizeta q-values,18,3470,0.005187
+math,2025,43,Pro pp group commensurability,55,3470,0.01585
+math,2025,44,n-ary bihom algebras,24,3470,0.006916
+math,2025,45,Non-smooth proximal gradient analysis,138,3470,0.039769
+math,2025,46,Nonlocal diffusion regularity,75,3470,0.021614
+math,2025,47,Extended hypergeometric functions,37,3470,0.010663
+math,2025,48,Quadratic Gorenstein ideals,42,3470,0.012104
+math,2025,49,Moduli sheaf operator theory,44,3470,0.01268
+math,2025,50,Singular Plateau Douglas Problem,33,3470,0.00951
+math,2025,51,Exponential family mirror descent,74,3470,0.021326
+math,2025,52,Heavy-tail renewal mixing times,24,3470,0.006916
+math,2025,53,Perfect divisibility graphs,173,3470,0.049856
+math,2025,54,Operator regression acceleration,127,3470,0.036599
+math,2025,55,Hardy space fractional operators,36,3470,0.010375
+math,2025,56,Hive-spectrum large deviations,61,3470,0.017579
+math,2025,57,Decentralized consensus topologies,49,3470,0.014121
+math,2025,58,Fano threefold geometry,42,3470,0.012104
+math,2025,59,Fractional Maximal Operators,53,3470,0.015274
+math,2025,60,Complete intersection foliations,72,3470,0.020749
+math,2025,61,Physics-informed synthetic data generation,128,3470,0.036888
+math,2025,62,Operadic Kan extensions,78,3470,0.022478
