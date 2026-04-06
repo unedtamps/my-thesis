@@ -140,10 +140,42 @@ for m in selected_models:
         if search or category_filter:
             st.caption(f"{len(filtered)} topics match your filters")
 
+        # Compute total article count per topic (sum doc_count across years)
+        t_doc_counts = {}
+        if prev_df is not None and "doc_count" in prev_df.columns:
+            for tid in topic_ids:
+                t_doc_counts[tid] = int(prev_df[prev_df["topic_id"] == tid]["doc_count"].sum())
+
+        # Compute R² per topic from trends
+        t_r_squared = {}
+        if trends_df is not None and len(trends_df) > 0 and "r_squared" in trends_df.columns:
+            for tid in topic_ids:
+                t_row = trends_df[trends_df["topic_id"] == tid]
+                if len(t_row) > 0:
+                    t_r_squared[tid] = float(t_row.iloc[0]["r_squared"])
+
+        # Sort option
+        sort_by = st.radio(
+            "Sort by", ["Topic ID", "📊 Article Count (↓)", "📐 R² (↓)"],
+            horizontal=True, key=f"sort_{m}",
+        )
+        if sort_by == "📊 Article Count (↓)":
+            filtered = sorted(filtered, key=lambda t: t_doc_counts.get(t, 0), reverse=True)
+        elif sort_by == "📐 R² (↓)":
+            filtered = sorted(filtered, key=lambda t: t_r_squared.get(t, 0), reverse=True)
+
+        # Append article count and R² to labels for display
+        t_labels_with_count = {}
+        for tid in filtered:
+            cnt = t_doc_counts.get(tid, 0)
+            r2 = t_r_squared.get(tid, None)
+            r2_str = f" | R²={r2:.3f}" if r2 is not None else ""
+            t_labels_with_count[tid] = f"{t_labels.get(tid, f'Topic {tid}')}  [{cnt} articles{r2_str}]"
+
         picks = st.multiselect(
             "Topics", filtered,
             default=filtered[:2] if len(filtered) >= 2 else filtered[:1],
-            format_func=lambda x: t_labels.get(x, f"Topic {x}"),
+            format_func=lambda x: t_labels_with_count.get(x, t_labels.get(x, f"Topic {x}")),
             key=f"explorer_{m}",
         )
 
