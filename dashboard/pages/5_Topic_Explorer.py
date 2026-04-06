@@ -29,9 +29,10 @@ colors = model_color_map()
 col_s, col_f = st.columns([2, 1])
 with col_s:
     search = st.text_input(
-        "🔍 Search topics by keyword",
-        placeholder="e.g. neural, quantum, graph...",
+        "🔍 Search topics by keyword or sentence",
+        placeholder="e.g. deep learning for image recognition",
         key="explorer_search",
+        help="Enter keywords or a full sentence. At least half the words must match a topic.",
     )
 with col_f:
     category_filter = st.multiselect(
@@ -118,14 +119,15 @@ for m in selected_models:
             t_word_by_year[tid] = year_words
             t_categories[tid] = trend
 
-        # Filter by global search (token-based: any token match counts)
+        # Filter by global search (threshold-based: at least half the tokens must match)
         filtered = topic_ids
         if search:
             tokens = [tok.strip().lower() for tok in search.replace(",", " ").split() if tok.strip()]
             if tokens:
+                min_matches = max(1, len(tokens) // 2)
                 filtered = [
                     t for t in filtered
-                    if any(tok in t_all_words[t] for tok in tokens)
+                    if sum(1 for tok in tokens if tok in t_all_words[t]) >= min_matches
                 ]
         if category_filter:
             filtered = [t for t in filtered if t_categories.get(t, "") in category_filter]
