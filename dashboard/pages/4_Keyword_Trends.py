@@ -18,8 +18,8 @@ st.markdown("""
 Validates whether models capture statistically popular keywords and retain them over time.
 
 1. **Paper-Faithful avg-SPAN**: Evaluates models on *all* unique topic-terms they discover, rewarding terms with high SPAN and punishing generic terms using their corpus frequency (v̂ₖ).
-2. **Shared Keyword SPAN**: Compares all models on the *same* pool of top intersection keywords to directly evaluate which model retains common jargon better.
-3. **Trend Category SPAN (TF-IDF)**: Compares performance specifically on 90 keywords separated by their TF-IDF linear regression slope over time (Emerging 📈, Stable 🔒, Decaying 📉).
+2. **Shared Keyword SPAN**: Compares all models on the *same* pool of intersection keywords (present in ≥ 3 models) to directly evaluate which model retains common jargon better.
+3. **Trend Category SPAN (TF-IDF)**: Compares performance on 150 keywords classified by their TF-IDF linear regression slope over time — 50 Emerging 📈, 50 Stable 🔒, 50 Decaying 📉 — drawn from the **full corpus** vocabulary.
 
 A good model should capture more shared keywords, show high SPAN for stable keywords, and capture emerging trends early.
 """
@@ -173,7 +173,7 @@ st.divider()
 # ============================================================
 st.header("2. Shared Keyword SPAN (Cross-Model Comparison)")
 st.markdown("""
-Like Table 6 and Figure 4 in the paper: the **same** pool of intersection keywords (captured by at least 2 models) are evaluated
+Like Table 6 and Figure 4 in the paper: the **same** pool of intersection keywords (present in **≥ 3 models**) are evaluated
 against **all** models, enabling a direct apple-to-apple SPAN comparison.
 """)
 
@@ -232,7 +232,7 @@ with tab_shared_summary:
             },
         )
     else:
-        st.info("No shared keyword data. Run `notebooks/models/shared_keyword_span.py` first.")
+        st.info("No shared keyword data. Run `notebooks/models/shared_keyword_span.ipynb` first.")
 
 with tab_shared_table:
     shared_df = load_shared_csv(subject, "shared_keyword_span.csv")
@@ -316,13 +316,13 @@ with tab_shared_trend:
 # ============================================================
 st.header("3. Trend Category SPAN (TF-IDF)")
 st.markdown("""
-Evaluate model performance against **specific trend categories** determined by TF-IDF slope over the corpus.
-For each subject, we identify 90 ground-truth keywords:
-- 📈 **30 Emerging**: growing importance over time (highest positive slope)
-- 🔒 **30 Stable**: consistently important (near-zero slope + high avg TF-IDF)
-- 📉 **30 Decaying**: declining importance (highest negative slope)
+Evaluate model performance against **specific trend categories** determined by TF-IDF slope over the **full corpus** vocabulary.
+For each subject, we classify 150 keywords from the corpus:
+- 📈 **50 Emerging**: growing importance over time (highest positive slope)
+- 🔒 **50 Stable**: consistently important (near-zero slope + high avg TF-IDF)
+- 📉 **50 Decaying**: declining importance (highest negative slope)
 
-Models are evaluated using the paper's frequency-weighted formula onto these specific 90 keywords.
+Models are evaluated using the paper's frequency-weighted formula onto these specific 150 keywords.
 """)
 
 def load_shared_csv(target_subject, filename):
@@ -344,7 +344,7 @@ if tc_sum_df is not None and tc_df is not None:
         tc_f = tc_sum_df[tc_sum_df["model"].isin([MODEL_LABELS[m] for m in selected_models])]
         
         # Overall comparison
-        st.subheader("Overall Performance (90 Keywords)")
+        st.subheader("Overall Performance (150 Keywords)")
         tc_all = tc_f[tc_f["category"] == "all"]
         col1, col2 = st.columns(2)
         with col1:
@@ -357,9 +357,9 @@ if tc_sum_df is not None and tc_df is not None:
         with col2:
             fig = px.bar(
                 tc_all, x="model", y="n_captured", color="model", color_discrete_map=colors,
-                title="Keywords Captured (out of 90)"
+                title="Keywords Captured (out of 150)"
             )
-            fig.update_layout(height=400, showlegend=False, yaxis_range=[0, 95])
+            fig.update_layout(height=400, showlegend=False, yaxis_range=[0, 155])
             st.plotly_chart(fig, use_container_width=True)
             
         # By category
@@ -440,7 +440,7 @@ if tc_sum_df is not None and tc_df is not None:
         else:
             st.info("No heatmap data available.")
 else:
-    st.info("No Trend Category SPAN data available. Run `trend_category_span.py` first.")
+    st.info("No Trend Category SPAN data available. Run `notebooks/models/trend_category.ipynb` first.")
 
 st.divider()
 
