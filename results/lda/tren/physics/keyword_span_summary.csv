@@ -1,4 +1,0 @@
-subject,category,n_keywords,avg_span,max_span,min_span,avg_coverage_pct,n_never_captured,n_full_span
-physics,emerging,20,9.95,26,0,43.48,4,2
-physics,stable,20,14.5,26,0,63.46,4,7
-physics,decaying,20,11.6,26,0,61.15,3,3
