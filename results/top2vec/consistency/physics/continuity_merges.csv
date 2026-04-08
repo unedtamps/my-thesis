@@ -1,10 +1,4 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-physics,2011,2012,35,2,"[21, 35]","[0.5, 0.5]","turbulent, flow, flows, shear, reynolds, wall, cylinder, rotation, layer, turbulence"
-physics,2011,2012,39,2,"[39, 130]","[0.6, 0.5]","bose, condensate, einstein, vortex, condensates, spin, quantum, gases, atoms, bec"
-physics,2017,2018,91,2,"[65, 91]","[0.5, 0.7]","electron, xfel, laser, beam, ray, fel, pulse, thz, pulses, lasers"
-physics,2019,2020,1,2,"[1, 95]","[0.6, 0.5]","optical, comb, soliton, frequency, combs, laser, kerr, photonic, mode, fiber"
-physics,2021,2022,5,2,"[5, 54]","[0.8, 0.5]","atoms, optical, quantum, atomic, atom, laser, cooling, state, mathrm, light"
-physics,2021,2022,64,3,"[7, 12, 64]","[0.7, 0.8, 0.7]","learning, neural, machine, data, deep, training, detector, ml, networks, network"
-physics,2023,2024,35,2,"[35, 97]","[0.8, 0.5]","wall, flow, turbulent, reynolds, turbulence, flows, streamwise, spanwise, velocity, drag"
-physics,2023,2024,136,2,"[57, 136]","[0.5, 0.9]","battery, batteries, lithium, ion, electrolytes, electrolyte, li, electrode, electrodes, electrochemical"
-physics,2024,2025,3,2,"[3, 81]","[0.7, 0.5]","plasmonic, metasurfaces, dielectric, optical, metasurface, plasmon, surface, field, resonances, light"
+physics,2007,2008,34,2,"[34, 177]","[0.9, 0.5]","students, student, education, physics, learning, teaching, instruction, teachers, courses, introductory"
+physics,2009,2010,34,2,"[34, 177]","[0.8, 0.6]","students, physics, student, learning, education, teaching, instruction, introductory, curriculum, courses"
+physics,2011,2012,3,2,"[3, 144]","[1.0, 0.5]","plasmonic, plasmon, dielectric, optical, metamaterials, metal, metamaterial, surface, field, light"

@@ -125,6 +125,21 @@ with tab_timeline:
                 legend=dict(orientation="h", y=-0.2),
             )
             st.plotly_chart(fig, use_container_width=True)
+            
+            if "n_new" in df.columns and "n_topics_t1" in df.columns:
+                # The first year of the dataset has implicitly 100% new topics
+                first_year = df["year_from"].min()
+                years = [str(first_year)] + df["year_to"].astype(str).tolist()
+                pcts = [100.0] + (df["n_new"] / df["n_topics_t1"] * 100).tolist()
+                
+                df_new = pd.DataFrame({"year": years, "pct_new": pcts})
+                fig_new = px.line(
+                    df_new, x="year", y="pct_new", markers=True,
+                    title=f"{MODEL_LABELS[m]}: Percentage of New Topics per Year"
+                )
+                fig_new.update_traces(line_color="#3b82f6")
+                fig_new.update_layout(height=350, yaxis_title="Percentage (%)", xaxis_title="Year")
+                st.plotly_chart(fig_new, use_container_width=True)
 
 with tab_compare:
     st.subheader("Average Continuity Rate per Model")

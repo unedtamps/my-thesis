@@ -1,3 +1,1 @@
-subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-cs,2010,2011,24,2,"[24, 29]","[0.6, 0.5]","information, data, mb, model, paper, networks, based, problem, network, learning"
-cs,2024,2025,36,2,"[36, 48]","[0.9, 0.7]","neural, networks, network, learning, deep, training, models, model, data, spiking"
+
