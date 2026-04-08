@@ -1,2 +1,2 @@
 subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
-physics,TopicGPT,2292,0.044248,4.1309,101.415973,5544156,0
+physics,TopicGPT,3352,0.049858,2.9004,167.123466,6334444,0

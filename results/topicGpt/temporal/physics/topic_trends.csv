@@ -1,75 +1,75 @@
 subject,topic_id,topic_label,top_words,total_docs,first_year,last_year,early_proportion,late_proportion,slope,r_squared,p_value,trend
 physics,0,Plasma Beam Interactions,"plasma, beam, plasmas, electron, particle",667,2000,2025,0.028163,0.019544,-0.00022465,0.0159,0.538871,STABLE
-physics,1,Uncertainty Propagation,"uncertainty, bayesian, inference, posterior, data",206,2000,2025,0.006458,0.011357,0.00032824,0.3127,0.002977,GROWING
-physics,2,Quantum Corrections,"corrections, relativistic, muonic, nuclear, qed",377,2000,2025,0.064027,0.011051,-0.00235317,0.6439,1e-06,DECLINING
-physics,3,DNA Conformational Dynamics,"dna, protein, proteins, molecular, folding",384,2000,2025,0.030773,0.011564,-0.00081988,0.2918,0.00439,DECLINING
-physics,4,Optical Trapping Cooling,"cooling, optical, trap, atoms, laser",586,2000,2025,0.037715,0.020289,-0.0006614,0.2658,0.007029,DECLINING
-physics,5,Nonlinear Harmonic Generation,"nonlinear, generation, harmonic, optical, photonic",398,2005,2025,0.004427,0.018239,0.00089767,0.8397,0.0,GROWING
-physics,6,Fermi Gas Stability,"fermi, quantum, bose, gas, gases",368,2000,2025,0.024575,0.011628,-0.00082525,0.4835,8.1e-05,DECLINING
-physics,7,Molecular Absorption Precision,"absorption, spectroscopy, calculations, spectra, atomic",202,2000,2025,0.015973,0.007429,-0.00025585,0.089,0.138779,STABLE
-physics,8,Lanczos Eigenvalue Methods,"quantum, matrix, method, variational, algorithm",295,2000,2025,0.015607,0.012251,3.053e-05,0.0015,0.850527,STABLE
-physics,9,Algebraic Products and Angular Momentum Separation,"spin, quantum, molecular, electronic, states",268,2001,2025,0.009098,0.010275,0.00012138,0.0654,0.207426,STABLE
-physics,10,Deforming Reference Frame Dynamics,"fluid, relativistic, hydrodynamics, sph, equations",349,2000,2025,0.011112,0.01162,7.17e-06,0.0001,0.958321,STABLE
-physics,11,Rotating Flow Dynamics,"flow, flows, fluid, reynolds, vortex",612,2000,2025,0.014761,0.02323,0.0004847,0.3251,0.002357,GROWING
+physics,1,Uncertainty Propagation,"uncertainty, bayesian, posterior, inference, data",206,2000,2025,0.006458,0.011357,0.00032824,0.3127,0.002977,GROWING
+physics,2,Quantum Corrections,"relativistic, corrections, muonic, nuclear, qed",377,2000,2025,0.064027,0.011051,-0.00235317,0.6439,1e-06,DECLINING
+physics,3,DNA Conformational Dynamics,"dna, protein, molecular, proteins, chromatin",384,2000,2025,0.030773,0.011564,-0.00081988,0.2918,0.00439,DECLINING
+physics,4,Optical Trapping Cooling,"cooling, optical, trap, quantum, atoms",586,2000,2025,0.037715,0.020289,-0.0006614,0.2658,0.007029,DECLINING
+physics,5,Nonlinear Harmonic Generation,"nonlinear, generation, optical, harmonic, photonic",398,2005,2025,0.004427,0.018239,0.00089767,0.8397,0.0,GROWING
+physics,6,Fermi Gas Stability,"quantum, fermi, yrast, bose, states",368,2000,2025,0.024575,0.011628,-0.00082525,0.4835,8.1e-05,DECLINING
+physics,7,Molecular Absorption Precision,"absorption, spectroscopy, molecular, atomic, molecules",202,2000,2025,0.015973,0.007429,-0.00025585,0.089,0.138779,STABLE
+physics,8,Lanczos Eigenvalue Methods,"quantum, variational, matrix, algorithm, eigensolver",295,2000,2025,0.015607,0.012251,3.053e-05,0.0015,0.850527,STABLE
+physics,9,Algebraic Products and Angular Momentum Separation,"spin, quantum, molecular, electronic, rpsh",268,2001,2025,0.009098,0.010275,0.00012138,0.0654,0.207426,STABLE
+physics,10,Deforming Reference Frame Dynamics,"fluid, relativistic, hydrodynamics, sph, fluids",349,2000,2025,0.011112,0.01162,7.17e-06,0.0001,0.958321,STABLE
+physics,11,Rotating Flow Dynamics,"flow, vortex, reynolds, flows, fluid",612,2000,2025,0.014761,0.02323,0.0004847,0.3251,0.002357,GROWING
 physics,12,Optical Logic Gates,"optical, photonic, quantum, light, topological",414,2001,2025,0.005394,0.021276,0.00094878,0.808,0.0,GROWING
 physics,13,Micromaser Dynamics,"quantum, spin, states, dynamics, rydberg",404,2000,2025,0.013158,0.017857,0.00027663,0.1216,0.080852,STABLE
-physics,14,Pixel Detector Calibration,"detector, detectors, pixel, lhc, readout",1110,2000,2025,0.026991,0.035214,0.00013298,0.005,0.731841,STABLE
-physics,15,Pulse-Level Beam Feedback,"beam, laser, accelerator, electron, high",342,2000,2025,0.036332,0.010171,-0.00097231,0.1035,0.109085,STABLE
-physics,16,Mass-Energy Relationships,"muon, beam, accelerator, energy, electron",205,2000,2025,0.018245,0.006413,-0.00040731,0.1342,0.065627,STABLE
-physics,17,Anomalous Scaling Turbulence,"turbulence, wind, solar, turbulent, magnetic",314,2000,2025,0.033945,0.009473,-0.00091198,0.1963,0.023417,DECLINING
+physics,14,Pixel Detector Calibration,"detector, detectors, pixel, readout, lhc",1110,2000,2025,0.026991,0.035214,0.00013298,0.005,0.731841,STABLE
+physics,15,Pulse-Level Beam Feedback,"beam, laser, accelerator, high, electron",342,2000,2025,0.036332,0.010171,-0.00097231,0.1035,0.109085,STABLE
+physics,16,Mass-Energy Relationships,"muon, beam, energy, neutron, electron",205,2000,2025,0.018245,0.006413,-0.00040731,0.1342,0.065627,STABLE
+physics,17,Anomalous Scaling Turbulence,"turbulence, solar, wind, turbulent, magnetic",314,2000,2025,0.033945,0.009473,-0.00091198,0.1963,0.023417,DECLINING
 physics,18,High-Order Turbulence Moments,"turbulence, turbulent, flow, flows, reynolds",777,2000,2025,0.027985,0.028051,-0.0001331,0.0132,0.576783,STABLE
 physics,19,Fractal Surface Plasmonics,"plasmonic, plasmon, optical, surface, field",439,2001,2025,0.009113,0.013856,0.00049379,0.3275,0.002253,GROWING
-physics,20,Polymer Entropic Mechanics,"polymer, polymers, chain, chains, force",224,2000,2025,0.026181,0.007067,-0.00076637,0.4483,0.000184,DECLINING
+physics,20,Polymer Entropic Mechanics,"polymer, polymers, chains, cosolvent, chain",224,2000,2025,0.026181,0.007067,-0.00076637,0.4483,0.000184,DECLINING
 physics,21,Radial Current Discharge Dynamics,"plasma, reconnection, discharge, magnetic, electron",266,2000,2025,0.010293,0.00983,0.00010041,0.048,0.282453,STABLE
-physics,22,Bimetallic Cluster Magnetism,"spin, magnetic, magnetization, materials, fe",372,2000,2025,0.01631,0.017981,0.0001072,0.0173,0.521837,STABLE
-physics,23,Polymer Translocation Dynamics,"translocation, diffusion, polymer, pore, transport",211,2001,2025,0.007836,0.005264,-9.302e-05,0.0147,0.555226,STABLE
-physics,24,Photon Statistics Cavities,"photon, quantum, single, photons, superconducting",500,2006,2025,0.006476,0.021767,0.00104989,0.9046,0.0,GROWING
-physics,25,Three-Body Virtual States,"quantum, energy, electron, body, basis",202,2000,2025,0.014643,0.005998,-0.00033349,0.323,0.002453,DECLINING
-physics,26,Relativistic Common Sense,"relativity, lorentz, special, time, einstein",272,2000,2025,0.052097,0.003077,-0.0026956,0.7631,0.0,DECLINING
-physics,27,Macroscopic Quantum Collapse,"quantum, optomechanical, mechanical, cooling, optical",227,2002,2025,0.008886,0.007414,0.00021542,0.1399,0.059762,STABLE
-physics,28,Coherent Image Reconstruction,"imaging, resolution, microscopy, reconstruction, quantum",217,2002,2025,0.005241,0.009211,0.00030643,0.4341,0.000252,GROWING
-physics,29,Nonlinear Flagellar Dynamics,"swimming, flagella, motor, flagellar, active",223,2000,2025,0.006945,0.007136,0.00013344,0.0695,0.193138,STABLE
+physics,22,Bimetallic Cluster Magnetism,"spin, magnetic, altermagnetic, hall, magnetization",372,2000,2025,0.01631,0.017981,0.0001072,0.0173,0.521837,STABLE
+physics,23,Polymer Translocation Dynamics,"diffusion, polymer, translocation, transport, pore",211,2001,2025,0.007836,0.005264,-9.302e-05,0.0147,0.555226,STABLE
+physics,24,Photon Statistics Cavities,"photon, quantum, single, optical, photons",500,2006,2025,0.006476,0.021767,0.00104989,0.9046,0.0,GROWING
+physics,25,Three-Body Virtual States,"quantum, electron, energy, basis, vmc",202,2000,2025,0.014643,0.005998,-0.00033349,0.323,0.002453,DECLINING
+physics,26,Relativistic Common Sense,"relativity, lorentz, special, transformations, time",272,2000,2025,0.052097,0.003077,-0.0026956,0.7631,0.0,DECLINING
+physics,27,Macroscopic Quantum Collapse,"quantum, mechanical, optomechanical, cooling, thermal",227,2002,2025,0.008886,0.007414,0.00021542,0.1399,0.059762,STABLE
+physics,28,Coherent Image Reconstruction,"imaging, resolution, microscopy, quantum, reconstruction",217,2002,2025,0.005241,0.009211,0.00030643,0.4341,0.000252,GROWING
+physics,29,Nonlinear Flagellar Dynamics,"flagella, swimming, active, motility, bacterial",223,2000,2025,0.006945,0.007136,0.00013344,0.0695,0.193138,STABLE
 physics,30,Chaotic Dynamo Reversals,"magnetic, dynamo, turbulence, turbulent, reconnection",498,2000,2025,0.029292,0.012426,-0.00078609,0.4166,0.00037,DECLINING
-physics,31,Tokamak Flow Barriers,"plasma, turbulence, tokamak, magnetic, plasmas",541,2000,2025,0.02124,0.02099,0.00023651,0.0394,0.330802,STABLE
-physics,32,Forbidden Transition Spectroscopy,"rightarrow, transition, spectroscopy, 2s, transitions",219,2000,2025,0.019767,0.006171,-0.00060087,0.2168,0.016517,DECLINING
-physics,33,Axion Solar Search,"axion, dark, axions, matter, search",228,2003,2025,0.004467,0.009157,0.00046018,0.5704,8e-06,GROWING
+physics,31,Tokamak Flow Barriers,"plasma, tokamak, turbulence, magnetic, transport",541,2000,2025,0.02124,0.02099,0.00023651,0.0394,0.330802,STABLE
+physics,32,Forbidden Transition Spectroscopy,"rightarrow, spectroscopy, 2s, transition, transitions",219,2000,2025,0.019767,0.006171,-0.00060087,0.2168,0.016517,DECLINING
+physics,33,Axion Solar Search,"axion, dark, matter, axions, search",228,2003,2025,0.004467,0.009157,0.00046018,0.5704,8e-06,GROWING
 physics,34,Seismic Network Analysis,"earthquake, earthquakes, seismic, rupture, fault",216,2000,2025,0.035777,0.006667,-0.00084456,0.1556,0.046099,DECLINING
-physics,35,Lattice Boltzmann Methods,"boltzmann, flow, fluid, flows, lattice",581,2001,2025,0.021705,0.021724,0.00046939,0.1736,0.034221,GROWING
-physics,36,High-Energy Trigger Processing,"detector, reconstruction, calorimeter, lhc, trigger",322,2003,2025,0.009004,0.014655,0.00047228,0.4741,0.000101,GROWING
+physics,35,Lattice Boltzmann Methods,"boltzmann, fluid, flow, flows, method",581,2001,2025,0.021705,0.021724,0.00046939,0.1736,0.034221,GROWING
+physics,36,High-Energy Trigger Processing,"detector, reconstruction, calorimeter, learning, data",322,2003,2025,0.009004,0.014655,0.00047228,0.4741,0.000101,GROWING
 physics,37,Network Immunization Dynamics,"epidemic, networks, network, social, disease",1358,2003,2025,0.031893,0.040269,0.001527,0.2426,0.010578,GROWING
 physics,38,Noise-Induced Phase Transitions,"epidemic, infected, model, disease, infection",217,2005,2025,0.008095,0.00879,0.00033371,0.3444,0.001625,GROWING
-physics,39,Stochastic Geometry Dynamics,"quantum, stochastic, sampling, dynamics, systems",297,2000,2025,0.01135,0.011418,7.526e-05,0.0129,0.580065,STABLE
-physics,40,Metallic Slit Resonance,"dielectric, plasmonic, optical, resonances, metasurface",214,2002,2025,0.010698,0.003921,-8.758e-05,0.0132,0.576659,STABLE
-physics,41,Hyperbolic Dispersion Media,"metamaterials, hyperbolic, metamaterial, media, materials",320,2002,2025,0.022194,0.007939,-0.00032206,0.0862,0.145579,STABLE
-physics,42,Laser-Plasma Acceleration,"laser, plasma, acceleration, electron, pulse",686,2000,2025,0.032709,0.02106,-0.00037416,0.1011,0.113505,STABLE
-physics,43,Rotating Surface Solitons,"metasurfaces, optical, photonic, metasurface, nonlinear",423,2002,2025,0.008134,0.016497,0.00062454,0.7065,0.0,GROWING
-physics,44,Urban Spatial Scaling,"urban, cities, city, networks, spatial",266,2005,2025,0.01419,0.008734,0.00028465,0.1134,0.092552,STABLE
-physics,45,Photoelectron Imaging Dynamics,"attosecond, electron, photoelectron, ultrafast, imaging",219,2000,2025,0.007484,0.007672,0.00024094,0.2418,0.010728,GROWING
+physics,39,Stochastic Geometry Dynamics,"quantum, sampling, dynamics, stochastic, systems",297,2000,2025,0.01135,0.011418,7.526e-05,0.0129,0.580065,STABLE
+physics,40,Metallic Slit Resonance,"dielectric, metasurfaces, metasurface, resonators, plasmonic",214,2002,2025,0.010698,0.003921,-8.758e-05,0.0132,0.576659,STABLE
+physics,41,Hyperbolic Dispersion Media,"metamaterials, hyperbolic, materials, wave, media",320,2002,2025,0.022194,0.007939,-0.00032206,0.0862,0.145579,STABLE
+physics,42,Laser-Plasma Acceleration,"laser, plasma, acceleration, electron, beam",686,2000,2025,0.032709,0.02106,-0.00037416,0.1011,0.113505,STABLE
+physics,43,Rotating Surface Solitons,"metasurfaces, photonic, optical, metasurface, nonlinear",423,2002,2025,0.008134,0.016497,0.00062454,0.7065,0.0,GROWING
+physics,44,Urban Spatial Scaling,"urban, cities, city, spatial, networks",266,2005,2025,0.01419,0.008734,0.00028465,0.1134,0.092552,STABLE
+physics,45,Photoelectron Imaging Dynamics,"attosecond, electron, ultrafast, photoelectron, dynamics",219,2000,2025,0.007484,0.007672,0.00024094,0.2418,0.010728,GROWING
 physics,46,Climate Information Dynamics,"weather, climate, forecasting, learning, data",773,2002,2025,0.005661,0.049984,0.00199873,0.5784,7e-06,GROWING
-physics,47,Kinetic Potential Embedding,"potentials, functional, density, learning, molecular",300,2002,2025,0.006074,0.013472,0.00045474,0.6284,1e-06,GROWING
-physics,48,Obliquity Climate Dynamics,"climate, ice, ocean, circulation, earth",202,2002,2025,0.007502,0.007058,0.00011958,0.0743,0.177806,STABLE
-physics,49,Singularity Reinterpretation,"black, hole, holes, schwarzschild, hawking",205,2000,2025,0.011357,0.005798,-0.00024377,0.1969,0.023165,DECLINING
-physics,50,Photonic Quantum Gates,"quantum, photonic, photon, single, integrated",717,2001,2025,0.007692,0.032189,0.00130735,0.8006,0.0,GROWING
-physics,51,Laser-Assisted Tunneling Dynamics,"ionization, laser, tunneling, electron, field",222,2000,2025,0.015888,0.006202,-0.00047635,0.3837,0.00074,DECLINING
-physics,52,Blog Network Dynamics,"social, users, online, media, news",334,2005,2025,0.014061,0.004657,0.00014401,0.0099,0.627831,STABLE
-physics,53,Self-Organized Cooperation,"cooperation, agents, collective, active, social",337,2000,2025,0.007985,0.011367,8.418e-05,0.0078,0.668129,STABLE
-physics,54,Ensemble Learning Dynamics,"topological, photonic, edge, states, band",289,2004,2025,0.002758,0.013754,0.0007191,0.7727,0.0,GROWING
-physics,55,Film Retraction Dynamics,"film, liquid, contact, wetting, droplet",234,2003,2025,0.01098,0.007985,0.00018454,0.1102,0.097584,STABLE
-physics,56,Optomechanical Tuning Lasers,"optomechanical, optical, photonic, mechanical, cavity",231,2005,2025,0.013465,0.00726,0.00028192,0.1217,0.080629,STABLE
-physics,57,Buffer-Gas Cooling,"cooling, laser, atoms, rm, gas",221,2001,2025,0.022688,0.005396,-0.00059478,0.3157,0.002817,DECLINING
+physics,47,Kinetic Potential Embedding,"potentials, learning, machine, functional, density",300,2002,2025,0.006074,0.013472,0.00045474,0.6284,1e-06,GROWING
+physics,48,Obliquity Climate Dynamics,"climate, ice, ocean, variability, amoc",202,2002,2025,0.007502,0.007058,0.00011958,0.0743,0.177806,STABLE
+physics,49,Singularity Reinterpretation,"black, hole, hawking, holes, schwarzschild",205,2000,2025,0.011357,0.005798,-0.00024377,0.1969,0.023165,DECLINING
+physics,50,Photonic Quantum Gates,"quantum, photonic, photon, integrated, chip",717,2001,2025,0.007692,0.032189,0.00130735,0.8006,0.0,GROWING
+physics,51,Laser-Assisted Tunneling Dynamics,"ionization, laser, attosecond, tunneling, field",222,2000,2025,0.015888,0.006202,-0.00047635,0.3837,0.00074,DECLINING
+physics,52,Blog Network Dynamics,"social, news, online, media, users",334,2005,2025,0.014061,0.004657,0.00014401,0.0099,0.627831,STABLE
+physics,53,Self-Organized Cooperation,"agents, cooperation, active, collective, motility",337,2000,2025,0.007985,0.011367,8.418e-05,0.0078,0.668129,STABLE
+physics,54,Ensemble Learning Dynamics,"topological, photonic, band, edge, topology",289,2004,2025,0.002758,0.013754,0.0007191,0.7727,0.0,GROWING
+physics,55,Film Retraction Dynamics,"film, contact, wetting, droplet, liquid",234,2003,2025,0.01098,0.007985,0.00018454,0.1102,0.097584,STABLE
+physics,56,Optomechanical Tuning Lasers,"optomechanical, photonic, optical, integrated, mechanical",231,2005,2025,0.013465,0.00726,0.00028192,0.1217,0.080629,STABLE
+physics,57,Buffer-Gas Cooling,"cooling, rm, laser, th, atoms",221,2001,2025,0.022688,0.005396,-0.00059478,0.3157,0.002817,DECLINING
 physics,58,Opinion Consensus Dynamics,"opinion, social, opinions, consensus, agents",397,2005,2025,0.021057,0.013207,0.0003311,0.103,0.109951,STABLE
-physics,59,Ion Pairing Dynamics,"solvation, solvent, water, molecular, ion",336,2000,2025,0.009769,0.013263,0.00033563,0.285,0.004971,GROWING
-physics,60,Metamaterial Resonance Bistability,"metasurfaces, graphene, metasurface, optical, absorption",338,2004,2025,0.006964,0.011132,0.00059587,0.5396,1.9e-05,GROWING
-physics,61,Existence Interpretation,"quantum, spacetime, universe, theory, relativity",217,2000,2025,0.019046,0.006178,-0.00036939,0.1676,0.037806,DECLINING
+physics,59,Ion Pairing Dynamics,"solvent, solvation, water, molecular, ion",336,2000,2025,0.009769,0.013263,0.00033563,0.285,0.004971,GROWING
+physics,60,Metamaterial Resonance Bistability,"metasurfaces, metasurface, optical, light, excitonic",338,2004,2025,0.006964,0.011132,0.00059587,0.5396,1.9e-05,GROWING
+physics,61,Existence Interpretation,"quantum, spacetime, theory, relativity, mechanics",217,2000,2025,0.019046,0.006178,-0.00036939,0.1676,0.037806,DECLINING
 physics,62,Soliton Pair Dynamics,"solitons, soliton, nonlinear, optical, kerr",582,2000,2025,0.040758,0.015143,-0.00126731,0.4897,6.9e-05,DECLINING
-physics,63,Ultra-Short Pulse Coherence,"quantum, pulse, coherence, pulses, atomic",263,2000,2025,0.014689,0.006784,-0.00026484,0.1235,0.078309,STABLE
-physics,64,Excited State Perturbation Theory,"functional, dft, energies, density, electronic",856,2000,2025,0.026303,0.032773,0.00043073,0.2546,0.008564,GROWING
-physics,65,TR-Symmetry Breaking Meta-Optics,"optical, topological, nonreciprocal, metasurfaces, light",408,2002,2025,0.005936,0.017331,0.00088284,0.8128,0.0,GROWING
-physics,66,Multimode Cavity QED,"cavity, quantum, optical, atoms, light",417,2001,2025,0.021725,0.016375,3.697e-05,0.0009,0.885478,STABLE
-physics,67,Self-Fourier Beam Dynamics,"beams, beam, light, propagation, optical",231,2000,2025,0.021145,0.006156,-0.00051145,0.3114,0.003051,DECLINING
-physics,68,Gravitational Constant Fluctuations,"solar, sun, gravitational, orbital, earth",208,2000,2025,0.023745,0.00506,-0.0009617,0.5664,9e-06,DECLINING
-physics,69,Rydberg Resonance Dynamics,"rydberg, atoms, molecules, states, atom",386,2000,2025,0.01386,0.00969,-0.00031108,0.0809,0.15918,STABLE
+physics,63,Ultra-Short Pulse Coherence,"quantum, coherence, pulse, atom, atomic",263,2000,2025,0.014689,0.006784,-0.00026484,0.1235,0.078309,STABLE
+physics,64,Excited State Perturbation Theory,"electronic, functional, dft, energies, excited",856,2000,2025,0.026303,0.032773,0.00043073,0.2546,0.008564,GROWING
+physics,65,TR-Symmetry Breaking Meta-Optics,"optical, topological, metasurfaces, nonreciprocal, light",408,2002,2025,0.005936,0.017331,0.00088284,0.8128,0.0,GROWING
+physics,66,Multimode Cavity QED,"cavity, quantum, optical, light, coupling",417,2001,2025,0.021725,0.016375,3.697e-05,0.0009,0.885478,STABLE
+physics,67,Self-Fourier Beam Dynamics,"beams, beam, propagation, light, airy",231,2000,2025,0.021145,0.006156,-0.00051145,0.3114,0.003051,DECLINING
+physics,68,Gravitational Constant Fluctuations,"solar, sun, orbital, orbit, s2",208,2000,2025,0.023745,0.00506,-0.0009617,0.5664,9e-06,DECLINING
+physics,69,Rydberg Resonance Dynamics,"rydberg, atoms, molecules, states, quantum",386,2000,2025,0.01386,0.00969,-0.00031108,0.0809,0.15918,STABLE
 physics,70,Quantum-Classical Boundary,"quantum, mechanics, theory, measurement, interpretation",526,2000,2025,0.024563,0.017259,-0.00035129,0.1038,0.108391,STABLE
-physics,71,Antineutrino Source Design,"neutrino, detector, neutrinos, reactor, neutron",667,2001,2025,0.010328,0.016841,0.00080055,0.2275,0.013755,GROWING
-physics,72,Crystal Ab Initio Design,"materials, learning, dft, crystal, functional",255,2003,2025,0.004143,0.014008,0.00059947,0.6269,1e-06,GROWING
+physics,71,Antineutrino Source Design,"neutrino, detector, neutron, neutrinos, reactor",667,2001,2025,0.010328,0.016841,0.00080055,0.2275,0.013755,GROWING
+physics,72,Crystal Ab Initio Design,"materials, learning, dft, crystal, machine",255,2003,2025,0.004143,0.014008,0.00059947,0.6269,1e-06,GROWING
 physics,73,Reciprocity Systems,"cooperation, social, game, evolutionary, individuals",319,2002,2025,0.010692,0.010052,0.00015418,0.0391,0.332925,STABLE

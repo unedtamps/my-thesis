@@ -1,2 +1,2 @@
 subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
-cs,LDA,2910,0.09342,3.9182,271.851603,6576331,0
+cs,LDA,3881,0.102941,2.9147,399.515009,6975056,0

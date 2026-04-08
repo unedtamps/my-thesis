@@ -1,64 +1,64 @@
 subject,topic_id,topic_label,top_words,total_docs,first_year,last_year,early_proportion,late_proportion,slope,r_squared,p_value,trend
-math,0,Mirror symmetry cohomology,"mathbb, mathcal, cohomology, mathrm, calabi",541,2000,2025,0.026039,0.01667,-0.00061712,0.3955,0.000579,DECLINING
-math,1,Polynomial norm bounds,"mathbb, inequalities, eigenvalue, laplacian, inequality",579,2000,2025,0.012991,0.019635,0.00041088,0.2704,0.006474,GROWING
-math,2,Yangian deformations,"mathfrak, algebras, algebra, quantum, mathcal",331,2000,2025,0.025024,0.009398,-0.00061129,0.3987,0.000541,DECLINING
-math,3,Multiplier ideals,"mathcal, mathbb, divisors, toric, varieties",418,2000,2025,0.021811,0.010793,-0.00056895,0.479,9e-05,DECLINING
-math,4,Foliation theory,"anosov, hyperbolic, foliations, group, manifolds",401,2000,2025,0.016168,0.011943,-0.00025637,0.3125,0.002991,DECLINING
-math,5,Clifford-algebra group theory,"algebras, algebra, mathbb, group, mathfrak",544,2000,2025,0.032653,0.013955,-0.00082496,0.43,0.000276,DECLINING
-math,6,Hahn-Banach extensions,"banach, algebras, algebra, mathcal, spaces",382,2000,2025,0.014932,0.008301,-0.00025114,0.2035,0.020717,DECLINING
-math,7,Quantum affine representations,"quantum, mathfrak, algebras, algebra, sl",453,2000,2025,0.035894,0.010768,-0.00107556,0.5392,2e-05,DECLINING
-math,8,Local cohomology monomial ideals,"ideals, monomial, ideal, graded, ring",427,2000,2025,0.01975,0.010937,-0.00044074,0.3523,0.001391,DECLINING
-math,9,Pattern-avoiding permutations,"permutations, graphs, graph, trees, permutation",711,2000,2025,0.01763,0.02284,0.00019698,0.0752,0.175218,STABLE
+math,0,Mirror symmetry cohomology,"mathbb, mathcal, mathrm, cohomology, mirror",541,2000,2025,0.026039,0.01667,-0.00061712,0.3955,0.000579,DECLINING
+math,1,Polynomial norm bounds,"mathbb, inequalities, eigenvalue, steklov, domains",579,2000,2025,0.012991,0.019635,0.00041088,0.2704,0.006474,GROWING
+math,2,Yangian deformations,"mathfrak, mathcal, algebras, quantum, gl",331,2000,2025,0.025024,0.009398,-0.00061129,0.3987,0.000541,DECLINING
+math,3,Multiplier ideals,"mathcal, mathbb, sheaves, overline, divisors",418,2000,2025,0.021811,0.010793,-0.00056895,0.479,9e-05,DECLINING
+math,4,Foliation theory,"anosov, hyperbolic, foliations, group, mathbb",401,2000,2025,0.016168,0.011943,-0.00025637,0.3125,0.002991,DECLINING
+math,5,Clifford-algebra group theory,"algebras, mathbb, algebra, group, mathfrak",544,2000,2025,0.032653,0.013955,-0.00082496,0.43,0.000276,DECLINING
+math,6,Hahn-Banach extensions,"banach, algebras, spaces, cdot, mathcal",382,2000,2025,0.014932,0.008301,-0.00025114,0.2035,0.020717,DECLINING
+math,7,Quantum affine representations,"quantum, mathfrak, algebras, mathbb, algebra",453,2000,2025,0.035894,0.010768,-0.00107556,0.5392,2e-05,DECLINING
+math,8,Local cohomology monomial ideals,"ideals, monomial, ideal, rings, graded",427,2000,2025,0.01975,0.010937,-0.00044074,0.3523,0.001391,DECLINING
+math,9,Pattern-avoiding permutations,"permutations, graphs, graph, trees, ex",711,2000,2025,0.01763,0.02284,0.00019698,0.0752,0.175218,STABLE
 math,10,Spectral amplitude relations,"operators, spectral, operator, dinger, schr",526,2000,2025,0.022458,0.012122,-0.00050535,0.4321,0.000263,DECLINING
-math,11,Quantum superalgebra structures,"mathfrak, algebra, quantum, gl, algebras",391,2000,2025,0.023808,0.012035,-0.00049381,0.2298,0.013207,DECLINING
+math,11,Quantum superalgebra structures,"mathfrak, algebra, quantum, gl, mathcal",391,2000,2025,0.023808,0.012035,-0.00049381,0.2298,0.013207,DECLINING
 math,12,Geometric group theory equivalence,"groups, group, subgroups, gg, subgroup",848,2000,2025,0.02559,0.023355,-0.00023822,0.0894,0.1379,STABLE
-math,13,Knot move invariants,"knots, knot, links, homology, heegaard",533,2000,2025,0.025379,0.012396,-0.00068149,0.311,0.003075,DECLINING
-math,14,Fano variety bounds,"bundles, fano, varieties, mathcal, mathbb",341,2000,2025,0.019244,0.010416,-0.00039237,0.2332,0.012456,DECLINING
-math,15,Representability failure,"categories, category, triangulated, mathcal, functors",329,2000,2025,0.004887,0.010637,0.00019288,0.1602,0.042731,GROWING
-math,16,Mirror symmetry invariants,"mathcal, gauge, theories, mathbb, theory",348,2000,2025,0.01827,0.00948,-0.00030816,0.1755,0.033132,DECLINING
-math,17,Toric modular forms,"modular, curves, mathbb, forms, selmer",524,2000,2025,0.021672,0.015426,-0.00026186,0.1739,0.034028,DECLINING
-math,18,Projective Galois group endomorphisms,"mathbb, group, groups, galois, mathrm",712,2000,2025,0.027011,0.019641,-0.0003384,0.1653,0.039258,DECLINING
-math,19,Double plane structures,"surfaces, mathbb, curves, surface, group",945,2000,2025,0.040123,0.028,-0.00070815,0.3316,0.00208,DECLINING
+math,13,Knot move invariants,"knots, knot, links, homology, mathbb",533,2000,2025,0.025379,0.012396,-0.00068149,0.311,0.003075,DECLINING
+math,14,Fano variety bounds,"fano, bundles, mathcal, mathbb, varieties",341,2000,2025,0.019244,0.010416,-0.00039237,0.2332,0.012456,DECLINING
+math,15,Representability failure,"categories, category, mathcal, triangulated, infty",329,2000,2025,0.004887,0.010637,0.00019288,0.1602,0.042731,GROWING
+math,16,Mirror symmetry invariants,"mathcal, gauge, theories, mathbb, cal",348,2000,2025,0.01827,0.00948,-0.00030816,0.1755,0.033132,DECLINING
+math,17,Toric modular forms,"modular, selmer, mathbb, forms, curves",524,2000,2025,0.021672,0.015426,-0.00026186,0.1739,0.034028,DECLINING
+math,18,Projective Galois group endomorphisms,"mathbb, group, mathrm, galois, groups",712,2000,2025,0.027011,0.019641,-0.0003384,0.1653,0.039258,DECLINING
+math,19,Double plane structures,"mathbb, surfaces, curves, surface, mathcal",945,2000,2025,0.040123,0.028,-0.00070815,0.3316,0.00208,DECLINING
 math,20,Random walk aging limits,"mathbb, dinger, schr, estimates, random",320,2001,2025,0.007389,0.010162,0.00029134,0.3116,0.003044,GROWING
-math,21,Random packing asymptotics,"random, walk, limit, process, mathbb",449,2000,2025,0.00768,0.011932,0.00013855,0.0394,0.331216,STABLE
-math,22,Einstein-Kähler metrics,"ricci, einstein, curvature, metrics, manifolds",675,2000,2025,0.03548,0.016476,-0.00089504,0.565,1e-05,DECLINING
-math,23,Super Lie identity theorems,"mathfrak, lie, superalgebras, superalgebra, algebras",383,2000,2025,0.015581,0.00989,-0.00040869,0.2204,0.015524,DECLINING
+math,21,Random packing asymptotics,"random, walk, limit, process, processes",449,2000,2025,0.00768,0.011932,0.00013855,0.0394,0.331216,STABLE
+math,22,Einstein-Kähler metrics,"ricci, einstein, curvature, manifolds, metrics",675,2000,2025,0.03548,0.016476,-0.00089504,0.565,1e-05,DECLINING
+math,23,Super Lie identity theorems,"mathfrak, superalgebras, lie, gl, superalgebra",383,2000,2025,0.015581,0.00989,-0.00040869,0.2204,0.015524,DECLINING
 math,24,Fibre-space Hodge cohomology vanishing,"hodge, cohomology, varieties, hler, holomorphic",603,2000,2025,0.03374,0.015183,-0.00075316,0.5118,4e-05,DECLINING
-math,25,Lamination geodesic convergence,"hyperbolic, teichm, ller, geodesic, geodesics",318,2000,2025,0.008435,0.008503,-0.00013677,0.0494,0.275155,STABLE
-math,26,Random heap dynamics,"random, walk, walks, markov, time",362,2000,2025,0.008475,0.010732,6.515e-05,0.0143,0.560541,STABLE
-math,27,Noncommutative crepant resolutions,"modules, rr, rings, gorenstein, module",628,2000,2025,0.019417,0.016551,-0.00022547,0.0618,0.220888,STABLE
-math,28,Numerical PDE error analysis,"error, numerical, mesh, method, accuracy",528,2001,2025,0.002331,0.021869,0.00114371,0.8711,0.0,GROWING
-math,29,Prime divisor asymptotics,"log, prime, primes, frac, leq",357,2002,2025,0.010101,0.011014,0.00022833,0.1485,0.05189,STABLE
+math,25,Lamination geodesic convergence,"hyperbolic, teichm, ller, thurston, geodesic",318,2000,2025,0.008435,0.008503,-0.00013677,0.0494,0.275155,STABLE
+math,26,Random heap dynamics,"random, walk, walks, markov, probability",362,2000,2025,0.008475,0.010732,6.515e-05,0.0143,0.560541,STABLE
+math,27,Noncommutative crepant resolutions,"modules, rr, rings, module, gorenstein",628,2000,2025,0.019417,0.016551,-0.00022547,0.0618,0.220888,STABLE
+math,28,Numerical PDE error analysis,"numerical, error, mesh, accuracy, method",528,2001,2025,0.002331,0.021869,0.00114371,0.8711,0.0,GROWING
+math,29,Prime divisor asymptotics,"log, prime, frac, primes, leq",357,2002,2025,0.010101,0.011014,0.00022833,0.1485,0.05189,STABLE
 math,30,Fragmentation-coalescent processes,"branching, population, process, processes, random",347,2001,2025,0.012909,0.010252,7.302e-05,0.0092,0.642051,STABLE
-math,31,Mirror symmetry i-functions,"mirror, invariants, mathbb, equivariant, toric",312,2000,2025,0.01423,0.008682,-0.00023981,0.2019,0.021277,DECLINING
-math,32,Siegel uniformity conjecture,"mathbb, curves, elliptic, points, rational",519,2000,2025,0.013329,0.015299,9.845e-05,0.0274,0.418599,STABLE
-math,33,Group embedding dimension bounds,"groups, mathbb, group, finite, rank",321,2000,2025,0.005542,0.010332,0.00010258,0.0214,0.476229,STABLE
-math,34,Convex cone optimization,"optimization, convex, problems, semidefinite, method",588,2005,2025,0.003013,0.024075,0.00131893,0.8812,0.0,GROWING
-math,35,Galois cohomology obstructions,"mathbb, galois, groups, group, cohomology",395,2000,2025,0.018979,0.011672,-0.00031303,0.1238,0.077896,STABLE
-math,36,Non-symplectic group actions,"symplectic, hamiltonian, lie, manifolds, mathbb",690,2000,2025,0.051822,0.015078,-0.00173652,0.8506,0.0,DECLINING
-math,37,Hodge-Frobenius manifolds,"hodge, manifolds, cohomology, hler, complex",557,2000,2025,0.041525,0.014225,-0.00121978,0.5592,1.1e-05,DECLINING
-math,38,Signed domination complexity,"graph, graphs, dominating, gg, domination",649,2000,2025,0.006877,0.022147,0.00103566,0.6724,0.0,GROWING
+math,31,Mirror symmetry i-functions,"mirror, invariants, mathbb, equivariant, mathrm",312,2000,2025,0.01423,0.008682,-0.00023981,0.2019,0.021277,DECLINING
+math,32,Siegel uniformity conjecture,"mathbb, curves, ell, elliptic, points",519,2000,2025,0.013329,0.015299,9.845e-05,0.0274,0.418599,STABLE
+math,33,Group embedding dimension bounds,"mathbb, groups, group, sofic, rank",321,2000,2025,0.005542,0.010332,0.00010258,0.0214,0.476229,STABLE
+math,34,Convex cone optimization,"optimization, convex, problems, method, constraints",588,2005,2025,0.003013,0.024075,0.00131893,0.8812,0.0,GROWING
+math,35,Galois cohomology obstructions,"mathbb, galois, groups, group, mathrm",395,2000,2025,0.018979,0.011672,-0.00031303,0.1238,0.077896,STABLE
+math,36,Non-symplectic group actions,"symplectic, hamiltonian, mathbb, lie, manifolds",690,2000,2025,0.051822,0.015078,-0.00173652,0.8506,0.0,DECLINING
+math,37,Hodge-Frobenius manifolds,"hodge, hler, manifolds, cohomology, complex",557,2000,2025,0.041525,0.014225,-0.00121978,0.5592,1.1e-05,DECLINING
+math,38,Signed domination complexity,"graph, graphs, dominating, gg, kk",649,2000,2025,0.006877,0.022147,0.00103566,0.6724,0.0,GROWING
 math,39,Reduced Khovanov homology,"khovanov, homology, knots, knot, link",419,2000,2025,0.02055,0.010406,-0.00057038,0.3882,0.000674,DECLINING
-math,40,Contact manifold fillings,"contact, manifolds, stein, manifold, surfaces",365,2000,2025,0.01889,0.010631,-0.00035299,0.2761,0.005843,DECLINING
+math,40,Contact manifold fillings,"contact, manifolds, stein, reeb, surfaces",365,2000,2025,0.01889,0.010631,-0.00035299,0.2761,0.005843,DECLINING
 math,41,Martingale measure augmentation,"stochastic, martingale, processes, time, martingales",494,2000,2025,0.006352,0.013551,0.00033139,0.0987,0.117963,STABLE
 math,42,Multizeta q-values,"zeta, multiple, values, functions, mathbb",342,2000,2025,0.011304,0.008566,-0.00016468,0.0912,0.133866,STABLE
-math,43,Pro pp group commensurability,"groups, group, mathcal, finite, mathbb",600,2000,2025,0.012957,0.016766,0.00016402,0.0552,0.247859,STABLE
+math,43,Pro pp group commensurability,"groups, group, mathcal, mathrm, mathbb",600,2000,2025,0.012957,0.016766,0.00016402,0.0552,0.247859,STABLE
 math,44,n-ary bihom algebras,"algebras, lie, leibniz, mathfrak, algebra",322,2000,2025,0.012367,0.008962,-0.00014946,0.0705,0.189964,STABLE
 math,45,Non-smooth proximal gradient analysis,"gradient, optimization, stochastic, convergence, convex",777,2008,2025,0.003062,0.040572,0.00202726,0.8282,0.0,GROWING
-math,46,Nonlocal diffusion regularity,"diffusion, nonlocal, solutions, equation, time",534,2003,2025,0.005715,0.021764,0.00097656,0.817,0.0,GROWING
-math,47,Extended hypergeometric functions,"hypergeometric, functions, polynomials, integrals, function",463,2000,2025,0.018814,0.012136,-0.00017539,0.0666,0.203102,STABLE
-math,48,Quadratic Gorenstein ideals,"ideals, ideal, mathfrak, mathcal, koszul",431,2000,2025,0.022085,0.00976,-0.00058818,0.4284,0.000286,DECLINING
-math,49,Moduli sheaf operator theory,"sheaves, moduli, bundles, mathcal, mathbb",510,2000,2025,0.024594,0.014725,-0.00056985,0.3128,0.002975,DECLINING
+math,46,Nonlocal diffusion regularity,"diffusion, nonlocal, solutions, equation, equations",534,2003,2025,0.005715,0.021764,0.00097656,0.817,0.0,GROWING
+math,47,Extended hypergeometric functions,"hypergeometric, functions, polynomials, integrals, series",463,2000,2025,0.018814,0.012136,-0.00017539,0.0666,0.203102,STABLE
+math,48,Quadratic Gorenstein ideals,"ideals, mathfrak, ideal, mathcal, ldots",431,2000,2025,0.022085,0.00976,-0.00058818,0.4284,0.000286,DECLINING
+math,49,Moduli sheaf operator theory,"moduli, bundles, sheaves, mathcal, mathbb",510,2000,2025,0.024594,0.014725,-0.00056985,0.3128,0.002975,DECLINING
 math,50,Singular Plateau Douglas Problem,"surfaces, minimal, boundary, curvature, mathbb",480,2000,2025,0.012007,0.013901,0.00022968,0.1076,0.101842,STABLE
-math,51,Exponential family mirror descent,"convergence, learning, problems, inverse, regularization",375,2007,2025,0.003546,0.01818,0.00088905,0.8725,0.0,GROWING
-math,52,Heavy-tail renewal mixing times,"queue, markov, time, process, service",309,2003,2025,0.008257,0.008737,0.00032991,0.2993,0.003821,GROWING
+math,51,Exponential family mirror descent,"convergence, learning, problems, inverse, optimization",375,2007,2025,0.003546,0.01818,0.00088905,0.8725,0.0,GROWING
+math,52,Heavy-tail renewal mixing times,"time, queue, markov, process, service",309,2003,2025,0.008257,0.008737,0.00032991,0.2993,0.003821,GROWING
 math,53,Perfect divisibility graphs,"graphs, graph, gg, coloring, chromatic",1339,2002,2025,0.010178,0.051015,0.00226418,0.8352,0.0,GROWING
-math,54,Operator regression acceleration,"optimization, convergence, learning, algorithm, gradient",608,2011,2025,0.007031,0.031764,0.00156966,0.8225,0.0,GROWING
-math,55,Hardy space fractional operators,"operators, mathbb, hardy, operator, spaces",302,2000,2025,0.005463,0.009584,0.00031504,0.3773,0.000844,GROWING
-math,56,Hive-spectrum large deviations,"random, matrices, matrix, distribution, spectral",653,2000,2025,0.015282,0.019018,0.00029728,0.1038,0.10839,STABLE
-math,57,Decentralized consensus topologies,"distributed, communication, optimization, agents, decentralized",364,2006,2025,0.004011,0.016877,0.00083573,0.8474,0.0,GROWING
-math,58,Fano threefold geometry,"fano, varieties, threefolds, mathbb, picard",407,2000,2025,0.020321,0.011448,-0.00040931,0.2895,0.004577,DECLINING
-math,59,Fractional Maximal Operators,"fractional, mathbb, operators, hardy, weighted",581,2002,2025,0.005865,0.019413,0.00086449,0.6199,2e-06,GROWING
+math,54,Operator regression acceleration,"optimization, convergence, learning, gradient, algorithm",608,2011,2025,0.007031,0.031764,0.00156966,0.8225,0.0,GROWING
+math,55,Hardy space fractional operators,"operators, mathbb, hardy, spaces, boundedness",302,2000,2025,0.005463,0.009584,0.00031504,0.3773,0.000844,GROWING
+math,56,Hive-spectrum large deviations,"random, matrices, matrix, spectral, entries",653,2000,2025,0.015282,0.019018,0.00029728,0.1038,0.10839,STABLE
+math,57,Decentralized consensus topologies,"optimization, distributed, communication, decentralized, agents",364,2006,2025,0.004011,0.016877,0.00083573,0.8474,0.0,GROWING
+math,58,Fano threefold geometry,"fano, varieties, mathbb, picard, threefolds",407,2000,2025,0.020321,0.011448,-0.00040931,0.2895,0.004577,DECLINING
+math,59,Fractional Maximal Operators,"fractional, mathbb, hardy, operators, weighted",581,2002,2025,0.005865,0.019413,0.00086449,0.6199,2e-06,GROWING
 math,60,Complete intersection foliations,"foliations, mathbb, foliation, hypersurfaces, projective",687,2000,2025,0.035782,0.018432,-0.00082382,0.5201,3.2e-05,DECLINING
 math,61,Physics-informed synthetic data generation,"neural, learning, informed, pdes, networks",523,2017,2025,0.010575,0.036919,0.00150317,0.5556,1.2e-05,GROWING
-math,62,Operadic Kan extensions,"categories, category, infty, mathcal, monoidal",641,2000,2025,0.017031,0.024052,0.00041234,0.2251,0.014339,GROWING
+math,62,Operadic Kan extensions,"categories, infty, category, mathcal, monoidal",641,2000,2025,0.017031,0.024052,0.00041234,0.2251,0.014339,GROWING

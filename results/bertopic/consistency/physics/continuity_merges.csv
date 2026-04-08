@@ -1,6 +1,5 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-physics,2013,2014,39,2,"[39, 103]","[0.9, 0.6]","community, communities, networks, network, detection, modularity, nodes, graph, graphs, node"
-physics,2017,2018,39,2,"[39, 103]","[0.9, 0.5]","community, networks, communities, detection, network, graph, modularity, graphs, nodes, algorithms"
-physics,2020,2021,103,2,"[103, 203]","[0.8, 0.5]","degree, networks, graphs, node, network, nodes, distribution, world, random, flower"
-physics,2020,2021,192,2,"[192, 194]","[0.7, 0.5]","cavities, superconducting, niobium, rf, flux, nb, srf, cavity, resistance, surface"
-physics,2023,2024,192,2,"[192, 194]","[0.9, 0.5]","niobium, cavities, nb, superconducting, srf, cavity, rf, hydrides, surface, rrr"
+physics,2015,2016,222,2,"[222, 223]","[0.5, 0.5]","cuore, neutrinoless, beta, decay, double, xe, bolometric, background, experiment, next"
+physics,2016,2017,24,2,"[24, 34]","[0.5, 0.5]","plasmonic, plasmon, nanostructures, surface, plasmons, nanoparticle, dielectric, metallic, enhancement, stub"
+physics,2019,2020,38,3,"[38, 61, 91]","[0.5, 0.5, 0.5]","neural, learning, flow, turbulence, training, les, deep, data, models, network"
+physics,2024,2025,9,2,"[9, 172]","[0.6, 0.5]","students, physics, student, education, ai, teaching, science, learning, skills, introductory"

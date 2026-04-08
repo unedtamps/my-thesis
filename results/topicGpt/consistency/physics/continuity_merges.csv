@@ -1,5 +1,6 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-physics,2011,2012,37,2,"[37, 38]","[0.9, 0.6]","networks, network, epidemic, social, spreading, disease, nodes, model, infected, infection"
-physics,2012,2013,64,2,"[64, 72]","[0.9, 0.5]","functional, correlation, density, energies, dft, electron, energy, functionals, exchange, calculations"
-physics,2013,2014,64,2,"[25, 64]","[0.7, 0.9]","functional, density, correlation, energies, electron, functionals, dft, theory, energy, exchange"
-physics,2013,2014,37,2,"[37, 38]","[1.0, 0.6]","networks, epidemic, network, social, spreading, disease, nodes, infection, infected, model"
+physics,2015,2016,47,2,"[25, 47]","[0.5, 0.8]","qm, energy, density, functional, calculations, potentials, molecular, quantum, kohn, mathbf"
+physics,2016,2017,19,2,"[19, 40]","[0.9, 0.5]","plasmonic, plasmon, surface, nanostructures, optical, plasmons, graphene, light, field, metal"
+physics,2018,2019,37,2,"[37, 38]","[0.9, 0.5]","networks, network, epidemic, spreading, social, infected, disease, nodes, model, susceptible"
+physics,2019,2020,37,2,"[37, 38]","[0.8, 0.6]","epidemic, networks, network, covid, social, spreading, disease, infected, infection, model"
+physics,2021,2022,37,2,"[37, 38]","[0.9, 0.6]","epidemic, covid, networks, network, social, disease, pandemic, spreading, infection, infected"
