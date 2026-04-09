@@ -1,3 +1,1 @@
-subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-cs,2004,2005,116,2,"[116, 127]","[0.8, 0.6]","query, queries, data, relational, databases, database, disjunctive, web, donn, xml"
-cs,2010,2011,94,2,"[94, 130]","[0.9, 0.5]","log, agents, problem, time, nodes, distributed, consensus, communication, algorithm, network"
+

@@ -1,10 +1,1 @@
-subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-cs,2011,2012,103,2,"[103, 170]","[0.5, 0.5]","routing, sensor, energy, wireless, wsns, nodes, protocol, protocols, hoc, ad"
-cs,2012,2013,170,2,"[170, 237]","[0.5, 0.5]","vehicular, vanet, aomdv, hoc, mobility, ad, vanets, 11p, transmission, routing"
-cs,2019,2020,12,2,"[12, 187]","[0.7, 0.6]","driving, autonomous, traffic, vehicles, vehicle, trajectory, lane, prediction, av, behavior"
-cs,2020,2021,67,2,"[67, 257]","[0.7, 0.6]","games, game, player, equilibria, nash, players, mathbf, payoff, equilibrium, strategies"
-cs,2021,2022,8,2,"[8, 18]","[0.9, 0.5]","adversarial, robustness, attacks, attack, perturbations, examples, against, defense, transferability, robust"
-cs,2021,2022,41,2,"[41, 227]","[0.6, 0.5]","privacy, dp, private, differentially, differential, clipping, synthetic, frac, utility, ldp"
-cs,2023,2024,67,2,"[67, 257]","[0.7, 0.6]","games, players, game, player, equilibrium, nash, equilibria, leader, coalition, stackelberg"
-cs,2024,2025,14,2,"[14, 117]","[0.7, 0.5]","federated, fl, clients, client, heterogeneity, privacy, learning, server, heterogeneous, aggregation"
-cs,2024,2025,67,2,"[67, 257]","[0.7, 0.5]","games, game, bf, nash, player, equilibrium, players, equilibria, payoff, parity"
+

@@ -1,5 +1,1 @@
-subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-physics,2015,2016,222,2,"[222, 223]","[0.5, 0.5]","cuore, neutrinoless, beta, decay, double, xe, bolometric, background, experiment, next"
-physics,2016,2017,24,2,"[24, 34]","[0.5, 0.5]","plasmonic, plasmon, nanostructures, surface, plasmons, nanoparticle, dielectric, metallic, enhancement, stub"
-physics,2019,2020,38,3,"[38, 61, 91]","[0.5, 0.5, 0.5]","neural, learning, flow, turbulence, training, les, deep, data, models, network"
-physics,2024,2025,9,2,"[9, 172]","[0.6, 0.5]","students, physics, student, education, ai, teaching, science, learning, skills, introductory"
+

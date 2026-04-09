@@ -1,5 +1,1 @@
-subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-math,2004,2005,0,2,"[0, 204]","[0.9, 0.5]","equation, solutions, equations, wave, dinger, mathbb, schr, nonlinear, frac, elliptic"
-math,2005,2006,21,2,"[21, 28]","[0.8, 0.5]","stochastic, noise, equations, equation, solutions, processes, differential, solution, diffusion, time"
-math,2009,2010,4,2,"[4, 151]","[1.0, 0.6]","lie, mathfrak, algebras, algebra, modules, superalgebras, sl, gl, mathcal, mathbb"
-math,2017,2018,6,2,"[6, 206]","[0.8, 0.5]","graphs, graph, gg, vertices, vertex, edge, number, edges, bipartite, geq"
+
