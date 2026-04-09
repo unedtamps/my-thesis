@@ -1,2 +1,2 @@
-subject,avg_ttc,std_ttc,avg_tts,std_tts,avg_ttq,std_ttq,avg_ttc_ratio,std_ttc_ratio
-physics,0.423475,0.037674,0.254217,0.097758,0.283013,0.094731,0.818581,0.10723
+subject,avg_ttc,std_ttc,avg_tts,std_tts,avg_ttq,std_ttq
+physics,0.45264,0.054209,0.82541,0.071708,0.555486,0.024645
