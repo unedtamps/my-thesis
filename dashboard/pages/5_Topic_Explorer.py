@@ -8,7 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from utils.data_loader import (
     MODELS, MODEL_LABELS, SUBJECTS, SUBJECT_LABELS,
-    load_csv, setup_sidebar, model_color_map,
+    load_csv, setup_sidebar, model_color_map, RESULTS_DIR
 )
 
 st.set_page_config(page_title="Topic Explorer", page_icon="🔬", layout="wide")
@@ -57,6 +57,9 @@ for m in selected_models:
     cont_trans = load_csv(m, "consistency", subject, "continuity_transitions.csv")
     labels_df = load_csv(m, "temporal", subject, "topic_labels.csv")
     yearly_desc_df = load_csv(m, "temporal", subject, "topic_yearly_descriptions.csv")
+    
+    global_words_path = RESULTS_DIR / m / "modeling" / "global_top_words.csv"
+    global_words_df = pd.read_csv(global_words_path) if global_words_path.exists() else None
 
     # Build label & description lookup from topic_labels.csv
     topic_label_map = {}
@@ -70,6 +73,12 @@ for m in selected_models:
 
     with st.expander(f"📊 {label}", expanded=(m == selected_models[0])):
         topic_ids = sorted(prev_df["topic_id"].unique())
+
+        topic_global_words_map = {}
+        if global_words_df is not None and len(global_words_df) > 0:
+            # Filter by current subject just in case it contains all subjects
+            sub_global = global_words_df[global_words_df["subject"] == subject]
+            topic_global_words_map = dict(zip(sub_global["topic_id"], sub_global["top_words"]))
 
         # Build labels + search index from ALL years' words
         t_labels = {}
@@ -239,6 +248,11 @@ for m in selected_models:
                 evo_label = topic_label_map.get(tid, f"Topic {tid}")
 
                 with st.expander(f"{icon} Topic {tid}: {evo_label} — evolution details"):
+                    # Global top words
+                    g_words = topic_global_words_map.get(tid, "")
+                    if g_words and str(g_words) != "nan":
+                        st.markdown(f"**Global Top Words:** {g_words}")
+                        
                     # Enriched description
                     tid_desc = topic_desc_map.get(tid, "")
                     if tid_desc and str(tid_desc) != "nan":
