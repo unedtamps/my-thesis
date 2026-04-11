@@ -1,0 +1,2 @@
+subject,n_topics,n_windows,n_transitions,avg_drift,std_drift,median_drift,pct_stable,pct_moderate,pct_high_drift
+cs,50,5,4,0.692261,0.137047,0.702919,1.5,48.0,50.5
