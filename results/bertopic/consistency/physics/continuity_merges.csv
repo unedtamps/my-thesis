@@ -1,1 +1,2 @@
-
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+physics,2020,2021,159,2,"[159, 173]","[0.5079, 0.5374]","ct, reconstruction, image, breast, attenuation, mammography, spectral, cst, images, ray"

@@ -1,1 +1,8 @@
-
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+cs,2020,2021,67,2,"[67, 257]","[0.8003, 0.5978]","games, game, player, equilibria, nash, players, mathbf, payoff, equilibrium, strategies"
+cs,2021,2022,8,2,"[8, 18]","[0.9007, 0.6103]","adversarial, robustness, attacks, attack, perturbations, examples, against, defense, transferability, robust"
+cs,2021,2022,41,2,"[41, 227]","[0.6975, 0.5492]","privacy, dp, private, differentially, differential, clipping, synthetic, frac, utility, ldp"
+cs,2022,2023,10,2,"[10, 149]","[0.8352, 0.5608]","speech, audio, speaker, sound, acoustic, voice, tts, enhancement, spectrogram, separation"
+cs,2023,2024,8,2,"[8, 18]","[0.7645, 0.6058]","adversarial, attacks, robustness, attack, perturbations, defense, examples, against, box, robust"
+cs,2024,2025,48,2,"[48, 246]","[0.7767, 0.5075]","anomaly, detection, anomalies, ad, vad, industrial, normal, iad, anomalous, unsupervised"
+cs,2024,2025,67,2,"[67, 257]","[0.7161, 0.5543]","games, game, bf, nash, player, equilibrium, players, equilibria, payoff, parity"

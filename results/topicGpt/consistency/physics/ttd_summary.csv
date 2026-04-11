@@ -1,2 +1,2 @@
 subject,n_topics,ttd_mean,ttd_std,ttd_median,pct_stable,pct_drifted
-physics,74,0.895515,0.107555,0.936584,0.0,100.0
+physics,41,0.828728,0.144485,0.835974,4.88,95.12

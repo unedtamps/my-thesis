@@ -1,1 +1,2 @@
-
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+physics,2011,2012,35,2,"[24, 35]","[0.5704, 0.7398]","metamaterials, optical, metamaterial, 2ls, refractive, fiber, index, media, transverse, light"

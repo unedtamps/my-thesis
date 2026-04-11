@@ -1,1925 +1,1067 @@
 subject,year,topic_id,topic_label,doc_count,total_docs_year,proportion
-physics,2000,0,Plasma Beam Interactions,11,134,0.08209
-physics,2000,1,Uncertainty Propagation,1,134,0.007463
-physics,2000,2,Quantum Corrections,11,134,0.08209
-physics,2000,3,DNA Conformational Dynamics,4,134,0.029851
-physics,2000,4,Optical Trapping Cooling,5,134,0.037313
-physics,2000,5,Nonlinear Harmonic Generation,0,134,0.0
-physics,2000,6,Fermi Gas Stability,2,134,0.014925
-physics,2000,7,Molecular Absorption Precision,4,134,0.029851
-physics,2000,8,Lanczos Eigenvalue Methods,3,134,0.022388
-physics,2000,9,Algebraic Products and Angular Momentum Separation,0,134,0.0
-physics,2000,10,Deforming Reference Frame Dynamics,1,134,0.007463
-physics,2000,11,Rotating Flow Dynamics,2,134,0.014925
-physics,2000,12,Optical Logic Gates,0,134,0.0
-physics,2000,13,Micromaser Dynamics,2,134,0.014925
-physics,2000,14,Pixel Detector Calibration,2,134,0.014925
-physics,2000,15,Pulse-Level Beam Feedback,17,134,0.126866
-physics,2000,16,Mass-Energy Relationships,6,134,0.044776
-physics,2000,17,Anomalous Scaling Turbulence,3,134,0.022388
-physics,2000,18,High-Order Turbulence Moments,2,134,0.014925
-physics,2000,19,Fractal Surface Plasmonics,0,134,0.0
-physics,2000,20,Polymer Entropic Mechanics,5,134,0.037313
-physics,2000,21,Radial Current Discharge Dynamics,2,134,0.014925
-physics,2000,22,Bimetallic Cluster Magnetism,2,134,0.014925
-physics,2000,23,Polymer Translocation Dynamics,0,134,0.0
-physics,2000,24,Photon Statistics Cavities,0,134,0.0
-physics,2000,25,Three-Body Virtual States,3,134,0.022388
-physics,2000,26,Relativistic Common Sense,8,134,0.059701
-physics,2000,27,Macroscopic Quantum Collapse,0,134,0.0
-physics,2000,28,Coherent Image Reconstruction,0,134,0.0
-physics,2000,29,Nonlinear Flagellar Dynamics,1,134,0.007463
-physics,2000,30,Chaotic Dynamo Reversals,2,134,0.014925
-physics,2000,31,Tokamak Flow Barriers,1,134,0.007463
-physics,2000,32,Forbidden Transition Spectroscopy,2,134,0.014925
-physics,2000,33,Axion Solar Search,0,134,0.0
-physics,2000,34,Seismic Network Analysis,1,134,0.007463
-physics,2000,35,Lattice Boltzmann Methods,0,134,0.0
-physics,2000,36,High-Energy Trigger Processing,0,134,0.0
-physics,2000,37,Network Immunization Dynamics,0,134,0.0
-physics,2000,38,Noise-Induced Phase Transitions,0,134,0.0
-physics,2000,39,Stochastic Geometry Dynamics,1,134,0.007463
-physics,2000,40,Metallic Slit Resonance,0,134,0.0
-physics,2000,41,Hyperbolic Dispersion Media,0,134,0.0
-physics,2000,42,Laser-Plasma Acceleration,5,134,0.037313
-physics,2000,43,Rotating Surface Solitons,0,134,0.0
-physics,2000,44,Urban Spatial Scaling,0,134,0.0
-physics,2000,45,Photoelectron Imaging Dynamics,1,134,0.007463
-physics,2000,46,Climate Information Dynamics,0,134,0.0
-physics,2000,47,Kinetic Potential Embedding,0,134,0.0
-physics,2000,48,Obliquity Climate Dynamics,0,134,0.0
-physics,2000,49,Singularity Reinterpretation,1,134,0.007463
-physics,2000,50,Photonic Quantum Gates,0,134,0.0
-physics,2000,51,Laser-Assisted Tunneling Dynamics,3,134,0.022388
-physics,2000,52,Blog Network Dynamics,0,134,0.0
-physics,2000,53,Self-Organized Cooperation,1,134,0.007463
-physics,2000,54,Ensemble Learning Dynamics,0,134,0.0
-physics,2000,55,Film Retraction Dynamics,0,134,0.0
-physics,2000,56,Optomechanical Tuning Lasers,0,134,0.0
-physics,2000,57,Buffer-Gas Cooling,0,134,0.0
-physics,2000,58,Opinion Consensus Dynamics,0,134,0.0
-physics,2000,59,Ion Pairing Dynamics,2,134,0.014925
-physics,2000,60,Metamaterial Resonance Bistability,0,134,0.0
-physics,2000,61,Existence Interpretation,1,134,0.007463
-physics,2000,62,Soliton Pair Dynamics,4,134,0.029851
-physics,2000,63,Ultra-Short Pulse Coherence,1,134,0.007463
-physics,2000,64,Excited State Perturbation Theory,2,134,0.014925
-physics,2000,65,TR-Symmetry Breaking Meta-Optics,0,134,0.0
-physics,2000,66,Multimode Cavity QED,0,134,0.0
-physics,2000,67,Self-Fourier Beam Dynamics,1,134,0.007463
-physics,2000,68,Gravitational Constant Fluctuations,1,134,0.007463
-physics,2000,69,Rydberg Resonance Dynamics,1,134,0.007463
-physics,2000,70,Quantum-Classical Boundary,6,134,0.044776
-physics,2000,71,Antineutrino Source Design,0,134,0.0
-physics,2000,72,Crystal Ab Initio Design,0,134,0.0
-physics,2000,73,Reciprocity Systems,0,134,0.0
-physics,2001,0,Plasma Beam Interactions,2,125,0.016
-physics,2001,1,Uncertainty Propagation,1,125,0.008
-physics,2001,2,Quantum Corrections,9,125,0.072
-physics,2001,3,DNA Conformational Dynamics,6,125,0.048
-physics,2001,4,Optical Trapping Cooling,5,125,0.04
-physics,2001,5,Nonlinear Harmonic Generation,0,125,0.0
-physics,2001,6,Fermi Gas Stability,4,125,0.032
-physics,2001,7,Molecular Absorption Precision,3,125,0.024
-physics,2001,8,Lanczos Eigenvalue Methods,2,125,0.016
-physics,2001,9,Algebraic Products and Angular Momentum Separation,1,125,0.008
-physics,2001,10,Deforming Reference Frame Dynamics,1,125,0.008
-physics,2001,11,Rotating Flow Dynamics,2,125,0.016
-physics,2001,12,Optical Logic Gates,1,125,0.008
-physics,2001,13,Micromaser Dynamics,2,125,0.016
-physics,2001,14,Pixel Detector Calibration,1,125,0.008
-physics,2001,15,Pulse-Level Beam Feedback,3,125,0.024
-physics,2001,16,Mass-Energy Relationships,2,125,0.016
-physics,2001,17,Anomalous Scaling Turbulence,11,125,0.088
-physics,2001,18,High-Order Turbulence Moments,2,125,0.016
-physics,2001,19,Fractal Surface Plasmonics,1,125,0.008
-physics,2001,20,Polymer Entropic Mechanics,4,125,0.032
-physics,2001,21,Radial Current Discharge Dynamics,1,125,0.008
-physics,2001,22,Bimetallic Cluster Magnetism,3,125,0.024
-physics,2001,23,Polymer Translocation Dynamics,1,125,0.008
-physics,2001,24,Photon Statistics Cavities,0,125,0.0
-physics,2001,25,Three-Body Virtual States,1,125,0.008
-physics,2001,26,Relativistic Common Sense,7,125,0.056
-physics,2001,27,Macroscopic Quantum Collapse,0,125,0.0
-physics,2001,28,Coherent Image Reconstruction,0,125,0.0
-physics,2001,29,Nonlinear Flagellar Dynamics,0,125,0.0
-physics,2001,30,Chaotic Dynamo Reversals,4,125,0.032
-physics,2001,31,Tokamak Flow Barriers,0,125,0.0
-physics,2001,32,Forbidden Transition Spectroscopy,1,125,0.008
-physics,2001,33,Axion Solar Search,0,125,0.0
-physics,2001,34,Seismic Network Analysis,0,125,0.0
-physics,2001,35,Lattice Boltzmann Methods,2,125,0.016
-physics,2001,36,High-Energy Trigger Processing,0,125,0.0
-physics,2001,37,Network Immunization Dynamics,0,125,0.0
-physics,2001,38,Noise-Induced Phase Transitions,0,125,0.0
-physics,2001,39,Stochastic Geometry Dynamics,1,125,0.008
-physics,2001,40,Metallic Slit Resonance,0,125,0.0
-physics,2001,41,Hyperbolic Dispersion Media,0,125,0.0
-physics,2001,42,Laser-Plasma Acceleration,3,125,0.024
-physics,2001,43,Rotating Surface Solitons,0,125,0.0
-physics,2001,44,Urban Spatial Scaling,0,125,0.0
-physics,2001,45,Photoelectron Imaging Dynamics,0,125,0.0
-physics,2001,46,Climate Information Dynamics,0,125,0.0
-physics,2001,47,Kinetic Potential Embedding,0,125,0.0
-physics,2001,48,Obliquity Climate Dynamics,0,125,0.0
-physics,2001,49,Singularity Reinterpretation,2,125,0.016
-physics,2001,50,Photonic Quantum Gates,1,125,0.008
-physics,2001,51,Laser-Assisted Tunneling Dynamics,3,125,0.024
-physics,2001,52,Blog Network Dynamics,0,125,0.0
-physics,2001,53,Self-Organized Cooperation,1,125,0.008
-physics,2001,54,Ensemble Learning Dynamics,0,125,0.0
-physics,2001,55,Film Retraction Dynamics,0,125,0.0
-physics,2001,56,Optomechanical Tuning Lasers,0,125,0.0
-physics,2001,57,Buffer-Gas Cooling,4,125,0.032
-physics,2001,58,Opinion Consensus Dynamics,0,125,0.0
-physics,2001,59,Ion Pairing Dynamics,0,125,0.0
-physics,2001,60,Metamaterial Resonance Bistability,0,125,0.0
-physics,2001,61,Existence Interpretation,2,125,0.016
-physics,2001,62,Soliton Pair Dynamics,3,125,0.024
-physics,2001,63,Ultra-Short Pulse Coherence,0,125,0.0
-physics,2001,64,Excited State Perturbation Theory,3,125,0.024
-physics,2001,65,TR-Symmetry Breaking Meta-Optics,0,125,0.0
-physics,2001,66,Multimode Cavity QED,1,125,0.008
-physics,2001,67,Self-Fourier Beam Dynamics,4,125,0.032
-physics,2001,68,Gravitational Constant Fluctuations,5,125,0.04
-physics,2001,69,Rydberg Resonance Dynamics,3,125,0.024
-physics,2001,70,Quantum-Classical Boundary,5,125,0.04
-physics,2001,71,Antineutrino Source Design,1,125,0.008
-physics,2001,72,Crystal Ab Initio Design,0,125,0.0
-physics,2001,73,Reciprocity Systems,0,125,0.0
-physics,2002,0,Plasma Beam Interactions,2,142,0.014085
-physics,2002,1,Uncertainty Propagation,0,142,0.0
-physics,2002,2,Quantum Corrections,8,142,0.056338
-physics,2002,3,DNA Conformational Dynamics,2,142,0.014085
-physics,2002,4,Optical Trapping Cooling,8,142,0.056338
-physics,2002,5,Nonlinear Harmonic Generation,0,142,0.0
-physics,2002,6,Fermi Gas Stability,4,142,0.028169
-physics,2002,7,Molecular Absorption Precision,2,142,0.014085
-physics,2002,8,Lanczos Eigenvalue Methods,3,142,0.021127
-physics,2002,9,Algebraic Products and Angular Momentum Separation,1,142,0.007042
-physics,2002,10,Deforming Reference Frame Dynamics,4,142,0.028169
-physics,2002,11,Rotating Flow Dynamics,0,142,0.0
-physics,2002,12,Optical Logic Gates,0,142,0.0
-physics,2002,13,Micromaser Dynamics,3,142,0.021127
-physics,2002,14,Pixel Detector Calibration,1,142,0.007042
-physics,2002,15,Pulse-Level Beam Feedback,2,142,0.014085
-physics,2002,16,Mass-Energy Relationships,0,142,0.0
-physics,2002,17,Anomalous Scaling Turbulence,3,142,0.021127
-physics,2002,18,High-Order Turbulence Moments,7,142,0.049296
-physics,2002,19,Fractal Surface Plasmonics,0,142,0.0
-physics,2002,20,Polymer Entropic Mechanics,4,142,0.028169
-physics,2002,21,Radial Current Discharge Dynamics,1,142,0.007042
-physics,2002,22,Bimetallic Cluster Magnetism,3,142,0.021127
-physics,2002,23,Polymer Translocation Dynamics,0,142,0.0
-physics,2002,24,Photon Statistics Cavities,0,142,0.0
-physics,2002,25,Three-Body Virtual States,1,142,0.007042
-physics,2002,26,Relativistic Common Sense,7,142,0.049296
-physics,2002,27,Macroscopic Quantum Collapse,2,142,0.014085
-physics,2002,28,Coherent Image Reconstruction,1,142,0.007042
-physics,2002,29,Nonlinear Flagellar Dynamics,0,142,0.0
-physics,2002,30,Chaotic Dynamo Reversals,6,142,0.042254
-physics,2002,31,Tokamak Flow Barriers,3,142,0.021127
-physics,2002,32,Forbidden Transition Spectroscopy,3,142,0.021127
-physics,2002,33,Axion Solar Search,0,142,0.0
-physics,2002,34,Seismic Network Analysis,0,142,0.0
-physics,2002,35,Lattice Boltzmann Methods,1,142,0.007042
-physics,2002,36,High-Energy Trigger Processing,0,142,0.0
-physics,2002,37,Network Immunization Dynamics,0,142,0.0
-physics,2002,38,Noise-Induced Phase Transitions,0,142,0.0
-physics,2002,39,Stochastic Geometry Dynamics,4,142,0.028169
-physics,2002,40,Metallic Slit Resonance,1,142,0.007042
-physics,2002,41,Hyperbolic Dispersion Media,2,142,0.014085
-physics,2002,42,Laser-Plasma Acceleration,4,142,0.028169
-physics,2002,43,Rotating Surface Solitons,1,142,0.007042
-physics,2002,44,Urban Spatial Scaling,0,142,0.0
-physics,2002,45,Photoelectron Imaging Dynamics,0,142,0.0
-physics,2002,46,Climate Information Dynamics,1,142,0.007042
-physics,2002,47,Kinetic Potential Embedding,1,142,0.007042
-physics,2002,48,Obliquity Climate Dynamics,1,142,0.007042
-physics,2002,49,Singularity Reinterpretation,1,142,0.007042
-physics,2002,50,Photonic Quantum Gates,1,142,0.007042
-physics,2002,51,Laser-Assisted Tunneling Dynamics,3,142,0.021127
-physics,2002,52,Blog Network Dynamics,0,142,0.0
-physics,2002,53,Self-Organized Cooperation,1,142,0.007042
-physics,2002,54,Ensemble Learning Dynamics,0,142,0.0
-physics,2002,55,Film Retraction Dynamics,0,142,0.0
-physics,2002,56,Optomechanical Tuning Lasers,0,142,0.0
-physics,2002,57,Buffer-Gas Cooling,2,142,0.014085
-physics,2002,58,Opinion Consensus Dynamics,0,142,0.0
-physics,2002,59,Ion Pairing Dynamics,1,142,0.007042
-physics,2002,60,Metamaterial Resonance Bistability,0,142,0.0
-physics,2002,61,Existence Interpretation,3,142,0.021127
-physics,2002,62,Soliton Pair Dynamics,4,142,0.028169
-physics,2002,63,Ultra-Short Pulse Coherence,2,142,0.014085
-physics,2002,64,Excited State Perturbation Theory,4,142,0.028169
-physics,2002,65,TR-Symmetry Breaking Meta-Optics,1,142,0.007042
-physics,2002,66,Multimode Cavity QED,7,142,0.049296
-physics,2002,67,Self-Fourier Beam Dynamics,4,142,0.028169
-physics,2002,68,Gravitational Constant Fluctuations,3,142,0.021127
-physics,2002,69,Rydberg Resonance Dynamics,3,142,0.021127
-physics,2002,70,Quantum-Classical Boundary,1,142,0.007042
-physics,2002,71,Antineutrino Source Design,2,142,0.014085
-physics,2002,72,Crystal Ab Initio Design,0,142,0.0
-physics,2002,73,Reciprocity Systems,2,142,0.014085
-physics,2003,0,Plasma Beam Interactions,2,140,0.014286
-physics,2003,1,Uncertainty Propagation,1,140,0.007143
-physics,2003,2,Quantum Corrections,10,140,0.071429
-physics,2003,3,DNA Conformational Dynamics,8,140,0.057143
-physics,2003,4,Optical Trapping Cooling,3,140,0.021429
-physics,2003,5,Nonlinear Harmonic Generation,0,140,0.0
-physics,2003,6,Fermi Gas Stability,2,140,0.014286
-physics,2003,7,Molecular Absorption Precision,1,140,0.007143
-physics,2003,8,Lanczos Eigenvalue Methods,0,140,0.0
-physics,2003,9,Algebraic Products and Angular Momentum Separation,1,140,0.007143
-physics,2003,10,Deforming Reference Frame Dynamics,1,140,0.007143
-physics,2003,11,Rotating Flow Dynamics,3,140,0.021429
-physics,2003,12,Optical Logic Gates,0,140,0.0
-physics,2003,13,Micromaser Dynamics,0,140,0.0
-physics,2003,14,Pixel Detector Calibration,8,140,0.057143
-physics,2003,15,Pulse-Level Beam Feedback,1,140,0.007143
-physics,2003,16,Mass-Energy Relationships,1,140,0.007143
-physics,2003,17,Anomalous Scaling Turbulence,2,140,0.014286
-physics,2003,18,High-Order Turbulence Moments,3,140,0.021429
-physics,2003,19,Fractal Surface Plasmonics,1,140,0.007143
-physics,2003,20,Polymer Entropic Mechanics,2,140,0.014286
-physics,2003,21,Radial Current Discharge Dynamics,1,140,0.007143
-physics,2003,22,Bimetallic Cluster Magnetism,1,140,0.007143
-physics,2003,23,Polymer Translocation Dynamics,1,140,0.007143
-physics,2003,24,Photon Statistics Cavities,0,140,0.0
-physics,2003,25,Three-Body Virtual States,3,140,0.021429
-physics,2003,26,Relativistic Common Sense,6,140,0.042857
-physics,2003,27,Macroscopic Quantum Collapse,0,140,0.0
-physics,2003,28,Coherent Image Reconstruction,1,140,0.007143
-physics,2003,29,Nonlinear Flagellar Dynamics,1,140,0.007143
-physics,2003,30,Chaotic Dynamo Reversals,4,140,0.028571
-physics,2003,31,Tokamak Flow Barriers,3,140,0.021429
-physics,2003,32,Forbidden Transition Spectroscopy,7,140,0.05
-physics,2003,33,Axion Solar Search,1,140,0.007143
-physics,2003,34,Seismic Network Analysis,11,140,0.078571
-physics,2003,35,Lattice Boltzmann Methods,0,140,0.0
-physics,2003,36,High-Energy Trigger Processing,2,140,0.014286
-physics,2003,37,Network Immunization Dynamics,2,140,0.014286
-physics,2003,38,Noise-Induced Phase Transitions,0,140,0.0
-physics,2003,39,Stochastic Geometry Dynamics,0,140,0.0
-physics,2003,40,Metallic Slit Resonance,0,140,0.0
-physics,2003,41,Hyperbolic Dispersion Media,4,140,0.028571
-physics,2003,42,Laser-Plasma Acceleration,3,140,0.021429
-physics,2003,43,Rotating Surface Solitons,1,140,0.007143
-physics,2003,44,Urban Spatial Scaling,0,140,0.0
-physics,2003,45,Photoelectron Imaging Dynamics,1,140,0.007143
-physics,2003,46,Climate Information Dynamics,0,140,0.0
-physics,2003,47,Kinetic Potential Embedding,1,140,0.007143
-physics,2003,48,Obliquity Climate Dynamics,0,140,0.0
-physics,2003,49,Singularity Reinterpretation,1,140,0.007143
-physics,2003,50,Photonic Quantum Gates,0,140,0.0
-physics,2003,51,Laser-Assisted Tunneling Dynamics,1,140,0.007143
-physics,2003,52,Blog Network Dynamics,0,140,0.0
-physics,2003,53,Self-Organized Cooperation,0,140,0.0
-physics,2003,54,Ensemble Learning Dynamics,0,140,0.0
-physics,2003,55,Film Retraction Dynamics,1,140,0.007143
-physics,2003,56,Optomechanical Tuning Lasers,0,140,0.0
-physics,2003,57,Buffer-Gas Cooling,5,140,0.035714
-physics,2003,58,Opinion Consensus Dynamics,0,140,0.0
-physics,2003,59,Ion Pairing Dynamics,1,140,0.007143
-physics,2003,60,Metamaterial Resonance Bistability,0,140,0.0
-physics,2003,61,Existence Interpretation,0,140,0.0
-physics,2003,62,Soliton Pair Dynamics,7,140,0.05
-physics,2003,63,Ultra-Short Pulse Coherence,1,140,0.007143
-physics,2003,64,Excited State Perturbation Theory,5,140,0.035714
-physics,2003,65,TR-Symmetry Breaking Meta-Optics,0,140,0.0
-physics,2003,66,Multimode Cavity QED,2,140,0.014286
-physics,2003,67,Self-Fourier Beam Dynamics,3,140,0.021429
-physics,2003,68,Gravitational Constant Fluctuations,3,140,0.021429
-physics,2003,69,Rydberg Resonance Dynamics,1,140,0.007143
-physics,2003,70,Quantum-Classical Boundary,3,140,0.021429
-physics,2003,71,Antineutrino Source Design,0,140,0.0
-physics,2003,72,Crystal Ab Initio Design,1,140,0.007143
-physics,2003,73,Reciprocity Systems,1,140,0.007143
-physics,2004,0,Plasma Beam Interactions,3,209,0.014354
-physics,2004,1,Uncertainty Propagation,1,209,0.004785
-physics,2004,2,Quantum Corrections,8,209,0.038278
-physics,2004,3,DNA Conformational Dynamics,1,209,0.004785
-physics,2004,4,Optical Trapping Cooling,7,209,0.033493
-physics,2004,5,Nonlinear Harmonic Generation,0,209,0.0
-physics,2004,6,Fermi Gas Stability,7,209,0.033493
-physics,2004,7,Molecular Absorption Precision,1,209,0.004785
-physics,2004,8,Lanczos Eigenvalue Methods,3,209,0.014354
-physics,2004,9,Algebraic Products and Angular Momentum Separation,4,209,0.019139
-physics,2004,10,Deforming Reference Frame Dynamics,1,209,0.004785
-physics,2004,11,Rotating Flow Dynamics,1,209,0.004785
-physics,2004,12,Optical Logic Gates,0,209,0.0
-physics,2004,13,Micromaser Dynamics,2,209,0.009569
-physics,2004,14,Pixel Detector Calibration,10,209,0.047847
-physics,2004,15,Pulse-Level Beam Feedback,2,209,0.009569
-physics,2004,16,Mass-Energy Relationships,4,209,0.019139
-physics,2004,17,Anomalous Scaling Turbulence,5,209,0.023923
-physics,2004,18,High-Order Turbulence Moments,8,209,0.038278
-physics,2004,19,Fractal Surface Plasmonics,0,209,0.0
-physics,2004,20,Polymer Entropic Mechanics,4,209,0.019139
-physics,2004,21,Radial Current Discharge Dynamics,3,209,0.014354
-physics,2004,22,Bimetallic Cluster Magnetism,3,209,0.014354
-physics,2004,23,Polymer Translocation Dynamics,2,209,0.009569
-physics,2004,24,Photon Statistics Cavities,0,209,0.0
-physics,2004,25,Three-Body Virtual States,3,209,0.014354
-physics,2004,26,Relativistic Common Sense,11,209,0.052632
-physics,2004,27,Macroscopic Quantum Collapse,0,209,0.0
-physics,2004,28,Coherent Image Reconstruction,1,209,0.004785
-physics,2004,29,Nonlinear Flagellar Dynamics,0,209,0.0
-physics,2004,30,Chaotic Dynamo Reversals,6,209,0.028708
-physics,2004,31,Tokamak Flow Barriers,10,209,0.047847
-physics,2004,32,Forbidden Transition Spectroscopy,1,209,0.004785
-physics,2004,33,Axion Solar Search,0,209,0.0
-physics,2004,34,Seismic Network Analysis,8,209,0.038278
-physics,2004,35,Lattice Boltzmann Methods,6,209,0.028708
-physics,2004,36,High-Energy Trigger Processing,0,209,0.0
-physics,2004,37,Network Immunization Dynamics,1,209,0.004785
-physics,2004,38,Noise-Induced Phase Transitions,0,209,0.0
-physics,2004,39,Stochastic Geometry Dynamics,1,209,0.004785
-physics,2004,40,Metallic Slit Resonance,2,209,0.009569
-physics,2004,41,Hyperbolic Dispersion Media,2,209,0.009569
-physics,2004,42,Laser-Plasma Acceleration,11,209,0.052632
-physics,2004,43,Rotating Surface Solitons,1,209,0.004785
-physics,2004,44,Urban Spatial Scaling,0,209,0.0
-physics,2004,45,Photoelectron Imaging Dynamics,0,209,0.0
-physics,2004,46,Climate Information Dynamics,2,209,0.009569
-physics,2004,47,Kinetic Potential Embedding,1,209,0.004785
-physics,2004,48,Obliquity Climate Dynamics,3,209,0.014354
-physics,2004,49,Singularity Reinterpretation,4,209,0.019139
-physics,2004,50,Photonic Quantum Gates,1,209,0.004785
-physics,2004,51,Laser-Assisted Tunneling Dynamics,1,209,0.004785
-physics,2004,52,Blog Network Dynamics,0,209,0.0
-physics,2004,53,Self-Organized Cooperation,3,209,0.014354
-physics,2004,54,Ensemble Learning Dynamics,1,209,0.004785
-physics,2004,55,Film Retraction Dynamics,1,209,0.004785
-physics,2004,56,Optomechanical Tuning Lasers,0,209,0.0
-physics,2004,57,Buffer-Gas Cooling,4,209,0.019139
-physics,2004,58,Opinion Consensus Dynamics,0,209,0.0
-physics,2004,59,Ion Pairing Dynamics,0,209,0.0
-physics,2004,60,Metamaterial Resonance Bistability,1,209,0.004785
-physics,2004,61,Existence Interpretation,0,209,0.0
-physics,2004,62,Soliton Pair Dynamics,15,209,0.07177
-physics,2004,63,Ultra-Short Pulse Coherence,5,209,0.023923
-physics,2004,64,Excited State Perturbation Theory,6,209,0.028708
-physics,2004,65,TR-Symmetry Breaking Meta-Optics,0,209,0.0
-physics,2004,66,Multimode Cavity QED,6,209,0.028708
-physics,2004,67,Self-Fourier Beam Dynamics,0,209,0.0
-physics,2004,68,Gravitational Constant Fluctuations,6,209,0.028708
-physics,2004,69,Rydberg Resonance Dynamics,2,209,0.009569
-physics,2004,70,Quantum-Classical Boundary,2,209,0.009569
-physics,2004,71,Antineutrino Source Design,1,209,0.004785
-physics,2004,72,Crystal Ab Initio Design,0,209,0.0
-physics,2004,73,Reciprocity Systems,0,209,0.0
-physics,2005,0,Plasma Beam Interactions,4,240,0.016667
-physics,2005,1,Uncertainty Propagation,0,240,0.0
-physics,2005,2,Quantum Corrections,12,240,0.05
-physics,2005,3,DNA Conformational Dynamics,4,240,0.016667
-physics,2005,4,Optical Trapping Cooling,5,240,0.020833
-physics,2005,5,Nonlinear Harmonic Generation,2,240,0.008333
-physics,2005,6,Fermi Gas Stability,11,240,0.045833
-physics,2005,7,Molecular Absorption Precision,0,240,0.0
-physics,2005,8,Lanczos Eigenvalue Methods,1,240,0.004167
-physics,2005,9,Algebraic Products and Angular Momentum Separation,1,240,0.004167
-physics,2005,10,Deforming Reference Frame Dynamics,2,240,0.008333
-physics,2005,11,Rotating Flow Dynamics,4,240,0.016667
-physics,2005,12,Optical Logic Gates,0,240,0.0
-physics,2005,13,Micromaser Dynamics,1,240,0.004167
-physics,2005,14,Pixel Detector Calibration,12,240,0.05
-physics,2005,15,Pulse-Level Beam Feedback,0,240,0.0
-physics,2005,16,Mass-Energy Relationships,1,240,0.004167
-physics,2005,17,Anomalous Scaling Turbulence,2,240,0.008333
-physics,2005,18,High-Order Turbulence Moments,4,240,0.016667
-physics,2005,19,Fractal Surface Plasmonics,3,240,0.0125
-physics,2005,20,Polymer Entropic Mechanics,1,240,0.004167
-physics,2005,21,Radial Current Discharge Dynamics,0,240,0.0
-physics,2005,22,Bimetallic Cluster Magnetism,1,240,0.004167
-physics,2005,23,Polymer Translocation Dynamics,2,240,0.008333
-physics,2005,24,Photon Statistics Cavities,0,240,0.0
-physics,2005,25,Three-Body Virtual States,2,240,0.008333
-physics,2005,26,Relativistic Common Sense,19,240,0.079167
-physics,2005,27,Macroscopic Quantum Collapse,0,240,0.0
-physics,2005,28,Coherent Image Reconstruction,1,240,0.004167
-physics,2005,29,Nonlinear Flagellar Dynamics,2,240,0.008333
-physics,2005,30,Chaotic Dynamo Reversals,4,240,0.016667
-physics,2005,31,Tokamak Flow Barriers,2,240,0.008333
-physics,2005,32,Forbidden Transition Spectroscopy,7,240,0.029167
-physics,2005,33,Axion Solar Search,0,240,0.0
-physics,2005,34,Seismic Network Analysis,5,240,0.020833
-physics,2005,35,Lattice Boltzmann Methods,7,240,0.029167
-physics,2005,36,High-Energy Trigger Processing,2,240,0.008333
-physics,2005,37,Network Immunization Dynamics,13,240,0.054167
-physics,2005,38,Noise-Induced Phase Transitions,2,240,0.008333
-physics,2005,39,Stochastic Geometry Dynamics,2,240,0.008333
-physics,2005,40,Metallic Slit Resonance,3,240,0.0125
-physics,2005,41,Hyperbolic Dispersion Media,6,240,0.025
-physics,2005,42,Laser-Plasma Acceleration,3,240,0.0125
-physics,2005,43,Rotating Surface Solitons,3,240,0.0125
-physics,2005,44,Urban Spatial Scaling,3,240,0.0125
-physics,2005,45,Photoelectron Imaging Dynamics,0,240,0.0
-physics,2005,46,Climate Information Dynamics,0,240,0.0
-physics,2005,47,Kinetic Potential Embedding,2,240,0.008333
-physics,2005,48,Obliquity Climate Dynamics,1,240,0.004167
-physics,2005,49,Singularity Reinterpretation,5,240,0.020833
-physics,2005,50,Photonic Quantum Gates,3,240,0.0125
-physics,2005,51,Laser-Assisted Tunneling Dynamics,4,240,0.016667
-physics,2005,52,Blog Network Dynamics,1,240,0.004167
-physics,2005,53,Self-Organized Cooperation,0,240,0.0
-physics,2005,54,Ensemble Learning Dynamics,0,240,0.0
-physics,2005,55,Film Retraction Dynamics,0,240,0.0
-physics,2005,56,Optomechanical Tuning Lasers,1,240,0.004167
-physics,2005,57,Buffer-Gas Cooling,3,240,0.0125
-physics,2005,58,Opinion Consensus Dynamics,5,240,0.020833
-physics,2005,59,Ion Pairing Dynamics,4,240,0.016667
-physics,2005,60,Metamaterial Resonance Bistability,0,240,0.0
-physics,2005,61,Existence Interpretation,7,240,0.029167
-physics,2005,62,Soliton Pair Dynamics,10,240,0.041667
-physics,2005,63,Ultra-Short Pulse Coherence,5,240,0.020833
-physics,2005,64,Excited State Perturbation Theory,8,240,0.033333
-physics,2005,65,TR-Symmetry Breaking Meta-Optics,0,240,0.0
-physics,2005,66,Multimode Cavity QED,2,240,0.008333
-physics,2005,67,Self-Fourier Beam Dynamics,4,240,0.016667
-physics,2005,68,Gravitational Constant Fluctuations,4,240,0.016667
-physics,2005,69,Rydberg Resonance Dynamics,1,240,0.004167
-physics,2005,70,Quantum-Classical Boundary,6,240,0.025
-physics,2005,71,Antineutrino Source Design,3,240,0.0125
-physics,2005,72,Crystal Ab Initio Design,0,240,0.0
-physics,2005,73,Reciprocity Systems,2,240,0.008333
-physics,2006,0,Plasma Beam Interactions,10,326,0.030675
-physics,2006,1,Uncertainty Propagation,0,326,0.0
-physics,2006,2,Quantum Corrections,9,326,0.027607
-physics,2006,3,DNA Conformational Dynamics,5,326,0.015337
-physics,2006,4,Optical Trapping Cooling,5,326,0.015337
-physics,2006,5,Nonlinear Harmonic Generation,2,326,0.006135
-physics,2006,6,Fermi Gas Stability,8,326,0.02454
-physics,2006,7,Molecular Absorption Precision,1,326,0.003067
-physics,2006,8,Lanczos Eigenvalue Methods,0,326,0.0
-physics,2006,9,Algebraic Products and Angular Momentum Separation,3,326,0.009202
-physics,2006,10,Deforming Reference Frame Dynamics,6,326,0.018405
-physics,2006,11,Rotating Flow Dynamics,5,326,0.015337
-physics,2006,12,Optical Logic Gates,0,326,0.0
-physics,2006,13,Micromaser Dynamics,3,326,0.009202
-physics,2006,14,Pixel Detector Calibration,19,326,0.058282
-physics,2006,15,Pulse-Level Beam Feedback,4,326,0.01227
-physics,2006,16,Mass-Energy Relationships,4,326,0.01227
-physics,2006,17,Anomalous Scaling Turbulence,2,326,0.006135
-physics,2006,18,High-Order Turbulence Moments,11,326,0.033742
-physics,2006,19,Fractal Surface Plasmonics,3,326,0.009202
-physics,2006,20,Polymer Entropic Mechanics,5,326,0.015337
-physics,2006,21,Radial Current Discharge Dynamics,2,326,0.006135
-physics,2006,22,Bimetallic Cluster Magnetism,4,326,0.01227
-physics,2006,23,Polymer Translocation Dynamics,2,326,0.006135
-physics,2006,24,Photon Statistics Cavities,1,326,0.003067
-physics,2006,25,Three-Body Virtual States,2,326,0.006135
-physics,2006,26,Relativistic Common Sense,17,326,0.052147
-physics,2006,27,Macroscopic Quantum Collapse,3,326,0.009202
-physics,2006,28,Coherent Image Reconstruction,1,326,0.003067
-physics,2006,29,Nonlinear Flagellar Dynamics,1,326,0.003067
-physics,2006,30,Chaotic Dynamo Reversals,8,326,0.02454
-physics,2006,31,Tokamak Flow Barriers,2,326,0.006135
-physics,2006,32,Forbidden Transition Spectroscopy,4,326,0.01227
-physics,2006,33,Axion Solar Search,0,326,0.0
-physics,2006,34,Seismic Network Analysis,11,326,0.033742
-physics,2006,35,Lattice Boltzmann Methods,9,326,0.027607
-physics,2006,36,High-Energy Trigger Processing,1,326,0.003067
-physics,2006,37,Network Immunization Dynamics,12,326,0.03681
-physics,2006,38,Noise-Induced Phase Transitions,0,326,0.0
-physics,2006,39,Stochastic Geometry Dynamics,5,326,0.015337
-physics,2006,40,Metallic Slit Resonance,7,326,0.021472
-physics,2006,41,Hyperbolic Dispersion Media,11,326,0.033742
-physics,2006,42,Laser-Plasma Acceleration,12,326,0.03681
-physics,2006,43,Rotating Surface Solitons,3,326,0.009202
-physics,2006,44,Urban Spatial Scaling,0,326,0.0
-physics,2006,45,Photoelectron Imaging Dynamics,2,326,0.006135
-physics,2006,46,Climate Information Dynamics,2,326,0.006135
-physics,2006,47,Kinetic Potential Embedding,1,326,0.003067
-physics,2006,48,Obliquity Climate Dynamics,2,326,0.006135
-physics,2006,49,Singularity Reinterpretation,2,326,0.006135
-physics,2006,50,Photonic Quantum Gates,2,326,0.006135
-physics,2006,51,Laser-Assisted Tunneling Dynamics,3,326,0.009202
-physics,2006,52,Blog Network Dynamics,4,326,0.01227
-physics,2006,53,Self-Organized Cooperation,1,326,0.003067
-physics,2006,54,Ensemble Learning Dynamics,0,326,0.0
-physics,2006,55,Film Retraction Dynamics,4,326,0.01227
-physics,2006,56,Optomechanical Tuning Lasers,0,326,0.0
-physics,2006,57,Buffer-Gas Cooling,4,326,0.01227
-physics,2006,58,Opinion Consensus Dynamics,4,326,0.01227
-physics,2006,59,Ion Pairing Dynamics,1,326,0.003067
-physics,2006,60,Metamaterial Resonance Bistability,0,326,0.0
-physics,2006,61,Existence Interpretation,7,326,0.021472
-physics,2006,62,Soliton Pair Dynamics,14,326,0.042945
-physics,2006,63,Ultra-Short Pulse Coherence,6,326,0.018405
-physics,2006,64,Excited State Perturbation Theory,7,326,0.021472
-physics,2006,65,TR-Symmetry Breaking Meta-Optics,1,326,0.003067
-physics,2006,66,Multimode Cavity QED,5,326,0.015337
-physics,2006,67,Self-Fourier Beam Dynamics,5,326,0.015337
-physics,2006,68,Gravitational Constant Fluctuations,4,326,0.01227
-physics,2006,69,Rydberg Resonance Dynamics,9,326,0.027607
-physics,2006,70,Quantum-Classical Boundary,4,326,0.01227
-physics,2006,71,Antineutrino Source Design,4,326,0.01227
-physics,2006,72,Crystal Ab Initio Design,1,326,0.003067
-physics,2006,73,Reciprocity Systems,4,326,0.01227
-physics,2007,0,Plasma Beam Interactions,3,344,0.008721
-physics,2007,1,Uncertainty Propagation,0,344,0.0
-physics,2007,2,Quantum Corrections,7,344,0.020349
-physics,2007,3,DNA Conformational Dynamics,7,344,0.020349
-physics,2007,4,Optical Trapping Cooling,10,344,0.02907
-physics,2007,5,Nonlinear Harmonic Generation,1,344,0.002907
-physics,2007,6,Fermi Gas Stability,7,344,0.020349
-physics,2007,7,Molecular Absorption Precision,1,344,0.002907
-physics,2007,8,Lanczos Eigenvalue Methods,2,344,0.005814
-physics,2007,9,Algebraic Products and Angular Momentum Separation,4,344,0.011628
-physics,2007,10,Deforming Reference Frame Dynamics,3,344,0.008721
-physics,2007,11,Rotating Flow Dynamics,9,344,0.026163
-physics,2007,12,Optical Logic Gates,1,344,0.002907
-physics,2007,13,Micromaser Dynamics,1,344,0.002907
-physics,2007,14,Pixel Detector Calibration,18,344,0.052326
-physics,2007,15,Pulse-Level Beam Feedback,3,344,0.008721
-physics,2007,16,Mass-Energy Relationships,3,344,0.008721
-physics,2007,17,Anomalous Scaling Turbulence,2,344,0.005814
-physics,2007,18,High-Order Turbulence Moments,16,344,0.046512
-physics,2007,19,Fractal Surface Plasmonics,3,344,0.008721
-physics,2007,20,Polymer Entropic Mechanics,2,344,0.005814
-physics,2007,21,Radial Current Discharge Dynamics,1,344,0.002907
-physics,2007,22,Bimetallic Cluster Magnetism,5,344,0.014535
-physics,2007,23,Polymer Translocation Dynamics,6,344,0.017442
-physics,2007,24,Photon Statistics Cavities,4,344,0.011628
-physics,2007,25,Three-Body Virtual States,2,344,0.005814
-physics,2007,26,Relativistic Common Sense,15,344,0.043605
-physics,2007,27,Macroscopic Quantum Collapse,4,344,0.011628
-physics,2007,28,Coherent Image Reconstruction,0,344,0.0
-physics,2007,29,Nonlinear Flagellar Dynamics,3,344,0.008721
-physics,2007,30,Chaotic Dynamo Reversals,14,344,0.040698
-physics,2007,31,Tokamak Flow Barriers,7,344,0.020349
-physics,2007,32,Forbidden Transition Spectroscopy,0,344,0.0
-physics,2007,33,Axion Solar Search,1,344,0.002907
-physics,2007,34,Seismic Network Analysis,4,344,0.011628
-physics,2007,35,Lattice Boltzmann Methods,2,344,0.005814
-physics,2007,36,High-Energy Trigger Processing,3,344,0.008721
-physics,2007,37,Network Immunization Dynamics,17,344,0.049419
-physics,2007,38,Noise-Induced Phase Transitions,2,344,0.005814
-physics,2007,39,Stochastic Geometry Dynamics,2,344,0.005814
-physics,2007,40,Metallic Slit Resonance,1,344,0.002907
-physics,2007,41,Hyperbolic Dispersion Media,7,344,0.020349
-physics,2007,42,Laser-Plasma Acceleration,5,344,0.014535
-physics,2007,43,Rotating Surface Solitons,3,344,0.008721
-physics,2007,44,Urban Spatial Scaling,10,344,0.02907
-physics,2007,45,Photoelectron Imaging Dynamics,3,344,0.008721
-physics,2007,46,Climate Information Dynamics,1,344,0.002907
-physics,2007,47,Kinetic Potential Embedding,2,344,0.005814
-physics,2007,48,Obliquity Climate Dynamics,2,344,0.005814
-physics,2007,49,Singularity Reinterpretation,3,344,0.008721
-physics,2007,50,Photonic Quantum Gates,1,344,0.002907
-physics,2007,51,Laser-Assisted Tunneling Dynamics,2,344,0.005814
-physics,2007,52,Blog Network Dynamics,10,344,0.02907
-physics,2007,53,Self-Organized Cooperation,12,344,0.034884
-physics,2007,54,Ensemble Learning Dynamics,0,344,0.0
-physics,2007,55,Film Retraction Dynamics,6,344,0.017442
-physics,2007,56,Optomechanical Tuning Lasers,0,344,0.0
-physics,2007,57,Buffer-Gas Cooling,4,344,0.011628
-physics,2007,58,Opinion Consensus Dynamics,9,344,0.026163
-physics,2007,59,Ion Pairing Dynamics,2,344,0.005814
-physics,2007,60,Metamaterial Resonance Bistability,2,344,0.005814
-physics,2007,61,Existence Interpretation,4,344,0.011628
-physics,2007,62,Soliton Pair Dynamics,16,344,0.046512
-physics,2007,63,Ultra-Short Pulse Coherence,4,344,0.011628
-physics,2007,64,Excited State Perturbation Theory,6,344,0.017442
-physics,2007,65,TR-Symmetry Breaking Meta-Optics,0,344,0.0
-physics,2007,66,Multimode Cavity QED,1,344,0.002907
-physics,2007,67,Self-Fourier Beam Dynamics,3,344,0.008721
-physics,2007,68,Gravitational Constant Fluctuations,8,344,0.023256
-physics,2007,69,Rydberg Resonance Dynamics,7,344,0.020349
-physics,2007,70,Quantum-Classical Boundary,7,344,0.020349
-physics,2007,71,Antineutrino Source Design,4,344,0.011628
-physics,2007,72,Crystal Ab Initio Design,0,344,0.0
-physics,2007,73,Reciprocity Systems,4,344,0.011628
-physics,2008,0,Plasma Beam Interactions,8,377,0.02122
-physics,2008,1,Uncertainty Propagation,0,377,0.0
-physics,2008,2,Quantum Corrections,7,377,0.018568
-physics,2008,3,DNA Conformational Dynamics,5,377,0.013263
-physics,2008,4,Optical Trapping Cooling,4,377,0.01061
-physics,2008,5,Nonlinear Harmonic Generation,1,377,0.002653
-physics,2008,6,Fermi Gas Stability,8,377,0.02122
-physics,2008,7,Molecular Absorption Precision,1,377,0.002653
-physics,2008,8,Lanczos Eigenvalue Methods,1,377,0.002653
-physics,2008,9,Algebraic Products and Angular Momentum Separation,2,377,0.005305
-physics,2008,10,Deforming Reference Frame Dynamics,6,377,0.015915
-physics,2008,11,Rotating Flow Dynamics,5,377,0.013263
-physics,2008,12,Optical Logic Gates,0,377,0.0
-physics,2008,13,Micromaser Dynamics,4,377,0.01061
-physics,2008,14,Pixel Detector Calibration,15,377,0.039788
-physics,2008,15,Pulse-Level Beam Feedback,2,377,0.005305
-physics,2008,16,Mass-Energy Relationships,1,377,0.002653
-physics,2008,17,Anomalous Scaling Turbulence,5,377,0.013263
-physics,2008,18,High-Order Turbulence Moments,12,377,0.03183
-physics,2008,19,Fractal Surface Plasmonics,5,377,0.013263
-physics,2008,20,Polymer Entropic Mechanics,2,377,0.005305
-physics,2008,21,Radial Current Discharge Dynamics,3,377,0.007958
-physics,2008,22,Bimetallic Cluster Magnetism,4,377,0.01061
-physics,2008,23,Polymer Translocation Dynamics,9,377,0.023873
-physics,2008,24,Photon Statistics Cavities,2,377,0.005305
-physics,2008,25,Three-Body Virtual States,5,377,0.013263
-physics,2008,26,Relativistic Common Sense,20,377,0.05305
-physics,2008,27,Macroscopic Quantum Collapse,2,377,0.005305
-physics,2008,28,Coherent Image Reconstruction,1,377,0.002653
-physics,2008,29,Nonlinear Flagellar Dynamics,5,377,0.013263
-physics,2008,30,Chaotic Dynamo Reversals,9,377,0.023873
-physics,2008,31,Tokamak Flow Barriers,3,377,0.007958
-physics,2008,32,Forbidden Transition Spectroscopy,6,377,0.015915
-physics,2008,33,Axion Solar Search,0,377,0.0
-physics,2008,34,Seismic Network Analysis,3,377,0.007958
-physics,2008,35,Lattice Boltzmann Methods,5,377,0.013263
-physics,2008,36,High-Energy Trigger Processing,4,377,0.01061
-physics,2008,37,Network Immunization Dynamics,11,377,0.029178
-physics,2008,38,Noise-Induced Phase Transitions,2,377,0.005305
-physics,2008,39,Stochastic Geometry Dynamics,3,377,0.007958
-physics,2008,40,Metallic Slit Resonance,8,377,0.02122
-physics,2008,41,Hyperbolic Dispersion Media,10,377,0.026525
-physics,2008,42,Laser-Plasma Acceleration,15,377,0.039788
-physics,2008,43,Rotating Surface Solitons,3,377,0.007958
-physics,2008,44,Urban Spatial Scaling,5,377,0.013263
-physics,2008,45,Photoelectron Imaging Dynamics,3,377,0.007958
-physics,2008,46,Climate Information Dynamics,1,377,0.002653
-physics,2008,47,Kinetic Potential Embedding,2,377,0.005305
-physics,2008,48,Obliquity Climate Dynamics,4,377,0.01061
-physics,2008,49,Singularity Reinterpretation,3,377,0.007958
-physics,2008,50,Photonic Quantum Gates,3,377,0.007958
-physics,2008,51,Laser-Assisted Tunneling Dynamics,4,377,0.01061
-physics,2008,52,Blog Network Dynamics,3,377,0.007958
-physics,2008,53,Self-Organized Cooperation,5,377,0.013263
-physics,2008,54,Ensemble Learning Dynamics,0,377,0.0
-physics,2008,55,Film Retraction Dynamics,5,377,0.013263
-physics,2008,56,Optomechanical Tuning Lasers,3,377,0.007958
-physics,2008,57,Buffer-Gas Cooling,4,377,0.01061
-physics,2008,58,Opinion Consensus Dynamics,11,377,0.029178
-physics,2008,59,Ion Pairing Dynamics,3,377,0.007958
-physics,2008,60,Metamaterial Resonance Bistability,2,377,0.005305
-physics,2008,61,Existence Interpretation,7,377,0.018568
-physics,2008,62,Soliton Pair Dynamics,13,377,0.034483
-physics,2008,63,Ultra-Short Pulse Coherence,8,377,0.02122
-physics,2008,64,Excited State Perturbation Theory,6,377,0.015915
-physics,2008,65,TR-Symmetry Breaking Meta-Optics,0,377,0.0
-physics,2008,66,Multimode Cavity QED,2,377,0.005305
-physics,2008,67,Self-Fourier Beam Dynamics,4,377,0.01061
-physics,2008,68,Gravitational Constant Fluctuations,11,377,0.029178
-physics,2008,69,Rydberg Resonance Dynamics,16,377,0.04244
-physics,2008,70,Quantum-Classical Boundary,10,377,0.026525
-physics,2008,71,Antineutrino Source Design,8,377,0.02122
-physics,2008,72,Crystal Ab Initio Design,0,377,0.0
-physics,2008,73,Reciprocity Systems,4,377,0.01061
-physics,2009,0,Plasma Beam Interactions,10,475,0.021053
-physics,2009,1,Uncertainty Propagation,0,475,0.0
-physics,2009,2,Quantum Corrections,10,475,0.021053
-physics,2009,3,DNA Conformational Dynamics,7,475,0.014737
-physics,2009,4,Optical Trapping Cooling,12,475,0.025263
-physics,2009,5,Nonlinear Harmonic Generation,1,475,0.002105
-physics,2009,6,Fermi Gas Stability,10,475,0.021053
-physics,2009,7,Molecular Absorption Precision,2,475,0.004211
-physics,2009,8,Lanczos Eigenvalue Methods,1,475,0.002105
-physics,2009,9,Algebraic Products and Angular Momentum Separation,6,475,0.012632
-physics,2009,10,Deforming Reference Frame Dynamics,4,475,0.008421
-physics,2009,11,Rotating Flow Dynamics,13,475,0.027368
-physics,2009,12,Optical Logic Gates,2,475,0.004211
-physics,2009,13,Micromaser Dynamics,5,475,0.010526
-physics,2009,14,Pixel Detector Calibration,22,475,0.046316
-physics,2009,15,Pulse-Level Beam Feedback,4,475,0.008421
-physics,2009,16,Mass-Energy Relationships,2,475,0.004211
-physics,2009,17,Anomalous Scaling Turbulence,8,475,0.016842
-physics,2009,18,High-Order Turbulence Moments,20,475,0.042105
-physics,2009,19,Fractal Surface Plasmonics,12,475,0.025263
-physics,2009,20,Polymer Entropic Mechanics,4,475,0.008421
-physics,2009,21,Radial Current Discharge Dynamics,1,475,0.002105
-physics,2009,22,Bimetallic Cluster Magnetism,3,475,0.006316
-physics,2009,23,Polymer Translocation Dynamics,6,475,0.012632
-physics,2009,24,Photon Statistics Cavities,2,475,0.004211
-physics,2009,25,Three-Body Virtual States,5,475,0.010526
-physics,2009,26,Relativistic Common Sense,8,475,0.016842
-physics,2009,27,Macroscopic Quantum Collapse,2,475,0.004211
-physics,2009,28,Coherent Image Reconstruction,2,475,0.004211
-physics,2009,29,Nonlinear Flagellar Dynamics,6,475,0.012632
-physics,2009,30,Chaotic Dynamo Reversals,17,475,0.035789
-physics,2009,31,Tokamak Flow Barriers,12,475,0.025263
-physics,2009,32,Forbidden Transition Spectroscopy,4,475,0.008421
-physics,2009,33,Axion Solar Search,0,475,0.0
-physics,2009,34,Seismic Network Analysis,9,475,0.018947
-physics,2009,35,Lattice Boltzmann Methods,10,475,0.021053
-physics,2009,36,High-Energy Trigger Processing,6,475,0.012632
-physics,2009,37,Network Immunization Dynamics,23,475,0.048421
-physics,2009,38,Noise-Induced Phase Transitions,3,475,0.006316
-physics,2009,39,Stochastic Geometry Dynamics,3,475,0.006316
-physics,2009,40,Metallic Slit Resonance,6,475,0.012632
-physics,2009,41,Hyperbolic Dispersion Media,6,475,0.012632
-physics,2009,42,Laser-Plasma Acceleration,11,475,0.023158
-physics,2009,43,Rotating Surface Solitons,4,475,0.008421
-physics,2009,44,Urban Spatial Scaling,3,475,0.006316
-physics,2009,45,Photoelectron Imaging Dynamics,5,475,0.010526
-physics,2009,46,Climate Information Dynamics,2,475,0.004211
-physics,2009,47,Kinetic Potential Embedding,3,475,0.006316
-physics,2009,48,Obliquity Climate Dynamics,4,475,0.008421
-physics,2009,49,Singularity Reinterpretation,3,475,0.006316
-physics,2009,50,Photonic Quantum Gates,6,475,0.012632
-physics,2009,51,Laser-Assisted Tunneling Dynamics,7,475,0.014737
-physics,2009,52,Blog Network Dynamics,8,475,0.016842
-physics,2009,53,Self-Organized Cooperation,10,475,0.021053
-physics,2009,54,Ensemble Learning Dynamics,0,475,0.0
-physics,2009,55,Film Retraction Dynamics,4,475,0.008421
-physics,2009,56,Optomechanical Tuning Lasers,13,475,0.027368
-physics,2009,57,Buffer-Gas Cooling,3,475,0.006316
-physics,2009,58,Opinion Consensus Dynamics,8,475,0.016842
-physics,2009,59,Ion Pairing Dynamics,4,475,0.008421
-physics,2009,60,Metamaterial Resonance Bistability,2,475,0.004211
-physics,2009,61,Existence Interpretation,2,475,0.004211
-physics,2009,62,Soliton Pair Dynamics,14,475,0.029474
-physics,2009,63,Ultra-Short Pulse Coherence,3,475,0.006316
-physics,2009,64,Excited State Perturbation Theory,10,475,0.021053
-physics,2009,65,TR-Symmetry Breaking Meta-Optics,1,475,0.002105
-physics,2009,66,Multimode Cavity QED,1,475,0.002105
-physics,2009,67,Self-Fourier Beam Dynamics,4,475,0.008421
-physics,2009,68,Gravitational Constant Fluctuations,10,475,0.021053
-physics,2009,69,Rydberg Resonance Dynamics,10,475,0.021053
-physics,2009,70,Quantum-Classical Boundary,10,475,0.021053
-physics,2009,71,Antineutrino Source Design,6,475,0.012632
-physics,2009,72,Crystal Ab Initio Design,3,475,0.006316
-physics,2009,73,Reciprocity Systems,12,475,0.025263
-physics,2010,0,Plasma Beam Interactions,10,612,0.01634
-physics,2010,1,Uncertainty Propagation,3,612,0.004902
-physics,2010,2,Quantum Corrections,11,612,0.017974
-physics,2010,3,DNA Conformational Dynamics,9,612,0.014706
-physics,2010,4,Optical Trapping Cooling,7,612,0.011438
-physics,2010,5,Nonlinear Harmonic Generation,2,612,0.003268
-physics,2010,6,Fermi Gas Stability,11,612,0.017974
-physics,2010,7,Molecular Absorption Precision,2,612,0.003268
-physics,2010,8,Lanczos Eigenvalue Methods,9,612,0.014706
-physics,2010,9,Algebraic Products and Angular Momentum Separation,7,612,0.011438
-physics,2010,10,Deforming Reference Frame Dynamics,12,612,0.019608
-physics,2010,11,Rotating Flow Dynamics,14,612,0.022876
-physics,2010,12,Optical Logic Gates,1,612,0.001634
-physics,2010,13,Micromaser Dynamics,4,612,0.006536
-physics,2010,14,Pixel Detector Calibration,44,612,0.071895
-physics,2010,15,Pulse-Level Beam Feedback,6,612,0.009804
-physics,2010,16,Mass-Energy Relationships,1,612,0.001634
-physics,2010,17,Anomalous Scaling Turbulence,3,612,0.004902
-physics,2010,18,High-Order Turbulence Moments,20,612,0.03268
-physics,2010,19,Fractal Surface Plasmonics,11,612,0.017974
-physics,2010,20,Polymer Entropic Mechanics,7,612,0.011438
-physics,2010,21,Radial Current Discharge Dynamics,5,612,0.00817
-physics,2010,22,Bimetallic Cluster Magnetism,3,612,0.004902
-physics,2010,23,Polymer Translocation Dynamics,7,612,0.011438
-physics,2010,24,Photon Statistics Cavities,5,612,0.00817
-physics,2010,25,Three-Body Virtual States,5,612,0.00817
-physics,2010,26,Relativistic Common Sense,9,612,0.014706
-physics,2010,27,Macroscopic Quantum Collapse,2,612,0.003268
-physics,2010,28,Coherent Image Reconstruction,5,612,0.00817
-physics,2010,29,Nonlinear Flagellar Dynamics,6,612,0.009804
-physics,2010,30,Chaotic Dynamo Reversals,18,612,0.029412
-physics,2010,31,Tokamak Flow Barriers,7,612,0.011438
-physics,2010,32,Forbidden Transition Spectroscopy,7,612,0.011438
-physics,2010,33,Axion Solar Search,4,612,0.006536
-physics,2010,34,Seismic Network Analysis,9,612,0.014706
-physics,2010,35,Lattice Boltzmann Methods,15,612,0.02451
-physics,2010,36,High-Energy Trigger Processing,8,612,0.013072
-physics,2010,37,Network Immunization Dynamics,29,612,0.047386
-physics,2010,38,Noise-Induced Phase Transitions,9,612,0.014706
-physics,2010,39,Stochastic Geometry Dynamics,8,612,0.013072
-physics,2010,40,Metallic Slit Resonance,9,612,0.014706
-physics,2010,41,Hyperbolic Dispersion Media,15,612,0.02451
-physics,2010,42,Laser-Plasma Acceleration,16,612,0.026144
-physics,2010,43,Rotating Surface Solitons,6,612,0.009804
-physics,2010,44,Urban Spatial Scaling,6,612,0.009804
-physics,2010,45,Photoelectron Imaging Dynamics,1,612,0.001634
-physics,2010,46,Climate Information Dynamics,2,612,0.003268
-physics,2010,47,Kinetic Potential Embedding,2,612,0.003268
-physics,2010,48,Obliquity Climate Dynamics,6,612,0.009804
-physics,2010,49,Singularity Reinterpretation,3,612,0.004902
-physics,2010,50,Photonic Quantum Gates,8,612,0.013072
-physics,2010,51,Laser-Assisted Tunneling Dynamics,4,612,0.006536
-physics,2010,52,Blog Network Dynamics,8,612,0.013072
-physics,2010,53,Self-Organized Cooperation,15,612,0.02451
-physics,2010,54,Ensemble Learning Dynamics,2,612,0.003268
-physics,2010,55,Film Retraction Dynamics,6,612,0.009804
-physics,2010,56,Optomechanical Tuning Lasers,10,612,0.01634
-physics,2010,57,Buffer-Gas Cooling,6,612,0.009804
-physics,2010,58,Opinion Consensus Dynamics,13,612,0.021242
-physics,2010,59,Ion Pairing Dynamics,1,612,0.001634
-physics,2010,60,Metamaterial Resonance Bistability,9,612,0.014706
-physics,2010,61,Existence Interpretation,6,612,0.009804
-physics,2010,62,Soliton Pair Dynamics,13,612,0.021242
-physics,2010,63,Ultra-Short Pulse Coherence,11,612,0.017974
-physics,2010,64,Excited State Perturbation Theory,15,612,0.02451
-physics,2010,65,TR-Symmetry Breaking Meta-Optics,6,612,0.009804
-physics,2010,66,Multimode Cavity QED,6,612,0.009804
-physics,2010,67,Self-Fourier Beam Dynamics,6,612,0.009804
-physics,2010,68,Gravitational Constant Fluctuations,11,612,0.017974
-physics,2010,69,Rydberg Resonance Dynamics,8,612,0.013072
-physics,2010,70,Quantum-Classical Boundary,8,612,0.013072
-physics,2010,71,Antineutrino Source Design,5,612,0.00817
-physics,2010,72,Crystal Ab Initio Design,1,612,0.001634
-physics,2010,73,Reciprocity Systems,13,612,0.021242
-physics,2011,0,Plasma Beam Interactions,20,783,0.025543
-physics,2011,1,Uncertainty Propagation,3,783,0.003831
-physics,2011,2,Quantum Corrections,10,783,0.012771
-physics,2011,3,DNA Conformational Dynamics,21,783,0.02682
-physics,2011,4,Optical Trapping Cooling,19,783,0.024266
-physics,2011,5,Nonlinear Harmonic Generation,3,783,0.003831
-physics,2011,6,Fermi Gas Stability,16,783,0.020434
-physics,2011,7,Molecular Absorption Precision,6,783,0.007663
-physics,2011,8,Lanczos Eigenvalue Methods,3,783,0.003831
-physics,2011,9,Algebraic Products and Angular Momentum Separation,2,783,0.002554
-physics,2011,10,Deforming Reference Frame Dynamics,14,783,0.01788
-physics,2011,11,Rotating Flow Dynamics,13,783,0.016603
-physics,2011,12,Optical Logic Gates,8,783,0.010217
-physics,2011,13,Micromaser Dynamics,14,783,0.01788
-physics,2011,14,Pixel Detector Calibration,25,783,0.031928
-physics,2011,15,Pulse-Level Beam Feedback,5,783,0.006386
-physics,2011,16,Mass-Energy Relationships,4,783,0.005109
-physics,2011,17,Anomalous Scaling Turbulence,15,783,0.019157
-physics,2011,18,High-Order Turbulence Moments,27,783,0.034483
-physics,2011,19,Fractal Surface Plasmonics,7,783,0.00894
-physics,2011,20,Polymer Entropic Mechanics,11,783,0.014049
-physics,2011,21,Radial Current Discharge Dynamics,6,783,0.007663
-physics,2011,22,Bimetallic Cluster Magnetism,4,783,0.005109
-physics,2011,23,Polymer Translocation Dynamics,5,783,0.006386
-physics,2011,24,Photon Statistics Cavities,10,783,0.012771
-physics,2011,25,Three-Body Virtual States,6,783,0.007663
-physics,2011,26,Relativistic Common Sense,14,783,0.01788
-physics,2011,27,Macroscopic Quantum Collapse,8,783,0.010217
-physics,2011,28,Coherent Image Reconstruction,4,783,0.005109
-physics,2011,29,Nonlinear Flagellar Dynamics,5,783,0.006386
-physics,2011,30,Chaotic Dynamo Reversals,23,783,0.029374
-physics,2011,31,Tokamak Flow Barriers,13,783,0.016603
-physics,2011,32,Forbidden Transition Spectroscopy,5,783,0.006386
-physics,2011,33,Axion Solar Search,1,783,0.001277
-physics,2011,34,Seismic Network Analysis,2,783,0.002554
-physics,2011,35,Lattice Boltzmann Methods,7,783,0.00894
-physics,2011,36,High-Energy Trigger Processing,6,783,0.007663
-physics,2011,37,Network Immunization Dynamics,52,783,0.066411
-physics,2011,38,Noise-Induced Phase Transitions,8,783,0.010217
-physics,2011,39,Stochastic Geometry Dynamics,9,783,0.011494
-physics,2011,40,Metallic Slit Resonance,10,783,0.012771
-physics,2011,41,Hyperbolic Dispersion Media,8,783,0.010217
-physics,2011,42,Laser-Plasma Acceleration,26,783,0.033206
-physics,2011,43,Rotating Surface Solitons,9,783,0.011494
-physics,2011,44,Urban Spatial Scaling,3,783,0.003831
-physics,2011,45,Photoelectron Imaging Dynamics,4,783,0.005109
-physics,2011,46,Climate Information Dynamics,4,783,0.005109
-physics,2011,47,Kinetic Potential Embedding,6,783,0.007663
-physics,2011,48,Obliquity Climate Dynamics,7,783,0.00894
-physics,2011,49,Singularity Reinterpretation,6,783,0.007663
-physics,2011,50,Photonic Quantum Gates,13,783,0.016603
-physics,2011,51,Laser-Assisted Tunneling Dynamics,14,783,0.01788
-physics,2011,52,Blog Network Dynamics,17,783,0.021711
-physics,2011,53,Self-Organized Cooperation,7,783,0.00894
-physics,2011,54,Ensemble Learning Dynamics,2,783,0.002554
-physics,2011,55,Film Retraction Dynamics,8,783,0.010217
-physics,2011,56,Optomechanical Tuning Lasers,9,783,0.011494
-physics,2011,57,Buffer-Gas Cooling,9,783,0.011494
-physics,2011,58,Opinion Consensus Dynamics,10,783,0.012771
-physics,2011,59,Ion Pairing Dynamics,7,783,0.00894
-physics,2011,60,Metamaterial Resonance Bistability,11,783,0.014049
-physics,2011,61,Existence Interpretation,12,783,0.015326
-physics,2011,62,Soliton Pair Dynamics,28,783,0.03576
-physics,2011,63,Ultra-Short Pulse Coherence,9,783,0.011494
-physics,2011,64,Excited State Perturbation Theory,12,783,0.015326
-physics,2011,65,TR-Symmetry Breaking Meta-Optics,6,783,0.007663
-physics,2011,66,Multimode Cavity QED,15,783,0.019157
-physics,2011,67,Self-Fourier Beam Dynamics,6,783,0.007663
-physics,2011,68,Gravitational Constant Fluctuations,10,783,0.012771
-physics,2011,69,Rydberg Resonance Dynamics,19,783,0.024266
-physics,2011,70,Quantum-Classical Boundary,15,783,0.019157
-physics,2011,71,Antineutrino Source Design,16,783,0.020434
-physics,2011,72,Crystal Ab Initio Design,2,783,0.002554
-physics,2011,73,Reciprocity Systems,9,783,0.011494
-physics,2012,0,Plasma Beam Interactions,25,894,0.027964
-physics,2012,1,Uncertainty Propagation,0,894,0.0
-physics,2012,2,Quantum Corrections,10,894,0.011186
-physics,2012,3,DNA Conformational Dynamics,16,894,0.017897
-physics,2012,4,Optical Trapping Cooling,18,894,0.020134
-physics,2012,5,Nonlinear Harmonic Generation,5,894,0.005593
-physics,2012,6,Fermi Gas Stability,14,894,0.01566
-physics,2012,7,Molecular Absorption Precision,4,894,0.004474
-physics,2012,8,Lanczos Eigenvalue Methods,2,894,0.002237
-physics,2012,9,Algebraic Products and Angular Momentum Separation,7,894,0.00783
-physics,2012,10,Deforming Reference Frame Dynamics,8,894,0.008949
-physics,2012,11,Rotating Flow Dynamics,11,894,0.012304
-physics,2012,12,Optical Logic Gates,5,894,0.005593
-physics,2012,13,Micromaser Dynamics,6,894,0.006711
-physics,2012,14,Pixel Detector Calibration,36,894,0.040268
-physics,2012,15,Pulse-Level Beam Feedback,12,894,0.013423
-physics,2012,16,Mass-Energy Relationships,9,894,0.010067
-physics,2012,17,Anomalous Scaling Turbulence,13,894,0.014541
-physics,2012,18,High-Order Turbulence Moments,20,894,0.022371
-physics,2012,19,Fractal Surface Plasmonics,16,894,0.017897
-physics,2012,20,Polymer Entropic Mechanics,9,894,0.010067
-physics,2012,21,Radial Current Discharge Dynamics,10,894,0.011186
-physics,2012,22,Bimetallic Cluster Magnetism,7,894,0.00783
-physics,2012,23,Polymer Translocation Dynamics,22,894,0.024609
-physics,2012,24,Photon Statistics Cavities,13,894,0.014541
-physics,2012,25,Three-Body Virtual States,5,894,0.005593
-physics,2012,26,Relativistic Common Sense,14,894,0.01566
-physics,2012,27,Macroscopic Quantum Collapse,11,894,0.012304
-physics,2012,28,Coherent Image Reconstruction,6,894,0.006711
-physics,2012,29,Nonlinear Flagellar Dynamics,9,894,0.010067
-physics,2012,30,Chaotic Dynamo Reversals,22,894,0.024609
-physics,2012,31,Tokamak Flow Barriers,13,894,0.014541
-physics,2012,32,Forbidden Transition Spectroscopy,7,894,0.00783
-physics,2012,33,Axion Solar Search,4,894,0.004474
-physics,2012,34,Seismic Network Analysis,12,894,0.013423
-physics,2012,35,Lattice Boltzmann Methods,15,894,0.016779
-physics,2012,36,High-Energy Trigger Processing,4,894,0.004474
-physics,2012,37,Network Immunization Dynamics,54,894,0.060403
-physics,2012,38,Noise-Induced Phase Transitions,6,894,0.006711
-physics,2012,39,Stochastic Geometry Dynamics,7,894,0.00783
-physics,2012,40,Metallic Slit Resonance,11,894,0.012304
-physics,2012,41,Hyperbolic Dispersion Media,10,894,0.011186
-physics,2012,42,Laser-Plasma Acceleration,17,894,0.019016
-physics,2012,43,Rotating Surface Solitons,7,894,0.00783
-physics,2012,44,Urban Spatial Scaling,7,894,0.00783
-physics,2012,45,Photoelectron Imaging Dynamics,4,894,0.004474
-physics,2012,46,Climate Information Dynamics,2,894,0.002237
-physics,2012,47,Kinetic Potential Embedding,3,894,0.003356
-physics,2012,48,Obliquity Climate Dynamics,6,894,0.006711
-physics,2012,49,Singularity Reinterpretation,6,894,0.006711
-physics,2012,50,Photonic Quantum Gates,29,894,0.032438
-physics,2012,51,Laser-Assisted Tunneling Dynamics,6,894,0.006711
-physics,2012,52,Blog Network Dynamics,33,894,0.036913
-physics,2012,53,Self-Organized Cooperation,15,894,0.016779
-physics,2012,54,Ensemble Learning Dynamics,2,894,0.002237
-physics,2012,55,Film Retraction Dynamics,7,894,0.00783
-physics,2012,56,Optomechanical Tuning Lasers,10,894,0.011186
-physics,2012,57,Buffer-Gas Cooling,13,894,0.014541
-physics,2012,58,Opinion Consensus Dynamics,13,894,0.014541
-physics,2012,59,Ion Pairing Dynamics,12,894,0.013423
-physics,2012,60,Metamaterial Resonance Bistability,13,894,0.014541
-physics,2012,61,Existence Interpretation,12,894,0.013423
-physics,2012,62,Soliton Pair Dynamics,18,894,0.020134
-physics,2012,63,Ultra-Short Pulse Coherence,14,894,0.01566
-physics,2012,64,Excited State Perturbation Theory,24,894,0.026846
-physics,2012,65,TR-Symmetry Breaking Meta-Optics,11,894,0.012304
-physics,2012,66,Multimode Cavity QED,13,894,0.014541
-physics,2012,67,Self-Fourier Beam Dynamics,8,894,0.008949
-physics,2012,68,Gravitational Constant Fluctuations,8,894,0.008949
-physics,2012,69,Rydberg Resonance Dynamics,16,894,0.017897
-physics,2012,70,Quantum-Classical Boundary,18,894,0.020134
-physics,2012,71,Antineutrino Source Design,22,894,0.024609
-physics,2012,72,Crystal Ab Initio Design,2,894,0.002237
-physics,2012,73,Reciprocity Systems,15,894,0.016779
-physics,2013,0,Plasma Beam Interactions,22,1058,0.020794
-physics,2013,1,Uncertainty Propagation,1,1058,0.000945
-physics,2013,2,Quantum Corrections,14,1058,0.013233
-physics,2013,3,DNA Conformational Dynamics,15,1058,0.014178
-physics,2013,4,Optical Trapping Cooling,25,1058,0.023629
-physics,2013,5,Nonlinear Harmonic Generation,4,1058,0.003781
-physics,2013,6,Fermi Gas Stability,14,1058,0.013233
-physics,2013,7,Molecular Absorption Precision,12,1058,0.011342
-physics,2013,8,Lanczos Eigenvalue Methods,12,1058,0.011342
-physics,2013,9,Algebraic Products and Angular Momentum Separation,8,1058,0.007561
-physics,2013,10,Deforming Reference Frame Dynamics,15,1058,0.014178
-physics,2013,11,Rotating Flow Dynamics,15,1058,0.014178
-physics,2013,12,Optical Logic Gates,10,1058,0.009452
-physics,2013,13,Micromaser Dynamics,20,1058,0.018904
-physics,2013,14,Pixel Detector Calibration,49,1058,0.046314
-physics,2013,15,Pulse-Level Beam Feedback,14,1058,0.013233
-physics,2013,16,Mass-Energy Relationships,7,1058,0.006616
-physics,2013,17,Anomalous Scaling Turbulence,13,1058,0.012287
-physics,2013,18,High-Order Turbulence Moments,23,1058,0.021739
-physics,2013,19,Fractal Surface Plasmonics,21,1058,0.019849
-physics,2013,20,Polymer Entropic Mechanics,9,1058,0.008507
-physics,2013,21,Radial Current Discharge Dynamics,12,1058,0.011342
-physics,2013,22,Bimetallic Cluster Magnetism,6,1058,0.005671
-physics,2013,23,Polymer Translocation Dynamics,7,1058,0.006616
-physics,2013,24,Photon Statistics Cavities,17,1058,0.016068
-physics,2013,25,Three-Body Virtual States,7,1058,0.006616
-physics,2013,26,Relativistic Common Sense,14,1058,0.013233
-physics,2013,27,Macroscopic Quantum Collapse,12,1058,0.011342
-physics,2013,28,Coherent Image Reconstruction,3,1058,0.002836
-physics,2013,29,Nonlinear Flagellar Dynamics,11,1058,0.010397
-physics,2013,30,Chaotic Dynamo Reversals,12,1058,0.011342
-physics,2013,31,Tokamak Flow Barriers,23,1058,0.021739
-physics,2013,32,Forbidden Transition Spectroscopy,8,1058,0.007561
-physics,2013,33,Axion Solar Search,13,1058,0.012287
-physics,2013,34,Seismic Network Analysis,7,1058,0.006616
-physics,2013,35,Lattice Boltzmann Methods,15,1058,0.014178
-physics,2013,36,High-Energy Trigger Processing,7,1058,0.006616
-physics,2013,37,Network Immunization Dynamics,72,1058,0.068053
-physics,2013,38,Noise-Induced Phase Transitions,11,1058,0.010397
-physics,2013,39,Stochastic Geometry Dynamics,4,1058,0.003781
-physics,2013,40,Metallic Slit Resonance,12,1058,0.011342
-physics,2013,41,Hyperbolic Dispersion Media,12,1058,0.011342
-physics,2013,42,Laser-Plasma Acceleration,18,1058,0.017013
-physics,2013,43,Rotating Surface Solitons,9,1058,0.008507
-physics,2013,44,Urban Spatial Scaling,16,1058,0.015123
-physics,2013,45,Photoelectron Imaging Dynamics,11,1058,0.010397
-physics,2013,46,Climate Information Dynamics,5,1058,0.004726
-physics,2013,47,Kinetic Potential Embedding,8,1058,0.007561
-physics,2013,48,Obliquity Climate Dynamics,7,1058,0.006616
-physics,2013,49,Singularity Reinterpretation,8,1058,0.007561
-physics,2013,50,Photonic Quantum Gates,22,1058,0.020794
-physics,2013,51,Laser-Assisted Tunneling Dynamics,10,1058,0.009452
-physics,2013,52,Blog Network Dynamics,33,1058,0.031191
-physics,2013,53,Self-Organized Cooperation,17,1058,0.016068
-physics,2013,54,Ensemble Learning Dynamics,1,1058,0.000945
-physics,2013,55,Film Retraction Dynamics,7,1058,0.006616
-physics,2013,56,Optomechanical Tuning Lasers,7,1058,0.006616
-physics,2013,57,Buffer-Gas Cooling,20,1058,0.018904
-physics,2013,58,Opinion Consensus Dynamics,17,1058,0.016068
-physics,2013,59,Ion Pairing Dynamics,7,1058,0.006616
-physics,2013,60,Metamaterial Resonance Bistability,14,1058,0.013233
-physics,2013,61,Existence Interpretation,8,1058,0.007561
-physics,2013,62,Soliton Pair Dynamics,28,1058,0.026465
-physics,2013,63,Ultra-Short Pulse Coherence,15,1058,0.014178
-physics,2013,64,Excited State Perturbation Theory,33,1058,0.031191
-physics,2013,65,TR-Symmetry Breaking Meta-Optics,9,1058,0.008507
-physics,2013,66,Multimode Cavity QED,14,1058,0.013233
-physics,2013,67,Self-Fourier Beam Dynamics,9,1058,0.008507
-physics,2013,68,Gravitational Constant Fluctuations,9,1058,0.008507
-physics,2013,69,Rydberg Resonance Dynamics,18,1058,0.017013
-physics,2013,70,Quantum-Classical Boundary,17,1058,0.016068
-physics,2013,71,Antineutrino Source Design,36,1058,0.034026
-physics,2013,72,Crystal Ab Initio Design,2,1058,0.00189
-physics,2013,73,Reciprocity Systems,15,1058,0.014178
-physics,2014,0,Plasma Beam Interactions,34,1216,0.027961
-physics,2014,1,Uncertainty Propagation,3,1216,0.002467
-physics,2014,2,Quantum Corrections,19,1216,0.015625
-physics,2014,3,DNA Conformational Dynamics,20,1216,0.016447
-physics,2014,4,Optical Trapping Cooling,34,1216,0.027961
-physics,2014,5,Nonlinear Harmonic Generation,9,1216,0.007401
-physics,2014,6,Fermi Gas Stability,14,1216,0.011513
-physics,2014,7,Molecular Absorption Precision,7,1216,0.005757
-physics,2014,8,Lanczos Eigenvalue Methods,9,1216,0.007401
-physics,2014,9,Algebraic Products and Angular Momentum Separation,13,1216,0.010691
-physics,2014,10,Deforming Reference Frame Dynamics,15,1216,0.012336
-physics,2014,11,Rotating Flow Dynamics,24,1216,0.019737
-physics,2014,12,Optical Logic Gates,7,1216,0.005757
-physics,2014,13,Micromaser Dynamics,14,1216,0.011513
-physics,2014,14,Pixel Detector Calibration,43,1216,0.035362
-physics,2014,15,Pulse-Level Beam Feedback,20,1216,0.016447
-physics,2014,16,Mass-Energy Relationships,13,1216,0.010691
-physics,2014,17,Anomalous Scaling Turbulence,22,1216,0.018092
-physics,2014,18,High-Order Turbulence Moments,34,1216,0.027961
-physics,2014,19,Fractal Surface Plasmonics,17,1216,0.01398
-physics,2014,20,Polymer Entropic Mechanics,7,1216,0.005757
-physics,2014,21,Radial Current Discharge Dynamics,9,1216,0.007401
-physics,2014,22,Bimetallic Cluster Magnetism,3,1216,0.002467
-physics,2014,23,Polymer Translocation Dynamics,10,1216,0.008224
-physics,2014,24,Photon Statistics Cavities,19,1216,0.015625
-physics,2014,25,Three-Body Virtual States,12,1216,0.009868
-physics,2014,26,Relativistic Common Sense,6,1216,0.004934
-physics,2014,27,Macroscopic Quantum Collapse,8,1216,0.006579
-physics,2014,28,Coherent Image Reconstruction,2,1216,0.001645
-physics,2014,29,Nonlinear Flagellar Dynamics,9,1216,0.007401
-physics,2014,30,Chaotic Dynamo Reversals,27,1216,0.022204
-physics,2014,31,Tokamak Flow Barriers,24,1216,0.019737
-physics,2014,32,Forbidden Transition Spectroscopy,5,1216,0.004112
-physics,2014,33,Axion Solar Search,10,1216,0.008224
-physics,2014,34,Seismic Network Analysis,7,1216,0.005757
-physics,2014,35,Lattice Boltzmann Methods,15,1216,0.012336
-physics,2014,36,High-Energy Trigger Processing,9,1216,0.007401
-physics,2014,37,Network Immunization Dynamics,67,1216,0.055099
-physics,2014,38,Noise-Induced Phase Transitions,2,1216,0.001645
-physics,2014,39,Stochastic Geometry Dynamics,9,1216,0.007401
-physics,2014,40,Metallic Slit Resonance,13,1216,0.010691
-physics,2014,41,Hyperbolic Dispersion Media,19,1216,0.015625
-physics,2014,42,Laser-Plasma Acceleration,41,1216,0.033717
-physics,2014,43,Rotating Surface Solitons,13,1216,0.010691
-physics,2014,44,Urban Spatial Scaling,8,1216,0.006579
-physics,2014,45,Photoelectron Imaging Dynamics,11,1216,0.009046
-physics,2014,46,Climate Information Dynamics,2,1216,0.001645
-physics,2014,47,Kinetic Potential Embedding,14,1216,0.011513
-physics,2014,48,Obliquity Climate Dynamics,11,1216,0.009046
-physics,2014,49,Singularity Reinterpretation,15,1216,0.012336
-physics,2014,50,Photonic Quantum Gates,31,1216,0.025493
-physics,2014,51,Laser-Assisted Tunneling Dynamics,16,1216,0.013158
-physics,2014,52,Blog Network Dynamics,34,1216,0.027961
-physics,2014,53,Self-Organized Cooperation,13,1216,0.010691
-physics,2014,54,Ensemble Learning Dynamics,5,1216,0.004112
-physics,2014,55,Film Retraction Dynamics,7,1216,0.005757
-physics,2014,56,Optomechanical Tuning Lasers,14,1216,0.011513
-physics,2014,57,Buffer-Gas Cooling,10,1216,0.008224
-physics,2014,58,Opinion Consensus Dynamics,24,1216,0.019737
-physics,2014,59,Ion Pairing Dynamics,15,1216,0.012336
-physics,2014,60,Metamaterial Resonance Bistability,15,1216,0.012336
-physics,2014,61,Existence Interpretation,8,1216,0.006579
-physics,2014,62,Soliton Pair Dynamics,31,1216,0.025493
-physics,2014,63,Ultra-Short Pulse Coherence,14,1216,0.011513
-physics,2014,64,Excited State Perturbation Theory,35,1216,0.028783
-physics,2014,65,TR-Symmetry Breaking Meta-Optics,14,1216,0.011513
-physics,2014,66,Multimode Cavity QED,13,1216,0.010691
-physics,2014,67,Self-Fourier Beam Dynamics,14,1216,0.011513
-physics,2014,68,Gravitational Constant Fluctuations,7,1216,0.005757
-physics,2014,69,Rydberg Resonance Dynamics,19,1216,0.015625
-physics,2014,70,Quantum-Classical Boundary,32,1216,0.026316
-physics,2014,71,Antineutrino Source Design,42,1216,0.034539
-physics,2014,72,Crystal Ab Initio Design,3,1216,0.002467
-physics,2014,73,Reciprocity Systems,22,1216,0.018092
-physics,2015,0,Plasma Beam Interactions,39,1275,0.030588
-physics,2015,1,Uncertainty Propagation,2,1275,0.001569
-physics,2015,2,Quantum Corrections,10,1275,0.007843
-physics,2015,3,DNA Conformational Dynamics,21,1275,0.016471
-physics,2015,4,Optical Trapping Cooling,21,1275,0.016471
-physics,2015,5,Nonlinear Harmonic Generation,13,1275,0.010196
-physics,2015,6,Fermi Gas Stability,17,1275,0.013333
-physics,2015,7,Molecular Absorption Precision,10,1275,0.007843
-physics,2015,8,Lanczos Eigenvalue Methods,11,1275,0.008627
-physics,2015,9,Algebraic Products and Angular Momentum Separation,13,1275,0.010196
-physics,2015,10,Deforming Reference Frame Dynamics,16,1275,0.012549
-physics,2015,11,Rotating Flow Dynamics,26,1275,0.020392
-physics,2015,12,Optical Logic Gates,15,1275,0.011765
-physics,2015,13,Micromaser Dynamics,13,1275,0.010196
-physics,2015,14,Pixel Detector Calibration,44,1275,0.03451
-physics,2015,15,Pulse-Level Beam Feedback,18,1275,0.014118
-physics,2015,16,Mass-Energy Relationships,11,1275,0.008627
-physics,2015,17,Anomalous Scaling Turbulence,12,1275,0.009412
-physics,2015,18,High-Order Turbulence Moments,35,1275,0.027451
-physics,2015,19,Fractal Surface Plasmonics,24,1275,0.018824
-physics,2015,20,Polymer Entropic Mechanics,14,1275,0.01098
-physics,2015,21,Radial Current Discharge Dynamics,11,1275,0.008627
-physics,2015,22,Bimetallic Cluster Magnetism,6,1275,0.004706
-physics,2015,23,Polymer Translocation Dynamics,10,1275,0.007843
-physics,2015,24,Photon Statistics Cavities,23,1275,0.018039
-physics,2015,25,Three-Body Virtual States,10,1275,0.007843
-physics,2015,26,Relativistic Common Sense,10,1275,0.007843
-physics,2015,27,Macroscopic Quantum Collapse,13,1275,0.010196
-physics,2015,28,Coherent Image Reconstruction,4,1275,0.003137
-physics,2015,29,Nonlinear Flagellar Dynamics,17,1275,0.013333
-physics,2015,30,Chaotic Dynamo Reversals,18,1275,0.014118
-physics,2015,31,Tokamak Flow Barriers,21,1275,0.016471
-physics,2015,32,Forbidden Transition Spectroscopy,14,1275,0.01098
-physics,2015,33,Axion Solar Search,11,1275,0.008627
-physics,2015,34,Seismic Network Analysis,4,1275,0.003137
-physics,2015,35,Lattice Boltzmann Methods,32,1275,0.025098
-physics,2015,36,High-Energy Trigger Processing,11,1275,0.008627
-physics,2015,37,Network Immunization Dynamics,63,1275,0.049412
-physics,2015,38,Noise-Induced Phase Transitions,11,1275,0.008627
-physics,2015,39,Stochastic Geometry Dynamics,10,1275,0.007843
-physics,2015,40,Metallic Slit Resonance,16,1275,0.012549
-physics,2015,41,Hyperbolic Dispersion Media,19,1275,0.014902
-physics,2015,42,Laser-Plasma Acceleration,34,1275,0.026667
-physics,2015,43,Rotating Surface Solitons,25,1275,0.019608
-physics,2015,44,Urban Spatial Scaling,17,1275,0.013333
-physics,2015,45,Photoelectron Imaging Dynamics,9,1275,0.007059
-physics,2015,46,Climate Information Dynamics,6,1275,0.004706
-physics,2015,47,Kinetic Potential Embedding,8,1275,0.006275
-physics,2015,48,Obliquity Climate Dynamics,4,1275,0.003137
-physics,2015,49,Singularity Reinterpretation,7,1275,0.00549
-physics,2015,50,Photonic Quantum Gates,28,1275,0.021961
-physics,2015,51,Laser-Assisted Tunneling Dynamics,11,1275,0.008627
-physics,2015,52,Blog Network Dynamics,31,1275,0.024314
-physics,2015,53,Self-Organized Cooperation,16,1275,0.012549
-physics,2015,54,Ensemble Learning Dynamics,8,1275,0.006275
-physics,2015,55,Film Retraction Dynamics,13,1275,0.010196
-physics,2015,56,Optomechanical Tuning Lasers,10,1275,0.007843
-physics,2015,57,Buffer-Gas Cooling,11,1275,0.008627
-physics,2015,58,Opinion Consensus Dynamics,14,1275,0.01098
-physics,2015,59,Ion Pairing Dynamics,13,1275,0.010196
-physics,2015,60,Metamaterial Resonance Bistability,20,1275,0.015686
-physics,2015,61,Existence Interpretation,12,1275,0.009412
-physics,2015,62,Soliton Pair Dynamics,33,1275,0.025882
-physics,2015,63,Ultra-Short Pulse Coherence,9,1275,0.007059
-physics,2015,64,Excited State Perturbation Theory,37,1275,0.02902
-physics,2015,65,TR-Symmetry Breaking Meta-Optics,11,1275,0.008627
-physics,2015,66,Multimode Cavity QED,19,1275,0.014902
-physics,2015,67,Self-Fourier Beam Dynamics,13,1275,0.010196
-physics,2015,68,Gravitational Constant Fluctuations,10,1275,0.007843
-physics,2015,69,Rydberg Resonance Dynamics,25,1275,0.019608
-physics,2015,70,Quantum-Classical Boundary,23,1275,0.018039
-physics,2015,71,Antineutrino Source Design,65,1275,0.05098
-physics,2015,72,Crystal Ab Initio Design,1,1275,0.000784
-physics,2015,73,Reciprocity Systems,13,1275,0.010196
-physics,2016,0,Plasma Beam Interactions,29,1408,0.020597
-physics,2016,1,Uncertainty Propagation,7,1408,0.004972
-physics,2016,2,Quantum Corrections,10,1408,0.007102
-physics,2016,3,DNA Conformational Dynamics,23,1408,0.016335
-physics,2016,4,Optical Trapping Cooling,35,1408,0.024858
-physics,2016,5,Nonlinear Harmonic Generation,13,1408,0.009233
-physics,2016,6,Fermi Gas Stability,21,1408,0.014915
-physics,2016,7,Molecular Absorption Precision,9,1408,0.006392
-physics,2016,8,Lanczos Eigenvalue Methods,9,1408,0.006392
-physics,2016,9,Algebraic Products and Angular Momentum Separation,12,1408,0.008523
-physics,2016,10,Deforming Reference Frame Dynamics,22,1408,0.015625
-physics,2016,11,Rotating Flow Dynamics,30,1408,0.021307
-physics,2016,12,Optical Logic Gates,13,1408,0.009233
-physics,2016,13,Micromaser Dynamics,15,1408,0.010653
-physics,2016,14,Pixel Detector Calibration,70,1408,0.049716
-physics,2016,15,Pulse-Level Beam Feedback,14,1408,0.009943
-physics,2016,16,Mass-Energy Relationships,10,1408,0.007102
-physics,2016,17,Anomalous Scaling Turbulence,13,1408,0.009233
-physics,2016,18,High-Order Turbulence Moments,31,1408,0.022017
-physics,2016,19,Fractal Surface Plasmonics,25,1408,0.017756
-physics,2016,20,Polymer Entropic Mechanics,4,1408,0.002841
-physics,2016,21,Radial Current Discharge Dynamics,13,1408,0.009233
-physics,2016,22,Bimetallic Cluster Magnetism,8,1408,0.005682
-physics,2016,23,Polymer Translocation Dynamics,11,1408,0.007812
-physics,2016,24,Photon Statistics Cavities,25,1408,0.017756
-physics,2016,25,Three-Body Virtual States,9,1408,0.006392
-physics,2016,26,Relativistic Common Sense,8,1408,0.005682
-physics,2016,27,Macroscopic Quantum Collapse,19,1408,0.013494
-physics,2016,28,Coherent Image Reconstruction,12,1408,0.008523
-physics,2016,29,Nonlinear Flagellar Dynamics,6,1408,0.004261
-physics,2016,30,Chaotic Dynamo Reversals,40,1408,0.028409
-physics,2016,31,Tokamak Flow Barriers,27,1408,0.019176
-physics,2016,32,Forbidden Transition Spectroscopy,11,1408,0.007812
-physics,2016,33,Axion Solar Search,7,1408,0.004972
-physics,2016,34,Seismic Network Analysis,6,1408,0.004261
-physics,2016,35,Lattice Boltzmann Methods,19,1408,0.013494
-physics,2016,36,High-Energy Trigger Processing,6,1408,0.004261
-physics,2016,37,Network Immunization Dynamics,74,1408,0.052557
-physics,2016,38,Noise-Induced Phase Transitions,8,1408,0.005682
-physics,2016,39,Stochastic Geometry Dynamics,20,1408,0.014205
-physics,2016,40,Metallic Slit Resonance,13,1408,0.009233
-physics,2016,41,Hyperbolic Dispersion Media,13,1408,0.009233
-physics,2016,42,Laser-Plasma Acceleration,26,1408,0.018466
-physics,2016,43,Rotating Surface Solitons,17,1408,0.012074
-physics,2016,44,Urban Spatial Scaling,16,1408,0.011364
-physics,2016,45,Photoelectron Imaging Dynamics,10,1408,0.007102
-physics,2016,46,Climate Information Dynamics,4,1408,0.002841
-physics,2016,47,Kinetic Potential Embedding,17,1408,0.012074
-physics,2016,48,Obliquity Climate Dynamics,11,1408,0.007812
-physics,2016,49,Singularity Reinterpretation,15,1408,0.010653
-physics,2016,50,Photonic Quantum Gates,32,1408,0.022727
-physics,2016,51,Laser-Assisted Tunneling Dynamics,18,1408,0.012784
-physics,2016,52,Blog Network Dynamics,31,1408,0.022017
-physics,2016,53,Self-Organized Cooperation,15,1408,0.010653
-physics,2016,54,Ensemble Learning Dynamics,9,1408,0.006392
-physics,2016,55,Film Retraction Dynamics,13,1408,0.009233
-physics,2016,56,Optomechanical Tuning Lasers,18,1408,0.012784
-physics,2016,57,Buffer-Gas Cooling,15,1408,0.010653
-physics,2016,58,Opinion Consensus Dynamics,22,1408,0.015625
-physics,2016,59,Ion Pairing Dynamics,19,1408,0.013494
-physics,2016,60,Metamaterial Resonance Bistability,17,1408,0.012074
-physics,2016,61,Existence Interpretation,9,1408,0.006392
-physics,2016,62,Soliton Pair Dynamics,27,1408,0.019176
-physics,2016,63,Ultra-Short Pulse Coherence,13,1408,0.009233
-physics,2016,64,Excited State Perturbation Theory,51,1408,0.036222
-physics,2016,65,TR-Symmetry Breaking Meta-Optics,16,1408,0.011364
-physics,2016,66,Multimode Cavity QED,24,1408,0.017045
-physics,2016,67,Self-Fourier Beam Dynamics,15,1408,0.010653
-physics,2016,68,Gravitational Constant Fluctuations,12,1408,0.008523
-physics,2016,69,Rydberg Resonance Dynamics,32,1408,0.022727
-physics,2016,70,Quantum-Classical Boundary,35,1408,0.024858
-physics,2016,71,Antineutrino Source Design,56,1408,0.039773
-physics,2016,72,Crystal Ab Initio Design,5,1408,0.003551
-physics,2016,73,Reciprocity Systems,18,1408,0.012784
-physics,2017,0,Plasma Beam Interactions,45,1476,0.030488
-physics,2017,1,Uncertainty Propagation,8,1476,0.00542
-physics,2017,2,Quantum Corrections,15,1476,0.010163
-physics,2017,3,DNA Conformational Dynamics,17,1476,0.011518
-physics,2017,4,Optical Trapping Cooling,31,1476,0.021003
-physics,2017,5,Nonlinear Harmonic Generation,26,1476,0.017615
-physics,2017,6,Fermi Gas Stability,13,1476,0.008808
-physics,2017,7,Molecular Absorption Precision,3,1476,0.002033
-physics,2017,8,Lanczos Eigenvalue Methods,14,1476,0.009485
-physics,2017,9,Algebraic Products and Angular Momentum Separation,10,1476,0.006775
-physics,2017,10,Deforming Reference Frame Dynamics,18,1476,0.012195
-physics,2017,11,Rotating Flow Dynamics,32,1476,0.02168
-physics,2017,12,Optical Logic Gates,20,1476,0.01355
-physics,2017,13,Micromaser Dynamics,12,1476,0.00813
-physics,2017,14,Pixel Detector Calibration,58,1476,0.039295
-physics,2017,15,Pulse-Level Beam Feedback,24,1476,0.01626
-physics,2017,16,Mass-Energy Relationships,8,1476,0.00542
-physics,2017,17,Anomalous Scaling Turbulence,12,1476,0.00813
-physics,2017,18,High-Order Turbulence Moments,46,1476,0.031165
-physics,2017,19,Fractal Surface Plasmonics,30,1476,0.020325
-physics,2017,20,Polymer Entropic Mechanics,8,1476,0.00542
-physics,2017,21,Radial Current Discharge Dynamics,11,1476,0.007453
-physics,2017,22,Bimetallic Cluster Magnetism,14,1476,0.009485
-physics,2017,23,Polymer Translocation Dynamics,12,1476,0.00813
-physics,2017,24,Photon Statistics Cavities,27,1476,0.018293
-physics,2017,25,Three-Body Virtual States,11,1476,0.007453
-physics,2017,26,Relativistic Common Sense,11,1476,0.007453
-physics,2017,27,Macroscopic Quantum Collapse,11,1476,0.007453
-physics,2017,28,Coherent Image Reconstruction,13,1476,0.008808
-physics,2017,29,Nonlinear Flagellar Dynamics,11,1476,0.007453
-physics,2017,30,Chaotic Dynamo Reversals,31,1476,0.021003
-physics,2017,31,Tokamak Flow Barriers,36,1476,0.02439
-physics,2017,32,Forbidden Transition Spectroscopy,10,1476,0.006775
-physics,2017,33,Axion Solar Search,16,1476,0.01084
-physics,2017,34,Seismic Network Analysis,11,1476,0.007453
-physics,2017,35,Lattice Boltzmann Methods,40,1476,0.0271
-physics,2017,36,High-Energy Trigger Processing,19,1476,0.012873
-physics,2017,37,Network Immunization Dynamics,76,1476,0.051491
-physics,2017,38,Noise-Induced Phase Transitions,10,1476,0.006775
-physics,2017,39,Stochastic Geometry Dynamics,13,1476,0.008808
-physics,2017,40,Metallic Slit Resonance,16,1476,0.01084
-physics,2017,41,Hyperbolic Dispersion Media,25,1476,0.016938
-physics,2017,42,Laser-Plasma Acceleration,48,1476,0.03252
-physics,2017,43,Rotating Surface Solitons,27,1476,0.018293
-physics,2017,44,Urban Spatial Scaling,9,1476,0.006098
-physics,2017,45,Photoelectron Imaging Dynamics,11,1476,0.007453
-physics,2017,46,Climate Information Dynamics,11,1476,0.007453
-physics,2017,47,Kinetic Potential Embedding,10,1476,0.006775
-physics,2017,48,Obliquity Climate Dynamics,10,1476,0.006775
-physics,2017,49,Singularity Reinterpretation,10,1476,0.006775
-physics,2017,50,Photonic Quantum Gates,32,1476,0.02168
-physics,2017,51,Laser-Assisted Tunneling Dynamics,10,1476,0.006775
-physics,2017,52,Blog Network Dynamics,23,1476,0.015583
-physics,2017,53,Self-Organized Cooperation,17,1476,0.011518
-physics,2017,54,Ensemble Learning Dynamics,15,1476,0.010163
-physics,2017,55,Film Retraction Dynamics,15,1476,0.010163
-physics,2017,56,Optomechanical Tuning Lasers,11,1476,0.007453
-physics,2017,57,Buffer-Gas Cooling,6,1476,0.004065
-physics,2017,58,Opinion Consensus Dynamics,14,1476,0.009485
-physics,2017,59,Ion Pairing Dynamics,18,1476,0.012195
-physics,2017,60,Metamaterial Resonance Bistability,19,1476,0.012873
-physics,2017,61,Existence Interpretation,11,1476,0.007453
-physics,2017,62,Soliton Pair Dynamics,42,1476,0.028455
-physics,2017,63,Ultra-Short Pulse Coherence,13,1476,0.008808
-physics,2017,64,Excited State Perturbation Theory,39,1476,0.026423
-physics,2017,65,TR-Symmetry Breaking Meta-Optics,22,1476,0.014905
-physics,2017,66,Multimode Cavity QED,20,1476,0.01355
-physics,2017,67,Self-Fourier Beam Dynamics,12,1476,0.00813
-physics,2017,68,Gravitational Constant Fluctuations,7,1476,0.004743
-physics,2017,69,Rydberg Resonance Dynamics,18,1476,0.012195
-physics,2017,70,Quantum-Classical Boundary,32,1476,0.02168
-physics,2017,71,Antineutrino Source Design,56,1476,0.03794
-physics,2017,72,Crystal Ab Initio Design,3,1476,0.002033
-physics,2017,73,Reciprocity Systems,11,1476,0.007453
-physics,2018,0,Plasma Beam Interactions,62,1638,0.037851
-physics,2018,1,Uncertainty Propagation,6,1638,0.003663
-physics,2018,2,Quantum Corrections,24,1638,0.014652
-physics,2018,3,DNA Conformational Dynamics,24,1638,0.014652
-physics,2018,4,Optical Trapping Cooling,24,1638,0.014652
-physics,2018,5,Nonlinear Harmonic Generation,26,1638,0.015873
-physics,2018,6,Fermi Gas Stability,18,1638,0.010989
-physics,2018,7,Molecular Absorption Precision,9,1638,0.005495
-physics,2018,8,Lanczos Eigenvalue Methods,18,1638,0.010989
-physics,2018,9,Algebraic Products and Angular Momentum Separation,13,1638,0.007937
-physics,2018,10,Deforming Reference Frame Dynamics,18,1638,0.010989
-physics,2018,11,Rotating Flow Dynamics,34,1638,0.020757
-physics,2018,12,Optical Logic Gates,29,1638,0.017705
-physics,2018,13,Micromaser Dynamics,18,1638,0.010989
-physics,2018,14,Pixel Detector Calibration,69,1638,0.042125
-physics,2018,15,Pulse-Level Beam Feedback,21,1638,0.012821
-physics,2018,16,Mass-Energy Relationships,12,1638,0.007326
-physics,2018,17,Anomalous Scaling Turbulence,14,1638,0.008547
-physics,2018,18,High-Order Turbulence Moments,37,1638,0.022589
-physics,2018,19,Fractal Surface Plasmonics,33,1638,0.020147
-physics,2018,20,Polymer Entropic Mechanics,13,1638,0.007937
-physics,2018,21,Radial Current Discharge Dynamics,16,1638,0.009768
-physics,2018,22,Bimetallic Cluster Magnetism,14,1638,0.008547
-physics,2018,23,Polymer Translocation Dynamics,19,1638,0.0116
-physics,2018,24,Photon Statistics Cavities,24,1638,0.014652
-physics,2018,25,Three-Body Virtual States,11,1638,0.006716
-physics,2018,26,Relativistic Common Sense,11,1638,0.006716
-physics,2018,27,Macroscopic Quantum Collapse,14,1638,0.008547
-physics,2018,28,Coherent Image Reconstruction,14,1638,0.008547
-physics,2018,29,Nonlinear Flagellar Dynamics,13,1638,0.007937
-physics,2018,30,Chaotic Dynamo Reversals,25,1638,0.015263
-physics,2018,31,Tokamak Flow Barriers,29,1638,0.017705
-physics,2018,32,Forbidden Transition Spectroscopy,16,1638,0.009768
-physics,2018,33,Axion Solar Search,19,1638,0.0116
-physics,2018,34,Seismic Network Analysis,4,1638,0.002442
-physics,2018,35,Lattice Boltzmann Methods,50,1638,0.030525
-physics,2018,36,High-Energy Trigger Processing,14,1638,0.008547
-physics,2018,37,Network Immunization Dynamics,64,1638,0.039072
-physics,2018,38,Noise-Induced Phase Transitions,10,1638,0.006105
-physics,2018,39,Stochastic Geometry Dynamics,18,1638,0.010989
-physics,2018,40,Metallic Slit Resonance,9,1638,0.005495
-physics,2018,41,Hyperbolic Dispersion Media,25,1638,0.015263
-physics,2018,42,Laser-Plasma Acceleration,50,1638,0.030525
-physics,2018,43,Rotating Surface Solitons,31,1638,0.018926
-physics,2018,44,Urban Spatial Scaling,15,1638,0.009158
-physics,2018,45,Photoelectron Imaging Dynamics,16,1638,0.009768
-physics,2018,46,Climate Information Dynamics,21,1638,0.012821
-physics,2018,47,Kinetic Potential Embedding,16,1638,0.009768
-physics,2018,48,Obliquity Climate Dynamics,8,1638,0.004884
-physics,2018,49,Singularity Reinterpretation,12,1638,0.007326
-physics,2018,50,Photonic Quantum Gates,46,1638,0.028083
-physics,2018,51,Laser-Assisted Tunneling Dynamics,7,1638,0.004274
-physics,2018,52,Blog Network Dynamics,17,1638,0.010379
-physics,2018,53,Self-Organized Cooperation,16,1638,0.009768
-physics,2018,54,Ensemble Learning Dynamics,25,1638,0.015263
-physics,2018,55,Film Retraction Dynamics,12,1638,0.007326
-physics,2018,56,Optomechanical Tuning Lasers,15,1638,0.009158
-physics,2018,57,Buffer-Gas Cooling,13,1638,0.007937
-physics,2018,58,Opinion Consensus Dynamics,18,1638,0.010989
-physics,2018,59,Ion Pairing Dynamics,22,1638,0.013431
-physics,2018,60,Metamaterial Resonance Bistability,24,1638,0.014652
-physics,2018,61,Existence Interpretation,6,1638,0.003663
-physics,2018,62,Soliton Pair Dynamics,33,1638,0.020147
-physics,2018,63,Ultra-Short Pulse Coherence,10,1638,0.006105
-physics,2018,64,Excited State Perturbation Theory,46,1638,0.028083
-physics,2018,65,TR-Symmetry Breaking Meta-Optics,29,1638,0.017705
-physics,2018,66,Multimode Cavity QED,20,1638,0.01221
-physics,2018,67,Self-Fourier Beam Dynamics,16,1638,0.009768
-physics,2018,68,Gravitational Constant Fluctuations,7,1638,0.004274
-physics,2018,69,Rydberg Resonance Dynamics,16,1638,0.009768
-physics,2018,70,Quantum-Classical Boundary,34,1638,0.020757
-physics,2018,71,Antineutrino Source Design,56,1638,0.034188
-physics,2018,72,Crystal Ab Initio Design,17,1638,0.010379
-physics,2018,73,Reciprocity Systems,23,1638,0.014042
-physics,2019,0,Plasma Beam Interactions,52,1733,0.030006
-physics,2019,1,Uncertainty Propagation,13,1733,0.007501
-physics,2019,2,Quantum Corrections,16,1733,0.009233
-physics,2019,3,DNA Conformational Dynamics,15,1733,0.008656
-physics,2019,4,Optical Trapping Cooling,36,1733,0.020773
-physics,2019,5,Nonlinear Harmonic Generation,31,1733,0.017888
-physics,2019,6,Fermi Gas Stability,14,1733,0.008078
-physics,2019,7,Molecular Absorption Precision,21,1733,0.012118
-physics,2019,8,Lanczos Eigenvalue Methods,18,1733,0.010387
-physics,2019,9,Algebraic Products and Angular Momentum Separation,17,1733,0.00981
-physics,2019,10,Deforming Reference Frame Dynamics,17,1733,0.00981
-physics,2019,11,Rotating Flow Dynamics,38,1733,0.021927
-physics,2019,12,Optical Logic Gates,15,1733,0.008656
-physics,2019,13,Micromaser Dynamics,25,1733,0.014426
-physics,2019,14,Pixel Detector Calibration,60,1733,0.034622
-physics,2019,15,Pulse-Level Beam Feedback,24,1733,0.013849
-physics,2019,16,Mass-Energy Relationships,16,1733,0.009233
-physics,2019,17,Anomalous Scaling Turbulence,20,1733,0.011541
-physics,2019,18,High-Order Turbulence Moments,43,1733,0.024812
-physics,2019,19,Fractal Surface Plasmonics,32,1733,0.018465
-physics,2019,20,Polymer Entropic Mechanics,10,1733,0.00577
-physics,2019,21,Radial Current Discharge Dynamics,12,1733,0.006924
-physics,2019,22,Bimetallic Cluster Magnetism,30,1733,0.017311
-physics,2019,23,Polymer Translocation Dynamics,8,1733,0.004616
-physics,2019,24,Photon Statistics Cavities,28,1733,0.016157
-physics,2019,25,Three-Body Virtual States,12,1733,0.006924
-physics,2019,26,Relativistic Common Sense,14,1733,0.008078
-physics,2019,27,Macroscopic Quantum Collapse,12,1733,0.006924
-physics,2019,28,Coherent Image Reconstruction,20,1733,0.011541
-physics,2019,29,Nonlinear Flagellar Dynamics,16,1733,0.009233
-physics,2019,30,Chaotic Dynamo Reversals,35,1733,0.020196
-physics,2019,31,Tokamak Flow Barriers,16,1733,0.009233
-physics,2019,32,Forbidden Transition Spectroscopy,13,1733,0.007501
-physics,2019,33,Axion Solar Search,19,1733,0.010964
-physics,2019,34,Seismic Network Analysis,13,1733,0.007501
-physics,2019,35,Lattice Boltzmann Methods,36,1733,0.020773
-physics,2019,36,High-Energy Trigger Processing,21,1733,0.012118
-physics,2019,37,Network Immunization Dynamics,65,1733,0.037507
-physics,2019,38,Noise-Induced Phase Transitions,7,1733,0.004039
-physics,2019,39,Stochastic Geometry Dynamics,20,1733,0.011541
-physics,2019,40,Metallic Slit Resonance,13,1733,0.007501
-physics,2019,41,Hyperbolic Dispersion Media,16,1733,0.009233
-physics,2019,42,Laser-Plasma Acceleration,49,1733,0.028275
-physics,2019,43,Rotating Surface Solitons,31,1733,0.017888
-physics,2019,44,Urban Spatial Scaling,16,1733,0.009233
-physics,2019,45,Photoelectron Imaging Dynamics,25,1733,0.014426
-physics,2019,46,Climate Information Dynamics,28,1733,0.016157
-physics,2019,47,Kinetic Potential Embedding,19,1733,0.010964
-physics,2019,48,Obliquity Climate Dynamics,16,1733,0.009233
-physics,2019,49,Singularity Reinterpretation,18,1733,0.010387
-physics,2019,50,Photonic Quantum Gates,43,1733,0.024812
-physics,2019,51,Laser-Assisted Tunneling Dynamics,16,1733,0.009233
-physics,2019,52,Blog Network Dynamics,12,1733,0.006924
-physics,2019,53,Self-Organized Cooperation,27,1733,0.01558
-physics,2019,54,Ensemble Learning Dynamics,23,1733,0.013272
-physics,2019,55,Film Retraction Dynamics,20,1733,0.011541
-physics,2019,56,Optomechanical Tuning Lasers,13,1733,0.007501
-physics,2019,57,Buffer-Gas Cooling,10,1733,0.00577
-physics,2019,58,Opinion Consensus Dynamics,27,1733,0.01558
-physics,2019,59,Ion Pairing Dynamics,14,1733,0.008078
-physics,2019,60,Metamaterial Resonance Bistability,33,1733,0.019042
-physics,2019,61,Existence Interpretation,13,1733,0.007501
-physics,2019,62,Soliton Pair Dynamics,33,1733,0.019042
-physics,2019,63,Ultra-Short Pulse Coherence,20,1733,0.011541
-physics,2019,64,Excited State Perturbation Theory,51,1733,0.029429
-physics,2019,65,TR-Symmetry Breaking Meta-Optics,34,1733,0.019619
-physics,2019,66,Multimode Cavity QED,26,1733,0.015003
-physics,2019,67,Self-Fourier Beam Dynamics,13,1733,0.007501
-physics,2019,68,Gravitational Constant Fluctuations,9,1733,0.005193
-physics,2019,69,Rydberg Resonance Dynamics,19,1733,0.010964
-physics,2019,70,Quantum-Classical Boundary,31,1733,0.017888
-physics,2019,71,Antineutrino Source Design,53,1733,0.030583
-physics,2019,72,Crystal Ab Initio Design,19,1733,0.010964
-physics,2019,73,Reciprocity Systems,13,1733,0.007501
-physics,2020,0,Plasma Beam Interactions,48,2096,0.022901
-physics,2020,1,Uncertainty Propagation,20,2096,0.009542
-physics,2020,2,Quantum Corrections,16,2096,0.007634
-physics,2020,3,DNA Conformational Dynamics,18,2096,0.008588
-physics,2020,4,Optical Trapping Cooling,34,2096,0.016221
-physics,2020,5,Nonlinear Harmonic Generation,43,2096,0.020515
-physics,2020,6,Fermi Gas Stability,21,2096,0.010019
-physics,2020,7,Molecular Absorption Precision,14,2096,0.006679
-physics,2020,8,Lanczos Eigenvalue Methods,24,2096,0.01145
-physics,2020,9,Algebraic Products and Angular Momentum Separation,22,2096,0.010496
-physics,2020,10,Deforming Reference Frame Dynamics,31,2096,0.01479
-physics,2020,11,Rotating Flow Dynamics,54,2096,0.025763
-physics,2020,12,Optical Logic Gates,32,2096,0.015267
-physics,2020,13,Micromaser Dynamics,19,2096,0.009065
-physics,2020,14,Pixel Detector Calibration,88,2096,0.041985
-physics,2020,15,Pulse-Level Beam Feedback,27,2096,0.012882
-physics,2020,16,Mass-Energy Relationships,15,2096,0.007156
-physics,2020,17,Anomalous Scaling Turbulence,22,2096,0.010496
-physics,2020,18,High-Order Turbulence Moments,43,2096,0.020515
-physics,2020,19,Fractal Surface Plasmonics,33,2096,0.015744
-physics,2020,20,Polymer Entropic Mechanics,15,2096,0.007156
-physics,2020,21,Radial Current Discharge Dynamics,31,2096,0.01479
-physics,2020,22,Bimetallic Cluster Magnetism,33,2096,0.015744
-physics,2020,23,Polymer Translocation Dynamics,11,2096,0.005248
-physics,2020,24,Photon Statistics Cavities,42,2096,0.020038
-physics,2020,25,Three-Body Virtual States,14,2096,0.006679
-physics,2020,26,Relativistic Common Sense,8,2096,0.003817
-physics,2020,27,Macroscopic Quantum Collapse,16,2096,0.007634
-physics,2020,28,Coherent Image Reconstruction,16,2096,0.007634
-physics,2020,29,Nonlinear Flagellar Dynamics,13,2096,0.006202
-physics,2020,30,Chaotic Dynamo Reversals,28,2096,0.013359
-physics,2020,31,Tokamak Flow Barriers,36,2096,0.017176
-physics,2020,32,Forbidden Transition Spectroscopy,16,2096,0.007634
-physics,2020,33,Axion Solar Search,18,2096,0.008588
-physics,2020,34,Seismic Network Analysis,8,2096,0.003817
-physics,2020,35,Lattice Boltzmann Methods,36,2096,0.017176
-physics,2020,36,High-Energy Trigger Processing,26,2096,0.012405
-physics,2020,37,Network Immunization Dynamics,205,2096,0.097805
-physics,2020,38,Noise-Induced Phase Transitions,26,2096,0.012405
-physics,2020,39,Stochastic Geometry Dynamics,22,2096,0.010496
-physics,2020,40,Metallic Slit Resonance,19,2096,0.009065
-physics,2020,41,Hyperbolic Dispersion Media,19,2096,0.009065
-physics,2020,42,Laser-Plasma Acceleration,41,2096,0.019561
-physics,2020,43,Rotating Surface Solitons,36,2096,0.017176
-physics,2020,44,Urban Spatial Scaling,29,2096,0.013836
-physics,2020,45,Photoelectron Imaging Dynamics,15,2096,0.007156
-physics,2020,46,Climate Information Dynamics,57,2096,0.027195
-physics,2020,47,Kinetic Potential Embedding,21,2096,0.010019
-physics,2020,48,Obliquity Climate Dynamics,15,2096,0.007156
-physics,2020,49,Singularity Reinterpretation,12,2096,0.005725
-physics,2020,50,Photonic Quantum Gates,37,2096,0.017653
-physics,2020,51,Laser-Assisted Tunneling Dynamics,9,2096,0.004294
-physics,2020,52,Blog Network Dynamics,14,2096,0.006679
-physics,2020,53,Self-Organized Cooperation,14,2096,0.006679
-physics,2020,54,Ensemble Learning Dynamics,35,2096,0.016698
-physics,2020,55,Film Retraction Dynamics,12,2096,0.005725
-physics,2020,56,Optomechanical Tuning Lasers,12,2096,0.005725
-physics,2020,57,Buffer-Gas Cooling,14,2096,0.006679
-physics,2020,58,Opinion Consensus Dynamics,27,2096,0.012882
-physics,2020,59,Ion Pairing Dynamics,30,2096,0.014313
-physics,2020,60,Metamaterial Resonance Bistability,30,2096,0.014313
-physics,2020,61,Existence Interpretation,15,2096,0.007156
-physics,2020,62,Soliton Pair Dynamics,23,2096,0.010973
-physics,2020,63,Ultra-Short Pulse Coherence,21,2096,0.010019
-physics,2020,64,Excited State Perturbation Theory,69,2096,0.03292
-physics,2020,65,TR-Symmetry Breaking Meta-Optics,42,2096,0.020038
-physics,2020,66,Multimode Cavity QED,31,2096,0.01479
-physics,2020,67,Self-Fourier Beam Dynamics,15,2096,0.007156
-physics,2020,68,Gravitational Constant Fluctuations,6,2096,0.002863
-physics,2020,69,Rydberg Resonance Dynamics,32,2096,0.015267
-physics,2020,70,Quantum-Classical Boundary,28,2096,0.013359
-physics,2020,71,Antineutrino Source Design,35,2096,0.016698
-physics,2020,72,Crystal Ab Initio Design,21,2096,0.010019
-physics,2020,73,Reciprocity Systems,16,2096,0.007634
-physics,2021,0,Plasma Beam Interactions,46,2030,0.02266
-physics,2021,1,Uncertainty Propagation,17,2030,0.008374
-physics,2021,2,Quantum Corrections,19,2030,0.00936
-physics,2021,3,DNA Conformational Dynamics,21,2030,0.010345
-physics,2021,4,Optical Trapping Cooling,55,2030,0.027094
-physics,2021,5,Nonlinear Harmonic Generation,37,2030,0.018227
-physics,2021,6,Fermi Gas Stability,28,2030,0.013793
-physics,2021,7,Molecular Absorption Precision,13,2030,0.006404
-physics,2021,8,Lanczos Eigenvalue Methods,20,2030,0.009852
-physics,2021,9,Algebraic Products and Angular Momentum Separation,18,2030,0.008867
-physics,2021,10,Deforming Reference Frame Dynamics,17,2030,0.008374
-physics,2021,11,Rotating Flow Dynamics,51,2030,0.025123
-physics,2021,12,Optical Logic Gates,43,2030,0.021182
-physics,2021,13,Micromaser Dynamics,31,2030,0.015271
-physics,2021,14,Pixel Detector Calibration,74,2030,0.036453
-physics,2021,15,Pulse-Level Beam Feedback,23,2030,0.01133
-physics,2021,16,Mass-Energy Relationships,5,2030,0.002463
-physics,2021,17,Anomalous Scaling Turbulence,22,2030,0.010837
-physics,2021,18,High-Order Turbulence Moments,53,2030,0.026108
-physics,2021,19,Fractal Surface Plasmonics,34,2030,0.016749
-physics,2021,20,Polymer Entropic Mechanics,15,2030,0.007389
-physics,2021,21,Radial Current Discharge Dynamics,20,2030,0.009852
-physics,2021,22,Bimetallic Cluster Magnetism,28,2030,0.013793
-physics,2021,23,Polymer Translocation Dynamics,10,2030,0.004926
-physics,2021,24,Photon Statistics Cavities,42,2030,0.02069
-physics,2021,25,Three-Body Virtual States,8,2030,0.003941
-physics,2021,26,Relativistic Common Sense,7,2030,0.003448
-physics,2021,27,Macroscopic Quantum Collapse,23,2030,0.01133
-physics,2021,28,Coherent Image Reconstruction,25,2030,0.012315
-physics,2021,29,Nonlinear Flagellar Dynamics,20,2030,0.009852
-physics,2021,30,Chaotic Dynamo Reversals,20,2030,0.009852
-physics,2021,31,Tokamak Flow Barriers,34,2030,0.016749
-physics,2021,32,Forbidden Transition Spectroscopy,11,2030,0.005419
-physics,2021,33,Axion Solar Search,16,2030,0.007882
-physics,2021,34,Seismic Network Analysis,10,2030,0.004926
-physics,2021,35,Lattice Boltzmann Methods,43,2030,0.021182
-physics,2021,36,High-Energy Trigger Processing,28,2030,0.013793
-physics,2021,37,Network Immunization Dynamics,135,2030,0.066502
-physics,2021,38,Noise-Induced Phase Transitions,17,2030,0.008374
-physics,2021,39,Stochastic Geometry Dynamics,23,2030,0.01133
-physics,2021,40,Metallic Slit Resonance,15,2030,0.007389
-physics,2021,41,Hyperbolic Dispersion Media,20,2030,0.009852
-physics,2021,42,Laser-Plasma Acceleration,43,2030,0.021182
-physics,2021,43,Rotating Surface Solitons,32,2030,0.015764
-physics,2021,44,Urban Spatial Scaling,21,2030,0.010345
-physics,2021,45,Photoelectron Imaging Dynamics,21,2030,0.010345
-physics,2021,46,Climate Information Dynamics,63,2030,0.031034
-physics,2021,47,Kinetic Potential Embedding,18,2030,0.008867
-physics,2021,48,Obliquity Climate Dynamics,14,2030,0.006897
-physics,2021,49,Singularity Reinterpretation,16,2030,0.007882
-physics,2021,50,Photonic Quantum Gates,57,2030,0.028079
-physics,2021,51,Laser-Assisted Tunneling Dynamics,17,2030,0.008374
-physics,2021,52,Blog Network Dynamics,12,2030,0.005911
-physics,2021,53,Self-Organized Cooperation,27,2030,0.0133
-physics,2021,54,Ensemble Learning Dynamics,31,2030,0.015271
-physics,2021,55,Film Retraction Dynamics,20,2030,0.009852
-physics,2021,56,Optomechanical Tuning Lasers,16,2030,0.007882
-physics,2021,57,Buffer-Gas Cooling,13,2030,0.006404
-physics,2021,58,Opinion Consensus Dynamics,18,2030,0.008867
-physics,2021,59,Ion Pairing Dynamics,28,2030,0.013793
-physics,2021,60,Metamaterial Resonance Bistability,22,2030,0.010837
-physics,2021,61,Existence Interpretation,15,2030,0.007389
-physics,2021,62,Soliton Pair Dynamics,43,2030,0.021182
-physics,2021,63,Ultra-Short Pulse Coherence,12,2030,0.005911
-physics,2021,64,Excited State Perturbation Theory,59,2030,0.029064
-physics,2021,65,TR-Symmetry Breaking Meta-Optics,40,2030,0.019704
-physics,2021,66,Multimode Cavity QED,32,2030,0.015764
-physics,2021,67,Self-Fourier Beam Dynamics,9,2030,0.004433
-physics,2021,68,Gravitational Constant Fluctuations,8,2030,0.003941
-physics,2021,69,Rydberg Resonance Dynamics,28,2030,0.013793
-physics,2021,70,Quantum-Classical Boundary,29,2030,0.014286
-physics,2021,71,Antineutrino Source Design,33,2030,0.016256
-physics,2021,72,Crystal Ab Initio Design,20,2030,0.009852
-physics,2021,73,Reciprocity Systems,16,2030,0.007882
-physics,2022,0,Plasma Beam Interactions,44,2031,0.021664
-physics,2022,1,Uncertainty Propagation,32,2031,0.015756
-physics,2022,2,Quantum Corrections,24,2031,0.011817
-physics,2022,3,DNA Conformational Dynamics,23,2031,0.011324
-physics,2022,4,Optical Trapping Cooling,34,2031,0.016741
-physics,2022,5,Nonlinear Harmonic Generation,36,2031,0.017725
-physics,2022,6,Fermi Gas Stability,30,2031,0.014771
-physics,2022,7,Molecular Absorption Precision,20,2031,0.009847
-physics,2022,8,Lanczos Eigenvalue Methods,18,2031,0.008863
-physics,2022,9,Algebraic Products and Angular Momentum Separation,22,2031,0.010832
-physics,2022,10,Deforming Reference Frame Dynamics,25,2031,0.012309
-physics,2022,11,Rotating Flow Dynamics,36,2031,0.017725
-physics,2022,12,Optical Logic Gates,35,2031,0.017233
-physics,2022,13,Micromaser Dynamics,25,2031,0.012309
-physics,2022,14,Pixel Detector Calibration,81,2031,0.039882
-physics,2022,15,Pulse-Level Beam Feedback,25,2031,0.012309
-physics,2022,16,Mass-Energy Relationships,26,2031,0.012802
-physics,2022,17,Anomalous Scaling Turbulence,21,2031,0.01034
-physics,2022,18,High-Order Turbulence Moments,54,2031,0.026588
-physics,2022,19,Fractal Surface Plasmonics,27,2031,0.013294
-physics,2022,20,Polymer Entropic Mechanics,18,2031,0.008863
-physics,2022,21,Radial Current Discharge Dynamics,24,2031,0.011817
-physics,2022,22,Bimetallic Cluster Magnetism,36,2031,0.017725
-physics,2022,23,Polymer Translocation Dynamics,11,2031,0.005416
-physics,2022,24,Photon Statistics Cavities,43,2031,0.021172
-physics,2022,25,Three-Body Virtual States,11,2031,0.005416
-physics,2022,26,Relativistic Common Sense,10,2031,0.004924
-physics,2022,27,Macroscopic Quantum Collapse,12,2031,0.005908
-physics,2022,28,Coherent Image Reconstruction,18,2031,0.008863
-physics,2022,29,Nonlinear Flagellar Dynamics,5,2031,0.002462
-physics,2022,30,Chaotic Dynamo Reversals,30,2031,0.014771
-physics,2022,31,Tokamak Flow Barriers,33,2031,0.016248
-physics,2022,32,Forbidden Transition Spectroscopy,12,2031,0.005908
-physics,2022,33,Axion Solar Search,26,2031,0.012802
-physics,2022,34,Seismic Network Analysis,9,2031,0.004431
-physics,2022,35,Lattice Boltzmann Methods,44,2031,0.021664
-physics,2022,36,High-Energy Trigger Processing,37,2031,0.018218
-physics,2022,37,Network Immunization Dynamics,87,2031,0.042836
-physics,2022,38,Noise-Induced Phase Transitions,25,2031,0.012309
-physics,2022,39,Stochastic Geometry Dynamics,21,2031,0.01034
-physics,2022,40,Metallic Slit Resonance,7,2031,0.003447
-physics,2022,41,Hyperbolic Dispersion Media,16,2031,0.007878
-physics,2022,42,Laser-Plasma Acceleration,42,2031,0.020679
-physics,2022,43,Rotating Surface Solitons,34,2031,0.016741
-physics,2022,44,Urban Spatial Scaling,20,2031,0.009847
-physics,2022,45,Photoelectron Imaging Dynamics,13,2031,0.006401
-physics,2022,46,Climate Information Dynamics,66,2031,0.032496
-physics,2022,47,Kinetic Potential Embedding,34,2031,0.016741
-physics,2022,48,Obliquity Climate Dynamics,20,2031,0.009847
-physics,2022,49,Singularity Reinterpretation,11,2031,0.005416
-physics,2022,50,Photonic Quantum Gates,69,2031,0.033973
-physics,2022,51,Laser-Assisted Tunneling Dynamics,12,2031,0.005908
-physics,2022,52,Blog Network Dynamics,8,2031,0.003939
-physics,2022,53,Self-Organized Cooperation,31,2031,0.015263
-physics,2022,54,Ensemble Learning Dynamics,22,2031,0.010832
-physics,2022,55,Film Retraction Dynamics,17,2031,0.00837
-physics,2022,56,Optomechanical Tuning Lasers,15,2031,0.007386
-physics,2022,57,Buffer-Gas Cooling,16,2031,0.007878
-physics,2022,58,Opinion Consensus Dynamics,24,2031,0.011817
-physics,2022,59,Ion Pairing Dynamics,25,2031,0.012309
-physics,2022,60,Metamaterial Resonance Bistability,29,2031,0.014279
-physics,2022,61,Existence Interpretation,17,2031,0.00837
-physics,2022,62,Soliton Pair Dynamics,34,2031,0.016741
-physics,2022,63,Ultra-Short Pulse Coherence,15,2031,0.007386
-physics,2022,64,Excited State Perturbation Theory,64,2031,0.031512
-physics,2022,65,TR-Symmetry Breaking Meta-Optics,30,2031,0.014771
-physics,2022,66,Multimode Cavity QED,27,2031,0.013294
-physics,2022,67,Self-Fourier Beam Dynamics,12,2031,0.005908
-physics,2022,68,Gravitational Constant Fluctuations,16,2031,0.007878
-physics,2022,69,Rydberg Resonance Dynamics,18,2031,0.008863
-physics,2022,70,Quantum-Classical Boundary,38,2031,0.01871
-physics,2022,71,Antineutrino Source Design,46,2031,0.022649
-physics,2022,72,Crystal Ab Initio Design,20,2031,0.009847
-physics,2022,73,Reciprocity Systems,13,2031,0.006401
-physics,2023,0,Plasma Beam Interactions,42,2094,0.020057
-physics,2023,1,Uncertainty Propagation,17,2094,0.008118
-physics,2023,2,Quantum Corrections,26,2094,0.012416
-physics,2023,3,DNA Conformational Dynamics,31,2094,0.014804
-physics,2023,4,Optical Trapping Cooling,40,2094,0.019102
-physics,2023,5,Nonlinear Harmonic Generation,36,2094,0.017192
-physics,2023,6,Fermi Gas Stability,20,2094,0.009551
-physics,2023,7,Molecular Absorption Precision,14,2094,0.006686
-physics,2023,8,Lanczos Eigenvalue Methods,25,2094,0.011939
-physics,2023,9,Algebraic Products and Angular Momentum Separation,21,2094,0.010029
-physics,2023,10,Deforming Reference Frame Dynamics,35,2094,0.016714
-physics,2023,11,Rotating Flow Dynamics,50,2094,0.023878
-physics,2023,12,Optical Logic Gates,44,2094,0.021012
-physics,2023,13,Micromaser Dynamics,26,2094,0.012416
-physics,2023,14,Pixel Detector Calibration,63,2094,0.030086
-physics,2023,15,Pulse-Level Beam Feedback,20,2094,0.009551
-physics,2023,16,Mass-Energy Relationships,11,2094,0.005253
-physics,2023,17,Anomalous Scaling Turbulence,17,2094,0.008118
-physics,2023,18,High-Order Turbulence Moments,69,2094,0.032951
-physics,2023,19,Fractal Surface Plasmonics,32,2094,0.015282
-physics,2023,20,Polymer Entropic Mechanics,12,2094,0.005731
-physics,2023,21,Radial Current Discharge Dynamics,20,2094,0.009551
-physics,2023,22,Bimetallic Cluster Magnetism,42,2094,0.020057
-physics,2023,23,Polymer Translocation Dynamics,14,2094,0.006686
-physics,2023,24,Photon Statistics Cavities,44,2094,0.021012
-physics,2023,25,Three-Body Virtual States,13,2094,0.006208
-physics,2023,26,Relativistic Common Sense,5,2094,0.002388
-physics,2023,27,Macroscopic Quantum Collapse,10,2094,0.004776
-physics,2023,28,Coherent Image Reconstruction,15,2094,0.007163
-physics,2023,29,Nonlinear Flagellar Dynamics,8,2094,0.00382
-physics,2023,30,Chaotic Dynamo Reversals,33,2094,0.015759
-physics,2023,31,Tokamak Flow Barriers,44,2094,0.021012
-physics,2023,32,Forbidden Transition Spectroscopy,17,2094,0.008118
-physics,2023,33,Axion Solar Search,25,2094,0.011939
-physics,2023,34,Seismic Network Analysis,17,2094,0.008118
-physics,2023,35,Lattice Boltzmann Methods,44,2094,0.021012
-physics,2023,36,High-Energy Trigger Processing,26,2094,0.012416
-physics,2023,37,Network Immunization Dynamics,65,2094,0.031041
-physics,2023,38,Noise-Induced Phase Transitions,22,2094,0.010506
-physics,2023,39,Stochastic Geometry Dynamics,23,2094,0.010984
-physics,2023,40,Metallic Slit Resonance,5,2094,0.002388
-physics,2023,41,Hyperbolic Dispersion Media,22,2094,0.010506
-physics,2023,42,Laser-Plasma Acceleration,46,2094,0.021968
-physics,2023,43,Rotating Surface Solitons,33,2094,0.015759
-physics,2023,44,Urban Spatial Scaling,15,2094,0.007163
-physics,2023,45,Photoelectron Imaging Dynamics,21,2094,0.010029
-physics,2023,46,Climate Information Dynamics,105,2094,0.050143
-physics,2023,47,Kinetic Potential Embedding,27,2094,0.012894
-physics,2023,48,Obliquity Climate Dynamics,9,2094,0.004298
-physics,2023,49,Singularity Reinterpretation,10,2094,0.004776
-physics,2023,50,Photonic Quantum Gates,72,2094,0.034384
-physics,2023,51,Laser-Assisted Tunneling Dynamics,18,2094,0.008596
-physics,2023,52,Blog Network Dynamics,11,2094,0.005253
-physics,2023,53,Self-Organized Cooperation,21,2094,0.010029
-physics,2023,54,Ensemble Learning Dynamics,33,2094,0.015759
-physics,2023,55,Film Retraction Dynamics,13,2094,0.006208
-physics,2023,56,Optomechanical Tuning Lasers,16,2094,0.007641
-physics,2023,57,Buffer-Gas Cooling,9,2094,0.004298
-physics,2023,58,Opinion Consensus Dynamics,26,2094,0.012416
-physics,2023,59,Ion Pairing Dynamics,22,2094,0.010506
-physics,2023,60,Metamaterial Resonance Bistability,30,2094,0.014327
-physics,2023,61,Existence Interpretation,9,2094,0.004298
-physics,2023,62,Soliton Pair Dynamics,29,2094,0.013849
-physics,2023,63,Ultra-Short Pulse Coherence,19,2094,0.009074
-physics,2023,64,Excited State Perturbation Theory,72,2094,0.034384
-physics,2023,65,TR-Symmetry Breaking Meta-Optics,31,2094,0.014804
-physics,2023,66,Multimode Cavity QED,43,2094,0.020535
-physics,2023,67,Self-Fourier Beam Dynamics,16,2094,0.007641
-physics,2023,68,Gravitational Constant Fluctuations,13,2094,0.006208
-physics,2023,69,Rydberg Resonance Dynamics,18,2094,0.008596
-physics,2023,70,Quantum-Classical Boundary,53,2094,0.02531
-physics,2023,71,Antineutrino Source Design,35,2094,0.016714
-physics,2023,72,Crystal Ab Initio Design,26,2094,0.012416
-physics,2023,73,Reciprocity Systems,28,2094,0.013372
-physics,2024,0,Plasma Beam Interactions,42,2478,0.016949
-physics,2024,1,Uncertainty Propagation,28,2478,0.011299
-physics,2024,2,Quantum Corrections,24,2478,0.009685
-physics,2024,3,DNA Conformational Dynamics,24,2478,0.009685
-physics,2024,4,Optical Trapping Cooling,47,2478,0.018967
-physics,2024,5,Nonlinear Harmonic Generation,49,2478,0.019774
-physics,2024,6,Fermi Gas Stability,34,2478,0.013721
-physics,2024,7,Molecular Absorption Precision,11,2478,0.004439
-physics,2024,8,Lanczos Eigenvalue Methods,36,2478,0.014528
-physics,2024,9,Algebraic Products and Angular Momentum Separation,31,2478,0.01251
-physics,2024,10,Deforming Reference Frame Dynamics,31,2478,0.01251
-physics,2024,11,Rotating Flow Dynamics,60,2478,0.024213
-physics,2024,12,Optical Logic Gates,57,2478,0.023002
-physics,2024,13,Micromaser Dynamics,62,2478,0.02502
-physics,2024,14,Pixel Detector Calibration,82,2478,0.033091
-physics,2024,15,Pulse-Level Beam Feedback,18,2478,0.007264
-physics,2024,16,Mass-Energy Relationships,13,2478,0.005246
-physics,2024,17,Anomalous Scaling Turbulence,19,2478,0.007667
-physics,2024,18,High-Order Turbulence Moments,58,2478,0.023406
-physics,2024,19,Fractal Surface Plasmonics,25,2478,0.010089
-physics,2024,20,Polymer Entropic Mechanics,12,2478,0.004843
-physics,2024,21,Radial Current Discharge Dynamics,21,2478,0.008475
-physics,2024,22,Bimetallic Cluster Magnetism,45,2478,0.01816
-physics,2024,23,Polymer Translocation Dynamics,16,2478,0.006457
-physics,2024,24,Photon Statistics Cavities,60,2478,0.024213
-physics,2024,25,Three-Body Virtual States,17,2478,0.00686
-physics,2024,26,Relativistic Common Sense,6,2478,0.002421
-physics,2024,27,Macroscopic Quantum Collapse,17,2478,0.00686
-physics,2024,28,Coherent Image Reconstruction,15,2478,0.006053
-physics,2024,29,Nonlinear Flagellar Dynamics,25,2478,0.010089
-physics,2024,30,Chaotic Dynamo Reversals,25,2478,0.010089
-physics,2024,31,Tokamak Flow Barriers,70,2478,0.028249
-physics,2024,32,Forbidden Transition Spectroscopy,15,2478,0.006053
-physics,2024,33,Axion Solar Search,17,2478,0.00686
-physics,2024,34,Seismic Network Analysis,19,2478,0.007667
-physics,2024,35,Lattice Boltzmann Methods,50,2478,0.020178
-physics,2024,36,High-Energy Trigger Processing,34,2478,0.013721
-physics,2024,37,Network Immunization Dynamics,80,2478,0.032284
-physics,2024,38,Noise-Induced Phase Transitions,16,2478,0.006457
-physics,2024,39,Stochastic Geometry Dynamics,34,2478,0.013721
-physics,2024,40,Metallic Slit Resonance,8,2478,0.003228
-physics,2024,41,Hyperbolic Dispersion Media,12,2478,0.004843
-physics,2024,42,Laser-Plasma Acceleration,52,2478,0.020985
-physics,2024,43,Rotating Surface Solitons,52,2478,0.020985
-physics,2024,44,Urban Spatial Scaling,17,2478,0.00686
-physics,2024,45,Photoelectron Imaging Dynamics,17,2478,0.00686
-physics,2024,46,Climate Information Dynamics,158,2478,0.063761
-physics,2024,47,Kinetic Potential Embedding,27,2478,0.010896
-physics,2024,48,Obliquity Climate Dynamics,15,2478,0.006053
-physics,2024,49,Singularity Reinterpretation,13,2478,0.005246
-physics,2024,50,Photonic Quantum Gates,88,2478,0.035513
-physics,2024,51,Laser-Assisted Tunneling Dynamics,10,2478,0.004036
-physics,2024,52,Blog Network Dynamics,7,2478,0.002825
-physics,2024,53,Self-Organized Cooperation,21,2478,0.008475
-physics,2024,54,Ensemble Learning Dynamics,37,2478,0.014931
-physics,2024,55,Film Retraction Dynamics,22,2478,0.008878
-physics,2024,56,Optomechanical Tuning Lasers,16,2478,0.006457
-physics,2024,57,Buffer-Gas Cooling,13,2478,0.005246
-physics,2024,58,Opinion Consensus Dynamics,41,2478,0.016546
-physics,2024,59,Ion Pairing Dynamics,33,2478,0.013317
-physics,2024,60,Metamaterial Resonance Bistability,23,2478,0.009282
-physics,2024,61,Existence Interpretation,12,2478,0.004843
-physics,2024,62,Soliton Pair Dynamics,32,2478,0.012914
-physics,2024,63,Ultra-Short Pulse Coherence,13,2478,0.005246
-physics,2024,64,Excited State Perturbation Theory,95,2478,0.038337
-physics,2024,65,TR-Symmetry Breaking Meta-Optics,52,2478,0.020985
-physics,2024,66,Multimode Cavity QED,55,2478,0.022195
-physics,2024,67,Self-Fourier Beam Dynamics,20,2478,0.008071
-physics,2024,68,Gravitational Constant Fluctuations,11,2478,0.004439
-physics,2024,69,Rydberg Resonance Dynamics,27,2478,0.010896
-physics,2024,70,Quantum-Classical Boundary,35,2478,0.014124
-physics,2024,71,Antineutrino Source Design,31,2478,0.01251
-physics,2024,72,Crystal Ab Initio Design,44,2478,0.017756
-physics,2024,73,Reciprocity Systems,24,2478,0.009685
-physics,2025,0,Plasma Beam Interactions,52,3173,0.016388
-physics,2025,1,Uncertainty Propagation,42,3173,0.013237
-physics,2025,2,Quantum Corrections,38,3173,0.011976
-physics,2025,3,DNA Conformational Dynamics,37,3173,0.011661
-physics,2025,4,Optical Trapping Cooling,62,3173,0.01954
-physics,2025,5,Nonlinear Harmonic Generation,58,3173,0.018279
-physics,2025,6,Fermi Gas Stability,20,3173,0.006303
-physics,2025,7,Molecular Absorption Precision,31,3173,0.00977
-physics,2025,8,Lanczos Eigenvalue Methods,51,3173,0.016073
-physics,2025,9,Algebraic Products and Angular Momentum Separation,29,3173,0.00914
-physics,2025,10,Deforming Reference Frame Dynamics,26,3173,0.008194
-physics,2025,11,Rotating Flow Dynamics,80,3173,0.025213
-physics,2025,12,Optical Logic Gates,76,3173,0.023952
-physics,2025,13,Micromaser Dynamics,77,3173,0.024267
-physics,2025,14,Pixel Detector Calibration,116,3173,0.036558
-physics,2025,15,Pulse-Level Beam Feedback,33,3173,0.0104
-physics,2025,16,Mass-Energy Relationships,20,3173,0.006303
-physics,2025,17,Anomalous Scaling Turbulence,33,3173,0.0104
-physics,2025,18,High-Order Turbulence Moments,99,3173,0.031201
-physics,2025,19,Fractal Surface Plasmonics,44,3173,0.013867
-physics,2025,20,Polymer Entropic Mechanics,27,3173,0.008509
-physics,2025,21,Radial Current Discharge Dynamics,30,3173,0.009455
-physics,2025,22,Bimetallic Cluster Magnetism,64,3173,0.02017
-physics,2025,23,Polymer Translocation Dynamics,9,3173,0.002836
-physics,2025,24,Photon Statistics Cavities,69,3173,0.021746
-physics,2025,25,Three-Body Virtual States,24,3173,0.007564
-physics,2025,26,Relativistic Common Sense,7,3173,0.002206
-physics,2025,27,Macroscopic Quantum Collapse,26,3173,0.008194
-physics,2025,28,Coherent Image Reconstruction,37,3173,0.011661
-physics,2025,29,Nonlinear Flagellar Dynamics,30,3173,0.009455
-physics,2025,30,Chaotic Dynamo Reversals,37,3173,0.011661
-physics,2025,31,Tokamak Flow Barriers,72,3173,0.022691
-physics,2025,32,Forbidden Transition Spectroscopy,17,3173,0.005358
-physics,2025,33,Axion Solar Search,20,3173,0.006303
-physics,2025,34,Seismic Network Analysis,26,3173,0.008194
-physics,2025,35,Lattice Boltzmann Methods,78,3173,0.024582
-physics,2025,36,High-Energy Trigger Processing,48,3173,0.015128
-physics,2025,37,Network Immunization Dynamics,91,3173,0.028679
-physics,2025,38,Noise-Induced Phase Transitions,20,3173,0.006303
-physics,2025,39,Stochastic Geometry Dynamics,34,3173,0.010715
-physics,2025,40,Metallic Slit Resonance,10,3173,0.003152
-physics,2025,41,Hyperbolic Dispersion Media,21,3173,0.006618
-physics,2025,42,Laser-Plasma Acceleration,65,3173,0.020485
-physics,2025,43,Rotating Surface Solitons,42,3173,0.013237
-physics,2025,44,Urban Spatial Scaling,30,3173,0.009455
-physics,2025,45,Photoelectron Imaging Dynamics,15,3173,0.004727
-physics,2025,46,Climate Information Dynamics,230,3173,0.072487
-physics,2025,47,Kinetic Potential Embedding,57,3173,0.017964
-physics,2025,48,Obliquity Climate Dynamics,26,3173,0.008194
-physics,2025,49,Singularity Reinterpretation,18,3173,0.005673
-physics,2025,50,Photonic Quantum Gates,92,3173,0.028995
-physics,2025,51,Laser-Assisted Tunneling Dynamics,13,3173,0.004097
-physics,2025,52,Blog Network Dynamics,17,3173,0.005358
-physics,2025,53,Self-Organized Cooperation,31,3173,0.00977
-physics,2025,54,Ensemble Learning Dynamics,38,3173,0.011976
-physics,2025,55,Film Retraction Dynamics,21,3173,0.006618
-physics,2025,56,Optomechanical Tuning Lasers,22,3173,0.006934
-physics,2025,57,Buffer-Gas Cooling,10,3173,0.003152
-physics,2025,58,Opinion Consensus Dynamics,52,3173,0.016388
-physics,2025,59,Ion Pairing Dynamics,52,3173,0.016388
-physics,2025,60,Metamaterial Resonance Bistability,22,3173,0.006934
-physics,2025,61,Existence Interpretation,19,3173,0.005988
-physics,2025,62,Soliton Pair Dynamics,35,3173,0.011031
-physics,2025,63,Ultra-Short Pulse Coherence,20,3173,0.006303
-physics,2025,64,Excited State Perturbation Theory,97,3173,0.03057
-physics,2025,65,TR-Symmetry Breaking Meta-Optics,52,3173,0.016388
-physics,2025,66,Multimode Cavity QED,32,3173,0.010085
-physics,2025,67,Self-Fourier Beam Dynamics,15,3173,0.004727
-physics,2025,68,Gravitational Constant Fluctuations,9,3173,0.002836
-physics,2025,69,Rydberg Resonance Dynamics,20,3173,0.006303
-physics,2025,70,Quantum-Classical Boundary,44,3173,0.013867
-physics,2025,71,Antineutrino Source Design,51,3173,0.016073
-physics,2025,72,Crystal Ab Initio Design,64,3173,0.02017
-physics,2025,73,Reciprocity Systems,41,3173,0.012922
+physics,2000,0,Plasma Beam Interactions,11,88,0.125
+physics,2000,1,Quantum Corrections,11,88,0.125
+physics,2000,2,DNA Conformational Dynamics,4,88,0.045455
+physics,2000,3,Optical Trapping Cooling,5,88,0.056818
+physics,2000,4,Nonlinear Harmonic Generation,0,88,0.0
+physics,2000,5,Fermi Gas Stability,2,88,0.022727
+physics,2000,6,Deforming Reference Frame Dynamics,1,88,0.011364
+physics,2000,7,Rotating Flow Dynamics,2,88,0.022727
+physics,2000,8,Optical Logic Gates,0,88,0.0
+physics,2000,9,Micromaser Dynamics,2,88,0.022727
+physics,2000,10,Pixel Detector Calibration,2,88,0.022727
+physics,2000,11,Pulse-Level Beam Feedback,17,88,0.193182
+physics,2000,12,Anomalous Scaling Turbulence,3,88,0.034091
+physics,2000,13,High-Order Turbulence Moments,2,88,0.022727
+physics,2000,14,Fractal Surface Plasmonics,0,88,0.0
+physics,2000,15,Bimetallic Cluster Magnetism,2,88,0.022727
+physics,2000,16,Photon Statistics Cavities,0,88,0.0
+physics,2000,17,Chaotic Dynamo Reversals,2,88,0.022727
+physics,2000,18,Tokamak Flow Barriers,1,88,0.011364
+physics,2000,19,Lattice Boltzmann Methods,0,88,0.0
+physics,2000,20,High-Energy Trigger Processing,0,88,0.0
+physics,2000,21,Network Immunization Dynamics,0,88,0.0
+physics,2000,22,Hyperbolic Dispersion Media,0,88,0.0
+physics,2000,23,Laser-Plasma Acceleration,5,88,0.056818
+physics,2000,24,Rotating Surface Solitons,0,88,0.0
+physics,2000,25,Climate Information Dynamics,0,88,0.0
+physics,2000,26,Kinetic Potential Embedding,0,88,0.0
+physics,2000,27,Photonic Quantum Gates,0,88,0.0
+physics,2000,28,Blog Network Dynamics,0,88,0.0
+physics,2000,29,Self-Organized Cooperation,1,88,0.011364
+physics,2000,30,Opinion Consensus Dynamics,0,88,0.0
+physics,2000,31,Ion Pairing Dynamics,2,88,0.022727
+physics,2000,32,Metamaterial Resonance Bistability,0,88,0.0
+physics,2000,33,Soliton Pair Dynamics,4,88,0.045455
+physics,2000,34,Excited State Perturbation Theory,2,88,0.022727
+physics,2000,35,TR-Symmetry Breaking Meta-Optics,0,88,0.0
+physics,2000,36,Multimode Cavity QED,0,88,0.0
+physics,2000,37,Rydberg Resonance Dynamics,1,88,0.011364
+physics,2000,38,Quantum-Classical Boundary,6,88,0.068182
+physics,2000,39,Antineutrino Source Design,0,88,0.0
+physics,2000,40,Reciprocity Systems,0,88,0.0
+physics,2001,0,Plasma Beam Interactions,2,80,0.025
+physics,2001,1,Quantum Corrections,9,80,0.1125
+physics,2001,2,DNA Conformational Dynamics,6,80,0.075
+physics,2001,3,Optical Trapping Cooling,5,80,0.0625
+physics,2001,4,Nonlinear Harmonic Generation,0,80,0.0
+physics,2001,5,Fermi Gas Stability,4,80,0.05
+physics,2001,6,Deforming Reference Frame Dynamics,1,80,0.0125
+physics,2001,7,Rotating Flow Dynamics,2,80,0.025
+physics,2001,8,Optical Logic Gates,1,80,0.0125
+physics,2001,9,Micromaser Dynamics,2,80,0.025
+physics,2001,10,Pixel Detector Calibration,1,80,0.0125
+physics,2001,11,Pulse-Level Beam Feedback,3,80,0.0375
+physics,2001,12,Anomalous Scaling Turbulence,11,80,0.1375
+physics,2001,13,High-Order Turbulence Moments,2,80,0.025
+physics,2001,14,Fractal Surface Plasmonics,1,80,0.0125
+physics,2001,15,Bimetallic Cluster Magnetism,3,80,0.0375
+physics,2001,16,Photon Statistics Cavities,0,80,0.0
+physics,2001,17,Chaotic Dynamo Reversals,4,80,0.05
+physics,2001,18,Tokamak Flow Barriers,0,80,0.0
+physics,2001,19,Lattice Boltzmann Methods,2,80,0.025
+physics,2001,20,High-Energy Trigger Processing,0,80,0.0
+physics,2001,21,Network Immunization Dynamics,0,80,0.0
+physics,2001,22,Hyperbolic Dispersion Media,0,80,0.0
+physics,2001,23,Laser-Plasma Acceleration,3,80,0.0375
+physics,2001,24,Rotating Surface Solitons,0,80,0.0
+physics,2001,25,Climate Information Dynamics,0,80,0.0
+physics,2001,26,Kinetic Potential Embedding,0,80,0.0
+physics,2001,27,Photonic Quantum Gates,1,80,0.0125
+physics,2001,28,Blog Network Dynamics,0,80,0.0
+physics,2001,29,Self-Organized Cooperation,1,80,0.0125
+physics,2001,30,Opinion Consensus Dynamics,0,80,0.0
+physics,2001,31,Ion Pairing Dynamics,0,80,0.0
+physics,2001,32,Metamaterial Resonance Bistability,0,80,0.0
+physics,2001,33,Soliton Pair Dynamics,3,80,0.0375
+physics,2001,34,Excited State Perturbation Theory,3,80,0.0375
+physics,2001,35,TR-Symmetry Breaking Meta-Optics,0,80,0.0
+physics,2001,36,Multimode Cavity QED,1,80,0.0125
+physics,2001,37,Rydberg Resonance Dynamics,3,80,0.0375
+physics,2001,38,Quantum-Classical Boundary,5,80,0.0625
+physics,2001,39,Antineutrino Source Design,1,80,0.0125
+physics,2001,40,Reciprocity Systems,0,80,0.0
+physics,2002,0,Plasma Beam Interactions,2,93,0.021505
+physics,2002,1,Quantum Corrections,8,93,0.086022
+physics,2002,2,DNA Conformational Dynamics,2,93,0.021505
+physics,2002,3,Optical Trapping Cooling,8,93,0.086022
+physics,2002,4,Nonlinear Harmonic Generation,0,93,0.0
+physics,2002,5,Fermi Gas Stability,4,93,0.043011
+physics,2002,6,Deforming Reference Frame Dynamics,4,93,0.043011
+physics,2002,7,Rotating Flow Dynamics,0,93,0.0
+physics,2002,8,Optical Logic Gates,0,93,0.0
+physics,2002,9,Micromaser Dynamics,3,93,0.032258
+physics,2002,10,Pixel Detector Calibration,1,93,0.010753
+physics,2002,11,Pulse-Level Beam Feedback,2,93,0.021505
+physics,2002,12,Anomalous Scaling Turbulence,3,93,0.032258
+physics,2002,13,High-Order Turbulence Moments,7,93,0.075269
+physics,2002,14,Fractal Surface Plasmonics,0,93,0.0
+physics,2002,15,Bimetallic Cluster Magnetism,3,93,0.032258
+physics,2002,16,Photon Statistics Cavities,0,93,0.0
+physics,2002,17,Chaotic Dynamo Reversals,6,93,0.064516
+physics,2002,18,Tokamak Flow Barriers,3,93,0.032258
+physics,2002,19,Lattice Boltzmann Methods,1,93,0.010753
+physics,2002,20,High-Energy Trigger Processing,0,93,0.0
+physics,2002,21,Network Immunization Dynamics,0,93,0.0
+physics,2002,22,Hyperbolic Dispersion Media,2,93,0.021505
+physics,2002,23,Laser-Plasma Acceleration,4,93,0.043011
+physics,2002,24,Rotating Surface Solitons,1,93,0.010753
+physics,2002,25,Climate Information Dynamics,1,93,0.010753
+physics,2002,26,Kinetic Potential Embedding,1,93,0.010753
+physics,2002,27,Photonic Quantum Gates,1,93,0.010753
+physics,2002,28,Blog Network Dynamics,0,93,0.0
+physics,2002,29,Self-Organized Cooperation,1,93,0.010753
+physics,2002,30,Opinion Consensus Dynamics,0,93,0.0
+physics,2002,31,Ion Pairing Dynamics,1,93,0.010753
+physics,2002,32,Metamaterial Resonance Bistability,0,93,0.0
+physics,2002,33,Soliton Pair Dynamics,4,93,0.043011
+physics,2002,34,Excited State Perturbation Theory,4,93,0.043011
+physics,2002,35,TR-Symmetry Breaking Meta-Optics,1,93,0.010753
+physics,2002,36,Multimode Cavity QED,7,93,0.075269
+physics,2002,37,Rydberg Resonance Dynamics,3,93,0.032258
+physics,2002,38,Quantum-Classical Boundary,1,93,0.010753
+physics,2002,39,Antineutrino Source Design,2,93,0.021505
+physics,2002,40,Reciprocity Systems,2,93,0.021505
+physics,2003,0,Plasma Beam Interactions,2,85,0.023529
+physics,2003,1,Quantum Corrections,10,85,0.117647
+physics,2003,2,DNA Conformational Dynamics,8,85,0.094118
+physics,2003,3,Optical Trapping Cooling,3,85,0.035294
+physics,2003,4,Nonlinear Harmonic Generation,0,85,0.0
+physics,2003,5,Fermi Gas Stability,2,85,0.023529
+physics,2003,6,Deforming Reference Frame Dynamics,1,85,0.011765
+physics,2003,7,Rotating Flow Dynamics,3,85,0.035294
+physics,2003,8,Optical Logic Gates,0,85,0.0
+physics,2003,9,Micromaser Dynamics,0,85,0.0
+physics,2003,10,Pixel Detector Calibration,8,85,0.094118
+physics,2003,11,Pulse-Level Beam Feedback,1,85,0.011765
+physics,2003,12,Anomalous Scaling Turbulence,2,85,0.023529
+physics,2003,13,High-Order Turbulence Moments,3,85,0.035294
+physics,2003,14,Fractal Surface Plasmonics,1,85,0.011765
+physics,2003,15,Bimetallic Cluster Magnetism,1,85,0.011765
+physics,2003,16,Photon Statistics Cavities,0,85,0.0
+physics,2003,17,Chaotic Dynamo Reversals,4,85,0.047059
+physics,2003,18,Tokamak Flow Barriers,3,85,0.035294
+physics,2003,19,Lattice Boltzmann Methods,0,85,0.0
+physics,2003,20,High-Energy Trigger Processing,2,85,0.023529
+physics,2003,21,Network Immunization Dynamics,2,85,0.023529
+physics,2003,22,Hyperbolic Dispersion Media,4,85,0.047059
+physics,2003,23,Laser-Plasma Acceleration,3,85,0.035294
+physics,2003,24,Rotating Surface Solitons,1,85,0.011765
+physics,2003,25,Climate Information Dynamics,0,85,0.0
+physics,2003,26,Kinetic Potential Embedding,1,85,0.011765
+physics,2003,27,Photonic Quantum Gates,0,85,0.0
+physics,2003,28,Blog Network Dynamics,0,85,0.0
+physics,2003,29,Self-Organized Cooperation,0,85,0.0
+physics,2003,30,Opinion Consensus Dynamics,0,85,0.0
+physics,2003,31,Ion Pairing Dynamics,1,85,0.011765
+physics,2003,32,Metamaterial Resonance Bistability,0,85,0.0
+physics,2003,33,Soliton Pair Dynamics,7,85,0.082353
+physics,2003,34,Excited State Perturbation Theory,5,85,0.058824
+physics,2003,35,TR-Symmetry Breaking Meta-Optics,0,85,0.0
+physics,2003,36,Multimode Cavity QED,2,85,0.023529
+physics,2003,37,Rydberg Resonance Dynamics,1,85,0.011765
+physics,2003,38,Quantum-Classical Boundary,3,85,0.035294
+physics,2003,39,Antineutrino Source Design,0,85,0.0
+physics,2003,40,Reciprocity Systems,1,85,0.011765
+physics,2004,0,Plasma Beam Interactions,3,135,0.022222
+physics,2004,1,Quantum Corrections,8,135,0.059259
+physics,2004,2,DNA Conformational Dynamics,1,135,0.007407
+physics,2004,3,Optical Trapping Cooling,7,135,0.051852
+physics,2004,4,Nonlinear Harmonic Generation,0,135,0.0
+physics,2004,5,Fermi Gas Stability,7,135,0.051852
+physics,2004,6,Deforming Reference Frame Dynamics,1,135,0.007407
+physics,2004,7,Rotating Flow Dynamics,1,135,0.007407
+physics,2004,8,Optical Logic Gates,0,135,0.0
+physics,2004,9,Micromaser Dynamics,2,135,0.014815
+physics,2004,10,Pixel Detector Calibration,10,135,0.074074
+physics,2004,11,Pulse-Level Beam Feedback,2,135,0.014815
+physics,2004,12,Anomalous Scaling Turbulence,5,135,0.037037
+physics,2004,13,High-Order Turbulence Moments,8,135,0.059259
+physics,2004,14,Fractal Surface Plasmonics,0,135,0.0
+physics,2004,15,Bimetallic Cluster Magnetism,3,135,0.022222
+physics,2004,16,Photon Statistics Cavities,0,135,0.0
+physics,2004,17,Chaotic Dynamo Reversals,6,135,0.044444
+physics,2004,18,Tokamak Flow Barriers,10,135,0.074074
+physics,2004,19,Lattice Boltzmann Methods,6,135,0.044444
+physics,2004,20,High-Energy Trigger Processing,0,135,0.0
+physics,2004,21,Network Immunization Dynamics,1,135,0.007407
+physics,2004,22,Hyperbolic Dispersion Media,2,135,0.014815
+physics,2004,23,Laser-Plasma Acceleration,11,135,0.081481
+physics,2004,24,Rotating Surface Solitons,1,135,0.007407
+physics,2004,25,Climate Information Dynamics,2,135,0.014815
+physics,2004,26,Kinetic Potential Embedding,1,135,0.007407
+physics,2004,27,Photonic Quantum Gates,1,135,0.007407
+physics,2004,28,Blog Network Dynamics,0,135,0.0
+physics,2004,29,Self-Organized Cooperation,3,135,0.022222
+physics,2004,30,Opinion Consensus Dynamics,0,135,0.0
+physics,2004,31,Ion Pairing Dynamics,0,135,0.0
+physics,2004,32,Metamaterial Resonance Bistability,1,135,0.007407
+physics,2004,33,Soliton Pair Dynamics,15,135,0.111111
+physics,2004,34,Excited State Perturbation Theory,6,135,0.044444
+physics,2004,35,TR-Symmetry Breaking Meta-Optics,0,135,0.0
+physics,2004,36,Multimode Cavity QED,6,135,0.044444
+physics,2004,37,Rydberg Resonance Dynamics,2,135,0.014815
+physics,2004,38,Quantum-Classical Boundary,2,135,0.014815
+physics,2004,39,Antineutrino Source Design,1,135,0.007407
+physics,2004,40,Reciprocity Systems,0,135,0.0
+physics,2005,0,Plasma Beam Interactions,4,154,0.025974
+physics,2005,1,Quantum Corrections,12,154,0.077922
+physics,2005,2,DNA Conformational Dynamics,4,154,0.025974
+physics,2005,3,Optical Trapping Cooling,5,154,0.032468
+physics,2005,4,Nonlinear Harmonic Generation,2,154,0.012987
+physics,2005,5,Fermi Gas Stability,11,154,0.071429
+physics,2005,6,Deforming Reference Frame Dynamics,2,154,0.012987
+physics,2005,7,Rotating Flow Dynamics,4,154,0.025974
+physics,2005,8,Optical Logic Gates,0,154,0.0
+physics,2005,9,Micromaser Dynamics,1,154,0.006494
+physics,2005,10,Pixel Detector Calibration,12,154,0.077922
+physics,2005,11,Pulse-Level Beam Feedback,0,154,0.0
+physics,2005,12,Anomalous Scaling Turbulence,2,154,0.012987
+physics,2005,13,High-Order Turbulence Moments,4,154,0.025974
+physics,2005,14,Fractal Surface Plasmonics,3,154,0.019481
+physics,2005,15,Bimetallic Cluster Magnetism,1,154,0.006494
+physics,2005,16,Photon Statistics Cavities,0,154,0.0
+physics,2005,17,Chaotic Dynamo Reversals,4,154,0.025974
+physics,2005,18,Tokamak Flow Barriers,2,154,0.012987
+physics,2005,19,Lattice Boltzmann Methods,7,154,0.045455
+physics,2005,20,High-Energy Trigger Processing,2,154,0.012987
+physics,2005,21,Network Immunization Dynamics,13,154,0.084416
+physics,2005,22,Hyperbolic Dispersion Media,6,154,0.038961
+physics,2005,23,Laser-Plasma Acceleration,3,154,0.019481
+physics,2005,24,Rotating Surface Solitons,3,154,0.019481
+physics,2005,25,Climate Information Dynamics,0,154,0.0
+physics,2005,26,Kinetic Potential Embedding,2,154,0.012987
+physics,2005,27,Photonic Quantum Gates,3,154,0.019481
+physics,2005,28,Blog Network Dynamics,1,154,0.006494
+physics,2005,29,Self-Organized Cooperation,0,154,0.0
+physics,2005,30,Opinion Consensus Dynamics,5,154,0.032468
+physics,2005,31,Ion Pairing Dynamics,4,154,0.025974
+physics,2005,32,Metamaterial Resonance Bistability,0,154,0.0
+physics,2005,33,Soliton Pair Dynamics,10,154,0.064935
+physics,2005,34,Excited State Perturbation Theory,8,154,0.051948
+physics,2005,35,TR-Symmetry Breaking Meta-Optics,0,154,0.0
+physics,2005,36,Multimode Cavity QED,2,154,0.012987
+physics,2005,37,Rydberg Resonance Dynamics,1,154,0.006494
+physics,2005,38,Quantum-Classical Boundary,6,154,0.038961
+physics,2005,39,Antineutrino Source Design,3,154,0.019481
+physics,2005,40,Reciprocity Systems,2,154,0.012987
+physics,2006,0,Plasma Beam Interactions,10,218,0.045872
+physics,2006,1,Quantum Corrections,9,218,0.041284
+physics,2006,2,DNA Conformational Dynamics,5,218,0.022936
+physics,2006,3,Optical Trapping Cooling,5,218,0.022936
+physics,2006,4,Nonlinear Harmonic Generation,2,218,0.009174
+physics,2006,5,Fermi Gas Stability,8,218,0.036697
+physics,2006,6,Deforming Reference Frame Dynamics,6,218,0.027523
+physics,2006,7,Rotating Flow Dynamics,5,218,0.022936
+physics,2006,8,Optical Logic Gates,0,218,0.0
+physics,2006,9,Micromaser Dynamics,3,218,0.013761
+physics,2006,10,Pixel Detector Calibration,19,218,0.087156
+physics,2006,11,Pulse-Level Beam Feedback,4,218,0.018349
+physics,2006,12,Anomalous Scaling Turbulence,2,218,0.009174
+physics,2006,13,High-Order Turbulence Moments,11,218,0.050459
+physics,2006,14,Fractal Surface Plasmonics,3,218,0.013761
+physics,2006,15,Bimetallic Cluster Magnetism,4,218,0.018349
+physics,2006,16,Photon Statistics Cavities,1,218,0.004587
+physics,2006,17,Chaotic Dynamo Reversals,8,218,0.036697
+physics,2006,18,Tokamak Flow Barriers,2,218,0.009174
+physics,2006,19,Lattice Boltzmann Methods,9,218,0.041284
+physics,2006,20,High-Energy Trigger Processing,1,218,0.004587
+physics,2006,21,Network Immunization Dynamics,12,218,0.055046
+physics,2006,22,Hyperbolic Dispersion Media,11,218,0.050459
+physics,2006,23,Laser-Plasma Acceleration,12,218,0.055046
+physics,2006,24,Rotating Surface Solitons,3,218,0.013761
+physics,2006,25,Climate Information Dynamics,2,218,0.009174
+physics,2006,26,Kinetic Potential Embedding,1,218,0.004587
+physics,2006,27,Photonic Quantum Gates,2,218,0.009174
+physics,2006,28,Blog Network Dynamics,4,218,0.018349
+physics,2006,29,Self-Organized Cooperation,1,218,0.004587
+physics,2006,30,Opinion Consensus Dynamics,4,218,0.018349
+physics,2006,31,Ion Pairing Dynamics,1,218,0.004587
+physics,2006,32,Metamaterial Resonance Bistability,0,218,0.0
+physics,2006,33,Soliton Pair Dynamics,14,218,0.06422
+physics,2006,34,Excited State Perturbation Theory,7,218,0.03211
+physics,2006,35,TR-Symmetry Breaking Meta-Optics,1,218,0.004587
+physics,2006,36,Multimode Cavity QED,5,218,0.022936
+physics,2006,37,Rydberg Resonance Dynamics,9,218,0.041284
+physics,2006,38,Quantum-Classical Boundary,4,218,0.018349
+physics,2006,39,Antineutrino Source Design,4,218,0.018349
+physics,2006,40,Reciprocity Systems,4,218,0.018349
+physics,2007,0,Plasma Beam Interactions,3,242,0.012397
+physics,2007,1,Quantum Corrections,7,242,0.028926
+physics,2007,2,DNA Conformational Dynamics,7,242,0.028926
+physics,2007,3,Optical Trapping Cooling,10,242,0.041322
+physics,2007,4,Nonlinear Harmonic Generation,1,242,0.004132
+physics,2007,5,Fermi Gas Stability,7,242,0.028926
+physics,2007,6,Deforming Reference Frame Dynamics,3,242,0.012397
+physics,2007,7,Rotating Flow Dynamics,9,242,0.03719
+physics,2007,8,Optical Logic Gates,1,242,0.004132
+physics,2007,9,Micromaser Dynamics,1,242,0.004132
+physics,2007,10,Pixel Detector Calibration,18,242,0.07438
+physics,2007,11,Pulse-Level Beam Feedback,3,242,0.012397
+physics,2007,12,Anomalous Scaling Turbulence,2,242,0.008264
+physics,2007,13,High-Order Turbulence Moments,16,242,0.066116
+physics,2007,14,Fractal Surface Plasmonics,3,242,0.012397
+physics,2007,15,Bimetallic Cluster Magnetism,5,242,0.020661
+physics,2007,16,Photon Statistics Cavities,4,242,0.016529
+physics,2007,17,Chaotic Dynamo Reversals,14,242,0.057851
+physics,2007,18,Tokamak Flow Barriers,7,242,0.028926
+physics,2007,19,Lattice Boltzmann Methods,2,242,0.008264
+physics,2007,20,High-Energy Trigger Processing,3,242,0.012397
+physics,2007,21,Network Immunization Dynamics,17,242,0.070248
+physics,2007,22,Hyperbolic Dispersion Media,7,242,0.028926
+physics,2007,23,Laser-Plasma Acceleration,5,242,0.020661
+physics,2007,24,Rotating Surface Solitons,3,242,0.012397
+physics,2007,25,Climate Information Dynamics,1,242,0.004132
+physics,2007,26,Kinetic Potential Embedding,2,242,0.008264
+physics,2007,27,Photonic Quantum Gates,1,242,0.004132
+physics,2007,28,Blog Network Dynamics,10,242,0.041322
+physics,2007,29,Self-Organized Cooperation,12,242,0.049587
+physics,2007,30,Opinion Consensus Dynamics,9,242,0.03719
+physics,2007,31,Ion Pairing Dynamics,2,242,0.008264
+physics,2007,32,Metamaterial Resonance Bistability,2,242,0.008264
+physics,2007,33,Soliton Pair Dynamics,16,242,0.066116
+physics,2007,34,Excited State Perturbation Theory,6,242,0.024793
+physics,2007,35,TR-Symmetry Breaking Meta-Optics,0,242,0.0
+physics,2007,36,Multimode Cavity QED,1,242,0.004132
+physics,2007,37,Rydberg Resonance Dynamics,7,242,0.028926
+physics,2007,38,Quantum-Classical Boundary,7,242,0.028926
+physics,2007,39,Antineutrino Source Design,4,242,0.016529
+physics,2007,40,Reciprocity Systems,4,242,0.016529
+physics,2008,0,Plasma Beam Interactions,8,242,0.033058
+physics,2008,1,Quantum Corrections,7,242,0.028926
+physics,2008,2,DNA Conformational Dynamics,5,242,0.020661
+physics,2008,3,Optical Trapping Cooling,4,242,0.016529
+physics,2008,4,Nonlinear Harmonic Generation,1,242,0.004132
+physics,2008,5,Fermi Gas Stability,8,242,0.033058
+physics,2008,6,Deforming Reference Frame Dynamics,6,242,0.024793
+physics,2008,7,Rotating Flow Dynamics,5,242,0.020661
+physics,2008,8,Optical Logic Gates,0,242,0.0
+physics,2008,9,Micromaser Dynamics,4,242,0.016529
+physics,2008,10,Pixel Detector Calibration,15,242,0.061983
+physics,2008,11,Pulse-Level Beam Feedback,2,242,0.008264
+physics,2008,12,Anomalous Scaling Turbulence,5,242,0.020661
+physics,2008,13,High-Order Turbulence Moments,12,242,0.049587
+physics,2008,14,Fractal Surface Plasmonics,5,242,0.020661
+physics,2008,15,Bimetallic Cluster Magnetism,4,242,0.016529
+physics,2008,16,Photon Statistics Cavities,2,242,0.008264
+physics,2008,17,Chaotic Dynamo Reversals,9,242,0.03719
+physics,2008,18,Tokamak Flow Barriers,3,242,0.012397
+physics,2008,19,Lattice Boltzmann Methods,5,242,0.020661
+physics,2008,20,High-Energy Trigger Processing,4,242,0.016529
+physics,2008,21,Network Immunization Dynamics,11,242,0.045455
+physics,2008,22,Hyperbolic Dispersion Media,10,242,0.041322
+physics,2008,23,Laser-Plasma Acceleration,15,242,0.061983
+physics,2008,24,Rotating Surface Solitons,3,242,0.012397
+physics,2008,25,Climate Information Dynamics,1,242,0.004132
+physics,2008,26,Kinetic Potential Embedding,2,242,0.008264
+physics,2008,27,Photonic Quantum Gates,3,242,0.012397
+physics,2008,28,Blog Network Dynamics,3,242,0.012397
+physics,2008,29,Self-Organized Cooperation,5,242,0.020661
+physics,2008,30,Opinion Consensus Dynamics,11,242,0.045455
+physics,2008,31,Ion Pairing Dynamics,3,242,0.012397
+physics,2008,32,Metamaterial Resonance Bistability,2,242,0.008264
+physics,2008,33,Soliton Pair Dynamics,13,242,0.053719
+physics,2008,34,Excited State Perturbation Theory,6,242,0.024793
+physics,2008,35,TR-Symmetry Breaking Meta-Optics,0,242,0.0
+physics,2008,36,Multimode Cavity QED,2,242,0.008264
+physics,2008,37,Rydberg Resonance Dynamics,16,242,0.066116
+physics,2008,38,Quantum-Classical Boundary,10,242,0.041322
+physics,2008,39,Antineutrino Source Design,8,242,0.033058
+physics,2008,40,Reciprocity Systems,4,242,0.016529
+physics,2009,0,Plasma Beam Interactions,10,341,0.029326
+physics,2009,1,Quantum Corrections,10,341,0.029326
+physics,2009,2,DNA Conformational Dynamics,7,341,0.020528
+physics,2009,3,Optical Trapping Cooling,12,341,0.035191
+physics,2009,4,Nonlinear Harmonic Generation,1,341,0.002933
+physics,2009,5,Fermi Gas Stability,10,341,0.029326
+physics,2009,6,Deforming Reference Frame Dynamics,4,341,0.01173
+physics,2009,7,Rotating Flow Dynamics,13,341,0.038123
+physics,2009,8,Optical Logic Gates,2,341,0.005865
+physics,2009,9,Micromaser Dynamics,5,341,0.014663
+physics,2009,10,Pixel Detector Calibration,22,341,0.064516
+physics,2009,11,Pulse-Level Beam Feedback,4,341,0.01173
+physics,2009,12,Anomalous Scaling Turbulence,8,341,0.02346
+physics,2009,13,High-Order Turbulence Moments,20,341,0.058651
+physics,2009,14,Fractal Surface Plasmonics,12,341,0.035191
+physics,2009,15,Bimetallic Cluster Magnetism,3,341,0.008798
+physics,2009,16,Photon Statistics Cavities,2,341,0.005865
+physics,2009,17,Chaotic Dynamo Reversals,17,341,0.049853
+physics,2009,18,Tokamak Flow Barriers,12,341,0.035191
+physics,2009,19,Lattice Boltzmann Methods,10,341,0.029326
+physics,2009,20,High-Energy Trigger Processing,6,341,0.017595
+physics,2009,21,Network Immunization Dynamics,23,341,0.067449
+physics,2009,22,Hyperbolic Dispersion Media,6,341,0.017595
+physics,2009,23,Laser-Plasma Acceleration,11,341,0.032258
+physics,2009,24,Rotating Surface Solitons,4,341,0.01173
+physics,2009,25,Climate Information Dynamics,2,341,0.005865
+physics,2009,26,Kinetic Potential Embedding,3,341,0.008798
+physics,2009,27,Photonic Quantum Gates,6,341,0.017595
+physics,2009,28,Blog Network Dynamics,8,341,0.02346
+physics,2009,29,Self-Organized Cooperation,10,341,0.029326
+physics,2009,30,Opinion Consensus Dynamics,8,341,0.02346
+physics,2009,31,Ion Pairing Dynamics,4,341,0.01173
+physics,2009,32,Metamaterial Resonance Bistability,2,341,0.005865
+physics,2009,33,Soliton Pair Dynamics,14,341,0.041056
+physics,2009,34,Excited State Perturbation Theory,10,341,0.029326
+physics,2009,35,TR-Symmetry Breaking Meta-Optics,1,341,0.002933
+physics,2009,36,Multimode Cavity QED,1,341,0.002933
+physics,2009,37,Rydberg Resonance Dynamics,10,341,0.029326
+physics,2009,38,Quantum-Classical Boundary,10,341,0.029326
+physics,2009,39,Antineutrino Source Design,6,341,0.017595
+physics,2009,40,Reciprocity Systems,12,341,0.035191
+physics,2010,0,Plasma Beam Interactions,10,419,0.023866
+physics,2010,1,Quantum Corrections,11,419,0.026253
+physics,2010,2,DNA Conformational Dynamics,9,419,0.02148
+physics,2010,3,Optical Trapping Cooling,7,419,0.016706
+physics,2010,4,Nonlinear Harmonic Generation,2,419,0.004773
+physics,2010,5,Fermi Gas Stability,11,419,0.026253
+physics,2010,6,Deforming Reference Frame Dynamics,12,419,0.02864
+physics,2010,7,Rotating Flow Dynamics,14,419,0.033413
+physics,2010,8,Optical Logic Gates,1,419,0.002387
+physics,2010,9,Micromaser Dynamics,4,419,0.009547
+physics,2010,10,Pixel Detector Calibration,44,419,0.105012
+physics,2010,11,Pulse-Level Beam Feedback,6,419,0.01432
+physics,2010,12,Anomalous Scaling Turbulence,3,419,0.00716
+physics,2010,13,High-Order Turbulence Moments,20,419,0.047733
+physics,2010,14,Fractal Surface Plasmonics,11,419,0.026253
+physics,2010,15,Bimetallic Cluster Magnetism,3,419,0.00716
+physics,2010,16,Photon Statistics Cavities,5,419,0.011933
+physics,2010,17,Chaotic Dynamo Reversals,18,419,0.042959
+physics,2010,18,Tokamak Flow Barriers,7,419,0.016706
+physics,2010,19,Lattice Boltzmann Methods,15,419,0.0358
+physics,2010,20,High-Energy Trigger Processing,8,419,0.019093
+physics,2010,21,Network Immunization Dynamics,29,419,0.069212
+physics,2010,22,Hyperbolic Dispersion Media,15,419,0.0358
+physics,2010,23,Laser-Plasma Acceleration,16,419,0.038186
+physics,2010,24,Rotating Surface Solitons,6,419,0.01432
+physics,2010,25,Climate Information Dynamics,2,419,0.004773
+physics,2010,26,Kinetic Potential Embedding,2,419,0.004773
+physics,2010,27,Photonic Quantum Gates,8,419,0.019093
+physics,2010,28,Blog Network Dynamics,8,419,0.019093
+physics,2010,29,Self-Organized Cooperation,15,419,0.0358
+physics,2010,30,Opinion Consensus Dynamics,13,419,0.031026
+physics,2010,31,Ion Pairing Dynamics,1,419,0.002387
+physics,2010,32,Metamaterial Resonance Bistability,9,419,0.02148
+physics,2010,33,Soliton Pair Dynamics,13,419,0.031026
+physics,2010,34,Excited State Perturbation Theory,15,419,0.0358
+physics,2010,35,TR-Symmetry Breaking Meta-Optics,6,419,0.01432
+physics,2010,36,Multimode Cavity QED,6,419,0.01432
+physics,2010,37,Rydberg Resonance Dynamics,8,419,0.019093
+physics,2010,38,Quantum-Classical Boundary,8,419,0.019093
+physics,2010,39,Antineutrino Source Design,5,419,0.011933
+physics,2010,40,Reciprocity Systems,13,419,0.031026
+physics,2011,0,Plasma Beam Interactions,20,570,0.035088
+physics,2011,1,Quantum Corrections,10,570,0.017544
+physics,2011,2,DNA Conformational Dynamics,21,570,0.036842
+physics,2011,3,Optical Trapping Cooling,19,570,0.033333
+physics,2011,4,Nonlinear Harmonic Generation,3,570,0.005263
+physics,2011,5,Fermi Gas Stability,16,570,0.02807
+physics,2011,6,Deforming Reference Frame Dynamics,14,570,0.024561
+physics,2011,7,Rotating Flow Dynamics,13,570,0.022807
+physics,2011,8,Optical Logic Gates,8,570,0.014035
+physics,2011,9,Micromaser Dynamics,14,570,0.024561
+physics,2011,10,Pixel Detector Calibration,25,570,0.04386
+physics,2011,11,Pulse-Level Beam Feedback,5,570,0.008772
+physics,2011,12,Anomalous Scaling Turbulence,15,570,0.026316
+physics,2011,13,High-Order Turbulence Moments,27,570,0.047368
+physics,2011,14,Fractal Surface Plasmonics,7,570,0.012281
+physics,2011,15,Bimetallic Cluster Magnetism,4,570,0.007018
+physics,2011,16,Photon Statistics Cavities,10,570,0.017544
+physics,2011,17,Chaotic Dynamo Reversals,23,570,0.040351
+physics,2011,18,Tokamak Flow Barriers,13,570,0.022807
+physics,2011,19,Lattice Boltzmann Methods,7,570,0.012281
+physics,2011,20,High-Energy Trigger Processing,6,570,0.010526
+physics,2011,21,Network Immunization Dynamics,52,570,0.091228
+physics,2011,22,Hyperbolic Dispersion Media,8,570,0.014035
+physics,2011,23,Laser-Plasma Acceleration,26,570,0.045614
+physics,2011,24,Rotating Surface Solitons,9,570,0.015789
+physics,2011,25,Climate Information Dynamics,4,570,0.007018
+physics,2011,26,Kinetic Potential Embedding,6,570,0.010526
+physics,2011,27,Photonic Quantum Gates,13,570,0.022807
+physics,2011,28,Blog Network Dynamics,17,570,0.029825
+physics,2011,29,Self-Organized Cooperation,7,570,0.012281
+physics,2011,30,Opinion Consensus Dynamics,10,570,0.017544
+physics,2011,31,Ion Pairing Dynamics,7,570,0.012281
+physics,2011,32,Metamaterial Resonance Bistability,11,570,0.019298
+physics,2011,33,Soliton Pair Dynamics,28,570,0.049123
+physics,2011,34,Excited State Perturbation Theory,12,570,0.021053
+physics,2011,35,TR-Symmetry Breaking Meta-Optics,6,570,0.010526
+physics,2011,36,Multimode Cavity QED,15,570,0.026316
+physics,2011,37,Rydberg Resonance Dynamics,19,570,0.033333
+physics,2011,38,Quantum-Classical Boundary,15,570,0.026316
+physics,2011,39,Antineutrino Source Design,16,570,0.02807
+physics,2011,40,Reciprocity Systems,9,570,0.015789
+physics,2012,0,Plasma Beam Interactions,25,634,0.039432
+physics,2012,1,Quantum Corrections,10,634,0.015773
+physics,2012,2,DNA Conformational Dynamics,16,634,0.025237
+physics,2012,3,Optical Trapping Cooling,18,634,0.028391
+physics,2012,4,Nonlinear Harmonic Generation,5,634,0.007886
+physics,2012,5,Fermi Gas Stability,14,634,0.022082
+physics,2012,6,Deforming Reference Frame Dynamics,8,634,0.012618
+physics,2012,7,Rotating Flow Dynamics,11,634,0.01735
+physics,2012,8,Optical Logic Gates,5,634,0.007886
+physics,2012,9,Micromaser Dynamics,6,634,0.009464
+physics,2012,10,Pixel Detector Calibration,36,634,0.056782
+physics,2012,11,Pulse-Level Beam Feedback,12,634,0.018927
+physics,2012,12,Anomalous Scaling Turbulence,13,634,0.020505
+physics,2012,13,High-Order Turbulence Moments,20,634,0.031546
+physics,2012,14,Fractal Surface Plasmonics,16,634,0.025237
+physics,2012,15,Bimetallic Cluster Magnetism,7,634,0.011041
+physics,2012,16,Photon Statistics Cavities,13,634,0.020505
+physics,2012,17,Chaotic Dynamo Reversals,22,634,0.0347
+physics,2012,18,Tokamak Flow Barriers,13,634,0.020505
+physics,2012,19,Lattice Boltzmann Methods,15,634,0.023659
+physics,2012,20,High-Energy Trigger Processing,4,634,0.006309
+physics,2012,21,Network Immunization Dynamics,54,634,0.085174
+physics,2012,22,Hyperbolic Dispersion Media,10,634,0.015773
+physics,2012,23,Laser-Plasma Acceleration,17,634,0.026814
+physics,2012,24,Rotating Surface Solitons,7,634,0.011041
+physics,2012,25,Climate Information Dynamics,2,634,0.003155
+physics,2012,26,Kinetic Potential Embedding,3,634,0.004732
+physics,2012,27,Photonic Quantum Gates,29,634,0.045741
+physics,2012,28,Blog Network Dynamics,33,634,0.05205
+physics,2012,29,Self-Organized Cooperation,15,634,0.023659
+physics,2012,30,Opinion Consensus Dynamics,13,634,0.020505
+physics,2012,31,Ion Pairing Dynamics,12,634,0.018927
+physics,2012,32,Metamaterial Resonance Bistability,13,634,0.020505
+physics,2012,33,Soliton Pair Dynamics,18,634,0.028391
+physics,2012,34,Excited State Perturbation Theory,24,634,0.037855
+physics,2012,35,TR-Symmetry Breaking Meta-Optics,11,634,0.01735
+physics,2012,36,Multimode Cavity QED,13,634,0.020505
+physics,2012,37,Rydberg Resonance Dynamics,16,634,0.025237
+physics,2012,38,Quantum-Classical Boundary,18,634,0.028391
+physics,2012,39,Antineutrino Source Design,22,634,0.0347
+physics,2012,40,Reciprocity Systems,15,634,0.023659
+physics,2013,0,Plasma Beam Interactions,22,758,0.029024
+physics,2013,1,Quantum Corrections,14,758,0.01847
+physics,2013,2,DNA Conformational Dynamics,15,758,0.019789
+physics,2013,3,Optical Trapping Cooling,25,758,0.032982
+physics,2013,4,Nonlinear Harmonic Generation,4,758,0.005277
+physics,2013,5,Fermi Gas Stability,14,758,0.01847
+physics,2013,6,Deforming Reference Frame Dynamics,15,758,0.019789
+physics,2013,7,Rotating Flow Dynamics,15,758,0.019789
+physics,2013,8,Optical Logic Gates,10,758,0.013193
+physics,2013,9,Micromaser Dynamics,20,758,0.026385
+physics,2013,10,Pixel Detector Calibration,49,758,0.064644
+physics,2013,11,Pulse-Level Beam Feedback,14,758,0.01847
+physics,2013,12,Anomalous Scaling Turbulence,13,758,0.01715
+physics,2013,13,High-Order Turbulence Moments,23,758,0.030343
+physics,2013,14,Fractal Surface Plasmonics,21,758,0.027704
+physics,2013,15,Bimetallic Cluster Magnetism,6,758,0.007916
+physics,2013,16,Photon Statistics Cavities,17,758,0.022427
+physics,2013,17,Chaotic Dynamo Reversals,12,758,0.015831
+physics,2013,18,Tokamak Flow Barriers,23,758,0.030343
+physics,2013,19,Lattice Boltzmann Methods,15,758,0.019789
+physics,2013,20,High-Energy Trigger Processing,7,758,0.009235
+physics,2013,21,Network Immunization Dynamics,72,758,0.094987
+physics,2013,22,Hyperbolic Dispersion Media,12,758,0.015831
+physics,2013,23,Laser-Plasma Acceleration,18,758,0.023747
+physics,2013,24,Rotating Surface Solitons,9,758,0.011873
+physics,2013,25,Climate Information Dynamics,5,758,0.006596
+physics,2013,26,Kinetic Potential Embedding,8,758,0.010554
+physics,2013,27,Photonic Quantum Gates,22,758,0.029024
+physics,2013,28,Blog Network Dynamics,33,758,0.043536
+physics,2013,29,Self-Organized Cooperation,17,758,0.022427
+physics,2013,30,Opinion Consensus Dynamics,17,758,0.022427
+physics,2013,31,Ion Pairing Dynamics,7,758,0.009235
+physics,2013,32,Metamaterial Resonance Bistability,14,758,0.01847
+physics,2013,33,Soliton Pair Dynamics,28,758,0.036939
+physics,2013,34,Excited State Perturbation Theory,33,758,0.043536
+physics,2013,35,TR-Symmetry Breaking Meta-Optics,9,758,0.011873
+physics,2013,36,Multimode Cavity QED,14,758,0.01847
+physics,2013,37,Rydberg Resonance Dynamics,18,758,0.023747
+physics,2013,38,Quantum-Classical Boundary,17,758,0.022427
+physics,2013,39,Antineutrino Source Design,36,758,0.047493
+physics,2013,40,Reciprocity Systems,15,758,0.019789
+physics,2014,0,Plasma Beam Interactions,34,919,0.036997
+physics,2014,1,Quantum Corrections,19,919,0.020675
+physics,2014,2,DNA Conformational Dynamics,20,919,0.021763
+physics,2014,3,Optical Trapping Cooling,34,919,0.036997
+physics,2014,4,Nonlinear Harmonic Generation,9,919,0.009793
+physics,2014,5,Fermi Gas Stability,14,919,0.015234
+physics,2014,6,Deforming Reference Frame Dynamics,15,919,0.016322
+physics,2014,7,Rotating Flow Dynamics,24,919,0.026115
+physics,2014,8,Optical Logic Gates,7,919,0.007617
+physics,2014,9,Micromaser Dynamics,14,919,0.015234
+physics,2014,10,Pixel Detector Calibration,43,919,0.04679
+physics,2014,11,Pulse-Level Beam Feedback,20,919,0.021763
+physics,2014,12,Anomalous Scaling Turbulence,22,919,0.023939
+physics,2014,13,High-Order Turbulence Moments,34,919,0.036997
+physics,2014,14,Fractal Surface Plasmonics,17,919,0.018498
+physics,2014,15,Bimetallic Cluster Magnetism,3,919,0.003264
+physics,2014,16,Photon Statistics Cavities,19,919,0.020675
+physics,2014,17,Chaotic Dynamo Reversals,27,919,0.02938
+physics,2014,18,Tokamak Flow Barriers,24,919,0.026115
+physics,2014,19,Lattice Boltzmann Methods,15,919,0.016322
+physics,2014,20,High-Energy Trigger Processing,9,919,0.009793
+physics,2014,21,Network Immunization Dynamics,67,919,0.072905
+physics,2014,22,Hyperbolic Dispersion Media,19,919,0.020675
+physics,2014,23,Laser-Plasma Acceleration,41,919,0.044614
+physics,2014,24,Rotating Surface Solitons,13,919,0.014146
+physics,2014,25,Climate Information Dynamics,2,919,0.002176
+physics,2014,26,Kinetic Potential Embedding,14,919,0.015234
+physics,2014,27,Photonic Quantum Gates,31,919,0.033732
+physics,2014,28,Blog Network Dynamics,34,919,0.036997
+physics,2014,29,Self-Organized Cooperation,13,919,0.014146
+physics,2014,30,Opinion Consensus Dynamics,24,919,0.026115
+physics,2014,31,Ion Pairing Dynamics,15,919,0.016322
+physics,2014,32,Metamaterial Resonance Bistability,15,919,0.016322
+physics,2014,33,Soliton Pair Dynamics,31,919,0.033732
+physics,2014,34,Excited State Perturbation Theory,35,919,0.038085
+physics,2014,35,TR-Symmetry Breaking Meta-Optics,14,919,0.015234
+physics,2014,36,Multimode Cavity QED,13,919,0.014146
+physics,2014,37,Rydberg Resonance Dynamics,19,919,0.020675
+physics,2014,38,Quantum-Classical Boundary,32,919,0.03482
+physics,2014,39,Antineutrino Source Design,42,919,0.045702
+physics,2014,40,Reciprocity Systems,22,919,0.023939
+physics,2015,0,Plasma Beam Interactions,39,938,0.041578
+physics,2015,1,Quantum Corrections,10,938,0.010661
+physics,2015,2,DNA Conformational Dynamics,21,938,0.022388
+physics,2015,3,Optical Trapping Cooling,21,938,0.022388
+physics,2015,4,Nonlinear Harmonic Generation,13,938,0.013859
+physics,2015,5,Fermi Gas Stability,17,938,0.018124
+physics,2015,6,Deforming Reference Frame Dynamics,16,938,0.017058
+physics,2015,7,Rotating Flow Dynamics,26,938,0.027719
+physics,2015,8,Optical Logic Gates,15,938,0.015991
+physics,2015,9,Micromaser Dynamics,13,938,0.013859
+physics,2015,10,Pixel Detector Calibration,44,938,0.046908
+physics,2015,11,Pulse-Level Beam Feedback,18,938,0.01919
+physics,2015,12,Anomalous Scaling Turbulence,12,938,0.012793
+physics,2015,13,High-Order Turbulence Moments,35,938,0.037313
+physics,2015,14,Fractal Surface Plasmonics,24,938,0.025586
+physics,2015,15,Bimetallic Cluster Magnetism,6,938,0.006397
+physics,2015,16,Photon Statistics Cavities,23,938,0.02452
+physics,2015,17,Chaotic Dynamo Reversals,18,938,0.01919
+physics,2015,18,Tokamak Flow Barriers,21,938,0.022388
+physics,2015,19,Lattice Boltzmann Methods,32,938,0.034115
+physics,2015,20,High-Energy Trigger Processing,11,938,0.011727
+physics,2015,21,Network Immunization Dynamics,63,938,0.067164
+physics,2015,22,Hyperbolic Dispersion Media,19,938,0.020256
+physics,2015,23,Laser-Plasma Acceleration,34,938,0.036247
+physics,2015,24,Rotating Surface Solitons,25,938,0.026652
+physics,2015,25,Climate Information Dynamics,6,938,0.006397
+physics,2015,26,Kinetic Potential Embedding,8,938,0.008529
+physics,2015,27,Photonic Quantum Gates,28,938,0.029851
+physics,2015,28,Blog Network Dynamics,31,938,0.033049
+physics,2015,29,Self-Organized Cooperation,16,938,0.017058
+physics,2015,30,Opinion Consensus Dynamics,14,938,0.014925
+physics,2015,31,Ion Pairing Dynamics,13,938,0.013859
+physics,2015,32,Metamaterial Resonance Bistability,20,938,0.021322
+physics,2015,33,Soliton Pair Dynamics,33,938,0.035181
+physics,2015,34,Excited State Perturbation Theory,37,938,0.039446
+physics,2015,35,TR-Symmetry Breaking Meta-Optics,11,938,0.011727
+physics,2015,36,Multimode Cavity QED,19,938,0.020256
+physics,2015,37,Rydberg Resonance Dynamics,25,938,0.026652
+physics,2015,38,Quantum-Classical Boundary,23,938,0.02452
+physics,2015,39,Antineutrino Source Design,65,938,0.069296
+physics,2015,40,Reciprocity Systems,13,938,0.013859
+physics,2016,0,Plasma Beam Interactions,29,1035,0.028019
+physics,2016,1,Quantum Corrections,10,1035,0.009662
+physics,2016,2,DNA Conformational Dynamics,23,1035,0.022222
+physics,2016,3,Optical Trapping Cooling,35,1035,0.033816
+physics,2016,4,Nonlinear Harmonic Generation,13,1035,0.01256
+physics,2016,5,Fermi Gas Stability,21,1035,0.02029
+physics,2016,6,Deforming Reference Frame Dynamics,22,1035,0.021256
+physics,2016,7,Rotating Flow Dynamics,30,1035,0.028986
+physics,2016,8,Optical Logic Gates,13,1035,0.01256
+physics,2016,9,Micromaser Dynamics,15,1035,0.014493
+physics,2016,10,Pixel Detector Calibration,70,1035,0.067633
+physics,2016,11,Pulse-Level Beam Feedback,14,1035,0.013527
+physics,2016,12,Anomalous Scaling Turbulence,13,1035,0.01256
+physics,2016,13,High-Order Turbulence Moments,31,1035,0.029952
+physics,2016,14,Fractal Surface Plasmonics,25,1035,0.024155
+physics,2016,15,Bimetallic Cluster Magnetism,8,1035,0.007729
+physics,2016,16,Photon Statistics Cavities,25,1035,0.024155
+physics,2016,17,Chaotic Dynamo Reversals,40,1035,0.038647
+physics,2016,18,Tokamak Flow Barriers,27,1035,0.026087
+physics,2016,19,Lattice Boltzmann Methods,19,1035,0.018357
+physics,2016,20,High-Energy Trigger Processing,6,1035,0.005797
+physics,2016,21,Network Immunization Dynamics,74,1035,0.071498
+physics,2016,22,Hyperbolic Dispersion Media,13,1035,0.01256
+physics,2016,23,Laser-Plasma Acceleration,26,1035,0.025121
+physics,2016,24,Rotating Surface Solitons,17,1035,0.016425
+physics,2016,25,Climate Information Dynamics,4,1035,0.003865
+physics,2016,26,Kinetic Potential Embedding,17,1035,0.016425
+physics,2016,27,Photonic Quantum Gates,32,1035,0.030918
+physics,2016,28,Blog Network Dynamics,31,1035,0.029952
+physics,2016,29,Self-Organized Cooperation,15,1035,0.014493
+physics,2016,30,Opinion Consensus Dynamics,22,1035,0.021256
+physics,2016,31,Ion Pairing Dynamics,19,1035,0.018357
+physics,2016,32,Metamaterial Resonance Bistability,17,1035,0.016425
+physics,2016,33,Soliton Pair Dynamics,27,1035,0.026087
+physics,2016,34,Excited State Perturbation Theory,51,1035,0.049275
+physics,2016,35,TR-Symmetry Breaking Meta-Optics,16,1035,0.015459
+physics,2016,36,Multimode Cavity QED,24,1035,0.023188
+physics,2016,37,Rydberg Resonance Dynamics,32,1035,0.030918
+physics,2016,38,Quantum-Classical Boundary,35,1035,0.033816
+physics,2016,39,Antineutrino Source Design,56,1035,0.054106
+physics,2016,40,Reciprocity Systems,18,1035,0.017391
+physics,2017,0,Plasma Beam Interactions,45,1126,0.039964
+physics,2017,1,Quantum Corrections,15,1126,0.013321
+physics,2017,2,DNA Conformational Dynamics,17,1126,0.015098
+physics,2017,3,Optical Trapping Cooling,31,1126,0.027531
+physics,2017,4,Nonlinear Harmonic Generation,26,1126,0.023091
+physics,2017,5,Fermi Gas Stability,13,1126,0.011545
+physics,2017,6,Deforming Reference Frame Dynamics,18,1126,0.015986
+physics,2017,7,Rotating Flow Dynamics,32,1126,0.028419
+physics,2017,8,Optical Logic Gates,20,1126,0.017762
+physics,2017,9,Micromaser Dynamics,12,1126,0.010657
+physics,2017,10,Pixel Detector Calibration,58,1126,0.05151
+physics,2017,11,Pulse-Level Beam Feedback,24,1126,0.021314
+physics,2017,12,Anomalous Scaling Turbulence,12,1126,0.010657
+physics,2017,13,High-Order Turbulence Moments,46,1126,0.040853
+physics,2017,14,Fractal Surface Plasmonics,30,1126,0.026643
+physics,2017,15,Bimetallic Cluster Magnetism,14,1126,0.012433
+physics,2017,16,Photon Statistics Cavities,27,1126,0.023979
+physics,2017,17,Chaotic Dynamo Reversals,31,1126,0.027531
+physics,2017,18,Tokamak Flow Barriers,36,1126,0.031972
+physics,2017,19,Lattice Boltzmann Methods,40,1126,0.035524
+physics,2017,20,High-Energy Trigger Processing,19,1126,0.016874
+physics,2017,21,Network Immunization Dynamics,76,1126,0.067496
+physics,2017,22,Hyperbolic Dispersion Media,25,1126,0.022202
+physics,2017,23,Laser-Plasma Acceleration,48,1126,0.042629
+physics,2017,24,Rotating Surface Solitons,27,1126,0.023979
+physics,2017,25,Climate Information Dynamics,11,1126,0.009769
+physics,2017,26,Kinetic Potential Embedding,10,1126,0.008881
+physics,2017,27,Photonic Quantum Gates,32,1126,0.028419
+physics,2017,28,Blog Network Dynamics,23,1126,0.020426
+physics,2017,29,Self-Organized Cooperation,17,1126,0.015098
+physics,2017,30,Opinion Consensus Dynamics,14,1126,0.012433
+physics,2017,31,Ion Pairing Dynamics,18,1126,0.015986
+physics,2017,32,Metamaterial Resonance Bistability,19,1126,0.016874
+physics,2017,33,Soliton Pair Dynamics,42,1126,0.0373
+physics,2017,34,Excited State Perturbation Theory,39,1126,0.034636
+physics,2017,35,TR-Symmetry Breaking Meta-Optics,22,1126,0.019538
+physics,2017,36,Multimode Cavity QED,20,1126,0.017762
+physics,2017,37,Rydberg Resonance Dynamics,18,1126,0.015986
+physics,2017,38,Quantum-Classical Boundary,32,1126,0.028419
+physics,2017,39,Antineutrino Source Design,56,1126,0.049734
+physics,2017,40,Reciprocity Systems,11,1126,0.009769
+physics,2018,0,Plasma Beam Interactions,62,1214,0.051071
+physics,2018,1,Quantum Corrections,24,1214,0.019769
+physics,2018,2,DNA Conformational Dynamics,24,1214,0.019769
+physics,2018,3,Optical Trapping Cooling,24,1214,0.019769
+physics,2018,4,Nonlinear Harmonic Generation,26,1214,0.021417
+physics,2018,5,Fermi Gas Stability,18,1214,0.014827
+physics,2018,6,Deforming Reference Frame Dynamics,18,1214,0.014827
+physics,2018,7,Rotating Flow Dynamics,34,1214,0.028007
+physics,2018,8,Optical Logic Gates,29,1214,0.023888
+physics,2018,9,Micromaser Dynamics,18,1214,0.014827
+physics,2018,10,Pixel Detector Calibration,69,1214,0.056837
+physics,2018,11,Pulse-Level Beam Feedback,21,1214,0.017298
+physics,2018,12,Anomalous Scaling Turbulence,14,1214,0.011532
+physics,2018,13,High-Order Turbulence Moments,37,1214,0.030478
+physics,2018,14,Fractal Surface Plasmonics,33,1214,0.027183
+physics,2018,15,Bimetallic Cluster Magnetism,14,1214,0.011532
+physics,2018,16,Photon Statistics Cavities,24,1214,0.019769
+physics,2018,17,Chaotic Dynamo Reversals,25,1214,0.020593
+physics,2018,18,Tokamak Flow Barriers,29,1214,0.023888
+physics,2018,19,Lattice Boltzmann Methods,50,1214,0.041186
+physics,2018,20,High-Energy Trigger Processing,14,1214,0.011532
+physics,2018,21,Network Immunization Dynamics,64,1214,0.052718
+physics,2018,22,Hyperbolic Dispersion Media,25,1214,0.020593
+physics,2018,23,Laser-Plasma Acceleration,50,1214,0.041186
+physics,2018,24,Rotating Surface Solitons,31,1214,0.025535
+physics,2018,25,Climate Information Dynamics,21,1214,0.017298
+physics,2018,26,Kinetic Potential Embedding,16,1214,0.01318
+physics,2018,27,Photonic Quantum Gates,46,1214,0.037891
+physics,2018,28,Blog Network Dynamics,17,1214,0.014003
+physics,2018,29,Self-Organized Cooperation,16,1214,0.01318
+physics,2018,30,Opinion Consensus Dynamics,18,1214,0.014827
+physics,2018,31,Ion Pairing Dynamics,22,1214,0.018122
+physics,2018,32,Metamaterial Resonance Bistability,24,1214,0.019769
+physics,2018,33,Soliton Pair Dynamics,33,1214,0.027183
+physics,2018,34,Excited State Perturbation Theory,46,1214,0.037891
+physics,2018,35,TR-Symmetry Breaking Meta-Optics,29,1214,0.023888
+physics,2018,36,Multimode Cavity QED,20,1214,0.016474
+physics,2018,37,Rydberg Resonance Dynamics,16,1214,0.01318
+physics,2018,38,Quantum-Classical Boundary,34,1214,0.028007
+physics,2018,39,Antineutrino Source Design,56,1214,0.046129
+physics,2018,40,Reciprocity Systems,23,1214,0.018946
+physics,2019,0,Plasma Beam Interactions,52,1228,0.042345
+physics,2019,1,Quantum Corrections,16,1228,0.013029
+physics,2019,2,DNA Conformational Dynamics,15,1228,0.012215
+physics,2019,3,Optical Trapping Cooling,36,1228,0.029316
+physics,2019,4,Nonlinear Harmonic Generation,31,1228,0.025244
+physics,2019,5,Fermi Gas Stability,14,1228,0.011401
+physics,2019,6,Deforming Reference Frame Dynamics,17,1228,0.013844
+physics,2019,7,Rotating Flow Dynamics,38,1228,0.030945
+physics,2019,8,Optical Logic Gates,15,1228,0.012215
+physics,2019,9,Micromaser Dynamics,25,1228,0.020358
+physics,2019,10,Pixel Detector Calibration,60,1228,0.04886
+physics,2019,11,Pulse-Level Beam Feedback,24,1228,0.019544
+physics,2019,12,Anomalous Scaling Turbulence,20,1228,0.016287
+physics,2019,13,High-Order Turbulence Moments,43,1228,0.035016
+physics,2019,14,Fractal Surface Plasmonics,32,1228,0.026059
+physics,2019,15,Bimetallic Cluster Magnetism,30,1228,0.02443
+physics,2019,16,Photon Statistics Cavities,28,1228,0.022801
+physics,2019,17,Chaotic Dynamo Reversals,35,1228,0.028502
+physics,2019,18,Tokamak Flow Barriers,16,1228,0.013029
+physics,2019,19,Lattice Boltzmann Methods,36,1228,0.029316
+physics,2019,20,High-Energy Trigger Processing,21,1228,0.017101
+physics,2019,21,Network Immunization Dynamics,65,1228,0.052932
+physics,2019,22,Hyperbolic Dispersion Media,16,1228,0.013029
+physics,2019,23,Laser-Plasma Acceleration,49,1228,0.039902
+physics,2019,24,Rotating Surface Solitons,31,1228,0.025244
+physics,2019,25,Climate Information Dynamics,28,1228,0.022801
+physics,2019,26,Kinetic Potential Embedding,19,1228,0.015472
+physics,2019,27,Photonic Quantum Gates,43,1228,0.035016
+physics,2019,28,Blog Network Dynamics,12,1228,0.009772
+physics,2019,29,Self-Organized Cooperation,27,1228,0.021987
+physics,2019,30,Opinion Consensus Dynamics,27,1228,0.021987
+physics,2019,31,Ion Pairing Dynamics,14,1228,0.011401
+physics,2019,32,Metamaterial Resonance Bistability,33,1228,0.026873
+physics,2019,33,Soliton Pair Dynamics,33,1228,0.026873
+physics,2019,34,Excited State Perturbation Theory,51,1228,0.041531
+physics,2019,35,TR-Symmetry Breaking Meta-Optics,34,1228,0.027687
+physics,2019,36,Multimode Cavity QED,26,1228,0.021173
+physics,2019,37,Rydberg Resonance Dynamics,19,1228,0.015472
+physics,2019,38,Quantum-Classical Boundary,31,1228,0.025244
+physics,2019,39,Antineutrino Source Design,53,1228,0.04316
+physics,2019,40,Reciprocity Systems,13,1228,0.010586
+physics,2020,0,Plasma Beam Interactions,48,1537,0.03123
+physics,2020,1,Quantum Corrections,16,1537,0.01041
+physics,2020,2,DNA Conformational Dynamics,18,1537,0.011711
+physics,2020,3,Optical Trapping Cooling,34,1537,0.022121
+physics,2020,4,Nonlinear Harmonic Generation,43,1537,0.027977
+physics,2020,5,Fermi Gas Stability,21,1537,0.013663
+physics,2020,6,Deforming Reference Frame Dynamics,31,1537,0.020169
+physics,2020,7,Rotating Flow Dynamics,54,1537,0.035133
+physics,2020,8,Optical Logic Gates,32,1537,0.02082
+physics,2020,9,Micromaser Dynamics,19,1537,0.012362
+physics,2020,10,Pixel Detector Calibration,88,1537,0.057254
+physics,2020,11,Pulse-Level Beam Feedback,27,1537,0.017567
+physics,2020,12,Anomalous Scaling Turbulence,22,1537,0.014314
+physics,2020,13,High-Order Turbulence Moments,43,1537,0.027977
+physics,2020,14,Fractal Surface Plasmonics,33,1537,0.02147
+physics,2020,15,Bimetallic Cluster Magnetism,33,1537,0.02147
+physics,2020,16,Photon Statistics Cavities,42,1537,0.027326
+physics,2020,17,Chaotic Dynamo Reversals,28,1537,0.018217
+physics,2020,18,Tokamak Flow Barriers,36,1537,0.023422
+physics,2020,19,Lattice Boltzmann Methods,36,1537,0.023422
+physics,2020,20,High-Energy Trigger Processing,26,1537,0.016916
+physics,2020,21,Network Immunization Dynamics,205,1537,0.133377
+physics,2020,22,Hyperbolic Dispersion Media,19,1537,0.012362
+physics,2020,23,Laser-Plasma Acceleration,41,1537,0.026675
+physics,2020,24,Rotating Surface Solitons,36,1537,0.023422
+physics,2020,25,Climate Information Dynamics,57,1537,0.037085
+physics,2020,26,Kinetic Potential Embedding,21,1537,0.013663
+physics,2020,27,Photonic Quantum Gates,37,1537,0.024073
+physics,2020,28,Blog Network Dynamics,14,1537,0.009109
+physics,2020,29,Self-Organized Cooperation,14,1537,0.009109
+physics,2020,30,Opinion Consensus Dynamics,27,1537,0.017567
+physics,2020,31,Ion Pairing Dynamics,30,1537,0.019519
+physics,2020,32,Metamaterial Resonance Bistability,30,1537,0.019519
+physics,2020,33,Soliton Pair Dynamics,23,1537,0.014964
+physics,2020,34,Excited State Perturbation Theory,69,1537,0.044893
+physics,2020,35,TR-Symmetry Breaking Meta-Optics,42,1537,0.027326
+physics,2020,36,Multimode Cavity QED,31,1537,0.020169
+physics,2020,37,Rydberg Resonance Dynamics,32,1537,0.02082
+physics,2020,38,Quantum-Classical Boundary,28,1537,0.018217
+physics,2020,39,Antineutrino Source Design,35,1537,0.022772
+physics,2020,40,Reciprocity Systems,16,1537,0.01041
+physics,2021,0,Plasma Beam Interactions,46,1504,0.030585
+physics,2021,1,Quantum Corrections,19,1504,0.012633
+physics,2021,2,DNA Conformational Dynamics,21,1504,0.013963
+physics,2021,3,Optical Trapping Cooling,55,1504,0.036569
+physics,2021,4,Nonlinear Harmonic Generation,37,1504,0.024601
+physics,2021,5,Fermi Gas Stability,28,1504,0.018617
+physics,2021,6,Deforming Reference Frame Dynamics,17,1504,0.011303
+physics,2021,7,Rotating Flow Dynamics,51,1504,0.03391
+physics,2021,8,Optical Logic Gates,43,1504,0.02859
+physics,2021,9,Micromaser Dynamics,31,1504,0.020612
+physics,2021,10,Pixel Detector Calibration,74,1504,0.049202
+physics,2021,11,Pulse-Level Beam Feedback,23,1504,0.015293
+physics,2021,12,Anomalous Scaling Turbulence,22,1504,0.014628
+physics,2021,13,High-Order Turbulence Moments,53,1504,0.035239
+physics,2021,14,Fractal Surface Plasmonics,34,1504,0.022606
+physics,2021,15,Bimetallic Cluster Magnetism,28,1504,0.018617
+physics,2021,16,Photon Statistics Cavities,42,1504,0.027926
+physics,2021,17,Chaotic Dynamo Reversals,20,1504,0.013298
+physics,2021,18,Tokamak Flow Barriers,34,1504,0.022606
+physics,2021,19,Lattice Boltzmann Methods,43,1504,0.02859
+physics,2021,20,High-Energy Trigger Processing,28,1504,0.018617
+physics,2021,21,Network Immunization Dynamics,135,1504,0.089761
+physics,2021,22,Hyperbolic Dispersion Media,20,1504,0.013298
+physics,2021,23,Laser-Plasma Acceleration,43,1504,0.02859
+physics,2021,24,Rotating Surface Solitons,32,1504,0.021277
+physics,2021,25,Climate Information Dynamics,63,1504,0.041888
+physics,2021,26,Kinetic Potential Embedding,18,1504,0.011968
+physics,2021,27,Photonic Quantum Gates,57,1504,0.037899
+physics,2021,28,Blog Network Dynamics,12,1504,0.007979
+physics,2021,29,Self-Organized Cooperation,27,1504,0.017952
+physics,2021,30,Opinion Consensus Dynamics,18,1504,0.011968
+physics,2021,31,Ion Pairing Dynamics,28,1504,0.018617
+physics,2021,32,Metamaterial Resonance Bistability,22,1504,0.014628
+physics,2021,33,Soliton Pair Dynamics,43,1504,0.02859
+physics,2021,34,Excited State Perturbation Theory,59,1504,0.039229
+physics,2021,35,TR-Symmetry Breaking Meta-Optics,40,1504,0.026596
+physics,2021,36,Multimode Cavity QED,32,1504,0.021277
+physics,2021,37,Rydberg Resonance Dynamics,28,1504,0.018617
+physics,2021,38,Quantum-Classical Boundary,29,1504,0.019282
+physics,2021,39,Antineutrino Source Design,33,1504,0.021941
+physics,2021,40,Reciprocity Systems,16,1504,0.010638
+physics,2022,0,Plasma Beam Interactions,44,1478,0.02977
+physics,2022,1,Quantum Corrections,24,1478,0.016238
+physics,2022,2,DNA Conformational Dynamics,23,1478,0.015562
+physics,2022,3,Optical Trapping Cooling,34,1478,0.023004
+physics,2022,4,Nonlinear Harmonic Generation,36,1478,0.024357
+physics,2022,5,Fermi Gas Stability,30,1478,0.020298
+physics,2022,6,Deforming Reference Frame Dynamics,25,1478,0.016915
+physics,2022,7,Rotating Flow Dynamics,36,1478,0.024357
+physics,2022,8,Optical Logic Gates,35,1478,0.023681
+physics,2022,9,Micromaser Dynamics,25,1478,0.016915
+physics,2022,10,Pixel Detector Calibration,81,1478,0.054804
+physics,2022,11,Pulse-Level Beam Feedback,25,1478,0.016915
+physics,2022,12,Anomalous Scaling Turbulence,21,1478,0.014208
+physics,2022,13,High-Order Turbulence Moments,54,1478,0.036536
+physics,2022,14,Fractal Surface Plasmonics,27,1478,0.018268
+physics,2022,15,Bimetallic Cluster Magnetism,36,1478,0.024357
+physics,2022,16,Photon Statistics Cavities,43,1478,0.029093
+physics,2022,17,Chaotic Dynamo Reversals,30,1478,0.020298
+physics,2022,18,Tokamak Flow Barriers,33,1478,0.022327
+physics,2022,19,Lattice Boltzmann Methods,44,1478,0.02977
+physics,2022,20,High-Energy Trigger Processing,37,1478,0.025034
+physics,2022,21,Network Immunization Dynamics,87,1478,0.058863
+physics,2022,22,Hyperbolic Dispersion Media,16,1478,0.010825
+physics,2022,23,Laser-Plasma Acceleration,42,1478,0.028417
+physics,2022,24,Rotating Surface Solitons,34,1478,0.023004
+physics,2022,25,Climate Information Dynamics,66,1478,0.044655
+physics,2022,26,Kinetic Potential Embedding,34,1478,0.023004
+physics,2022,27,Photonic Quantum Gates,69,1478,0.046685
+physics,2022,28,Blog Network Dynamics,8,1478,0.005413
+physics,2022,29,Self-Organized Cooperation,31,1478,0.020974
+physics,2022,30,Opinion Consensus Dynamics,24,1478,0.016238
+physics,2022,31,Ion Pairing Dynamics,25,1478,0.016915
+physics,2022,32,Metamaterial Resonance Bistability,29,1478,0.019621
+physics,2022,33,Soliton Pair Dynamics,34,1478,0.023004
+physics,2022,34,Excited State Perturbation Theory,64,1478,0.043302
+physics,2022,35,TR-Symmetry Breaking Meta-Optics,30,1478,0.020298
+physics,2022,36,Multimode Cavity QED,27,1478,0.018268
+physics,2022,37,Rydberg Resonance Dynamics,18,1478,0.012179
+physics,2022,38,Quantum-Classical Boundary,38,1478,0.02571
+physics,2022,39,Antineutrino Source Design,46,1478,0.031123
+physics,2022,40,Reciprocity Systems,13,1478,0.008796
+physics,2023,0,Plasma Beam Interactions,42,1573,0.026701
+physics,2023,1,Quantum Corrections,26,1573,0.016529
+physics,2023,2,DNA Conformational Dynamics,31,1573,0.019708
+physics,2023,3,Optical Trapping Cooling,40,1573,0.025429
+physics,2023,4,Nonlinear Harmonic Generation,36,1573,0.022886
+physics,2023,5,Fermi Gas Stability,20,1573,0.012715
+physics,2023,6,Deforming Reference Frame Dynamics,35,1573,0.02225
+physics,2023,7,Rotating Flow Dynamics,50,1573,0.031786
+physics,2023,8,Optical Logic Gates,44,1573,0.027972
+physics,2023,9,Micromaser Dynamics,26,1573,0.016529
+physics,2023,10,Pixel Detector Calibration,63,1573,0.040051
+physics,2023,11,Pulse-Level Beam Feedback,20,1573,0.012715
+physics,2023,12,Anomalous Scaling Turbulence,17,1573,0.010807
+physics,2023,13,High-Order Turbulence Moments,69,1573,0.043865
+physics,2023,14,Fractal Surface Plasmonics,32,1573,0.020343
+physics,2023,15,Bimetallic Cluster Magnetism,42,1573,0.026701
+physics,2023,16,Photon Statistics Cavities,44,1573,0.027972
+physics,2023,17,Chaotic Dynamo Reversals,33,1573,0.020979
+physics,2023,18,Tokamak Flow Barriers,44,1573,0.027972
+physics,2023,19,Lattice Boltzmann Methods,44,1573,0.027972
+physics,2023,20,High-Energy Trigger Processing,26,1573,0.016529
+physics,2023,21,Network Immunization Dynamics,65,1573,0.041322
+physics,2023,22,Hyperbolic Dispersion Media,22,1573,0.013986
+physics,2023,23,Laser-Plasma Acceleration,46,1573,0.029243
+physics,2023,24,Rotating Surface Solitons,33,1573,0.020979
+physics,2023,25,Climate Information Dynamics,105,1573,0.066751
+physics,2023,26,Kinetic Potential Embedding,27,1573,0.017165
+physics,2023,27,Photonic Quantum Gates,72,1573,0.045772
+physics,2023,28,Blog Network Dynamics,11,1573,0.006993
+physics,2023,29,Self-Organized Cooperation,21,1573,0.01335
+physics,2023,30,Opinion Consensus Dynamics,26,1573,0.016529
+physics,2023,31,Ion Pairing Dynamics,22,1573,0.013986
+physics,2023,32,Metamaterial Resonance Bistability,30,1573,0.019072
+physics,2023,33,Soliton Pair Dynamics,29,1573,0.018436
+physics,2023,34,Excited State Perturbation Theory,72,1573,0.045772
+physics,2023,35,TR-Symmetry Breaking Meta-Optics,31,1573,0.019708
+physics,2023,36,Multimode Cavity QED,43,1573,0.027336
+physics,2023,37,Rydberg Resonance Dynamics,18,1573,0.011443
+physics,2023,38,Quantum-Classical Boundary,53,1573,0.033694
+physics,2023,39,Antineutrino Source Design,35,1573,0.02225
+physics,2023,40,Reciprocity Systems,28,1573,0.0178
+physics,2024,0,Plasma Beam Interactions,42,1861,0.022569
+physics,2024,1,Quantum Corrections,24,1861,0.012896
+physics,2024,2,DNA Conformational Dynamics,24,1861,0.012896
+physics,2024,3,Optical Trapping Cooling,47,1861,0.025255
+physics,2024,4,Nonlinear Harmonic Generation,49,1861,0.02633
+physics,2024,5,Fermi Gas Stability,34,1861,0.01827
+physics,2024,6,Deforming Reference Frame Dynamics,31,1861,0.016658
+physics,2024,7,Rotating Flow Dynamics,60,1861,0.032241
+physics,2024,8,Optical Logic Gates,57,1861,0.030629
+physics,2024,9,Micromaser Dynamics,62,1861,0.033315
+physics,2024,10,Pixel Detector Calibration,82,1861,0.044062
+physics,2024,11,Pulse-Level Beam Feedback,18,1861,0.009672
+physics,2024,12,Anomalous Scaling Turbulence,19,1861,0.01021
+physics,2024,13,High-Order Turbulence Moments,58,1861,0.031166
+physics,2024,14,Fractal Surface Plasmonics,25,1861,0.013434
+physics,2024,15,Bimetallic Cluster Magnetism,45,1861,0.024181
+physics,2024,16,Photon Statistics Cavities,60,1861,0.032241
+physics,2024,17,Chaotic Dynamo Reversals,25,1861,0.013434
+physics,2024,18,Tokamak Flow Barriers,70,1861,0.037614
+physics,2024,19,Lattice Boltzmann Methods,50,1861,0.026867
+physics,2024,20,High-Energy Trigger Processing,34,1861,0.01827
+physics,2024,21,Network Immunization Dynamics,80,1861,0.042988
+physics,2024,22,Hyperbolic Dispersion Media,12,1861,0.006448
+physics,2024,23,Laser-Plasma Acceleration,52,1861,0.027942
+physics,2024,24,Rotating Surface Solitons,52,1861,0.027942
+physics,2024,25,Climate Information Dynamics,158,1861,0.084901
+physics,2024,26,Kinetic Potential Embedding,27,1861,0.014508
+physics,2024,27,Photonic Quantum Gates,88,1861,0.047286
+physics,2024,28,Blog Network Dynamics,7,1861,0.003761
+physics,2024,29,Self-Organized Cooperation,21,1861,0.011284
+physics,2024,30,Opinion Consensus Dynamics,41,1861,0.022031
+physics,2024,31,Ion Pairing Dynamics,33,1861,0.017732
+physics,2024,32,Metamaterial Resonance Bistability,23,1861,0.012359
+physics,2024,33,Soliton Pair Dynamics,32,1861,0.017195
+physics,2024,34,Excited State Perturbation Theory,95,1861,0.051048
+physics,2024,35,TR-Symmetry Breaking Meta-Optics,52,1861,0.027942
+physics,2024,36,Multimode Cavity QED,55,1861,0.029554
+physics,2024,37,Rydberg Resonance Dynamics,27,1861,0.014508
+physics,2024,38,Quantum-Classical Boundary,35,1861,0.018807
+physics,2024,39,Antineutrino Source Design,31,1861,0.016658
+physics,2024,40,Reciprocity Systems,24,1861,0.012896
+physics,2025,0,Plasma Beam Interactions,52,2363,0.022006
+physics,2025,1,Quantum Corrections,38,2363,0.016081
+physics,2025,2,DNA Conformational Dynamics,37,2363,0.015658
+physics,2025,3,Optical Trapping Cooling,62,2363,0.026238
+physics,2025,4,Nonlinear Harmonic Generation,58,2363,0.024545
+physics,2025,5,Fermi Gas Stability,20,2363,0.008464
+physics,2025,6,Deforming Reference Frame Dynamics,26,2363,0.011003
+physics,2025,7,Rotating Flow Dynamics,80,2363,0.033855
+physics,2025,8,Optical Logic Gates,76,2363,0.032163
+physics,2025,9,Micromaser Dynamics,77,2363,0.032586
+physics,2025,10,Pixel Detector Calibration,116,2363,0.04909
+physics,2025,11,Pulse-Level Beam Feedback,33,2363,0.013965
+physics,2025,12,Anomalous Scaling Turbulence,33,2363,0.013965
+physics,2025,13,High-Order Turbulence Moments,99,2363,0.041896
+physics,2025,14,Fractal Surface Plasmonics,44,2363,0.01862
+physics,2025,15,Bimetallic Cluster Magnetism,64,2363,0.027084
+physics,2025,16,Photon Statistics Cavities,69,2363,0.0292
+physics,2025,17,Chaotic Dynamo Reversals,37,2363,0.015658
+physics,2025,18,Tokamak Flow Barriers,72,2363,0.03047
+physics,2025,19,Lattice Boltzmann Methods,78,2363,0.033009
+physics,2025,20,High-Energy Trigger Processing,48,2363,0.020313
+physics,2025,21,Network Immunization Dynamics,91,2363,0.03851
+physics,2025,22,Hyperbolic Dispersion Media,21,2363,0.008887
+physics,2025,23,Laser-Plasma Acceleration,65,2363,0.027507
+physics,2025,24,Rotating Surface Solitons,42,2363,0.017774
+physics,2025,25,Climate Information Dynamics,230,2363,0.097334
+physics,2025,26,Kinetic Potential Embedding,57,2363,0.024122
+physics,2025,27,Photonic Quantum Gates,92,2363,0.038934
+physics,2025,28,Blog Network Dynamics,17,2363,0.007194
+physics,2025,29,Self-Organized Cooperation,31,2363,0.013119
+physics,2025,30,Opinion Consensus Dynamics,52,2363,0.022006
+physics,2025,31,Ion Pairing Dynamics,52,2363,0.022006
+physics,2025,32,Metamaterial Resonance Bistability,22,2363,0.00931
+physics,2025,33,Soliton Pair Dynamics,35,2363,0.014812
+physics,2025,34,Excited State Perturbation Theory,97,2363,0.04105
+physics,2025,35,TR-Symmetry Breaking Meta-Optics,52,2363,0.022006
+physics,2025,36,Multimode Cavity QED,32,2363,0.013542
+physics,2025,37,Rydberg Resonance Dynamics,20,2363,0.008464
+physics,2025,38,Quantum-Classical Boundary,44,2363,0.01862
+physics,2025,39,Antineutrino Source Design,51,2363,0.021583
+physics,2025,40,Reciprocity Systems,41,2363,0.017351
