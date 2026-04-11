@@ -427,6 +427,35 @@ with tab_timeline:
                 fig_new.update_layout(height=350, yaxis_title="Percentage (%)", xaxis_title="Year")
                 st.plotly_chart(fig_new, use_container_width=True)
 
+            st.markdown("##### 🔍 Topic Example: Transition details (Topic 0 & 1)")
+            trans_df = load_csv(m, "consistency", subject, "continuity_transitions.csv")
+            if trans_df is not None and not trans_df.empty:
+                ex_df = trans_df[trans_df["topic_id"].isin([0, 1])].copy()
+                if not ex_df.empty:
+                    ex_df["transition"] = ex_df["year_from"].astype(str) + " → " + ex_df["year_to"].astype(str)
+                    
+                    # Highlight colors for category
+                    def _style_category(val):
+                        if val == "stable": return "color: #166534; font-weight: bold;"
+                        if val == "merge": return "color: #92400e; font-weight: bold;"
+                        if val == "disappear": return "color: #991b1b; font-weight: bold;"
+                        return ""
+                    
+                    cols_to_show = ["topic_id", "transition", "words", "category", "best_match_topic", "best_match_sim"]
+                    avail_cols = [c for c in cols_to_show if c in ex_df.columns]
+                    
+                    st_df = ex_df[avail_cols].sort_values(["topic_id", "transition"])
+                    
+                    if "best_match_sim" in st_df.columns:
+                        styled_df = st_df.style.map(_style_category, subset=["category"]).format({"best_match_sim": "{:.4f}"}, na_rep="—")
+                    else:
+                        styled_df = st_df.style.map(_style_category, subset=["category"])
+                        
+                    st.dataframe(styled_df, use_container_width=True, hide_index=True)
+                else:
+                    st.info("Topic 0 and 1 have no transition records.")
+
+
 with tab_compare:
     st.subheader("Average Continuity Rate per Model")
     cont_data = []
