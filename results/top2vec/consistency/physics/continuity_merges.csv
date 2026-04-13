@@ -1,3 +1,2 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-physics,2002,2003,64,2,"[28, 64]","[0.5294, 0.6938]","magnetic, spin, optical, field, alanine, magneto, bodr, atomic, nmr, nuclear"
-physics,2002,2003,108,2,"[108, 208]","[0.5928, 0.506]","gene, regulatory, genes, dna, expression, model, reentry, cell, protein, binding"
+physics,2001,2002,25,2,"[16, 25]","[0.5179, 0.782]","turbulence, turbulent, flow, velocity, flows, energy, equations, scale, scaling, cascade"

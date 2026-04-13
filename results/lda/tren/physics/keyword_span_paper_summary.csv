@@ -1,2 +1,2 @@
 subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
-physics,LDA,2155,0.075871,3.7104,163.501487,4656768,0
+physics,LDA,2046,0.073022,4.0357,149.403994,4677960,0

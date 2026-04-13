@@ -1,2 +1,1 @@
-subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-cs,2004,2005,7,2,"[7, 56]","[0.8351, 0.5434]","logic, program, semantic, rule, programming, language, prolog, constraint, calculus, termination"
+

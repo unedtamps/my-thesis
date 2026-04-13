@@ -1,2 +1,1 @@
-subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-math,2006,2007,2,2,"[2, 60]","[0.5779, 0.5031]","numerical, element, method, finite, fd, error, equations, galerkin, schemes, methods"
+
