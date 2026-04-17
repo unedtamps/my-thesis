@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 
-MODELS = ["lda", "top2vec", "dtm", "bertopic", "topicGpt"]
-MODEL_LABELS = {"lda": "LDA", "top2vec": "Top2Vec", "dtm": "DTM", "bertopic": "BERTopic", "topicGpt": "TopicGPT"}
+MODELS = ["lda", "top2vec", "dtm", "topicGpt", "bertopic"]
+MODEL_LABELS = {"lda": "LDA", "top2vec": "Top2Vec", "dtm": "DTM", "topicGpt": "TopicGPT", "bertopic": "BERTopic"}
 SUBJECTS = ["cs", "math", "physics"]
 SUBJECT_LABELS = {"cs": "Computer Science", "math": "Mathematics", "physics": "Physics"}
 
@@ -116,6 +116,6 @@ def model_color_map():
         "LDA": "#ef4444",
         "Top2Vec": "#8b5cf6",
         "DTM": "#f59e0b",
-        "BERTopic": "#3b82f6",
         "TopicGPT": "#10b981",
+        "BERTopic": "#3b82f6",
     }
