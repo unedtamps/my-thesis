@@ -1,2 +1,2 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-physics,2001,2002,25,2,"[16, 25]","[0.5179, 0.782]","turbulence, turbulent, flow, velocity, flows, energy, equations, scale, scaling, cascade"
+physics,2006,2007,30,2,"[30, 83]","[0.7733, 0.5434]","plasma, wave, electron, ion, dust, dusty_plasma, mode, maxwellian, grain, acoustic"

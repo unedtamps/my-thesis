@@ -1,2 +1,4 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-physics,2011,2012,35,2,"[24, 35]","[0.5704, 0.7398]","metamaterials, optical, metamaterial, 2ls, refractive, fiber, index, media, transverse, light"
+physics,2001,2002,23,2,"[0, 23]","[0.5206, 0.5296]","beam, plasma, intense, positron, electron, bunch, laser, megagauss, electron_positron, layer"
+physics,2007,2008,22,2,"[22, 24]","[0.5397, 0.5701]","metamaterial, negative, medium, nim, wave, dispersion, negative_refraction, chiral, material, refractive_index"
+physics,2018,2019,34,2,"[26, 34]","[0.5761, 0.8454]","energy, density_functional, electron, orbital, theory, dft, correlation, functional, excited, electronic"

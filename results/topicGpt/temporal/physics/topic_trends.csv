@@ -1,42 +1,42 @@
 subject,topic_id,topic_label,top_words,total_docs,first_year,last_year,early_proportion,late_proportion,slope,r_squared,p_value,trend
-physics,0,Plasma Beam Interactions,"plasma, beam, plasmas, electron, particle",667,2000,2025,0.043451,0.026326,-0.00056945,0.0453,0.296769,STABLE
-physics,1,Quantum Corrections,"relativistic, corrections, nuclear, muonic, qed",377,2000,2025,0.100086,0.014876,-0.00376659,0.6419,1e-06,DECLINING
-physics,2,DNA Conformational Dynamics,"dna, protein, molecular, proteins, chromatin",384,2000,2025,0.048697,0.015557,-0.00141216,0.3168,0.002758,DECLINING
-physics,3,Optical Trapping Cooling,"cooling, optical, trap, quantum, atoms",586,2000,2025,0.058497,0.027299,-0.00121807,0.3578,0.001249,DECLINING
-physics,4,Nonlinear Harmonic Generation,"nonlinear, generation, optical, harmonic, photonic",398,2005,2025,0.006672,0.024544,0.00119629,0.8245,0.0,GROWING
-physics,5,Fermi Gas Stability,"quantum, fermi, yrast, states, bose",368,2000,2025,0.038224,0.015673,-0.00138087,0.5152,3.7e-05,DECLINING
-physics,6,Deforming Reference Frame Dynamics,"fluid, relativistic, hydrodynamics, sph, fluids",349,2000,2025,0.017209,0.015626,-0.00010827,0.012,0.594922,STABLE
-physics,7,Rotating Flow Dynamics,"flow, vortex, reynolds, flows, fluid",612,2000,2025,0.023281,0.03123,0.00050777,0.1954,0.023756,GROWING
+physics,0,Plasma Beam Interactions,"plasma, beam, electron, particle, ion",667,2000,2025,0.043451,0.026326,-0.00056945,0.0453,0.296769,STABLE
+physics,1,Quantum Corrections,"relativistic, correction, nuclear, energy, qed",377,2000,2025,0.100086,0.014876,-0.00376659,0.6419,1e-06,DECLINING
+physics,2,DNA Conformational Dynamics,"dna, protein, molecular, chromatin, dynamic",384,2000,2025,0.048697,0.015557,-0.00141216,0.3168,0.002758,DECLINING
+physics,3,Optical Trapping Cooling,"optical, trap, atom, quantum, laser",586,2000,2025,0.058497,0.027299,-0.00121807,0.3578,0.001249,DECLINING
+physics,4,Nonlinear Harmonic Generation,"nonlinear, optical, photonic, generation, second_harmonic",398,2005,2025,0.006672,0.024544,0.00119629,0.8245,0.0,GROWING
+physics,5,Fermi Gas Stability,"quantum, fermi, yrast, gas, interaction",368,2000,2025,0.038224,0.015673,-0.00138087,0.5152,3.7e-05,DECLINING
+physics,6,Deforming Reference Frame Dynamics,"fluid, relativistic, flow, hydrodynamic, shock",349,2000,2025,0.017209,0.015626,-0.00010827,0.012,0.594922,STABLE
+physics,7,Rotating Flow Dynamics,"flow, vortex, fluid, reynold, instability",612,2000,2025,0.023281,0.03123,0.00050777,0.1954,0.023756,GROWING
 physics,8,Optical Logic Gates,"optical, photonic, quantum, light, topological",414,2001,2025,0.007784,0.028607,0.00126277,0.7957,0.0,GROWING
-physics,9,Micromaser Dynamics,"quantum, spin, states, dynamics, rydberg",404,2000,2025,0.020259,0.023991,0.00026503,0.0573,0.238848,STABLE
-physics,10,Pixel Detector Calibration,"detector, detectors, pixel, readout, lhc",1110,2000,2025,0.042834,0.047442,-0.00017664,0.0037,0.766767,STABLE
-physics,11,Pulse-Level Beam Feedback,"beam, laser, electron, high, accelerator",342,2000,2025,0.055753,0.013712,-0.00159769,0.1192,0.084149,STABLE
-physics,12,Anomalous Scaling Turbulence,"turbulence, solar, wind, turbulent, magnetic",314,2000,2025,0.052883,0.012764,-0.00151784,0.2177,0.016257,DECLINING
-physics,13,High-Order Turbulence Moments,"turbulence, turbulent, flow, flows, energy",777,2000,2025,0.04351,0.03774,-0.00046148,0.0713,0.187373,STABLE
-physics,14,Fractal Surface Plasmonics,"plasmonic, plasmon, optical, surface, field",439,2001,2025,0.013981,0.018654,0.00060472,0.2652,0.007103,GROWING
-physics,15,Bimetallic Cluster Magnetism,"spin, magnetic, altermagnetic, magnetization, hall",372,2000,2025,0.025294,0.024188,1.57e-06,0.0,0.99489,STABLE
-physics,16,Photon Statistics Cavities,"photon, quantum, single, optical, photons",500,2006,2025,0.009436,0.029286,0.00140598,0.8984,0.0,GROWING
-physics,17,Chaotic Dynamo Reversals,"magnetic, dynamo, turbulence, turbulent, reconnection",498,2000,2025,0.045749,0.016733,-0.00134657,0.5133,3.8e-05,DECLINING
-physics,18,Tokamak Flow Barriers,"plasma, tokamak, turbulence, magnetic, transport",541,2000,2025,0.033195,0.028198,0.00015156,0.0073,0.677712,STABLE
-physics,19,Lattice Boltzmann Methods,"boltzmann, fluid, flow, flows, method",581,2001,2025,0.033387,0.029242,0.00049873,0.0946,0.126284,STABLE
-physics,20,High-Energy Trigger Processing,"detector, reconstruction, calorimeter, data, learning",322,2003,2025,0.014006,0.019753,0.00058692,0.3688,0.001003,GROWING
-physics,21,Network Immunization Dynamics,"epidemic, networks, network, disease, social",1358,2003,2025,0.048129,0.054289,0.00190633,0.2008,0.021673,GROWING
-physics,22,Hyperbolic Dispersion Media,"metamaterials, hyperbolic, materials, wave, media",320,2002,2025,0.03456,0.010689,-0.00059622,0.1195,0.083625,STABLE
-physics,23,Laser-Plasma Acceleration,"laser, plasma, acceleration, electron, beam",686,2000,2025,0.050821,0.02834,-0.00081184,0.1911,0.025557,DECLINING
-physics,24,Rotating Surface Solitons,"metasurfaces, optical, photonic, metasurface, nonlinear",423,2002,2025,0.012633,0.022195,0.00078588,0.6468,1e-06,GROWING
-physics,25,Climate Information Dynamics,"weather, climate, forecasting, learning, data",773,2002,2025,0.008601,0.067106,0.00266077,0.5743,7e-06,GROWING
-physics,26,Kinetic Potential Embedding,"potentials, learning, molecular, functional, machine",300,2002,2025,0.0095,0.018153,0.00056952,0.554,1.3e-05,GROWING
-physics,27,Photonic Quantum Gates,"quantum, photonic, photon, integrated, single",717,2001,2025,0.011863,0.043315,0.00170861,0.7753,0.0,GROWING
-physics,28,Blog Network Dynamics,"social, news, online, media, users",334,2005,2025,0.020404,0.006268,0.0001639,0.0067,0.6908,STABLE
-physics,29,Self-Organized Cooperation,"agents, cooperation, active, collective, motility",337,2000,2025,0.012285,0.015336,3.948e-05,0.0008,0.888421,STABLE
-physics,30,Opinion Consensus Dynamics,"opinion, social, opinions, consensus, agents",397,2005,2025,0.031384,0.017754,0.00038573,0.0641,0.212001,STABLE
-physics,31,Ion Pairing Dynamics,"solvent, water, solvation, molecular, ion",336,2000,2025,0.015161,0.017851,0.00037973,0.187,0.027345,GROWING
-physics,32,Metamaterial Resonance Bistability,"metasurfaces, metasurface, optical, light, excitonic",338,2004,2025,0.010256,0.014998,0.00079364,0.5079,4.4e-05,GROWING
-physics,33,Soliton Pair Dynamics,"solitons, soliton, nonlinear, optical, kerr",582,2000,2025,0.063886,0.020407,-0.00212389,0.5263,2.7e-05,DECLINING
-physics,34,Excited State Perturbation Theory,"electronic, functional, dft, energies, excited",856,2000,2025,0.041301,0.04408,0.00031044,0.0654,0.207224,STABLE
-physics,35,TR-Symmetry Breaking Meta-Optics,"optical, topological, nonreciprocal, metasurfaces, light",408,2002,2025,0.008624,0.02331,0.00117977,0.7927,0.0,GROWING
-physics,36,Multimode Cavity QED,"cavity, quantum, optical, light, matter",417,2001,2025,0.033746,0.021995,-0.00011304,0.0036,0.770817,STABLE
-physics,37,Rydberg Resonance Dynamics,"rydberg, atoms, molecules, states, quantum",386,2000,2025,0.02154,0.013042,-0.0005817,0.1198,0.083325,STABLE
-physics,38,Quantum-Classical Boundary,"quantum, mechanics, measurement, theory, interpretation",526,2000,2025,0.038309,0.023223,-0.00073094,0.182,0.029735,DECLINING
-physics,39,Antineutrino Source Design,"neutrino, detector, neutron, neutrinos, reactor",667,2001,2025,0.015848,0.022711,0.00100681,0.2007,0.021737,GROWING
-physics,40,Reciprocity Systems,"cooperation, social, game, evolutionary, individuals",319,2002,2025,0.016227,0.013496,0.00014132,0.0166,0.529998,STABLE
+physics,9,Micromaser Dynamics,"quantum, spin, atom, dynamic, cavity",404,2000,2025,0.020259,0.023991,0.00026503,0.0573,0.238848,STABLE
+physics,10,Pixel Detector Calibration,"detector, pixel, sensor, beam, muon",1110,2000,2025,0.042834,0.047442,-0.00017664,0.0037,0.766767,STABLE
+physics,11,Pulse-Level Beam Feedback,"beam, laser, accelerator, electron, bunch",342,2000,2025,0.055753,0.013712,-0.00159769,0.1192,0.084149,STABLE
+physics,12,Anomalous Scaling Turbulence,"turbulence, solar_wind, turbulent, scale, fluctuation",314,2000,2025,0.052883,0.012764,-0.00151784,0.2177,0.016257,DECLINING
+physics,13,High-Order Turbulence Moments,"turbulence, turbulent, flow, scale, energy",777,2000,2025,0.04351,0.03774,-0.00046148,0.0713,0.187373,STABLE
+physics,14,Fractal Surface Plasmonics,"plasmonic, plasmon, optical, nanoparticle, surface_plasmon",439,2001,2025,0.013981,0.018654,0.00060472,0.2652,0.007103,GROWING
+physics,15,Bimetallic Cluster Magnetism,"spin, magnetic, spintronic, altermagnetic, material",372,2000,2025,0.025294,0.024188,1.57e-06,0.0,0.99489,STABLE
+physics,16,Photon Statistics Cavities,"quantum, photon, single_photon, detector, optical",500,2006,2025,0.009436,0.029286,0.00140598,0.8984,0.0,GROWING
+physics,17,Chaotic Dynamo Reversals,"dynamo, turbulence, magnetic_field, turbulent, magnetic",498,2000,2025,0.045749,0.016733,-0.00134657,0.5133,3.8e-05,DECLINING
+physics,18,Tokamak Flow Barriers,"plasma, tokamak, turbulence, gyrokinetic, transport",541,2000,2025,0.033195,0.028198,0.00015156,0.0073,0.677712,STABLE
+physics,19,Lattice Boltzmann Methods,"lattice_boltzmann, flow, fluid, particle, dsmc",581,2001,2025,0.033387,0.029242,0.00049873,0.0946,0.126284,STABLE
+physics,20,High-Energy Trigger Processing,"detector, calorimeter, reconstruction, trigger, datum",322,2003,2025,0.014006,0.019753,0.00058692,0.3688,0.001003,GROWING
+physics,21,Network Immunization Dynamics,"epidemic, network, infection, disease, social",1358,2003,2025,0.048129,0.054289,0.00190633,0.2008,0.021673,GROWING
+physics,22,Hyperbolic Dispersion Media,"metamaterial, hyperbolic, wave, material, medium",320,2002,2025,0.03456,0.010689,-0.00059622,0.1195,0.083625,STABLE
+physics,23,Laser-Plasma Acceleration,"plasma, laser, electron, acceleration, beam",686,2000,2025,0.050821,0.02834,-0.00081184,0.1911,0.025557,DECLINING
+physics,24,Rotating Surface Solitons,"metasurface, optical, photonic, polarization, metamaterial",423,2002,2025,0.012633,0.022195,0.00078588,0.6468,1e-06,GROWING
+physics,25,Climate Information Dynamics,"climate, forecast, weather, datum, ocean",773,2002,2025,0.008601,0.067106,0.00266077,0.5743,7e-06,GROWING
+physics,26,Kinetic Potential Embedding,"potential, energy, mlip, orbital, molecular",300,2002,2025,0.0095,0.018153,0.00056952,0.554,1.3e-05,GROWING
+physics,27,Photonic Quantum Gates,"quantum, photonic, qubit, photon, gate",717,2001,2025,0.011863,0.043315,0.00170861,0.7753,0.0,GROWING
+physics,28,Blog Network Dynamics,"social, network, news, medium, language",334,2005,2025,0.020404,0.006268,0.0001639,0.0067,0.6908,STABLE
+physics,29,Self-Organized Cooperation,"agent, cooperation, group, collective, active",337,2000,2025,0.012285,0.015336,3.948e-05,0.0008,0.888421,STABLE
+physics,30,Opinion Consensus Dynamics,"opinion, social, agent, consensus, network",397,2005,2025,0.031384,0.017754,0.00038573,0.0641,0.212001,STABLE
+physics,31,Ion Pairing Dynamics,"electrolyte, solvent, ion, water, solvation",336,2000,2025,0.015161,0.017851,0.00037973,0.187,0.027345,GROWING
+physics,32,Metamaterial Resonance Bistability,"metasurface, optical, resonance, excitonic, absorption",338,2004,2025,0.010256,0.014998,0.00079364,0.5079,4.4e-05,GROWING
+physics,33,Soliton Pair Dynamics,"soliton, nonlinear, optical, pulse, wave",582,2000,2025,0.063886,0.020407,-0.00212389,0.5263,2.7e-05,DECLINING
+physics,34,Excited State Perturbation Theory,"energy, electronic, orbital, electron, density_functional",856,2000,2025,0.041301,0.04408,0.00031044,0.0654,0.207224,STABLE
+physics,35,TR-Symmetry Breaking Meta-Optics,"optical, metasurface, topological, nonreciprocal, material",408,2002,2025,0.008624,0.02331,0.00117977,0.7927,0.0,GROWING
+physics,36,Multimode Cavity QED,"cavity, quantum, optical, atom, mode",417,2001,2025,0.033746,0.021995,-0.00011304,0.0036,0.770817,STABLE
+physics,37,Rydberg Resonance Dynamics,"rydberg, rydberg_atom, molecule, quantum, atom",386,2000,2025,0.02154,0.013042,-0.0005817,0.1198,0.083325,STABLE
+physics,38,Quantum-Classical Boundary,"quantum, quantum_mechanic, theory, measurement, interpretation",526,2000,2025,0.038309,0.023223,-0.00073094,0.182,0.029735,DECLINING
+physics,39,Antineutrino Source Design,"neutrino, detector, neutron, background, reactor",667,2001,2025,0.015848,0.022711,0.00100681,0.2007,0.021737,GROWING
+physics,40,Reciprocity Systems,"cooperation, social, game, network, strategy",319,2002,2025,0.016227,0.013496,0.00014132,0.0166,0.529998,STABLE

@@ -1,1 +1,2 @@
-
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+math,2012,2013,90,2,"[81, 90]","[0.5206, 0.7112]","network, algorithm, optimization, sensor, communication, ggn, convergence, constraint, agent, estimation"

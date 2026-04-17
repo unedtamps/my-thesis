@@ -1,2 +1,2 @@
 subject,threshold,avg_pct_stable,avg_pct_merge,avg_pct_disappear,total_merge_groups,total_new
-cs,0.5,59.93,0.79,39.28,10,655
+cs,0.5,62.74,0.6,36.65,8,609

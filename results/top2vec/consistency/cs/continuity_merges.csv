@@ -1,6 +1,4 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-cs,2004,2005,37,2,"[37, 170]","[0.8101, 0.6165]","games, game, equilibria, nash, player, equilibrium, players, amazons, agents, peering"
-cs,2005,2006,137,2,"[64, 137]","[0.5127, 0.819]","query, queries, relational, data, database, datalog, databases, wp, neutrosophic, logic"
-cs,2012,2013,137,2,"[137, 166]","[0.9159, 0.6256]","query, queries, data, datalog, relational, database, conjunctive, xml, databases, answering"
-cs,2014,2015,37,2,"[37, 170]","[0.9434, 0.6674]","games, game, players, nash, player, equilibrium, equilibria, payoff, strategies, cooperation"
-cs,2014,2015,113,2,"[113, 250]","[0.6815, 0.5472]","anomaly, detection, outlierness, outlying, outlier, outliers, data, anomalies, feature, database"
+cs,2011,2012,137,2,"[137, 166]","[0.6492, 0.6563]","query, disjunctive_datalog, database, datum, xml, xpath, relational, language, view, algorithm"
+cs,2014,2015,37,2,"[37, 170]","[0.9208, 0.6629]","game, player, payoff, equilibrium, nash_equilibrium, strategy, coalition, cooperation, agent, parity"
+cs,2018,2019,113,2,"[113, 250]","[0.8099, 0.5481]","anomaly_detection, anomaly, datum, detection, anomalous, outlier, outli, normal, image, abnormal"
