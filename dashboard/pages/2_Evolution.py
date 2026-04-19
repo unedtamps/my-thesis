@@ -39,7 +39,7 @@ st.header("2A: Temporal Analysis")
 st.divider()
 
 # --- Per-year coherence + IRBO ---
-tab1, tab2 = st.tabs(["Coherence & Diversity", "Topic Trends"])
+tab1, tab_metrics, tab2 = st.tabs(["Coherence & Diversity", "Metrics Table", "Topic Trends"])
 
 with tab1:
     pym = load_all_models("temporal", subject, "per_year_metrics.csv")
@@ -76,6 +76,33 @@ with tab1:
         )
         fig.update_layout(height=350, legend=dict(orientation="h", y=-0.15))
         st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("No per-year metrics available.")
+
+with tab_metrics:
+    pym = load_all_models("temporal", subject, "per_year_metrics.csv")
+    if len(pym) > 0:
+        pym_f = pym[pym["model"].isin([MODEL_LABELS[m] for m in selected_models])]
+        st.subheader("Yearly Metrics per Model")
+        for m in selected_models:
+            m_label = MODEL_LABELS[m]
+            m_df = pym_f[pym_f["model"] == m_label]
+            if not m_df.empty:
+                with st.expander(f"📊 {m_label}"):
+                    display_df = m_df[["year", "coherence_cv", "irbo_mean", "topic_quality"]].copy()
+                    display_df = display_df.rename(columns={
+                        "coherence_cv": "C_v",
+                        "irbo_mean": "Diversity (IRBO)",
+                        "topic_quality": "Quality"
+                    }).set_index("year")
+                    st.dataframe(display_df, use_container_width=True)
+                    
+                    st.divider()
+                    st.markdown("**Average Over Time**")
+                    col1, col2, col3 = st.columns(3)
+                    col1.metric("Avg C_v", f"{display_df['C_v'].mean():.4f}")
+                    col2.metric("Avg Diversity", f"{display_df['Diversity (IRBO)'].mean():.4f}")
+                    col3.metric("Avg Quality", f"{display_df['Quality'].mean():.4f}")
     else:
         st.info("No per-year metrics available.")
 
