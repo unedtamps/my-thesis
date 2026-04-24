@@ -1,4 +1,6 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
-cs,2011,2012,137,2,"[137, 166]","[0.6492, 0.6563]","query, disjunctive_datalog, database, datum, xml, xpath, relational, language, view, algorithm"
-cs,2014,2015,37,2,"[37, 170]","[0.9208, 0.6629]","game, player, payoff, equilibrium, nash_equilibrium, strategy, coalition, cooperation, agent, parity"
-cs,2018,2019,113,2,"[113, 250]","[0.8099, 0.5481]","anomaly_detection, anomaly, datum, detection, anomalous, outlier, outli, normal, image, abnormal"
+cs,2009,2010,112,2,"[31, 112]","[0.5192, 0.796]","channel, cognitive_radio, network, transmission, wireless, power, secondary, mac, throughput, spectrum"
+cs,2017,2018,2,2,"[2, 70]","[0.7315, 0.5336]","gpu, memory, parallel, processor, core, code, cache, hardware, fpga, architecture"
+cs,2018,2019,7,2,"[7, 185]","[0.8707, 0.5209]","neural_network, deep, network, layer, training, gradient, relu, function, weight, activation"
+cs,2018,2019,172,2,"[172, 251]","[0.7665, 0.6452]","anomaly_detection, anomaly, normal, detection, anomalous, datum, image, abnormal, outli, outlier"
+cs,2021,2022,32,2,"[32, 198]","[1.0, 0.5247]","word, embedding, sentence, language, bert, representation, semantic, text, nlp, similarity"

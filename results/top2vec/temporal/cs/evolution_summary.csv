@@ -1,2 +1,2 @@
 subject,num_topics,num_years,coherence_mean,coherence_std,irbo_mean,irbo_std,quality_mean,quality_std,topics_growing,topics_stable,topics_declining
-cs,309,26,0.542283,0.079115,0.988364,0.007238,0.696827,0.061752,178,88,43
+cs,305,26,0.543473,0.08522,0.987915,0.007148,0.697189,0.066527,176,85,44

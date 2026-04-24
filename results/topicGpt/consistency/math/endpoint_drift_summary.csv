@@ -1,2 +1,2 @@
 subject,n_topics_compared,avg_drift,std_drift,median_drift,avg_pct_kept,pct_stable,pct_moderate,pct_high_drift
-math,58,0.632472,0.166408,0.632049,23.88,6.9,60.34,32.76
+math,85,0.652515,0.161003,0.64109,23.4,4.71,56.47,38.82
