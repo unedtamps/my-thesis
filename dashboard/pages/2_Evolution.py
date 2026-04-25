@@ -32,6 +32,10 @@ st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definiti
 subject, selected_models = setup_sidebar()
 colors = model_color_map()
 
+CHART_FONT = dict(family="Arial Black, Arial, sans-serif", size=15)
+CHART_TITLE_FONT = dict(family="Arial Black, Arial, sans-serif", size=15)
+AXIS_FONT = dict(family="Arial Black, Arial, sans-serif", size=15)
+
 # ============================================================
 # 2A: Temporal Analysis
 # ============================================================
@@ -54,7 +58,11 @@ with tab1:
                 title="Coherence (C_v) per Year",
                 labels={"coherence_cv": "C_v", "year": "Year"},
             )
-            fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+            fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
+                              font=CHART_FONT, title_font=CHART_TITLE_FONT,
+                              xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2026]))
+            fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+            fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
             st.plotly_chart(fig, use_container_width=True)
 
         with col2:
@@ -64,7 +72,11 @@ with tab1:
                 title="Diversity (IRBO) per Year",
                 labels={"irbo_mean": "IRBO", "year": "Year"},
             )
-            fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+            fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
+                              font=CHART_FONT, title_font=CHART_TITLE_FONT,
+                              xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2026]))
+            fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+            fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
             st.plotly_chart(fig, use_container_width=True)
 
         # Topic quality
@@ -74,7 +86,11 @@ with tab1:
             title="Topic Quality per Year",
             labels={"topic_quality": "Quality", "year": "Year"},
         )
-        fig.update_layout(height=350, legend=dict(orientation="h", y=-0.15))
+        fig.update_layout(height=350, legend=dict(orientation="h", y=-0.15),
+                          font=CHART_FONT, title_font=CHART_TITLE_FONT,
+                          xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2026]))
+        fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+        fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
         st.plotly_chart(fig, use_container_width=True)
     else:
         st.info("No per-year metrics available.")
@@ -129,7 +145,10 @@ with tab2:
             title="Topic Trend Distribution",
             labels={"count": "Number of Topics", "model": ""},
         )
-        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
+                          font=CHART_FONT, title_font=CHART_TITLE_FONT)
+        fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+        fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
         st.plotly_chart(fig, use_container_width=True)
 
     # Top growing + declining per model
@@ -176,7 +195,11 @@ if len(trans) > 0:
             title="TTC (Cross-Time Coherence) Over Transitions",
             labels={"avg_ttc": "Avg TTC", "year_from": "Year"},
         )
-        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
+                          font=CHART_FONT, title_font=CHART_TITLE_FONT,
+                          xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2025]))
+        fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+        fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
         st.plotly_chart(fig, use_container_width=True)
 
     with tab_tts:
@@ -186,7 +209,11 @@ if len(trans) > 0:
             title="TTS (Term Stability) Over Transitions",
             labels={"avg_tts": "Avg TTS", "year_from": "Year"},
         )
-        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
+                          font=CHART_FONT, title_font=CHART_TITLE_FONT,
+                          xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2025]))
+        fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+        fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
         st.plotly_chart(fig, use_container_width=True)
 
     with tab_ttq:
@@ -196,7 +223,11 @@ if len(trans) > 0:
             title="TTQ (Topic Transition Quality) Over Transitions",
             labels={"avg_ttq": "Avg TTQ", "year_from": "Year"},
         )
-        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
+                          font=CHART_FONT, title_font=CHART_TITLE_FONT,
+                          xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2025]))
+        fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+        fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
         st.plotly_chart(fig, use_container_width=True)
 
     with tab_metrics_2b:

@@ -1,2 +1,2 @@
 subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
-physics,Top2Vec,8166,0.099658,3.0289,813.807664,6271516,1225
+physics,Top2Vec,8166,0.111242,3.0289,908.402805,6910122,0
