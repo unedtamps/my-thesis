@@ -167,7 +167,7 @@ trans = load_all_models("evolution", subject, "transition_summary.csv")
 if len(trans) > 0:
     trans_f = trans[trans["model"].isin([MODEL_LABELS[m] for m in selected_models])]
 
-    tab_ttc, tab_tts, tab_ttq = st.tabs(["TTC", "TTS", "TTQ"])
+    tab_ttc, tab_tts, tab_ttq, tab_metrics_2b = st.tabs(["TTC", "TTS", "TTQ", "Metrics Table"])
 
     with tab_ttc:
         fig = px.line(
@@ -198,6 +198,32 @@ if len(trans) > 0:
         )
         fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
         st.plotly_chart(fig, use_container_width=True)
+
+    with tab_metrics_2b:
+        st.subheader("TTC · TTS · TTQ per Year — All Models")
+        for m in selected_models:
+            m_label = MODEL_LABELS[m]
+            m_df = trans_f[trans_f["model"] == m_label][["year_from", "avg_ttc", "avg_tts", "avg_ttq"]].copy()
+            if m_df.empty:
+                continue
+            with st.expander(f"📊 {m_label}"):
+                display_df = m_df.rename(columns={
+                    "avg_ttc": "TTC",
+                    "avg_tts": "TTS",
+                    "avg_ttq": "TTQ",
+                }).set_index("year_from")
+                display_df.index.name = "Year"
+                st.dataframe(
+                    display_df.style.format("{:.4f}", na_rep="—"),
+                    use_container_width=True,
+                )
+
+                st.divider()
+                st.markdown("**Average Over Time**")
+                col1, col2, col3 = st.columns(3)
+                col1.metric("Avg TTC", f"{display_df['TTC'].mean():.4f}")
+                col2.metric("Avg TTS", f"{display_df['TTS'].mean():.4f}")
+                col3.metric("Avg TTQ", f"{display_df['TTQ'].mean():.4f}")
 
     # Summary comparison
     st.subheader("Overall Evolution Summary")

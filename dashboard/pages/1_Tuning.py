@@ -91,9 +91,9 @@ for m in selected_models:
                 fig.update_layout(height=400)
                 st.plotly_chart(fig, use_container_width=True)
 
-        # Top 10 configs table
-        st.markdown("**Top 10 Configs (by Topic Quality)**")
-        top10 = df.nlargest(10, "topic_quality")
+        # Top 30 configs table
+        st.markdown("**Top 30 Configs (by Topic Quality)**")
+        top30 = df.nlargest(30, "topic_quality")
         hide = ["subject", "random_state", "workers", "seed"]
-        display_cols = [c for c in top10.columns if c not in hide]
-        st.dataframe(top10[display_cols].reset_index(drop=True), use_container_width=True)
+        display_cols = [c for c in top30.columns if c not in hide]
+        st.dataframe(top30[display_cols].reset_index(drop=True), use_container_width=True)
