@@ -493,3 +493,63 @@ with tab_compare:
             cols = ["model"] + [c for c in ov_df.columns if c not in ["model", "subject"]]
             available = [c for c in cols if c in ov_df.columns]
             st.dataframe(ov_df[available].set_index("model"), use_container_width=True)
+
+    # ── NEW: Average & Mean New Topic table ──────────────────────────────
+    st.subheader("📊 Average & Mean New Topic per Model")
+    st.caption(
+        "Computed from yearly continuity transitions. "
+        "**Mean New Topic %** = average of (n_new / n_topics_t1 × 100) across all yearly transitions."
+    )
+    avg_new_rows = []
+    for m in selected_models:
+        df = load_csv(m, "consistency", subject, "continuity_summary.csv")
+        if df is None or len(df) == 0:
+            continue
+        row_data = {"Model": MODEL_LABELS[m]}
+        if "pct_stable" in df.columns:
+            row_data["Avg Stable %"] = df["pct_stable"].mean()
+        if "pct_merge" in df.columns:
+            row_data["Avg Merge %"] = df["pct_merge"].mean()
+        if "pct_disappear" in df.columns:
+            row_data["Avg Disappear %"] = df["pct_disappear"].mean()
+        if "n_new" in df.columns and "n_topics_t1" in df.columns:
+            pct_new_series = df["n_new"] / df["n_topics_t1"] * 100
+            row_data["Avg New Topic %"] = pct_new_series.mean()
+            row_data["Median New Topic %"] = pct_new_series.median()
+            row_data["Min New Topic %"] = pct_new_series.min()
+            row_data["Max New Topic %"] = pct_new_series.max()
+        elif "n_new" in df.columns:
+            row_data["Avg New Topic (count)"] = df["n_new"].mean()
+            row_data["Median New Topic (count)"] = df["n_new"].median()
+        avg_new_rows.append(row_data)
+
+    if avg_new_rows:
+        avg_new_df = pd.DataFrame(avg_new_rows).set_index("Model")
+        float_cols = [c for c in avg_new_df.columns if avg_new_df[c].dtype in ("float64", "float32")]
+        fmt = {c: "{:.2f}" for c in float_cols}
+        st.dataframe(
+            avg_new_df.style.format(fmt, na_rep="—").background_gradient(
+                subset=[c for c in ["Avg Stable %", "Avg New Topic %"] if c in avg_new_df.columns],
+                cmap="RdYlGn",
+                axis=0,
+            ),
+            use_container_width=True,
+        )
+
+        # Bar chart: Avg New Topic % per model
+        if "Avg New Topic %" in avg_new_df.columns:
+            new_topic_df = avg_new_df[["Avg New Topic %"]].reset_index()
+            new_topic_df.columns = ["model", "Avg New Topic %"]
+            fig_new = px.bar(
+                new_topic_df.sort_values("Avg New Topic %", ascending=False),
+                x="model", y="Avg New Topic %",
+                color="model",
+                color_discrete_map=colors,
+                title=f"Mean New Topic % per Model — {SUBJECT_LABELS[subject]}",
+                labels={"model": "Model", "Avg New Topic %": "Avg New Topic (%)"},
+                text_auto=".2f",
+            )
+            fig_new.update_layout(height=380, showlegend=False, yaxis=dict(range=[0, 100]))
+            st.plotly_chart(fig_new, use_container_width=True)
+    else:
+        st.info("No continuity data found for the selected models.")
