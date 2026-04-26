@@ -45,6 +45,9 @@ def load_tuning(model: str, subject: str) -> pd.DataFrame | None:
             RESULTS_DIR / "bertopic" / "tuning" / "hdbscan" / "quality_results.csv",
             RESULTS_DIR / "bertopic" / "tuning" / "kmeans" / "quality_results.csv",
         ],
+        "bertopic_timing": [
+            RESULTS_DIR / "bertopic" / "tuning" / "hdbscan" / "coherence_results.csv",
+        ],
         "topicGpt": [RESULTS_DIR / "topicGpt" / "tunning" / subject / "tuning_results.csv"],
     }
 
@@ -53,6 +56,16 @@ def load_tuning(model: str, subject: str) -> pd.DataFrame | None:
     for p in paths:
         if p.exists() and p.stat().st_size > 10:
             df = pd.read_csv(p)
+            # For BERTopic, merge time_seconds from coherence_results.csv
+            if model == "bertopic":
+                timing_paths = search_paths.get("bertopic_timing", [])
+                for tp in timing_paths:
+                    if tp.exists() and tp.stat().st_size > 10:
+                        timing_df = pd.read_csv(tp)
+                        join_keys = [k for k in ["subject", "model", "min_cluster_size", "min_samples", "n_neighbors", "n_components"] if k in df.columns and k in timing_df.columns]
+                        if join_keys and "time_seconds" in timing_df.columns:
+                            df = df.merge(timing_df[join_keys + ["time_seconds"]], on=join_keys, how="left")
+                        break
             break
 
     if df is None or len(df) == 0:

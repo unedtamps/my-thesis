@@ -47,7 +47,7 @@ if best_rows:
     display_cols = ["model", "topic_quality", "coherence_cv", "irbo_mean"]
     # Add model-specific param columns if they exist
     for col in best_df.columns:
-        if col not in display_cols and col not in ["subject", "time_seconds", "workers", "random_state", "seed"]:
+        if col not in display_cols and col not in ["subject", "workers", "random_state", "seed"]:
             display_cols.append(col)
     available = [c for c in display_cols if c in best_df.columns]
     st.dataframe(best_df[available].set_index("model"), use_container_width=True)
