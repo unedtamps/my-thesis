@@ -20,10 +20,11 @@ Evaluates how structurally stable topics remain over time.
 - *Sliding Window Drift*: RBO drift between consecutive 5-year windows
 - *Endpoint Drift*: RBO drift from window 2000–2005 → 2020–2025 (using top-60 words)
 
-**Continuity Rate** — classifies topic transitions:
-- *Stable*: topic maps 1:1 to next year
-- *Merge*: multiple topics → one
-- *Disappear*: topic has no match
+**Continuity Rate** — classifies topic transitions (RBO similarity-based):
+- *Stable*: sim ≥ 0.7, maps 1:1 to next year
+- *Evolve*: 0.3 ≤ sim < 0.7, maps 1:1 (topic shifted but recognisable)
+- *Merge*: sim ≥ 0.3, but multiple topics → one
+- *Disappear*: sim < 0.3, no match found
 - *New*: topic appears without predecessor
 """)
 st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
@@ -397,18 +398,25 @@ with tab_timeline:
             df["transition"] = df["year_from"].astype(str) + "→" + df["year_to"].astype(str)
 
             fig = go.Figure()
-            for cat, color in [("pct_stable", "#22c55e"), ("pct_merge", "#f59e0b"), ("pct_disappear", "#ef4444")]:
+            _cat_colors = [
+                ("pct_stable",   "#22c55e",  "Stable"),
+                ("pct_evolve",   "#3b82f6",  "Evolve"),
+                ("pct_merge",    "#f59e0b",  "Merge"),
+                ("pct_disappear","#ef4444",  "Disappear"),
+            ]
+            for cat, color, label in _cat_colors:
                 if cat in df.columns:
                     fig.add_trace(go.Bar(
                         x=df["transition"], y=df[cat],
-                        name=cat.replace("pct_", "").title(),
+                        name=label,
                         marker_color=color,
                     ))
 
             fig.update_layout(
-                barmode="stack", height=350,
+                barmode="stack", height=380,
                 title=f"{MODEL_LABELS[m]}: Continuity Rate Over Time",
                 yaxis_title="Percentage (%)",
+                yaxis=dict(range=[0, 100]),
                 legend=dict(orientation="h", y=-0.2),
             )
             st.plotly_chart(fig, use_container_width=True)
@@ -436,9 +444,10 @@ with tab_timeline:
                     
                     # Highlight colors for category
                     def _style_category(val):
-                        if val == "stable": return "color: #166534; font-weight: bold;"
-                        if val == "merge": return "color: #92400e; font-weight: bold;"
-                        if val == "disappear": return "color: #991b1b; font-weight: bold;"
+                        if val == "stable":   return "color: #166534; font-weight: bold;"
+                        if val == "evolve":   return "color: #1d4ed8; font-weight: bold;"
+                        if val == "merge":    return "color: #92400e; font-weight: bold;"
+                        if val == "disappear":return "color: #991b1b; font-weight: bold;"
                         return ""
                     
                     cols_to_show = ["topic_id", "transition", "words", "category", "best_match_topic", "best_match_sim"]
@@ -462,24 +471,51 @@ with tab_compare:
     for m in selected_models:
         df = load_csv(m, "consistency", subject, "continuity_summary.csv")
         if df is not None and len(df) > 0:
-            cont_data.append({
-                "model": MODEL_LABELS[m],
-                "Stable %": df["pct_stable"].mean(),
-                "Merge %": df["pct_merge"].mean(),
-                "Disappear %": df["pct_disappear"].mean(),
-            })
+            row = {"model": MODEL_LABELS[m]}
+            if "pct_stable"   in df.columns: row["Stable %"]    = df["pct_stable"].mean()
+            if "pct_evolve"   in df.columns: row["Evolve %"]    = df["pct_evolve"].mean()
+            if "pct_merge"    in df.columns: row["Merge %"]     = df["pct_merge"].mean()
+            if "pct_disappear"in df.columns: row["Disappear %"] = df["pct_disappear"].mean()
+            cont_data.append(row)
 
     if cont_data:
         cd = pd.DataFrame(cont_data)
-        cd_melt = cd.melt(id_vars="model", var_name="Category", value_name="Percentage")
+        # Ordered category list (only those present)
+        _cat_order = [c for c in ["Stable %", "Evolve %", "Merge %", "Disappear %"] if c in cd.columns]
+        cd_melt = cd.melt(id_vars="model", value_vars=_cat_order, var_name="Category", value_name="Percentage")
+        _cat_colors_cmp = {
+            "Stable %":    "#22c55e",
+            "Evolve %":    "#3b82f6",
+            "Merge %":     "#f59e0b",
+            "Disappear %": "#ef4444",
+        }
         fig = px.bar(
             cd_melt, x="model", y="Percentage", color="Category",
-            barmode="group",
-            color_discrete_map={"Stable %": "#22c55e", "Merge %": "#f59e0b", "Disappear %": "#ef4444"},
-            title="Average Continuity Rate Comparison",
+            barmode="stack",
+            color_discrete_map=_cat_colors_cmp,
+            title=f"Average Continuity Rate by Model — {SUBJECT_LABELS[subject]}",
+            category_orders={"Category": _cat_order},
         )
-        fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
+        fig.update_layout(
+            height=420,
+            yaxis=dict(range=[0, 100], title="Percentage (%)"),
+            legend=dict(orientation="h", y=-0.15),
+        )
         st.plotly_chart(fig, use_container_width=True)
+
+        # Grouped bar for side-by-side comparison
+        fig_grp = px.bar(
+            cd_melt, x="model", y="Percentage", color="Category",
+            barmode="group",
+            color_discrete_map=_cat_colors_cmp,
+            title=f"Continuity Category Breakdown (Grouped) — {SUBJECT_LABELS[subject]}",
+            category_orders={"Category": _cat_order},
+        )
+        fig_grp.update_layout(
+            height=380,
+            legend=dict(orientation="h", y=-0.15),
+        )
+        st.plotly_chart(fig_grp, use_container_width=True)
 
         ov_data = []
         for m in selected_models:
@@ -490,15 +526,25 @@ with tab_compare:
                 ov_data.append(row)
         if ov_data:
             ov_df = pd.DataFrame(ov_data)
-            cols = ["model"] + [c for c in ov_df.columns if c not in ["model", "subject"]]
-            available = [c for c in cols if c in ov_df.columns]
-            st.dataframe(ov_df[available].set_index("model"), use_container_width=True)
+            # Preferred column order
+            _pref_cols = ["model", "threshold_low", "threshold_high",
+                          "avg_pct_stable", "avg_pct_evolve", "avg_pct_merge",
+                          "avg_pct_disappear", "total_merge_groups", "total_new"]
+            cols = [c for c in _pref_cols if c in ov_df.columns] + \
+                   [c for c in ov_df.columns if c not in _pref_cols and c not in ("subject",)]
+            st.dataframe(
+                ov_df[cols].set_index("model").style.format(
+                    {c: "{:.2f}" for c in cols if c != "model" and ov_df[c].dtype in ("float64", "float32")},
+                    na_rep="—"
+                ),
+                use_container_width=True,
+            )
 
-    # ── NEW: Average & Mean New Topic table ──────────────────────────────
-    st.subheader("📊 Average & Mean New Topic per Model")
+    # ── Summary table: all avg rates + new topics ─────────────────────────
+    st.subheader("📊 Average Continuity Rates per Model")
     st.caption(
-        "Computed from yearly continuity transitions. "
-        "**Mean New Topic %** = average of (n_new / n_topics_t1 × 100) across all yearly transitions."
+        "Averages computed across all yearly transitions. "
+        "**New Topic %** = n_new / n_topics_t1 × 100 per year, then averaged."
     )
     avg_new_rows = []
     for m in selected_models:
@@ -506,20 +552,18 @@ with tab_compare:
         if df is None or len(df) == 0:
             continue
         row_data = {"Model": MODEL_LABELS[m]}
-        if "pct_stable" in df.columns:
-            row_data["Avg Stable %"] = df["pct_stable"].mean()
-        if "pct_merge" in df.columns:
-            row_data["Avg Merge %"] = df["pct_merge"].mean()
-        if "pct_disappear" in df.columns:
-            row_data["Avg Disappear %"] = df["pct_disappear"].mean()
+        if "pct_stable"    in df.columns: row_data["Avg Stable %"]    = df["pct_stable"].mean()
+        if "pct_evolve"    in df.columns: row_data["Avg Evolve %"]    = df["pct_evolve"].mean()
+        if "pct_merge"     in df.columns: row_data["Avg Merge %"]     = df["pct_merge"].mean()
+        if "pct_disappear" in df.columns: row_data["Avg Disappear %"] = df["pct_disappear"].mean()
         if "n_new" in df.columns and "n_topics_t1" in df.columns:
             pct_new_series = df["n_new"] / df["n_topics_t1"] * 100
-            row_data["Avg New Topic %"] = pct_new_series.mean()
+            row_data["Avg New Topic %"]    = pct_new_series.mean()
             row_data["Median New Topic %"] = pct_new_series.median()
-            row_data["Min New Topic %"] = pct_new_series.min()
-            row_data["Max New Topic %"] = pct_new_series.max()
+            row_data["Min New Topic %"]    = pct_new_series.min()
+            row_data["Max New Topic %"]    = pct_new_series.max()
         elif "n_new" in df.columns:
-            row_data["Avg New Topic (count)"] = df["n_new"].mean()
+            row_data["Avg New Topic (count)"]    = df["n_new"].mean()
             row_data["Median New Topic (count)"] = df["n_new"].median()
         avg_new_rows.append(row_data)
 
@@ -527,16 +571,17 @@ with tab_compare:
         avg_new_df = pd.DataFrame(avg_new_rows).set_index("Model")
         float_cols = [c for c in avg_new_df.columns if avg_new_df[c].dtype in ("float64", "float32")]
         fmt = {c: "{:.2f}" for c in float_cols}
+        _gradient_cols = [c for c in ["Avg Stable %", "Avg Evolve %", "Avg New Topic %"] if c in avg_new_df.columns]
         st.dataframe(
             avg_new_df.style.format(fmt, na_rep="—").background_gradient(
-                subset=[c for c in ["Avg Stable %", "Avg New Topic %"] if c in avg_new_df.columns],
+                subset=_gradient_cols,
                 cmap="RdYlGn",
                 axis=0,
             ),
             use_container_width=True,
         )
 
-        # Bar chart: Avg New Topic % per model
+        # ── Stacked bar: Avg New Topic % per model
         if "Avg New Topic %" in avg_new_df.columns:
             new_topic_df = avg_new_df[["Avg New Topic %"]].reset_index()
             new_topic_df.columns = ["model", "Avg New Topic %"]
@@ -545,11 +590,11 @@ with tab_compare:
                 x="model", y="Avg New Topic %",
                 color="model",
                 color_discrete_map=colors,
-                title=f"Mean New Topic % per Model — {SUBJECT_LABELS[subject]}",
+                title=f"Avg New Topic % per Model — {SUBJECT_LABELS[subject]}",
                 labels={"model": "Model", "Avg New Topic %": "Avg New Topic (%)"},
                 text_auto=".2f",
             )
-            fig_new.update_layout(height=380, showlegend=False, yaxis=dict(range=[0, 100]))
+            fig_new.update_layout(height=360, showlegend=False, yaxis=dict(range=[0, 100]))
             st.plotly_chart(fig_new, use_container_width=True)
     else:
         st.info("No continuity data found for the selected models.")
