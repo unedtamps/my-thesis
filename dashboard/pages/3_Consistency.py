@@ -444,13 +444,40 @@ with tab_timeline:
 
             # ── Topic Example: Transition detail (Topic 0 & 1) ───────────────
             st.markdown("##### 🔍 Topic Example: Transition details (Topic 0 & 1)")
-            trans_df = load_csv(m, "consistency", subject, "continuity_transitions.csv")
+            trans_df   = load_csv(m, "consistency", subject, "continuity_transitions.csv")
+            merges_df  = load_csv(m, "consistency", subject, "continuity_merges.csv")
             if trans_df is not None and not trans_df.empty:
                 ex_df = trans_df[trans_df["topic_id"].isin([0, 1])].copy()
                 if not ex_df.empty:
                     ex_df["transition"] = (
                         ex_df["year_from"].astype(str) + " → " + ex_df["year_to"].astype(str)
                     )
+
+                    # ── For merge rows: build a map (year_from, year_to, target) → [sources] ──
+                    merge_sources_map = {}
+                    if merges_df is not None and not merges_df.empty:
+                        import ast
+                        for _, mr in merges_df.iterrows():
+                            try:
+                                srcs = ast.literal_eval(str(mr["source_topics"]))
+                            except Exception:
+                                srcs = []
+                            key = (int(mr["year_from"]), int(mr["year_to"]), int(mr["target_topic"]))
+                            merge_sources_map[key] = srcs
+
+                    # ── Build best_match_display column ────────────────────────────────────────
+                    def _best_match_display(row):
+                        if row.get("category") == "merge" and "best_match_topic" in row:
+                            key = (int(row["year_from"]), int(row["year_to"]),
+                                   int(row["best_match_topic"]))
+                            srcs = merge_sources_map.get(key)
+                            if srcs:
+                                return f"{srcs} → T{int(row['best_match_topic'])}"
+                        if "best_match_topic" in row:
+                            return f"T{int(row['best_match_topic'])}"
+                        return "—"
+
+                    ex_df["best_match_display"] = ex_df.apply(_best_match_display, axis=1)
 
                     def _style_category(val):
                         if val == "stable":    return "color:#166534; font-weight:bold;"
@@ -461,13 +488,16 @@ with tab_timeline:
                         return ""
 
                     cols_to_show = ["topic_id", "transition", "words", "category",
-                                    "best_match_topic", "best_match_sim"]
+                                    "best_match_display", "best_match_sim"]
                     avail_cols = [c for c in cols_to_show if c in ex_df.columns]
-                    st_df = ex_df[avail_cols].sort_values(["topic_id", "transition"])
+                    st_df = ex_df[avail_cols].rename(
+                        columns={"best_match_display": "best_match_topic"}
+                    ).sort_values(["topic_id", "transition"])
                     styled_df = st_df.style.map(_style_category, subset=["category"])
                     if "best_match_sim" in st_df.columns:
                         styled_df = styled_df.format({"best_match_sim": "{:.4f}"}, na_rep="—")
                     st.dataframe(styled_df, use_container_width=True, hide_index=True)
+                    st.caption("🔀 **Merge** rows show all co-source topics → target, e.g. `[0, 3, 7] → T5`")
                 else:
                     st.info("Topic 0 and 1 have no transition records.")
 
