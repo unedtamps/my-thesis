@@ -1,2 +1,2 @@
-subject,threshold_low,threshold_high,avg_pct_stable,avg_pct_evolve,avg_pct_merge,avg_pct_disappear,total_merge_groups,total_new
-cs,0.2,0.5,17.85,26.8,3.64,51.71,97,1878
+subject,threshold_disappear,threshold_stable,avg_pct_stable,avg_pct_evolve,avg_pct_merge,avg_pct_mismatch,avg_pct_disappear,total_merge_groups,total_new
+cs,0.2,0.6,10.79,33.06,3.64,0.8,51.71,97,1787

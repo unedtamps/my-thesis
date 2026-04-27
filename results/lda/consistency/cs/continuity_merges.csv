@@ -1,4 +1,4 @@
 subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
 cs,2002,2003,42,2,"[31, 42]","[0.2703, 0.6828]","rbf, rbfns, matrix, frame, grassmannian, linear, manifold, dfw, wavelet, derivative"
-cs,2005,2006,34,2,"[2, 34]","[0.2703, 0.3434]","robot, rotation, arm, quaternion, rolling_shutter, space, algorithm, camera, motion, manipulator"
 cs,2005,2006,49,2,"[35, 49]","[0.2703, 0.6961]","grid, resource, computing, network, scheduling, datum, job, cluster, scheduler, reservation"
+cs,2005,2006,34,2,"[2, 34]","[0.2703, 0.3434]","robot, rotation, arm, quaternion, rolling_shutter, space, algorithm, camera, motion, manipulator"

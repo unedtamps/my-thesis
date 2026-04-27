@@ -73,7 +73,7 @@ with tab_sliding:
             color="model",
             color_discrete_map=colors,
             markers=True,
-            error_y="std_drift",
+
             title=f"Average Sliding Window Drift — {SUBJECT_LABELS[subject]}",
             labels={"avg_drift": "Avg Drift (1 − RBO)", "transition": "Window Transition"},
         )
@@ -97,7 +97,7 @@ with tab_sliding:
             color="model",
             barmode="group",
             color_discrete_map=colors,
-            error_y="std_drift",
+
             title=f"Drift per Window Transition — {SUBJECT_LABELS[subject]}",
             labels={"avg_drift": "Avg Drift", "transition": "Window Transition"},
         )
@@ -294,7 +294,7 @@ with tab_endpoint:
             x="model", y="avg_drift",
             color="model",
             color_discrete_map=colors,
-            error_y="std_drift" if "std_drift" in ep_sum_df.columns else None,
+
             title=f"Endpoint Drift (2000–2005 → 2020–2025) — {SUBJECT_LABELS[subject]}",
             labels={"avg_drift": "Avg Endpoint Drift (1 − RBO)", "model": "Model"},
         )
