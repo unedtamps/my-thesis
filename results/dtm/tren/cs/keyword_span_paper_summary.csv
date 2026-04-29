@@ -1,2 +1,2 @@
 subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
-cs,DTM,550,0.0007,6.38,0.384764,5957512,0
+cs,DTM,559,0.001146,9.5742,0.640617,6027988,0
