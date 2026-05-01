@@ -1,2 +1,2 @@
 subject,n_topics_compared,avg_drift,std_drift,median_drift,avg_pct_kept,pct_stable,pct_moderate,pct_high_drift
-physics,202,0.780103,0.161824,0.805736,16.58,0.5,33.66,65.84
+physics,202,0.780103,0.161824,0.805736,16.58,0.5,49.01,50.5

@@ -84,9 +84,9 @@ with tab_sliding:
             yaxis=dict(range=[0, 1]),
         )
         fig.add_hline(y=0.4, line_dash="dot", line_color="gray",
-                      annotation_text="Low drift", annotation_position="right")
-        fig.add_hline(y=0.7, line_dash="dot", line_color="orange",
-                      annotation_text="High drift", annotation_position="right")
+                      annotation_text="Stable threshold", annotation_position="right")
+        fig.add_hline(y=0.8, line_dash="dot", line_color="orange",
+                      annotation_text="High drift threshold", annotation_position="right")
         st.plotly_chart(fig, use_container_width=True)
 
         # ── Per-transition bar comparison ────────────────────────────────
@@ -230,9 +230,9 @@ with tab_sliding:
                         d = drift_map.get((tid, trans), None)
                         if d is None:
                             html += '<td class="dn">—</td>'
-                        elif d < 0.4:
+                        elif d <= 0.4:
                             html += f'<td class="ds">{d:.4f}</td>'
-                        elif d < 0.7:
+                        elif d <= 0.8:
                             html += f'<td class="dm">{d:.4f}</td>'
                         else:
                             html += f'<td class="dh">{d:.4f}</td>'
@@ -251,7 +251,7 @@ with tab_sliding:
 
             html += "</tbody></table>"
             st.markdown(html, unsafe_allow_html=True)
-            st.caption("🟢 Drift < 0.4 Stable · 🟡 0.4–0.7 Moderate · 🔴 ≥ 0.7 High · — = not active / last window")
+            st.caption("🟢 Drift ≤ 0.4 Stable · 🟡 0.4 < drift ≤ 0.8 Moderate · 🔴 > 0.8 High Drift · — = not active / last window")
         else:
             st.info(f"No window top-words data for {MODEL_LABELS[_ex_model]}.")
 
@@ -299,8 +299,8 @@ with tab_endpoint:
             labels={"avg_drift": "Avg Endpoint Drift (1 − RBO)", "model": "Model"},
         )
         fig.update_layout(height=380, showlegend=False, yaxis=dict(range=[0, 1]))
-        fig.add_hline(y=0.7, line_dash="dot", line_color="orange",
-                      annotation_text="High drift", annotation_position="right")
+        fig.add_hline(y=0.8, line_dash="dot", line_color="orange",
+                      annotation_text="High drift (>0.8)", annotation_position="right")
         st.plotly_chart(fig, use_container_width=True)
 
         # Distribution: stable / moderate / high
@@ -311,17 +311,17 @@ with tab_endpoint:
                 id_vars="model", var_name="Category", value_name="% Topics"
             )
             dist_melt["Category"] = dist_melt["Category"].map({
-                "pct_stable": "Stable (<0.4)",
-                "pct_moderate": "Moderate (0.4–0.7)",
-                "pct_high_drift": "High Drift (≥0.7)",
+                "pct_stable": "Stable (≤0.4)",
+                "pct_moderate": "Moderate (0.4–0.8)",
+                "pct_high_drift": "High Drift (>0.8)",
             })
             fig2 = px.bar(
                 dist_melt, x="model", y="% Topics", color="Category",
                 barmode="stack",
                 color_discrete_map={
-                    "Stable (<0.4)": "#22c55e",
-                    "Moderate (0.4–0.7)": "#f59e0b",
-                    "High Drift (≥0.7)": "#ef4444",
+                    "Stable (≤0.4)": "#22c55e",
+                    "Moderate (0.4–0.8)": "#f59e0b",
+                    "High Drift (>0.8)": "#ef4444",
                 },
                 title=f"Endpoint Drift Distribution by Model — {SUBJECT_LABELS[subject]}",
             )

@@ -237,35 +237,60 @@ with tab_shared_summary:
 with tab_shared_table:
     shared_df = load_shared_csv(subject, "shared_keyword_span.csv")
     if shared_df is not None and len(shared_df) > 0:
+        # Determine full-span threshold (max possible span across all models)
+        span_model_cols = [f"span_{MODEL_LABELS[m]}" for m in selected_models
+                           if f"span_{MODEL_LABELS[m]}" in shared_df.columns]
+        max_span = int(shared_df[span_model_cols].max().max()) if span_model_cols else 0
+
         # Build side-by-side SPAN table (like paper Table 6)
+        # Include n_full_span indicator column per model
         span_cols = ["word", "v_hat"]
+        col_config = {
+            "word": "Keyword",
+            "v_hat": "v̂ₖ (corpus freq)",
+        }
+        display_df = shared_df.copy()
         for m in selected_models:
             lbl = MODEL_LABELS[m]
-            if f"span_{lbl}" in shared_df.columns:
-                span_cols.append(f"span_{lbl}")
+            span_col = f"span_{lbl}"
+            full_col = f"full_{lbl}"
+            if span_col in display_df.columns:
+                display_df[full_col] = display_df[span_col] == max_span
+                span_cols.append(span_col)
+                span_cols.append(full_col)
+                col_config[span_col] = f"SPAN ({lbl})"
+                col_config[full_col] = st.column_config.CheckboxColumn(
+                    f"Full ({lbl})", help=f"SPAN = {max_span} (all years)"
+                )
 
-        st.markdown(f"**Total Intersection Keywords:** {len(shared_df):,} terms")
-        
+        st.markdown(f"**Total Intersection Keywords:** {len(shared_df):,} terms  |  "
+                    f"**Full SPAN threshold:** {max_span} years")
+
         col1, col2 = st.columns(2)
         with col1:
-            sort_col = st.selectbox("Sort by", ["v_hat"] + [f"span_{MODEL_LABELS[m]}" for m in selected_models],
-                                    key="shared_sort", format_func=lambda x: x.replace("span_", "SPAN ").replace("v_hat", "Corpus freq (v̂ₖ)"))
+            sort_col = st.selectbox(
+                "Sort by",
+                ["v_hat"] + [f"span_{MODEL_LABELS[m]}" for m in selected_models],
+                key="shared_sort",
+                format_func=lambda x: x.replace("span_", "SPAN ").replace("v_hat", "Corpus freq (v̂ₖ)"),
+            )
         with col2:
             limit_rows = st.selectbox("Show top N rows", [50, 100, 500, 1000, "All"], key="shared_limit")
 
-        df_show = shared_df[span_cols].sort_values(sort_col, ascending=False).reset_index(drop=True)
+        df_show = display_df[span_cols].sort_values(sort_col, ascending=False).reset_index(drop=True)
         if limit_rows != "All":
             df_show = df_show.head(limit_rows)
 
-        st.dataframe(
-            df_show,
-            use_container_width=True,
-            column_config={
-                "word": "Keyword",
-                "v_hat": "v̂ₖ (corpus freq)",
-                **{f"span_{MODEL_LABELS[m]}": f"SPAN ({MODEL_LABELS[m]})" for m in selected_models},
-            },
-        )
+        st.dataframe(df_show, use_container_width=True, column_config=col_config)
+
+        # n_full_span summary per model
+        full_counts = {
+            MODEL_LABELS[m]: int((shared_df[f"span_{MODEL_LABELS[m]}"] == max_span).sum())
+            for m in selected_models
+            if f"span_{MODEL_LABELS[m]}" in shared_df.columns
+        }
+        summary_parts = " | ".join(f"**{lbl}**: {cnt}" for lbl, cnt in full_counts.items())
+        st.caption(f"🏆 **n\\_full\\_span** (keywords with SPAN = {max_span}):  {summary_parts}")
     else:
         st.info("No shared keyword data available.")
 
