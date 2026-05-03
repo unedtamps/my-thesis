@@ -20,9 +20,9 @@ Analyzes how topics change over the 25-year timeline (2000–2025).
 and identifies growing/stable/declining topics via linear regression slope.
 
 **Part B — Evolution Quality**: Measures how well topics maintain quality during transitions:
-- **TTC** — cross-time coherence (topic words at *t* evaluated on corpus at *t+1*)
-- **TTS** — term stability (cosine similarity of vocabulary *t* → *t+1*)
-- **TTQ** — combined quality (TTC × TTS)
+- **TTC** — Temporal Topic Coherence: normalized NPMI of strict cross-time word pairs (*words_t* × *words_t+1*) evaluated against the full corpus
+- **TTS** — Temporal Topic Stability: RBO (Rank-Biased Overlap) similarity of word rankings between *t* and *t+1*
+- **TTQ** — Temporal Topic Quality: harmonic mean of TTC and TTS
 
 """
 )

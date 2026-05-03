@@ -1,2 +1,2 @@
 subject,threshold_disappear,threshold_stable,avg_pct_stable,avg_pct_evolve,avg_pct_merge,avg_pct_mismatch,avg_pct_disappear,total_merge_groups,total_new
-physics,0.2,0.6,7.93,40.87,5.34,1.05,44.81,140,2136
+physics,0.2,0.6,7.93,40.87,2.58,3.81,44.81,140,2136

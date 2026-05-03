@@ -103,19 +103,3 @@ if len(trans) > 0:
     st.plotly_chart(fig, use_container_width=True)
 else:
     st.info("No evolution data available.")
-
-# --- Cross-model: SPAN summary ---
-st.subheader("Keyword SPAN Comparison (Trend Category)")
-tc_path = RESULTS_DIR / "shared" / "tren" / subject / "trend_category_span_summary.csv"
-if tc_path.exists():
-    span_all = pd.read_csv(tc_path)
-    span_filtered = span_all[(span_all["model"].isin([MODEL_LABELS[m] for m in selected_models])) & (span_all["category"] != "all")]
-    fig = px.bar(
-        span_filtered, x="category", y="avg_span_paper", color="model",
-        barmode="group", color_discrete_map=colors,
-        labels={"avg_span_paper": "avg-SPAN (paper)", "category": "Keyword Category", "model": "Model"},
-    )
-    fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
-    st.plotly_chart(fig, use_container_width=True)
-else:
-    st.info("No Trend Category SPAN data available. Run `trend_category_span.py` first.")

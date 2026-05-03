@@ -11,8 +11,8 @@ from utils.data_loader import (
     load_csv, load_all_models, setup_sidebar, model_color_map,
 )
 
-st.set_page_config(page_title="Scenario 3: Consistency", page_icon="🔗", layout="wide")
-st.title("🔗 Scenario 3: Structural Consistency")
+st.set_page_config(page_title="Scenario 3: Dynamics and Transitions", page_icon="🔗", layout="wide")
+st.title("🔗 Scenario 3: Dynamics and Transitions")
 st.markdown("""
 Evaluates how structurally stable topics remain over time.
 
@@ -24,8 +24,8 @@ Evaluates how structurally stable topics remain over time.
 - *Disappear*: sim ≤ 0.2 — topic lost, no recognisable successor
 - *Merge*: sim > 0.2, but >1 topic maps to the same t+1-topic
 - *Mismatch*: sim > 0.2, single source, but best-match ID ≠ own ID (topic drifted to a different slot)
-- *Stable*: sim > 0.5, best-match ID = own ID (topic persists clearly)
-- *Evolve*: 0.2 < sim ≤ 0.5, best-match ID = own ID (topic recognisable but shifting)
+- *Stable*: sim > 0.6, best-match ID = own ID (topic persists clearly)
+- *Evolve*: 0.2 < sim ≤ 0.6, best-match ID = own ID (topic recognisable but shifting)
 - *New*: t+1-topic has no incoming match with sim > 0.2
 """)
 st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)

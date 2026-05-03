@@ -56,23 +56,23 @@ GLOSSARY = {
         "page": "Scenario 2: Evolution",
         "page_link": "/2_Evolution",
     },
-    "TTC (Topic Transition Coherence)": {
-        "definition": "Cross-time coherence: evaluates whether a topic's words at time t are still coherent against the corpus at time t+1. High TTC means the topic remains meaningful.",
-        "formula": "TTC = C_v(words_at_t, corpus_at_t+1)",
+    "TTC (Temporal Topic Coherence)": {
+        "definition": "Temporal Topic Coherence: measures how semantically related topic words at time t are with topic words at t+1, evaluated against the full corpus using normalized NPMI. Specifically, all cross-time word pairs (w_i from t) × (w_j from t+1) are scored using NPMI, then normalized to [0, 1] via (NPMI + 1) / 2. High TTC means the topic transitions smoothly and remains meaningful.",
+        "formula": "TTC = mean( (NPMI(w_i, w_j) + 1) / 2 )  for w_i ∈ words_t, w_j ∈ words_{t+1}",
         "range": "0 to 1 (higher = better)",
         "page": "Scenario 2: Evolution",
         "page_link": "/2_Evolution",
     },
-    "TTS (Topic Term Stability)": {
-        "definition": "Cosine similarity of topic word vectors between consecutive years. High TTS means the topic vocabulary is stable over time.",
-        "formula": "TTS = cosine_sim(word_vector_t, word_vector_t+1)",
+    "TTS (Temporal Topic Stability)": {
+        "definition": "Temporal Topic Stability: measures how similar the ranked word lists of a topic are between consecutive years using Rank-Biased Overlap (RBO). Unlike cosine similarity, RBO is rank-sensitive — words ranked higher contribute more to the score. High TTS means the topic's vocabulary and word ordering remain consistent over time.",
+        "formula": "TTS = RBO(ranked_words_t, ranked_words_{t+1}, p=0.9)",
         "range": "0 to 1 (higher = more stable)",
         "page": "Scenario 2: Evolution",
         "page_link": "/2_Evolution",
     },
-    "Topic Transitions Quality (TTQ)": {
-        "definition": "Combined evolution quality metric. A topic must be both coherent (TTC) and stable (TTS) to score high.",
-        "formula": "TTQ = TTC × TTS",
+    "TTQ (Temporal Topic Quality)": {
+        "definition": "Temporal Topic Quality: combined evolution quality metric computed as the harmonic mean of TTC and TTS. Using the harmonic mean ensures both coherence and stability must be high simultaneously — a high score in only one dimension will not yield a high TTQ.",
+        "formula": "TTQ = 2 × (TTC × TTS) / (TTC + TTS)",
         "range": "0 to 1 (higher = better)",
         "page": "Scenario 2: Evolution",
         "page_link": "/2_Evolution",
@@ -80,9 +80,9 @@ GLOSSARY = {
 
     # Scenario 3
     "TTD (Topic Term Drift)": {
-        "definition": "Measures how much a topic's vocabulary has changed over time. Uses binary cosine distance between topic word sets at two time points.",
+        "definition": "Topic Term Drift: measures how much a topic's top-word set has changed between two time points. Each topic's words are encoded as a binary presence vector over the full vocabulary, then the cosine distance between the two vectors is computed. TTD = 0 means the topic vocabulary is identical; TTD = 1 means completely different sets of words.",
         "formula": "TTD = 1 - cosine_sim(binary_word_vector_t1, binary_word_vector_t2)",
-        "range": "0 to 1 (0 = identical, 1 = completely different)",
+        "range": "0 to 1 (0 = no drift, 1 = complete vocabulary replacement)",
         "page": "Scenario 3: Consistency",
         "page_link": "/3_Consistency",
     },
