@@ -57,9 +57,13 @@ for m in selected_models:
     cont_trans = load_csv(m, "consistency", subject, "continuity_transitions.csv")
     labels_df = load_csv(m, "temporal", subject, "topic_labels.csv")
     yearly_desc_df = load_csv(m, "temporal", subject, "topic_yearly_descriptions.csv")
-    
+
     global_words_path = RESULTS_DIR / m / "modeling" / "global_top_words.csv"
     global_words_df = pd.read_csv(global_words_path) if global_words_path.exists() else None
+
+    # Load trend top words per category for this model + subject
+    trend_kw_path = RESULTS_DIR / "shared" / "trend_model" / m / subject / "trend_top_words.csv"
+    trend_kw_df = pd.read_csv(trend_kw_path) if trend_kw_path.exists() else None
 
     # Build label & description lookup from topic_labels.csv
     topic_label_map = {}
@@ -195,10 +199,11 @@ for m in selected_models:
         # ────────────────────────────────────────────
         # TAB LAYOUT per model
         # ────────────────────────────────────────────
-        t_evo, t_consist, t_cont = st.tabs([
+        t_evo, t_consist, t_cont, t_kw = st.tabs([
             "📈 Evolution & Prevalence",
             "🔗 Term Drift (TTD)",
             "🔄 Continuity",
+            "🏷️ Trend Keywords",
         ])
 
         # ── TAB 1: Evolution ──
@@ -415,3 +420,58 @@ for m in selected_models:
                     st.info("No continuity data for selected topics.")
             else:
                 st.info("No continuity data available.")
+
+        # ── TAB 4: Trend Keywords ──
+        with t_kw:
+            st.markdown(
+                "Top-20 kata dengan frekuensi kemunculan tertinggi dari topik-topik "
+                "yang dikategorikan **GROWING**, **STABLE**, dan **DECLINING** "
+                f"dalam model **{label}** untuk subjek **{subject.upper()}**."
+            )
+            if trend_kw_df is None or len(trend_kw_df) == 0:
+                st.info("Trend keyword data not available for this model / subject.")
+            else:
+                TREND_ICON = {"GROWING": "📈", "STABLE": "🔒", "DECLINING": "📉"}
+                TREND_COLOR = {
+                    "GROWING":  "#22c55e",  # green
+                    "STABLE":   "#3b82f6",  # blue
+                    "DECLINING": "#ef4444", # red
+                }
+                cat_cols = st.columns(3)
+
+                for col_idx, cat in enumerate(["GROWING", "STABLE", "DECLINING"]):
+                    cat_df = trend_kw_df[trend_kw_df["trend"] == cat].sort_values("rank")
+                    icon = TREND_ICON[cat]
+                    color = TREND_COLOR[cat]
+                    n_topics = int(cat_df.iloc[0]["n_topics_in_category"]) if len(cat_df) > 0 else 0
+
+                    with cat_cols[col_idx]:
+                        st.markdown(
+                            f"<h5 style='color:{color}; margin-bottom:4px'>"
+                            f"{icon} {cat} <span style='font-size:0.75em; color:#888'>({n_topics} topics)</span>"
+                            f"</h5>",
+                            unsafe_allow_html=True,
+                        )
+                        if cat_df.empty:
+                            st.caption("No data")
+                        else:
+                            # Display as a styled table
+                            rows_html = "".join(
+                                f"<tr>"
+                                f"<td style='color:#888;font-size:0.78em;padding:2px 6px'>{int(r['rank'])}</td>"
+                                f"<td style='font-weight:500;padding:2px 6px'>{r['word']}</td>"
+                                f"<td style='color:#888;font-size:0.78em;text-align:right;padding:2px 6px'>{int(r['freq'])}</td>"
+                                f"</tr>"
+                                for _, r in cat_df.iterrows()
+                            )
+                            st.markdown(
+                                f"<table style='width:100%;border-collapse:collapse;font-size:0.88em'>"
+                                f"<thead><tr>"
+                                f"<th style='text-align:left;color:#aaa;font-size:0.78em;padding:2px 6px'>#</th>"
+                                f"<th style='text-align:left;color:#aaa;font-size:0.78em;padding:2px 6px'>Word</th>"
+                                f"<th style='text-align:right;color:#aaa;font-size:0.78em;padding:2px 6px'>Freq</th>"
+                                f"</tr></thead>"
+                                f"<tbody>{rows_html}</tbody>"
+                                f"</table>",
+                                unsafe_allow_html=True,
+                            )
