@@ -167,6 +167,43 @@ for m in selected_models:
                 if len(t_row) > 0:
                     t_r_squared[tid] = float(t_row.iloc[0]["r_squared"])
 
+        # ── Category Distribution Summary ──
+        all_cats = [t_categories.get(t, "") for t in topic_ids if t_categories.get(t, "") != ""]
+        total_cats = len(all_cats)
+        cat_order = ["GROWING", "STABLE", "DECLINING"]
+        cat_icons = {"GROWING": "📈", "STABLE": "🔒", "DECLINING": "📉"}
+        cat_colors_hex = {"GROWING": "#22c55e", "STABLE": "#3b82f6", "DECLINING": "#ef4444"}
+        cat_bg = {"GROWING": "#052e16", "STABLE": "#1e3a5f", "DECLINING": "#450a0a"}
+
+        if total_cats > 0:
+            st.markdown("**📊 Distribusi Kategori Topik**")
+            cat_metric_cols = st.columns(3)
+            for ci, cat in enumerate(cat_order):
+                count = all_cats.count(cat)
+                pct = count / total_cats * 100
+                icon = cat_icons[cat]
+                color = cat_colors_hex[cat]
+                bg = cat_bg[cat]
+                with cat_metric_cols[ci]:
+                    st.markdown(
+                        f"""
+                        <div style='
+                            background:{bg};
+                            border:1px solid {color}44;
+                            border-left: 4px solid {color};
+                            border-radius:8px;
+                            padding:10px 14px;
+                            margin-bottom:8px;
+                        '>
+                            <div style='font-size:0.78em;color:{color};font-weight:600;letter-spacing:0.05em'>{icon} {cat}</div>
+                            <div style='font-size:1.7em;font-weight:700;color:#fff;line-height:1.2'>{count}</div>
+                            <div style='font-size:0.88em;color:#aaa'>{pct:.1f}% dari {total_cats} topik</div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
+            st.markdown("<div style='margin-bottom:4px'></div>", unsafe_allow_html=True)
+
         # Sort option
         sort_by = st.radio(
             "Sort by", ["Topic ID", "📊 Article Count (↓)", "📐 R² (↓)"],
