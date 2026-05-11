@@ -1,0 +1,3 @@
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+math,2014,2015,4,2,"[4, 72]","[0.8415, 0.5075]","groups, group, subgroups, subgroup, finite, gg, word, floyd, finitely, hyperbolic"
+math,2015,2016,62,2,"[62, 94]","[0.5462, 0.5364]","game, games, pebble, tg, number, player, stacks, mh, rubik, players"

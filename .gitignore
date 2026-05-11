@@ -22,6 +22,7 @@ embedding/*
 # Saved models (large binary files)
 models/*
 !models/**/.gitkeep
+unused_code
 
 
 # Misc

@@ -1,139 +1,277 @@
 subject,topic_id,topic_label,top_words,total_docs,first_year,last_year,early_proportion,late_proportion,slope,r_squared,p_value,trend
-cs,0,Web Text Database Classification,"query, document, search, search_engine, text",349,2000,2025,0.076935,0.003464,-0.0031916,0.6742,0.0,DECLINING
-cs,1,AI Story Understanding,"dialogue, llm, narrative, dataset, text",560,2000,2025,0.005298,0.007841,0.0004095,0.2878,0.004727,GROWING
-cs,2,Novelty-Based Retrieval Evaluation,"retrieval, document, query, relevance, llm",318,2000,2025,0.013431,0.004824,-0.00021744,0.0685,0.196437,STABLE
-cs,3,Predictor-Based Parsing,"reasoning, llm, logical, language, visual",508,2000,2025,0.021333,0.007747,-0.00034584,0.0575,0.238028,STABLE
-cs,4,Combinatorial Auction Optimization,"agent, auction, item, algorithm, facility_location",276,2000,2025,0.031305,0.003,-0.0011414,0.4346,0.000249,DECLINING
-cs,5,Variable Word Rate Modeling,"language, llm, text, generation, context",644,2000,2025,0.021852,0.009308,-0.0002134,0.0154,0.545718,STABLE
-cs,6,Multi-Channel Rate Distortion Optimization,"channel, scheme, communication, wireless, rate",485,2000,2025,0.073526,0.002324,-0.00222414,0.1378,0.061852,STABLE
-cs,7,Spatial-Textual Document Analysis,"document, point_cloud, image, scene, segmentation",274,2011,2025,0.003185,0.004745,0.00023779,0.7559,0.0,GROWING
-cs,8,Conditional Rewriting Systems,"automata, proof, logic, regular, rule",247,2000,2025,0.055465,0.001799,-0.00258711,0.6362,1e-06,DECLINING
-cs,9,User Privacy Tools,"privacy, datum, policy, compliance, differential_privacy",248,2000,2025,0.013884,0.003486,-0.00019907,0.0593,0.230522,STABLE
-cs,10,Spec-Language Compilation,"program, llm, language, code, specification",679,2000,2025,0.09509,0.0072,-0.00364448,0.6482,1e-06,DECLINING
-cs,11,Distributed Object Store Coherence,"memory, cxl, storage, datum, workload",291,2000,2025,0.029012,0.003099,-0.00091246,0.2442,0.010291,DECLINING
-cs,12,Planar Graph Encoding,"graph, vertex, algorithm, edge, planar",269,2001,2025,0.02706,0.002475,-0.00089085,0.3395,0.001789,DECLINING
-cs,13,Resource Discovery Infrastructure,"language, rag, llm, metadata, retrieval",247,2000,2025,0.058185,0.003244,-0.00220693,0.4456,0.000195,DECLINING
-cs,14,Dynamic Topic Modeling,"dialogue, language, attention, context, llm",244,2001,2025,0.004992,0.003888,0.00012624,0.0951,0.125317,STABLE
-cs,15,Distributed Time-Stamped Key Archiving,"blockchain, protocol, consensus, byzantine, transaction",271,2001,2025,0.021351,0.003391,-0.00055455,0.2636,0.007301,DECLINING
-cs,16,Graph Realization Theory,"graph, vertex, class, mathcal_mathcal, mathsf",305,2000,2025,0.025437,0.002821,-0.000902,0.3851,0.000719,DECLINING
-cs,17,Incremental Universal Search,"llm, reasoning, search, language, knowledge",376,2002,2025,0.005461,0.00622,0.00019196,0.198,0.022742,GROWING
-cs,18,Planning-Augmented RL,"policy, reinforcement_learning, agent, action, reward",1212,2001,2025,0.020438,0.019524,0.00035176,0.0514,0.265352,STABLE
-cs,19,Domain-Informed Sampling,"image, clinical, dataset, pathology, medical",250,2002,2025,0.003293,0.003884,0.00011131,0.1027,0.110517,STABLE
-cs,20,Semantic Polarity Learning,"sentiment, language, llm, emotion, polarity",229,2002,2025,0.015143,0.003292,-0.00026065,0.0514,0.265189,STABLE
-cs,21,Cross-Lingual Patent Retrieval,"image, dataset, visual, retrieval, representation",309,2015,2025,0.00689,0.004792,0.00029803,0.5388,2e-05,GROWING
-cs,22,Context-Dependent Classification,"graph, datum, dataset, classification, gnn",333,2002,2025,0.006296,0.005851,0.00011322,0.0338,0.368707,STABLE
-cs,23,Adaptive Motivation Learning,"policy, agent, reinforcement_learning, reward, robot",424,2013,2025,0.004846,0.006995,0.00037583,0.6893,0.0,GROWING
-cs,24,Monotone Hypergraph Transversals,"graph, vertex, polynomial, algorithm, tree",347,2001,2025,0.014558,0.003684,-0.00024574,0.0206,0.484314,STABLE
-cs,25,Catadioptric Projection Optimization,"view, reconstruction, image, camera, surface",246,2003,2025,0.003935,0.004432,0.00013139,0.1584,0.044037,GROWING
-cs,26,Epistemic Blame Theory,"causal, llm, graph, reasoning, datum",284,2003,2025,0.004697,0.005051,0.00016708,0.189,0.026447,GROWING
-cs,27,Runtime Monitoring Languages,"security, verification, attack, protocol, rust",386,2000,2025,0.023824,0.005056,-0.00064952,0.1812,0.030126,DECLINING
-cs,28,Hypergraph Approximation Hardness,"graph, vertex, hypergraph, algorithm, polynomial",411,2000,2025,0.019099,0.004431,-0.0006287,0.2312,0.012891,DECLINING
-cs,29,AS Topology Modeling,"network, node, graph, degree, failure",263,2000,2025,0.053426,0.00167,-0.00229651,0.3643,0.001097,DECLINING
-cs,30,Single-Camera Gaze-Orientation Estimation,"gaze, human, visual, attention, eye_tracking",317,2004,2025,0.004889,0.004914,0.00020152,0.3214,0.002526,GROWING
-cs,31,Dominating Set Approximation and Partial Order Episode Mining,"graph, algorithm, vertex, approximation, matching",320,2000,2025,0.024462,0.003953,-0.00092505,0.5324,2.3e-05,DECLINING
-cs,32,Nonlinear Rating Scaling,"reward, policy, preference, reinforcement_learning, llm",558,2011,2025,0.003173,0.009048,0.00040214,0.5873,5e-06,GROWING
-cs,33,Decentralized Identity Networks,"attack, agent, network, trust, social",246,2003,2025,0.012939,0.002712,-0.00017791,0.0467,0.288914,STABLE
-cs,34,Succinct Model Representation,"polynomial, csp, formula, circuit, boolean",263,2000,2025,0.057223,0.002189,-0.00283816,0.7775,0.0,DECLINING
-cs,35,Space-Time Coding Performance,"channel, antenna, beam, mimo, communication",401,2004,2025,0.059548,0.003241,-0.00106645,0.075,0.175739,STABLE
-cs,36,MIMO Channel Optimization,"channel, antenna, ris, mimo, fas",406,2004,2025,0.040979,0.003352,-0.00079037,0.0743,0.177766,STABLE
-cs,37,Capacity-Aware Mechanism Design,"auction, bidder, revenue, buyer, advertiser",240,2001,2025,0.018714,0.002659,-0.0003692,0.0859,0.146241,STABLE
-cs,38,Intrinsic Dimension Analysis,"manifold, datum, dimensional, euclidean, dimension",279,2002,2025,0.010729,0.003742,-0.00010039,0.0251,0.439216,STABLE
-cs,39,Energy-Efficient Communication,"ris, energy, wireless, communication, channel",280,2005,2025,0.009208,0.002268,0.00018126,0.0257,0.434198,STABLE
-cs,40,Rate-Distortion Testing,"image, video, compression, distortion, quality",305,2012,2025,0.002407,0.004791,0.00029036,0.6557,1e-06,GROWING
-cs,41,Orthogonal Group Coding Theory,"code, mds, cyclic, dual, field",343,2001,2025,0.054491,0.00279,-0.00246266,0.4729,0.000104,DECLINING
-cs,42,Dual Code Gray Mapping,"code, mathbb_mathbb, linear, weight, goppa",327,2002,2025,0.038833,0.00312,-0.00120728,0.2978,0.003929,DECLINING
-cs,43,Valuation-Based Metrics,"attack, defense, backdoor, backdoor_attack, datum",331,2013,2025,0.003065,0.006204,0.00027848,0.6482,1e-06,GROWING
-cs,44,Monotone Search Games,"game, player, graph, agent, strategy",320,2001,2025,0.025669,0.002771,-0.00101767,0.3121,0.003013,DECLINING
-cs,45,Dynamic Network Optimization,"agent, robot, multi, marl, communication",349,2000,2025,0.01323,0.005702,-0.00010065,0.0212,0.477416,STABLE
-cs,46,Finite Field Sparse Matrix Multiplication,"matrix, matrix_multiplication, gpu, sparse, algorithm",337,2000,2025,0.014972,0.00384,-0.00052273,0.1543,0.047164,DECLINING
-cs,47,Kernel Herding Methods,"kernel, distribution, gaussian, posterior, bayesian",404,2005,2025,0.009868,0.005738,0.00029931,0.2014,0.021481,GROWING
-cs,48,Social Network Aggregation Dynamics,"opinion, network, social, node, voting",426,2001,2025,0.010042,0.003725,-0.00021909,0.0104,0.620402,STABLE
-cs,49,Mobile Augmented Reality Systems,"object_detection, vehicle, detection, image, yolo",212,2008,2025,0.003131,0.003403,0.00018446,0.5533,1.3e-05,GROWING
-cs,50,Differential Privacy Mechanisms,"privacy, differential_privacy, private, datum, utility",459,2004,2025,0.010477,0.007071,0.00031999,0.244,0.010333,GROWING
-cs,51,Real-Time Compression Systems,"quantization, bit, compression, inference, precision",336,2013,2025,0.003577,0.004874,0.00033126,0.5593,1.1e-05,GROWING
-cs,52,Edge-Cloud Deployment,"cloud, edge, computing, service, network",300,2008,2025,0.006455,0.004401,0.00025852,0.2429,0.010521,GROWING
-cs,53,Velocity-Aware Action Recognition,"motion, action, video, recognition, human",836,2011,2025,0.009741,0.011787,0.00088972,0.4729,0.000104,GROWING
-cs,54,Cluttered Grasping Optimization,"object, robot, manipulation, grasp, policy",352,2012,2025,0.004184,0.005581,0.00031086,0.6909,0.0,GROWING
-cs,55,Visual Debugging Sequences,"attack, adversarial, dnn, vulnerability, deep_learning",358,2015,2025,0.006615,0.005587,0.00035533,0.5254,2.8e-05,GROWING
-cs,56,Compressed Data Detection,"traffic, network, iot, attack, security",290,2006,2025,0.004568,0.004688,0.00024581,0.4387,0.000228,GROWING
-cs,57,Sparse Weight Tuning Networks,"datum, dataset, tabular, training, deep_learning",1079,2012,2025,0.005116,0.018004,0.00100113,0.7421,0.0,GROWING
-cs,58,Psychiatric Readmission Prediction,"clinical, patient, mental_health, ehr, medical",304,2011,2025,0.003236,0.004884,0.00026671,0.7103,0.0,GROWING
-cs,59,Domain Expert Usability AI,"medical, clinical, image, expert, datum",222,2016,2025,0.001226,0.003965,0.0001707,0.6398,1e-06,GROWING
-cs,60,Cuboid Structure Recovery,"image, object, shape, segmentation, reconstruction",561,2011,2025,0.011605,0.008073,0.00058147,0.46,0.00014,GROWING
-cs,61,Bandit Learning Games,"regret, bandit, agent, algorithm, game",1193,2001,2025,0.016437,0.01817,0.00030617,0.0406,0.323828,STABLE
-cs,62,Characteristic-Driven Summarization,"summarization, summary, text, document, llm",256,2000,2025,0.019782,0.004275,-0.00046014,0.2251,0.01433,DECLINING
-cs,63,Sub-Character MT Performance,"character, language, translation, machine_translation, font",276,2002,2025,0.011129,0.003297,9.535e-05,0.0154,0.546502,STABLE
-cs,64,Audio Prior Networks,"audio, sound, music, separation, acoustic",331,2012,2025,0.005145,0.005093,0.00032381,0.5987,4e-06,GROWING
-cs,65,Video Explainability Frameworks,"video, explanation, image, temporal, dataset",875,2013,2025,0.010934,0.013568,0.00083105,0.6479,1e-06,GROWING
-cs,66,Soft Channel Coding Exponents,"channel, code, rate, exponent, capacity",523,2001,2025,0.075489,0.002896,-0.0026499,0.1821,0.029708,DECLINING
-cs,67,Millimeter Wave 5G Integration,"satellite, mmwave, network, terrestrial, communication",272,2001,2025,0.007232,0.002772,0.00021172,0.0635,0.214237,STABLE
-cs,68,UAV-5G Blockchain Networks,"blockchain, uav, iot, edge, network",203,2017,2025,0.004102,0.003432,0.00018527,0.5773,7e-06,GROWING
-cs,69,Quantum Random Feature Sampling,"quantum, classical, quantum_circuit, qml, qubit",324,2010,2025,0.003969,0.005653,0.00025931,0.6818,0.0,GROWING
-cs,70,GAN Attribute Editing,"image, attribute, fashion, editing, facial",213,2014,2025,0.004369,0.00335,0.00021644,0.4985,5.6e-05,GROWING
-cs,71,Cold Start Recommendation,"recommendation, item, recommender, llm, preference",847,2001,2025,0.007948,0.012862,0.00050913,0.429,0.000283,GROWING
-cs,72,Random Layer Mixup,"segmentation, image, medical, dataset, datum",1967,2013,2025,0.018051,0.033841,0.00182608,0.6869,0.0,GROWING
-cs,73,Multimodal Semantic Forecasting,"trajectory, prediction, traffic, autonomous_driving, motion",473,2012,2025,0.002381,0.007872,0.00040006,0.7702,0.0,GROWING
-cs,74,Pessimistic Reinforcement Learning,"safety, policy, reward, safe, reinforcement_learning",250,2008,2025,0.00293,0.004508,0.00020173,0.5394,1.9e-05,GROWING
-cs,75,Abuse Intent Detection,"hate_speech, detection, hate, language, hate_speech_detection",309,2014,2025,0.003159,0.005447,0.00029252,0.6433,1e-06,GROWING
-cs,76,Temporal Fact Verification,"llm, claim, fact, reasoning, factual",436,2012,2025,0.001698,0.007608,0.00035393,0.7384,0.0,GROWING
-cs,77,Interpretable Neural Architectures,"explanation, interpretable, interpretability, neural_network, decision",294,2008,2025,0.002999,0.004796,0.00023623,0.5758,7e-06,GROWING
-cs,78,Diffusion-Based Image Refinement,"image, diffusion, restoration, reconstruction, quality",546,2010,2025,0.004545,0.008594,0.00044466,0.7161,0.0,GROWING
-cs,79,Dietary Supplement CA Systems,"llm, drug, medical, patient, clinical",221,2013,2025,0.00207,0.00355,0.00017926,0.7573,0.0,GROWING
-cs,80,Self-Supervised Embodied Learning,"visual, agent, navigation, environment, representation",600,2014,2025,0.005234,0.009621,0.00049341,0.7312,0.0,GROWING
-cs,81,Multilingual Image Captioning,"image, caption, visual, captioning, text",551,2000,2025,0.00781,0.008713,0.00035903,0.2865,0.004837,GROWING
-cs,82,Human Feedback Modeling,"human, agent, interaction, robot, dialogue",233,2009,2025,0.004243,0.003687,0.00018982,0.4859,7.6e-05,GROWING
-cs,83,Hybrid Grasp Metrics,"robot, grasp, object, force, manipulation",397,2004,2025,0.005211,0.006531,0.00025847,0.3852,0.000717,GROWING
-cs,84,Phoneme Granularity Contrastive Learning,"speech, asr, speaker, language, speech_recognition",850,2006,2025,0.005534,0.014327,0.00074682,0.7056,0.0,GROWING
-cs,85,Self-Supervised AST Pretraining,"audio, speech, speaker, self, dataset",645,2015,2025,0.005396,0.012244,0.00057323,0.7055,0.0,GROWING
-cs,86,Multiset Hypergraph Learning,"graph, gnn, node, representation, dataset",1146,2012,2025,0.004377,0.020838,0.00101743,0.7549,0.0,GROWING
-cs,87,Domain-Generalization MOT,"underwater, image, dataset, fish, detection",402,2008,2025,0.005834,0.006783,0.00034855,0.646,1e-06,GROWING
-cs,88,Cross-Modal Prototype Matching,"video, image, retrieval, text, multimodal",939,2005,2025,0.005696,0.016363,0.00075242,0.7786,0.0,GROWING
-cs,89,Multilingual Entity Name Datasets,"entity, language, ner, knowledge, llm",347,2002,2025,0.023288,0.005046,-0.00042788,0.1326,0.0674,STABLE
-cs,90,Self-Supervised Keypoint Detection,"pose, human, image, point_cloud, estimation",779,2012,2025,0.004556,0.012587,0.00074396,0.6868,0.0,GROWING
-cs,91,Neuromorphic CAD Systems,"accelerator, energy, hardware, neuromorphic, snn",502,2005,2025,0.00421,0.007546,0.00043776,0.6362,1e-06,GROWING
-cs,92,Point Cloud SSM Learning,"shape, point_cloud, registration, surface, anatomical",436,2015,2025,0.003154,0.007868,0.00037731,0.6541,1e-06,GROWING
-cs,93,Periodic Universal Audio Synthesis,"speech, audio, synthesis, speaker, diffusion",404,2006,2025,0.004826,0.00669,0.00035577,0.5077,4.4e-05,GROWING
-cs,94,Cross-Lingual Scene Text SR,"image, text, super_resolution, scene, dataset",273,2014,2025,0.006401,0.003758,0.00028005,0.4655,0.000123,GROWING
-cs,95,Heat-Diffusion Generative Models,"diffusion, image, generative, generation, noise",293,2013,2025,0.003421,0.005243,0.00023903,0.4736,0.000102,GROWING
-cs,96,Cross-Modality Clue Integration,"audio, modality, multimodal, visual, video",692,2015,2025,0.00478,0.012435,0.00056828,0.7537,0.0,GROWING
-cs,97,Compositional Attack Defense,"llm, attack, prompt, language, vulnerability",854,2002,2025,0.003482,0.013433,0.0004825,0.2749,0.00597,GROWING
-cs,98,Low-Resource Corpus Quality,"language, llm, multilingual, english, dataset",476,2000,2025,0.012361,0.007819,-3.701e-05,0.0022,0.821014,STABLE
-cs,99,Carbon-Aware Scheduling,"cloud, scheduling, energy, resource, workload",410,2001,2025,0.016216,0.005764,-0.0001335,0.0191,0.500551,STABLE
-cs,100,Nerf Privacy Poisoning,"adversarial, attack, image, adversarial_attack, robustness",1231,2015,2025,0.011492,0.021704,0.00111711,0.6517,1e-06,GROWING
-cs,101,Range-Avoidance Circuit Complexity,"circuit, polynomial, depth, hardness, boolean",218,2001,2025,0.02248,0.001584,-0.00089913,0.4961,5.9e-05,DECLINING
-cs,102,Universal Language Translation,"language, llm, knowledge, semantic, translation",535,2001,2025,0.008365,0.008432,0.00026336,0.1045,0.107205,STABLE
-cs,103,Concept Bank Expansion,"video, retrieval, text, multimodal, semantic",529,2004,2025,0.006759,0.007597,0.0003347,0.2664,0.006948,GROWING
-cs,104,Sketch-Based 3D Reconstruction,"sketch, image, gan, diffusion, generation",263,2013,2025,0.003657,0.004148,0.00026072,0.5378,2e-05,GROWING
-cs,105,Algorithmic Power Dynamics,"governance, risk, ethical, ethic, artificial_intelligence",236,2011,2025,0.002168,0.004069,0.00017577,0.5778,7e-06,GROWING
-cs,106,Memristor-LLM Integration,"memory, memristor, llm, accelerator, energy",228,2012,2025,0.005175,0.002825,0.00021121,0.4007,0.000519,GROWING
-cs,107,Latent Watermarking Systems,"watermark, image, watermarking, attack, diffusion",353,2006,2025,0.007372,0.005486,0.00014725,0.1129,0.093281,STABLE
-cs,108,Gender Bias in MT Systems,"bias, gender, gender_bias, language, llm",202,2016,2025,0.00172,0.003565,0.00016617,0.629,1e-06,GROWING
-cs,109,Minecraft Planning Benchmarks,"planning, planner, llm, plan, robot",405,2000,2025,0.014824,0.005916,-0.00027558,0.0861,0.145708,STABLE
-cs,110,LLM Ensemble Probability Fusion,"llm, language, training, datum, dataset",1704,2001,2025,0.005802,0.028452,0.0012436,0.6668,0.0,GROWING
-cs,111,Dynamic Scene Decomposition,"scene, video, motion, object, view",899,2013,2025,0.005483,0.014869,0.00071467,0.7821,0.0,GROWING
-cs,112,Neural Spectral Continuation,"physics, pde, pinn, neural_network, quantum",278,2017,2025,0.002812,0.005207,0.00022722,0.642,1e-06,GROWING
-cs,113,Crowdsourced Attention Bias Mitigation,"image, bias, saliency, dataset, object",277,2013,2025,0.005631,0.003976,0.00028295,0.5098,4.2e-05,GROWING
-cs,114,DP Multi-Sampling Approximation,"privacy, private, differential_privacy, datum, sample",301,2010,2025,0.004764,0.004957,0.00026674,0.6163,2e-06,GROWING
-cs,115,GenAI in Education,"student, education, genai, programming, educational",216,2007,2025,0.004106,0.003502,0.00012906,0.2348,0.012119,GROWING
-cs,116,Deformation-Based Diffusion Synthesis,"image, diffusion, segmentation, registration, mri",504,2007,2025,0.006751,0.008363,0.00037089,0.4953,6e-05,GROWING
-cs,117,Wildfire Multi-Agent Benchmarking,"agent, llm, multi, wildfire, agentic",311,2006,2025,0.002876,0.004753,0.00016927,0.2354,0.012002,GROWING
-cs,118,Parallel Decoding Strategies,"reasoning, llm, language, code, token",527,2015,2025,0.000735,0.007718,0.00032352,0.2895,0.004575,GROWING
-cs,119,Sparse Attention Distillation,"video, image, attention, diffusion, transformer",1724,2010,2025,0.004989,0.0307,0.0013593,0.7275,0.0,GROWING
-cs,120,Human-AI Co-Reasoning Benchmarks,"llm, human, agent, reasoning, language",521,2016,2025,0.000756,0.008111,0.00033357,0.3526,0.001384,GROWING
-cs,121,Low-Resource Language Adaptation,"language, llm, multilingual, datum, fine_tuning",1533,2013,2025,0.003747,0.02679,0.00124144,0.7393,0.0,GROWING
-cs,122,Zero-Shot Lidar Completion,"lidar, object, point_cloud, scene, object_detection",1343,2002,2025,0.005245,0.023825,0.00108547,0.6927,0.0,GROWING
-cs,123,Vision-Language Model Compression,"visual, quantization, vision_language, llm, lvlm",489,2018,2025,0.001109,0.00753,0.00030912,0.3247,0.002376,GROWING
-cs,124,LLM Kernel Automatization,"gpu, llm, memory, training, hardware",645,2010,2025,0.005447,0.010286,0.00049461,0.7833,0.0,GROWING
-cs,125,Pruning Impact Analysis,"llm, language, unlearning, pruning, text",314,2000,2025,0.007865,0.005869,-3.229e-05,0.0014,0.856795,STABLE
-cs,126,Vision-Based Odometry Systems,"slam, navigation, robot, lidar, camera",759,2012,2025,0.003442,0.012548,0.00070029,0.6964,0.0,GROWING
-cs,127,Adversarial Motion Optimization,"robot, policy, imitation, motion, demonstration",584,2014,2025,0.00463,0.009482,0.00048681,0.762,0.0,GROWING
-cs,128,Neural Field Dataset Compression,"image, dataset, datum, training, representation",960,2011,2025,0.004751,0.01478,0.00088535,0.7266,0.0,GROWING
-cs,129,EEG Foundation Model Taxonomy,"eeg, brain, signal, fmri, subject",455,2003,2025,0.008786,0.007481,0.00020995,0.1177,0.086137,STABLE
-cs,130,Phenological Orchard Datasets,"crop, plant, image, agricultural, food",259,2015,2025,0.002265,0.004506,0.00021559,0.7561,0.0,GROWING
-cs,131,Multi-Style Diffusion Fusion,"image, style, diffusion, text, generation",302,2016,2025,0.001975,0.005257,0.00023424,0.6376,1e-06,GROWING
-cs,132,Embodied Affective Computing,"emotion, emotional, affective, emotion_recognition, multimodal",221,2007,2025,0.002926,0.003401,0.00016693,0.4585,0.000145,GROWING
-cs,133,Spiking Mamba Architectures,"snn, spike, neural_network_snn, neuron, neural_network",273,2008,2025,0.002931,0.004183,0.00020449,0.6188,2e-06,GROWING
-cs,134,Prompt Adaptive Scaling,"prompt, image, text, generation, visual",362,2018,2025,0.001989,0.005933,0.00023888,0.3699,0.00098,GROWING
-cs,135,Multi-Layer Depth Ambiguity Resolution,"depth, scene, image, estimation, spatial",533,2012,2025,0.004645,0.008393,0.00046787,0.8073,0.0,GROWING
-cs,136,Diffusion-Based Optimization Learning,"optimization, diffusion, training, gradient, learning",667,2012,2025,0.005035,0.01155,0.00059206,0.7899,0.0,GROWING
-cs,137,Script Transliteration Systems,"language, arabic, persian, llm, dataset",271,2007,2025,0.002999,0.004756,0.00021548,0.5423,1.8e-05,GROWING
+cs,0,Web Text Database Classification,"nosql, qbd, spf, document, gorag",281,2000,2025,0.024262,0.001824,-0.00114171,0.6377,1e-06,DECLINING
+cs,1,AI Story Understanding,"narrative, story, stories, storytelling, narratives",364,2000,2025,0.002671,0.004419,0.00019761,0.5333,2.3e-05,GROWING
+cs,2,Parallel Debugging and Extension Language Debugging Systems,"rust, debugging, concurrency, races, bugs",194,2000,2025,0.026466,0.00115,-0.00101633,0.4949,6.1e-05,DECLINING
+cs,3,Nonmonotonic Logic Encoding,"datalog, alc, puzzleclone, medrule, conjunctive",244,2000,2025,0.063125,0.001331,-0.00245792,0.5629,1e-05,DECLINING
+cs,4,Neuro-Fuzzy Control Systems,"nfns, pinn, fuzzy, hydraulic, waste",120,2000,2025,0.013212,0.001158,-0.00035785,0.1417,0.058068,STABLE
+cs,5,Novelty-Based Retrieval Evaluation,"relevance, ranking, retrieval, ir, documents",297,2000,2025,0.005563,0.003736,1.433e-05,0.0015,0.85024,STABLE
+cs,6,Type Class Extensions,"type, polymorphism, narrowing, typed, subtyping",233,2000,2025,0.020347,0.001574,-0.00090256,0.5095,4.2e-05,DECLINING
+cs,7,Dynamic Semantics Resolution,"tel, ltl, logic, temporal, varphi",128,2000,2025,0.013762,0.001225,-0.0005259,0.3041,0.003499,DECLINING
+cs,8,Repair-Based Speech Correction,"speech, stuttering, enhancement, breath, se",156,2000,2025,0.002794,0.002038,2.923e-05,0.0144,0.559951,STABLE
+cs,9,Repository Management Systems,"metadata, shacl, provenance, udc, ontologies",122,2005,2025,0.008682,0.001088,-7.554e-05,0.0219,0.470524,STABLE
+cs,10,Recursive Definition Systems,"slid, vampire, inductive, nominal, wsl",248,2000,2025,0.018885,0.001435,-0.00096672,0.6254,2e-06,DECLINING
+cs,11,Polysemantic Feature Modeling and Ambiguity Handling in Logic Systems,"multimodal, mllms, vqa, reasoning, commonsense",330,2002,2025,0.002973,0.003812,0.00013125,0.2807,0.005378,GROWING
+cs,12,Predictor-Based Parsing,"reasoning, logical, sql, parsing, cot",917,2000,2025,0.021301,0.010899,-0.00022396,0.0243,0.446913,STABLE
+cs,13,Combinatorial Auction Optimization,"auctions, bidders, auction, bidding, submodular",412,2000,2025,0.010656,0.003473,-0.00032104,0.1325,0.067545,STABLE
+cs,14,Reproducibility Pitfalls,"fl, clients, poisoning, conformal, unlearning",268,2004,2025,0.001684,0.003615,0.00015468,0.4993,5.5e-05,GROWING
+cs,15,Optimal Belief Revision,"uncertainty, belief, pomdp, aleatoric, uq",118,2003,2025,0.003746,0.000993,-1.77e-05,0.0009,0.88514,STABLE
+cs,16,Dynamic Market Optimization,"trading, market, markets, hedging, liquidity",228,2000,2025,0.00529,0.002566,-3.496e-05,0.0095,0.636096,STABLE
+cs,17,Mathematical Software Evolution,"fhe, homomorphic, encryption, encrypted, he",134,2000,2025,0.003559,0.001608,-8.81e-06,0.0016,0.845254,STABLE
+cs,18,Variable Word Rate Modeling,"vaes, saes, autoencoders, monosemanticity, biomedical",729,2000,2025,0.004216,0.007905,0.00045704,0.4644,0.000126,GROWING
+cs,19,Socio-Technical Collaboration Networks,"science, team, teams, scientific, corporate",111,2000,2025,0.004455,0.001144,-2.752e-05,0.0113,0.604532,STABLE
+cs,20,Multi-Channel Rate Distortion Optimization,"rsma, djscc, wired, ma, csis",280,2004,2025,0.03023,0.001141,-0.00063005,0.077,0.170035,STABLE
+cs,21,Corpus Annotation Integration,"annotation, annotators, decoratelm, hispaspoof, mafa",106,2000,2025,0.002477,0.001475,-1.48e-05,0.0041,0.756788,STABLE
+cs,22,Spatial-Textual Document Analysis,"document, layout, spatial, geo, grounding",326,2000,2025,0.001908,0.004446,0.00015789,0.419,0.000351,GROWING
+cs,23,Boosting for Pattern Recognition,"boosting, tsc, corruption, fedsm, promptal",184,2000,2025,0.008652,0.002189,-0.00021886,0.1341,0.065831,STABLE
+cs,24,Hamming Distance Approximation,"hamming, mathcal, substring, strings, cal",154,2000,2025,0.006511,0.000973,-0.00029135,0.2254,0.014264,DECLINING
+cs,25,Computational Physics Patterns,"physics, equations, pdes, pinns, pde",233,2000,2025,0.004578,0.002986,-1.505e-05,0.0032,0.782509,STABLE
+cs,26,User Privacy Tools,"privacy, protection, federated, gdpr, fl",428,2000,2025,0.004426,0.005031,0.00014984,0.2574,0.008157,GROWING
+cs,27,Data Mining Challenges,"business, unidatabench, fdabench, rct, orca",129,2000,2025,0.00847,0.00113,-0.00018229,0.1188,0.084583,STABLE
+cs,28,Example-Based Metonymy Learning,"constructional, familytool, multiword, csar, meronymy",131,2000,2025,0.021664,0.000975,-0.00083334,0.3779,0.000834,DECLINING
+cs,29,Spec-Language Compilation,"specification, specifications, verification, assertions, program",581,2000,2025,0.052307,0.003901,-0.00204918,0.6702,0.0,DECLINING
+cs,30,Distributed Object Store Coherence,"cxl, pim, numa, memory, disaggregated",229,2000,2025,0.009166,0.001798,-0.00029809,0.2148,0.017086,DECLINING
+cs,31,Causal Model Formalization,"causal, vec, pearl, causality, discovery",238,2000,2025,0.015408,0.00207,-0.0004321,0.2896,0.004568,DECLINING
+cs,32,Noise-Tolerant Learning Theories,"nasty, pac, halfspaces, occam, erm",145,2000,2025,0.004964,0.001093,-0.00020073,0.2517,0.009015,DECLINING
+cs,33,Non-Well-Founded Coalgebra Theory,"coalgebras, comodule, monoidal, logics, functionals",149,2000,2025,0.010015,0.001076,-0.00056036,0.3695,0.000987,DECLINING
+cs,34,Privacy-Efficiency Tradeoffs,"dark, advertising, pricing, consumers, markets",101,2001,2025,0.008487,0.000795,-0.00020462,0.0597,0.229156,STABLE
+cs,35,Syllabic Language Modeling,"morphological, dialects, zipf, phonological, morpheme",192,2000,2025,0.028842,0.001535,-0.0010801,0.3293,0.002175,DECLINING
+cs,36,Dynamic Topic Modeling,"topic, topics, attention, dialogue, rag",383,2001,2025,0.005277,0.004383,0.00019609,0.2729,0.006183,GROWING
+cs,37,Distributed Time-Stamped Key Archiving,"pqc, blockchain, cryptography, qkd, signature",108,2001,2025,0.004057,0.001084,-5.484e-05,0.0611,0.2234,STABLE
+cs,38,Algorithmic Logic Programming,"sdsl, agentic, sibyl, programming, reactive",150,2000,2025,0.009513,0.001457,-0.00034413,0.4173,0.000364,DECLINING
+cs,39,Virtual Organization Coordination,"ecosystems, orchestration, services, interoperability, infrastructure",128,2000,2025,0.006299,0.001302,-5.394e-05,0.0252,0.438819,STABLE
+cs,40,Universal Sequence Prediction,"sequence, sequences, mambadm, exchangeable, spr",113,2001,2025,0.012226,0.000904,-0.00036579,0.3065,0.003348,DECLINING
+cs,41,Graph Realization Theory,"mathcal, gg, minor, cal, hh",140,2000,2025,0.003972,0.001007,-0.00016998,0.1523,0.048683,DECLINING
+cs,42,Incremental Universal Search,"heuristics, heuristic, mcts, search, nco",138,2002,2025,0.004099,0.001559,-4.66e-06,0.0004,0.918608,STABLE
+cs,43,Lazy Bureaucrat Scheduling,"instruction, instructions, tidiness, paace, procedural",143,2018,2025,0.000638,0.001786,7.677e-05,0.4843,7.9e-05,GROWING
+cs,44,Planning-Augmented RL,"rl, policy, offline, reinforcement, critic",1011,2001,2025,0.008721,0.01227,0.00037179,0.2108,0.018289,GROWING
+cs,45,Secret Sharing Frameworks,"clients, fl, federated, client, secure",227,2002,2025,0.003869,0.003145,6.888e-05,0.0821,0.155887,STABLE
+cs,46,Reusable Annotation Toolkit,"quantization, kv, bit, int, gptq",167,2000,2025,0.007269,0.002085,-0.00015217,0.075,0.175768,STABLE
+cs,47,Domain-Informed Sampling,"microscopy, mri, imaging, fluid, ray",230,2002,2025,0.001353,0.002945,0.00011312,0.3537,0.001353,GROWING
+cs,48,Semantic Polarity Learning,"sentiment, aspect, absa, polarity, emotion",666,2002,2025,0.005662,0.007769,0.0002915,0.3423,0.001694,GROWING
+cs,49,Hyperplane Arrangement Algorithms,"vla, rearrangement, embodied, vln, instructions",124,2017,2025,0.000394,0.001417,6.287e-05,0.3957,0.000576,GROWING
+cs,50,Epistemic State Representation,"belief, epistemic, revision, beliefs, kripke",111,2000,2025,0.026358,0.000589,-0.00100315,0.339,0.001803,DECLINING
+cs,51,User-Centric Community Detection,"communities, community, bluesky, mutualism, sbn",367,2002,2025,0.009173,0.001976,0.00018301,0.0227,0.462982,STABLE
+cs,52,Critical State Dynamics,"grimm, ralts, aeps, oscillators, fts",119,2002,2025,0.005249,0.000937,-3.006e-05,0.0063,0.700824,STABLE
+cs,53,Context-Dependent Classification,"weather, survival, wsis, flood, ood",655,2002,2025,0.006292,0.008562,0.0002679,0.179,0.031294,GROWING
+cs,54,Generic Case Complexity Analysis,"indsub, grc, geq, guards, mathbb",138,2000,2025,0.006633,0.000776,-0.00020192,0.1736,0.034208,DECLINING
+cs,55,Adaptive Motivation Learning,"locomotion, drl, reinforcement, rl, terrain",815,2010,2025,0.001937,0.010218,0.00053262,0.7897,0.0,GROWING
+cs,56,Monotone Hypergraph Transversals,"hh, vertex, cut, gg, vert",417,2001,2025,0.009358,0.003282,-0.00018174,0.0478,0.28315,STABLE
+cs,57,Time-Series Pattern Discovery,"series, causal, multivariate, progression, dynamical",559,2002,2025,0.004447,0.006728,0.00030972,0.5853,5e-06,GROWING
+cs,58,Fractional PDE Modeling,"pinns, pinn, fractional, equations, constitutive",116,2002,2025,0.002274,0.001605,1.467e-05,0.0045,0.744026,STABLE
+cs,59,Secure Linear Network Coding,"bner, minrank, alekhnovich, regev, gr",122,2002,2025,0.009309,0.000701,-0.00031993,0.164,0.040161,DECLINING
+cs,60,Catadioptric Projection Optimization,"radiance, nerf, rendering, splatting, omnidirectional",153,2003,2025,0.001802,0.002168,7.545e-05,0.2893,0.004596,GROWING
+cs,61,Grid VO Authorization Systems,"credentials, cedar, authorization, credential, git",163,2000,2025,0.034211,0.000624,-0.00131331,0.2477,0.009683,DECLINING
+cs,62,Human Speculative Trading,"stock, market, portfolio, trading, financial",183,2001,2025,0.005162,0.002049,-2.836e-05,0.0112,0.606847,STABLE
+cs,63,Natural Language Chatbot Limitations,"dialogue, conversational, chatbots, chatbot, chatgpt",543,2000,2025,0.00487,0.007292,0.00020312,0.2204,0.015534,GROWING
+cs,64,Handle-Based Networking,"bison, dns, doq, layerzero, quic",148,2000,2025,0.007316,0.000857,-0.00012752,0.0678,0.198979,STABLE
+cs,65,Blind Channel Invariant Speech Representation,"reverberation, speaker, rir, microphone, diarization",182,2000,2025,0.003948,0.002076,2.23e-05,0.0086,0.651678,STABLE
+cs,66,Quantum Domain Theory,"quantum, programs, safeml, classical, qite",167,2001,2025,0.011957,0.001632,-0.0003742,0.3335,0.002009,DECLINING
+cs,67,Epistemic Blame Theory,"causal, explanations, causality, counterfactual, attribution",203,2003,2025,0.001813,0.002725,9.881e-05,0.3781,0.000829,GROWING
+cs,68,Performance Trace Optimization,"tracing, fuzzers, trace, fuzzing, profiling",114,2001,2025,0.006291,0.001145,-0.00014627,0.1491,0.051345,STABLE
+cs,69,Radio Regulation Governance,"radio, rfi, dnn, adaloc, verification",155,2017,2025,0.00232,0.002017,0.00010873,0.5816,6e-06,GROWING
+cs,70,Runtime Monitoring Languages,"rust, attestation, verification, tee, execution",321,2000,2025,0.010372,0.002849,-0.00023047,0.1473,0.052922,STABLE
+cs,71,Dynamic Mesh Optimization,"assembly, mesh, continuum, manipulator, peg",197,2016,2025,0.001725,0.00262,0.00013094,0.6341,1e-06,GROWING
+cs,72,Hybrid Automata State Space Analysis,"timed, quak, ros, automata, rebeca",138,2000,2025,0.006032,0.001161,-0.00020093,0.1908,0.025652,DECLINING
+cs,73,Large-Scale Data Management Systems,"particle, molecular, materials, collider, gnn",217,2003,2025,0.002658,0.002806,0.00012244,0.4495,0.000178,GROWING
+cs,74,Intuitionistic Logic ASP,"intuitionistic, logics, sequent, logic, semantics",169,2000,2025,0.028846,0.001174,-0.00112822,0.416,0.000374,DECLINING
+cs,75,AS Topology Modeling,"resilience, ksi, netbone, interlayer, navigability",311,2000,2025,0.023934,0.001458,-0.00107563,0.4524,0.000167,DECLINING
+cs,76,Single-Camera Gaze-Orientation Estimation,"gaze, eye, fixation, scanpath, tracking",223,2004,2025,0.00227,0.002592,0.00013405,0.4267,0.000297,GROWING
+cs,77,Quantum Algorithmic Complexity,"quantum, qaoa, vqas, classical, barren",159,2002,2025,0.00403,0.001838,3.281e-05,0.0225,0.464784,STABLE
+cs,78,Evolutionary Annealing Schedules,"cma, pbt, evolutionary, cmcs, cws",100,2000,2025,0.012442,0.000747,-0.00043336,0.4289,0.000283,DECLINING
+cs,79,Electoral System Transparency,"voting, elections, election, fairness, vote",112,2001,2025,0.005866,0.001125,-0.00011999,0.1499,0.050732,STABLE
+cs,80,Dominating Set Approximation and Partial Order Episode Mining,"dominating, densest, subgraph, dkks, bipartite",160,2002,2025,0.005423,0.001263,-0.00010899,0.0673,0.200679,STABLE
+cs,81,Ramsey-Type Metric Structures,"coloring, log, kk, mathrm, tw",271,2001,2025,0.014194,0.0019,-0.00046894,0.2997,0.003793,DECLINING
+cs,82,Nonlinear Rating Scaling,"preference, rlhf, reward, dpo, metalearners",268,2002,2025,0.001362,0.00292,9.985e-05,0.1692,0.036813,GROWING
+cs,83,Quantum Communication Complexity,"entanglement, quantum, srl, xor, entangled",242,2000,2025,0.021015,0.001474,-0.00094927,0.5438,1.7e-05,DECLINING
+cs,84,Decentralized Identity Networks,"byzantine, trust, reputation, malicious, accounts",271,2004,2025,0.006906,0.002431,1.16e-05,0.0006,0.903326,STABLE
+cs,85,Succinct Model Representation,"bf, satisfiability, mathit, fo, csps",372,2000,2025,0.029288,0.00233,-0.00144253,0.8691,0.0,DECLINING
+cs,86,Evolutionary Algorithm Scalability,"genetic, lexicase, evolutionary, evolvability, fitness",100,2001,2025,0.008699,0.00079,-0.0002585,0.2519,0.008985,DECLINING
+cs,87,Space-Time Coding Performance,"mimo, beamforming, thz, csi, antenna",461,2004,2025,0.031442,0.004065,-0.00042769,0.0472,0.286264,STABLE
+cs,88,MIMO Channel Optimization,"mimo, ris, antenna, mmse, fas",462,2004,2025,0.025999,0.002814,-0.00046675,0.0525,0.260229,STABLE
+cs,89,Stochastic Complexity Classes,"qma, qlrcs, quantum, pcp, hamiltonian",100,2001,2025,0.013657,0.000678,-0.0005367,0.3413,0.001724,DECLINING
+cs,90,Size-Based Termination Proofs,"gkat, num, termination, bean, rocq",165,2000,2025,0.014274,0.001049,-0.00066651,0.3955,0.000579,DECLINING
+cs,91,Academic Invisible Web,"scholarly, openalex, publishers, publications, stewardship",141,2000,2025,0.006308,0.000907,-0.00011362,0.0855,0.147129,STABLE
+cs,92,Spam Mitigation Proof-of-Work,"blockchain, pow, blockchains, ethereum, bitcoin",175,2000,2025,0.008428,0.001564,-0.00022728,0.2546,0.008567,DECLINING
+cs,93,Grassmann Quantization Bounds,"sphere, esd, umlaut, exponent, packing",155,2000,2025,0.007192,0.000366,-0.00056655,0.1504,0.050303,STABLE
+cs,94,Capacity-Aware Mechanism Design,"advertising, revenue, advertisers, bidding, auction",141,2001,2025,0.006829,0.001238,-0.00010616,0.0593,0.230568,STABLE
+cs,95,Symbolic Data Analysis,"hyperbolic, symbolic, clustering, ontology, nace",161,2002,2025,0.006902,0.001423,-0.00017606,0.1666,0.038443,DECLINING
+cs,96,Quantum Query Complexity,"quantum, unitary, unitaries, varepsilon, rangle",169,2000,2025,0.012358,0.00147,-0.0004796,0.4336,0.000255,DECLINING
+cs,97,Intrinsic Dimension Analysis,"manifold, dimensionality, manifolds, dimension, euclidean",291,2002,2025,0.003416,0.003154,5.818e-05,0.0491,0.276475,STABLE
+cs,98,Fuzzy Imaging Fusion,"clinical, diagnostic, diagnosis, lung, radiology",225,2007,2025,0.001393,0.00294,0.00012088,0.4695,0.000112,GROWING
+cs,99,Energy-Efficient Communication,"ris, energy, wireless, harvesting, eh",337,2002,2025,0.004055,0.00199,0.00015649,0.0263,0.428448,STABLE
+cs,100,Controlled Language Semantic Wikis,"ontology, sql, sparql, genedit, ontologies",144,2001,2025,0.011002,0.001199,-0.00032826,0.1935,0.024522,DECLINING
+cs,101,Hierarchical Path Kernels,"graph, gnns, protein, node, curvature",469,2002,2025,0.004693,0.005614,0.00024888,0.4234,0.000319,GROWING
+cs,102,Camera-Target Matching Optimization,"radar, tracking, siamtpn, mot, spnv3",111,2009,2025,0.002189,0.001211,7.933e-05,0.2872,0.004774,GROWING
+cs,103,Rate-Distortion Testing,"distortion, iqa, codecs, udc, assessment",465,2000,2025,0.003052,0.00586,0.00026459,0.4821,8.3e-05,GROWING
+cs,104,Dual Code Gray Mapping,"codes, mathbb, mds, reed, cyclic",613,2000,2025,0.019949,0.00425,-0.00110363,0.3056,0.003405,DECLINING
+cs,105,Market Equilibrium Complexity,"equilibria, valuations, allocations, nash, eqx",134,2000,2025,0.006083,0.000861,-0.00023101,0.1991,0.022327,DECLINING
+cs,106,Robust Policy Optimization,"mdps, rmdps, pomdps, markov, mdp",113,2008,2025,0.005588,0.001089,3.476e-05,0.0089,0.646338,STABLE
+cs,107,Valuation-Based Metrics,"poisoning, backdoor, attacks, defenses, fedup",132,2013,2025,0.001468,0.001986,9.428e-05,0.4813,8.5e-05,GROWING
+cs,108,Astroinformatics Systems,"astronomical, astronomy, galaxy, solar, planet",133,2002,2025,0.005046,0.001726,-8.506e-05,0.0974,0.12059,STABLE
+cs,109,Dynamic Network Optimization,"marl, uav, uavs, swarm, coordination",420,2000,2025,0.006785,0.005275,6.44e-05,0.0289,0.406707,STABLE
+cs,110,Partial Randomness Theory,"flatness, adversarial, robustness, evalooop, extractors",105,2008,2025,0.001292,0.001377,5.853e-05,0.3036,0.003529,GROWING
+cs,111,Randomness-Dimension Theory,"turbulence, entropy, normality, ck, ksd",147,2001,2025,0.01361,0.000828,-0.00064502,0.3931,0.000609,DECLINING
+cs,112,Secure Function Computation Capacity,"federated, pir, server, fl, clients",330,2005,2025,0.004438,0.003554,0.00018956,0.3056,0.003403,GROWING
+cs,113,Powerlaw Skew Analysis,"dattri, fingerprinting, grokking, rf, radio",172,2015,2025,0.002522,0.002114,0.00012389,0.5356,2.1e-05,GROWING
+cs,114,Finite Field Sparse Matrix Multiplication,"multiplication, matrix, gemm, fp64, blas",149,2003,2025,0.006008,0.0009,-0.00012416,0.0625,0.217928,STABLE
+cs,115,Claw-Free Path Testing,"vertex, shortest, gg, paths, vertices",213,2001,2025,0.00508,0.001652,-0.00011835,0.0716,0.186436,STABLE
+cs,116,Kolakoski Sequence Properties,"red, transducers, mathbf, words, dyck",100,2003,2025,0.011075,0.000543,-0.00027502,0.1535,0.047769,DECLINING
+cs,117,Census-Corrected Sentiment Prediction,"political, election, uncivil, sentiment, elections",107,2011,2025,0.002635,0.001077,8.21e-05,0.2099,0.018586,GROWING
+cs,118,Advice Complexity Mapping,"gfg, gfm, explorability, pdas, automata",136,2000,2025,0.009263,0.000809,-0.00047323,0.3308,0.002113,DECLINING
+cs,119,Schema-Based MOEA Designs,"nsga, evolutionary, pareto, multiobjective, objective",160,2005,2025,0.006874,0.001661,-1.686e-05,0.0017,0.841775,STABLE
+cs,120,Kernel Herding Methods,"kernel, carlo, monte, posterior, bayesian",346,2002,2025,0.003285,0.003717,0.00016434,0.1277,0.073051,STABLE
+cs,121,Project Planning Frameworks,"project, agile, proreficia, story, software",108,2004,2025,0.00419,0.000822,2.222e-05,0.005,0.731628,STABLE
+cs,122,Social Network Aggregation Dynamics,"opinion, opinions, influence, spreading, contagion",667,2000,2025,0.005406,0.004191,-6.707e-05,0.0008,0.889318,STABLE
+cs,123,Open Source Astrophysics Code Repository,"dasch, arborx, srsd, provenance, opentelemetry",107,2000,2025,0.018593,0.000609,-0.00072107,0.5241,2.9e-05,DECLINING
+cs,124,Mobile Augmented Reality Systems,"ar, spaarc, yolo, sltarch, pointsplit",150,2011,2025,0.001628,0.0017,0.0001084,0.5877,5e-06,GROWING
+cs,125,Clifford-Toffoli Depth Reduction,"gates, qubit, circuit, circuits, clifford",107,2000,2025,0.004476,0.000969,-0.00011634,0.1204,0.082386,STABLE
+cs,126,Differential Privacy Mechanisms,"dp, differentially, differential, privacy, private",342,2004,2025,0.004557,0.003924,0.00018762,0.2716,0.006332,GROWING
+cs,127,Symbolic Argumentation Theory,"argumentation, sensemaking, lesac, idsss, debate",114,2000,2025,0.005226,0.001165,-9.797e-05,0.0783,0.166228,STABLE
+cs,128,Utility-Complexity Tradeoffs,"players, strategic, equilibrium, game, cooperation",149,2002,2025,0.00673,0.001328,-7.072e-05,0.0214,0.476177,STABLE
+cs,129,Uncertainty Measures Theory,"uncertainty, belief, epistemic, credal, rps",177,2000,2025,0.013073,0.000771,-0.0004429,0.083,0.153428,STABLE
+cs,130,Depositional Stratigraphy Automation,"geological, seismic, rock, mineral, subsurface",145,2013,2025,0.001153,0.00212,9.991e-05,0.5902,5e-06,GROWING
+cs,131,User-Centric UI Stimulation,"android, app, apps, malware, rootkits",100,2010,2025,0.002297,0.000905,7.317e-05,0.2071,0.019499,GROWING
+cs,132,Real-Time Compression Systems,"compression, quantization, bit, quantized, floating",393,2013,2025,0.002067,0.004689,0.00028351,0.6146,2e-06,GROWING
+cs,133,Discourse Collective Intelligence,"discussions, discourse, deliberation, climate, reddit",214,2004,2025,0.005118,0.002279,6.177e-05,0.0511,0.266692,STABLE
+cs,134,Field-Normalized Altmetrics,"citation, citations, papers, academic, scientific",236,2005,2025,0.01103,0.00163,-3.578e-05,0.0021,0.824241,STABLE
+cs,135,Edge-Cloud Deployment,"serverless, edge, 5g, mec, microservices",279,2010,2025,0.004239,0.00316,0.00021092,0.3096,0.003159,GROWING
+cs,136,Secure NFV Device Sharing,"naam, rdma, virtualization, confidential, host",139,2005,2025,0.002148,0.001359,9.469e-05,0.2683,0.006715,GROWING
+cs,137,Velocity-Aware Action Recognition,"gesture, action, har, skeleton, recognition",691,2012,2025,0.008307,0.007802,0.00056128,0.4636,0.000129,GROWING
+cs,138,Cluttered Grasping Optimization,"manipulation, grasp, affordance, grasping, dexterous",393,2012,2025,0.002217,0.004987,0.00024593,0.7717,0.0,GROWING
+cs,139,Semantic-to-Sign Synthesis,"sign, gloss, gestures, slt, gesture",122,2001,2025,0.003596,0.001571,-2.149e-05,0.0134,0.572945,STABLE
+cs,140,Logarithmic Distribution Analysis,"attacks, adversarial, anomaly, nids, ccfd",148,2016,2025,0.001703,0.002039,0.00010651,0.563,1e-05,GROWING
+cs,141,Human-AI Symbiosis Ethics,"ethical, ethics, ai, moral, healthcare",200,2004,2025,0.001937,0.002564,0.00010003,0.3669,0.001041,GROWING
+cs,142,Combinator-Based Neural Interpreters,"program, humaneval, mbpp, decompilation, symbolic",217,2015,2025,0.002291,0.002674,0.00014941,0.7127,0.0,GROWING
+cs,143,Visual Debugging Sequences,"backdoor, attacks, defense, attack, adversarial",334,2015,2025,0.003233,0.004217,0.00024605,0.5366,2.1e-05,GROWING
+cs,144,Scientometric Impact Theory,"journals, citation, publications, retracted, science",241,2005,2025,0.011278,0.001506,-4.495e-05,0.0026,0.80343,STABLE
+cs,145,Compressed Data Detection,"iot, intrusion, traffic, encrypted, malware",275,2013,2025,0.003303,0.003287,0.00019937,0.585,5e-06,GROWING
+cs,146,Sparse Weight Tuning Networks,"tabular, pruning, sparsity, saes, regularization",880,2008,2025,0.005481,0.010799,0.00063745,0.6567,1e-06,GROWING
+cs,147,Run-Based String Compression,"string, log, strings, suffix, substrings",191,2002,2025,0.010748,0.001113,-0.00021243,0.0605,0.225638,STABLE
+cs,148,Symbolic Music Generation,"music, musical, midi, piano, melody",191,2014,2025,0.00267,0.00221,0.00013638,0.5772,7e-06,GROWING
+cs,149,Psychiatric Readmission Prediction,"clinical, health, mental, patient, notes",587,2012,2025,0.004024,0.007296,0.00038296,0.8097,0.0,GROWING
+cs,150,Quantum Scheduling Security,"qkd, quantum, photon, protocol, secure",119,2001,2025,0.0112,0.000947,-0.00040159,0.3359,0.001918,DECLINING
+cs,151,Domain Expert Usability AI,"ai, xai, trust, healthcare, trustworthy",632,2002,2025,0.002284,0.008618,0.00034001,0.5735,8e-06,GROWING
+cs,152,Cognitive Neural Reasoning,"neurosymbolic, symbolic, actpc, subsymbolic, cognitive",129,2001,2025,0.003914,0.001428,-8.63e-05,0.1444,0.055471,STABLE
+cs,153,Cuboid Structure Recovery,"part, cocal, cad, 3d, sam",453,2013,2025,0.006771,0.004948,0.00037179,0.4228,0.000323,GROWING
+cs,154,Bandit Learning Games,"regret, bandit, bandits, armed, games",1086,2001,2025,0.007853,0.013178,0.00039349,0.2194,0.015814,GROWING
+cs,155,Characteristic-Driven Summarization,"summarization, summaries, summary, abstractive, readability",442,2000,2025,0.008937,0.005776,-3.369e-05,0.006,0.707081,STABLE
+cs,156,Sub-Character MT Performance,"fonts, font, character, radicals, truetype",148,2015,2025,0.003163,0.001583,0.0001222,0.3584,0.001234,GROWING
+cs,157,Audio Prior Networks,"separation, music, audio, sound, mss",262,2014,2025,0.003347,0.003175,0.00019665,0.5572,1.2e-05,GROWING
+cs,158,Video Explainability Frameworks,"explanations, explanation, xai, explainable, explainability",615,2009,2025,0.002056,0.008121,0.00039264,0.7293,0.0,GROWING
+cs,159,Soft Channel Coding Exponents,"secrecy, blocklength, wiretap, converse, channel",411,2000,2025,0.03125,0.001506,-0.00114199,0.179,0.031288,DECLINING
+cs,160,Millimeter Wave 5G Integration,"terrestrial, satellite, leo, 5g, satellites",246,2001,2025,0.003228,0.002085,0.00015236,0.1161,0.08853,STABLE
+cs,161,UAV-5G Blockchain Networks,"blockchain, fl, federated, decentralized, iot",446,2015,2025,0.003986,0.006069,0.00029903,0.6226,2e-06,GROWING
+cs,162,Quantum Random Feature Sampling,"quantum, qml, classical, circuit, nisq",313,2003,2025,0.002611,0.004122,0.00016789,0.5866,5e-06,GROWING
+cs,163,GAN Attribute Editing,"clothing, fashion, garments, garment, outfits",251,2015,2025,0.003645,0.003161,0.00019612,0.4926,6.5e-05,GROWING
+cs,164,Cold Start Recommendation,"recommendation, item, recommender, items, recommendations",950,2001,2025,0.004325,0.011251,0.00052175,0.7068,0.0,GROWING
+cs,165,Random Layer Mixup,"segmentation, tumor, mri, lesion, medical",1728,2015,2025,0.015236,0.022914,0.00120092,0.7001,0.0,GROWING
+cs,166,Multimodal Semantic Forecasting,"driving, trajectory, autonomous, traffic, occupancy",567,2013,2025,0.003154,0.006965,0.00036477,0.7492,0.0,GROWING
+cs,167,Thermal Emotion Recognition,"thermal, rppg, facial, stress, physiological",246,2013,2025,0.002086,0.003115,0.00017791,0.6351,1e-06,GROWING
+cs,168,Termination Analysis Invariants,"vass, loops, reachability, decidable, skolem",146,2000,2025,0.012213,0.000826,-0.0006344,0.6835,0.0,DECLINING
+cs,169,Pessimistic Reinforcement Learning,"safe, safety, risk, rl, averse",247,2002,2025,0.002763,0.003459,0.00012525,0.3777,0.000836,GROWING
+cs,170,Mobility-Aware Routing Protocols,"traffic, vehicle, vehicular, transportation, travel",287,2005,2025,0.005476,0.002356,0.00011758,0.0521,0.262185,STABLE
+cs,171,Modifier-Monster Theory,"automata, automaton, semigroupoids, register, explorable",192,2000,2025,0.008798,0.001239,-0.00030993,0.1405,0.059161,STABLE
+cs,172,Abuse Intent Detection,"hate, offensive, hateful, cyberbullying, violence",394,2015,2025,0.003863,0.005259,0.00028263,0.6389,1e-06,GROWING
+cs,173,Likelihood-Free Inference,"cosmological, posterior, sbi, euv, misspecification",117,2010,2025,0.002394,0.001431,7.21e-05,0.2261,0.01409,GROWING
+cs,174,Contact Tracing Trust Mechanisms,"whatsapp, nomad, repurposing, activists, pandemic",165,2004,2025,0.002533,0.00206,9.423e-05,0.1435,0.056372,STABLE
+cs,175,Temporal Fact Verification,"fact, claim, claims, checking, factual",328,2016,2025,0.002768,0.00438,0.00021347,0.7471,0.0,GROWING
+cs,176,Interpretable Neural Architectures,"interpretability, interpretable, explanations, explainable, explainability",557,2015,2025,0.003801,0.00734,0.00036762,0.7622,0.0,GROWING
+cs,177,Diffusion-Based Image Refinement,"restoration, deblurring, denoising, degradations, degradation",653,2012,2025,0.002034,0.008392,0.00042302,0.8174,0.0,GROWING
+cs,178,Dietary Supplement CA Systems,"drug, medication, food, health, dietary",192,2010,2025,0.001592,0.002195,0.00010838,0.5761,7e-06,GROWING
+cs,179,Self-Supervised Embodied Learning,"embodied, navigation, imitation, vla, demonstrations",1302,2006,2025,0.001886,0.015504,0.000864,0.7267,0.0,GROWING
+cs,180,FNO Wave Equation Solving,"pdes, pde, operator, equations, fno",145,2018,2025,0.001833,0.001898,9.418e-05,0.6225,2e-06,GROWING
+cs,181,Critical Connectivity Radius,"clustering, pabm, mapper, separators, consign",106,2005,2025,0.004545,0.000775,1.292e-05,0.0018,0.836602,STABLE
+cs,182,Dependency Usage Analysis,"packages, package, npm, rust, libraries",215,2001,2025,0.005069,0.002648,-2.398e-05,0.0073,0.67891,STABLE
+cs,183,Multilingual Image Captioning,"captioning, captions, caption, multimodal, mllms",1043,2000,2025,0.003201,0.013032,0.00060141,0.6239,2e-06,GROWING
+cs,184,Event-Based Vision UpSampling,"event, cameras, events, frame, turbulence",139,2017,2025,0.000976,0.001889,8.544e-05,0.6015,3e-06,GROWING
+cs,185,Human Feedback Modeling,"reward, preferences, feedback, rlhf, agents",683,2006,2025,0.002628,0.008399,0.00039347,0.7351,0.0,GROWING
+cs,186,Hybrid Grasp Metrics,"grasping, tactile, force, grasp, contact",356,2005,2025,0.002076,0.004271,0.00022941,0.6795,0.0,GROWING
+cs,187,Noisy Crowdsourcing Opinion Mining,"annotator, annotators, crowdsourcing, crowd, disagreement",140,2011,2025,0.003136,0.001375,9.885e-05,0.2471,0.009779,GROWING
+cs,188,Phoneme Granularity Contrastive Learning,"asr, speech, whisper, wer, phoneme",774,2006,2025,0.004041,0.010896,0.00050706,0.6763,0.0,GROWING
+cs,189,Self-Supervised AST Pretraining,"ssl, deepfake, audio, mae, speaker",427,2012,2025,0.002572,0.006519,0.00029271,0.6571,1e-06,GROWING
+cs,190,Multiset Hypergraph Learning,"gnns, graph, gnn, node, hypergraph",1405,2012,2025,0.003289,0.019335,0.00096416,0.7427,0.0,GROWING
+cs,191,Domain-Generalization MOT,"underwater, fish, tracking, counting, marine",664,2014,2025,0.007672,0.008268,0.00048297,0.6888,0.0,GROWING
+cs,192,Cross-Modal Prototype Matching,"retrieval, modality, modal, modalities, multimodal",558,2013,2025,0.00401,0.00707,0.00036274,0.8194,0.0,GROWING
+cs,193,Multilingual Entity Name Datasets,"ner, entity, named, entities, megawika",285,2002,2025,0.005228,0.003224,5.792e-05,0.0306,0.392365,STABLE
+cs,194,Monocular Garment Reconstruction,"garment, clothing, garments, avatar, clothed",265,2011,2025,0.001208,0.003882,0.00017043,0.705,0.0,GROWING
+cs,195,Self-Supervised Keypoint Detection,"pose, registration, keypoint, 3d, keypoints",740,2013,2025,0.00548,0.008991,0.00054814,0.6377,1e-06,GROWING
+cs,196,Neuromorphic CAD Systems,"neuromorphic, spiking, snns, snn, hardware",680,2008,2025,0.004298,0.008137,0.00045046,0.7294,0.0,GROWING
+cs,197,Latent Decision Sampling,"pedestrian, trajectory, pedestrians, trajectories, forecasting",190,2013,2025,0.001467,0.002432,0.00013109,0.7224,0.0,GROWING
+cs,198,Point Cloud SSM Learning,"anatomical, registration, shape, ct, mri",641,2013,2025,0.002932,0.008638,0.00042894,0.697,0.0,GROWING
+cs,199,Periodic Universal Audio Synthesis,"singing, voice, audio, timbre, vocoder",468,2015,2025,0.002872,0.006151,0.00031665,0.6593,0.0,GROWING
+cs,200,Causal Quantization Methods,"quantization, unlearning, qat, unlearnable, disentanglement",336,2016,2025,0.002944,0.004625,0.00022927,0.5658,9e-06,GROWING
+cs,201,Cross-Lingual Scene Text SR,"ocr, handwritten, character, document, characters",306,2015,2025,0.005725,0.00347,0.00023987,0.4883,7.2e-05,GROWING
+cs,202,Heat-Diffusion Generative Models,"diffusion, inverse, generative, flow, inversion",364,2014,2025,0.001951,0.004633,0.00021636,0.588,5e-06,GROWING
+cs,203,Extremism Online Dynamics,"conspiracy, polarization, telegram, political, extremism",143,2013,2025,0.002549,0.00157,0.00010594,0.4191,0.00035,GROWING
+cs,204,Cross-Modality Clue Integration,"audio, sound, modality, modalities, modal",641,2004,2025,0.002919,0.008662,0.0003943,0.7104,0.0,GROWING
+cs,205,Component Estimation Robustness,"poly, ell, mixture, contaminations, varepsilon",281,2007,2025,0.010792,0.002591,8.924e-05,0.0238,0.451658,STABLE
+cs,206,Concatenation Blocking Sets,"bigg, slp, codes, constructions, intersecting",102,2002,2025,0.008235,0.000703,-0.00027396,0.2243,0.014535,DECLINING
+cs,207,Compositional Attack Defense,"harmful, phishing, attack, safety, attacks",1087,2016,2025,0.002999,0.013613,0.00058805,0.5195,3.3e-05,GROWING
+cs,208,Pathological Speech ASV,"speaker, sv, children, anonymization, voice",254,2014,2025,0.002441,0.003246,0.00017766,0.6562,1e-06,GROWING
+cs,209,Low-Resource Corpus Quality,"languages, african, bangla, nlp, turkish",187,2013,2025,0.001114,0.002294,0.00011301,0.708,0.0,GROWING
+cs,210,AR-Resistant Audio Watermarking,"deepfake, watermarking, audio, steganalysis, forgery",119,2005,2025,0.002249,0.001371,4.145e-05,0.0804,0.160471,STABLE
+cs,211,Carbon-Aware Scheduling,"carbon, emissions, scheduling, workloads, sustainability",347,2002,2025,0.007069,0.003981,0.00012648,0.1164,0.088022,STABLE
+cs,212,Metric Entropy Analysis,"vendi, zz, entropy, divergences, mathsf",274,2000,2025,0.006701,0.003274,-8.373e-05,0.0684,0.196809,STABLE
+cs,213,Empowerment Language Analysis,"mental, posts, health, vaccine, discourse",106,2015,2025,0.00148,0.001285,7.732e-05,0.6279,1e-06,GROWING
+cs,214,Nerf Privacy Poisoning,"nerf, attack, radiance, attacks, adversarial",219,2017,2025,0.002056,0.003356,0.00014477,0.5984,4e-06,GROWING
+cs,215,Range-Avoidance Circuit Complexity,"boolean, circuits, log, circuit, mathsf",303,2000,2025,0.012882,0.001587,-0.00066343,0.4361,0.000241,DECLINING
+cs,216,Universal Language Translation,"translation, multilingual, lingual, languages, english",793,2000,2025,0.006499,0.009568,0.00031336,0.2759,0.005866,GROWING
+cs,217,Proactive Data Collection,"fairness, demographic, fair, groups, bias",186,2015,2025,0.001625,0.002572,0.00012389,0.6443,1e-06,GROWING
+cs,218,Concept Bank Expansion,"video, retrieval, videoqa, vocabulary, videos",331,2003,2025,0.003207,0.004114,0.00019317,0.5884,5e-06,GROWING
+cs,219,Sketch-Based 3D Reconstruction,"sketch, sketches, cad, drawings, 3d",375,2015,2025,0.005666,0.004494,0.0002836,0.516,3.6e-05,GROWING
+cs,220,Emotion-Tactile Feedback Systems,"emotional, empathetic, empathy, robot, participants",108,2005,2025,0.002137,0.001291,3.893e-05,0.0895,0.137594,STABLE
+cs,221,Algorithmic Power Dynamics,"governance, algorithmic, ai, accountability, rights",239,2009,2025,0.001358,0.003072,0.00013332,0.5296,2.5e-05,GROWING
+cs,222,Memristor-LLM Integration,"pim, cim, memristive, memristors, memory",310,2012,2025,0.003326,0.003265,0.00020198,0.5943,4e-06,GROWING
+cs,223,Latent Watermarking Systems,"watermarking, watermark, forgery, watermarks, deepfake",785,2007,2025,0.0043,0.009519,0.00047665,0.6451,1e-06,GROWING
+cs,224,Persona-Based Moderation Datasets,"moderation, stereotypes, personas, gender, automod",106,2018,2025,0.000723,0.001451,6.114e-05,0.5574,1.2e-05,GROWING
+cs,225,Minecraft Planning Benchmarks,"planning, planners, plan, plans, planner",272,2003,2025,0.004001,0.002906,4.315e-05,0.0118,0.597811,STABLE
+cs,226,LLM Robotic Jailbreaking,"jailbreak, jailbreaking, safety, attack, attacks",328,2015,2025,0.000984,0.003826,0.00016985,0.435,0.000247,GROWING
+cs,227,LLM Ensemble Probability Fusion,"moe, merging, mbr, icl, experts",432,2003,2025,0.002488,0.004966,0.00020718,0.4381,0.000231,GROWING
+cs,228,Dynamic Scene Decomposition,"4d, splatting, motion, scenes, scene",850,2013,2025,0.005317,0.010621,0.00050846,0.7222,0.0,GROWING
+cs,229,Emotion Diffusion Synthesis,"emotion, emotional, emotions, facial, expression",268,2015,2025,0.001319,0.00373,0.00016892,0.6678,0.0,GROWING
+cs,230,Neural Spectral Continuation,"pinns, physics, multiphysics, pdes, spin",125,2017,2025,0.00097,0.001798,7.722e-05,0.6612,0.0,GROWING
+cs,231,Reconfigurable Hardware Sustainability,"accelerators, cgra, risc, workloads, accelerator",114,2004,2025,0.006169,0.000855,-3.378e-05,0.0049,0.735166,STABLE
+cs,232,Crowdsourced Attention Bias Mitigation,"saliency, salient, sod, matting, foraug",248,2014,2025,0.004757,0.002832,0.00019768,0.4834,8.1e-05,GROWING
+cs,233,Cultural LLM Representation,"cultural, stereotyping, culture, culturally, biases",156,2015,2025,0.000591,0.001862,7.617e-05,0.3272,0.002265,GROWING
+cs,234,DP Multi-Sampling Approximation,"dp, differentially, private, privacy, sgd",517,2010,2025,0.002366,0.006861,0.00033436,0.845,0.0,GROWING
+cs,235,GenAI in Education,"students, education, genai, educators, educational",240,2004,2025,0.002361,0.002893,9.455e-05,0.2274,0.013765,GROWING
+cs,236,Deformation-Based Diffusion Synthesis,"deformation, registration, mri, deformations, cardiac",315,2009,2025,0.002137,0.003982,0.0001809,0.6343,1e-06,GROWING
+cs,237,Chirality Feature Extraction,"symmetry, equivariant, rotation, symmetries, equivariance",182,2010,2025,0.002014,0.002248,0.00012263,0.608,3e-06,GROWING
+cs,238,Wildfire Multi-Agent Benchmarking,"wildfire, fire, wildfires, emergency, mas",238,2006,2025,0.002539,0.002755,8.955e-05,0.1867,0.027489,GROWING
+cs,239,Wearable Physiological Diet Monitoring,"diabetes, glucose, food, wearable, ppg",199,2011,2025,0.001888,0.002508,0.00013782,0.6863,0.0,GROWING
+cs,240,Parallel Decoding Strategies,"cot, reasoning, thought, speculative, draft",653,2015,2025,0.001819,0.007271,0.00032988,0.3913,0.000631,GROWING
+cs,241,Financial LLM Robustness Benchmarking,"financial, legal, hallucinations, llms, finance",649,2015,2025,0.00085,0.007883,0.00032277,0.3375,0.001859,GROWING
+cs,242,Sheaf-Based Topological Learning,"topological, homology, complexes, molecular, gnns",315,2006,2025,0.002441,0.004275,0.00020202,0.6727,0.0,GROWING
+cs,243,Sparse Attention Distillation,"video, dit, videos, frame, frames",768,2015,2025,0.003806,0.010228,0.00046895,0.7211,0.0,GROWING
+cs,244,Human-AI Co-Reasoning Benchmarks,"code, software, developers, swe, copilot",477,2010,2025,0.000823,0.005725,0.00022861,0.3195,0.002622,GROWING
+cs,245,EEG-Facial Expression Synthesis,"facial, talking, animation, eeg, head",175,2013,2025,0.001001,0.002456,0.00011063,0.6547,1e-06,GROWING
+cs,246,Uncertainty-Aware 3D Lane Detection,"lane, road, perception, driving, lanes",240,2016,2025,0.002904,0.002717,0.0001584,0.6476,1e-06,GROWING
+cs,247,Low-Resource Language Adaptation,"lora, rank, tuning, multilingual, peft",615,2015,2025,0.003449,0.00819,0.00039086,0.7436,0.0,GROWING
+cs,248,Zero-Shot Lidar Completion,"lidar, clouds, point, nuscenes, 3d",811,2012,2025,0.003679,0.011138,0.00053703,0.7415,0.0,GROWING
+cs,249,Vision-Language Model Compression,"vlms, lvlms, vqa, vision, vlm",536,2019,2025,0.001559,0.006432,0.00025901,0.3187,0.00266,GROWING
+cs,250,Spike-Timing Memory Topology,"hopfield, attractors, attractor, associative, memories",101,2003,2025,0.004055,0.000996,-3.77e-05,0.0309,0.390008,STABLE
+cs,251,Microgravity Human Action Analysis,"egocentric, action, anticipation, actions, video",169,2013,2025,0.001703,0.001998,0.00010438,0.626,1e-06,GROWING
+cs,252,LLM Kernel Automatization,"gpu, gpus, parallelism, dl, cpu",596,2010,2025,0.00278,0.006748,0.00033973,0.7216,0.0,GROWING
+cs,253,Pruning Impact Analysis,"pruning, unlearning, bert, lms, scaling",1193,2000,2025,0.003815,0.016086,0.00066043,0.586,5e-06,GROWING
+cs,254,Vision-Based Odometry Systems,"slam, odometry, inertial, localization, lidar",639,2012,2025,0.005058,0.008033,0.00044524,0.67,0.0,GROWING
+cs,255,Multiscale Style Transfer,"stylization, style, stroke, painting, artistic",231,2016,2025,0.004768,0.002627,0.00018202,0.4729,0.000104,GROWING
+cs,256,Cultural Bias Mitigation in LLMs,"moral, fairness, biases, educational, education",165,2020,2025,0.000967,0.001869,7.77e-05,0.2867,0.004823,GROWING
+cs,257,Skill Diversity Metrics,"skill, diversity, marl, skills, rl",183,2005,2025,0.002227,0.002608,8.671e-05,0.2852,0.004949,GROWING
+cs,258,Mask-to-Image Diffusion Diversity,"diffusion, denoising, microscopy, crystal, protein",268,2010,2025,0.001442,0.003483,0.00014844,0.5696,8e-06,GROWING
+cs,259,Automated Tactile Glove Design,"tactile, finger, soft, force, gripper",153,2011,2025,0.001172,0.001911,8.898e-05,0.6403,1e-06,GROWING
+cs,260,Cryptographic Misuse Detection,"contracts, vulnerabilities, mcp, security, contract",228,2000,2025,0.001823,0.002791,9.616e-05,0.2818,0.005269,GROWING
+cs,261,Adversarial Motion Optimization,"humanoid, imitation, locomotion, motions, motion",286,2012,2025,0.001725,0.00375,0.0001795,0.7308,0.0,GROWING
+cs,262,Neural Field Dataset Compression,"compression, distillation, kd, pruning, pcc",542,2014,2025,0.003089,0.006887,0.00035537,0.7675,0.0,GROWING
+cs,263,EEG Foundation Model Taxonomy,"eeg, brain, bci, ecg, seizure",523,2003,2025,0.00283,0.006769,0.00028678,0.6919,0.0,GROWING
+cs,264,Geometric Centrality Counterexamples,"centralization, centrality, geodetic, centralities, triangle",111,2002,2025,0.004883,0.000685,-1.901e-05,0.003,0.790083,STABLE
+cs,265,Phenological Orchard Datasets,"plant, crop, agricultural, agriculture, fruit",435,2015,2025,0.002969,0.005592,0.00028544,0.7556,0.0,GROWING
+cs,266,Temperature-Based Cache Optimization,"cache, cpu, multicore, prefetching, runahead",112,2006,2025,0.006164,0.000865,-2.356e-05,0.0027,0.800022,STABLE
+cs,267,Multi-Style Diffusion Fusion,"style, aesthetic, diffusion, editing, stylization",225,2015,2025,0.000997,0.003027,0.000133,0.5378,2e-05,GROWING
+cs,268,Deaf-Accessible AI Tools,"accessibility, dhh, disabilities, deaf, sign",111,2006,2025,0.002515,0.00127,2.242e-05,0.013,0.578856,STABLE
+cs,269,Ultrasound Speech Enhancement,"ultrasound, acoustic, enhancement, speech, hifu",141,2013,2025,0.001497,0.001952,9.068e-05,0.5978,4e-06,GROWING
+cs,270,Qualitative AI Integration,"ethical, chatbots, qualitative, writing, ai",194,2019,2025,0.000967,0.002513,9.93e-05,0.4031,0.000493,GROWING
+cs,271,Spiking Mamba Architectures,"spiking, snns, snn, mamba, spike",261,2013,2025,0.001844,0.003201,0.00017184,0.7521,0.0,GROWING
+cs,272,Prompt Adaptive Scaling,"editing, prompt, prompts, t2i, layout",631,2003,2025,0.002188,0.007845,0.00031899,0.4547,0.000158,GROWING
+cs,273,Multi-Layer Depth Ambiguity Resolution,"depth, monocular, 3d, scene, rgb",534,2011,2025,0.002526,0.006739,0.00035302,0.8519,0.0,GROWING
+cs,274,Diffusion-Based Optimization Learning,"nas, optimizers, optimization, gradient, bo",725,2010,2025,0.002326,0.008898,0.00046165,0.7849,0.0,GROWING
+cs,275,Script Transliteration Systems,"arabic, dialect, persian, urdu, script",177,2004,2025,0.002372,0.002261,0.00010595,0.3681,0.001015,GROWING

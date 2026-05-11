@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 
-MODELS = ["lda", "top2vec", "dtm", "topicGpt", "bertopic"]
-MODEL_LABELS = {"lda": "LDA", "top2vec": "Top2Vec", "dtm": "DTM", "topicGpt": "TopicGPT", "bertopic": "BERTopic"}
+MODELS = ["lda", "dtm", "topicGpt", "bertopic"]
+MODEL_LABELS = {"lda": "LDA", "dtm": "DTM", "topicGpt": "TopicGPT", "bertopic": "BERTopic"}
 SUBJECTS = ["cs", "math", "physics"]
 SUBJECT_LABELS = {"cs": "Computer Science", "math": "Mathematics", "physics": "Physics"}
 
@@ -40,7 +40,6 @@ def load_tuning(model: str, subject: str) -> pd.DataFrame | None:
     search_paths = {
         "lda": [RESULTS_DIR / "lda" / "tuning" / subject / "tuning_results.csv"],
         "dtm": [RESULTS_DIR / "dtm" / "tuning" / subject / "tuning_results.csv"],
-        "top2vec": [RESULTS_DIR / "top2vec" / "tuning" / "tuning_results.csv"],
         "bertopic": [
             RESULTS_DIR / "bertopic" / "tuning" / "hdbscan" / "quality_results.csv",
             RESULTS_DIR / "bertopic" / "tuning" / "kmeans" / "quality_results.csv",
@@ -127,7 +126,6 @@ def model_color_map():
     """Consistent colors for each model across all charts."""
     return {
         "LDA": "#ef4444",
-        "Top2Vec": "#8b5cf6",
         "DTM": "#f59e0b",
         "TopicGPT": "#10b981",
         "BERTopic": "#3b82f6",

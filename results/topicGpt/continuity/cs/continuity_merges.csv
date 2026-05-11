@@ -1,0 +1,3 @@
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+cs,2014,2015,13,2,"[13, 94]","[0.7646, 0.5779]","auction, auctions, revenue, truthful, budget, incentive, price, pricing, buyers, valuations"
+cs,2020,2021,143,2,"[140, 143]","[0.5097, 0.7474]","backdoor, adversarial, attack, attacks, defense, defenses, examples, trigger, vulnerable, perturbations"

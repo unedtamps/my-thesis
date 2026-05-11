@@ -54,7 +54,7 @@ for m in selected_models:
     ttd_yoy = load_csv(m, "consistency", subject, "ttd_yoy_per_topic.csv")
     ttd_endpoint = load_csv(m, "consistency", subject, "topic_term_drift.csv")
     ttd_traj = load_csv(m, "consistency", subject, "ttd_trajectory.csv")
-    cont_trans = load_csv(m, "consistency", subject, "continuity_transitions.csv")
+    cont_trans = load_csv(m, "continuity", subject, "continuity_transitions.csv")
     labels_df = load_csv(m, "temporal", subject, "topic_labels.csv")
     yearly_desc_df = load_csv(m, "temporal", subject, "topic_yearly_descriptions.csv")
 
