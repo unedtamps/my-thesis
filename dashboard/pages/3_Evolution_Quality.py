@@ -14,11 +14,11 @@ from utils.data_loader import (
 st.set_page_config(page_title="Scenario 3: Evolution Quality", page_icon="🔄", layout="wide")
 st.title("🔄 Scenario 3: Evolution")
 st.markdown("""
-Kualitas Evolusi Topik antar Waktu — mengukur seberapa baik topik mempertahankan kualitasnya saat bertransisi dari satu tahun ke tahun berikutnya.
+Evaluates how well topics maintain their quality when transitioning from one year to the next.
 
-- **TTC** — Temporal Topic Coherence: normalized NPMI dari pasangan kata lintas waktu (*words_t* × *words_t+1*) dievaluasi terhadap seluruh korpus
-- **TTS** — Temporal Topic Stability: RBO (Rank-Biased Overlap) kemiripan peringkat kata antara *t* dan *t+1*
-- **TTQ** — Temporal Topic Quality: harmonic mean dari TTC dan TTS
+- **TTC** — Temporal Topic Coherence: normalized NPMI of cross-time word pairs (*words_t* × *words_t+1*) evaluated against the full corpus
+- **TTS** — Temporal Topic Stability: RBO (Rank-Biased Overlap) similarity of topic words between *t* and *t+1*
+- **TTQ** — Temporal Topic Quality: harmonic mean of TTC and TTS
 """)
 st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
 
@@ -33,7 +33,7 @@ AXIS_FONT = dict(family="Arial Black, Arial, sans-serif", size=15)
 # ============================================================
 # Evolution Quality: TTC · TTS · TTQ
 # ============================================================
-st.header("Kualitas Evolusi Topik (TTC · TTS · TTQ)")
+st.header("Topic Evolution Quality (TTC · TTS · TTQ)")
 st.divider()
 
 trans = load_all_models("evolution", subject, "transition_summary.csv")

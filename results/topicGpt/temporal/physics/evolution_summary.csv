@@ -1,2 +1,2 @@
 subject,num_topics,num_years,coherence_mean,coherence_std,irbo_mean,irbo_std,quality_mean,quality_std,topics_growing,topics_stable,topics_declining
-physics,188,26,0.423554,0.046726,0.999022,0.000276,0.593434,0.045927,64,82,42
+physics,188,26,0.431047,0.052043,0.999022,0.000276,0.600535,0.048997,64,82,42

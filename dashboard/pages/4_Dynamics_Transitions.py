@@ -17,12 +17,12 @@ st.markdown("""
 Evaluates how structurally stable topics remain over time.
 
 **Continuity Rate** — classifies topic transitions year-by-year (RBO similarity):
-- *Disappear*: sim ≤ 0.2 — topic lost, no recognisable successor
-- *Merge*: sim > 0.2, but >1 topic maps to the same t+1-topic
-- *Mismatch*: sim > 0.2, single source, but best-match ID ≠ own ID (topic drifted to a different slot)
-- *Stable*: sim > 0.6, best-match ID = own ID (topic persists clearly)
-- *Evolve*: 0.2 < sim ≤ 0.6, best-match ID = own ID (topic recognisable but shifting)
-- *New*: t+1-topic has no incoming match with sim > 0.2
+- *Merge*: sim > 0.5, and the t+1-topic has >1 source
+- *Disappear*: sim == 0 — topic lost, no recognisable successor
+- *Evolve*: 0 < sim ≤ 0.5 — topic recognisable but shifting
+- *Mismatch*: sim > 0.5, single source, but best-match ID ≠ own ID
+- *Stable*: sim > 0.5, best-match ID = own ID
+- *New*: t+1-topic has no incoming match with sim > 0
 """)
 st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
 

@@ -14,12 +14,12 @@ from utils.data_loader import (
 st.set_page_config(page_title="Scenario 2: Timestep", page_icon="📊", layout="wide")
 st.title("📊 Scenario 2: Timestep")
 st.markdown("""
-Kualitas Topik per Titik Waktu — menganalisis seberapa baik kualitas topik di setiap tahun selama rentang 2000–2025.
+Analyzes how well topic quality is maintained in each year across the 2000–2025 timeframe.
 
-- **Coherence (C_v)**: koherensi semantik topik per tahun
-- **Diversity (IRBO)**: keragaman kata antar topik per tahun
-- **Topic Quality**: harmonic mean dari C_v dan IRBO
-- **Topic Trends**: klasifikasi topik menjadi GROWING / STABLE / DECLINING berdasarkan regresi linier
+- **Coherence (C_v)**: semantic coherence of topics per year
+- **Diversity (IRBO)**: word diversity between topics per year
+- **Topic Quality**: harmonic mean of C_v and IRBO
+- **Topic Trends**: topic classification into GROWING / STABLE / DECLINING based on linear regression
 """)
 st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
 
@@ -34,7 +34,7 @@ AXIS_FONT = dict(family="Arial Black, Arial, sans-serif", size=15)
 # ============================================================
 # Per-year metrics
 # ============================================================
-st.header("Kualitas Topik per Tahun")
+st.header("Topic Quality per Year")
 st.divider()
 
 tab1, tab_metrics, tab2 = st.tabs(["Coherence & Diversity", "Metrics Table", "Topic Trends"])
@@ -92,26 +92,40 @@ with tab_metrics:
     pym = load_all_models("temporal", subject, "per_year_metrics.csv")
     if len(pym) > 0:
         pym_f = pym[pym["model"].isin([MODEL_LABELS[m] for m in selected_models])]
+        display_df = pym_f[["model", "year", "coherence_cv", "irbo_mean", "topic_quality"]].copy()
+        display_df = display_df.rename(columns={
+            "model": "Model",
+            "year": "Year",
+            "coherence_cv": "C_v",
+            "irbo_mean": "Diversity (IRBO)",
+            "topic_quality": "Quality"
+        })
+        
+        st.subheader("Average Over Time (All Models)")
+        avg_df = display_df.groupby("Model")[["C_v", "Diversity (IRBO)", "Quality"]].mean()
+        st.dataframe(avg_df, use_container_width=True)
+        
+        st.divider()
         st.subheader("Yearly Metrics per Model")
         for m in selected_models:
             m_label = MODEL_LABELS[m]
             m_df = pym_f[pym_f["model"] == m_label]
             if not m_df.empty:
                 with st.expander(f"📊 {m_label}"):
-                    display_df = m_df[["year", "coherence_cv", "irbo_mean", "topic_quality"]].copy()
-                    display_df = display_df.rename(columns={
+                    model_display_df = m_df[["year", "coherence_cv", "irbo_mean", "topic_quality"]].copy()
+                    model_display_df = model_display_df.rename(columns={
                         "coherence_cv": "C_v",
                         "irbo_mean": "Diversity (IRBO)",
                         "topic_quality": "Quality"
                     }).set_index("year")
-                    st.dataframe(display_df, use_container_width=True)
+                    st.dataframe(model_display_df, use_container_width=True)
 
                     st.divider()
                     st.markdown("**Average Over Time**")
                     col1, col2, col3 = st.columns(3)
-                    col1.metric("Avg C_v", f"{display_df['C_v'].mean():.4f}")
-                    col2.metric("Avg Diversity", f"{display_df['Diversity (IRBO)'].mean():.4f}")
-                    col3.metric("Avg Quality", f"{display_df['Quality'].mean():.4f}")
+                    col1.metric("Avg C_v", f"{model_display_df['C_v'].mean():.4f}")
+                    col2.metric("Avg Diversity", f"{model_display_df['Diversity (IRBO)'].mean():.4f}")
+                    col3.metric("Avg Quality", f"{model_display_df['Quality'].mean():.4f}")
     else:
         st.info("No per-year metrics available.")
 
@@ -166,5 +180,34 @@ with tab2:
                         declining[["topic_id", "top_words", "slope", "r_squared", "early_proportion", "late_proportion"]]
                         .reset_index(drop=True), use_container_width=True
                     )
+
+st.divider()
+st.subheader("Active Topics Proportion per Document Trend")
+
+pym = load_all_models("temporal", subject, "per_year_metrics.csv")
+if len(pym) > 0:
+    pym_f = pym[pym["model"].isin([MODEL_LABELS[m] for m in selected_models])].copy()
+    # Menghitung proporsi topik aktif per dokumen
+    pym_f["active_topics_per_doc"] = pym_f["num_topics_active"] / pym_f["num_docs"]
+
+    fig = px.line(
+        pym_f, x="year", y="active_topics_per_doc", color="model",
+        color_discrete_map=colors,
+        hover_data=["num_docs", "num_topics_active"],
+        title="Active Topics Proportion per Document Over Time",
+        labels={
+            "year": "Year", 
+            "active_topics_per_doc": "Active Topics Proportion per Document",
+            "model": "Model"
+        }
+    )
+    fig.update_layout(
+        height=400, legend=dict(orientation="h", y=-0.15),
+        font=CHART_FONT, title_font=CHART_TITLE_FONT,
+        xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2026])
+    )
+    fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+    fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
+    st.plotly_chart(fig, use_container_width=True)
 
 st.info("💡 For per-topic deep-dives (prevalence, drift, continuity), visit the **[Topic Explorer](/5_Topic_Explorer)** page.")
