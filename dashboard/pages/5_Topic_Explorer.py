@@ -10,6 +10,7 @@ from utils.data_loader import (
     MODELS, MODEL_LABELS, SUBJECTS, SUBJECT_LABELS,
     load_csv, setup_sidebar, model_color_map, RESULTS_DIR
 )
+from rank_bm25 import BM25Okapi
 
 st.set_page_config(page_title="Topic Explorer", page_icon="🔬", layout="wide")
 st.title("🔬 Topic Explorer")
@@ -51,10 +52,7 @@ for m in selected_models:
     prev_df = load_csv(m, "temporal", subject, "topic_prevalence.csv")
     word_df = load_csv(m, "temporal", subject, "topic_word_evolution.csv")
     trends_df = load_csv(m, "temporal", subject, "topic_trends.csv")
-    ttd_yoy = load_csv(m, "consistency", subject, "ttd_yoy_per_topic.csv")
-    ttd_endpoint = load_csv(m, "consistency", subject, "topic_term_drift.csv")
-    ttd_traj = load_csv(m, "consistency", subject, "ttd_trajectory.csv")
-    cont_trans = load_csv(m, "consistency", subject, "continuity_transitions.csv")
+    cont_trans = load_csv(m, "continuity", subject, "continuity_transitions.csv")
     labels_df = load_csv(m, "temporal", subject, "topic_labels.csv")
     yearly_desc_df = load_csv(m, "temporal", subject, "topic_yearly_descriptions.csv")
 
@@ -132,16 +130,27 @@ for m in selected_models:
             t_word_by_year[tid] = year_words
             t_categories[tid] = trend
 
-        # Filter by global search (threshold-based: at least half the tokens must match)
+        # BM25 Search Engine
+        bm25_scores = {}
         filtered = topic_ids
+        tokens = []
         if search:
             tokens = [tok.strip().lower() for tok in search.replace(",", " ").split() if tok.strip()]
             if tokens:
-                min_matches = max(1, len(tokens) // 2)
-                filtered = [
-                    t for t in filtered
-                    if sum(1 for tok in tokens if tok in t_all_words[t]) >= min_matches
-                ]
+                tokenized_corpus = [t_all_words[t].split() for t in topic_ids]
+                bm25 = BM25Okapi(tokenized_corpus)
+                doc_scores = bm25.get_scores(tokens)
+                
+                # Keep topics with score > 0
+                scored_topics = [(t, score) for t, score in zip(topic_ids, doc_scores) if score > 0]
+                scored_topics.sort(key=lambda x: x[1], reverse=True)
+                
+                # Batasi hanya menampilkan top 15 topik yang paling relevan
+                scored_topics = scored_topics[:15]
+                
+                filtered = [t for t, _ in scored_topics]
+                bm25_scores = {t: score for t, score in scored_topics}
+
         if category_filter:
             filtered = [t for t in filtered if t_categories.get(t, "") in category_filter]
             
@@ -205,11 +214,18 @@ for m in selected_models:
             st.markdown("<div style='margin-bottom:4px'></div>", unsafe_allow_html=True)
 
         # Sort option
+        sort_options = ["Topic ID", "📊 Article Count (↓)", "📐 R² (↓)"]
+        if search and len(tokens) > 0:
+            sort_options.insert(0, "⭐ Relevance Score (↓)")
+            
         sort_by = st.radio(
-            "Sort by", ["Topic ID", "📊 Article Count (↓)", "📐 R² (↓)"],
+            "Sort by", sort_options,
             horizontal=True, key=f"sort_{m}",
         )
-        if sort_by == "📊 Article Count (↓)":
+        
+        if sort_by == "⭐ Relevance Score (↓)":
+            filtered = sorted(filtered, key=lambda t: bm25_scores.get(t, 0), reverse=True)
+        elif sort_by == "📊 Article Count (↓)":
             filtered = sorted(filtered, key=lambda t: t_doc_counts.get(t, 0), reverse=True)
         elif sort_by == "📐 R² (↓)":
             filtered = sorted(filtered, key=lambda t: t_r_squared.get(t, 0), reverse=True)
@@ -220,7 +236,8 @@ for m in selected_models:
             cnt = t_doc_counts.get(tid, 0)
             r2 = t_r_squared.get(tid, None)
             r2_str = f" | R²={r2:.3f}" if r2 is not None else ""
-            t_labels_with_count[tid] = f"{t_labels.get(tid, f'Topic {tid}')}  [{cnt} articles{r2_str}]"
+            score_str = f" | ⭐ {bm25_scores.get(tid, 0):.2f}" if search and bm25_scores.get(tid, 0) > 0 else ""
+            t_labels_with_count[tid] = f"{t_labels.get(tid, f'Topic {tid}')}  [{cnt} articles{r2_str}{score_str}]"
 
         picks = st.multiselect(
             "Topics", filtered,
@@ -236,9 +253,8 @@ for m in selected_models:
         # ────────────────────────────────────────────
         # TAB LAYOUT per model
         # ────────────────────────────────────────────
-        t_evo, t_consist, t_cont, t_kw = st.tabs([
+        t_evo, t_cont, t_kw = st.tabs([
             "📈 Evolution & Prevalence",
-            "🔗 Term Drift (TTD)",
             "🔄 Continuity",
             "🏷️ Trend Keywords",
         ])
@@ -324,69 +340,6 @@ for m in selected_models:
                                 display["Description"] = display["Description"].fillna("")
                             st.dataframe(display.reset_index(drop=True), use_container_width=True, height=300)
 
-        # ── TAB 2: Term Drift ──
-        with t_consist:
-            # Trajectory chart: drift from baseline per topic
-            if ttd_traj is not None and len(ttd_traj) > 0:
-                traj_data = ttd_traj[ttd_traj["topic_id"].isin(picks)]
-                if len(traj_data) > 0:
-                    fig = go.Figure()
-                    for tid in picks:
-                        td = traj_data[traj_data["topic_id"] == tid].sort_values("year")
-                        if len(td) > 0:
-                            fig.add_trace(go.Scatter(
-                                x=td["year"], y=td["drift_from_baseline"],
-                                name=f"T{tid}", mode="lines+markers",
-                                line=dict(width=2), marker=dict(size=4),
-                            ))
-                    fig.update_layout(
-                        title=f"{label} — Vocabulary Drift from Baseline",
-                        xaxis_title="Year", yaxis_title="Drift (TTD)",
-                        height=380, hovermode="x unified",
-                        legend=dict(orientation="h", y=-0.15),
-                    )
-                    st.plotly_chart(fig, use_container_width=True)
-                else:
-                    st.info("No trajectory data for selected topics.")
-            else:
-                st.info("No TTD trajectory data available.")
-
-            # Endpoint + YoY summary per topic
-            for tid in picks:
-                with st.expander(f"📋 Topic {tid} — drift details"):
-                    c1, c2 = st.columns(2)
-
-                    # Endpoint drift
-                    with c1:
-                        st.markdown("**Endpoint Drift**")
-                        if ttd_endpoint is not None and len(ttd_endpoint) > 0:
-                            ep = ttd_endpoint[ttd_endpoint["topic_id"] == tid]
-                            if len(ep) > 0:
-                                row = ep.iloc[0]
-                                st.metric("TTD (first → last)", f"{row.get('ttd', 0):.4f}")
-                                st.metric("Cosine Sim", f"{row.get('cosine_sim', 0):.4f}")
-                                st.caption(f"**First words:** {row.get('words_first', '')[:80]}")
-                                st.caption(f"**Last words:** {row.get('words_last', '')[:80]}")
-                            else:
-                                st.caption("No endpoint data")
-                        else:
-                            st.caption("No endpoint data")
-
-                    # YoY summary
-                    with c2:
-                        st.markdown("**Year-over-Year**")
-                        if ttd_yoy is not None and len(ttd_yoy) > 0:
-                            yoy = ttd_yoy[ttd_yoy["topic_id"] == tid]
-                            if len(yoy) > 0:
-                                row = yoy.iloc[0]
-                                st.metric("Avg YoY Drift", f"{row.get('avg_yoy_drift', 0):.4f}")
-                                st.metric("Max Single Jump", f"{row.get('max_single_jump', 0):.4f}")
-                                avg_sim = row.get("avg_yoy_sim", 0)
-                                st.metric("Avg YoY Sim", f"{avg_sim:.4f}")
-                            else:
-                                st.caption("No YoY data")
-                        else:
-                            st.caption("No YoY data")
 
         # ── TAB 3: Continuity ──
         with t_cont:

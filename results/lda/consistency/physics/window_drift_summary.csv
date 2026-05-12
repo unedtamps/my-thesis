@@ -1,2 +1,0 @@
-subject,n_topics,n_windows,n_transitions,avg_drift,std_drift,median_drift,pct_stable,pct_moderate,pct_high_drift
-physics,50,5,4,0.34259,0.211039,0.323776,63.0,32.5,4.5

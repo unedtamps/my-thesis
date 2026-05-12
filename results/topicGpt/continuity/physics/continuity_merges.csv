@@ -1,0 +1,6 @@
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+physics,2013,2014,80,2,"[80, 132]","[0.6459, 0.5452]","cooperation, games, players, incentive, game, dilemma, defectors, prisoner, dilemmas, cooperators"
+physics,2013,2014,116,2,"[115, 116]","[0.551, 0.7476]","cloaking, cloak, cloaks, invisibility, transformation, metamaterial, cbcs, permittivity, carpet, rarm"
+physics,2016,2017,89,2,"[68, 89]","[0.5075, 0.551]","thz, terahertz, gridding, sqcramscope, hz, photoconductive, gaas, qes, drums, sqrt"
+physics,2018,2019,136,2,"[69, 136]","[0.5389, 0.6678]","optomechanical, mechanical, optomechanics, nems, resonator, electro, mems, tuning, sideband, nanophononic"
+physics,2021,2022,92,2,"[92, 93]","[0.8846, 0.5997]","covid, epidemic, pandemic, disease, infection, infected, spread, spreading, mobility, vaccination"

@@ -1,0 +1,2 @@
+subject,year_from,year_to,target_topic,n_sources,source_topics,source_sims,target_words
+math,2022,2023,17,2,"[17, 48]","[0.6043, 0.5156]","superalgebra, weyl, 2pt, superalgebras, osp, mathfrak, toroidal, hspace, hbar, duplex"

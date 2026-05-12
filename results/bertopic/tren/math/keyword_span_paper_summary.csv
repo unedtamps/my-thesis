@@ -1,2 +1,0 @@
-subject,model,total_unique_terms,avg_span_paper,avg_span_simple,sum_s_dict,total_corpus_freq,terms_not_in_corpus
-math,BERTopic,9647,0.079402,1.8808,765.992044,11317526,1
