@@ -216,9 +216,9 @@ for m in selected_models:
                     with col_box:
                         st.plotly_chart(fig_box, use_container_width=True)
 
-        # Top 30 configs table
-        st.markdown("**Top 30 Configs (by Topic Quality)**")
-        top30 = df.nlargest(30, "topic_quality")
+        # All configs table
+        st.markdown("**All Configs (sorted by Topic Quality)**")
+        sorted_df = df.sort_values("topic_quality", ascending=False)
         hide = ["subject", "random_state", "workers", "seed", "passes", "chunksize", "lr_a", "lr_b", "lr_c", "min_cf", "min_df", "ll_per_word", "ngram_range"]
-        display_cols = [c for c in top30.columns if c not in hide]
-        st.dataframe(top30[display_cols].reset_index(drop=True), use_container_width=True)
+        display_cols = [c for c in sorted_df.columns if c not in hide]
+        st.dataframe(sorted_df[display_cols].reset_index(drop=True), use_container_width=True)
