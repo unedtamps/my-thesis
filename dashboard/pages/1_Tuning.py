@@ -18,7 +18,7 @@ Grid search over hyperparameters to find the best model configuration per subjec
 Each configuration is scored by three metrics:
 - **Coherence (C_v)** — semantic relatedness of words within topics
 - **IRBO** — diversity between topics (low overlap)
-- **Topic Quality** — harmonic mean of coherence and IRBO
+- **TTQ (Temporal Topic Quality)** — harmonic mean of coherence and IRBO
 
 The best model balances both coherence and diversity.
 """
@@ -85,8 +85,8 @@ for m in selected_models:
             if "num_topics" in df.columns:
                 fig = px.box(
                     df, x="num_topics", y="topic_quality",
-                    title=f"{label}: Quality by Number of Topics",
-                    labels={"num_topics": "Number of Topics", "topic_quality": "Topic Quality"},
+                    title=f"{label}: TTQ by Number of Topics",
+                    labels={"num_topics": "Number of Topics", "topic_quality": "TTQ"},
                 )
                 fig.update_layout(height=400)
                 st.plotly_chart(fig, use_container_width=True)
@@ -149,7 +149,7 @@ for m in selected_models:
             _subj_colors = {"Computer Science": "#ef4444", "Mathematics": "#f59e0b", "Physics": "#3b82f6"}
             
             st.markdown("---")
-            st.markdown(f"#### 📌 {label}: Pengaruh Hyperparameter terhadap Topic Quality")
+            st.markdown(f"#### 📌 {label}: Pengaruh Hyperparameter terhadap TTQ (Temporal Topic Quality)")
             st.caption("Gunakan tab di bawah untuk melihat distribusi performa model berdasarkan tiap hyperparameter (menggunakan data semua subject).")
             
             tabs = st.tabs([f"vs {p}" for p in _params])
@@ -178,8 +178,8 @@ for m in selected_models:
                         color="subject_label",
                         color_discrete_map=_subj_colors,
                         points="all",
-                        title=f"Distribusi Topic Quality per {param}",
-                        labels={param: param, "topic_quality": "Topic Quality", "subject_label": "Subject"},
+                        title=f"Distribusi TTQ per {param}",
+                        labels={param: param, "topic_quality": "TTQ", "subject_label": "Subject"},
                         category_orders={param: sorted_cats}
                     )
                     fig_box.update_layout(
@@ -205,8 +205,8 @@ for m in selected_models:
                                 marker=dict(size=8, color=_c, line=dict(width=1, color="white"))
                             ))
                         fig_line.update_layout(
-                            title=f"Rata-rata Topic Quality vs {param}",
-                            xaxis_title=param, yaxis_title="Mean Topic Quality",
+                            title=f"Rata-rata TTQ vs {param}",
+                            xaxis_title=param, yaxis_title="Mean TTQ",
                             height=400, plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
                             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
                         )
@@ -217,7 +217,7 @@ for m in selected_models:
                         st.plotly_chart(fig_box, use_container_width=True)
 
         # All configs table
-        st.markdown("**All Configs (sorted by Topic Quality)**")
+        st.markdown("**All Configs (sorted by TTQ)**")
         sorted_df = df.sort_values("topic_quality", ascending=False)
         hide = ["subject", "random_state", "workers", "seed", "passes", "chunksize", "lr_a", "lr_b", "lr_c", "min_cf", "min_df", "ll_per_word", "ngram_range"]
         display_cols = [c for c in sorted_df.columns if c not in hide]

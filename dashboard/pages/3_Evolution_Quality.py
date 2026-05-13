@@ -17,7 +17,7 @@ st.markdown("""
 Evaluates how well topics maintain their quality when transitioning from one year to the next.
 
 - **TTC** — Temporal Topic Coherence: normalized NPMI of cross-time word pairs (*words_t* × *words_t+1*) evaluated against the full corpus
-- **TTS** — Temporal Topic Stability: RBO (Rank-Biased Overlap) similarity of topic words between *t* and *t+1*
+- **TTS** — Temporal Topic Smoothness: RBO (Rank-Biased Overlap) similarity of topic words between *t* and *t+1*
 - **TTQ** — Temporal Topic Quality: harmonic mean of TTC and TTS
 """)
 st.page_link("pages/Glossary.py", label="📖 See Glossary for detailed definitions", icon=None)
@@ -46,7 +46,7 @@ if len(trans) > 0:
         fig = px.line(
             trans_f, x="year_from", y="avg_ttc", color="model",
             color_discrete_map=colors,
-            title="TTC (Cross-Time Coherence) Over Transitions",
+            title="TTC (Temporal Topic Coherence) Over Transitions",
             labels={"avg_ttc": "Avg TTC", "year_from": "Year"},
         )
         fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
@@ -60,7 +60,7 @@ if len(trans) > 0:
         fig = px.line(
             trans_f, x="year_from", y="avg_tts", color="model",
             color_discrete_map=colors,
-            title="TTS (Term Stability) Over Transitions",
+            title="TTS (Temporal Topic Smoothness) Over Transitions",
             labels={"avg_tts": "Avg TTS", "year_from": "Year"},
         )
         fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),
@@ -74,7 +74,7 @@ if len(trans) > 0:
         fig = px.line(
             trans_f, x="year_from", y="avg_ttq", color="model",
             color_discrete_map=colors,
-            title="TTQ (Topic Transition Quality) Over Transitions",
+            title="TTQ (Temporal Topic Quality) Over Transitions",
             labels={"avg_ttq": "Avg TTQ", "year_from": "Year"},
         )
         fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15),

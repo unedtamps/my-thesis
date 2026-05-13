@@ -182,29 +182,40 @@ with tab2:
                     )
 
 st.divider()
-st.subheader("Active Topics Proportion per Document Trend")
+st.subheader("Topic Quality vs Active Topics Proportion (All Subjects)")
 
-pym = load_all_models("temporal", subject, "per_year_metrics.csv")
-if len(pym) > 0:
-    pym_f = pym[pym["model"].isin([MODEL_LABELS[m] for m in selected_models])].copy()
+frames = []
+for s in SUBJECTS:
+    s_df = load_all_models("temporal", s, "per_year_metrics.csv")
+    if len(s_df) > 0:
+        s_df["subject"] = SUBJECT_LABELS[s]
+        frames.append(s_df)
+
+if frames:
+    pym_all = pd.concat(frames, ignore_index=True)
+    pym_f = pym_all[pym_all["model"].isin([MODEL_LABELS[m] for m in selected_models])].copy()
+    
     # Menghitung proporsi topik aktif per dokumen
-    pym_f["active_topics_per_doc"] = pym_f["num_topics_active"] / pym_f["num_docs"]
+    pym_f["active_topics_ratio"] = pym_f["num_topics_active"] / pym_f["num_docs"]
 
-    fig = px.line(
-        pym_f, x="year", y="active_topics_per_doc", color="model",
+    fig = px.scatter(
+        pym_f, x="active_topics_ratio", y="topic_quality", color="model",
+        facet_col="subject",
         color_discrete_map=colors,
-        hover_data=["num_docs", "num_topics_active"],
-        title="Active Topics Proportion per Document Over Time",
+        hover_data=["year", "num_topics_active", "num_docs"],
+        title="Topic Quality vs Active Topics Proportion (All Subjects)",
         labels={
-            "year": "Year", 
-            "active_topics_per_doc": "Active Topics Proportion per Document",
+            "active_topics_ratio": "Ratio (Topics/Docs)", 
+            "topic_quality": "Topic Quality (TTQ)",
             "model": "Model"
         }
     )
+    fig.update_traces(marker=dict(size=10))
+    # Clean up facet titles (remove "subject=")
+    fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
     fig.update_layout(
-        height=400, legend=dict(orientation="h", y=-0.15),
-        font=CHART_FONT, title_font=CHART_TITLE_FONT,
-        xaxis=dict(tickmode="array", tickvals=[2000, 2005, 2010, 2015, 2020, 2025], range=[2000, 2026])
+        height=450, legend=dict(orientation="h", y=-0.2),
+        font=CHART_FONT, title_font=CHART_TITLE_FONT
     )
     fig.update_xaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)
     fig.update_yaxes(tickfont=AXIS_FONT, title_font=AXIS_FONT)

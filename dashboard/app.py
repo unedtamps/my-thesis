@@ -54,7 +54,7 @@ for i, m in enumerate(selected_models):
         evo = load_csv(m, "evolution", subject, "evolution_summary.csv")
         if evo is not None and len(evo) > 0:
             row = evo.iloc[0]
-            st.metric("Avg Topic Transitions Quality (TTQ)", f"{row.get('avg_ttq', 0):.4f}")
+            st.metric("Avg Temporal Topic Quality (TTQ)", f"{row.get('avg_ttq', 0):.4f}")
 
         # Trends summary
         trends = load_csv(m, "temporal", subject, "topic_trends.csv")
@@ -90,14 +90,14 @@ else:
     st.info("No per-year metrics data available.")
 
 # --- Cross-model comparison: Evolution quality ---
-st.subheader("Evolution Quality (Avg Topic Transitions Quality) Over Time")
+st.subheader("Evolution Quality (Avg Temporal Topic Quality) Over Time")
 trans = load_all_models("evolution", subject, "transition_summary.csv")
 if len(trans) > 0:
     trans_filtered = trans[trans["model"].isin([MODEL_LABELS[m] for m in selected_models])]
     fig = px.line(
         trans_filtered, x="year_from", y="avg_ttq", color="model",
         color_discrete_map=colors,
-        labels={"avg_ttq": "Avg Topic Transitions Quality (TTQ)", "year_from": "Year", "model": "Model"},
+        labels={"avg_ttq": "Avg Temporal Topic Quality (TTQ)", "year_from": "Year", "model": "Model"},
     )
     fig.update_layout(height=400, legend=dict(orientation="h", y=-0.15))
     st.plotly_chart(fig, use_container_width=True)
