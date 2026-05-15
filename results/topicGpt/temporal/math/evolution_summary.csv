@@ -1,2 +1,2 @@
-subject,num_topics,num_years,coherence_mean,coherence_std,irbo_mean,irbo_std,quality_mean,quality_std,topics_growing,topics_stable,topics_declining
-math,124,26,0.392916,0.045872,0.998907,0.000367,0.562511,0.046311,33,50,41
+subject,num_topics,num_years,unique_keywords,avg_keyword_freq,coherence_mean,coherence_std,irbo_mean,irbo_std,quality_mean,quality_std,topics_growing,topics_stable,topics_declining
+math,124,26,10846,156.66,0.392916,0.045872,0.998907,0.000367,0.562511,0.046311,33,50,41

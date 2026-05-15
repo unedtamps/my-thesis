@@ -101,9 +101,29 @@ with tab_metrics:
             "topic_quality": "Quality"
         })
         
-        st.subheader("Average Over Time (All Models)")
-        avg_df = display_df.groupby("Model")[["C_v", "Diversity (IRBO)", "Quality"]].mean()
-        st.dataframe(avg_df, use_container_width=True)
+        st.subheader("Overall Timestep Summary (All Models)")
+        evo_all = load_all_models("temporal", subject, "evolution_summary.csv")
+        if len(evo_all) > 0:
+            evo_f = evo_all[evo_all["model"].isin([MODEL_LABELS[m] for m in selected_models])].copy()
+            evo_f = evo_f.rename(columns={
+                "model": "Model",
+                "unique_keywords": "Unique Keywords",
+                "avg_keyword_freq": "Avg Keyword Freq",
+                "coherence_mean": "C_v",
+                "irbo_mean": "Diversity (IRBO)",
+                "quality_mean": "Quality"
+            })
+            display = ["Model", "Unique Keywords", "Avg Keyword Freq", "C_v", "Diversity (IRBO)", "Quality"]
+            available = [c for c in display if c in evo_f.columns]
+            
+            format_dict = {"C_v": "{:.4f}", "Diversity (IRBO)": "{:.4f}", "Quality": "{:.4f}", "Avg Keyword Freq": "{:.2f}"}
+            st.dataframe(
+                evo_f[available].set_index("Model").style.format({k: v for k, v in format_dict.items() if k in available}, na_rep="—"), 
+                use_container_width=True
+            )
+        else:
+            avg_df = display_df.groupby("Model")[["C_v", "Diversity (IRBO)", "Quality"]].mean()
+            st.dataframe(avg_df, use_container_width=True)
         
         st.divider()
         st.subheader("Yearly Metrics per Model")
