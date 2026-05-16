@@ -1,0 +1,20 @@
+app = "unedo-thesis" 
+primary_region = "sin" 
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8888
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+# If your app needs persistent storage to save results (equivalent to the ./results/:/app/results volume in docker-compose),
+# you will need to create a volume on fly (e.g. `fly volumes create thesis_data`) and uncomment the following lines:
+#
+# [[mounts]]
+#   source = "thesis_data"
+#   destination = "/app/results"
