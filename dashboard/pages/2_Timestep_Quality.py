@@ -202,7 +202,7 @@ with tab2:
                     )
 
 st.divider()
-st.subheader("Topic Quality vs Active Topics Proportion (All Subjects)")
+st.subheader("Topic Quality vs Document Count (All Subjects)")
 
 frames = []
 for s in SUBJECTS:
@@ -215,17 +215,14 @@ if frames:
     pym_all = pd.concat(frames, ignore_index=True)
     pym_f = pym_all[pym_all["model"].isin([MODEL_LABELS[m] for m in selected_models])].copy()
     
-    # Menghitung proporsi topik aktif per dokumen
-    pym_f["active_topics_ratio"] = pym_f["num_topics_active"] / pym_f["num_docs"]
-
     fig = px.scatter(
-        pym_f, x="active_topics_ratio", y="topic_quality", color="model",
+        pym_f, x="num_docs", y="topic_quality", color="model",
         facet_col="subject",
         color_discrete_map=colors,
-        hover_data=["year", "num_topics_active", "num_docs"],
-        title="Topic Quality vs Active Topics Proportion (All Subjects)",
+        hover_data=["year", "num_topics_active"],
+        title="Topic Quality vs Document Count (All Subjects)",
         labels={
-            "active_topics_ratio": "Ratio (Topics/Docs)", 
+            "num_docs": "Document Count", 
             "topic_quality": "Topic Quality (TTQ)",
             "model": "Model"
         }
