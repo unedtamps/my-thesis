@@ -253,8 +253,9 @@ for m in selected_models:
         # ────────────────────────────────────────────
         # TAB LAYOUT per model
         # ────────────────────────────────────────────
-        t_evo, t_cont, t_kw = st.tabs([
+        t_evo, t_era, t_cont, t_kw = st.tabs([
             "📈 Evolution & Prevalence",
+            "📊 Era Comparison (2000-2012 vs 2013-2025)",
             "🔄 Continuity",
             "🏷️ Trend Keywords",
         ])
@@ -340,6 +341,123 @@ for m in selected_models:
                                 display["Description"] = display["Description"].fillna("")
                             st.dataframe(display.reset_index(drop=True), use_container_width=True, height=300)
 
+        # ── TAB 2: Era Comparison ──
+        with t_era:
+            st.markdown(
+                "### 📊 Perbandingan Rata-rata Proporsi & Jumlah Dokumen antar Era\n"
+                "Membandingkan kontribusi topik antara era **2000 - 2012** (13 tahun awal) "
+                "dan era **2013 - 2025** (13 tahun akhir)."
+            )
+            
+            # Hitung total dokumen dari seluruh topik untuk kedua era
+            tp_all_1 = prev_df[(prev_df["year"] >= 2000) & (prev_df["year"] <= 2012)]
+            tp_all_2 = prev_df[(prev_df["year"] >= 2013) & (prev_df["year"] <= 2025)]
+            total_all_docs_1 = int(tp_all_1["doc_count"].sum()) if not tp_all_1.empty and "doc_count" in tp_all_1.columns else 0
+            total_all_docs_2 = int(tp_all_2["doc_count"].sum()) if not tp_all_2.empty and "doc_count" in tp_all_2.columns else 0
+            
+            # --- Table 1: Selected Topics ---
+            st.markdown("#### 🎯 Topik Terpilih")
+            
+            period_data_selected = []
+            for tid in picks:
+                tp = prev_df[prev_df["topic_id"] == tid]
+                
+                tp_1 = tp[(tp["year"] >= 2000) & (tp["year"] <= 2012)]
+                tp_2 = tp[(tp["year"] >= 2013) & (tp["year"] <= 2025)]
+                
+                avg_prop_1 = float(tp_1["proportion"].mean()) if not tp_1.empty else 0.0
+                avg_prop_2 = float(tp_2["proportion"].mean()) if not tp_2.empty else 0.0
+                
+                doc_sum_1 = int(tp_1["doc_count"].sum()) if not tp_1.empty and "doc_count" in tp_1.columns else 0
+                doc_sum_2 = int(tp_2["doc_count"].sum()) if not tp_2.empty and "doc_count" in tp_2.columns else 0
+                
+                prop_diff = avg_prop_2 - avg_prop_1
+                doc_diff = doc_sum_2 - doc_sum_1
+                
+                real_label = topic_label_map.get(tid, "")
+                display_label = f"T{tid}: {real_label}" if real_label else f"Topic {tid}"
+                
+                period_data_selected.append({
+                    "Topic": display_label,
+                    "Avg Prop (2000-2012)": avg_prop_1,
+                    "Avg Prop (2013-2025)": avg_prop_2,
+                    "Prop. Change": prop_diff,
+                    "Docs (2000-2012)": doc_sum_1,
+                    "Docs (2013-2025)": doc_sum_2,
+                    "Doc Change": doc_diff,
+                    "Total Docs (2000-2012)": total_all_docs_1,
+                    "Total Docs (2013-2025)": total_all_docs_2
+                })
+            
+            if period_data_selected:
+                sel_df = pd.DataFrame(period_data_selected)
+                st.dataframe(
+                    sel_df.style.format({
+                        "Avg Prop (2000-2012)": "{:.6f}",
+                        "Avg Prop (2013-2025)": "{:.6f}",
+                        "Prop. Change": "{:+.6f}",
+                        "Docs (2000-2012)": "{:,}",
+                        "Docs (2013-2025)": "{:,}",
+                        "Doc Change": "{:+,}",
+                        "Total Docs (2000-2012)": "{:,}",
+                        "Total Docs (2013-2025)": "{:,}"
+                    }),
+                    use_container_width=True,
+                    hide_index=True
+                )
+            else:
+                st.caption("No topics selected.")
+
+            # --- Table 2: All Topics ---
+            with st.expander("📊 Lihat Perbandingan Era untuk Seluruh Topik", expanded=False):
+                st.markdown("Berikut adalah perbandingan data era untuk **seluruh topik** dalam model ini:")
+                period_data_all = []
+                for tid in topic_ids:
+                    tp = prev_df[prev_df["topic_id"] == tid]
+                    
+                    tp_1 = tp[(tp["year"] >= 2000) & (tp["year"] <= 2012)]
+                    tp_2 = tp[(tp["year"] >= 2013) & (tp["year"] <= 2025)]
+                    
+                    avg_prop_1 = float(tp_1["proportion"].mean()) if not tp_1.empty else 0.0
+                    avg_prop_2 = float(tp_2["proportion"].mean()) if not tp_2.empty else 0.0
+                    
+                    doc_sum_1 = int(tp_1["doc_count"].sum()) if not tp_1.empty and "doc_count" in tp_1.columns else 0
+                    doc_sum_2 = int(tp_2["doc_count"].sum()) if not tp_2.empty and "doc_count" in tp_2.columns else 0
+                    
+                    prop_diff = avg_prop_2 - avg_prop_1
+                    doc_diff = doc_sum_2 - doc_sum_1
+                    
+                    real_label = topic_label_map.get(tid, "")
+                    display_label = f"T{tid}: {real_label}" if real_label else f"Topic {tid}"
+                    
+                    period_data_all.append({
+                        "Topic": display_label,
+                        "Avg Prop (2000-2012)": avg_prop_1,
+                        "Avg Prop (2013-2025)": avg_prop_2,
+                        "Prop. Change": prop_diff,
+                        "Docs (2000-2012)": doc_sum_1,
+                        "Docs (2013-2025)": doc_sum_2,
+                        "Doc Change": doc_diff,
+                        "Total Docs (2000-2012)": total_all_docs_1,
+                        "Total Docs (2013-2025)": total_all_docs_2
+                    })
+                
+                if period_data_all:
+                    all_df = pd.DataFrame(period_data_all)
+                    st.dataframe(
+                        all_df.style.format({
+                            "Avg Prop (2000-2012)": "{:.6f}",
+                            "Avg Prop (2013-2025)": "{:.6f}",
+                            "Prop. Change": "{:+.6f}",
+                            "Docs (2000-2012)": "{:,}",
+                            "Docs (2013-2025)": "{:,}",
+                            "Doc Change": "{:+,}",
+                            "Total Docs (2000-2012)": "{:,}",
+                            "Total Docs (2013-2025)": "{:,}"
+                        }),
+                        use_container_width=True,
+                        hide_index=True
+                    )
 
         # ── TAB 3: Continuity ──
         with t_cont:
